@@ -1,0 +1,38 @@
+phase: "1.1.1.1.5.2"
+title: "Workflow acceleration and repeatability audit"
+status: "yellow-active"
+status_meaning: "active workflow/tooling phase; not a derived-only Lean phase"
+started_on: "2026-05-12"
+branch: "phase/1.1.1.1.5.2-workflow-audit"
+base_commit: "dbeaedf66b68f62dad603db091bec4ae4d320a9a"
+
+classification:
+  context_class: "ToolWorkflowGovernance"
+  phase_type: "infrastructure"
+  lean_semantics_changed: false
+  generated_docs_changed: false
+  root_readme_changed: false
+
+acceleration_targets:
+  - "avoid repeated README churn"
+  - "avoid default full PDF/context-doc generation"
+  - "use fresh phase branches from current main when existing branches diverge"
+  - "use fixed phase-start and closeout checklists"
+  - "preserve local lake build as authoritative green gate"
+  - "separate workflow/tooling evidence from Lean-derived proof objects"
+
+write_set:
+  added:
+    - "Repository/workflows/phase_1.1.1.1.5.2_workflow_acceleration_audit.md"
+    - "Repository/traces/phase_1.1.1.1.5.2_workflow_audit_start.yaml"
+  intentionally_not_modified:
+    - "Repository/masters/cnna_roadmap_master.yaml"
+    - "README.md"
+    - "Repository/repo_snapshot/CNNA/**"
+    - "Repository/generated_docs/**"
+    - "Repository/context_docs/**"
+
+gates:
+  may_close_green_after_user_review: true
+  requires_local_build_for_lean_claims: true
+  green_claim_made_now: false
