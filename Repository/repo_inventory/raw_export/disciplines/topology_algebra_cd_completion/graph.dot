@@ -1,6 +1,6 @@
 digraph discipline_topology_algebra_cd_completion {
   rankdir="LR";
-  node [shape=box, fontsize=10];
+  node [shape=box, fontsize=11];
   "CNNA.PillarA.Foundation.ExecComplex" [tooltip="PillarA/Foundation"];
   "CNNA.PillarA.Foundation.ExecComplexBridge" [tooltip="PillarA/Foundation"];
   "CNNA.PillarA.Foundation.ExecComplexLemmas" [tooltip="PillarA/Foundation"];

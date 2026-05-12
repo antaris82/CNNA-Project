@@ -1,6 +1,6 @@
 digraph group_pillara_toc {
   rankdir="LR";
-  node [shape=box, fontsize=10];
+  node [shape=box, fontsize=11];
   "CNNA.PillarA.ToC.Addressing" [tooltip="PillarA/ToC"];
   "CNNA.PillarA.ToC.BuildAll" [tooltip="PillarA/ToC"];
   "CNNA.PillarA.ToC.Concrete" [tooltip="PillarA/ToC"];

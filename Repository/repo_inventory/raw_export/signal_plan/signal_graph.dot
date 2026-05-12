@@ -1,6 +1,6 @@
 digraph signal_graph {
   rankdir="LR";
-  node [shape=box, fontsize=10];
+  node [shape=box, fontsize=11];
   "CNNA.Basic" [tooltip="Basic"];
   "CNNA.BuildAll" [tooltip="BuildAll"];
   "CNNA.Notation" [tooltip="Notation"];

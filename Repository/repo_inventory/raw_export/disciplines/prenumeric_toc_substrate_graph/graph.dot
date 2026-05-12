@@ -1,6 +1,6 @@
 digraph discipline_prenumeric_toc_substrate_graph {
   rankdir="LR";
-  node [shape=box, fontsize=10];
+  node [shape=box, fontsize=11];
   "CNNA.PillarA.Finite.Approximant" [tooltip="PillarA/Finite"];
   "CNNA.PillarA.Finite.BoundaryPorts" [tooltip="PillarA/Finite"];
   "CNNA.PillarA.Finite.CutSpec" [tooltip="PillarA/Finite"];

@@ -1,0 +1,13 @@
+{
+  "planning_data_version": "P1.46",
+  "timestamp": "2026-05-12T14:45:00+02:00",
+  "change_class": "build-evidence-closeout",
+  "closed_phase": "1.1.1.1.5.1.2",
+  "closed_object": "LEG44",
+  "closure_evidence": "user-reported green local lake build after P1.45 notation-removal package",
+  "lean_source_changed_in_this_package": false,
+  "lean_source_change_carried_from": "P1.45",
+  "next_active_phase": "1.1.1.1.5.2",
+  "next_active_object": "LEG38",
+  "pdf_generated": false
+}

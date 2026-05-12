@@ -1,0 +1,59 @@
+{
+  "change_version": "P1.43",
+  "change_timestamp": "2026-05-12T11:35:00+02:00",
+  "changed_phase_ids": [
+    "1.1.1.1.5",
+    "1.1.1.1.5.1",
+    "1.1.1.1.5.1.1",
+    "1.1.1.1.5.1.2",
+    "1.1.1.1.5.2",
+    "1.1.1.1.5.3",
+    "1.1.1.1.5.4",
+    "1.1.1.1.5.5"
+  ],
+  "new_phase_ids": [
+    "1.1.1.1.5.1.1",
+    "1.1.1.1.5.1.2"
+  ],
+  "changed_object_ids": [
+    "LEG36",
+    "LEG42",
+    "LEG43",
+    "LEG44",
+    "LEG38",
+    "LEG39",
+    "LEG37",
+    "LEG40",
+    "LEG41"
+  ],
+  "new_object_ids": [
+    "LEG43",
+    "LEG44"
+  ],
+  "changed_proof_dossier_ids": [
+    "LEG42",
+    "LEG43",
+    "LEG44"
+  ],
+  "new_proof_dossier_ids": [
+    "LEG43",
+    "LEG44"
+  ],
+  "changed_scratchpad_phase_ids": [
+    "1.1.1.1.5",
+    "1.1.1.1.5.1",
+    "1.1.1.1.5.1.1",
+    "1.1.1.1.5.1.2",
+    "1.1.1.1.5.2"
+  ],
+  "new_scratchpad_phase_ids": [
+    "1.1.1.1.5.1.1",
+    "1.1.1.1.5.1.2"
+  ],
+  "unique_active_phase": "1.1.1.1.5.1.1",
+  "previous_active_phase": "1.1.1.1.5.2",
+  "lean_code_changed": false,
+  "lean_build_run": false,
+  "tool_infrastructure_changed": false,
+  "pdf_generated": false
+}

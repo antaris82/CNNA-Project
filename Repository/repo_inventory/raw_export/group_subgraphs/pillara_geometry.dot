@@ -1,6 +1,6 @@
 digraph group_pillara_geometry {
   rankdir="LR";
-  node [shape=box, fontsize=10];
+  node [shape=box, fontsize=11];
   "CNNA.PillarA.Geometry.BuildAll" [tooltip="PillarA/Geometry"];
   "CNNA.PillarA.Geometry.Foliation" [tooltip="PillarA/Geometry"];
   "CNNA.PillarA.Geometry.LCPMeasure" [tooltip="PillarA/Geometry"];

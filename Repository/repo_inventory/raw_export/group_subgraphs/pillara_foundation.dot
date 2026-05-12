@@ -1,6 +1,6 @@
 digraph group_pillara_foundation {
   rankdir="LR";
-  node [shape=box, fontsize=10];
+  node [shape=box, fontsize=11];
   "CNNA.PillarA.Foundation.BuildAll" [tooltip="PillarA/Foundation"];
   "CNNA.PillarA.Foundation.ConcreteSubstrate" [tooltip="PillarA/Foundation"];
   "CNNA.PillarA.Foundation.Determinism" [tooltip="PillarA/Foundation"];

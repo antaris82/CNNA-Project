@@ -5,8 +5,8 @@
   "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedMainPath",
   "source_group": "PillarA/Arithmetic",
   "target_group": "PillarA/Arithmetic",
-  "source_path": "/mnt/data/toolchain_work/CNNA_Planning_Doc_Tool/Repository/repo_snapshot/CNNA/PillarA/Arithmetic/Smoke/GeneratedSource.lean",
-  "target_path": "/mnt/data/toolchain_work/CNNA_Planning_Doc_Tool/Repository/repo_snapshot/CNNA/PillarA/Arithmetic/Smoke/GeneratedMainPath.lean",
+  "source_path": "/mnt/data/work_p144/Repository/repo_snapshot/CNNA/PillarA/Arithmetic/Smoke/GeneratedSource.lean",
+  "target_path": "/mnt/data/work_p144/Repository/repo_snapshot/CNNA/PillarA/Arithmetic/Smoke/GeneratedMainPath.lean",
   "confidence": {
     "strongest_confidence": null,
     "strongest_confidence_weight": 0,

@@ -1,6 +1,6 @@
 digraph signal_graph_reduced {
   rankdir="LR";
-  node [shape=box, fontsize=10];
+  node [shape=box, fontsize=11];
   "CNNA.PillarA.Arithmetic.Actions.ActionFormatDecision" [tooltip="PillarA/Arithmetic"];
   "CNNA.PillarA.Arithmetic.Actions.ActionPackage" [tooltip="PillarA/Arithmetic"];
   "CNNA.PillarA.Arithmetic.Actions.GeneratorActionInventory" [tooltip="PillarA/Arithmetic"];

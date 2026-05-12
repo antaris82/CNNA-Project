@@ -1,6 +1,6 @@
 digraph group_pillara {
   rankdir="LR";
-  node [shape=box, fontsize=10];
+  node [shape=box, fontsize=11];
   "CNNA.PillarA" [tooltip="PillarA"];
   "CNNA.PillarA.BuildAll" [tooltip="PillarA"];
   "CNNA.PillarA.Notation" [tooltip="PillarA"];

@@ -188,6 +188,110 @@
     "sink_group": "PillarA/Structural"
   },
   {
+    "sink": "CNNA.PillarA.Arithmetic.Convergence.QuaternionRamanujanInterface",
+    "path": [
+      "CNNA.PillarA.Foundation.HermitianStructure",
+      "CNNA.PillarA.Foundation.ExecComplex",
+      "CNNA.PillarA.Foundation.MatrixNorms",
+      "CNNA.PillarA.Foundation.Interfaces",
+      "CNNA.PillarA.Foundation.Notation",
+      "CNNA.PillarA.ToC.Contract",
+      "CNNA.PillarA.ToC.Addressing",
+      "CNNA.PillarA.ToC.IdealAddressEquiv",
+      "CNNA.PillarA.ToC.ConcreteIdeal",
+      "CNNA.PillarA.ToC.Notation",
+      "CNNA.PillarA.Finite.CutSpec",
+      "CNNA.PillarA.Finite.RegionCore",
+      "CNNA.PillarA.Finite.BoundaryPorts",
+      "CNNA.PillarA.Finite.Approximant",
+      "CNNA.PillarA.Finite.DirichletLaplacian",
+      "CNNA.PillarA.DtN.DtN",
+      "CNNA.PillarA.DtN.DtNStabilized",
+      "CNNA.PillarA.Sectors.BranchPatch",
+      "CNNA.PillarA.Sectors.ComplementSectorFamily",
+      "CNNA.PillarA.Sectors.SectorSplit",
+      "CNNA.PillarA.Sectors.BranchingWitness",
+      "CNNA.PillarA.Sectors.SelectedBranching",
+      "CNNA.PillarA.Sectors.UVSpectralSelector",
+      "CNNA.PillarA.Sectors.BranchingSelector",
+      "CNNA.PillarA.Closure.ParameterClosure",
+      "CNNA.PillarA.Closure.RegularizationClosure",
+      "CNNA.PillarA.Structural.CayleyDickson.Source",
+      "CNNA.PillarA.Structural.CayleyDickson.S6AdditionalFinding",
+      "CNNA.PillarA.Structural.CayleyDickson.S6StatusLayer",
+      "CNNA.PillarA.Structural.CayleyDickson.S6ConcreteSeeds",
+      "CNNA.PillarA.Structural.CayleyDickson.S6RoleCompositionSeed",
+      "CNNA.PillarA.Structural.CayleyDickson.S6QuaternionicSeed",
+      "CNNA.PillarA.Structural.CayleyDickson.S6OctonionicSeed",
+      "CNNA.PillarA.Structural.CayleyDickson.S6HurwitzStopSeed",
+      "CNNA.PillarA.Structural.CayleyDickson.S6ResearchSchema",
+      "CNNA.PillarA.Structural.CayleyDickson.S6CayleyDicksonIdentification",
+      "CNNA.PillarA.Structural.CayleyDickson.S6AlternativeLawScaffold",
+      "CNNA.PillarA.Structural.CayleyDickson.S6DivisionUpgrade",
+      "CNNA.PillarA.Structural.CayleyDickson.S6CanonicalIdealAlgebraizationPath",
+      "CNNA.PillarA.Structural.CayleyDickson.S6DivisionConclusionScaffold",
+      "CNNA.PillarA.Structural.CayleyDickson.S6PhaseICompactClosure",
+      "CNNA.PillarA.Structural.CayleyDickson.S6DivisionConclusionDecomposition",
+      "CNNA.PillarA.Structural.CayleyDickson.S6Slot2NormSqMultiplicativity",
+      "CNNA.PillarA.Structural.CayleyDickson.S6CanonicalNormSqCandidate",
+      "CNNA.PillarA.Structural.CayleyDickson.S6CanonicalNormSqDefined",
+      "CNNA.PillarA.Arithmetic.CayleyDickson.ArithmeticCDBridge",
+      "CNNA.PillarA.Arithmetic.Convergence.QuaternionRamanujanInterface"
+    ],
+    "source": "CNNA.PillarA.Foundation.HermitianStructure",
+    "length": 47,
+    "sink_group": "PillarA/Arithmetic"
+  },
+  {
+    "sink": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldTerminalIdentityFromSM3db4aWR3c1dFull",
+    "path": [
+      "CNNA.PillarA.Foundation.HermitianStructure",
+      "CNNA.PillarA.Foundation.ExecComplex",
+      "CNNA.PillarA.Foundation.MatrixNorms",
+      "CNNA.PillarA.Foundation.Interfaces",
+      "CNNA.PillarA.Foundation.Notation",
+      "CNNA.PillarA.ToC.Contract",
+      "CNNA.PillarA.ToC.Addressing",
+      "CNNA.PillarA.ToC.IdealAddressEquiv",
+      "CNNA.PillarA.ToC.ConcreteIdeal",
+      "CNNA.PillarA.ToC.Notation",
+      "CNNA.PillarA.Finite.CutSpec",
+      "CNNA.PillarA.Finite.RegionCore",
+      "CNNA.PillarA.Finite.BoundaryPorts",
+      "CNNA.PillarA.Finite.Approximant",
+      "CNNA.PillarA.Finite.DirichletLaplacian",
+      "CNNA.PillarA.DtN.DtN",
+      "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTwoSidedInv",
+      "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateStart",
+      "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCarrier",
+      "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationStep",
+      "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationTrace",
+      "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateEntry",
+      "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorAccumulatedTraceEvaluation",
+      "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldNormalFormR3c1a",
+      "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepSchurCancellationSourceAuditR3c1b0",
+      "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepSchurCancellationInvariantSM3db2aR",
+      "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorPerPivotRegularityFromTraceSM3db2bR",
+      "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTracePivotScaleWitnessFromGeneratedDegreeSM3db2cR",
+      "CNNA.PillarA.Arithmetic.Smoke.GeneratedDegreePivotScaleSourceSM3db2dR",
+      "CNNA.PillarA.Arithmetic.Smoke.GeneratedDegreeFormulaAuditSM3db2eR0",
+      "CNNA.PillarA.Arithmetic.Smoke.GeneratedDegreePivotReciprocalProfileFromWeightPolicySM3db2eR",
+      "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDegreeReciprocalSourceSM3db2fR",
+      "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldKernelLocalSchurResidualBridgeR3c1b1",
+      "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepCancellationR3c1bFull",
+      "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldInvarianceR3c1c",
+      "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTracePivotTerminalCoverageSourceSM3db3aR",
+      "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalFoldResidualCoverageSM3db4aT",
+      "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalFoldResidualIdentityFieldsSM3db4aU",
+      "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldTerminalIdentityR3c1d",
+      "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalIdentityFieldCertificateFromEquationSourceSM3db4aW",
+      "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldTerminalIdentityFromSM3db4aWR3c1dFull"
+    ],
+    "source": "CNNA.PillarA.Foundation.HermitianStructure",
+    "length": 41,
+    "sink_group": "PillarA/Arithmetic"
+  },
+  {
     "sink": "CNNA.PillarA.Structural.CayleyDickson.S6Slot1AlternativeLaw",
     "path": [
       "CNNA.PillarA.Foundation.HermitianStructure",
@@ -865,6 +969,22 @@
     "sink_group": "PillarA/Coupling"
   },
   {
+    "sink": "CNNA.PillarA.Arithmetic.Schur.L1Baseline",
+    "path": [
+      "CNNA.PillarA.Arithmetic.Actions.ActionPackage",
+      "CNNA.PillarA.Arithmetic.Actions.GeneratorActionInventory",
+      "CNNA.PillarA.Arithmetic.Actions.ActionFormatDecision",
+      "CNNA.PillarA.Arithmetic.Schur.MobiusTransfer",
+      "CNNA.PillarA.Arithmetic.Schur.RecursiveSchurSource",
+      "CNNA.PillarA.Arithmetic.Schur.Recurrence",
+      "CNNA.PillarA.Arithmetic.Schur.CharpolyExec",
+      "CNNA.PillarA.Arithmetic.Schur.L1Baseline"
+    ],
+    "source": "CNNA.PillarA.Arithmetic.Actions.ActionPackage",
+    "length": 8,
+    "sink_group": "PillarA/Arithmetic"
+  },
+  {
     "sink": "CNNA.PillarA.Geometry.LCPMeasure",
     "path": [
       "CNNA.PillarA.Foundation.HermitianStructure",
@@ -903,6 +1023,66 @@
     "sink_group": "PillarA/Geometry"
   },
   {
+    "sink": "CNNA.PillarA.Arithmetic.BoundarySource.BoundarySourceDecisionLedger",
+    "path": [
+      "CNNA.PillarA.Arithmetic.BoundarySource.GeneratedSubstrateRoute",
+      "CNNA.PillarA.Arithmetic.BoundarySource.BoundarySourceDecisionLedger"
+    ],
+    "source": "CNNA.PillarA.Arithmetic.BoundarySource.GeneratedSubstrateRoute",
+    "length": 2,
+    "sink_group": "PillarA/Arithmetic"
+  },
+  {
+    "sink": "CNNA.PillarA.Arithmetic.BoundarySource.BoundaryStateSubstrate",
+    "path": [
+      "CNNA.PillarA.Arithmetic.BoundarySource.GeneratedSubstrateRoute",
+      "CNNA.PillarA.Arithmetic.BoundarySource.BoundaryStateSubstrate"
+    ],
+    "source": "CNNA.PillarA.Arithmetic.BoundarySource.GeneratedSubstrateRoute",
+    "length": 2,
+    "sink_group": "PillarA/Arithmetic"
+  },
+  {
+    "sink": "CNNA.PillarA.Arithmetic.BoundarySource.BranchAddressSubstrate",
+    "path": [
+      "CNNA.PillarA.Arithmetic.BoundarySource.GeneratedSubstrateRoute",
+      "CNNA.PillarA.Arithmetic.BoundarySource.BranchAddressSubstrate"
+    ],
+    "source": "CNNA.PillarA.Arithmetic.BoundarySource.GeneratedSubstrateRoute",
+    "length": 2,
+    "sink_group": "PillarA/Arithmetic"
+  },
+  {
+    "sink": "CNNA.PillarA.Arithmetic.BoundarySource.HistoryExpandedSubstrate",
+    "path": [
+      "CNNA.PillarA.Arithmetic.BoundarySource.GeneratedSubstrateRoute",
+      "CNNA.PillarA.Arithmetic.BoundarySource.HistoryExpandedSubstrate"
+    ],
+    "source": "CNNA.PillarA.Arithmetic.BoundarySource.GeneratedSubstrateRoute",
+    "length": 2,
+    "sink_group": "PillarA/Arithmetic"
+  },
+  {
+    "sink": "CNNA.PillarA.Arithmetic.BoundarySource.InterfaceExposureSubstrate",
+    "path": [
+      "CNNA.PillarA.Arithmetic.BoundarySource.GeneratedSubstrateRoute",
+      "CNNA.PillarA.Arithmetic.BoundarySource.InterfaceExposureSubstrate"
+    ],
+    "source": "CNNA.PillarA.Arithmetic.BoundarySource.GeneratedSubstrateRoute",
+    "length": 2,
+    "sink_group": "PillarA/Arithmetic"
+  },
+  {
+    "sink": "CNNA.PillarA.Arithmetic.Schur.IdentityLedger",
+    "path": [
+      "CNNA.PillarA.Arithmetic.Schur.L3Gaussian",
+      "CNNA.PillarA.Arithmetic.Schur.IdentityLedger"
+    ],
+    "source": "CNNA.PillarA.Arithmetic.Schur.L3Gaussian",
+    "length": 2,
+    "sink_group": "PillarA/Arithmetic"
+  },
+  {
     "sink": "CNNA.Basic",
     "path": [
       "CNNA.Basic"
@@ -939,6 +1119,15 @@
     "sink_group": "PillarA"
   },
   {
+    "sink": "CNNA.PillarA.Arithmetic.BoundarySource.ExistingIdealThreadNoGo",
+    "path": [
+      "CNNA.PillarA.Arithmetic.BoundarySource.ExistingIdealThreadNoGo"
+    ],
+    "source": "CNNA.PillarA.Arithmetic.BoundarySource.ExistingIdealThreadNoGo",
+    "length": 1,
+    "sink_group": "PillarA/Arithmetic"
+  },
+  {
     "sink": "CNNA.PillarA.Arithmetic.BoundarySource.RecursiveLevelHistoryTypeDecision",
     "path": [
       "CNNA.PillarA.Arithmetic.BoundarySource.RecursiveLevelHistoryTypeDecision"
@@ -953,6 +1142,24 @@
       "CNNA.PillarA.Arithmetic.BuildAll"
     ],
     "source": "CNNA.PillarA.Arithmetic.BuildAll",
+    "length": 1,
+    "sink_group": "PillarA/Arithmetic"
+  },
+  {
+    "sink": "CNNA.PillarA.Arithmetic.Core.FullBoundaryAudit",
+    "path": [
+      "CNNA.PillarA.Arithmetic.Core.FullBoundaryAudit"
+    ],
+    "source": "CNNA.PillarA.Arithmetic.Core.FullBoundaryAudit",
+    "length": 1,
+    "sink_group": "PillarA/Arithmetic"
+  },
+  {
+    "sink": "CNNA.PillarA.Arithmetic.Schur.L2Eisenstein",
+    "path": [
+      "CNNA.PillarA.Arithmetic.Schur.L2Eisenstein"
+    ],
+    "source": "CNNA.PillarA.Arithmetic.Schur.L2Eisenstein",
     "length": 1,
     "sink_group": "PillarA/Arithmetic"
   },

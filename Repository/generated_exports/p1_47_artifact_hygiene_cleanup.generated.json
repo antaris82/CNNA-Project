@@ -1,0 +1,71 @@
+{
+  "change_version": "P1.47",
+  "change_timestamp": "2026-05-12T15:05:00+02:00",
+  "operation": "package artifact hygiene cleanup",
+  "removed": [
+    {
+      "path": "Repository/context_docs/",
+      "entries_removed": 44
+    },
+    {
+      "path": "Repository/generated_docs/",
+      "entries_removed": 32
+    },
+    {
+      "path": "Repository/README.md",
+      "entries_removed": 1
+    },
+    {
+      "path": "Repository/repo_inventory/raw_export/README.md",
+      "entries_removed": 1
+    },
+    {
+      "path": "Repository/repo_inventory/raw_export/architectural_core/README.md",
+      "entries_removed": 1
+    },
+    {
+      "path": "Repository/repo_inventory/raw_export/architectural_core/robust_semantic_signal_plan/README.md",
+      "entries_removed": 1
+    },
+    {
+      "path": "Repository/repo_inventory/raw_export/architectural_core/semantic_signal_plan/README.md",
+      "entries_removed": 1
+    },
+    {
+      "path": "Repository/repo_inventory/raw_export/architectural_core/syntactic_signal_plan/README.md",
+      "entries_removed": 1
+    },
+    {
+      "path": "Repository/repo_inventory/raw_export/disciplines/README.md",
+      "entries_removed": 1
+    },
+    {
+      "path": "Repository/repo_inventory/raw_export/disciplines/dirichlet_dtn_schur_network/README.md",
+      "entries_removed": 1
+    },
+    {
+      "path": "Repository/repo_inventory/raw_export/disciplines/prenumeric_toc_substrate_graph/README.md",
+      "entries_removed": 1
+    },
+    {
+      "path": "Repository/repo_inventory/raw_export/disciplines/topology_algebra_cd_completion/README.md",
+      "entries_removed": 1
+    },
+    {
+      "path": "Repository/repo_inventory/raw_export/signal_plan/README.md",
+      "entries_removed": 1
+    },
+    {
+      "path": "Repository/repo_inventory/raw_export/symbol_references/README.md",
+      "entries_removed": 1
+    },
+    {
+      "path": "Repository/repo_inventory/raw_export/symbol_references/semantic_signal_plan/README.md",
+      "entries_removed": 1
+    }
+  ],
+  "kept_root_readme": "README.md",
+  "policy": "context_docs and generated_docs are omitted by default; only package-root README.md is maintained; generated_exports are kept as machine-readable data.",
+  "lean_source_changed": false,
+  "tool_infrastructure_changed": false
+}

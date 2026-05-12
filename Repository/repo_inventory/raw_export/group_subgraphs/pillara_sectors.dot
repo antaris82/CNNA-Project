@@ -1,6 +1,6 @@
 digraph group_pillara_sectors {
   rankdir="LR";
-  node [shape=box, fontsize=10];
+  node [shape=box, fontsize=11];
   "CNNA.PillarA.Sectors.BranchPatch" [tooltip="PillarA/Sectors"];
   "CNNA.PillarA.Sectors.BranchingSelector" [tooltip="PillarA/Sectors"];
   "CNNA.PillarA.Sectors.BranchingWitness" [tooltip="PillarA/Sectors"];

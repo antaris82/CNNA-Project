@@ -385,17 +385,6 @@
     "is_sink": false
   },
   {
-    "module": "CNNA.PillarA.Arithmetic.Actions.ActionPackage",
-    "group": "PillarA/Arithmetic",
-    "dominated_node_count": 7,
-    "immediate_dominator_child_count": 1,
-    "signal_out_degree": 2,
-    "signal_in_degree": 0,
-    "layer": 0,
-    "is_source": true,
-    "is_sink": false
-  },
-  {
     "module": "CNNA.PillarA.Finite.SpectralDecompositionC",
     "group": "PillarA/Finite",
     "dominated_node_count": 7,
@@ -415,6 +404,17 @@
     "signal_in_degree": 1,
     "layer": 34,
     "is_source": false,
+    "is_sink": false
+  },
+  {
+    "module": "CNNA.PillarA.Arithmetic.Actions.ActionPackage",
+    "group": "PillarA/Arithmetic",
+    "dominated_node_count": 7,
+    "immediate_dominator_child_count": 1,
+    "signal_out_degree": 1,
+    "signal_in_degree": 0,
+    "layer": 0,
+    "is_source": true,
     "is_sink": false
   },
   {
@@ -473,17 +473,6 @@
     "is_sink": false
   },
   {
-    "module": "CNNA.PillarA.Arithmetic.Actions.GeneratorActionInventory",
-    "group": "PillarA/Arithmetic",
-    "dominated_node_count": 6,
-    "immediate_dominator_child_count": 1,
-    "signal_out_degree": 2,
-    "signal_in_degree": 1,
-    "layer": 1,
-    "is_source": false,
-    "is_sink": false
-  },
-  {
     "module": "CNNA.PillarA.ToC.ConcreteIdeal",
     "group": "PillarA/ToC",
     "dominated_node_count": 6,
@@ -513,6 +502,17 @@
     "signal_out_degree": 2,
     "signal_in_degree": 1,
     "layer": 35,
+    "is_source": false,
+    "is_sink": false
+  },
+  {
+    "module": "CNNA.PillarA.Arithmetic.Actions.GeneratorActionInventory",
+    "group": "PillarA/Arithmetic",
+    "dominated_node_count": 6,
+    "immediate_dominator_child_count": 1,
+    "signal_out_degree": 1,
+    "signal_in_degree": 1,
+    "layer": 1,
     "is_source": false,
     "is_sink": false
   },
@@ -572,17 +572,6 @@
     "is_sink": false
   },
   {
-    "module": "CNNA.PillarA.Arithmetic.Actions.ActionFormatDecision",
-    "group": "PillarA/Arithmetic",
-    "dominated_node_count": 5,
-    "immediate_dominator_child_count": 1,
-    "signal_out_degree": 2,
-    "signal_in_degree": 1,
-    "layer": 2,
-    "is_source": false,
-    "is_sink": false
-  },
-  {
     "module": "CNNA.PillarA.Finite.StateSpace",
     "group": "PillarA/Finite",
     "dominated_node_count": 5,
@@ -623,6 +612,17 @@
     "signal_out_degree": 2,
     "signal_in_degree": 1,
     "layer": 36,
+    "is_source": false,
+    "is_sink": false
+  },
+  {
+    "module": "CNNA.PillarA.Arithmetic.Actions.ActionFormatDecision",
+    "group": "PillarA/Arithmetic",
+    "dominated_node_count": 5,
+    "immediate_dominator_child_count": 1,
+    "signal_out_degree": 1,
+    "signal_in_degree": 1,
+    "layer": 2,
     "is_source": false,
     "is_sink": false
   },
@@ -862,7 +862,7 @@
     "group": "PillarA/Arithmetic",
     "dominated_node_count": 3,
     "immediate_dominator_child_count": 1,
-    "signal_out_degree": 2,
+    "signal_out_degree": 1,
     "signal_in_degree": 0,
     "layer": 0,
     "is_source": true,
@@ -1034,17 +1034,6 @@
     "is_sink": false
   },
   {
-    "module": "CNNA.PillarA.Arithmetic.Schur.Recurrence",
-    "group": "PillarA/Arithmetic",
-    "dominated_node_count": 2,
-    "immediate_dominator_child_count": 1,
-    "signal_out_degree": 2,
-    "signal_in_degree": 1,
-    "layer": 5,
-    "is_source": false,
-    "is_sink": false
-  },
-  {
     "module": "CNNA.PillarA.Finite.UnitaryEvolution",
     "group": "PillarA/Finite",
     "dominated_node_count": 2,
@@ -1108,6 +1097,17 @@
     "signal_in_degree": 0,
     "layer": 0,
     "is_source": true,
+    "is_sink": false
+  },
+  {
+    "module": "CNNA.PillarA.Arithmetic.Schur.Recurrence",
+    "group": "PillarA/Arithmetic",
+    "dominated_node_count": 2,
+    "immediate_dominator_child_count": 1,
+    "signal_out_degree": 1,
+    "signal_in_degree": 1,
+    "layer": 5,
+    "is_source": false,
     "is_sink": false
   },
   {
@@ -1243,17 +1243,6 @@
     "is_sink": false
   },
   {
-    "module": "CNNA.PillarA.Arithmetic.Schur.L3Gaussian",
-    "group": "PillarA/Arithmetic",
-    "dominated_node_count": 1,
-    "immediate_dominator_child_count": 1,
-    "signal_out_degree": 2,
-    "signal_in_degree": 0,
-    "layer": 0,
-    "is_source": true,
-    "is_sink": false
-  },
-  {
     "module": "CNNA.PillarA.Arithmetic.Orders.DiscriminantConvention",
     "group": "PillarA/Arithmetic",
     "dominated_node_count": 1,
@@ -1305,17 +1294,6 @@
     "signal_out_degree": 2,
     "signal_in_degree": 1,
     "layer": 5,
-    "is_source": false,
-    "is_sink": false
-  },
-  {
-    "module": "CNNA.PillarA.Arithmetic.BoundarySource.RecursiveLevelHistoryRoute",
-    "group": "PillarA/Arithmetic",
-    "dominated_node_count": 1,
-    "immediate_dominator_child_count": 1,
-    "signal_out_degree": 2,
-    "signal_in_degree": 1,
-    "layer": 7,
     "is_source": false,
     "is_sink": false
   },
@@ -1430,18 +1408,18 @@
     "is_sink": false
   },
   {
-    "module": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTraceCancellationR3c2",
+    "module": "CNNA.PillarA.Arithmetic.Core.MatrixTransport",
     "group": "PillarA/Arithmetic",
     "dominated_node_count": 1,
     "immediate_dominator_child_count": 1,
-    "signal_out_degree": 2,
-    "signal_in_degree": 2,
-    "layer": 40,
-    "is_source": false,
+    "signal_out_degree": 1,
+    "signal_in_degree": 0,
+    "layer": 0,
+    "is_source": true,
     "is_sink": false
   },
   {
-    "module": "CNNA.PillarA.Arithmetic.Core.MatrixTransport",
+    "module": "CNNA.PillarA.Arithmetic.Schur.L3Gaussian",
     "group": "PillarA/Arithmetic",
     "dominated_node_count": 1,
     "immediate_dominator_child_count": 1,
@@ -1485,6 +1463,17 @@
     "is_sink": false
   },
   {
+    "module": "CNNA.PillarA.Arithmetic.BoundarySource.RecursiveLevelHistoryRoute",
+    "group": "PillarA/Arithmetic",
+    "dominated_node_count": 1,
+    "immediate_dominator_child_count": 1,
+    "signal_out_degree": 1,
+    "signal_in_degree": 1,
+    "layer": 7,
+    "is_source": false,
+    "is_sink": false
+  },
+  {
     "module": "CNNA.PillarA.ToC.GeneratedBranchFamily",
     "group": "PillarA/ToC",
     "dominated_node_count": 1,
@@ -1514,6 +1503,17 @@
     "signal_out_degree": 1,
     "signal_in_degree": 1,
     "layer": 22,
+    "is_source": false,
+    "is_sink": false
+  },
+  {
+    "module": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTraceCancellationR3c2",
+    "group": "PillarA/Arithmetic",
+    "dominated_node_count": 1,
+    "immediate_dominator_child_count": 1,
+    "signal_out_degree": 1,
+    "signal_in_degree": 2,
+    "layer": 40,
     "is_source": false,
     "is_sink": false
   },
@@ -1738,17 +1738,6 @@
     "is_sink": false
   },
   {
-    "module": "CNNA.PillarA.Arithmetic.Schur.CharpolyC",
-    "group": "PillarA/Arithmetic",
-    "dominated_node_count": 0,
-    "immediate_dominator_child_count": 0,
-    "signal_out_degree": 2,
-    "signal_in_degree": 2,
-    "layer": 7,
-    "is_source": false,
-    "is_sink": false
-  },
-  {
     "module": "CNNA.PillarA.ToC.IdealAddressEquiv",
     "group": "PillarA/ToC",
     "dominated_node_count": 0,
@@ -1767,17 +1756,6 @@
     "signal_out_degree": 2,
     "signal_in_degree": 1,
     "layer": 22,
-    "is_source": false,
-    "is_sink": false
-  },
-  {
-    "module": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorAccumulatedEntryCancellationR3c1",
-    "group": "PillarA/Arithmetic",
-    "dominated_node_count": 0,
-    "immediate_dominator_child_count": 0,
-    "signal_out_degree": 2,
-    "signal_in_degree": 1,
-    "layer": 24,
     "is_source": false,
     "is_sink": false
   },
@@ -1859,106 +1837,7 @@
     "is_sink": false
   },
   {
-    "module": "CNNA.PillarA.Arithmetic.BoundarySource.ExistingIdealThreadNoGo",
-    "group": "PillarA/Arithmetic",
-    "dominated_node_count": 0,
-    "immediate_dominator_child_count": 0,
-    "signal_out_degree": 1,
-    "signal_in_degree": 0,
-    "layer": 0,
-    "is_source": true,
-    "is_sink": false
-  },
-  {
-    "module": "CNNA.PillarA.Arithmetic.Core.FullBoundaryAudit",
-    "group": "PillarA/Arithmetic",
-    "dominated_node_count": 0,
-    "immediate_dominator_child_count": 0,
-    "signal_out_degree": 1,
-    "signal_in_degree": 0,
-    "layer": 0,
-    "is_source": true,
-    "is_sink": false
-  },
-  {
-    "module": "CNNA.PillarA.Arithmetic.Schur.L2Eisenstein",
-    "group": "PillarA/Arithmetic",
-    "dominated_node_count": 0,
-    "immediate_dominator_child_count": 0,
-    "signal_out_degree": 1,
-    "signal_in_degree": 0,
-    "layer": 0,
-    "is_source": true,
-    "is_sink": false
-  },
-  {
-    "module": "CNNA.PillarA.Arithmetic.BoundarySource.BoundarySourceDecisionLedger",
-    "group": "PillarA/Arithmetic",
-    "dominated_node_count": 0,
-    "immediate_dominator_child_count": 0,
-    "signal_out_degree": 1,
-    "signal_in_degree": 1,
-    "layer": 1,
-    "is_source": false,
-    "is_sink": false
-  },
-  {
-    "module": "CNNA.PillarA.Arithmetic.BoundarySource.BoundaryStateSubstrate",
-    "group": "PillarA/Arithmetic",
-    "dominated_node_count": 0,
-    "immediate_dominator_child_count": 0,
-    "signal_out_degree": 1,
-    "signal_in_degree": 1,
-    "layer": 1,
-    "is_source": false,
-    "is_sink": false
-  },
-  {
-    "module": "CNNA.PillarA.Arithmetic.BoundarySource.BranchAddressSubstrate",
-    "group": "PillarA/Arithmetic",
-    "dominated_node_count": 0,
-    "immediate_dominator_child_count": 0,
-    "signal_out_degree": 1,
-    "signal_in_degree": 1,
-    "layer": 1,
-    "is_source": false,
-    "is_sink": false
-  },
-  {
-    "module": "CNNA.PillarA.Arithmetic.BoundarySource.HistoryExpandedSubstrate",
-    "group": "PillarA/Arithmetic",
-    "dominated_node_count": 0,
-    "immediate_dominator_child_count": 0,
-    "signal_out_degree": 1,
-    "signal_in_degree": 1,
-    "layer": 1,
-    "is_source": false,
-    "is_sink": false
-  },
-  {
-    "module": "CNNA.PillarA.Arithmetic.BoundarySource.InterfaceExposureSubstrate",
-    "group": "PillarA/Arithmetic",
-    "dominated_node_count": 0,
-    "immediate_dominator_child_count": 0,
-    "signal_out_degree": 1,
-    "signal_in_degree": 1,
-    "layer": 1,
-    "is_source": false,
-    "is_sink": false
-  },
-  {
     "module": "CNNA.PillarA.Arithmetic.Core.BrightDtNSource",
-    "group": "PillarA/Arithmetic",
-    "dominated_node_count": 0,
-    "immediate_dominator_child_count": 0,
-    "signal_out_degree": 1,
-    "signal_in_degree": 1,
-    "layer": 1,
-    "is_source": false,
-    "is_sink": false
-  },
-  {
-    "module": "CNNA.PillarA.Arithmetic.Schur.IdentityLedger",
     "group": "PillarA/Arithmetic",
     "dominated_node_count": 0,
     "immediate_dominator_child_count": 0,
@@ -2035,12 +1914,12 @@
     "is_sink": false
   },
   {
-    "module": "CNNA.PillarA.Arithmetic.Schur.L1Baseline",
+    "module": "CNNA.PillarA.Arithmetic.Schur.CharpolyC",
     "group": "PillarA/Arithmetic",
     "dominated_node_count": 0,
     "immediate_dominator_child_count": 0,
     "signal_out_degree": 1,
-    "signal_in_degree": 1,
+    "signal_in_degree": 2,
     "layer": 7,
     "is_source": false,
     "is_sink": false
@@ -2156,6 +2035,17 @@
     "is_sink": false
   },
   {
+    "module": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorAccumulatedEntryCancellationR3c1",
+    "group": "PillarA/Arithmetic",
+    "dominated_node_count": 0,
+    "immediate_dominator_child_count": 0,
+    "signal_out_degree": 1,
+    "signal_in_degree": 1,
+    "layer": 24,
+    "is_source": false,
+    "is_sink": false
+  },
+  {
     "module": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInverseCandidateExecEntrySourceSM3eRq",
     "group": "PillarA/Arithmetic",
     "dominated_node_count": 0,
@@ -2229,17 +2119,6 @@
     "signal_out_degree": 1,
     "signal_in_degree": 1,
     "layer": 39,
-    "is_source": false,
-    "is_sink": false
-  },
-  {
-    "module": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldTerminalIdentityFromSM3db4aWR3c1dFull",
-    "group": "PillarA/Arithmetic",
-    "dominated_node_count": 0,
-    "immediate_dominator_child_count": 0,
-    "signal_out_degree": 1,
-    "signal_in_degree": 1,
-    "layer": 40,
     "is_source": false,
     "is_sink": false
   },
@@ -2338,17 +2217,6 @@
     "immediate_dominator_child_count": 0,
     "signal_out_degree": 1,
     "signal_in_degree": 2,
-    "layer": 46,
-    "is_source": false,
-    "is_sink": false
-  },
-  {
-    "module": "CNNA.PillarA.Arithmetic.Convergence.QuaternionRamanujanInterface",
-    "group": "PillarA/Arithmetic",
-    "dominated_node_count": 0,
-    "immediate_dominator_child_count": 0,
-    "signal_out_degree": 1,
-    "signal_in_degree": 3,
     "layer": 46,
     "is_source": false,
     "is_sink": false
@@ -2541,6 +2409,17 @@
     "is_sink": true
   },
   {
+    "module": "CNNA.PillarA.Arithmetic.BoundarySource.ExistingIdealThreadNoGo",
+    "group": "PillarA/Arithmetic",
+    "dominated_node_count": 0,
+    "immediate_dominator_child_count": 0,
+    "signal_out_degree": 0,
+    "signal_in_degree": 0,
+    "layer": 0,
+    "is_source": true,
+    "is_sink": true
+  },
+  {
     "module": "CNNA.PillarA.Arithmetic.BoundarySource.RecursiveLevelHistoryTypeDecision",
     "group": "PillarA/Arithmetic",
     "dominated_node_count": 0,
@@ -2553,6 +2432,28 @@
   },
   {
     "module": "CNNA.PillarA.Arithmetic.BuildAll",
+    "group": "PillarA/Arithmetic",
+    "dominated_node_count": 0,
+    "immediate_dominator_child_count": 0,
+    "signal_out_degree": 0,
+    "signal_in_degree": 0,
+    "layer": 0,
+    "is_source": true,
+    "is_sink": true
+  },
+  {
+    "module": "CNNA.PillarA.Arithmetic.Core.FullBoundaryAudit",
+    "group": "PillarA/Arithmetic",
+    "dominated_node_count": 0,
+    "immediate_dominator_child_count": 0,
+    "signal_out_degree": 0,
+    "signal_in_degree": 0,
+    "layer": 0,
+    "is_source": true,
+    "is_sink": true
+  },
+  {
+    "module": "CNNA.PillarA.Arithmetic.Schur.L2Eisenstein",
     "group": "PillarA/Arithmetic",
     "dominated_node_count": 0,
     "immediate_dominator_child_count": 0,
@@ -2904,6 +2805,72 @@
     "is_sink": true
   },
   {
+    "module": "CNNA.PillarA.Arithmetic.BoundarySource.BoundarySourceDecisionLedger",
+    "group": "PillarA/Arithmetic",
+    "dominated_node_count": 0,
+    "immediate_dominator_child_count": 0,
+    "signal_out_degree": 0,
+    "signal_in_degree": 1,
+    "layer": 1,
+    "is_source": false,
+    "is_sink": true
+  },
+  {
+    "module": "CNNA.PillarA.Arithmetic.BoundarySource.BoundaryStateSubstrate",
+    "group": "PillarA/Arithmetic",
+    "dominated_node_count": 0,
+    "immediate_dominator_child_count": 0,
+    "signal_out_degree": 0,
+    "signal_in_degree": 1,
+    "layer": 1,
+    "is_source": false,
+    "is_sink": true
+  },
+  {
+    "module": "CNNA.PillarA.Arithmetic.BoundarySource.BranchAddressSubstrate",
+    "group": "PillarA/Arithmetic",
+    "dominated_node_count": 0,
+    "immediate_dominator_child_count": 0,
+    "signal_out_degree": 0,
+    "signal_in_degree": 1,
+    "layer": 1,
+    "is_source": false,
+    "is_sink": true
+  },
+  {
+    "module": "CNNA.PillarA.Arithmetic.BoundarySource.HistoryExpandedSubstrate",
+    "group": "PillarA/Arithmetic",
+    "dominated_node_count": 0,
+    "immediate_dominator_child_count": 0,
+    "signal_out_degree": 0,
+    "signal_in_degree": 1,
+    "layer": 1,
+    "is_source": false,
+    "is_sink": true
+  },
+  {
+    "module": "CNNA.PillarA.Arithmetic.BoundarySource.InterfaceExposureSubstrate",
+    "group": "PillarA/Arithmetic",
+    "dominated_node_count": 0,
+    "immediate_dominator_child_count": 0,
+    "signal_out_degree": 0,
+    "signal_in_degree": 1,
+    "layer": 1,
+    "is_source": false,
+    "is_sink": true
+  },
+  {
+    "module": "CNNA.PillarA.Arithmetic.Schur.IdentityLedger",
+    "group": "PillarA/Arithmetic",
+    "dominated_node_count": 0,
+    "immediate_dominator_child_count": 0,
+    "signal_out_degree": 0,
+    "signal_in_degree": 1,
+    "layer": 1,
+    "is_source": false,
+    "is_sink": true
+  },
+  {
     "module": "CNNA.PillarA.Foundation.ExecComplexLemmas",
     "group": "PillarA/Foundation",
     "dominated_node_count": 0,
@@ -2922,6 +2889,17 @@
     "signal_out_degree": 0,
     "signal_in_degree": 1,
     "layer": 2,
+    "is_source": false,
+    "is_sink": true
+  },
+  {
+    "module": "CNNA.PillarA.Arithmetic.Schur.L1Baseline",
+    "group": "PillarA/Arithmetic",
+    "dominated_node_count": 0,
+    "immediate_dominator_child_count": 0,
+    "signal_out_degree": 0,
+    "signal_in_degree": 1,
+    "layer": 7,
     "is_source": false,
     "is_sink": true
   },
@@ -3113,6 +3091,17 @@
     "is_sink": true
   },
   {
+    "module": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldTerminalIdentityFromSM3db4aWR3c1dFull",
+    "group": "PillarA/Arithmetic",
+    "dominated_node_count": 0,
+    "immediate_dominator_child_count": 0,
+    "signal_out_degree": 0,
+    "signal_in_degree": 1,
+    "layer": 40,
+    "is_source": false,
+    "is_sink": true
+  },
+  {
     "module": "CNNA.PillarA.Structural.CayleyDickson.S6Slot1AlternativeLaw",
     "group": "PillarA/Structural",
     "dominated_node_count": 0,
@@ -3120,6 +3109,17 @@
     "signal_out_degree": 0,
     "signal_in_degree": 1,
     "layer": 40,
+    "is_source": false,
+    "is_sink": true
+  },
+  {
+    "module": "CNNA.PillarA.Arithmetic.Convergence.QuaternionRamanujanInterface",
+    "group": "PillarA/Arithmetic",
+    "dominated_node_count": 0,
+    "immediate_dominator_child_count": 0,
+    "signal_out_degree": 0,
+    "signal_in_degree": 3,
+    "layer": 46,
     "is_source": false,
     "is_sink": true
   },
@@ -3140,7 +3140,7 @@
     "dominated_node_count": 0,
     "immediate_dominator_child_count": 0,
     "signal_out_degree": 0,
-    "signal_in_degree": 72,
+    "signal_in_degree": 50,
     "layer": 50,
     "is_source": false,
     "is_sink": true

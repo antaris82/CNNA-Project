@@ -1,0 +1,43 @@
+{
+  "change_version": "P1.41",
+  "change_timestamp": "2026-05-12T09:10:00+02:00",
+  "changed_phase_ids": [
+    "1.1.1.1.5",
+    "1.1.1.1.5.1",
+    "1.1.1.1.5.2",
+    "1.1.1.1.5.3",
+    "1.1.1.1.5.4",
+    "1.1.1.1.5.5",
+    "21.0"
+  ],
+  "changed_object_ids": [
+    "LEG42",
+    "LEG37",
+    "CEX11"
+  ],
+  "changed_proof_dossier_ids": [
+    "LEG42",
+    "LEG37"
+  ],
+  "changed_scratchpad_phase_ids": [
+    "1.1.1.1.5.1",
+    "1.1.1.1.5.2",
+    "1.1.1.1.5.4",
+    "21.0"
+  ],
+  "new_guardrails": [
+    "GNG69",
+    "GNG70",
+    "GNG71"
+  ],
+  "new_static_findings": [
+    "SCF71",
+    "SCF72",
+    "SCF73"
+  ],
+  "new_workflows": [
+    "Repository cleanup, neutral refactor, post-refactor scan and Explorer sequencing workflow"
+  ],
+  "lean_code_changed": false,
+  "lean_build_run": false
+}
