@@ -1,0 +1,41 @@
+phase: "1.1.1.1.5.2"
+status: "yellow-active"
+status_meaning: "active implementable phase; not yet derived-only closed"
+started_on: "2026-05-12"
+repository: "antaris82/CNNA-Project"
+branch: "workflow/p1-branch-pr-rule"
+base_commit_at_detection: "af09a764d067bdd47e99d215bc6559d5efeca99c"
+operation: "phase-start"
+operator: "ChatGPT via GitHub connector"
+
+scope:
+  intent: "Start Phase 1.1.1.1.5.2 on the GitHub working branch."
+  write_mode: "trace marker only"
+  no_plan_semantics_invented: true
+  no_lean_code_changed: true
+  no_generated_docs_changed: true
+  root_readme_unchanged: true
+
+constraints:
+  derived_only_required: true
+  lean_code_remains_primary_truth_system: true
+  generated_artifacts_are_secondary_and_reviewable: true
+  expert_review_required: true
+  branch_before_main_rule: true
+
+observations:
+  available_non_main_branch: "workflow/p1-branch-pr-rule"
+  connector_code_search_indexed: false
+  roadmap_master_fetch_result: "Repository/masters/cnna_roadmap_master.yaml was fetchable but returned empty content through the connector."
+  action_taken: "Created a conservative phase-start trace marker instead of modifying unknown/empty master-plan semantics."
+
+entry_gate:
+  phase_is_started: true
+  phase_is_green: false
+  local_build_required_before_green: true
+  next_required_human_action: "Run the relevant local checks/build after actual implementation changes, then report green/red status."
+
+notes:
+  - "This marker is an operational GitHub trace, not a mathematical proof object."
+  - "No claim of derived-only closure is made by this file."
+  - "Any later plan-status promotion must cite the concrete derived objects or checked Lean code that justify the promotion."
