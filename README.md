@@ -206,14 +206,14 @@ This package has been developed and tested with **ChatGPT** as the assistant-sid
 
 The intended ChatGPT workflow is:
 
-1. Upload the current full tool zip.
+1. Upload the current full tool zip or point ChatGPT to the GitHub repository/branch.
 2. Give a bounded task, for example:
    - `Prüfe die Implementierbarkeit der nächsten zusammenhängenden Schritte.`
    - `Erstelle die Kontextdoku zur DtN Matrix.`
-   - `Schließe die grüne Phase im Plan und aktualisiere die Doku.`
+   - `Build ist grün; schließe die aktive Phase und setze die nächste aktive Phase.`
    - `Prüfe semantisch zusammengehörige Module auf Merge-/No-Merge-Kandidaten.`
    - `Füge einen neuen Workflow für <task> hinzu.`
-3. ChatGPT inspects the current package, modifies the appropriate source files, regenerates generated views when needed, and returns a full updated zip.
+3. ChatGPT inspects the current package, modifies the appropriate source files, and returns either a small GitHub PR/commit or a full updated zip when ZIP output is explicitly needed.
 4. Lean builds are checked locally by the user. The assistant must not claim a Lean build unless it actually ran one in the working environment.
 5. Build errors, semantic objections, or expert-review feedback can be fed back into ChatGPT as the next bounded task.
 
@@ -229,17 +229,19 @@ The workflow performs a thought-experiment implementation along the dependency c
 
 This is the current gate before new substantial content work.
 
-### 2. Phase closeout after a green local build or verified green CI
+### 2. Atomic phase closeout and next active cursor after a green local build or verified green CI
 
 Purpose: update the planning state after the user reports a successful local Lean build or after the CI controller receives verified green evidence for the active phase.
 
+The completed phase is not marked green in an isolated step. Green closeout and activation of the next phase are one atomic state transition.
+
 Typical actions:
 
-- mark the completed phase green only if the required evidence is present
-- update object/proof-dossier/scratchpad records
-- advance the active cursor
+- mark the completed active phase green only if the required evidence is present
+- select and set the next active phase in the same update
+- update object/proof-dossier/scratchpad records for both the completed phase and the next active cursor as needed
 - record remaining semantic or expert-review debt
-- generate only the necessary context documentation unless a full document is explicitly needed
+- avoid generated documentation unless it is explicitly requested or is the deliverable
 
 ### 3. Red Lean build repair backjump
 
@@ -314,7 +316,7 @@ A new workflow should usually add or update:
 - a phase or side-objective entry if it changes governance or generated behavior
 - object/proof-dossier/scratchpad records when it introduces a tracked tool object
 - a script or context profile if the operation should be repeatable
-- README text if users need to run or request it directly
+- README text only if users need to run or request it directly
 
 This is where the tool’s real scaling value lies. It turns repeated CNNA work into reproducible operations over a single state model: feasibility checks, context documentation, object dossiers, module inventories, blue-object review, phase closeouts, and later database-backed exploration can all be instantiated from the same Master YAML and generated views.
 
