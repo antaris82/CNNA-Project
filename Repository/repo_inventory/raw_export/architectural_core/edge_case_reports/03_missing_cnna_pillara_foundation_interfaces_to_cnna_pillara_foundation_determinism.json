@@ -1,0 +1,245 @@
+{
+  "slug": "cnna_pillara_foundation_interfaces_to_cnna_pillara_foundation_determinism",
+  "status": "missing",
+  "source": "CNNA.PillarA.Foundation.Interfaces",
+  "target": "CNNA.PillarA.Foundation.Determinism",
+  "source_group": "PillarA/Foundation",
+  "target_group": "PillarA/Foundation",
+  "source_path": "/mnt/data/toolchain_work/CNNA_Planning_Doc_Tool/Repository/repo_snapshot/CNNA/PillarA/Foundation/Interfaces.lean",
+  "target_path": "/mnt/data/toolchain_work/CNNA_Planning_Doc_Tool/Repository/repo_snapshot/CNNA/PillarA/Foundation/Determinism.lean",
+  "confidence": {
+    "strongest_confidence": null,
+    "strongest_confidence_weight": 0,
+    "confidence_counts": {},
+    "weighted_score": 0.0,
+    "reference_count": 0,
+    "unique_symbol_count": 0
+  },
+  "edge_forensics": {
+    "source": "CNNA.PillarA.Foundation.Interfaces",
+    "target": "CNNA.PillarA.Foundation.Determinism",
+    "source_group": "PillarA/Foundation",
+    "target_group": "PillarA/Foundation",
+    "status": "missing",
+    "present_in_semantic_mainline": false,
+    "present_in_weighted_semantic_mainline": false,
+    "target_open_namespaces": [],
+    "local_declaration_overlap": [],
+    "local_declaration_overlap_count": 0,
+    "source_alias_candidate_count": 399,
+    "source_opened_alias_candidate_count": 0,
+    "same_namespace_block": true,
+    "likely_causes": [
+      "unqualified_import_alias_surface",
+      "same_namespace_block"
+    ],
+    "confidence_counts": {},
+    "weighted_score": 0.0,
+    "strongest_confidence": null,
+    "strongest_confidence_weight": 0,
+    "reference_count": 0,
+    "unique_symbol_count": 0,
+    "sample_symbols": []
+  },
+  "weak_edge_summary": {
+    "priority": 100,
+    "category": "missing_semantic_edge",
+    "recommendation": "inspect target module for unqualified or non-declaration usage; consider explicit qualification or extending the forensic heuristic for fields/classes",
+    "source": "CNNA.PillarA.Foundation.Interfaces",
+    "target": "CNNA.PillarA.Foundation.Determinism",
+    "source_group": "PillarA/Foundation",
+    "target_group": "PillarA/Foundation",
+    "status": "missing",
+    "present_in_semantic_mainline": false,
+    "present_in_weighted_semantic_mainline": false,
+    "target_open_namespaces": [],
+    "local_declaration_overlap": [],
+    "local_declaration_overlap_count": 0,
+    "source_alias_candidate_count": 399,
+    "source_opened_alias_candidate_count": 0,
+    "same_namespace_block": true,
+    "likely_causes": [
+      "unqualified_import_alias_surface",
+      "same_namespace_block"
+    ],
+    "confidence_counts": {},
+    "weighted_score": 0.0,
+    "strongest_confidence": null,
+    "strongest_confidence_weight": 0,
+    "reference_count": 0,
+    "unique_symbol_count": 0,
+    "sample_symbols": []
+  },
+  "dependency_detail": null,
+  "probable_failure_modes": [
+    "no_detected_dependency_detail",
+    "same_namespace_block",
+    "unqualified_import_alias_surface"
+  ],
+  "suggested_actions": [
+    "Inspect the target module for structure-field, class-field or theorem-application usage that does not surface as a declaration token.",
+    "Consider explicitly qualifying at least one core source symbol in the target module to harden the semantic edge."
+  ],
+  "snippet_terms": {
+    "relevant_symbol_names": [],
+    "relevant_basenames": [
+      "BoundarySlice",
+      "ChannelContract",
+      "ChannelNet",
+      "ExecHermitian",
+      "ExecMat",
+      "ExecNormContract",
+      "ExecObservable",
+      "ExecState",
+      "HasBoundarySlice",
+      "HasCoarsening",
+      "HasLayerSlice",
+      "HasRefinement"
+    ],
+    "relevant_aliases": [],
+    "source_field_names": [],
+    "target_open_namespaces": []
+  },
+  "snippets": {
+    "source_declarations": [
+      {
+        "focus_line": 7,
+        "start_line": 5,
+        "end_line": 9,
+        "lines": [
+          {
+            "line": 5,
+            "text": ""
+          },
+          {
+            "line": 6,
+            "text": "set_option autoImplicit false"
+          },
+          {
+            "line": 7,
+            "text": ""
+          },
+          {
+            "line": 8,
+            "text": "namespace CNNA.PillarA.Foundation"
+          },
+          {
+            "line": 9,
+            "text": ""
+          }
+        ]
+      },
+      {
+        "focus_line": 10,
+        "start_line": 8,
+        "end_line": 12,
+        "lines": [
+          {
+            "line": 8,
+            "text": "namespace CNNA.PillarA.Foundation"
+          },
+          {
+            "line": 9,
+            "text": ""
+          },
+          {
+            "line": 10,
+            "text": "universe u v w"
+          },
+          {
+            "line": 11,
+            "text": ""
+          },
+          {
+            "line": 12,
+            "text": "abbrev LayeredCell (Cell : Nat → Type u) : Type u :="
+          }
+        ]
+      },
+      {
+        "focus_line": 18,
+        "start_line": 16,
+        "end_line": 20,
+        "lines": [
+          {
+            "line": 16,
+            "text": "  level : Nat"
+          },
+          {
+            "line": 17,
+            "text": "  carrier : Finset (Cell level)"
+          },
+          {
+            "line": 18,
+            "text": ""
+          },
+          {
+            "line": 19,
+            "text": "namespace LayerSlice"
+          },
+          {
+            "line": 20,
+            "text": ""
+          }
+        ]
+      },
+      {
+        "focus_line": 21,
+        "start_line": 19,
+        "end_line": 23,
+        "lines": [
+          {
+            "line": 19,
+            "text": "namespace LayerSlice"
+          },
+          {
+            "line": 20,
+            "text": ""
+          },
+          {
+            "line": 21,
+            "text": "variable {Cell : Nat → Type u} [SubstrateClass Cell]"
+          },
+          {
+            "line": 22,
+            "text": ""
+          },
+          {
+            "line": 23,
+            "text": "def card (S : LayerSlice Cell) : Nat :="
+          }
+        ]
+      },
+      {
+        "focus_line": 25,
+        "start_line": 23,
+        "end_line": 27,
+        "lines": [
+          {
+            "line": 23,
+            "text": "def card (S : LayerSlice Cell) : Nat :="
+          },
+          {
+            "line": 24,
+            "text": "  S.carrier.card"
+          },
+          {
+            "line": 25,
+            "text": ""
+          },
+          {
+            "line": 26,
+            "text": "theorem mem_carrier_mk_iff {L : Nat} {s : Finset (Cell L)} {x : Cell L} :"
+          },
+          {
+            "line": 27,
+            "text": "    x ∈ (LayerSlice.mk L s).carrier ↔ x ∈ s := by"
+          }
+        ]
+      }
+    ],
+    "target_reference_surface": [],
+    "target_open_namespace_surface": [],
+    "target_projection_surface": []
+  }
+}

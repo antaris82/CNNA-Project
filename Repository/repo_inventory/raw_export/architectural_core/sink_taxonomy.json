@@ -1,0 +1,199 @@
+{
+  "sink_count": 31,
+  "classification_counts": {
+    "ambiguous_leaf": 13,
+    "diagnostic_leaf": 5,
+    "foundation_aux_leaf": 2,
+    "intentional_output": 7,
+    "proof_obligation_terminal": 3,
+    "research_leaf": 1
+  },
+  "entries": [
+    {
+      "module": "CNNA.PillarA.Arithmetic.BoundarySource.BoundarySourceDecisionLedger",
+      "group": "PillarA/Arithmetic",
+      "classification": "ambiguous_leaf",
+      "rationale": "No dedicated rule matched."
+    },
+    {
+      "module": "CNNA.PillarA.Arithmetic.BoundarySource.BoundaryStateSubstrate",
+      "group": "PillarA/Arithmetic",
+      "classification": "ambiguous_leaf",
+      "rationale": "No dedicated rule matched."
+    },
+    {
+      "module": "CNNA.PillarA.Arithmetic.BoundarySource.BranchAddressSubstrate",
+      "group": "PillarA/Arithmetic",
+      "classification": "ambiguous_leaf",
+      "rationale": "No dedicated rule matched."
+    },
+    {
+      "module": "CNNA.PillarA.Arithmetic.BoundarySource.ExistingIdealThreadNoGo",
+      "group": "PillarA/Arithmetic",
+      "classification": "ambiguous_leaf",
+      "rationale": "No dedicated rule matched."
+    },
+    {
+      "module": "CNNA.PillarA.Arithmetic.BoundarySource.HistoryExpandedSubstrate",
+      "group": "PillarA/Arithmetic",
+      "classification": "ambiguous_leaf",
+      "rationale": "No dedicated rule matched."
+    },
+    {
+      "module": "CNNA.PillarA.Arithmetic.BoundarySource.InterfaceExposureSubstrate",
+      "group": "PillarA/Arithmetic",
+      "classification": "ambiguous_leaf",
+      "rationale": "No dedicated rule matched."
+    },
+    {
+      "module": "CNNA.PillarA.Arithmetic.Convergence.CDArithmeticCompatibility",
+      "group": "PillarA/Arithmetic",
+      "classification": "ambiguous_leaf",
+      "rationale": "No dedicated rule matched."
+    },
+    {
+      "module": "CNNA.PillarA.Arithmetic.Convergence.QuaternionRamanujanInterface",
+      "group": "PillarA/Arithmetic",
+      "classification": "ambiguous_leaf",
+      "rationale": "No dedicated rule matched."
+    },
+    {
+      "module": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldTerminalIdentityFromSM3db4aWR3c1dFull",
+      "group": "PillarA/Arithmetic",
+      "classification": "ambiguous_leaf",
+      "rationale": "No dedicated rule matched."
+    },
+    {
+      "module": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalQuadraticDiscriminantSourceFromSM9g1Window",
+      "group": "PillarA/Arithmetic",
+      "classification": "ambiguous_leaf",
+      "rationale": "No dedicated rule matched."
+    },
+    {
+      "module": "CNNA.PillarA.Handoff.Outputs.A_to_CayleyDickson",
+      "group": "PillarA/Handoff",
+      "classification": "ambiguous_leaf",
+      "rationale": "No dedicated rule matched."
+    },
+    {
+      "module": "CNNA.PillarA.Structural.CayleyDickson.S6CanonicalNormSqSimultaneousSystem",
+      "group": "PillarA/Structural",
+      "classification": "ambiguous_leaf",
+      "rationale": "No dedicated rule matched."
+    },
+    {
+      "module": "CNNA.PillarA.Structural.CayleyDickson.S6Slot1AlternativeLaw",
+      "group": "PillarA/Structural",
+      "classification": "ambiguous_leaf",
+      "rationale": "No dedicated rule matched."
+    },
+    {
+      "module": "CNNA.PillarA.Finite.GibbsStateSeed",
+      "group": "PillarA/Finite",
+      "classification": "diagnostic_leaf",
+      "rationale": "Domain-side branch leaf outside explicit handoff outputs."
+    },
+    {
+      "module": "CNNA.PillarA.Finite.Selection",
+      "group": "PillarA/Finite",
+      "classification": "diagnostic_leaf",
+      "rationale": "Domain-side branch leaf outside explicit handoff outputs."
+    },
+    {
+      "module": "CNNA.PillarA.Finite.SpectralDecomposition",
+      "group": "PillarA/Finite",
+      "classification": "diagnostic_leaf",
+      "rationale": "Domain-side branch leaf outside explicit handoff outputs."
+    },
+    {
+      "module": "CNNA.PillarA.Geometry.SpacetimePaths",
+      "group": "PillarA/Geometry",
+      "classification": "diagnostic_leaf",
+      "rationale": "Domain-side branch leaf outside explicit handoff outputs."
+    },
+    {
+      "module": "CNNA.PillarA.Network.RelativeEntropyFlow",
+      "group": "PillarA/Network",
+      "classification": "diagnostic_leaf",
+      "rationale": "Domain-side branch leaf outside explicit handoff outputs."
+    },
+    {
+      "module": "CNNA.PillarA.Foundation.ExecComplexLemmas",
+      "group": "PillarA/Foundation",
+      "classification": "foundation_aux_leaf",
+      "rationale": "Foundation auxiliary/analysis leaf."
+    },
+    {
+      "module": "CNNA.PillarA.Foundation.SubstrateAnalysis",
+      "group": "PillarA/Foundation",
+      "classification": "foundation_aux_leaf",
+      "rationale": "Foundation auxiliary/analysis leaf."
+    },
+    {
+      "module": "CNNA.PillarA.Handoff.Inputs.B_to_A",
+      "group": "PillarA/Handoff",
+      "classification": "intentional_output",
+      "rationale": "Explicit handoff input/output leaf."
+    },
+    {
+      "module": "CNNA.PillarA.Handoff.Inputs.C_to_A",
+      "group": "PillarA/Handoff",
+      "classification": "intentional_output",
+      "rationale": "Explicit handoff input/output leaf."
+    },
+    {
+      "module": "CNNA.PillarA.Handoff.Inputs.D_to_A",
+      "group": "PillarA/Handoff",
+      "classification": "intentional_output",
+      "rationale": "Explicit handoff input/output leaf."
+    },
+    {
+      "module": "CNNA.PillarA.Handoff.Inputs.E_to_A",
+      "group": "PillarA/Handoff",
+      "classification": "intentional_output",
+      "rationale": "Explicit handoff input/output leaf."
+    },
+    {
+      "module": "CNNA.PillarA.Handoff.Outputs.A_to_C",
+      "group": "PillarA/Handoff",
+      "classification": "intentional_output",
+      "rationale": "Explicit handoff input/output leaf."
+    },
+    {
+      "module": "CNNA.PillarA.Handoff.Outputs.A_to_D",
+      "group": "PillarA/Handoff",
+      "classification": "intentional_output",
+      "rationale": "Explicit handoff input/output leaf."
+    },
+    {
+      "module": "CNNA.PillarA.Handoff.Outputs.A_to_E",
+      "group": "PillarA/Handoff",
+      "classification": "intentional_output",
+      "rationale": "Explicit handoff input/output leaf."
+    },
+    {
+      "module": "CNNA.PillarA.Handoff.ProofObligationI.Completion",
+      "group": "PillarA/Handoff",
+      "classification": "proof_obligation_terminal",
+      "rationale": "Proof-obligation closure/preparation leaf."
+    },
+    {
+      "module": "CNNA.PillarA.Handoff.ProofObligationII.Preparation",
+      "group": "PillarA/Handoff",
+      "classification": "proof_obligation_terminal",
+      "rationale": "Proof-obligation closure/preparation leaf."
+    },
+    {
+      "module": "CNNA.PillarA.Handoff.ProofObligationIII.Preparation",
+      "group": "PillarA/Handoff",
+      "classification": "proof_obligation_terminal",
+      "rationale": "Proof-obligation closure/preparation leaf."
+    },
+    {
+      "module": "CNNA.PillarA.Structural.CayleyDickson.S6ResearchReadinessBridge",
+      "group": "PillarA/Structural",
+      "classification": "research_leaf",
+      "rationale": "Research/readiness leaf by module naming."
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+[
+  {
+    "module": "CNNA.PillarA.Handoff.Core.SectorExport",
+    "group": "PillarA/Handoff",
+    "bridge_participation_count": 5,
+    "as_source_count": 5,
+    "as_target_count": 0
+  },
+  {
+    "module": "CNNA.PillarA.Finite.DirichletLaplacian",
+    "group": "PillarA/Finite",
+    "bridge_participation_count": 4,
+    "as_source_count": 4,
+    "as_target_count": 0
+  },
+  {
+    "module": "CNNA.PillarA.Foundation.MatrixNorms",
+    "group": "PillarA/Foundation",
+    "bridge_participation_count": 4,
+    "as_source_count": 0,
+    "as_target_count": 4
+  },
+  {
+    "module": "CNNA.PillarA.DtN.DtNStabilized",
+    "group": "PillarA/DtN",
+    "bridge_participation_count": 3,
+    "as_source_count": 3,
+    "as_target_count": 0
+  },
+  {
+    "module": "CNNA.PillarA.Closure.Notation",
+    "group": "PillarA/Closure",
+    "bridge_participation_count": 1,
+    "as_source_count": 0,
+    "as_target_count": 1
+  },
+  {
+    "module": "CNNA.PillarA.Closure.RegularizationClosure",
+    "group": "PillarA/Closure",
+    "bridge_participation_count": 1,
+    "as_source_count": 0,
+    "as_target_count": 1
+  },
+  {
+    "module": "CNNA.PillarA.Coupling.MultiSchur",
+    "group": "PillarA/Coupling",
+    "bridge_participation_count": 1,
+    "as_source_count": 0,
+    "as_target_count": 1
+  },
+  {
+    "module": "CNNA.PillarA.DtN.Notation",
+    "group": "PillarA/DtN",
+    "bridge_participation_count": 1,
+    "as_source_count": 0,
+    "as_target_count": 1
+  },
+  {
+    "module": "CNNA.PillarA.Finite.Approximant",
+    "group": "PillarA/Finite",
+    "bridge_participation_count": 1,
+    "as_source_count": 0,
+    "as_target_count": 1
+  },
+  {
+    "module": "CNNA.PillarA.Foundation.RegularizationPolicy",
+    "group": "PillarA/Foundation",
+    "bridge_participation_count": 1,
+    "as_source_count": 0,
+    "as_target_count": 1
+  },
+  {
+    "module": "CNNA.PillarA.Foundation.WeightPolicy",
+    "group": "PillarA/Foundation",
+    "bridge_participation_count": 1,
+    "as_source_count": 0,
+    "as_target_count": 1
+  },
+  {
+    "module": "CNNA.PillarA.Geometry.LCPMeasure",
+    "group": "PillarA/Geometry",
+    "bridge_participation_count": 1,
+    "as_source_count": 1,
+    "as_target_count": 0
+  },
+  {
+    "module": "CNNA.PillarA.Network.InfiniteCarrier",
+    "group": "PillarA/Network",
+    "bridge_participation_count": 1,
+    "as_source_count": 0,
+    "as_target_count": 1
+  },
+  {
+    "module": "CNNA.PillarA.ToC.Addressing",
+    "group": "PillarA/ToC",
+    "bridge_participation_count": 1,
+    "as_source_count": 0,
+    "as_target_count": 1
+  }
+]

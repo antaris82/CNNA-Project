@@ -1,0 +1,6 @@
+context_score	matched_terms	Item	State
+20	module consolidation; merge; no-merge; compatibility	New active cursor	The active cursor is now 1.1.1.1.5, Semantic module consolidation audit and compatibility-preserving merge/no-merge gate. Phase 1.1.1.2 is orange until this gate closes.
+12	merge; no-merge; boundarysource; handoff	Initial code finding	Direct code inspection found high-confidence clone/schema candidates in BoundarySource substrate ledgers and Handoff input/output wrappers; SM/generated proof chains and Cayley-Dickson S6 chains are explicitly no-merge-until-proven.
+5	facade	Lean source status	No Lean source file was edited. Any later consolidation must preserve old import paths through facades and provide local full-build plus import/declaration regression evidence.
+5	module consolidation	Tool version	Tool version advanced to V1.12 for inserting a semantic module consolidation gate before new substantive Lean code.
+5	refactor	Tool/workflow change timestamp	The V1.12 planning/refactor-governance update is recorded at 2026-05-10T11:16:00+02:00.

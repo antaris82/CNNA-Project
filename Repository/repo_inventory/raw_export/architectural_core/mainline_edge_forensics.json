@@ -1,0 +1,2630 @@
+{
+  "edge_count": 67,
+  "status_counts": {
+    "missing": 3,
+    "strong": 64
+  },
+  "edges": [
+    {
+      "source": "CNNA.PillarA.Foundation.HermitianStructure",
+      "target": "CNNA.PillarA.Foundation.ExecComplex",
+      "source_group": "PillarA/Foundation",
+      "target_group": "PillarA/Foundation",
+      "status": "strong",
+      "present_in_semantic_mainline": false,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 56,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 1
+      },
+      "weighted_score": 3.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 1,
+      "unique_symbol_count": 1,
+      "sample_symbols": [
+        "CNNA.PillarA.Foundation.SeedScalar"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Foundation.ExecComplex",
+      "target": "CNNA.PillarA.Foundation.MatrixNorms",
+      "source_group": "PillarA/Foundation",
+      "target_group": "PillarA/Foundation",
+      "status": "strong",
+      "present_in_semantic_mainline": false,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation.MatrixNorm.Exec.ExecComplex"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 167,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "imported_unique_alias": 2,
+        "qualified_suffix": 21
+      },
+      "weighted_score": 65.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 23,
+      "unique_symbol_count": 5,
+      "sample_symbols": [
+        "CNNA.PillarA.Foundation.ExecComplex",
+        "CNNA.PillarA.Foundation.ExecComplex.ext",
+        "CNNA.PillarA.Foundation.ExecComplex.star_def",
+        "CNNA.PillarA.Foundation.ExecComplex.zero_im",
+        "CNNA.PillarA.Foundation.ExecComplex.zero_re"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Foundation.MatrixNorms",
+      "target": "CNNA.PillarA.Foundation.Interfaces",
+      "source_group": "PillarA/Foundation",
+      "target_group": "PillarA/Foundation",
+      "status": "strong",
+      "present_in_semantic_mainline": false,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [],
+      "local_declaration_overlap": [
+        "ExecMat",
+        "frobeniusSq",
+        "frobeniusSq_nonneg",
+        "shift",
+        "zeroTest",
+        "zeroTest_eq_true_iff"
+      ],
+      "local_declaration_overlap_count": 6,
+      "source_alias_candidate_count": 211,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 6
+      },
+      "weighted_score": 18.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 6,
+      "unique_symbol_count": 6,
+      "sample_symbols": [
+        "CNNA.PillarA.Foundation.MatrixNorm.Exec.ExecMat",
+        "CNNA.PillarA.Foundation.MatrixNorm.Exec.frobeniusSq",
+        "CNNA.PillarA.Foundation.MatrixNorm.Exec.frobeniusSq_nonneg",
+        "CNNA.PillarA.Foundation.MatrixNorm.Exec.shift",
+        "CNNA.PillarA.Foundation.MatrixNorm.Exec.zeroTest",
+        "CNNA.PillarA.Foundation.MatrixNorm.Exec.zeroTest_eq_true_iff"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Foundation.Interfaces",
+      "target": "CNNA.PillarA.Foundation.Determinism",
+      "source_group": "PillarA/Foundation",
+      "target_group": "PillarA/Foundation",
+      "status": "missing",
+      "present_in_semantic_mainline": false,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 399,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {},
+      "weighted_score": 0.0,
+      "strongest_confidence": null,
+      "strongest_confidence_weight": 0,
+      "reference_count": 0,
+      "unique_symbol_count": 0,
+      "sample_symbols": []
+    },
+    {
+      "source": "CNNA.PillarA.Foundation.Determinism",
+      "target": "CNNA.PillarA.ToC.Contract",
+      "source_group": "PillarA/Foundation",
+      "target_group": "PillarA/ToC",
+      "status": "missing",
+      "present_in_semantic_mainline": false,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 132,
+      "source_opened_alias_candidate_count": 132,
+      "same_namespace_block": false,
+      "likely_causes": [
+        "open_namespace_resolution_surface",
+        "unqualified_import_alias_surface"
+      ],
+      "confidence_counts": {},
+      "weighted_score": 0.0,
+      "strongest_confidence": null,
+      "strongest_confidence_weight": 0,
+      "reference_count": 0,
+      "unique_symbol_count": 0,
+      "sample_symbols": []
+    },
+    {
+      "source": "CNNA.PillarA.ToC.Contract",
+      "target": "CNNA.PillarA.ToC.Addressing",
+      "source_group": "PillarA/ToC",
+      "target_group": "PillarA/ToC",
+      "status": "strong",
+      "present_in_semantic_mainline": false,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 312,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 2
+      },
+      "weighted_score": 6.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 2,
+      "unique_symbol_count": 2,
+      "sample_symbols": [
+        "CNNA.PillarA.ToC.DirectedFamily",
+        "CNNA.PillarA.ToC.IdealThread"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.ToC.Addressing",
+      "target": "CNNA.PillarA.ToC.IdealAddressEquiv",
+      "source_group": "PillarA/ToC",
+      "target_group": "PillarA/ToC",
+      "status": "strong",
+      "present_in_semantic_mainline": false,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 189,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 5,
+        "same_namespace_short_name": 1
+      },
+      "weighted_score": 18.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 6,
+      "unique_symbol_count": 6,
+      "sample_symbols": [
+        "CNNA.PillarA.ToC.AddressPresentation",
+        "CNNA.PillarA.ToC.AddressPresentation.addressOf_injective",
+        "CNNA.PillarA.ToC.AddressPresentation.addressOf_root_eq_root",
+        "CNNA.PillarA.ToC.AddressPresentation.cellOf_root_eq_root",
+        "CNNA.PillarA.ToC.AddressPresentation.child_mem_of_parent_eq",
+        "CNNA.PillarA.ToC.AddressPresentation.parent_eq_of_child_mem"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.ToC.IdealAddressEquiv",
+      "target": "CNNA.PillarA.ToC.ConcreteIdeal",
+      "source_group": "PillarA/ToC",
+      "target_group": "PillarA/ToC",
+      "status": "strong",
+      "present_in_semantic_mainline": false,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation"
+      ],
+      "local_declaration_overlap": [
+        "ext"
+      ],
+      "local_declaration_overlap_count": 1,
+      "source_alias_candidate_count": 130,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 7
+      },
+      "weighted_score": 21.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 7,
+      "unique_symbol_count": 5,
+      "sample_symbols": [
+        "CNNA.PillarA.ToC.IdealAddressEquiv",
+        "CNNA.PillarA.ToC.IdealAddressEquiv.decode",
+        "CNNA.PillarA.ToC.IdealAddressEquiv.decode_encode",
+        "CNNA.PillarA.ToC.IdealAddressEquiv.encode",
+        "CNNA.PillarA.ToC.IdealAddressEquiv.encode_decode"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.ToC.ConcreteIdeal",
+      "target": "CNNA.PillarA.ToC.Concrete",
+      "source_group": "PillarA/ToC",
+      "target_group": "PillarA/ToC",
+      "status": "strong",
+      "present_in_semantic_mainline": false,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation"
+      ],
+      "local_declaration_overlap": [
+        "ext"
+      ],
+      "local_declaration_overlap_count": 1,
+      "source_alias_candidate_count": 98,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 11
+      },
+      "weighted_score": 33.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 11,
+      "unique_symbol_count": 3,
+      "sample_symbols": [
+        "CNNA.PillarA.ToC.ConcreteIdeal.ReferenceAddr",
+        "CNNA.PillarA.ToC.ConcreteIdeal.ReferenceCell",
+        "CNNA.PillarA.ToC.ConcreteIdeal.referenceFamily"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.ToC.Concrete",
+      "target": "CNNA.PillarA.ToC.GeneratedBranchFamily",
+      "source_group": "PillarA/ToC",
+      "target_group": "PillarA/ToC",
+      "status": "strong",
+      "present_in_semantic_mainline": false,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 371,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "imported_unique_alias": 2,
+        "qualified_suffix": 9,
+        "same_namespace_short_name": 3
+      },
+      "weighted_score": 38.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 14,
+      "unique_symbol_count": 7,
+      "sample_symbols": [
+        "CNNA.PillarA.ToC.ConcretePolicyOf",
+        "CNNA.PillarA.ToC.DirectedFamily.truncate_carrier_of_le",
+        "CNNA.PillarA.ToC.ToCStrong.approximant",
+        "CNNA.PillarA.ToC.ToCStrong.approximant_eq_truncate",
+        "CNNA.PillarA.ToC.ToCStrong.ofIdeal",
+        "CNNA.PillarA.ToC.ToCStrongOf",
+        "CNNA.PillarA.ToC.TruncatedFamily.ext"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.ToC.GeneratedBranchFamily",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedSource",
+      "source_group": "PillarA/ToC",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": false,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 116,
+      "source_opened_alias_candidate_count": 116,
+      "same_namespace_block": false,
+      "likely_causes": [
+        "open_namespace_resolution_surface",
+        "unqualified_import_alias_surface"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 8
+      },
+      "weighted_score": 24.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 8,
+      "unique_symbol_count": 5,
+      "sample_symbols": [
+        "CNNA.PillarA.ToC.GeneratedBranchFamily.NonSingletonWitness",
+        "CNNA.PillarA.ToC.regularGeneratedFamily",
+        "CNNA.PillarA.ToC.regularGeneratedFamily_nonSingletonAtSucc",
+        "CNNA.PillarA.ToC.variableGeneratedFamily",
+        "CNNA.PillarA.ToC.variableGeneratedFamily_nonSingletonAtSucc"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedSource",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedMainPath",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "missing",
+      "present_in_semantic_mainline": false,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 126,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {},
+      "weighted_score": 0.0,
+      "strongest_confidence": null,
+      "strongest_confidence_weight": 0,
+      "reference_count": 0,
+      "unique_symbol_count": 0,
+      "sample_symbols": []
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedMainPath",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedApproximantCore",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 285,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "imported_unique_alias": 1,
+        "qualified_suffix": 19
+      },
+      "weighted_score": 58.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 20,
+      "unique_symbol_count": 8,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedMainPath",
+        "CNNA.PillarA.Arithmetic.Smoke.SM1RGeneratedVariationLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedMainPath",
+        "CNNA.PillarA.Arithmetic.Smoke.noArithmeticSpecialVariation",
+        "CNNA.PillarA.Arithmetic.Smoke.noMatrixDataYet",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedMainPath",
+        "CNNA.PillarA.Arithmetic.Smoke.sm1RGeneratedVariationLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedMainPath"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedApproximantCore",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedBoundaryInteriorPartition",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "no_matrix_data",
+        "route_generated",
+        "status_forwarded"
+      ],
+      "local_declaration_overlap_count": 3,
+      "source_alias_candidate_count": 405,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "imported_unique_alias": 2,
+        "qualified_suffix": 40
+      },
+      "weighted_score": 122.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 42,
+      "unique_symbol_count": 6,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedApproximantStrong",
+        "CNNA.PillarA.Arithmetic.Smoke.SM2RFiniteCarrierAPIStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM2RGeneratedApproximantLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedApproximantStrong",
+        "CNNA.PillarA.Arithmetic.Smoke.sm2RGeneratedApproximantLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedApproximantStrong"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedBoundaryInteriorPartition",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedDirichletEntry",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 424,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "imported_unique_alias": 2,
+        "qualified_suffix": 74
+      },
+      "weighted_score": 224.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 76,
+      "unique_symbol_count": 13,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedApproximantIndex",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedApproximantIndex.cell",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedApproximantIndex.level",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedBoundaryIndex",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedBoundaryIndex.toApproximantIndex",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedBoundaryInteriorPartition",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorIndex",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorIndex.toApproximantIndex",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3aRGeneratedPartitionLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3aRNoCutSpecBoundaryPortsStatus"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedDirichletEntry",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlock",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "no_dtn",
+        "no_inverse"
+      ],
+      "local_declaration_overlap_count": 2,
+      "source_alias_candidate_count": 419,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "imported_unique_alias": 1,
+        "qualified_suffix": 36
+      },
+      "weighted_score": 109.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 37,
+      "unique_symbol_count": 12,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedWeightPolicyEntrySource",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3bRGeneratedDirichletEntryLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.diag_degree_or_regularized_degree",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedAdjacent",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedDirichletMatrix",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedDirichlet_degree",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedDirichlet_entry",
+        "CNNA.PillarA.Arithmetic.Smoke.offdiag_of_adjacent",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedWeightPolicyEntrySource",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3bRGeneratedDirichletEntryLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlock",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCandidate",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 238,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "imported_unique_alias": 1,
+        "qualified_suffix": 16
+      },
+      "weighted_score": 49.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 17,
+      "unique_symbol_count": 6,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockStructureProfile",
+        "CNNA.PillarA.Arithmetic.Smoke.InteriorBlockStructureProfile",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3cRGeneratedInteriorBlockLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedInteriorBlockStructureProfile",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3cRGeneratedInteriorBlockLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedInteriorBlockStructureProfile"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCandidate",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCandidateEntry",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "noArithmeticTarget",
+        "noDtnDataYet",
+        "noExternalInteriorEliminationCertificate",
+        "noTwoSidedInv"
+      ],
+      "local_declaration_overlap_count": 4,
+      "source_alias_candidate_count": 221,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "imported_unique_alias": 1,
+        "qualified_suffix": 9
+      },
+      "weighted_score": 28.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 10,
+      "unique_symbol_count": 5,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCandidate",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3dRGeneratedInteriorEliminationCandidateLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedInteriorEliminationCandidate",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3dRGeneratedInteriorEliminationCandidateLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedInteriorEliminationCandidate"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCandidateEntry",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTwoSidedInv",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.DtN",
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 222,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "imported_unique_alias": 1,
+        "qualified_suffix": 45
+      },
+      "weighted_score": 136.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 46,
+      "unique_symbol_count": 8,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCandidateEntry",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3daRGeneratedInteriorEliminationCandidateEntryLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.candidateMatrix_from_candidateEntry",
+        "CNNA.PillarA.Arithmetic.Smoke.candidateMatrix_from_candidateEntry_entry",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedInteriorEliminationCandidateEntry_from_treeRecursiveProfile_value",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedInteriorEliminationCandidateEntry",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3daRGeneratedInteriorEliminationCandidateEntryLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedInteriorEliminationCandidateEntry"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTwoSidedInv",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateStart",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 287,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 15
+      },
+      "weighted_score": 45.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 15,
+      "unique_symbol_count": 9,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedCandidateEntryShapeAudit",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedCandidateEntryShapeAudit.fromCandidateEntry",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTwoSidedInvObstruction",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3eRGeneratedTwoSidedInvLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.candidateEntry_eq_interiorBlock",
+        "CNNA.PillarA.Arithmetic.Smoke.candidateMatrix_entry_eq_interiorBlock",
+        "CNNA.PillarA.Arithmetic.Smoke.candidateMatrix_eq_interiorBlock",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedInteriorTwoSidedInvObstruction_fromShapeAudit",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3eRGeneratedTwoSidedInvLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateStart",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCarrier",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "noDtnData",
+        "noInteriorEliminationCertificate",
+        "noTwoSidedInv"
+      ],
+      "local_declaration_overlap_count": 3,
+      "source_alias_candidate_count": 315,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "imported_unique_alias": 1,
+        "qualified_suffix": 5
+      },
+      "weighted_score": 16.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 6,
+      "unique_symbol_count": 4,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db0RPositiveFirstLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3dbRPositiveFirstContract",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3db0RPositiveFirstLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3dbRPositiveFirstContract"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCarrier",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationStep",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "noMatrixInv"
+      ],
+      "local_declaration_overlap_count": 1,
+      "source_alias_candidate_count": 379,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "imported_unique_alias": 2,
+        "qualified_suffix": 29,
+        "same_namespace_short_name": 1
+      },
+      "weighted_score": 92.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 32,
+      "unique_symbol_count": 8,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCarrier",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationNode",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db1RCandidateSourceStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db1RGeneratedInteriorEliminationCarrierLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db1RProfileSourceStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedInteriorEliminationCarrier",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3db1RGeneratedInteriorEliminationCarrierLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedInteriorEliminationCarrier"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationStep",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationTrace",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 373,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "imported_unique_alias": 1,
+        "qualified_suffix": 24
+      },
+      "weighted_score": 73.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 25,
+      "unique_symbol_count": 10,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationStep",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorPivotDatum",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorPivotDatum.pivot_bound_to_SM3db1R_node",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorResidualDatum",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorStepUpdate",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db2RGeneratedInteriorEliminationStepLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedInteriorLocalColumnResidual",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedInteriorLocalRowResidual",
+        "CNNA.PillarA.Arithmetic.Smoke.localStep_from_SM3db1R_node",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3db2RGeneratedInteriorEliminationStepLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationTrace",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateEntry",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "noMatrixExport"
+      ],
+      "local_declaration_overlap_count": 1,
+      "source_alias_candidate_count": 310,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 45,
+        "same_namespace_short_name": 1
+      },
+      "weighted_score": 138.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 46,
+      "unique_symbol_count": 7,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationTrace",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationTrace.source_eq_SM3cR_SM3dR",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db3RGeneratedInteriorEliminationTraceLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db3RTraceSourceStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedInteriorEliminationTrace",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3db3RGeneratedInteriorEliminationTraceLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedInteriorEliminationTrace"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateEntry",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorAccumulatedTraceEvaluation",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 311,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "imported_unique_alias": 4,
+        "qualified_suffix": 6,
+        "same_namespace_short_name": 18
+      },
+      "weighted_score": 76.0,
+      "strongest_confidence": "same_namespace_short_name",
+      "strongest_confidence_weight": 3,
+      "reference_count": 28,
+      "unique_symbol_count": 14,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTraceEvaluation",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTraceEvaluation.fromTrace",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db4RGeneratedInteriorInverseCandidateEntryLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db4RNoArithmeticTargetStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db4RNoDtnDataStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db4RNoExternalInverseOracleStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db4RNoFreeInverseEntryTableStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db4RNoInteriorEliminationCertificateStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db4RNoInteriorEliminationDataStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db4RNoMatrixExportStatus"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorAccumulatedTraceEvaluation",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldNormalFormR3c1a",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "fromEliminationTrace"
+      ],
+      "local_declaration_overlap_count": 1,
+      "source_alias_candidate_count": 276,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 29
+      },
+      "weighted_score": 87.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 29,
+      "unique_symbol_count": 9,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorAccumulatedEntryFold",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorAccumulatedEntryFold.fromEliminationTrace",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorAccumulatedTraceEvaluation",
+        "CNNA.PillarA.Arithmetic.Smoke.accumulatedEntry_from_components",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedInteriorAccumulatedEntryValue",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedInteriorTraceFoldUpdateOrderContribution",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedInteriorTraceLocalStepContribution",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedInteriorTracePivotContribution",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedInteriorTraceResidualContribution"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldNormalFormR3c1a",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepSchurCancellationSourceAuditR3c1b0",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "fromEliminationTrace"
+      ],
+      "local_declaration_overlap_count": 1,
+      "source_alias_candidate_count": 160,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 3
+      },
+      "weighted_score": 9.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 3,
+      "unique_symbol_count": 2,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldNormalFormR3c1a",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldNormalFormR3c1a.fromEliminationTrace"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepSchurCancellationSourceAuditR3c1b0",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepSchurCancellationInvariantSM3db2aR",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 147,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 12
+      },
+      "weighted_score": 36.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 12,
+      "unique_symbol_count": 5,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepSchurCancellationSourceAuditR3c1b0",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepSchurCancellationSourceAuditR3c1b0.baseEntry_eq_block",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepSchurCancellationSourceAuditR3c1b0.columnResidual_eq_block",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepSchurCancellationSourceAuditR3c1b0.pivotEntry_eq_block",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepSchurCancellationSourceAuditR3c1b0.rowResidual_eq_block"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepSchurCancellationInvariantSM3db2aR",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorPerPivotRegularityFromTraceSM3db2bR",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "pivotScale_left_inverse",
+        "pivotScale_right_inverse"
+      ],
+      "local_declaration_overlap_count": 2,
+      "source_alias_candidate_count": 188,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 7
+      },
+      "weighted_score": 21.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 7,
+      "unique_symbol_count": 4,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalPivotRegularityWitnessSM3db2aR",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalPivotRegularityWitnessSM3db2aR.fromScale",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTraceLocalStepSchurCancellationInvariantSM3db2aR",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTraceLocalStepSchurCancellationInvariantSM3db2aR.fromPerPivotRegularity"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorPerPivotRegularityFromTraceSM3db2bR",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTracePivotScaleWitnessFromGeneratedDegreeSM3db2cR",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "fromSourceAudit",
+        "nextPhase_is_r3c1b1"
+      ],
+      "local_declaration_overlap_count": 2,
+      "source_alias_candidate_count": 191,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 9
+      },
+      "weighted_score": 27.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 9,
+      "unique_symbol_count": 5,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorPerPivotRegularityFromTraceSM3db2bR",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorPerPivotRegularityFromTraceSM3db2bR.fromTracePivotScaleWitness",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTracePivotEntryNonzeroRequirementSM3db2bR",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTracePivotEntryNonzeroRequirementSM3db2bR.fromSourceAudit",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTracePivotScaleWitnessSM3db2bR"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTracePivotScaleWitnessFromGeneratedDegreeSM3db2cR",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedDegreePivotScaleSourceSM3db2dR",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "fromRequirement",
+        "leftScaleEquation",
+        "nextPhase_is_r3c1b1",
+        "rightScaleEquation",
+        "source_eq_generatedDegree_of"
+      ],
+      "local_declaration_overlap_count": 5,
+      "source_alias_candidate_count": 238,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 11
+      },
+      "weighted_score": 33.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 11,
+      "unique_symbol_count": 7,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorGeneratedDegreePivotScaleSourceSM3db2cR",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorGeneratedDegreePivotScaleSourceSM3db2cR.fromGeneratedDegreeScale",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTracePivotScaleSourceRequirementSM3db2cR",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTracePivotScaleWitnessFromGeneratedDegreeAuditSM3db2cR",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTracePivotScaleWitnessFromGeneratedDegreeSM3db2cR",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTracePivotScaleWitnessFromGeneratedDegreeSM3db2cR.fromGeneratedDegreeScaleSource",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedInteriorTracePivotScaleWitnessFromGeneratedDegreeScaleSourceSM3db2cR"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedDegreePivotScaleSourceSM3db2dR",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedDegreeFormulaAuditSM3db2eR0",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "fromRequirement"
+      ],
+      "local_declaration_overlap_count": 1,
+      "source_alias_candidate_count": 231,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 1
+      },
+      "weighted_score": 3.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 1,
+      "unique_symbol_count": 1,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedDegreePivotScaleSourceAuditSM3db2dR"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedDegreeFormulaAuditSM3db2eR0",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedDegreePivotReciprocalProfileFromWeightPolicySM3db2eR",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "fromRegularAndVariable"
+      ],
+      "local_declaration_overlap_count": 1,
+      "source_alias_candidate_count": 200,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 4
+      },
+      "weighted_score": 12.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 4,
+      "unique_symbol_count": 3,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedDegreeFormulaAuditSM3db2eR0",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedDegreeFormulaAuditSM3db2eR0",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedDegreeFormulaAuditSM3db2eR0"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedDegreePivotReciprocalProfileFromWeightPolicySM3db2eR",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDegreeReciprocalSourceSM3db2fR",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "fromRegularAndVariable"
+      ],
+      "local_declaration_overlap_count": 1,
+      "source_alias_candidate_count": 167,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 3
+      },
+      "weighted_score": 9.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 3,
+      "unique_symbol_count": 1,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedDegreePivotReciprocalProfileFromWeightPolicySM3db2eR"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDegreeReciprocalSourceSM3db2fR",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldKernelLocalSchurResidualBridgeR3c1b1",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "fromRegularAndVariable"
+      ],
+      "local_declaration_overlap_count": 1,
+      "source_alias_candidate_count": 226,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 8
+      },
+      "weighted_score": 24.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 8,
+      "unique_symbol_count": 4,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDegreeReciprocalSourceSM3db2fR",
+        "CNNA.PillarA.Arithmetic.Smoke.RegularGeneratedOperationalDegreeReciprocalSourceSM3db2fR",
+        "CNNA.PillarA.Arithmetic.Smoke.VariableGeneratedOperationalDegreeReciprocalSourceSM3db2fR",
+        "CNNA.PillarA.Arithmetic.Smoke.tracePivotScaleWitness_from_generatedOperationalDegreeReciprocalSourceSM3db2fR"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldKernelLocalSchurResidualBridgeR3c1b1",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepCancellationR3c1bFull",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "fromOperationalDegreeReciprocalSource",
+        "leftBridge_eq_kernel",
+        "leftLocalSchurResidual_eq_zero",
+        "rightBridge_eq_kernel",
+        "rightLocalSchurResidual_eq_zero"
+      ],
+      "local_declaration_overlap_count": 5,
+      "source_alias_candidate_count": 164,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 19
+      },
+      "weighted_score": 57.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 19,
+      "unique_symbol_count": 8,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldKernelLocalSchurResidualBridgeR3c1b1",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldKernelLocalSchurResidualBridgeR3c1b1.fromOperationalDegreeReciprocalSource",
+        "CNNA.PillarA.Arithmetic.Smoke.RegularGeneratedInteriorBlockFoldKernelLocalSchurResidualBridgeR3c1b1",
+        "CNNA.PillarA.Arithmetic.Smoke.VariableGeneratedInteriorBlockFoldKernelLocalSchurResidualBridgeR3c1b1",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedInteriorLeftBlockFoldKernelLocalSchurResidualBridgeR3c1b1",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedInteriorRightBlockFoldKernelLocalSchurResidualBridgeR3c1b1",
+        "CNNA.PillarA.Arithmetic.Smoke.regularBlockFoldKernelLocalSchurResidualBridgeR3c1b1",
+        "CNNA.PillarA.Arithmetic.Smoke.variableBlockFoldKernelLocalSchurResidualBridgeR3c1b1"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepCancellationR3c1bFull",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldInvarianceR3c1c",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "fromOperationalDegreeReciprocalSource",
+        "fromOperationalDegreeReciprocalSources"
+      ],
+      "local_declaration_overlap_count": 2,
+      "source_alias_candidate_count": 183,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 9
+      },
+      "weighted_score": 27.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 9,
+      "unique_symbol_count": 6,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepCancellationR3c1bFull",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepCancellationR3c1bFull.fromOperationalDegreeReciprocalSource",
+        "CNNA.PillarA.Arithmetic.Smoke.RegularGeneratedInteriorLocalStepCancellationR3c1bFull",
+        "CNNA.PillarA.Arithmetic.Smoke.VariableGeneratedInteriorLocalStepCancellationR3c1bFull",
+        "CNNA.PillarA.Arithmetic.Smoke.regularLocalStepCancellationR3c1bFullFromOperationalDegreeReciprocalSource",
+        "CNNA.PillarA.Arithmetic.Smoke.variableLocalStepCancellationR3c1bFullFromOperationalDegreeReciprocalSource"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldInvarianceR3c1c",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTracePivotTerminalCoverageSourceSM3db3aR",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 204,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 7
+      },
+      "weighted_score": 21.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 7,
+      "unique_symbol_count": 3,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldInvarianceR3c1c",
+        "CNNA.PillarA.Arithmetic.Smoke.RegularGeneratedInteriorBlockFoldInvarianceR3c1c",
+        "CNNA.PillarA.Arithmetic.Smoke.VariableGeneratedInteriorBlockFoldInvarianceR3c1c"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTracePivotTerminalCoverageSourceSM3db3aR",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalFoldResidualCoverageSM3db4aT",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "fromInvariance",
+        "fromRegularAndVariableInvariance"
+      ],
+      "local_declaration_overlap_count": 2,
+      "source_alias_candidate_count": 193,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 3
+      },
+      "weighted_score": 9.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 3,
+      "unique_symbol_count": 2,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalFoldResidualCoverageRequirementSM3db3aR",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalFoldResidualCoverageRequirementSM3db3aR.fromInvariance"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalFoldResidualCoverageSM3db4aT",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalFoldResidualIdentityFieldsSM3db4aU",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "fromInvariance",
+        "noProductIdentityProof",
+        "noTwoSidedInv",
+        "terminalCoverageSource_still_blocked"
+      ],
+      "local_declaration_overlap_count": 4,
+      "source_alias_candidate_count": 189,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 9
+      },
+      "weighted_score": 27.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 9,
+      "unique_symbol_count": 4,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalFoldResidualCoverageAuditSM3db4aT",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalFoldResidualCoverageAuditSM3db4aT.fromInvariance",
+        "CNNA.PillarA.Arithmetic.Smoke.RegularGeneratedInteriorTerminalFoldResidualCoverageAuditSM3db4aT",
+        "CNNA.PillarA.Arithmetic.Smoke.VariableGeneratedInteriorTerminalFoldResidualCoverageAuditSM3db4aT"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalFoldResidualIdentityFieldsSM3db4aU",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldTerminalIdentityR3c1d",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "fromInvariance"
+      ],
+      "local_declaration_overlap_count": 1,
+      "source_alias_candidate_count": 238,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 3
+      },
+      "weighted_score": 9.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 3,
+      "unique_symbol_count": 3,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalFoldResidualIdentityFieldCertificateSM3db4aU",
+        "CNNA.PillarA.Arithmetic.Smoke.RegularGeneratedInteriorTerminalFoldResidualIdentityFieldCertificateSM3db4aU",
+        "CNNA.PillarA.Arithmetic.Smoke.VariableGeneratedInteriorTerminalFoldResidualIdentityFieldCertificateSM3db4aU"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldTerminalIdentityR3c1d",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorAccumulatedEntryCancellationFromTerminalIdentityR3c1e",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 267,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 9
+      },
+      "weighted_score": 27.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 9,
+      "unique_symbol_count": 4,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldTerminalIdentityR3c1d",
+        "CNNA.PillarA.Arithmetic.Smoke.RegularGeneratedInteriorBlockFoldTerminalIdentityR3c1d",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3eRr3c1dTerminalIdentityLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.VariableGeneratedInteriorBlockFoldTerminalIdentityR3c1d"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorAccumulatedEntryCancellationFromTerminalIdentityR3c1e",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTraceCancellationR3c2",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 63,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 1
+      },
+      "weighted_score": 3.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 1,
+      "unique_symbol_count": 1,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.accumulatedEntryCancellationLedger_from_terminalIdentityLedgerR3c1d"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTraceCancellationR3c2",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorProductIdentityProofR4a",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 132,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 3
+      },
+      "weighted_score": 9.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 3,
+      "unique_symbol_count": 2,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.SM3eRr3c2TraceCancellationLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3eRReRunGeneratedProductCancellationLedger_from_accumulatedEntryCancellationLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorProductIdentityProofR4a",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorProvenTwoSidedInvR5",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.DtN",
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 49,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 6
+      },
+      "weighted_score": 18.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 6,
+      "unique_symbol_count": 6,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.productIdentityProof_from_productCancellationLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.productIdentityProof_from_r3c2TraceCancellationLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.regularProductIdentityProof_from_accumulatedEntryCancellationLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.regularProductIdentityProof_from_reRunProductCancellationLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.variableProductIdentityProof_from_accumulatedEntryCancellationLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.variableProductIdentityProof_from_reRunProductCancellationLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorProvenTwoSidedInvR5",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCertificateSM3fR",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.DtN",
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 49,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 7
+      },
+      "weighted_score": 21.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 7,
+      "unique_symbol_count": 7,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.regularTwoSidedInv_from_accumulatedEntryCancellationLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.regularTwoSidedInv_from_reRunProductCancellationLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.twoSidedInv_from_productCancellationLedger_via_r4a",
+        "CNNA.PillarA.Arithmetic.Smoke.twoSidedInv_from_productIdentityProofR4a",
+        "CNNA.PillarA.Arithmetic.Smoke.twoSidedInv_from_r3c2TraceCancellationLedger_via_r4a",
+        "CNNA.PillarA.Arithmetic.Smoke.variableTwoSidedInv_from_accumulatedEntryCancellationLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.variableTwoSidedInv_from_reRunProductCancellationLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCertificateSM3fR",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedTopBoundaryDtNSM3gR",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.DtN",
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "boundaryOperator_from_schur"
+      ],
+      "local_declaration_overlap_count": 1,
+      "source_alias_candidate_count": 138,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 21
+      },
+      "weighted_score": 63.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 21,
+      "unique_symbol_count": 8,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCertificateSM3fR",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedBoundaryBlockSM3fR",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedBoundaryInteriorBlockSM3fR",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedInteriorBoundaryBlockSM3fR",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedInteriorEliminationCertificate_from_accumulatedEntryCancellationLedgerSM3fR",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedInteriorEliminationCertificate_from_reRunProductCancellationLedgerSM3fR",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedInteriorEliminationCertificate_from_accumulatedEntryCancellationLedgerSM3fR",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedInteriorEliminationCertificate_from_reRunProductCancellationLedgerSM3fR"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedTopBoundaryDtNSM3gR",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedGeneralizedTopBoundaryDtNSM3hR",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.DtN",
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "apply_from_mulVec",
+        "boundaryOperator_from_schur"
+      ],
+      "local_declaration_overlap_count": 2,
+      "source_alias_candidate_count": 90,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 11
+      },
+      "weighted_score": 33.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 11,
+      "unique_symbol_count": 5,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedTopBoundaryDtNSM3gR",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedTopBoundaryDtN_from_accumulatedEntryCancellationLedgerSM3gR",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedTopBoundaryDtN_from_reRunProductCancellationLedgerSM3gR",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedTopBoundaryDtN_from_accumulatedEntryCancellationLedgerSM3gR",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedTopBoundaryDtN_from_reRunProductCancellationLedgerSM3gR"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedGeneralizedTopBoundaryDtNSM3hR",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedResetSM3LedgerSM3iR",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.DtN",
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 157,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 6
+      },
+      "weighted_score": 18.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 6,
+      "unique_symbol_count": 3,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedGeneralizedTopBoundaryDtNSM3hR",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedGeneralizedTopBoundaryDtN_from_accumulatedEntryCancellationLedgerSM3hR",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedGeneralizedTopBoundaryDtN_from_accumulatedEntryCancellationLedgerSM3hR"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedResetSM3LedgerSM3iR",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedMultiSchurSM4",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.DtN",
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "certificate_inverseMatrix_from_handoffCandidate"
+      ],
+      "local_declaration_overlap_count": 1,
+      "source_alias_candidate_count": 87,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 10
+      },
+      "weighted_score": 30.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 10,
+      "unique_symbol_count": 3,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedResetSM3LedgerSM3iR",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3iRGeneratedResetLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3iRGeneratedResetLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedMultiSchurSM4",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedArithmeticSourceSM5",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.DtN",
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "apply_from_mulVec",
+        "boundaryOperator_from_schur"
+      ],
+      "local_declaration_overlap_count": 2,
+      "source_alias_candidate_count": 164,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 5,
+        "same_namespace_short_name": 4
+      },
+      "weighted_score": 27.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 9,
+      "unique_symbol_count": 3,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedMultiSchurSM4",
+        "CNNA.PillarA.Arithmetic.Smoke.SM4GeneratedMultiSchurLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm4GeneratedMultiSchurLedger_from_accumulatedEntryCancellationLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedArithmeticSourceSM5",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelStepWitnessSM6",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.DtN",
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "apply_from_mulVec",
+        "boundaryOperator_from_schur"
+      ],
+      "local_declaration_overlap_count": 2,
+      "source_alias_candidate_count": 166,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 4,
+        "same_namespace_short_name": 4
+      },
+      "weighted_score": 24.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 8,
+      "unique_symbol_count": 3,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedArithmeticSourceSM5",
+        "CNNA.PillarA.Arithmetic.Smoke.SM5GeneratedArithmeticSourceLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm5GeneratedArithmeticSourceLedger_from_accumulatedEntryCancellationLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelStepWitnessSM6",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryBoundaryPortSourceSM6a",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.DtN",
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 163,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 21,
+        "same_namespace_short_name": 10
+      },
+      "weighted_score": 93.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 31,
+      "unique_symbol_count": 7,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryIndexSM6",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelStepWitnessSM6",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelStepWitnessSM6.apply_from_mulVec",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelStepWitnessSM6.boundaryOperator_from_schur",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelStepWitnessSM6.fromSM5",
+        "CNNA.PillarA.Arithmetic.Smoke.SM6GeneratedLevelStepWitnessLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm6GeneratedLevelStepWitnessLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryBoundaryPortSourceSM6a",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistorySchurIndexBridgeRecheckSM7a",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.DtN",
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 238,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 13
+      },
+      "weighted_score": 39.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 13,
+      "unique_symbol_count": 3,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryBoundaryPortSourceSM6a",
+        "CNNA.PillarA.Arithmetic.Smoke.SM6aGeneratedLevelHistoryBoundaryPortSourceLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm6aGeneratedLevelHistoryBoundaryPortSourceLedger_from_SM5"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistorySchurIndexBridgeRecheckSM7a",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryMatrixFromBridgeSM8",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.DtN",
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 168,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 5
+      },
+      "weighted_score": 15.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 5,
+      "unique_symbol_count": 2,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.SM7BridgeRecheckLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm7BridgeRecheckLedger_from_SM5"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryMatrixFromBridgeSM8",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryExecMatrixFromSM6bRecheckSM8",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.DtN",
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 266,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 10
+      },
+      "weighted_score": 30.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 10,
+      "unique_symbol_count": 6,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryMatrixFromBridgeSM8",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryMatrixIndexSM8",
+        "CNNA.PillarA.Arithmetic.Smoke.SM8GeneratedLevelHistoryMatrixLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedLevelHistoryMatrixFromBridgeSM8",
+        "CNNA.PillarA.Arithmetic.Smoke.sm8GeneratedLevelHistoryMatrixLedger_from_SM5",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedLevelHistoryMatrixFromBridgeSM8"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryExecMatrixFromSM6bRecheckSM8",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryExecMirrorSourceFromSM8RecheckSM9a",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.DtN",
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "entryReal_from_schur",
+        "no_forbidden_shortcuts"
+      ],
+      "local_declaration_overlap_count": 2,
+      "source_alias_candidate_count": 217,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 17
+      },
+      "weighted_score": 51.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 17,
+      "unique_symbol_count": 4,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryExecMatrixFromSM6bRecheckSM8",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryExecMatrixIndexSM8Recheck",
+        "CNNA.PillarA.Arithmetic.Smoke.SM8RecheckGeneratedLevelHistoryExecMatrixLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm8RecheckGeneratedLevelHistoryExecMatrixLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryExecMirrorSourceFromSM8RecheckSM9a",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryCharpolyExecFromMirrorSM9b",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.DtN",
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "entryReal_from_schur",
+        "no_forbidden_shortcuts"
+      ],
+      "local_declaration_overlap_count": 2,
+      "source_alias_candidate_count": 214,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 15
+      },
+      "weighted_score": 45.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 15,
+      "unique_symbol_count": 3,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryExecMirrorSourceFromSM8RecheckSM9a",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9aRecheckGeneratedLevelHistoryExecMirrorSourceLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm9aRecheckGeneratedLevelHistoryExecMirrorSourceLedger_from_accumulatedEntryCancellationLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryCharpolyExecFromMirrorSM9b",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryOperationalCharpolyPolynomialProfileFromSM9b",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.DtN",
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 286,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 17
+      },
+      "weighted_score": 51.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 17,
+      "unique_symbol_count": 5,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryCharpolyExecFromMirrorSM9b",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryCharpolyExecIndexSM9b",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9bGeneratedLevelHistoryCharpolyExecLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm9bGeneratedLevelHistoryCharpolyExecLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm9bGeneratedLevelHistoryCharpolyExecLedger_from_accumulatedEntryCancellationLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryOperationalCharpolyPolynomialProfileFromSM9b",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryOperationalCoefficientSourceFromSM9c",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.DtN",
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "evaluationAtSource_from_det_pencil",
+        "evaluationFamily_from_operative",
+        "no_forbidden_consumers"
+      ],
+      "local_declaration_overlap_count": 3,
+      "source_alias_candidate_count": 273,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 9
+      },
+      "weighted_score": 27.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 9,
+      "unique_symbol_count": 4,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryOperationalCharpolyPolynomialProfileFromSM9b",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9cGeneratedLevelHistoryOperationalCharpolyPolynomialProfileLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm9cGeneratedLevelHistoryOperationalCharpolyPolynomialProfileLedger_from_SM9aRecheckLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm9cGeneratedLevelHistoryOperationalCharpolyPolynomialProfileLedger_from_accumulatedEntryCancellationLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryOperationalCoefficientSourceFromSM9c",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDeterminantCoefficientRecurrenceSM9e",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.DtN",
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [
+        "no_forbidden_consumers"
+      ],
+      "local_declaration_overlap_count": 1,
+      "source_alias_candidate_count": 253,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "local_name_shadowing_or_collision",
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 8
+      },
+      "weighted_score": 24.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 8,
+      "unique_symbol_count": 4,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryOperationalCoefficientSourceFromSM9c",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9dGeneratedLevelHistoryOperationalCoefficientSourceLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm9dGeneratedLevelHistoryOperationalCoefficientSourceLedger_from_SM9aRecheckLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm9dGeneratedLevelHistoryOperationalCoefficientSourceLedger_from_accumulatedEntryCancellationLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDeterminantCoefficientRecurrenceSM9e",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialEvaluationNormalFormSM9ePlus",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.DtN",
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 406,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "imported_unique_alias": 2,
+        "qualified_suffix": 28,
+        "same_namespace_short_name": 4
+      },
+      "weighted_score": 98.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 34,
+      "unique_symbol_count": 9,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDeterminantCoefficientRecurrenceSM9e",
+        "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialSM9e",
+        "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialSM9e.const",
+        "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialSM9e.eval",
+        "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialSM9e.linear",
+        "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialSM9e.one",
+        "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialSM9e.zero",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9eGeneratedOperationalDeterminantCoefficientRecurrenceLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.operationalLinearPencilEntryPolynomialSM9e"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialEvaluationNormalFormSM9ePlus",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialForwardEvaluationSourceSM9ePlus",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.DtN",
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 238,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 8
+      },
+      "weighted_score": 24.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 8,
+      "unique_symbol_count": 4,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalBoundedPolynomialEvaluationNormalFormSM9ePlus0",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9ePlus0GeneratedOperationalBoundedPolynomialEvaluationNormalFormLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.operationalBoundedPolynomialEvaluationNormalFormSM9ePlus0",
+        "CNNA.PillarA.Arithmetic.Smoke.sm9ePlus0GeneratedOperationalBoundedPolynomialEvaluationNormalFormLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialForwardEvaluationSourceSM9ePlus",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDeterminantForwardEvaluationBridgeFromSM9ePlus",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.DtN",
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 259,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 10
+      },
+      "weighted_score": 30.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 10,
+      "unique_symbol_count": 5,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalBoundedPolynomialForwardEvaluationSourceSM9ePlus1",
+        "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialSM9e.forwardEvalDegreeOne",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9ePlus1GeneratedOperationalBoundedPolynomialForwardEvaluationSourceLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.operationalLinearPencilEntryForwardEvaluationTargetSM9ePlus1",
+        "CNNA.PillarA.Arithmetic.Smoke.sm9ePlus1GeneratedOperationalBoundedPolynomialForwardEvaluationSourceLedger_from_SM9eLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDeterminantForwardEvaluationBridgeFromSM9ePlus",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDiscriminantFactorGateFromSM9fFull",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.DtN",
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 125,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 3
+      },
+      "weighted_score": 9.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 3,
+      "unique_symbol_count": 2,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.SM9fFullGeneratedOperationalDeterminantForwardEvaluationBridgeLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm9fFullGeneratedOperationalDeterminantForwardEvaluationBridgeLedger_from_SM9eLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDiscriminantFactorGateFromSM9fFull",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalQuadraticCoefficientWindowFromSM9dSM9e",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.DtN",
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 196,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 12
+      },
+      "weighted_score": 36.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 12,
+      "unique_symbol_count": 11,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.SM9gGeneratedOperationalDiscriminantFactorGateLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9gNoCharpolyRecomputationStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9gNoEisensteinGaussHeegnerCMJConsumerStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9gNoExternalComparisonMatrixStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9gNoFreeDiscriminantStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9gNoFreeFactorFormStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9gNoFreeTargetValueStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9gNoNewDeterminantRecurrenceStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9gNoNewMatrixStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9gNoTwoSidedInvStatus"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalQuadraticCoefficientWindowFromSM9dSM9e",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalQuadraticDiscriminantSourceFromSM9g1Window",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "strong",
+      "present_in_semantic_mainline": true,
+      "present_in_weighted_semantic_mainline": true,
+      "target_open_namespaces": [
+        "CNNA.PillarA.DtN",
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 126,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {
+        "qualified_suffix": 5
+      },
+      "weighted_score": 15.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 5,
+      "unique_symbol_count": 3,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.OperationalQuadraticCoefficientWindowSM9g1",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9g1GeneratedOperationalQuadraticCoefficientWindowLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm9g1GeneratedOperationalQuadraticCoefficientWindowLedger_from_SM9eLedger"
+      ]
+    }
+  ]
+}

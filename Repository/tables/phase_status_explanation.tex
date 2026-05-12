@@ -1,0 +1,30 @@
+\small
+\par\smallskip\noindent\begin{minipage}{0.99\linewidth}\footnotesize\raggedright\textbf{Table legend.} \colorbox{green!18}{\strut G} = green/closed and derived-only; \colorbox{white}{\strut W} = white/non-direct-Lean tooling/refactor/infrastructure/documentation/comparison; \colorbox{orange!28}{\strut O} = orange/implementable after stated predecessor closure; \colorbox{yellow!25}{\strut Y} = yellow/active and implementable now; \colorbox{red!20}{\strut R} = red/locked Lean-derivation phase; release requires derived-only object/proof evidence. Context class is orthogonal to status.\end{minipage}\par\vspace{0.25em}
+\arrayrulecolor{black!22}
+\begin{longtable}{L{0.045\linewidth} L{0.925\linewidth}}
+\hline
+\textbf{Code} & \textbf{Meaning}\\
+\hline
+\endfirsthead
+\hline
+\textbf{Code} & \textbf{Meaning}\\
+\hline
+\endhead
+\cellcolor{green!18}G & closed/\allowbreak{}derived-only: phase has been implemented/\allowbreak{}verified or governance-closed;\newline for umbrella phases the child DAG and active cursor are fixed while implementation closure may be delegated.\\
+\hline
+\addlinespace[0.24em]
+\cellcolor{orange!28}O & orange/\allowbreak{}implementable after dependency closure: not active now, but a pre-implementation check has shown it becomes implementable after the listed predecessor phases/\allowbreak{}objects close.\\
+\hline
+\addlinespace[0.24em]
+\cellcolor{yellow!25}Y & yellow/\allowbreak{}active implementable Lean or tooling phase: the unique current cursor;\newline prerequisites are satisfied and release evidence is recorded for the active work.\\
+\hline
+\addlinespace[0.24em]
+\cellcolor{red!20}R & red/\allowbreak{}locked Lean-derivation phase: direct Lean-code derivability has not yet been proven from referenced derived-only Lean objects. The phase may not be implemented until an upstream release proof/\allowbreak{}check turns it yellow or orange.\\
+\hline
+\addlinespace[0.24em]
+\cellcolor{white}W & white/\allowbreak{}non-direct-Lean release state: refactoring, tool/\allowbreak{}infrastructure, documentation, comparison, generated-secondary or DB work that does not itself require a Lean-code derivability release. Read together with Context class.\\
+\hline
+\addlinespace[0.24em]
+\end{longtable}
+\arrayrulecolor{black}
+\normalsize

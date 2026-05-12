@@ -1,0 +1,983 @@
+{
+  "path": [
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedMainPath",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedApproximantCore",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedBoundaryInteriorPartition",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedDirichletEntry",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlock",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCandidate",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCandidateEntry",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTwoSidedInv",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateStart",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCarrier",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationStep",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationTrace",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateEntry",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorAccumulatedTraceEvaluation",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateMatrix",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateShapeSeparation",
+    "CNNA.PillarA.Arithmetic.Smoke.SM3dbRToSM3eRHandoff",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTwoSidedInvFromSM3db7R",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTraceCancellationDerivation",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTraceCancellationR3c2",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorProductIdentityProofR4a",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorProvenTwoSidedInvR5",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCertificateSM3fR",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedTopBoundaryDtNSM3gR",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedGeneralizedTopBoundaryDtNSM3hR",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedResetSM3LedgerSM3iR",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedMultiSchurSM4",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedArithmeticSourceSM5",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelStepWitnessSM6",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryBoundaryPortSourceSM6a",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistorySchurIndexBridgeRecheckSM7a",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryMatrixFromBridgeSM8",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryExecMatrixFromSM6bRecheckSM8",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryExecMirrorSourceFromSM8RecheckSM9a",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryCharpolyExecFromMirrorSM9b",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryOperationalCharpolyPolynomialProfileFromSM9b",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryOperationalCoefficientSourceFromSM9c",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDeterminantCoefficientRecurrenceSM9e",
+    "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialEvaluationNormalFormSM9ePlus",
+    "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialForwardEvaluationSourceSM9ePlus",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDeterminantForwardEvaluationBridgeFromSM9ePlus",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDiscriminantFactorGateFromSM9fFull",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalQuadraticCoefficientWindowFromSM9dSM9e",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalQuadraticDiscriminantSourceFromSM9g1Window"
+  ],
+  "length": 44,
+  "edge_count": 43,
+  "total_score": 2605.0,
+  "average_edge_score": 60.58139534883721,
+  "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedMainPath",
+  "sink": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalQuadraticDiscriminantSourceFromSM9g1Window",
+  "confidence_counts": {
+    "imported_unique_alias": 19,
+    "qualified_suffix": 790,
+    "same_namespace_short_name": 72
+  },
+  "groups": [
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic"
+  ],
+  "edges": [
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedMainPath",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedApproximantCore",
+      "confidence_counts": {
+        "imported_unique_alias": 1,
+        "qualified_suffix": 19
+      },
+      "weighted_score": 58.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 20,
+      "unique_symbol_count": 8,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedMainPath",
+        "CNNA.PillarA.Arithmetic.Smoke.SM1RGeneratedVariationLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedMainPath",
+        "CNNA.PillarA.Arithmetic.Smoke.noArithmeticSpecialVariation",
+        "CNNA.PillarA.Arithmetic.Smoke.noMatrixDataYet",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedMainPath",
+        "CNNA.PillarA.Arithmetic.Smoke.sm1RGeneratedVariationLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedMainPath"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedApproximantCore",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedBoundaryInteriorPartition",
+      "confidence_counts": {
+        "imported_unique_alias": 2,
+        "qualified_suffix": 40
+      },
+      "weighted_score": 122.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 42,
+      "unique_symbol_count": 6,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedApproximantStrong",
+        "CNNA.PillarA.Arithmetic.Smoke.SM2RFiniteCarrierAPIStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM2RGeneratedApproximantLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedApproximantStrong",
+        "CNNA.PillarA.Arithmetic.Smoke.sm2RGeneratedApproximantLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedApproximantStrong"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedBoundaryInteriorPartition",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedDirichletEntry",
+      "confidence_counts": {
+        "imported_unique_alias": 2,
+        "qualified_suffix": 74
+      },
+      "weighted_score": 224.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 76,
+      "unique_symbol_count": 13,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedApproximantIndex",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedApproximantIndex.cell",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedApproximantIndex.level",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedBoundaryIndex",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedBoundaryIndex.toApproximantIndex",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedBoundaryInteriorPartition",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorIndex",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorIndex.toApproximantIndex",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3aRGeneratedPartitionLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3aRNoCutSpecBoundaryPortsStatus"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedDirichletEntry",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlock",
+      "confidence_counts": {
+        "imported_unique_alias": 1,
+        "qualified_suffix": 36
+      },
+      "weighted_score": 109.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 37,
+      "unique_symbol_count": 12,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedWeightPolicyEntrySource",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3bRGeneratedDirichletEntryLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.diag_degree_or_regularized_degree",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedAdjacent",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedDirichletMatrix",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedDirichlet_degree",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedDirichlet_entry",
+        "CNNA.PillarA.Arithmetic.Smoke.offdiag_of_adjacent",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedWeightPolicyEntrySource",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3bRGeneratedDirichletEntryLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlock",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCandidate",
+      "confidence_counts": {
+        "imported_unique_alias": 1,
+        "qualified_suffix": 16
+      },
+      "weighted_score": 49.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 17,
+      "unique_symbol_count": 6,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockStructureProfile",
+        "CNNA.PillarA.Arithmetic.Smoke.InteriorBlockStructureProfile",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3cRGeneratedInteriorBlockLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedInteriorBlockStructureProfile",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3cRGeneratedInteriorBlockLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedInteriorBlockStructureProfile"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCandidate",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCandidateEntry",
+      "confidence_counts": {
+        "imported_unique_alias": 1,
+        "qualified_suffix": 9
+      },
+      "weighted_score": 28.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 10,
+      "unique_symbol_count": 5,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCandidate",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3dRGeneratedInteriorEliminationCandidateLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedInteriorEliminationCandidate",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3dRGeneratedInteriorEliminationCandidateLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedInteriorEliminationCandidate"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCandidateEntry",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTwoSidedInv",
+      "confidence_counts": {
+        "imported_unique_alias": 1,
+        "qualified_suffix": 45
+      },
+      "weighted_score": 136.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 46,
+      "unique_symbol_count": 8,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCandidateEntry",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3daRGeneratedInteriorEliminationCandidateEntryLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.candidateMatrix_from_candidateEntry",
+        "CNNA.PillarA.Arithmetic.Smoke.candidateMatrix_from_candidateEntry_entry",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedInteriorEliminationCandidateEntry_from_treeRecursiveProfile_value",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedInteriorEliminationCandidateEntry",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3daRGeneratedInteriorEliminationCandidateEntryLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedInteriorEliminationCandidateEntry"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTwoSidedInv",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateStart",
+      "confidence_counts": {
+        "qualified_suffix": 15
+      },
+      "weighted_score": 45.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 15,
+      "unique_symbol_count": 9,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedCandidateEntryShapeAudit",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedCandidateEntryShapeAudit.fromCandidateEntry",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTwoSidedInvObstruction",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3eRGeneratedTwoSidedInvLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.candidateEntry_eq_interiorBlock",
+        "CNNA.PillarA.Arithmetic.Smoke.candidateMatrix_entry_eq_interiorBlock",
+        "CNNA.PillarA.Arithmetic.Smoke.candidateMatrix_eq_interiorBlock",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedInteriorTwoSidedInvObstruction_fromShapeAudit",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3eRGeneratedTwoSidedInvLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateStart",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCarrier",
+      "confidence_counts": {
+        "imported_unique_alias": 1,
+        "qualified_suffix": 5
+      },
+      "weighted_score": 16.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 6,
+      "unique_symbol_count": 4,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db0RPositiveFirstLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3dbRPositiveFirstContract",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3db0RPositiveFirstLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3dbRPositiveFirstContract"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCarrier",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationStep",
+      "confidence_counts": {
+        "imported_unique_alias": 2,
+        "qualified_suffix": 29,
+        "same_namespace_short_name": 1
+      },
+      "weighted_score": 92.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 32,
+      "unique_symbol_count": 8,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCarrier",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationNode",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db1RCandidateSourceStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db1RGeneratedInteriorEliminationCarrierLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db1RProfileSourceStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedInteriorEliminationCarrier",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3db1RGeneratedInteriorEliminationCarrierLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedInteriorEliminationCarrier"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationStep",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationTrace",
+      "confidence_counts": {
+        "imported_unique_alias": 1,
+        "qualified_suffix": 24
+      },
+      "weighted_score": 73.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 25,
+      "unique_symbol_count": 10,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationStep",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorPivotDatum",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorPivotDatum.pivot_bound_to_SM3db1R_node",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorResidualDatum",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorStepUpdate",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db2RGeneratedInteriorEliminationStepLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedInteriorLocalColumnResidual",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedInteriorLocalRowResidual",
+        "CNNA.PillarA.Arithmetic.Smoke.localStep_from_SM3db1R_node",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3db2RGeneratedInteriorEliminationStepLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationTrace",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateEntry",
+      "confidence_counts": {
+        "qualified_suffix": 45,
+        "same_namespace_short_name": 1
+      },
+      "weighted_score": 138.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 46,
+      "unique_symbol_count": 7,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationTrace",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationTrace.source_eq_SM3cR_SM3dR",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db3RGeneratedInteriorEliminationTraceLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db3RTraceSourceStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedInteriorEliminationTrace",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3db3RGeneratedInteriorEliminationTraceLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedInteriorEliminationTrace"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateEntry",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorAccumulatedTraceEvaluation",
+      "confidence_counts": {
+        "imported_unique_alias": 4,
+        "qualified_suffix": 6,
+        "same_namespace_short_name": 18
+      },
+      "weighted_score": 76.0,
+      "strongest_confidence": "same_namespace_short_name",
+      "strongest_confidence_weight": 3,
+      "reference_count": 28,
+      "unique_symbol_count": 14,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTraceEvaluation",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTraceEvaluation.fromTrace",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db4RGeneratedInteriorInverseCandidateEntryLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db4RNoArithmeticTargetStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db4RNoDtnDataStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db4RNoExternalInverseOracleStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db4RNoFreeInverseEntryTableStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db4RNoInteriorEliminationCertificateStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db4RNoInteriorEliminationDataStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db4RNoMatrixExportStatus"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorAccumulatedTraceEvaluation",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateMatrix",
+      "confidence_counts": {
+        "qualified_suffix": 11
+      },
+      "weighted_score": 33.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 11,
+      "unique_symbol_count": 5,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorAccumulatedInverseCandidateEntry",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorAccumulatedInverseCandidateEntry.fromAccumulatedTraceEvaluation",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db4aRGeneratedInteriorAccumulatedEntryLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedInteriorAccumulatedEntryValue",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3db4aRGeneratedInteriorAccumulatedEntryLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateMatrix",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateShapeSeparation",
+      "confidence_counts": {
+        "qualified_suffix": 21
+      },
+      "weighted_score": 63.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 21,
+      "unique_symbol_count": 6,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateMatrix",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3db5RGeneratedInteriorInverseCandidateMatrixLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.inverseCandidateMatrix_from_accumulatedEntry",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedInteriorInverseCandidateMatrix",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3db5RGeneratedInteriorInverseCandidateMatrixLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedInteriorInverseCandidateMatrix"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateShapeSeparation",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.SM3dbRToSM3eRHandoff",
+      "confidence_counts": {
+        "qualified_suffix": 27
+      },
+      "weighted_score": 81.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 27,
+      "unique_symbol_count": 5,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateShapeSeparation",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3dbRShapeSeparationLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedInteriorInverseCandidateShapeSeparation",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3dbRShapeSeparationLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedInteriorInverseCandidateShapeSeparation"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.SM3dbRToSM3eRHandoff",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTwoSidedInvFromSM3db7R",
+      "confidence_counts": {
+        "qualified_suffix": 56,
+        "same_namespace_short_name": 26
+      },
+      "weighted_score": 246.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 82,
+      "unique_symbol_count": 11,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.SM3dbRToSM3eRHandoff",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3eRMayConsumeOnlySM3dbRInverseCandidate",
+        "CNNA.PillarA.Arithmetic.Smoke.handoffCandidate_eq_SM3db6R_shapeSeparationMatrix",
+        "CNNA.PillarA.Arithmetic.Smoke.handoffCandidate_source_eq_SM3db4aR_accumulatedEntry",
+        "CNNA.PillarA.Arithmetic.Smoke.handoffCandidate_source_eq_SM3db5R_matrixExport",
+        "CNNA.PillarA.Arithmetic.Smoke.noLeftProduct_for_SM3db7R",
+        "CNNA.PillarA.Arithmetic.Smoke.noRightProduct_for_SM3db7R",
+        "CNNA.PillarA.Arithmetic.Smoke.noTwoSidedInv_for_SM3db7R",
+        "CNNA.PillarA.Arithmetic.Smoke.regularSM3dbRToSM3eRHandoff",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3eRMayConsumeOnlySM3dbRInverseCandidate_for_handoff"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTwoSidedInvFromSM3db7R",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTraceCancellationDerivation",
+      "confidence_counts": {
+        "qualified_suffix": 47,
+        "same_namespace_short_name": 4
+      },
+      "weighted_score": 153.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 51,
+      "unique_symbol_count": 20,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorSM3db7RLeftProductEntry",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorSM3db7RLeftProductNormalForm",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorSM3db7RProductCancellationLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorSM3db7RProductCancellationLedger.fromTraceCancellationInvariant",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorSM3db7RProductNormalFormLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorSM3db7RProductNormalFormLedger.fromHandoff",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorSM3db7RRightProductEntry",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorSM3db7RRightProductNormalForm",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorSM3db7RTraceCancellationInvariant",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3eRReRunNoArithmeticTargetStatus"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTraceCancellationDerivation",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTraceCancellationR3c2",
+      "confidence_counts": {
+        "qualified_suffix": 11
+      },
+      "weighted_score": 33.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 11,
+      "unique_symbol_count": 5,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorSM3db7RTraceCancellationDerivation",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorSM3db7RTraceCancellationDerivation.fromSource",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorSM3db7RTraceCancellationSource.fromSM3dbChain",
+        "CNNA.PillarA.Arithmetic.Smoke.productCancellationLedger_from_traceCancellationDerivation",
+        "CNNA.PillarA.Arithmetic.Smoke.traceCancellationInvariant_from_SM3dbChain"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTraceCancellationR3c2",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorProductIdentityProofR4a",
+      "confidence_counts": {
+        "qualified_suffix": 3
+      },
+      "weighted_score": 9.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 3,
+      "unique_symbol_count": 2,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.SM3eRr3c2TraceCancellationLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3eRReRunGeneratedProductCancellationLedger_from_accumulatedEntryCancellationLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorProductIdentityProofR4a",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorProvenTwoSidedInvR5",
+      "confidence_counts": {
+        "qualified_suffix": 6
+      },
+      "weighted_score": 18.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 6,
+      "unique_symbol_count": 6,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.productIdentityProof_from_productCancellationLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.productIdentityProof_from_r3c2TraceCancellationLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.regularProductIdentityProof_from_accumulatedEntryCancellationLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.regularProductIdentityProof_from_reRunProductCancellationLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.variableProductIdentityProof_from_accumulatedEntryCancellationLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.variableProductIdentityProof_from_reRunProductCancellationLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorProvenTwoSidedInvR5",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCertificateSM3fR",
+      "confidence_counts": {
+        "qualified_suffix": 7
+      },
+      "weighted_score": 21.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 7,
+      "unique_symbol_count": 7,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.regularTwoSidedInv_from_accumulatedEntryCancellationLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.regularTwoSidedInv_from_reRunProductCancellationLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.twoSidedInv_from_productCancellationLedger_via_r4a",
+        "CNNA.PillarA.Arithmetic.Smoke.twoSidedInv_from_productIdentityProofR4a",
+        "CNNA.PillarA.Arithmetic.Smoke.twoSidedInv_from_r3c2TraceCancellationLedger_via_r4a",
+        "CNNA.PillarA.Arithmetic.Smoke.variableTwoSidedInv_from_accumulatedEntryCancellationLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.variableTwoSidedInv_from_reRunProductCancellationLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCertificateSM3fR",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedTopBoundaryDtNSM3gR",
+      "confidence_counts": {
+        "qualified_suffix": 21
+      },
+      "weighted_score": 63.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 21,
+      "unique_symbol_count": 8,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCertificateSM3fR",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedBoundaryBlockSM3fR",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedBoundaryInteriorBlockSM3fR",
+        "CNNA.PillarA.Arithmetic.Smoke.generatedInteriorBoundaryBlockSM3fR",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedInteriorEliminationCertificate_from_accumulatedEntryCancellationLedgerSM3fR",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedInteriorEliminationCertificate_from_reRunProductCancellationLedgerSM3fR",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedInteriorEliminationCertificate_from_accumulatedEntryCancellationLedgerSM3fR",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedInteriorEliminationCertificate_from_reRunProductCancellationLedgerSM3fR"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedTopBoundaryDtNSM3gR",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedGeneralizedTopBoundaryDtNSM3hR",
+      "confidence_counts": {
+        "qualified_suffix": 11
+      },
+      "weighted_score": 33.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 11,
+      "unique_symbol_count": 5,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedTopBoundaryDtNSM3gR",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedTopBoundaryDtN_from_accumulatedEntryCancellationLedgerSM3gR",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedTopBoundaryDtN_from_reRunProductCancellationLedgerSM3gR",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedTopBoundaryDtN_from_accumulatedEntryCancellationLedgerSM3gR",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedTopBoundaryDtN_from_reRunProductCancellationLedgerSM3gR"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedGeneralizedTopBoundaryDtNSM3hR",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedResetSM3LedgerSM3iR",
+      "confidence_counts": {
+        "qualified_suffix": 6
+      },
+      "weighted_score": 18.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 6,
+      "unique_symbol_count": 3,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedGeneralizedTopBoundaryDtNSM3hR",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedGeneralizedTopBoundaryDtN_from_accumulatedEntryCancellationLedgerSM3hR",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedGeneralizedTopBoundaryDtN_from_accumulatedEntryCancellationLedgerSM3hR"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedResetSM3LedgerSM3iR",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedMultiSchurSM4",
+      "confidence_counts": {
+        "qualified_suffix": 10
+      },
+      "weighted_score": 30.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 10,
+      "unique_symbol_count": 3,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedResetSM3LedgerSM3iR",
+        "CNNA.PillarA.Arithmetic.Smoke.SM3iRGeneratedResetLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm3iRGeneratedResetLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedMultiSchurSM4",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedArithmeticSourceSM5",
+      "confidence_counts": {
+        "qualified_suffix": 5,
+        "same_namespace_short_name": 4
+      },
+      "weighted_score": 27.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 9,
+      "unique_symbol_count": 3,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedMultiSchurSM4",
+        "CNNA.PillarA.Arithmetic.Smoke.SM4GeneratedMultiSchurLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm4GeneratedMultiSchurLedger_from_accumulatedEntryCancellationLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedArithmeticSourceSM5",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelStepWitnessSM6",
+      "confidence_counts": {
+        "qualified_suffix": 4,
+        "same_namespace_short_name": 4
+      },
+      "weighted_score": 24.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 8,
+      "unique_symbol_count": 3,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedArithmeticSourceSM5",
+        "CNNA.PillarA.Arithmetic.Smoke.SM5GeneratedArithmeticSourceLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm5GeneratedArithmeticSourceLedger_from_accumulatedEntryCancellationLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelStepWitnessSM6",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryBoundaryPortSourceSM6a",
+      "confidence_counts": {
+        "qualified_suffix": 21,
+        "same_namespace_short_name": 10
+      },
+      "weighted_score": 93.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 31,
+      "unique_symbol_count": 7,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryIndexSM6",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelStepWitnessSM6",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelStepWitnessSM6.apply_from_mulVec",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelStepWitnessSM6.boundaryOperator_from_schur",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelStepWitnessSM6.fromSM5",
+        "CNNA.PillarA.Arithmetic.Smoke.SM6GeneratedLevelStepWitnessLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm6GeneratedLevelStepWitnessLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryBoundaryPortSourceSM6a",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistorySchurIndexBridgeRecheckSM7a",
+      "confidence_counts": {
+        "qualified_suffix": 13
+      },
+      "weighted_score": 39.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 13,
+      "unique_symbol_count": 3,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryBoundaryPortSourceSM6a",
+        "CNNA.PillarA.Arithmetic.Smoke.SM6aGeneratedLevelHistoryBoundaryPortSourceLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm6aGeneratedLevelHistoryBoundaryPortSourceLedger_from_SM5"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistorySchurIndexBridgeRecheckSM7a",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryMatrixFromBridgeSM8",
+      "confidence_counts": {
+        "qualified_suffix": 5
+      },
+      "weighted_score": 15.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 5,
+      "unique_symbol_count": 2,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.SM7BridgeRecheckLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm7BridgeRecheckLedger_from_SM5"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryMatrixFromBridgeSM8",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryExecMatrixFromSM6bRecheckSM8",
+      "confidence_counts": {
+        "qualified_suffix": 10
+      },
+      "weighted_score": 30.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 10,
+      "unique_symbol_count": 6,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryMatrixFromBridgeSM8",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryMatrixIndexSM8",
+        "CNNA.PillarA.Arithmetic.Smoke.SM8GeneratedLevelHistoryMatrixLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.regularGeneratedLevelHistoryMatrixFromBridgeSM8",
+        "CNNA.PillarA.Arithmetic.Smoke.sm8GeneratedLevelHistoryMatrixLedger_from_SM5",
+        "CNNA.PillarA.Arithmetic.Smoke.variableGeneratedLevelHistoryMatrixFromBridgeSM8"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryExecMatrixFromSM6bRecheckSM8",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryExecMirrorSourceFromSM8RecheckSM9a",
+      "confidence_counts": {
+        "qualified_suffix": 17
+      },
+      "weighted_score": 51.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 17,
+      "unique_symbol_count": 4,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryExecMatrixFromSM6bRecheckSM8",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryExecMatrixIndexSM8Recheck",
+        "CNNA.PillarA.Arithmetic.Smoke.SM8RecheckGeneratedLevelHistoryExecMatrixLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm8RecheckGeneratedLevelHistoryExecMatrixLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryExecMirrorSourceFromSM8RecheckSM9a",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryCharpolyExecFromMirrorSM9b",
+      "confidence_counts": {
+        "qualified_suffix": 15
+      },
+      "weighted_score": 45.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 15,
+      "unique_symbol_count": 3,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryExecMirrorSourceFromSM8RecheckSM9a",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9aRecheckGeneratedLevelHistoryExecMirrorSourceLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm9aRecheckGeneratedLevelHistoryExecMirrorSourceLedger_from_accumulatedEntryCancellationLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryCharpolyExecFromMirrorSM9b",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryOperationalCharpolyPolynomialProfileFromSM9b",
+      "confidence_counts": {
+        "qualified_suffix": 17
+      },
+      "weighted_score": 51.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 17,
+      "unique_symbol_count": 5,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryCharpolyExecFromMirrorSM9b",
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryCharpolyExecIndexSM9b",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9bGeneratedLevelHistoryCharpolyExecLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm9bGeneratedLevelHistoryCharpolyExecLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm9bGeneratedLevelHistoryCharpolyExecLedger_from_accumulatedEntryCancellationLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryOperationalCharpolyPolynomialProfileFromSM9b",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryOperationalCoefficientSourceFromSM9c",
+      "confidence_counts": {
+        "qualified_suffix": 9
+      },
+      "weighted_score": 27.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 9,
+      "unique_symbol_count": 4,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryOperationalCharpolyPolynomialProfileFromSM9b",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9cGeneratedLevelHistoryOperationalCharpolyPolynomialProfileLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm9cGeneratedLevelHistoryOperationalCharpolyPolynomialProfileLedger_from_SM9aRecheckLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm9cGeneratedLevelHistoryOperationalCharpolyPolynomialProfileLedger_from_accumulatedEntryCancellationLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryOperationalCoefficientSourceFromSM9c",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDeterminantCoefficientRecurrenceSM9e",
+      "confidence_counts": {
+        "qualified_suffix": 8
+      },
+      "weighted_score": 24.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 8,
+      "unique_symbol_count": 4,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryOperationalCoefficientSourceFromSM9c",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9dGeneratedLevelHistoryOperationalCoefficientSourceLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm9dGeneratedLevelHistoryOperationalCoefficientSourceLedger_from_SM9aRecheckLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm9dGeneratedLevelHistoryOperationalCoefficientSourceLedger_from_accumulatedEntryCancellationLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDeterminantCoefficientRecurrenceSM9e",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialEvaluationNormalFormSM9ePlus",
+      "confidence_counts": {
+        "imported_unique_alias": 2,
+        "qualified_suffix": 28,
+        "same_namespace_short_name": 4
+      },
+      "weighted_score": 98.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 34,
+      "unique_symbol_count": 9,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDeterminantCoefficientRecurrenceSM9e",
+        "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialSM9e",
+        "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialSM9e.const",
+        "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialSM9e.eval",
+        "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialSM9e.linear",
+        "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialSM9e.one",
+        "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialSM9e.zero",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9eGeneratedOperationalDeterminantCoefficientRecurrenceLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.operationalLinearPencilEntryPolynomialSM9e"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialEvaluationNormalFormSM9ePlus",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialForwardEvaluationSourceSM9ePlus",
+      "confidence_counts": {
+        "qualified_suffix": 8
+      },
+      "weighted_score": 24.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 8,
+      "unique_symbol_count": 4,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalBoundedPolynomialEvaluationNormalFormSM9ePlus0",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9ePlus0GeneratedOperationalBoundedPolynomialEvaluationNormalFormLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.operationalBoundedPolynomialEvaluationNormalFormSM9ePlus0",
+        "CNNA.PillarA.Arithmetic.Smoke.sm9ePlus0GeneratedOperationalBoundedPolynomialEvaluationNormalFormLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialForwardEvaluationSourceSM9ePlus",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDeterminantForwardEvaluationBridgeFromSM9ePlus",
+      "confidence_counts": {
+        "qualified_suffix": 10
+      },
+      "weighted_score": 30.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 10,
+      "unique_symbol_count": 5,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalBoundedPolynomialForwardEvaluationSourceSM9ePlus1",
+        "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialSM9e.forwardEvalDegreeOne",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9ePlus1GeneratedOperationalBoundedPolynomialForwardEvaluationSourceLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.operationalLinearPencilEntryForwardEvaluationTargetSM9ePlus1",
+        "CNNA.PillarA.Arithmetic.Smoke.sm9ePlus1GeneratedOperationalBoundedPolynomialForwardEvaluationSourceLedger_from_SM9eLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDeterminantForwardEvaluationBridgeFromSM9ePlus",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDiscriminantFactorGateFromSM9fFull",
+      "confidence_counts": {
+        "qualified_suffix": 3
+      },
+      "weighted_score": 9.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 3,
+      "unique_symbol_count": 2,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.SM9fFullGeneratedOperationalDeterminantForwardEvaluationBridgeLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm9fFullGeneratedOperationalDeterminantForwardEvaluationBridgeLedger_from_SM9eLedger"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDiscriminantFactorGateFromSM9fFull",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalQuadraticCoefficientWindowFromSM9dSM9e",
+      "confidence_counts": {
+        "qualified_suffix": 12
+      },
+      "weighted_score": 36.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 12,
+      "unique_symbol_count": 11,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.SM9gGeneratedOperationalDiscriminantFactorGateLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9gNoCharpolyRecomputationStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9gNoEisensteinGaussHeegnerCMJConsumerStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9gNoExternalComparisonMatrixStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9gNoFreeDiscriminantStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9gNoFreeFactorFormStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9gNoFreeTargetValueStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9gNoNewDeterminantRecurrenceStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9gNoNewMatrixStatus",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9gNoTwoSidedInvStatus"
+      ]
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalQuadraticCoefficientWindowFromSM9dSM9e",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalQuadraticDiscriminantSourceFromSM9g1Window",
+      "confidence_counts": {
+        "qualified_suffix": 5
+      },
+      "weighted_score": 15.0,
+      "strongest_confidence": "qualified_suffix",
+      "strongest_confidence_weight": 3,
+      "reference_count": 5,
+      "unique_symbol_count": 3,
+      "sample_symbols": [
+        "CNNA.PillarA.Arithmetic.Smoke.OperationalQuadraticCoefficientWindowSM9g1",
+        "CNNA.PillarA.Arithmetic.Smoke.SM9g1GeneratedOperationalQuadraticCoefficientWindowLedger",
+        "CNNA.PillarA.Arithmetic.Smoke.sm9g1GeneratedOperationalQuadraticCoefficientWindowLedger_from_SM9eLedger"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+\small
+\arrayrulecolor{black!22}
+\phantomsection
+\subsection*{Reuse ledger row RD01 -- generated ToC/\allowbreak{}smoke source and main-path construction}
+\begin{longtable}{L{0.16\linewidth} L{0.81\linewidth}}
+\hline
+\textbf{Field} & \textbf{Record}\\
+\hline
+ID & RD01\\
+\hline\addlinespace[0.20em]
+Scope & generated ToC/\allowbreak{}smoke source and main-path construction\\
+\hline\addlinespace[0.20em]
+Existing canonical seam & CNNA.PillarA.Arithmetic.Smoke.GeneratedSource and CNNA.PillarA.Arithmetic.Smoke.GeneratedMainPath, backed by CNNA.PillarA.ToC.GeneratedBranchFamily\\
+\hline\addlinespace[0.20em]
+Decision & consume\_or\_extend\_existing\\
+\hline\addlinespace[0.20em]
+Allowed action & Future generated ToC/\allowbreak{}smoke phases must consume or extend the existing source/\allowbreak{}main-path seam at its natural layer.\\
+\hline\addlinespace[0.20em]
+Blocked duplication & No second smoke-test generator, generated carrier source, or parallel main-path constructor under a phase-local module name.\\
+\hline\addlinespace[0.20em]
+Evidence & GeneratedSource exposes regular/\allowbreak{}variable smoke carriers and SM0 ledger;\newline GeneratedMainPath exposes generatedMainPath, regular/\allowbreak{}variable paths, pair ledger, and no-CutSpec/\allowbreak{}no-matrix-data boundary status.\\
+\hline\addlinespace[0.20em]
+Future consumers & Phase 5 experiment request/\allowbreak{}output, O07 generic finite computation-test matrix, later generated arithmetic source phases.\\
+\hline\addlinespace[0.20em]
+\end{longtable}
+\phantomsection
+\subsection*{Reuse ledger row RD02 -- downstream generated Schur/\allowbreak{}DtN/\allowbreak{}arithmetic smoke chain}
+\begin{longtable}{L{0.16\linewidth} L{0.81\linewidth}}
+\hline
+\textbf{Field} & \textbf{Record}\\
+\hline
+ID & RD02\\
+\hline\addlinespace[0.20em]
+Scope & downstream generated Schur/\allowbreak{}DtN/\allowbreak{}arithmetic smoke chain\\
+\hline\addlinespace[0.20em]
+Existing canonical seam & CNNA.PillarA.Arithmetic.Smoke.GeneratedApproximantCore through GeneratedOperationalQuadraticDiscriminantSourceFromSM9g1Window\\
+\hline\addlinespace[0.20em]
+Decision & consume\_existing\_mainline\\
+\hline\addlinespace[0.20em]
+Allowed action & Future consumers may consume the proof-carrying generated chain and add natural source-layer extensions when a missing structure is exposed.\\
+\hline\addlinespace[0.20em]
+Blocked duplication & No independent Schur/\allowbreak{}DtN/\allowbreak{}arithmetic generator that recomputes the same provenance chain outside the Generated* mainline.\\
+\hline\addlinespace[0.20em]
+Evidence & The robust semantic mainline graph and generated module chain already route source -> boundary/\allowbreak{}interior -> Schur/\allowbreak{}DtN -> arithmetic/\allowbreak{}charpoly/\allowbreak{}discriminant objects.\\
+\hline\addlinespace[0.20em]
+Future consumers & Phase 3/\allowbreak{}4 boundary-operator profiles, Phase 5 computation requests, O05/\allowbreak{}O06/\allowbreak{}O07/\allowbreak{}O08 operational arithmetic checks.\\
+\hline\addlinespace[0.20em]
+\end{longtable}
+\phantomsection
+\subsection*{Reuse ledger row RD03 -- action-candidate generator semantics}
+\begin{longtable}{L{0.16\linewidth} L{0.81\linewidth}}
+\hline
+\textbf{Field} & \textbf{Record}\\
+\hline
+ID & RD03\\
+\hline\addlinespace[0.20em]
+Scope & action-candidate generator semantics\\
+\hline\addlinespace[0.20em]
+Existing canonical seam & CNNA.PillarA.Arithmetic.Actions.GeneratorActionInventory and CNNA.PillarA.Arithmetic.Actions.ActionFormatDecision\\
+\hline\addlinespace[0.20em]
+Decision & genuine\_semantic\_split\_already\_existing\\
+\hline\addlinespace[0.20em]
+Allowed action & Action-like requests must consume or extend the action inventory/\allowbreak{}decision seam, because it classifies action formats rather than generated ToC/\allowbreak{}smoke carriers.\\
+\hline\addlinespace[0.20em]
+Blocked duplication & No action-format generator reimplemented inside Smoke or later CM/\allowbreak{}CD consumers.\\
+\hline\addlinespace[0.20em]
+Evidence & GeneratorActionInventory records candidate kinds/\allowbreak{}statuses and ActionFormatDecision consumes it to classify level-history identity, branching, bright/\allowbreak{}dark, Mobius-Schur, CM, and CD action candidates.\\
+\hline\addlinespace[0.20em]
+Future consumers & AR/\allowbreak{}action-format phases, later CM/\allowbreak{}CD/\allowbreak{}action comparison gates.\\
+\hline\addlinespace[0.20em]
+\end{longtable}
+\phantomsection
+\subsection*{Reuse ledger row RD04 -- documentation and planning-table generation}
+\begin{longtable}{L{0.16\linewidth} L{0.81\linewidth}}
+\hline
+\textbf{Field} & \textbf{Record}\\
+\hline
+ID & RD04\\
+\hline\addlinespace[0.20em]
+Scope & documentation and planning-table generation\\
+\hline\addlinespace[0.20em]
+Existing canonical seam & masters/\allowbreak{}cnna\_roadmap\_master.yaml plus scripts/\allowbreak{}generate\_tables.py\\
+\hline\addlinespace[0.20em]
+Decision & artifact\_only\_split\\
+\hline\addlinespace[0.20em]
+Allowed action & Planning/\allowbreak{}PDF/\allowbreak{}TSV views are generated from the single YAML master only.\\
+\hline\addlinespace[0.20em]
+Blocked duplication & No independent proofbook, phase table, object list, module manifest, or reuse ledger source outside the YAML master.\\
+\hline\addlinespace[0.20em]
+Evidence & generate\_tables.py validates the single master and renders object, phase, scratchpad, module manifest, proof documentation, and reuse ledger views.\\
+\hline\addlinespace[0.20em]
+Future consumers & All planning/\allowbreak{}documentation phases, implementation prompts, public API classification.\\
+\hline\addlinespace[0.20em]
+\end{longtable}
+\phantomsection
+\subsection*{Reuse ledger row RD05 -- repo inventory/\allowbreak{}import graph generation}
+\begin{longtable}{L{0.16\linewidth} L{0.81\linewidth}}
+\hline
+\textbf{Field} & \textbf{Record}\\
+\hline
+ID & RD05\\
+\hline\addlinespace[0.20em]
+Scope & repo inventory/\allowbreak{}import graph generation\\
+\hline\addlinespace[0.20em]
+Existing canonical seam & scripts/\allowbreak{}build\_export\_script\_v1.8.py and repo\_inventory/\allowbreak{}raw\_export\\
+\hline\addlinespace[0.20em]
+Decision & artifact\_only\_audit\_not\_ontic\_generator\\
+\hline\addlinespace[0.20em]
+Allowed action & Use inventory data for module placement, import graph diagnostics, and documentation/\allowbreak{}audit only.\\
+\hline\addlinespace[0.20em]
+Blocked duplication & Do not treat graph metrics as CNNA-generative evidence and do not create a second inventory generator for the same source snapshot.\\
+\hline\addlinespace[0.20em]
+Evidence & raw\_export contains modules/\allowbreak{}import edges/\allowbreak{}symbol-reference summaries;\newline phase plans classify these as secondary audit assets, not mathematical inputs.\\
+\hline\addlinespace[0.20em]
+Future consumers & LEG10/\allowbreak{}LEG11/\allowbreak{}LEG5/\allowbreak{}LEG6, module inventory views, later documentation/\allowbreak{}audit phases.\\
+\hline\addlinespace[0.20em]
+\end{longtable}
+\phantomsection
+\subsection*{Reuse ledger row RD06 -- future experiment request/\allowbreak{}output infrastructure}
+\begin{longtable}{L{0.16\linewidth} L{0.81\linewidth}}
+\hline
+\textbf{Field} & \textbf{Record}\\
+\hline
+ID & RD06\\
+\hline\addlinespace[0.20em]
+Scope & future experiment request/\allowbreak{}output infrastructure\\
+\hline\addlinespace[0.20em]
+Existing canonical seam & No separate code yet;\newline must route through RD01/\allowbreak{}RD02 and LEG10 manifest before code.\\
+\hline\addlinespace[0.20em]
+Decision & future\_consume\_or\_wrap\_canonical\_generator\\
+\hline\addlinespace[0.20em]
+Allowed action & Define request/\allowbreak{}output wrappers only after the manifest proves the wrapper consumes the canonical generated chain and does not generate data independently.\\
+\hline\addlinespace[0.20em]
+Blocked duplication & No parallel experiment request/\allowbreak{}output generator, extraction generator, or ledger generator under Phase 5 or O07 names.\\
+\hline\addlinespace[0.20em]
+Evidence & LEG10 already records duplicate-risk symbols;\newline LEG11 now turns them into an explicit block unless a semantic split row is added.\\
+\hline\addlinespace[0.20em]
+Future consumers & Phase 5, O07 generic finite computation-test matrix, heuristic lattice and regime-typed test matrices.\\
+\hline\addlinespace[0.20em]
+\end{longtable}
+\phantomsection
+\subsection*{Reuse ledger row RD07 -- future neutral generator API possibility}
+\begin{longtable}{L{0.16\linewidth} L{0.81\linewidth}}
+\hline
+\textbf{Field} & \textbf{Record}\\
+\hline
+ID & RD07\\
+\hline\addlinespace[0.20em]
+Scope & future neutral generator API possibility\\
+\hline\addlinespace[0.20em]
+Existing canonical seam & Current semantics live in Smoke/\allowbreak{}GeneratedSource-MainPath;\newline no neutral module exists yet.\\
+\hline\addlinespace[0.20em]
+Decision & defer\_until\_code\_phase\_proves\_need\\
+\hline\addlinespace[0.20em]
+Allowed action & Create a neutral wrapper/\allowbreak{}API only if a later manifest shows the Smoke namespace is semantically too narrow but the operation is the same.\\
+\hline\addlinespace[0.20em]
+Blocked duplication & No neutral generator file created merely to rename existing semantics or to bypass import/\allowbreak{}firewall discipline.\\
+\hline\addlinespace[0.20em]
+Evidence & The v41 gate closes governance only;\newline no Lean source change is required to make the policy enforceable in planning.\\
+\hline\addlinespace[0.20em]
+Future consumers & 1.1.1.3 public API contract, future refactor phases, Phase 5 generator consumers.\\
+\hline\addlinespace[0.20em]
+\end{longtable}
+\phantomsection
+\subsection*{Reuse ledger row RD08 -- semantic module consolidation and compatibility-preserving code compactness}
+\begin{longtable}{L{0.16\linewidth} L{0.81\linewidth}}
+\hline
+\textbf{Field} & \textbf{Record}\\
+\hline
+ID & RD08\\
+\hline\addlinespace[0.20em]
+Scope & semantic module consolidation and compatibility-preserving code compactness\\
+\hline\addlinespace[0.20em]
+Existing canonical seam & LEG10 module manifest;\newline LEG11 reuse/\allowbreak{}duplication ledger;\newline LEG5 declaration consumption classification;\newline repo\_inventory/\allowbreak{}raw\_export import/\allowbreak{}declaration graph;\newline old Lean module import paths as compatibility seams\\
+\hline\addlinespace[0.20em]
+Decision & defer\_until\_code\_phase\_proves\_need\\
+\hline\addlinespace[0.20em]
+Allowed action & Unify semantically identical schema/\allowbreak{}wrapper families only through a recorded LEG36 candidate row, old-module facades, declaration/\allowbreak{}consumer diff, and local build evidence. Prefer canonical schema modules at the natural producer layer.\\
+\hline\addlinespace[0.20em]
+Blocked duplication & No continued proliferation of unrelated clone wrappers once a canonical schema is validated;\newline no aggressive merge of proof-stage chains, generated SM phase modules, or Cayley-Dickson S6 stages without provenance-preservation proof.\\
+\hline\addlinespace[0.20em]
+Evidence & V1.12 code spot-check: BoundarySource substrate ledger clone family;\newline Handoff A\_to\_C/\allowbreak{}D/\allowbreak{}E alias family;\newline Handoff B/\allowbreak{}C/\allowbreak{}D/\allowbreak{}E\_to\_A feedback-input family;\newline no-merge warning for Smoke/\allowbreak{}SM and Cayley-Dickson proof chains.\\
+\hline\addlinespace[0.20em]
+Future consumers & Phase 1.1.1.1.5;\newline Phase 1.1.1.2;\newline public API/\allowbreak{}firewall work;\newline pruning/\allowbreak{}refactor phases;\newline future Lean implementation prompts.\\
+\hline\addlinespace[0.20em]
+\end{longtable}
+\phantomsection
+\subsection*{Reuse ledger row REUSE-REAL0QS-AQFT-01 -- REALOQS legacy AQFT migration}
+\begin{longtable}{L{0.16\linewidth} L{0.81\linewidth}}
+\hline
+\textbf{Field} & \textbf{Record}\\
+\hline
+ID & REUSE-REAL0QS-AQFT-01\\
+\hline\addlinespace[0.20em]
+Scope & REALOQS legacy AQFT migration\\
+\hline\addlinespace[0.20em]
+Existing canonical seam & RLC0-RLC8;\newline phases 23.0-23.8;\newline future CNNA/\allowbreak{}PillarB/\allowbreak{}AQFT target modules\\
+\hline\addlinespace[0.20em]
+Decision & defer\_until\_code\_phase\_proves\_need\\
+\hline\addlinespace[0.20em]
+Allowed action & Reuse only target semantics, proof-route ideas and regression expectations after CNNA source-map closure;\newline do not copy/\allowbreak{}import legacy code into current CNNA.\\
+\hline\addlinespace[0.20em]
+Blocked duplication & Parallel StarAlgebra/\allowbreak{}LocalNet/\allowbreak{}BoundaryMatrix/\allowbreak{}HK/\allowbreak{}GNS/\allowbreak{}KMS modules that duplicate legacy names without CNNA-derived provenance.\\
+\hline\addlinespace[0.20em]
+Evidence & Static scan and legacy module inventory in V1.35 REALOQS scan JSON.\\
+\hline\addlinespace[0.20em]
+Future consumers & PillarB phases 13.1-13.9, CNNA Explorer CEX11/\allowbreak{}RLC8 and expert AQFT review.\\
+\hline\addlinespace[0.20em]
+\end{longtable}
+\arrayrulecolor{black}
+\normalsize

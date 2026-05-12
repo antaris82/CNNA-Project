@@ -1,0 +1,149 @@
+\small
+\arrayrulecolor{black!22}
+\begin{longtable}{L{0.18\linewidth} L{0.38\linewidth} L{0.4\linewidth}}
+\hline
+\textbf{Topic} & \textbf{Assessment} & \textbf{Decision}\\
+\hline
+\endfirsthead
+\hline
+\textbf{Topic} & \textbf{Assessment} & \textbf{Decision}\\
+\hline
+\endhead
+Three-layer versioning & Lean toolchain/\allowbreak{}API level, Lean-code snapshot timestamp, YAML planning/\allowbreak{}register state and tool infrastructure state change under different causes and must not be collapsed. & Maintain timestamp-complete pairs, with an asymmetric Lean pair: lean\_data\_version records the static Lean toolchain/\allowbreak{}API level, currently lean-4.28.0, and lean\_data\_timestamp records the Lean-code snapshot/\allowbreak{}data timestamp. planning\_data\_version + planning\_data\_timestamp track phase/\allowbreak{}object/\allowbreak{}scratchpad/\allowbreak{}dossier/\allowbreak{}YAML policy changes;\newline tool\_infrastructure\_version + tool\_infrastructure\_timestamp track only generator/\allowbreak{}importer/\allowbreak{}frontend/\allowbreak{}tool-code changes. A version value without its paired timestamp is invalid for history, SQL mirror, Explorer provenance and generated-release metadata. Legacy aliases are compatibility fields, not semantic source fields.\\
+\hline
+\addlinespace[0.24em]
+Primary working format & LaTeX, generated tables, and exported TSV files are unsuitable as primary editing sources for the roadmap. & The only maintained source is masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline all tables, links, and optional exports are generated from it.\\
+\hline
+\addlinespace[0.24em]
+Tables as single source & Separate phase, object, and access master files drift even if their rendered tables look synchronized. & phases, objects, access policy, legends, code audit, and scratch-pad records are all sections of one YAML master.\\
+\hline
+\addlinespace[0.24em]
+Scratch-pad synchronization & Manual scratch-pad prose inside the .tex file causes drift. & The How implemented column is generated from phase\_id links into implementation\_scratchpad.yaml;\newline green phases without YAML records are generator errors.\\
+\hline
+\addlinespace[0.24em]
+Code-module assignment & Every object and phase row names the current derivation site and the neutral target module. & This makes visible whether something is derived-only, legacy-only, incomplete, or missing.\\
+\hline
+\addlinespace[0.24em]
+Subphases & Unlimited dot notation is allowed only when dependency depth justifies it. & Split criterion: too many prerequisites, a deep DAG chain, different proof kinds, or a new generation layer.\\
+\hline
+\addlinespace[0.24em]
+Object and phase status separated & A shared color code hides whether an object is complete or only close. & Object status uses W/\allowbreak{}B/\allowbreak{}G/\allowbreak{}Y/\allowbreak{}R/\allowbreak{}K. Phase status uses only G/\allowbreak{}Y/\allowbreak{}R/\allowbreak{}W with exactly one active cursor.\\
+\hline
+\addlinespace[0.24em]
+Single-master validation & A new phase, object, or scratch-pad record must appear everywhere after generation, or generation fails. & The generator validates phase IDs, object IDs, phase-object links, active cursor, scratch-pad completeness, and no manual generated columns.\\
+\hline
+\addlinespace[0.24em]
+Roadmap horizon policy & The full CNNA roadmap must be visible without treating distant goals as proved or implementation-ready. & Short-term focus is Pillar A. Mid-term focus is Pillar B QFT and Pillar C OQS. Long-term focus is Pillar D spacetime, Pillar E matter, and explicit backreaction. External speculative theories are side-comparison targets only.\\
+\hline
+\addlinespace[0.24em]
+No speculative foundation import & Strings, loop quantum gravity, noncommutative geometry, and full ToE narratives may be useful external comparisons but must not enter the CNNA foundation as assumptions. & Only established mathematics and physics objects are admitted into the derivation core. Speculative frameworks may be registered as consumer-side comparisons if they emerge from CNNA outputs.\\
+\hline
+\addlinespace[0.24em]
+Implementation scratch-pad workflow & A phase can be prepared from reliable mathematical/\allowbreak{}physical sources before any Lean implementation. Preparation must not be confused with closure. & Use scratch-pad fields inside the single YAML master: source materials, extracted theory objects, dependency audit, proof rehearsal, tactic plan, guardrails, fallback layer, and post-green checks.\\
+\hline
+\addlinespace[0.24em]
+TomS thread ingestion rule & The thread is useful as a map of established structures, but it mixes exposition, corrections, heuristic CNNA replies, and later clarifications. It is not a source of CNNA-generative data. & Store extracted objects in a cross-check register, map them to phases/\allowbreak{}objects, and classify each as derived target, comparison-only target, correction, or no-action note. Use primary/\allowbreak{}authoritative sources before any formalization step.\\
+\hline
+\addlinespace[0.24em]
+Legacy TeX/\allowbreak{}PDF authority cleanup & Retaining v20/\allowbreak{}v21 TeX filenames as maintained-looking sources creates ambiguity after the YAML master becomes authoritative. & v22 package uses a v22 main TeX/\allowbreak{}PDF filename. Any old TeX/\allowbreak{}PDF is historical output only and should not be edited as a roadmap source.\\
+\hline
+\addlinespace[0.24em]
+Blue-object and pruning planning & Derived-only proofs are not enough to make an object public-final when the semantic/\allowbreak{}API boundary is still wrong. Likewise, syntactic non-use is not enough to delete. & v23 introduces consumption classification, blue-object correction ledger, public API contract, and pruning ledger before any code move/\allowbreak{}deletion.\\
+\hline
+\addlinespace[0.24em]
+Implementation module manifest & Before any code change, the plan must state exact added/\allowbreak{}modified modules, semantic placement, import direction, reuse decision, public/\allowbreak{}legacy role, consumer direction, generic finite test placement, phase type, regression mode, version impact, and mathlib/\allowbreak{}noncomputable risk. & Phase 1.1.1.1.1 closes this as a generated/\allowbreak{}validated module-manifest contract. The generator now emits a module-manifest table/\allowbreak{}TSV from scratchpad fields and validates that every scratchpad record carries the manifest fields;\newline later code phases must fill them before Lean edits.\\
+\hline
+\addlinespace[0.24em]
+EXEC-2 rational ExecComplex boundary & ExecComplex is Q x Q and is suitable for integer/\allowbreak{}rational operational invariants in Phases 3-6, but not for general algebraic irrationalities such as sqrt(D), general CM tau, algebraic eigenvalues, or non-rational lattice embeddings. & Operational paths end at the Q x Q boundary. Algebraic irrationalities live only in mirror/\allowbreak{}non-operational layers. Only proved rational/\allowbreak{}integer invariants, such as discriminants, norms, rational special-angle cosines, and h=1 integer j-values when separately proved, may flow back into the operational path.\\
+\hline
+\addlinespace[0.24em]
+Refactor regression mode & The Notation split touches a large import surface, so an all-at-once move risks long red intervals and consumer ambiguity. & Use wrapper-first incremental refactoring: add neutral wrappers beside legacy, migrate bounded consumer batches, record declaration counts/\allowbreak{}import deltas/\allowbreak{}breakage audit, and require local full-build evidence for every code package before closing a refactor phase.\\
+\hline
+\addlinespace[0.24em]
+Lean/\allowbreak{}mathlib version policy & Future number-theory and algebra phases may be tempted to chase newer mathlib APIs, while the current baseline is Lean 4.28.0 plus its mathlib snapshot. & Freeze to the baseline for implementation unless an explicit phase-boundary upgrade gate is opened. A version upgrade is its own review/\allowbreak{}build event;\newline mathlib noncomputable pressure must be isolated in mirror/\allowbreak{}non-operational layers or cause a natural-source refactor, not an operational leak.\\
+\hline
+\addlinespace[0.24em]
+Phase-type-specific scratchpads & A refactor phase and a new derivation phase need different evidence. One flat scratchpad creates not-applicable ballast and misses migration metrics. & Every phase records phase\_type. Refactor phases require migration/\allowbreak{}regression metrics;\newline derivation phases require proof rehearsal/\allowbreak{}tactic/\allowbreak{}mathlib data;\newline comparison phases require derived-only boundary;\newline infrastructure phases must state why no operational witness is required.\\
+\hline
+\addlinespace[0.24em]
+Governance-depth retrospective & The deep Phase-1 governance stack is justified by the SM1-SM9h failure modes, but it must not become the project itself. & After the first real code-change phase 1.1.2 closes, run an explicit retrospective: identify which governance gates prevented actual errors and decide whether Phase 3+ can use a flatter max-three-level structure.\\
+\hline
+\addlinespace[0.24em]
+Phase 3 to Phase 4 consumer contract & Phase 3 must wrap Schur/\allowbreak{}DtN before Phase 4 consumes it, but the Phase-4 generator path is the canonical operational consumer and should shape the Phase-3.6 public contract. & Phase 3.6 publishes a consumer-ready BoundaryOperatorProfile for Phase 4.1 without importing Phase 4. Phase 4 consumes that contract and must not reconstruct Schur/\allowbreak{}DtN internals or implement parallel generator logic.\\
+\hline
+\addlinespace[0.24em]
+IdealThread/\allowbreak{}CutSpec.full extremal routes & Code confirms IdealThread is an InfiniteThread with singleton carrier per level and DirectedFamily embedding;\newline CutSpec.full is carrier := T.carrier. ExistingIdealThreadNoGo already proves the singleton route cannot generate a non-singleton carrier/\allowbreak{}boundary source. & Treat IdealThread and CutSpec.full as two extremal profiles. IdealThread may supply scalar/\allowbreak{}thread-route audits;\newline full boundary/\allowbreak{}DtN matrices require full/\allowbreak{}generated boundary data. Any lifting from thread to nontrivial boundary geometry needs its own theorem and phase.\\
+\hline
+\addlinespace[0.24em]
+String-like interpretation boundary & The one-dimensional/\allowbreak{}string-like reading is a potentially useful physical analogy, but it is not a Lean theorem and cannot supply generative CNNA data. & Register the analogy only as comparison/\allowbreak{}diagnostic material under secondary long-term goals and proof dossiers. Never use it to justify a module, formula, discriminant, spectrum, or handoff without derived code evidence.\\
+\hline
+\addlinespace[0.24em]
+Thread recursion versus full-boundary arithmetic provenance & The code contains RecursiveSchurSource/\allowbreak{}MobiusTransfer/\allowbreak{}CharpolyExec chains, but the exact provenance relation between scalar recurrence, IdealThread singleton carriers, full-boundary diagonal entries, and generated boundary sources must be audited before interpretation. & Insert a Phase 4.0 audit before operational arithmetic wrappers. D=-3/\allowbreak{}D=-4 or CM claims may be promoted only through the operational discriminant/\allowbreak{}number-theory chain, not through analogy.\\
+\hline
+\addlinespace[0.24em]
+Horizontal/\allowbreak{}vertical Schur-complement duality bridge order & The algebra path and arithmetic path plausibly share Schur-complement structure, but the claim depends on separately derived horizontal sector elimination, vertical level recursion, transfermatrix data, and CD norm structure. & Register the bridge as BR08 in Phase 10.4.1 only. It is not an input to Phase 1.4, 3, 4, 5, or 6. CD8 is deferred to Phase 10.4.2 as a corollary candidate, not a Phase-6 final theorem.\\
+\hline
+\addlinespace[0.24em]
+One-generator Schur mechanism boundary & A unified Schur generator is an architectural target: the same Dirichlet-Laplacian/\allowbreak{}Schur machinery may yield horizontal algebraic and vertical arithmetic invariants. This remains a theorem obligation, not a premise. & Use the one-generator language only as a planning constraint and proof target. Code may share the canonical generator, but no formula may be accepted because it fits the unification story;\newline every entry must be proof-carrying from the earlier route.\\
+\hline
+\addlinespace[0.24em]
+Heuristic Eisenstein/\allowbreak{}Gauss lattice tests & Post \#97 gives a useful heuristic for 120-degree Eisenstein and 90-degree Gauss spiral embeddings of a b-ary tree, but it does not define the code branching object and includes irrational/\allowbreak{}analytic targets outside ExecComplex. & Represent this material as a consumer-only test matrix after generator/\allowbreak{}lattice/\allowbreak{}CM/\allowbreak{}j source objects exist. Use code-defined b and L\_max;\newline operational rows may compute finite relations and rational/\allowbreak{}integer invariants, while tau, sqrt(D), coordinates, and analytic j stay in mirror/\allowbreak{}comparison layers.\\
+\hline
+\addlinespace[0.24em]
+General early finite test matrix vs. specialized sentinel rows & Eisenstein/\allowbreak{}Gauss tests are valuable early sentinels, but two special examples cannot certify that the computable path is general or non-skeletal. & Introduce O07 as the generic finite computation test matrix. L09/\allowbreak{}L10/\allowbreak{}M08/\allowbreak{}BR10 are specialized consumers/\allowbreak{}sentinel extensions. Every computation phase must define generic rows before or alongside sentinels.\\
+\hline
+\addlinespace[0.24em]
+Regime split for Heegner/\allowbreak{}CM test rows & The nine classical class-number-one/\allowbreak{}Heegner fields are number-theoretic comparison targets, but CNNA closed/\allowbreak{}unitary status is a regime statement, not a class-number statement. The noOuter empty-set REAL-root branch may have only Eisenstein/\allowbreak{}Gauss as early sentinel candidates;\newline additional Heegner targets are naturally treated as IDEAL\_infty projection/\allowbreak{}complement-family rows until proven otherwise. & Implement regime-typed test rows. Generic finite rows come first. Eisenstein/\allowbreak{}Gauss may be tested as noOuter-root sentinels. All other Heegner/\allowbreak{}CM targets default to HasOuter/\allowbreak{}complement-projection or comparison-only rows unless a later proof derives noOuter provenance.\\
+\hline
+\addlinespace[0.24em]
+EXEC-3 computable scalar architecture & ExecComplex is code-confirmed as rational pairs QxQ and maps into mathlib Complex through ExecComplexBridge. This is executable and robust for rational/\allowbreak{}integer matrix, polynomial, determinant and discriminant data, but it cannot represent general algebraic irrational coordinates such as sqrt(D) or tau. The need for a quadratic layer is therefore foreseeable;\newline the provenance question is solved by indexing it by derived D. & Keep ExecComplex as the rational operational floor. Do not expand it into a full Complex layer. Treat O09 as a required exact quadratic schema for later CM/\allowbreak{}lattice coordinates, but concrete instantiation requires O10/\allowbreak{}BR14 and a proof-carrying discriminant D-source.\\
+\hline
+\addlinespace[0.24em]
+Exact quadratic layer versus full computable Complex & Mathlib Complex is Real x Real, and mathlib number fields/\allowbreak{}algebraic closures are formal rather than generally executable. Mathlib QuadraticAlgebra gives explicit coordinates and multiplication;\newline AdjoinRoot demonstrates relation-generated root adjoining via quotient, but docs expose noncomputable instances that require boundary audit. & Implement or wrap a minimal discriminant-indexed exact quadratic schema rather than a full computable Complex. Mathlib QuadraticAlgebra may guide/\allowbreak{}wrap the schema after audit;\newline AdjoinRoot is a useful quotient/\allowbreak{}reference pattern but any noncomputable quotient/\allowbreak{}field instances must stay out of operational code unless isolated.\\
+\hline
+\addlinespace[0.24em]
+Cayley-Dickson route to C-layer noncircularity & The current CD code is structural and shares Schur provenance;\newline ArithmeticCDBridge explicitly records no ExecMirror-CDComplex identification without a transfer lemma. A CD-derived C surface is therefore not currently an operational scalar replacement. & Do not derive the operative C-layer from Cayley-Dickson before CD7/\allowbreak{}BR08/\allowbreak{}CD8. Register CD9 as a late noncircularity audit. If proved, it may compare or bridge scalar surfaces;\newline it may not retroactively justify earlier ExecComplex or arithmetic definitions.\\
+\hline
+\addlinespace[0.24em]
+EXEC-4 derived-only exact quadratic provenance & The later theory will need exact quadratic data, but derived-only forbids introducing sqrt(D) as a number, axiom, or CD/\allowbreak{}Complex import. The only acceptable source is an already derived operational discriminant parameter D. & O09 is a parameterized algebraic schema with theta\textasciicircum{}2 = D. O10/\allowbreak{}BR14 instantiate it only from O05/\allowbreak{}O06 or equivalent proof-carrying discriminant ledgers. Missing D is an upstream discriminant-source gap, not a scalar-layer patch.\\
+\hline
+\addlinespace[0.24em]
+PHASE-5-10 dependency bifurcation & v36 placed spectral/\allowbreak{}physical objects inside or behind a modular-form/\allowbreak{}j chain, even though SP0/\allowbreak{}SP1/\allowbreak{}P00-P06 consume finite boundary matrices, algebra/\allowbreak{}star/\allowbreak{}state/\allowbreak{}regime data and not j or modular forms. Phase 10 also mixed modular, transfer, spectral, analytic and bridge targets. & Split the post-Phase-4 roadmap into Path A (number theory -> lattice geometry -> modular/\allowbreak{}j -> analytic theta/\allowbreak{}L/\allowbreak{}class-number formula) and Path B (spectral finite profile -> finite physical/\allowbreak{}operator dynamics -> heat/\allowbreak{}spectral geometry -> transfermatrix -> late Schur/\allowbreak{}CD bridges). No object may inherit a modular-form dependency unless its proof target explicitly consumes modular data.\\
+\hline
+\addlinespace[0.24em]
+PHASE-OBJECT-LINK policy & The phase table previously rendered Linked objects from direct equality object.Phase == phase.Phase only. Empty cells were often valid for umbrella, closeout, baseline or moved phases, but the view did not explain that and could be mistaken for missing objects. & Every phase has an explicit Object link policy: direct, scope\_only, no\_direct\_object, or moved. The generator renders policy-aware text and validates that direct phases have direct objects and scope-only phases have child object scope. Blank Linked objects cells are forbidden.\\
+\hline
+\addlinespace[0.24em]
+ONT-1 ontic subsystem-minimality & Without an explicit ontic-minimality contract, later phases could silently import dynamics, environment, geometry, stochasticity, arithmetic, operator algebra or physics as primitive interpretation rather than deriving them from the subsystem/\allowbreak{}complement cut. & The only primitive ontic emergence trigger is subsystem-being inside the formal IDEAL\_infty provenance whole. All effective structures are derived downstream from cut, boundary, complement families, regime and Schur/\allowbreak{}DtN consequences. Physical readings are consumer interpretations, never generative inputs.\\
+\hline
+\addlinespace[0.24em]
+DB-REVIEW main side objective and database-ready planning representation & The Single-YAML-Master remains the maintained planning source, but its information should be structured so phases, objects, modules, handoffs, status colors, theory links, proof dossiers, and review paths can later be queried through a relational or graph-friendly database. & Add Phase 20 as a non-blocking main side objective. Technical database implementation is later, but schema discipline and review semantics apply immediately. YAML/\allowbreak{}PDF/\allowbreak{}TSV/\allowbreak{}DOT are generated views, not a second truth system.\\
+\hline
+\addlinespace[0.24em]
+Epistemic review status and no-infallibility maxim & A green Lean build proves formal consistency relative to selected definitions, not semantic infallibility of modeling choices, interpretations, or established-theory attachments. Generated artifacts can also contain semantic errors. & Record the maxim that nothing is infallible and no 100-percent truth is declared. Every relevant claim remains under discipline-specific expert review, and missing blue/\allowbreak{}reference-theory markings are active audit debt.\\
+\hline
+\addlinespace[0.24em]
+OOP-style context-class separation for phases and objects & The previous status colors were doing two jobs: release-state signaling and, implicitly, type/\allowbreak{}context signaling. That risks a category error: a green tool/\allowbreak{}database/\allowbreak{}reference object can look like a green Lean object. & V1.26 adds Context class as an orthogonal class/\allowbreak{}type field on all phases and objects, renders it in phase/\allowbreak{}object/\allowbreak{}proof/\allowbreak{}scratchpad/\allowbreak{}module-manifest tables, and keeps status colors strictly as release/\allowbreak{}proof-state indicators.\\
+\hline
+\addlinespace[0.24em]
+Object lifecycle versus phase history & Object rows can lose currency when patched, renamed, deleted or retired;\newline phase rows represent historical implementation/\allowbreak{}review events and therefore should not become outdated. Scratchpads and dossiers need different ownership semantics to avoid contradictions. & Every object receives lifecycle fields: Object lifecycle state, Lifecycle predecessor object(s), Lifecycle successor/\allowbreak{}current object, Lifecycle note and Current dossier pointer. Object dossiers remain object-owned;\newline scratchpads remain phase-owned implementation records;\newline lifecycle metadata cross-links them. Old objects are retained and point forward;\newline old phases are retained and linked to patch/\allowbreak{}successor phases.\\
+\hline
+\addlinespace[0.24em]
+Original roadmap as legacy/\allowbreak{}reference migration source & The uploaded CNNA\_Roadmap\_v0605\_revised\_v38\_reviewfix\_umlaute.tex contains useful source hierarchy, migration, chain-sheet, gate, de-seeding, D/\allowbreak{}E, matter-audit and meta-audit obligations, but it is not checked Lean and cannot become CNNA-generative data. & Register roadmap material through external-source cross-check rows, roadmap ledger objects and narrow future phases. The roadmap may force gates and audit duties;\newline it may not supply axioms, proof closure or direct object validity.\\
+\hline
+\addlinespace[0.24em]
+Roadmap chain sheets as first-class planning gates & The original roadmap chain sheets expose dependency order that was too coarse in the previous B/\allowbreak{}D/\allowbreak{}E blocks. & Represent modular B core, Nuclearity/\allowbreak{}DHR/\allowbreak{}DR, ParameterClosure, D local-covariance/\allowbreak{}Hadamard/\allowbreak{}Wick and D/\allowbreak{}E/\allowbreak{}Feynman matter chains as explicit phase/\allowbreak{}object/\allowbreak{}gate obligations.\\
+\hline
+\addlinespace[0.24em]
+Astronews \#27 generated-data closure semantics & The project self-audit distinguishes algebraic skeleton success from genuine derived-only closure. A compiled skeleton can be an idle run;\newline the closure claim requires generated data to traverse the operational machinery. & Treat this as global status semantics: green/\allowbreak{}derived-only closure requires skeleton, proof obligations and operational generated-data smoke evidence.\\
+\hline
+\addlinespace[0.24em]
+Astronews \#28 YAML and Explorer as epistemic control & The public project statement identifies PDF/\allowbreak{}TeX as insufficient datastores for CNNA-scale complexity and motivates YAML, generated views, SQL mirrors and an exploratory Mindmap/\allowbreak{}Universe-Explorer. & Record the Explorer as epistemic control and review infrastructure, not presentation vanity. YAML is the planning source;\newline SQL/\allowbreak{}Explorer are read-only/\allowbreak{}generated mirrors;\newline PDF/\allowbreak{}TeX are secondary renderings.\\
+\hline
+\addlinespace[0.24em]
+Astronews \#29 no-free-parameter foundation and regime split & The foundation is described as root/\allowbreak{}empty-set partial order plus finite subsystem selection, with root approximation closed/\allowbreak{}unitary/\allowbreak{}no dark-interface and non-root approximation complement-bearing/\allowbreak{}effectively open. Parameters such as L\_max and branching need theory-internal derivation/\allowbreak{}backreaction provenance. & Promote this to global postulate/\allowbreak{}guardrail semantics and require explicit parameter provenance before any handoff/\allowbreak{}export.\\
+\hline
+\addlinespace[0.24em]
+\end{longtable}
+\arrayrulecolor{black}
+\normalsize

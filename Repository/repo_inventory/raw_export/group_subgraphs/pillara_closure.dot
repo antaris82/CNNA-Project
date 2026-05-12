@@ -1,0 +1,13 @@
+digraph group_pillara_closure {
+  rankdir="LR";
+  node [shape=box, fontsize=10];
+  "CNNA.PillarA.Closure.BuildAll" [tooltip="PillarA/Closure"];
+  "CNNA.PillarA.Closure.Notation" [tooltip="PillarA/Closure"];
+  "CNNA.PillarA.Closure.ParameterClosure" [tooltip="PillarA/Closure"];
+  "CNNA.PillarA.Closure.RegularizationClosure" [tooltip="PillarA/Closure"];
+  "CNNA.PillarA.Closure.BuildAll" -> "CNNA.PillarA.Closure.Notation";
+  "CNNA.PillarA.Closure.BuildAll" -> "CNNA.PillarA.Closure.ParameterClosure";
+  "CNNA.PillarA.Closure.BuildAll" -> "CNNA.PillarA.Closure.RegularizationClosure";
+  "CNNA.PillarA.Closure.Notation" -> "CNNA.PillarA.Closure.RegularizationClosure";
+  "CNNA.PillarA.Closure.RegularizationClosure" -> "CNNA.PillarA.Closure.ParameterClosure";
+}

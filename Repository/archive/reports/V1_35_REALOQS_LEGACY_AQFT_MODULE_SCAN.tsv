@@ -1,0 +1,102 @@
+module_path	category	lines	decl_total	decl_counts	has_noncomputable	has_simp_attr	has_sorry_admit_axiom
+Meta/PillarB_ActivePath.lean	PillarB meta/audit	50	0	{}	True	True	False
+Meta/PillarB_BQ8_Closed.lean	PillarB meta/audit	23	1	"{""theorem"": 1}"	True	False	False
+Meta/PillarB_BQ9_Closed.lean	PillarB meta/audit	24	1	"{""theorem"": 1}"	True	False	False
+Meta/PillarB_Closure_FromA_Strict.lean	PillarB meta/audit	58	6	"{""theorem"": 6}"	True	False	False
+Meta/PillarB_Closure_Target.lean	PillarB meta/audit	23	0	{}	True	True	False
+Meta/PillarB_HK_Observable_Strict.lean	PillarB meta/audit	47	4	"{""def"": 1, ""theorem"": 3}"	True	False	False
+Meta/PillarB_NoConfigHarnessInCriticalPath.lean	PillarB meta/audit	26	0	{}	True	True	False
+Meta/PillarB_ObservableActivePath.lean	PillarB meta/audit	61	0	{}	True	True	False
+Meta/PillarB_ObservableAudit.lean	PillarB meta/audit	9	0	{}	False	False	False
+Meta/PillarB_ObservableBasisFromA.lean	PillarB meta/audit	33	2	"{""theorem"": 2}"	True	False	False
+Meta/PillarB_ObservableClosure_FromA_Strict.lean	PillarB meta/audit	71	6	"{""def"": 1, ""theorem"": 5}"	True	False	False
+Meta/PillarB_ObservableClosure_Target.lean	PillarB meta/audit	36	0	{}	True	True	False
+Meta/PillarB_ObservableDynamicsDecision.lean	PillarB meta/audit	257	17	"{""theorem"": 17}"	True	True	False
+Meta/PillarB_ObservablePath.lean	PillarB meta/audit	45	3	"{""theorem"": 3}"	True	False	False
+Meta/PillarB_ObservableStatePath.lean	PillarB meta/audit	41	3	"{""theorem"": 3}"	True	False	False
+Meta/PillarB_ObservableSubnet.lean	PillarB meta/audit	46	3	"{""theorem"": 3}"	True	False	False
+Meta/PillarB_RichAudit.lean	PillarB meta/audit	5	0	{}	False	False	False
+Meta/PillarB_StrictSurface.lean	PillarB meta/audit	48	5	"{""theorem"": 5}"	True	False	False
+PillarB/AQFT.lean		48	0	{}	False	False	False
+PillarB/Gates.lean		3	0	{}	False	False	False
+PillarB/AQFT/CStarKMSState.lean	AQFT Foundations	48	4	"{""def"": 1, ""structure"": 1, ""theorem"": 2}"	False	True	False
+PillarB/AQFT/CStarNorm.lean	AQFT Foundations	169	13	"{""abbrev"": 2, ""def"": 9, ""structure"": 2}"	False	True	False
+PillarB/AQFT/CStarState.lean	AQFT Foundations	82	6	"{""def"": 1, ""structure"": 1, ""theorem"": 4}"	False	True	False
+PillarB/AQFT/Exports.lean		16	0	{}	False	False	False
+PillarB/AQFT/GlobalCone.lean		15	1	"{""abbrev"": 1}"	False	False	False
+PillarB/AQFT/GNS.lean	Quasi-local/GNS/KMS/Modular	32	2	"{""abbrev"": 1, ""structure"": 1}"	False	False	False
+PillarB/AQFT/KMS.lean	Quasi-local/GNS/KMS/Modular	82	8	"{""abbrev"": 1, ""def"": 2, ""structure"": 3, ""theorem"": 2}"	False	True	False
+PillarB/AQFT/Legacy.lean		6	0	{}	False	False	False
+PillarB/AQFT/LocalNet.lean	Local nets and HK support	45	4	"{""def"": 1, ""structure"": 1, ""theorem"": 2}"	False	True	False
+PillarB/AQFT/RelativeEntropy.lean	Quasi-local/GNS/KMS/Modular	40	3	"{""structure"": 1, ""theorem"": 2}"	False	True	False
+PillarB/AQFT/StarAlgebra.lean	AQFT Foundations	124	12	"{""def"": 2, ""structure"": 3, ""theorem"": 7}"	False	True	False
+PillarB/AQFT/State.lean	AQFT Foundations	86	10	"{""def"": 4, ""structure"": 1, ""theorem"": 5}"	False	True	False
+PillarB/AQFT/StateNet.lean	Local nets and HK support	44	1	"{""def"": 1}"	False	False	False
+PillarB/AQFT/TimeOrientation.lean		39	2	"{""def"": 1, ""inductive"": 1}"	True	True	False
+PillarB/AQFT/TimeReversal.lean		83	4	"{""def"": 1, ""structure"": 1, ""theorem"": 2}"	False	True	False
+PillarB/Gates/CStarNormBasic.lean		45	4	"{""theorem"": 4}"	False	False	False
+PillarB/Gates/ExampleFiniteClassical.lean		59	5	"{""theorem"": 5}"	False	False	False
+PillarB/Gates/Exports.lean		9	0	{}	False	False	False
+PillarB/Gates/HaagKastler.lean		79	4	"{""structure"": 4}"	False	False	False
+PillarB/Gates/ImportPolicy.lean		5	0	{}	False	False	False
+PillarB/Gates/LocalNetFunctoriality.lean		28	2	"{""theorem"": 2}"	False	False	False
+PillarB/Gates/QuasiLocalStateLift.lean		22	1	"{""theorem"": 1}"	False	False	False
+PillarB/Gates/QuasiLocalUP.lean		25	1	"{""theorem"": 1}"	False	False	False
+PillarB/Gates/SplitProperty.lean	HK gates	66	6	"{""def"": 3, ""structure"": 1, ""theorem"": 2}"	False	False	False
+PillarB/Gates/StarAlgebraBasic.lean		40	3	"{""theorem"": 3}"	False	False	False
+PillarB/Gates/StateRestriction.lean		40	4	"{""theorem"": 4}"	False	False	False
+PillarB/Gates/HaagKastler/Additivity.lean	HK gates	42	5	"{""def"": 4, ""theorem"": 1}"	False	False	False
+PillarB/Gates/HaagKastler/BasisAdditivity.lean		108	10	"{""def"": 5, ""structure"": 1, ""theorem"": 4}"	False	True	False
+PillarB/Gates/HaagKastler/Covariance.lean	HK gates	85	7	"{""def"": 3, ""structure"": 1, ""theorem"": 3}"	False	False	False
+PillarB/Gates/HaagKastler/Isotony.lean	HK gates	34	3	"{""def"": 1, ""theorem"": 2}"	False	False	False
+PillarB/Gates/HaagKastler/Locality.lean	HK gates	46	4	"{""def"": 3, ""theorem"": 1}"	False	False	False
+PillarB/Gates/HaagKastler/Spectrum.lean	HK gates	35	3	"{""def"": 1, ""structure"": 1, ""theorem"": 1}"	False	False	False
+PillarB/Gates/HaagKastler/StrongAdditivity.lean	HK gates	24	1	"{""def"": 1}"	False	False	False
+PillarB/Gates/HaagKastler/TimeSlice.lean	HK gates	53	4	"{""def"": 1, ""structure"": 1, ""theorem"": 2}"	False	False	False
+PillarB/Gates/HaagKastler/Vacuum.lean	HK gates	62	6	"{""abbrev"": 2, ""def"": 3, ""structure"": 1}"	False	False	False
+PillarB/AQFT/Derived/BoundaryMatrixAdditiveDynamics.lean	Boundary-matrix derived layer	465	24	"{""abbrev"": 2, ""def"": 9, ""theorem"": 13}"	True	True	False
+PillarB/AQFT/Derived/BoundaryMatrixAdditiveDynamicsDecision.lean	Boundary-matrix derived layer	757	32	"{""def"": 8, ""theorem"": 24}"	True	True	False
+PillarB/AQFT/Derived/BoundaryMatrixAdditiveProperties.lean	Boundary-matrix derived layer	160	8	"{""abbrev"": 2, ""def"": 2, ""theorem"": 4}"	True	False	False
+PillarB/AQFT/Derived/BoundaryMatrixAdditiveStateNet.lean	Boundary-matrix derived layer	241	11	"{""abbrev"": 4, ""def"": 3, ""theorem"": 4}"	True	True	False
+PillarB/AQFT/Derived/BoundaryMatrixAdditiveSubnet.lean	Boundary-matrix derived layer	259	13	"{""abbrev"": 2, ""def"": 8, ""theorem"": 3}"	True	True	False
+PillarB/AQFT/Derived/BoundaryMatrixAlgebra.lean	Boundary-matrix derived layer	47	2	"{""abbrev"": 1, ""def"": 1}"	True	False	False
+PillarB/AQFT/Derived/BoundaryMatrixCStar.lean	Boundary-matrix derived layer	163	4	"{""abbrev"": 2, ""def"": 2}"	True	True	False
+PillarB/AQFT/Derived/BoundaryMatrixDensityState.lean	Boundary-matrix derived layer	590	31	"{""def"": 11, ""theorem"": 20}"	True	True	False
+PillarB/AQFT/Derived/BoundaryMatrixDynamicsFromL.lean	Boundary-matrix derived layer	170	5	"{""abbrev"": 2, ""def"": 3}"	True	True	False
+PillarB/AQFT/Derived/BoundaryMatrixFullDynamics.lean	Boundary-matrix derived layer	534	21	"{""abbrev"": 3, ""def"": 6, ""theorem"": 12}"	True	True	False
+PillarB/AQFT/Derived/BoundaryMatrixFullExp.lean	Boundary-matrix derived layer	305	19	"{""theorem"": 19}"	True	True	False
+PillarB/AQFT/Derived/BoundaryMatrixFullKMSFromL.lean	Boundary-matrix derived layer	807	38	"{""def"": 12, ""theorem"": 26}"	True	True	False
+PillarB/AQFT/Derived/BoundaryMatrixGibbsState.lean	Boundary-matrix derived layer	118	9	"{""def"": 2, ""theorem"": 7}"	True	True	False
+PillarB/AQFT/Derived/BoundaryMatrixGNS.lean	Boundary-matrix derived layer	173	12	"{""def"": 7, ""theorem"": 5}"	True	True	False
+PillarB/AQFT/Derived/BoundaryMatrixKMSFromL.lean	Boundary-matrix derived layer	236	10	"{""abbrev"": 1, ""def"": 3, ""theorem"": 6}"	True	True	False
+PillarB/AQFT/Derived/BoundaryMatrixLocality.lean	Boundary-matrix derived layer	112	6	"{""abbrev"": 1, ""theorem"": 5}"	True	False	False
+PillarB/AQFT/Derived/BoundaryMatrixLocalNet.lean	Boundary-matrix derived layer	594	30	"{""abbrev"": 4, ""def"": 19, ""theorem"": 7}"	True	True	False
+PillarB/AQFT/Derived/BoundaryMatrixModular.lean	Boundary-matrix derived layer	240	11	"{""abbrev"": 1, ""def"": 5, ""structure"": 1, ""theorem"": 4}"	True	True	False
+PillarB/AQFT/Derived/BoundaryMatrixNontriviality.lean	Boundary-matrix derived layer	91	6	"{""def"": 1, ""theorem"": 5}"	True	True	False
+PillarB/AQFT/Derived/BoundaryMatrixObservableBasis.lean	Boundary-matrix derived layer	114	7	"{""def"": 4, ""theorem"": 3}"	True	True	False
+PillarB/AQFT/Derived/BoundaryMatrixPhases.lean	Boundary-matrix derived layer	94	3	"{""def"": 3}"	True	True	False
+PillarB/AQFT/Derived/BoundaryMatrixPhysicalGibbs.lean	Boundary-matrix derived layer	250	14	"{""abbrev"": 1, ""def"": 7, ""theorem"": 6}"	True	True	False
+PillarB/AQFT/Derived/BoundaryMatrixQuasiLocalClosure.lean	Boundary-matrix derived layer	225	12	"{""abbrev"": 6, ""def"": 6}"	True	True	False
+PillarB/AQFT/Derived/BoundaryMatrixRichNetNonAdditive.lean	Boundary-matrix derived layer	362	15	"{""def"": 4, ""theorem"": 11}"	True	True	False
+PillarB/AQFT/Derived/BoundaryMatrixSplitProperty.lean	Boundary-matrix derived layer	343	12	"{""abbrev"": 2, ""def"": 7, ""theorem"": 3}"	True	True	False
+PillarB/AQFT/Derived/BoundaryMatrixStateNet.lean	Boundary-matrix derived layer	187	11	"{""abbrev"": 4, ""def"": 3, ""theorem"": 4}"	True	True	False
+PillarB/AQFT/Derived/BoundaryMatrixTimeReversal.lean	Boundary-matrix derived layer	235	8	"{""def"": 2, ""theorem"": 6}"	True	True	False
+PillarB/AQFT/Derived/BoundaryMatrixToCNontriviality.lean	Boundary-matrix derived layer	100	4	"{""theorem"": 4}"	True	False	False
+PillarB/AQFT/Derived/EnergyFromBoundaryOp.lean		71	8	"{""def"": 6, ""structure"": 1, ""theorem"": 1}"	True	False	False
+PillarB/AQFT/Derived/FiniteWeightState.lean		43	4	"{""def"": 4}"	True	True	False
+PillarB/AQFT/Derived/GibbsStateOnConfig.lean		77	5	"{""def"": 3, ""theorem"": 2}"	True	False	False
+PillarB/AQFT/Derived/LocalConfigNet.lean		151	8	"{""abbrev"": 2, ""def"": 5, ""theorem"": 1}"	False	False	False
+PillarB/AQFT/Derived/MatterFromPillarA.lean		38	3	"{""def"": 2, ""theorem"": 1}"	True	False	False
+PillarB/AQFT/Derived/QuasiLocalStateFromConfigNet.lean		68	6	"{""abbrev"": 2, ""def"": 4}"	False	False	False
+PillarB/AQFT/Derived/StateFromConfigNet.lean		36	4	"{""def"": 4}"	False	False	False
+PillarB/AQFT/Derived/TreeOfCliquesExtendedFromPillarA.lean	TreeOfCliques/FromA examples	432	33	"{""abbrev"": 11, ""def"": 12, ""structure"": 1, ""theorem"": 9}"	True	True	False
+PillarB/AQFT/Derived/TreeOfCliquesFromPillarA.lean	TreeOfCliques/FromA examples	566	12	"{""abbrev"": 3, ""theorem"": 9}"	True	True	False
+PillarB/AQFT/Gates/SplitProperty.lean		1	0	{}	False	False	False
+PillarB/AQFT/HaagKastler/SplitProperty.lean		56	4	"{""def"": 2, ""structure"": 1, ""theorem"": 1}"	False	False	False
+PillarB/AQFT/HaagKastler/Support.lean	Local nets and HK support	218	23	"{""def"": 5, ""structure"": 3, ""theorem"": 15}"	False	False	False
+PillarB/AQFT/HaagKastler/SupportFull.lean	Local nets and HK support	37	6	"{""abbrev"": 1, ""def"": 2, ""structure"": 3}"	False	False	False
+PillarB/AQFT/QuasiLocal/Carrier.lean	Quasi-local/GNS/KMS/Modular	99	9	"{""abbrev"": 2, ""def"": 3, ""theorem"": 4}"	False	False	False
+PillarB/AQFT/QuasiLocal/Completion.lean	Quasi-local/GNS/KMS/Modular	40	1	"{""structure"": 1}"	False	False	False
+PillarB/AQFT/QuasiLocal/StarAlgebra.lean	Quasi-local/GNS/KMS/Modular	210	9	"{""abbrev"": 2, ""def"": 6, ""theorem"": 1}"	False	True	False
+PillarB/AQFT/QuasiLocal/StateLift.lean	Quasi-local/GNS/KMS/Modular	124	6	"{""def"": 4, ""theorem"": 2}"	False	True	False
+PillarB/AQFT/QuasiLocal/Structure.lean	Quasi-local/GNS/KMS/Modular	87	7	"{""def"": 3, ""theorem"": 4}"	False	True	False

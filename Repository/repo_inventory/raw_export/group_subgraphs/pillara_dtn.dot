@@ -1,0 +1,13 @@
+digraph group_pillara_dtn {
+  rankdir="LR";
+  node [shape=box, fontsize=10];
+  "CNNA.PillarA.DtN.BuildAll" [tooltip="PillarA/DtN"];
+  "CNNA.PillarA.DtN.DtN" [tooltip="PillarA/DtN"];
+  "CNNA.PillarA.DtN.DtNStabilized" [tooltip="PillarA/DtN"];
+  "CNNA.PillarA.DtN.Notation" [tooltip="PillarA/DtN"];
+  "CNNA.PillarA.DtN.BuildAll" -> "CNNA.PillarA.DtN.DtN";
+  "CNNA.PillarA.DtN.BuildAll" -> "CNNA.PillarA.DtN.DtNStabilized";
+  "CNNA.PillarA.DtN.BuildAll" -> "CNNA.PillarA.DtN.Notation";
+  "CNNA.PillarA.DtN.DtNStabilized" -> "CNNA.PillarA.DtN.DtN";
+  "CNNA.PillarA.DtN.Notation" -> "CNNA.PillarA.DtN.DtNStabilized";
+}

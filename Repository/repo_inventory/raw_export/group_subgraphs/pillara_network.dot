@@ -1,0 +1,24 @@
+digraph group_pillara_network {
+  rankdir="LR";
+  node [shape=box, fontsize=10];
+  "CNNA.PillarA.Network.BuildAll" [tooltip="PillarA/Network"];
+  "CNNA.PillarA.Network.InfiniteCarrier" [tooltip="PillarA/Network"];
+  "CNNA.PillarA.Network.Notation" [tooltip="PillarA/Network"];
+  "CNNA.PillarA.Network.RegionNet" [tooltip="PillarA/Network"];
+  "CNNA.PillarA.Network.RelativeEntropyFlow" [tooltip="PillarA/Network"];
+  "CNNA.PillarA.Network.SectorChannels" [tooltip="PillarA/Network"];
+  "CNNA.PillarA.Network.SectorSysEnv" [tooltip="PillarA/Network"];
+  "CNNA.PillarA.Network.BuildAll" -> "CNNA.PillarA.Network.InfiniteCarrier";
+  "CNNA.PillarA.Network.BuildAll" -> "CNNA.PillarA.Network.Notation";
+  "CNNA.PillarA.Network.BuildAll" -> "CNNA.PillarA.Network.RegionNet";
+  "CNNA.PillarA.Network.BuildAll" -> "CNNA.PillarA.Network.RelativeEntropyFlow";
+  "CNNA.PillarA.Network.BuildAll" -> "CNNA.PillarA.Network.SectorChannels";
+  "CNNA.PillarA.Network.BuildAll" -> "CNNA.PillarA.Network.SectorSysEnv";
+  "CNNA.PillarA.Network.InfiniteCarrier" -> "CNNA.PillarA.Network.RegionNet";
+  "CNNA.PillarA.Network.Notation" -> "CNNA.PillarA.Network.InfiniteCarrier";
+  "CNNA.PillarA.Network.Notation" -> "CNNA.PillarA.Network.RegionNet";
+  "CNNA.PillarA.Network.Notation" -> "CNNA.PillarA.Network.RelativeEntropyFlow";
+  "CNNA.PillarA.Network.Notation" -> "CNNA.PillarA.Network.SectorChannels";
+  "CNNA.PillarA.Network.RelativeEntropyFlow" -> "CNNA.PillarA.Network.SectorSysEnv";
+  "CNNA.PillarA.Network.SectorSysEnv" -> "CNNA.PillarA.Network.SectorChannels";
+}

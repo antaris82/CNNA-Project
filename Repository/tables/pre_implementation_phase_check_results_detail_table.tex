@@ -1,0 +1,202 @@
+\small
+\arrayrulecolor{black!22}
+\phantomsection
+\subsection*{Pre-check detail PIC-2026-05-10-001 -- phase 1.1.1.2}
+\begin{longtable}{L{0.18\linewidth} L{0.78\linewidth}}
+\hline
+\textbf{Field} & \textbf{Record}\\
+\hline
+Check status & O\\
+\hline\addlinespace[0.20em]
+Check mode & sequential-thought-experiment\\
+\hline\addlinespace[0.20em]
+Implementability scope & after-listed-predecessors\\
+\hline\addlinespace[0.20em]
+Required predecessor closures & 1.1.1.1.5.5;\newline LEG37-LEG41\\
+\hline\addlinespace[0.20em]
+Assumptions & V1.12 inserts a semantic module consolidation gate before 1.1.1.2. The earlier v44 feasibility result remains valid after LEG36 closes or after any resulting bounded refactor package is build-proved.\\
+\hline\addlinespace[0.20em]
+Evidence basis & YAML phase table, object register, 19 Object status B rows, LEG5 consumption map, proof-dossier anchors, generated inventory summaries.\\
+\hline\addlinespace[0.20em]
+Lean proof risk & low/\allowbreak{}none: planning/\allowbreak{}generator ledger phase;\newline no Lean source edit expected.\\
+\hline\addlinespace[0.20em]
+Parent/\allowbreak{}subphase rule & not applicable: leaf phase at current active cursor.\\
+\hline\addlinespace[0.20em]
+Implementability finding & Implementable only after the pre-substantive-code readiness chain closes with a release certificate.\\
+\hline\addlinespace[0.20em]
+Required action & Complete LEG36 first;\newline then implement blue\_correction\_ledger with semantic defect, allowed temporary consumers, forbidden public consumers, neutral target API, correction phase, and exit-to-white condition for every B object.\\
+\hline\addlinespace[0.20em]
+Would generate addressing phase? & no\\
+\hline\addlinespace[0.20em]
+Generated addressing phase & none-required\\
+\hline\addlinespace[0.20em]
+Static findings affected & SCF43-SCF45 now precede this result;\newline SCF14 and SCF26 remain addressed when 1.1.1.2 is later implemented.\\
+\hline\addlinespace[0.20em]
+\end{longtable}
+\phantomsection
+\subsection*{Pre-check detail PIC-2026-05-10-002 -- phase 1.1.1.3}
+\begin{longtable}{L{0.18\linewidth} L{0.78\linewidth}}
+\hline
+\textbf{Field} & \textbf{Record}\\
+\hline
+Check status & O\\
+\hline\addlinespace[0.20em]
+Check mode & sequential-thought-experiment\\
+\hline\addlinespace[0.20em]
+Implementability scope & after-listed-predecessors\\
+\hline\addlinespace[0.20em]
+Required predecessor closures & 1.1.1.2\\
+\hline\addlinespace[0.20em]
+Assumptions & Assumes 1.1.1.2 has closed and LEG7 is generated;\newline consumes LEG5 declaration-consumption map, LEG7 blue-correction ledger, object access clauses, and proof-dossier anchors.\\
+\hline\addlinespace[0.20em]
+Evidence basis & YAML dependencies, object access register, consumption classification map, planned LEG7 output from 1.1.1.2.\\
+\hline\addlinespace[0.20em]
+Lean proof risk & low/\allowbreak{}none: public API contract/\allowbreak{}consumer whitelist planning phase;\newline no Lean wrapper creation expected.\\
+\hline\addlinespace[0.20em]
+Parent/\allowbreak{}subphase rule & not applicable: leaf phase;\newline remains inactive until 1.1.1.2 closes.\\
+\hline\addlinespace[0.20em]
+Implementability finding & Implementable in the derivation chain after 1.1.1.2. The phase should only define the visible public surface and forbidden imports for Phase 3+ and later handoffs.\\
+\hline\addlinespace[0.20em]
+Required action & Generate public\_api\_contract and consumer\_whitelist/\allowbreak{}firewall inputs;\newline exclude uncorrected blue objects, legacy status/\allowbreak{}policy gates, audit-only objects, duplicate generator seams, and undocumented public objects.\\
+\hline\addlinespace[0.20em]
+Would generate addressing phase? & no\\
+\hline\addlinespace[0.20em]
+Generated addressing phase & none-required\\
+\hline\addlinespace[0.20em]
+Static findings affected & No new red finding. Existing open findings remain routed to later phases;\newline this phase only defines the firewall contract.\\
+\hline\addlinespace[0.20em]
+\end{longtable}
+\phantomsection
+\subsection*{Pre-check detail PIC-2026-05-10-003 -- phase 1.1.1.4}
+\begin{longtable}{L{0.18\linewidth} L{0.78\linewidth}}
+\hline
+\textbf{Field} & \textbf{Record}\\
+\hline
+Check status & O\\
+\hline\addlinespace[0.20em]
+Check mode & sequential-thought-experiment\\
+\hline\addlinespace[0.20em]
+Implementability scope & after-listed-predecessors\\
+\hline\addlinespace[0.20em]
+Required predecessor closures & 1.1.1.2;\newline 1.1.1.3\\
+\hline\addlinespace[0.20em]
+Assumptions & Assumes 1.1.1.3 has closed and LEG6 public API/\allowbreak{}consumer whitelist exists;\newline consumes declaration classification from LEG5 and generated repository inventory/\allowbreak{}raw\_export.\\
+\hline\addlinespace[0.20em]
+Evidence basis & YAML dependencies, LEG5 declaration-consumption map, planned LEG6 public API firewall, generated repo inventory/\allowbreak{}raw\_export.\\
+\hline\addlinespace[0.20em]
+Lean proof risk & low unless converted into deletion/\allowbreak{}removal work;\newline as ledger-only pruning classification no Lean source edit is expected.\\
+\hline\addlinespace[0.20em]
+Parent/\allowbreak{}subphase rule & not applicable: leaf phase;\newline remains inactive until 1.1.1.2 and 1.1.1.3 close.\\
+\hline\addlinespace[0.20em]
+Implementability finding & Implementable in the derivation chain as a pruning/\allowbreak{}dead-candidate ledger phase, but not as a deletion phase. It can classify keep/\allowbreak{}quarantine/\allowbreak{}wrap/\allowbreak{}reexport/\allowbreak{}archive/\allowbreak{}deletion-candidate entries using existing generated inventory and the public API contract.\\
+\hline\addlinespace[0.20em]
+Required action & Generate pruning\_ledger. Do not delete or move Lean declarations. Require future local build evidence for any actual deletion/\allowbreak{}removal phase.\\
+\hline\addlinespace[0.20em]
+Would generate addressing phase? & no\\
+\hline\addlinespace[0.20em]
+Generated addressing phase & none-required\\
+\hline\addlinespace[0.20em]
+Static findings affected & Refines SCF15 but does not close deletion-related risks until a later actual pruning/\allowbreak{}removal phase with build evidence.\\
+\hline\addlinespace[0.20em]
+\end{longtable}
+\phantomsection
+\subsection*{Pre-check detail PIC-2026-05-10-004 -- phase 1.1.1.5}
+\begin{longtable}{L{0.18\linewidth} L{0.78\linewidth}}
+\hline
+\textbf{Field} & \textbf{Record}\\
+\hline
+Check status & O\\
+\hline\addlinespace[0.20em]
+Check mode & sequential-thought-experiment\\
+\hline\addlinespace[0.20em]
+Implementability scope & after-listed-predecessors\\
+\hline\addlinespace[0.20em]
+Required predecessor closures & 1.1.1.2;\newline 1.1.1.3;\newline 1.1.1.4\\
+\hline\addlinespace[0.20em]
+Assumptions & Assumes 1.1.1.2, 1.1.1.3, and 1.1.1.4 have closed;\newline parent 1.1.1.5 is checked as the generated-view authority/\allowbreak{}inventory-lock closeout, not as implementation of its future 1.1.1.5.x tooling subphases.\\
+\hline\addlinespace[0.20em]
+Evidence basis & YAML parent/\allowbreak{}child hierarchy, current active cursor, implementation-scaling phase plan, generated table/\allowbreak{}export inventory, module-manifest and reuse/\allowbreak{}duplication ledgers.\\
+\hline\addlinespace[0.20em]
+Lean proof risk & low/\allowbreak{}none for parent closeout;\newline future 1.1.1.5.x tool phases are separate and not prerequisites unless explicitly listed.\\
+\hline\addlinespace[0.20em]
+Parent/\allowbreak{}subphase rule & Parent closeout does not require future tooling subphases 1.1.1.5.x unless they are explicitly listed as dependencies.\\
+\hline\addlinespace[0.20em]
+Implementability finding & Implementable in the derivation chain as a closeout/\allowbreak{}authority-lock phase. It can bind YAML master, generated tables/\allowbreak{}PDF, README/\allowbreak{}report update, module-manifest/\allowbreak{}reuse checks, and local-build evidence requirements into one implementation-prompt contract.\\
+\hline\addlinespace[0.20em]
+Required action & Close the audit/\allowbreak{}planning gate with reproducible generated artifacts and one active next cursor for 1.1.2. Keep 1.1.1.5.x as future tool-scaling subphases unless explicitly activated.\\
+\hline\addlinespace[0.20em]
+Would generate addressing phase? & no\\
+\hline\addlinespace[0.20em]
+Generated addressing phase & none-required\\
+\hline\addlinespace[0.20em]
+Static findings affected & No red blocker found;\newline no new addressing phase generated.\\
+\hline\addlinespace[0.20em]
+\end{longtable}
+\phantomsection
+\subsection*{Pre-check detail PIC-2026-05-10-005 -- phase 1.1.1.1.5}
+\begin{longtable}{L{0.18\linewidth} L{0.78\linewidth}}
+\hline
+\textbf{Field} & \textbf{Record}\\
+\hline
+Check status & Y\\
+\hline\addlinespace[0.20em]
+Check mode & sequential-thought-experiment plus direct code spot-check\\
+\hline\addlinespace[0.20em]
+Implementability scope & now\\
+\hline\addlinespace[0.20em]
+Required predecessor closures & none beyond current green path through 1.1.1.1.4\\
+\hline\addlinespace[0.20em]
+Assumptions & LEG10, LEG11, LEG12, LEG5, phase-object policy, reuse ledger, and generated repo inventory are available;\newline no Lean code is edited by the audit itself.\\
+\hline\addlinespace[0.20em]
+Evidence basis & repo\_inventory/\allowbreak{}raw\_export modules/\allowbreak{}import\_edges/\allowbreak{}symbol references;\newline direct checks of BoundarySource substrate modules and Handoff input/\allowbreak{}output wrappers;\newline known SM and Cayley-Dickson proof-stage chains.\\
+\hline\addlinespace[0.20em]
+Lean proof risk & low for audit;\newline medium for any later actual refactor because compatibility facades and full local build evidence are mandatory.\\
+\hline\addlinespace[0.20em]
+Parent/\allowbreak{}subphase rule & Leaf active gate under 1.1.1.1. It may close with a ledger only, or open a later bounded refactor execution phase if safe candidates are confirmed.\\
+\hline\addlinespace[0.20em]
+Implementability finding & Implementable now as a compact planning/\allowbreak{}refactor governance phase. It has enough code evidence to classify candidate families without touching Lean source.\\
+\hline\addlinespace[0.20em]
+Required action & Fill LEG36 consolidation ledger;\newline decide candidate classes;\newline keep proof-stage chains split unless proven otherwise;\newline return cursor to 1.1.1.2 or open a bounded refactor execution phase with facades and build evidence.\\
+\hline\addlinespace[0.20em]
+Would generate addressing phase? & no red phase yet;\newline this phase itself is the proactive addressing gate\\
+\hline\addlinespace[0.20em]
+Generated addressing phase & none-required-now\\
+\hline\addlinespace[0.20em]
+Static findings affected & SCF43-SCF45 created and routed to 1.1.1.1.5.\\
+\hline\addlinespace[0.20em]
+\end{longtable}
+\phantomsection
+\subsection*{Pre-check detail PIC-2026-05-10-006 -- phase 1.1.1.1.5.1}
+\begin{longtable}{L{0.18\linewidth} L{0.78\linewidth}}
+\hline
+\textbf{Field} & \textbf{Record}\\
+\hline
+Check status & Y\\
+\hline\addlinespace[0.20em]
+Check mode & static DAG/\allowbreak{}source-inventory audit plus code-name spot-check\\
+\hline\addlinespace[0.20em]
+Implementability scope & now\\
+\hline\addlinespace[0.20em]
+Required predecessor closures & closed governance path through 1.1.1.1.4 and V1.20 documentation/\allowbreak{}tooling updates\\
+\hline\addlinespace[0.20em]
+Assumptions & The current source snapshot and generated inventory are sufficient to audit classification completeness without editing Lean source.\\
+\hline\addlinespace[0.20em]
+Evidence basis & 287 Lean modules, 8860 declarations, module/\allowbreak{}declaration consumption TSVs, object/\allowbreak{}proof registers, direct file-name scan for phase-semantic names and clone/\allowbreak{}schema families.\\
+\hline\addlinespace[0.20em]
+Lean proof risk & low for audit;\newline later refactor phases require local full-build evidence.\\
+\hline\addlinespace[0.20em]
+Parent/\allowbreak{}subphase rule & Child active phase under 1.1.1.1.5;\newline parent is umbrella W, this leaf is the unique Y cursor.\\
+\hline\addlinespace[0.20em]
+Implementability finding & Implementable now as the next constructive pre-code gate. It replaces the too-broad active umbrella as the precise cursor.\\
+\hline\addlinespace[0.20em]
+Required action & Fill LEG37 and route missing source/\allowbreak{}object mappings to LEG38-LEG41 or upstream red blockers.\\
+\hline\addlinespace[0.20em]
+Would generate addressing phase? & already generated child sequence\\
+\hline\addlinespace[0.20em]
+Generated addressing phase & 1.1.1.1.5.1-1.1.1.1.5.5\\
+\hline\addlinespace[0.20em]
+Static findings affected & SCF52\\
+\hline\addlinespace[0.20em]
+\end{longtable}
+\arrayrulecolor{black}
+\normalsize

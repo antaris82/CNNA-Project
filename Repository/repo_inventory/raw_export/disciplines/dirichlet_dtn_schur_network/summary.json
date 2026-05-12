@@ -1,0 +1,593 @@
+{
+  "name": "dirichlet_dtn_schur_network",
+  "slug": "dirichlet_dtn_schur_network",
+  "description": "Dirichlet, DtN, closure regularization, Schur coupling and network-facing transport.",
+  "module_count": 29,
+  "modules": [
+    "CNNA.PillarA.Closure.BuildAll",
+    "CNNA.PillarA.Closure.Notation",
+    "CNNA.PillarA.Closure.ParameterClosure",
+    "CNNA.PillarA.Closure.RegularizationClosure",
+    "CNNA.PillarA.Coupling.BuildAll",
+    "CNNA.PillarA.Coupling.GeneralizedDtN",
+    "CNNA.PillarA.Coupling.MultiSchur",
+    "CNNA.PillarA.Coupling.Notation",
+    "CNNA.PillarA.DtN.BuildAll",
+    "CNNA.PillarA.DtN.DtN",
+    "CNNA.PillarA.DtN.DtNStabilized",
+    "CNNA.PillarA.DtN.Notation",
+    "CNNA.PillarA.Finite.DirichletLaplacian",
+    "CNNA.PillarA.Network.BuildAll",
+    "CNNA.PillarA.Network.InfiniteCarrier",
+    "CNNA.PillarA.Network.Notation",
+    "CNNA.PillarA.Network.RegionNet",
+    "CNNA.PillarA.Network.RelativeEntropyFlow",
+    "CNNA.PillarA.Network.SectorChannels",
+    "CNNA.PillarA.Network.SectorSysEnv",
+    "CNNA.PillarA.Sectors.BranchPatch",
+    "CNNA.PillarA.Sectors.BranchingSelector",
+    "CNNA.PillarA.Sectors.BranchingWitness",
+    "CNNA.PillarA.Sectors.BuildAll",
+    "CNNA.PillarA.Sectors.ComplementSectorFamily",
+    "CNNA.PillarA.Sectors.Notation",
+    "CNNA.PillarA.Sectors.SectorSplit",
+    "CNNA.PillarA.Sectors.SelectedBranching",
+    "CNNA.PillarA.Sectors.UVSpectralSelector"
+  ],
+  "entry_modules": [
+    "CNNA.PillarA.Closure.BuildAll",
+    "CNNA.PillarA.Coupling.BuildAll",
+    "CNNA.PillarA.DtN.BuildAll",
+    "CNNA.PillarA.Network.BuildAll",
+    "CNNA.PillarA.Sectors.BuildAll"
+  ],
+  "terminal_modules": [
+    "CNNA.PillarA.Finite.DirichletLaplacian"
+  ],
+  "internal_edge_count": 51,
+  "internal_edges": [
+    {
+      "source": "CNNA.PillarA.Closure.BuildAll",
+      "target": "CNNA.PillarA.Closure.Notation"
+    },
+    {
+      "source": "CNNA.PillarA.Closure.BuildAll",
+      "target": "CNNA.PillarA.Closure.ParameterClosure"
+    },
+    {
+      "source": "CNNA.PillarA.Closure.BuildAll",
+      "target": "CNNA.PillarA.Closure.RegularizationClosure"
+    },
+    {
+      "source": "CNNA.PillarA.Closure.Notation",
+      "target": "CNNA.PillarA.Closure.RegularizationClosure"
+    },
+    {
+      "source": "CNNA.PillarA.Closure.ParameterClosure",
+      "target": "CNNA.PillarA.DtN.DtNStabilized"
+    },
+    {
+      "source": "CNNA.PillarA.Closure.ParameterClosure",
+      "target": "CNNA.PillarA.Sectors.BranchingSelector"
+    },
+    {
+      "source": "CNNA.PillarA.Closure.RegularizationClosure",
+      "target": "CNNA.PillarA.Closure.ParameterClosure"
+    },
+    {
+      "source": "CNNA.PillarA.Coupling.BuildAll",
+      "target": "CNNA.PillarA.Coupling.GeneralizedDtN"
+    },
+    {
+      "source": "CNNA.PillarA.Coupling.BuildAll",
+      "target": "CNNA.PillarA.Coupling.MultiSchur"
+    },
+    {
+      "source": "CNNA.PillarA.Coupling.BuildAll",
+      "target": "CNNA.PillarA.Coupling.Notation"
+    },
+    {
+      "source": "CNNA.PillarA.Coupling.GeneralizedDtN",
+      "target": "CNNA.PillarA.DtN.DtN"
+    },
+    {
+      "source": "CNNA.PillarA.Coupling.GeneralizedDtN",
+      "target": "CNNA.PillarA.Sectors.SectorSplit"
+    },
+    {
+      "source": "CNNA.PillarA.Coupling.MultiSchur",
+      "target": "CNNA.PillarA.Coupling.GeneralizedDtN"
+    },
+    {
+      "source": "CNNA.PillarA.Coupling.Notation",
+      "target": "CNNA.PillarA.Coupling.MultiSchur"
+    },
+    {
+      "source": "CNNA.PillarA.DtN.BuildAll",
+      "target": "CNNA.PillarA.DtN.DtN"
+    },
+    {
+      "source": "CNNA.PillarA.DtN.BuildAll",
+      "target": "CNNA.PillarA.DtN.DtNStabilized"
+    },
+    {
+      "source": "CNNA.PillarA.DtN.BuildAll",
+      "target": "CNNA.PillarA.DtN.Notation"
+    },
+    {
+      "source": "CNNA.PillarA.DtN.DtN",
+      "target": "CNNA.PillarA.Finite.DirichletLaplacian"
+    },
+    {
+      "source": "CNNA.PillarA.DtN.DtNStabilized",
+      "target": "CNNA.PillarA.DtN.DtN"
+    },
+    {
+      "source": "CNNA.PillarA.DtN.Notation",
+      "target": "CNNA.PillarA.DtN.DtNStabilized"
+    },
+    {
+      "source": "CNNA.PillarA.Network.BuildAll",
+      "target": "CNNA.PillarA.Network.InfiniteCarrier"
+    },
+    {
+      "source": "CNNA.PillarA.Network.BuildAll",
+      "target": "CNNA.PillarA.Network.Notation"
+    },
+    {
+      "source": "CNNA.PillarA.Network.BuildAll",
+      "target": "CNNA.PillarA.Network.RegionNet"
+    },
+    {
+      "source": "CNNA.PillarA.Network.BuildAll",
+      "target": "CNNA.PillarA.Network.RelativeEntropyFlow"
+    },
+    {
+      "source": "CNNA.PillarA.Network.BuildAll",
+      "target": "CNNA.PillarA.Network.SectorChannels"
+    },
+    {
+      "source": "CNNA.PillarA.Network.BuildAll",
+      "target": "CNNA.PillarA.Network.SectorSysEnv"
+    },
+    {
+      "source": "CNNA.PillarA.Network.InfiniteCarrier",
+      "target": "CNNA.PillarA.Network.RegionNet"
+    },
+    {
+      "source": "CNNA.PillarA.Network.Notation",
+      "target": "CNNA.PillarA.Network.InfiniteCarrier"
+    },
+    {
+      "source": "CNNA.PillarA.Network.Notation",
+      "target": "CNNA.PillarA.Network.RegionNet"
+    },
+    {
+      "source": "CNNA.PillarA.Network.Notation",
+      "target": "CNNA.PillarA.Network.RelativeEntropyFlow"
+    },
+    {
+      "source": "CNNA.PillarA.Network.Notation",
+      "target": "CNNA.PillarA.Network.SectorChannels"
+    },
+    {
+      "source": "CNNA.PillarA.Network.RegionNet",
+      "target": "CNNA.PillarA.Sectors.SectorSplit"
+    },
+    {
+      "source": "CNNA.PillarA.Network.RelativeEntropyFlow",
+      "target": "CNNA.PillarA.Network.SectorSysEnv"
+    },
+    {
+      "source": "CNNA.PillarA.Network.SectorChannels",
+      "target": "CNNA.PillarA.Coupling.GeneralizedDtN"
+    },
+    {
+      "source": "CNNA.PillarA.Network.SectorSysEnv",
+      "target": "CNNA.PillarA.Network.SectorChannels"
+    },
+    {
+      "source": "CNNA.PillarA.Sectors.BranchPatch",
+      "target": "CNNA.PillarA.DtN.DtNStabilized"
+    },
+    {
+      "source": "CNNA.PillarA.Sectors.BranchingSelector",
+      "target": "CNNA.PillarA.Sectors.UVSpectralSelector"
+    },
+    {
+      "source": "CNNA.PillarA.Sectors.BranchingWitness",
+      "target": "CNNA.PillarA.Sectors.SectorSplit"
+    },
+    {
+      "source": "CNNA.PillarA.Sectors.BuildAll",
+      "target": "CNNA.PillarA.Sectors.BranchPatch"
+    },
+    {
+      "source": "CNNA.PillarA.Sectors.BuildAll",
+      "target": "CNNA.PillarA.Sectors.BranchingSelector"
+    },
+    {
+      "source": "CNNA.PillarA.Sectors.BuildAll",
+      "target": "CNNA.PillarA.Sectors.BranchingWitness"
+    },
+    {
+      "source": "CNNA.PillarA.Sectors.BuildAll",
+      "target": "CNNA.PillarA.Sectors.ComplementSectorFamily"
+    },
+    {
+      "source": "CNNA.PillarA.Sectors.BuildAll",
+      "target": "CNNA.PillarA.Sectors.Notation"
+    },
+    {
+      "source": "CNNA.PillarA.Sectors.BuildAll",
+      "target": "CNNA.PillarA.Sectors.SectorSplit"
+    },
+    {
+      "source": "CNNA.PillarA.Sectors.BuildAll",
+      "target": "CNNA.PillarA.Sectors.SelectedBranching"
+    },
+    {
+      "source": "CNNA.PillarA.Sectors.BuildAll",
+      "target": "CNNA.PillarA.Sectors.UVSpectralSelector"
+    },
+    {
+      "source": "CNNA.PillarA.Sectors.ComplementSectorFamily",
+      "target": "CNNA.PillarA.Sectors.BranchPatch"
+    },
+    {
+      "source": "CNNA.PillarA.Sectors.Notation",
+      "target": "CNNA.PillarA.Sectors.BranchingSelector"
+    },
+    {
+      "source": "CNNA.PillarA.Sectors.SectorSplit",
+      "target": "CNNA.PillarA.Sectors.ComplementSectorFamily"
+    },
+    {
+      "source": "CNNA.PillarA.Sectors.SelectedBranching",
+      "target": "CNNA.PillarA.Sectors.BranchingWitness"
+    },
+    {
+      "source": "CNNA.PillarA.Sectors.UVSpectralSelector",
+      "target": "CNNA.PillarA.Sectors.SelectedBranching"
+    }
+  ],
+  "outgoing_bridge_count": 5,
+  "incoming_bridge_count": 24,
+  "outgoing_bridges": [
+    {
+      "source": "CNNA.PillarA.DtN.DtNStabilized",
+      "target": "CNNA.PillarA.Foundation.MatrixNorms",
+      "source_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "target_disciplines": [
+        "prenumeric_toc_substrate_graph",
+        "topology_algebra_cd_completion"
+      ],
+      "target_group": "PillarA/Foundation"
+    },
+    {
+      "source": "CNNA.PillarA.DtN.DtNStabilized",
+      "target": "CNNA.PillarA.Foundation.RegularizationPolicy",
+      "source_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "target_disciplines": [
+        "prenumeric_toc_substrate_graph"
+      ],
+      "target_group": "PillarA/Foundation"
+    },
+    {
+      "source": "CNNA.PillarA.Finite.DirichletLaplacian",
+      "target": "CNNA.PillarA.Finite.Approximant",
+      "source_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "target_disciplines": [
+        "prenumeric_toc_substrate_graph"
+      ],
+      "target_group": "PillarA/Finite"
+    },
+    {
+      "source": "CNNA.PillarA.Finite.DirichletLaplacian",
+      "target": "CNNA.PillarA.Foundation.MatrixNorms",
+      "source_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "target_disciplines": [
+        "prenumeric_toc_substrate_graph",
+        "topology_algebra_cd_completion"
+      ],
+      "target_group": "PillarA/Foundation"
+    },
+    {
+      "source": "CNNA.PillarA.Finite.DirichletLaplacian",
+      "target": "CNNA.PillarA.Foundation.WeightPolicy",
+      "source_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "target_disciplines": [
+        "prenumeric_toc_substrate_graph"
+      ],
+      "target_group": "PillarA/Foundation"
+    }
+  ],
+  "incoming_bridges": [
+    {
+      "source": "CNNA.PillarA.Arithmetic.Core.Source",
+      "target": "CNNA.PillarA.Coupling.MultiSchur",
+      "source_disciplines": [],
+      "target_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "source_group": "PillarA/Arithmetic"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTwoSidedInv",
+      "target": "CNNA.PillarA.DtN.DtN",
+      "source_disciplines": [],
+      "target_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "source_group": "PillarA/Arithmetic"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTwoSidedInvFromSM3db7R",
+      "target": "CNNA.PillarA.DtN.DtN",
+      "source_disciplines": [],
+      "target_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "source_group": "PillarA/Arithmetic"
+    },
+    {
+      "source": "CNNA.PillarA.BuildAll",
+      "target": "CNNA.PillarA.Closure.BuildAll",
+      "source_disciplines": [],
+      "target_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "source_group": "PillarA"
+    },
+    {
+      "source": "CNNA.PillarA.BuildAll",
+      "target": "CNNA.PillarA.Coupling.BuildAll",
+      "source_disciplines": [],
+      "target_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "source_group": "PillarA"
+    },
+    {
+      "source": "CNNA.PillarA.BuildAll",
+      "target": "CNNA.PillarA.DtN.BuildAll",
+      "source_disciplines": [],
+      "target_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "source_group": "PillarA"
+    },
+    {
+      "source": "CNNA.PillarA.BuildAll",
+      "target": "CNNA.PillarA.Network.BuildAll",
+      "source_disciplines": [],
+      "target_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "source_group": "PillarA"
+    },
+    {
+      "source": "CNNA.PillarA.BuildAll",
+      "target": "CNNA.PillarA.Sectors.BuildAll",
+      "source_disciplines": [],
+      "target_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "source_group": "PillarA"
+    },
+    {
+      "source": "CNNA.PillarA.Finite.BuildAll",
+      "target": "CNNA.PillarA.Finite.DirichletLaplacian",
+      "source_disciplines": [],
+      "target_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "source_group": "PillarA/Finite"
+    },
+    {
+      "source": "CNNA.PillarA.Finite.Notation",
+      "target": "CNNA.PillarA.Finite.DirichletLaplacian",
+      "source_disciplines": [],
+      "target_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "source_group": "PillarA/Finite"
+    },
+    {
+      "source": "CNNA.PillarA.Finite.SpectralDecompositionCore",
+      "target": "CNNA.PillarA.Finite.DirichletLaplacian",
+      "source_disciplines": [],
+      "target_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "source_group": "PillarA/Finite"
+    },
+    {
+      "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+      "target": "CNNA.PillarA.Closure.Notation",
+      "source_disciplines": [
+        "topology_algebra_cd_completion"
+      ],
+      "target_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "source_group": "PillarA/Handoff"
+    },
+    {
+      "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+      "target": "CNNA.PillarA.Closure.RegularizationClosure",
+      "source_disciplines": [
+        "topology_algebra_cd_completion"
+      ],
+      "target_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "source_group": "PillarA/Handoff"
+    },
+    {
+      "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+      "target": "CNNA.PillarA.Coupling.MultiSchur",
+      "source_disciplines": [
+        "topology_algebra_cd_completion"
+      ],
+      "target_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "source_group": "PillarA/Handoff"
+    },
+    {
+      "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+      "target": "CNNA.PillarA.DtN.Notation",
+      "source_disciplines": [
+        "topology_algebra_cd_completion"
+      ],
+      "target_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "source_group": "PillarA/Handoff"
+    },
+    {
+      "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+      "target": "CNNA.PillarA.Network.InfiniteCarrier",
+      "source_disciplines": [
+        "topology_algebra_cd_completion"
+      ],
+      "target_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "source_group": "PillarA/Handoff"
+    },
+    {
+      "source": "CNNA.PillarA.Notation",
+      "target": "CNNA.PillarA.Closure.Notation",
+      "source_disciplines": [],
+      "target_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "source_group": "PillarA"
+    },
+    {
+      "source": "CNNA.PillarA.Notation",
+      "target": "CNNA.PillarA.Coupling.Notation",
+      "source_disciplines": [],
+      "target_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "source_group": "PillarA"
+    },
+    {
+      "source": "CNNA.PillarA.Notation",
+      "target": "CNNA.PillarA.DtN.Notation",
+      "source_disciplines": [],
+      "target_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "source_group": "PillarA"
+    },
+    {
+      "source": "CNNA.PillarA.Notation",
+      "target": "CNNA.PillarA.Network.Notation",
+      "source_disciplines": [],
+      "target_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "source_group": "PillarA"
+    },
+    {
+      "source": "CNNA.PillarA.Notation",
+      "target": "CNNA.PillarA.Sectors.Notation",
+      "source_disciplines": [],
+      "target_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "source_group": "PillarA"
+    },
+    {
+      "source": "CNNA.PillarA.Structural.CayleyDickson.Source",
+      "target": "CNNA.PillarA.Closure.RegularizationClosure",
+      "source_disciplines": [],
+      "target_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "source_group": "PillarA/Structural"
+    },
+    {
+      "source": "CNNA.PillarA.Structural.CayleyDickson.Source",
+      "target": "CNNA.PillarA.Coupling.MultiSchur",
+      "source_disciplines": [],
+      "target_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "source_group": "PillarA/Structural"
+    },
+    {
+      "source": "CNNA.PillarA.Structural.CayleyDickson.Source",
+      "target": "CNNA.PillarA.Network.InfiniteCarrier",
+      "source_disciplines": [],
+      "target_disciplines": [
+        "dirichlet_dtn_schur_network"
+      ],
+      "source_group": "PillarA/Structural"
+    }
+  ],
+  "dependency_order": [
+    "CNNA.PillarA.Finite.DirichletLaplacian",
+    "CNNA.PillarA.DtN.DtN",
+    "CNNA.PillarA.DtN.DtNStabilized",
+    "CNNA.PillarA.DtN.Notation",
+    "CNNA.PillarA.Sectors.BranchPatch",
+    "CNNA.PillarA.DtN.BuildAll",
+    "CNNA.PillarA.Sectors.ComplementSectorFamily",
+    "CNNA.PillarA.Sectors.SectorSplit",
+    "CNNA.PillarA.Coupling.GeneralizedDtN",
+    "CNNA.PillarA.Network.RegionNet",
+    "CNNA.PillarA.Sectors.BranchingWitness",
+    "CNNA.PillarA.Coupling.MultiSchur",
+    "CNNA.PillarA.Network.SectorChannels",
+    "CNNA.PillarA.Network.InfiniteCarrier",
+    "CNNA.PillarA.Sectors.SelectedBranching",
+    "CNNA.PillarA.Coupling.Notation",
+    "CNNA.PillarA.Network.SectorSysEnv",
+    "CNNA.PillarA.Sectors.UVSpectralSelector",
+    "CNNA.PillarA.Coupling.BuildAll",
+    "CNNA.PillarA.Network.RelativeEntropyFlow",
+    "CNNA.PillarA.Sectors.BranchingSelector",
+    "CNNA.PillarA.Network.Notation",
+    "CNNA.PillarA.Closure.ParameterClosure",
+    "CNNA.PillarA.Sectors.Notation",
+    "CNNA.PillarA.Network.BuildAll",
+    "CNNA.PillarA.Closure.RegularizationClosure",
+    "CNNA.PillarA.Sectors.BuildAll",
+    "CNNA.PillarA.Closure.Notation",
+    "CNNA.PillarA.Closure.BuildAll"
+  ],
+  "acyclic": true,
+  "cycles": [],
+  "spec": {
+    "name": "dirichlet_dtn_schur_network",
+    "description": "Dirichlet, DtN, closure regularization, Schur coupling and network-facing transport.",
+    "include_modules": [],
+    "include_prefixes": [
+      "CNNA.PillarA.Finite.DirichletLaplacian",
+      "CNNA.PillarA.DtN",
+      "CNNA.PillarA.Closure",
+      "CNNA.PillarA.Coupling",
+      "CNNA.PillarA.Network",
+      "CNNA.PillarA.Sectors"
+    ],
+    "include_regexes": [],
+    "exclude_modules": [],
+    "exclude_prefixes": [],
+    "exclude_regexes": []
+  }
+}

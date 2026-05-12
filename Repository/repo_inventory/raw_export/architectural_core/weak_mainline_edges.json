@@ -1,0 +1,97 @@
+{
+  "edge_count": 3,
+  "edges": [
+    {
+      "priority": 100,
+      "category": "missing_semantic_edge",
+      "recommendation": "inspect target module for unqualified or non-declaration usage; consider explicit qualification or extending the forensic heuristic for fields/classes",
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedSource",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedMainPath",
+      "source_group": "PillarA/Arithmetic",
+      "target_group": "PillarA/Arithmetic",
+      "status": "missing",
+      "present_in_semantic_mainline": false,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation",
+        "CNNA.PillarA.ToC"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 126,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {},
+      "weighted_score": 0.0,
+      "strongest_confidence": null,
+      "strongest_confidence_weight": 0,
+      "reference_count": 0,
+      "unique_symbol_count": 0,
+      "sample_symbols": []
+    },
+    {
+      "priority": 100,
+      "category": "missing_semantic_edge",
+      "recommendation": "inspect target module for unqualified or non-declaration usage; consider explicit qualification or extending the forensic heuristic for fields/classes",
+      "source": "CNNA.PillarA.Foundation.Determinism",
+      "target": "CNNA.PillarA.ToC.Contract",
+      "source_group": "PillarA/Foundation",
+      "target_group": "PillarA/ToC",
+      "status": "missing",
+      "present_in_semantic_mainline": false,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [
+        "CNNA.PillarA.Foundation"
+      ],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 132,
+      "source_opened_alias_candidate_count": 132,
+      "same_namespace_block": false,
+      "likely_causes": [
+        "open_namespace_resolution_surface",
+        "unqualified_import_alias_surface"
+      ],
+      "confidence_counts": {},
+      "weighted_score": 0.0,
+      "strongest_confidence": null,
+      "strongest_confidence_weight": 0,
+      "reference_count": 0,
+      "unique_symbol_count": 0,
+      "sample_symbols": []
+    },
+    {
+      "priority": 100,
+      "category": "missing_semantic_edge",
+      "recommendation": "inspect target module for unqualified or non-declaration usage; consider explicit qualification or extending the forensic heuristic for fields/classes",
+      "source": "CNNA.PillarA.Foundation.Interfaces",
+      "target": "CNNA.PillarA.Foundation.Determinism",
+      "source_group": "PillarA/Foundation",
+      "target_group": "PillarA/Foundation",
+      "status": "missing",
+      "present_in_semantic_mainline": false,
+      "present_in_weighted_semantic_mainline": false,
+      "target_open_namespaces": [],
+      "local_declaration_overlap": [],
+      "local_declaration_overlap_count": 0,
+      "source_alias_candidate_count": 399,
+      "source_opened_alias_candidate_count": 0,
+      "same_namespace_block": true,
+      "likely_causes": [
+        "unqualified_import_alias_surface",
+        "same_namespace_block"
+      ],
+      "confidence_counts": {},
+      "weighted_score": 0.0,
+      "strongest_confidence": null,
+      "strongest_confidence_weight": 0,
+      "reference_count": 0,
+      "unique_symbol_count": 0,
+      "sample_symbols": []
+    }
+  ]
+}

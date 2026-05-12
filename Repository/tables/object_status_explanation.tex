@@ -1,0 +1,33 @@
+\small
+\par\smallskip\noindent\begin{minipage}{0.99\linewidth}\footnotesize\raggedright\textbf{Table legend.} \colorbox{white}{\strut W} = white/finished public object; \colorbox{cyan!20}{\strut B} = blue/proof-carrying but semantic/API correction still open; \colorbox{green!18}{\strut G} = green/locally closable; \colorbox{yellow!25}{\strut Y} = yellow/known route with prerequisites; \colorbox{red!20}{\strut R} = red/derivation layer incomplete or unclear; \colorbox{black!18}{\strut K} = black/registered side or future target. Context class is orthogonal to status.\end{minipage}\par\vspace{0.25em}
+\arrayrulecolor{black!22}
+\begin{longtable}{L{0.045\linewidth} L{0.925\linewidth}}
+\hline
+\textbf{Code} & \textbf{Meaning}\\
+\hline
+\endfirsthead
+\hline
+\textbf{Code} & \textbf{Meaning}\\
+\hline
+\endhead
+\cellcolor{white}W & complete: canonically derived-only, semantically correct, access/\allowbreak{}rights settled, consumable according to the register. Context class determines whether the row is Lean, tool, DB, generated, governance, documentation or reference material;\newline status alone never grants Lean-object semantics.\\
+\hline
+\addlinespace[0.24em]
+\cellcolor{cyan!20}B & derived-only/\allowbreak{}proof-carrying exists, but semantics or API is not final;\newline it must not count as complete. Context class determines whether the row is Lean, tool, DB, generated, governance, documentation or reference material;\newline status alone never grants Lean-object semantics.\\
+\hline
+\addlinespace[0.24em]
+\cellcolor{green!18}G & needed and directly/\allowbreak{}locally derivable or closable by a small neutral wrapper. Context class determines whether the row is Lean, tool, DB, generated, governance, documentation or reference material;\newline status alone never grants Lean-object semantics.\\
+\hline
+\addlinespace[0.24em]
+\cellcolor{yellow!25}Y & needed;\newline derivation route known, but multiple prerequisite objects, bridges, or subphases are needed. Context class determines whether the row is Lean, tool, DB, generated, governance, documentation or reference material;\newline status alone never grants Lean-object semantics.\\
+\hline
+\addlinespace[0.24em]
+\cellcolor{red!20}R & needed;\newline derivation or generation layer incomplete/\allowbreak{}unclear. Context class determines whether the row is Lean, tool, DB, generated, governance, documentation or reference material;\newline status alone never grants Lean-object semantics.\\
+\hline
+\addlinespace[0.24em]
+\cellcolor{black!18}K & registered, but not needed for the near phase frontier. Context class determines whether the row is Lean, tool, DB, generated, governance, documentation or reference material;\newline status alone never grants Lean-object semantics.\\
+\hline
+\addlinespace[0.24em]
+\end{longtable}
+\arrayrulecolor{black}
+\normalsize

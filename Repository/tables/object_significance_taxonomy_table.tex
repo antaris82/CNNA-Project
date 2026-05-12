@@ -1,0 +1,29 @@
+\small
+\arrayrulecolor{black!22}
+\begin{longtable}{L{0.035\linewidth} L{0.06\linewidth} L{0.06\linewidth} L{0.255\linewidth} L{0.31\linewidth} L{0.24\linewidth}}
+\hline
+\textbf{Tier} & \textbf{Name} & \textbf{Applies to} & \textbf{Meaning} & \textbf{Documentation requirement} & \textbf{Promotion /\allowbreak{} demotion rule}\\
+\hline
+\endfirsthead
+\hline
+\textbf{Tier} & \textbf{Name} & \textbf{Applies to} & \textbf{Meaning} & \textbf{Documentation requirement} & \textbf{Promotion /\allowbreak{} demotion rule}\\
+\hline
+\endhead
+F0 & fundamental & object, phase & Ontic, generator, handoff, invariant, or root-contract level. Failure changes the meaning of the derived-only architecture or a pillar boundary. & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & May not be promoted by generated prose or status color. Must cite checked Lean code or an explicit governance contract and must remain expert-reviewable.\\
+\hline
+\addlinespace[0.24em]
+F1 & core & object, phase & Core derived object, API seam, comparison gate, or proof route that many later phases depend on, but not itself an ontic root. & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & May be promoted to F0 only if it becomes a pillar-boundary or generator-level contract;\newline may be demoted only after no downstream dependency relies on it.\\
+\hline
+\addlinespace[0.24em]
+F2 & standard & object, phase & Ordinary derived object, target object, or reference/\allowbreak{}comparison profile with local but real mathematical or planning relevance. & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & Promote to F1 if several later phases consume it, if it crosses a handoff/\allowbreak{}API boundary, or if an expert-review risk is discovered.\\
+\hline
+\addlinespace[0.24em]
+F3 & auxiliary & object, phase & Support, migration, tooling, generated artifact, ledger, or narrow refactor helper. Important for auditability but not a mathematical generator. & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & Promote to F2/\allowbreak{}F1 only if it starts carrying semantic proof obligations or becomes a required release gate.\\
+\hline
+\addlinespace[0.24em]
+F4 & mention-only & object, phase & Trivial, navigational, future-side, purely illustrative, or low-risk reference row. It should be visible but not exhaustively documented. & Mention and pointer only: name, context class, status, and reason for non-consumption. No full proof dossier unless promoted. & Automatically promote if it becomes a dependency, is consumed by Lean code, controls access/\allowbreak{}release, or carries a reference-theory risk.\\
+\hline
+\addlinespace[0.24em]
+\end{longtable}
+\arrayrulecolor{black}
+\normalsize

@@ -1,0 +1,27 @@
+digraph group_pillara_toc {
+  rankdir="LR";
+  node [shape=box, fontsize=10];
+  "CNNA.PillarA.ToC.Addressing" [tooltip="PillarA/ToC"];
+  "CNNA.PillarA.ToC.BuildAll" [tooltip="PillarA/ToC"];
+  "CNNA.PillarA.ToC.Concrete" [tooltip="PillarA/ToC"];
+  "CNNA.PillarA.ToC.ConcreteIdeal" [tooltip="PillarA/ToC"];
+  "CNNA.PillarA.ToC.Contract" [tooltip="PillarA/ToC"];
+  "CNNA.PillarA.ToC.GeneratedBranchFamily" [tooltip="PillarA/ToC"];
+  "CNNA.PillarA.ToC.IdealAddressEquiv" [tooltip="PillarA/ToC"];
+  "CNNA.PillarA.ToC.Notation" [tooltip="PillarA/ToC"];
+  "CNNA.PillarA.ToC.Addressing" -> "CNNA.PillarA.ToC.Contract";
+  "CNNA.PillarA.ToC.BuildAll" -> "CNNA.PillarA.ToC.Addressing";
+  "CNNA.PillarA.ToC.BuildAll" -> "CNNA.PillarA.ToC.Concrete";
+  "CNNA.PillarA.ToC.BuildAll" -> "CNNA.PillarA.ToC.ConcreteIdeal";
+  "CNNA.PillarA.ToC.BuildAll" -> "CNNA.PillarA.ToC.Contract";
+  "CNNA.PillarA.ToC.BuildAll" -> "CNNA.PillarA.ToC.GeneratedBranchFamily";
+  "CNNA.PillarA.ToC.BuildAll" -> "CNNA.PillarA.ToC.IdealAddressEquiv";
+  "CNNA.PillarA.ToC.BuildAll" -> "CNNA.PillarA.ToC.Notation";
+  "CNNA.PillarA.ToC.Concrete" -> "CNNA.PillarA.ToC.ConcreteIdeal";
+  "CNNA.PillarA.ToC.Concrete" -> "CNNA.PillarA.ToC.IdealAddressEquiv";
+  "CNNA.PillarA.ToC.ConcreteIdeal" -> "CNNA.PillarA.ToC.IdealAddressEquiv";
+  "CNNA.PillarA.ToC.GeneratedBranchFamily" -> "CNNA.PillarA.ToC.Concrete";
+  "CNNA.PillarA.ToC.IdealAddressEquiv" -> "CNNA.PillarA.ToC.Addressing";
+  "CNNA.PillarA.ToC.Notation" -> "CNNA.PillarA.ToC.Concrete";
+  "CNNA.PillarA.ToC.Notation" -> "CNNA.PillarA.ToC.ConcreteIdeal";
+}

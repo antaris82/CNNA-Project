@@ -1,0 +1,5 @@
+Kind	Meaning	Required evidence	Rendering rule
+direct	Phase directly owns registered object(s).	At least one object has Phase exactly equal to the phase id.	Render direct object hyperlinks. Do not aggregate child phase objects as direct ownership.
+scope_only	Phase is an umbrella/routing/scope phase; objects are owned by child phases.	No direct objects and at least one descendant phase has direct object(s).	Render scope-only plus a bounded child-object summary.
+no_direct_object	Phase intentionally has no direct object, e.g. baseline, audit, closeout, generator/view infrastructure without object ownership.	No direct objects and no descendant-object ownership needed for the phase semantics, plus explanation.	Render no direct object with reason; never leave cell blank.
+moved	Historical placeholder or routing note whose active objects are owned elsewhere.	Main goal/definition/proof goal identifies the destination phase or ownership move.	Render moved placeholder and reason/destination; no direct object links unless the placeholder also owns an explicit audit object.

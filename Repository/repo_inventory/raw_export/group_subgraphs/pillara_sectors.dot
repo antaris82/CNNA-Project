@@ -1,0 +1,28 @@
+digraph group_pillara_sectors {
+  rankdir="LR";
+  node [shape=box, fontsize=10];
+  "CNNA.PillarA.Sectors.BranchPatch" [tooltip="PillarA/Sectors"];
+  "CNNA.PillarA.Sectors.BranchingSelector" [tooltip="PillarA/Sectors"];
+  "CNNA.PillarA.Sectors.BranchingWitness" [tooltip="PillarA/Sectors"];
+  "CNNA.PillarA.Sectors.BuildAll" [tooltip="PillarA/Sectors"];
+  "CNNA.PillarA.Sectors.ComplementSectorFamily" [tooltip="PillarA/Sectors"];
+  "CNNA.PillarA.Sectors.Notation" [tooltip="PillarA/Sectors"];
+  "CNNA.PillarA.Sectors.SectorSplit" [tooltip="PillarA/Sectors"];
+  "CNNA.PillarA.Sectors.SelectedBranching" [tooltip="PillarA/Sectors"];
+  "CNNA.PillarA.Sectors.UVSpectralSelector" [tooltip="PillarA/Sectors"];
+  "CNNA.PillarA.Sectors.BranchingSelector" -> "CNNA.PillarA.Sectors.UVSpectralSelector";
+  "CNNA.PillarA.Sectors.BranchingWitness" -> "CNNA.PillarA.Sectors.SectorSplit";
+  "CNNA.PillarA.Sectors.BuildAll" -> "CNNA.PillarA.Sectors.BranchPatch";
+  "CNNA.PillarA.Sectors.BuildAll" -> "CNNA.PillarA.Sectors.BranchingSelector";
+  "CNNA.PillarA.Sectors.BuildAll" -> "CNNA.PillarA.Sectors.BranchingWitness";
+  "CNNA.PillarA.Sectors.BuildAll" -> "CNNA.PillarA.Sectors.ComplementSectorFamily";
+  "CNNA.PillarA.Sectors.BuildAll" -> "CNNA.PillarA.Sectors.Notation";
+  "CNNA.PillarA.Sectors.BuildAll" -> "CNNA.PillarA.Sectors.SectorSplit";
+  "CNNA.PillarA.Sectors.BuildAll" -> "CNNA.PillarA.Sectors.SelectedBranching";
+  "CNNA.PillarA.Sectors.BuildAll" -> "CNNA.PillarA.Sectors.UVSpectralSelector";
+  "CNNA.PillarA.Sectors.ComplementSectorFamily" -> "CNNA.PillarA.Sectors.BranchPatch";
+  "CNNA.PillarA.Sectors.Notation" -> "CNNA.PillarA.Sectors.BranchingSelector";
+  "CNNA.PillarA.Sectors.SectorSplit" -> "CNNA.PillarA.Sectors.ComplementSectorFamily";
+  "CNNA.PillarA.Sectors.SelectedBranching" -> "CNNA.PillarA.Sectors.BranchingWitness";
+  "CNNA.PillarA.Sectors.UVSpectralSelector" -> "CNNA.PillarA.Sectors.SelectedBranching";
+}

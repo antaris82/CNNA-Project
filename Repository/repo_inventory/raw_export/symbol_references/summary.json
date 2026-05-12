@@ -1,0 +1,32 @@
+{
+  "module_count": 287,
+  "declaration_count": 8860,
+  "modules_with_declarations": 255,
+  "modules_with_open_namespaces": 220,
+  "opened_namespace_count": 815,
+  "reference_edge_count": 394,
+  "consumer_module_count": 232,
+  "referenced_dependency_module_count": 227,
+  "referenced_symbol_count": 1686,
+  "confidence_counts": {
+    "anchored_open_namespace": 78,
+    "exact_qualified": 79,
+    "imported_unique_alias": 62,
+    "qualified_suffix": 5247,
+    "same_namespace_short_name": 192
+  },
+  "files": {
+    "declarations": "symbol_references/declarations.json",
+    "references": "symbol_references/references.json",
+    "semantic_signal_plan": "symbol_references/semantic_signal_plan/summary.json"
+  },
+  "semantic_signal_plan": {
+    "edge_count": 394,
+    "reduced_edge_count": 303,
+    "mainline_length": 65,
+    "weighted_mainline_length": 44,
+    "weighted_mainline_score": 2605.0,
+    "source_count": 55,
+    "sink_count": 60
+  }
+}

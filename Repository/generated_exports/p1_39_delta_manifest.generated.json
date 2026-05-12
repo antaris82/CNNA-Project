@@ -1,0 +1,51 @@
+{
+  "planning_data_version": "P1.39",
+  "planning_data_timestamp": "2026-05-12T07:55:00+02:00",
+  "change_selector": {
+    "Change version": "P1.39",
+    "Change timestamp": "2026-05-12T07:55:00+02:00"
+  },
+  "changed_sections": {
+    "phases": [
+      "21",
+      "21.2",
+      "21.2.4",
+      "21.2.5"
+    ],
+    "objects": [
+      "CEX13",
+      "CEX14",
+      "CEX15",
+      "CEX16"
+    ],
+    "object_proof_dossiers": [
+      "CEX15",
+      "CEX16"
+    ],
+    "implementation_scratchpad": [
+      "21.2.4",
+      "21.2.5"
+    ],
+    "global_no_go_guardrails": [
+      "GNG65",
+      "GNG66",
+      "GNG67"
+    ],
+    "workflow_policy": [
+      "CI build-result phase-transition workflow",
+      "CI snapshot-artifact and Webhosting-MySQL import workflow",
+      "Natural-origin missing-structure workflow",
+      "Red-build failure visibility workflow",
+      "Timestamp-bounded delta-PDF generation workflow"
+    ]
+  },
+  "latest_change_overview_rows": [
+    "Planning data version",
+    "Phase 21 automation refinement",
+    "Updated phase-state controller",
+    "New registered object and guardrail",
+    "Delta-PDF output policy",
+    "Lean status"
+  ],
+  "truth_status": "generated-secondary; Lean code remains primary; no Lean build was run"
+}

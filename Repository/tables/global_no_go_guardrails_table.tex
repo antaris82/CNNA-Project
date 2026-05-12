@@ -1,0 +1,215 @@
+\small
+\arrayrulecolor{black!22}
+\begin{longtable}{L{0.045\linewidth} L{0.345\linewidth} L{0.185\linewidth} L{0.39\linewidth}}
+\hline
+\textbf{ID} & \textbf{Rule} & \textbf{Scope} & \textbf{Enforcement}\\
+\hline
+\endfirsthead
+\hline
+\textbf{ID} & \textbf{Rule} & \textbf{Scope} & \textbf{Enforcement}\\
+\hline
+\endhead
+GNG01 & no @[simp] attributes in the operational path & Global operational Lean code path & Rejected in implementation manifest, code review, and closeout unless the code is explicitly non-operational and the exception is recorded.\\
+\hline
+\addlinespace[0.24em]
+GNG02 & no noncomputable in the operational path & Global operational Lean code path & Operational definitions must remain computable;\newline mirror/\allowbreak{}non-operational layers must be marked and isolated.\\
+\hline
+\addlinespace[0.24em]
+GNG03 & no classical helper unless isolated in allowed mirror/\allowbreak{}non-operational layer & Global operational/\allowbreak{}mirror boundary & Any classical use must be outside the operational path and documented as mirror/\allowbreak{}non-operational.\\
+\hline
+\addlinespace[0.24em]
+GNG04 & no Matrix.inv or external inverse oracle in operational derivations & Global inverse/\allowbreak{}elimination derivations & Use explicit proof-carrying inverse candidates and two-sided inverse proofs;\newline external inverse APIs are forbidden as operational sources.\\
+\hline
+\addlinespace[0.24em]
+GNG05 & no free formula without proof-carrying entry structure & Global formula/\allowbreak{}code-object introduction & Every formula exposed to consumers must be backed by a source object, entry structure, definition, proof target, and verification/\allowbreak{}dossier record.\\
+\hline
+\addlinespace[0.24em]
+GNG06 & no consumer-side patch when the missing structure belongs earlier & Global dependency/\allowbreak{}backjump discipline & Missing structure must be introduced at its natural source layer;\newline consumer/\allowbreak{}gate patches are blocked.\\
+\hline
+\addlinespace[0.24em]
+GNG07 & no premature obstruction before a serious positive construction attempt & Global positive-path discipline & Obstructions require a recorded positive attempt and a localized mathematical failure reason.\\
+\hline
+\addlinespace[0.24em]
+GNG08 & no phase-semantic public API names & Global public API and module-surface naming & SM/\allowbreak{}AR/\allowbreak{}phase-semantic names may remain legacy/\allowbreak{}internal but cannot be public-final neutral API.\\
+\hline
+\addlinespace[0.24em]
+GNG09 & no fragile rewrite chain when a structural constructor/\allowbreak{}projection proof is available & Global proof-tactic strategy & Prefer constructors, projections, and explicit structural lemmas;\newline fragile rewrite chains must be justified as local and harmless.\\
+\hline
+\addlinespace[0.24em]
+GNG10 & do not delete legacy status enums during quarantine & Global legacy quarantine workflow & Legacy status enums may be moved/\allowbreak{}quarantined/\allowbreak{}wrapped, not deleted during the quarantine phase.\\
+\hline
+\addlinespace[0.24em]
+GNG11 & do not let Phase 3+ import Legacy.StatusGates & Global import firewall for post-neutral phases & Phase 3+ visibility checks must reject Legacy.StatusGates imports.\\
+\hline
+\addlinespace[0.24em]
+GNG12 & do not treat old TeX/\allowbreak{}PDF files as maintained roadmap sources & Global planning/\allowbreak{}source-of-truth policy & YAML master is authoritative;\newline old TeX/\allowbreak{}PDF files are historical/\allowbreak{}generated views only.\\
+\hline
+\addlinespace[0.24em]
+GNG13 & no string-like or physical analogy as CNNA-generative input & All interpretive, arithmetic, Schur/\allowbreak{}DtN, and handoff phases. & Analogies may be comparison/\allowbreak{}diagnostic notes only;\newline any formula, object, spectrum, or handoff must have a derived code/\allowbreak{}proof route.\\
+\hline
+\addlinespace[0.24em]
+GNG14 & no horizontal/\allowbreak{}vertical Schur-duality or string/\allowbreak{}subsystem analogy as input to earlier generators, Schur, arithmetic, or CD definitions & all Pillar-A bridge, Schur, arithmetic, CD, and generator phases & the duality may only be a later theorem/\allowbreak{}diagnostic target after S05/\allowbreak{}O05/\allowbreak{}TM0/\allowbreak{}CD7/\allowbreak{}BR06/\allowbreak{}BR07 are closed;\newline earlier phases may export data to it but never consume its conclusion\\
+\hline
+\addlinespace[0.24em]
+GNG15 & no heuristic angle/\allowbreak{}lattice construction as generator or branching definition & Global generator, substrate, lattice-test, and arithmetic comparison workflows & Any Eisenstein/\allowbreak{}Gauss spiral or angle profile must be a consumer-only test/\allowbreak{}comparison target. The code-defined branching API is authoritative;\newline angle drawings, CM targets, and j values may not define b, carriers, parents, or generator semantics.\\
+\hline
+\addlinespace[0.24em]
+GNG16 & no special-case-only test matrix as evidence for a general computable path & All computation, arithmetic, lattice, generator, smoke-test, and refactor-regression workflows & Eisenstein/\allowbreak{}Gauss or other sentinel rows may be included only as special comparison rows. Generic finite rows over the code-defined API must exist, or the phase remains unclosed/\allowbreak{}blocked.\\
+\hline
+\addlinespace[0.24em]
+GNG17 & no Heegner/\allowbreak{}class-number-one membership as closed noOuter evidence & All number-theory, CM, lattice, regime, test-matrix, AQFT/\allowbreak{}unitarity, and comparison workflows & A row with h(D)=1, a Heegner label, or an integer j target remains number-theoretic/\allowbreak{}comparison data until its noOuter/\allowbreak{}HasOuter regime is derived from Pillar-A source objects. Eisenstein/\allowbreak{}Gauss may be tested as noOuter-root sentinels;\newline other Heegner targets default to HasOuter/\allowbreak{}complement-projection or comparison rows unless proven otherwise.\\
+\hline
+\addlinespace[0.24em]
+GNG18 & no replacement of ExecComplex by analytic Complex, Cayley-Dickson C-surface, or unproven exact quadratic scalar layer & global operational scalar path, arithmetic, lattice/\allowbreak{}CM, Cayley-Dickson bridge, and test-matrix phases & ExecComplex remains QxQ operational floor. O09 is required for later quadratic coordinates but only as a schema;\newline concrete instances require GNG19/\allowbreak{}O10/\allowbreak{}BR14. CD-derived C may only be consumed after CD9/\allowbreak{}10.4.3 proves noncircular provenance. General Complex/\allowbreak{}Real stays mirror-only.\\
+\hline
+\addlinespace[0.24em]
+GNG19 & no free sqrt(D), no exact quadratic instance without proof-carrying D-source & all scalar, arithmetic, CM/\allowbreak{}lattice, number-theory, test-matrix, and Cayley-Dickson bridge phases & O09 may define only a parameterized schema. Any concrete exact quadratic row must consume O10/\allowbreak{}BR14 with a D sourced from O05/\allowbreak{}O06 or an equivalent operational discriminant ledger. Analytic Complex/\allowbreak{}Real, AdjoinRoot field structures, or CD C-surfaces may not supply the early D or theta.\\
+\hline
+\addlinespace[0.24em]
+GNG20 & no artificial phase bottleneck or phase-title/\allowbreak{}object mismatch & global phase DAG, object register, module manifest, and implementation scratchpads & Each object must be placed behind only the prerequisites used by its proof target. In particular, SP0/\allowbreak{}SP1/\allowbreak{}P00-P06/\allowbreak{}TM0-TM2 may not wait on modular forms, j, q-expansions, Hilbert class polynomials, theta or L-functions unless a specific bridge theorem explicitly requires that dependency.\\
+\hline
+\addlinespace[0.24em]
+GNG21 & no unexplained empty Linked-objects cell and no umbrella aggregation as direct object ownership & global phase table, object register, scratchpads, module manifest, generated views & Every phase must declare direct, scope\_only, no\_direct\_object, or moved. Empty direct object sets require an explicit non-direct policy. Child object scope may be shown for readability but cannot change object Phase ownership.\\
+\hline
+\addlinespace[0.24em]
+GNG22 & no dynamics, physics, stochasticity, geometry, arithmetic, operator algebra, environment, or unitarity as ontic primitive beyond subsystem-being & global CNNA ontology, object register, phase DAG, scratchpads, proof dossiers, consumer bridges, external-comparison sections & Every such structure must cite a derived cut/\allowbreak{}regime/\allowbreak{}complement/\allowbreak{}Schur-DtN/\allowbreak{}source-object chain. If a phase needs one of these before the chain exists, it must backjump to the natural generating layer rather than postulate or patch the consumer.\\
+\hline
+\addlinespace[0.24em]
+GNG23 & no 100-percent truth declaration and no bypass of discipline-specific expert review & All CNNA documentation, generated tables/\allowbreak{}PDFs/\allowbreak{}graphs/\allowbreak{}exports, phase status claims, Lean-code interpretation, object proof dossiers, and established-theory/\allowbreak{}reference markings & The checked Lean code is the primary truth system, but even a green build only checks formal consistency of chosen declarations. Semantic correctness, modeling adequacy, theory attachments, and generated interpretations remain reviewable. Every relevant claim must remain open to specialized expert review;\newline generated artifacts are secondary.\\
+\hline
+\addlinespace[0.24em]
+GNG24 & no ignored missing blue/\allowbreak{}reference-theory marking & All references to established mathematics/\allowbreak{}physics/\allowbreak{}computer-science background, local mathlib/\allowbreak{}formalization context, and large end-theory comparison horizons & If a claim, object, phase, module, or documentation passage touches established theory, the tool must decide whether it needs blue/\allowbreak{}reference marking. Missing markings are audit debt. Blue marks comparison/\allowbreak{}reference/\allowbreak{}review context only and never promotes established theory to a CNNA generator.\\
+\hline
+\addlinespace[0.24em]
+GNG25 & no tool-interface metaphor as formal CNNA theorem or ontic input & Documentation, database views, context slices, phase closeouts, and reflective tool architecture notes. & The bright/\allowbreak{}dark/\allowbreak{}interface analogy may guide review and visibility obligations only. It must not be cited as a proved CNNA statement, a mathematical generator, or a reason to bypass Lean-primary proof and discipline-specific expert review.\\
+\hline
+\addlinespace[0.24em]
+GNG26 & no semantic module consolidation without compatibility facade, natural-layer placement, and regression evidence & All Lean refactor/\allowbreak{}merge phases, module manifest, reuse ledger, import graph, declaration consumption map, object proof dossiers, and public API/\allowbreak{}firewall phases & A merge/\allowbreak{}refactor may proceed only after LEG36 classifies the candidate, preserves old import paths or supplies an explicit migration facade, records import/\allowbreak{}declaration/\allowbreak{}consumer deltas, and obtains local full-build evidence. Proof-stage chains must not be merged by naming similarity or line-count pressure.\\
+\hline
+\addlinespace[0.24em]
+GNG27 & no generated PDF/\allowbreak{}TeX/\allowbreak{}LaTeX build products or historical reports as active root sources & Repository root, generated full-document outputs, context-documentation outputs, release packaging, README/\allowbreak{}toolchain commands, and archive/\allowbreak{}report policy & The project root must remain source-oriented: README.md may stay in root;\newline historical Markdown reports belong in archive/\allowbreak{}reports/\allowbreak{};\newline generated PDF, TeX, aux, log, out, toc, fls and fdb\_latexmk files are disposable and must not be treated as authoritative or retained as active root files. Regenerate them from YAML/\allowbreak{}tables/\allowbreak{}scripts when needed.\\
+\hline
+\addlinespace[0.24em]
+GNG28 & do not remove package-root Lean/\allowbreak{}Lake project-control files during cleanup or packaging & Package root, release packaging, root cleanup workflow, local build workflow, README/\allowbreak{}manual commands, future CI/\allowbreak{}database packaging & Cleanup may remove disposable generated documentation artifacts and archive historical reports, but packaging must preserve package-root CNNA.lean, lakefile.lean, lake-manifest.json, and lean-toolchain unless an explicit future build-entry phase replaces them with a proven alternative.\\
+\hline
+\addlinespace[0.24em]
+GNG29 & no duplicate active README and no hidden license/\allowbreak{}credit surface & Package root, Repository root, generated full/\allowbreak{}context PDFs, release packaging, README/\allowbreak{}manual commands, license notice table, and future CI/\allowbreak{}database packaging & The maintained README.md and LICENSE must live in the package root. Subdirectories must not carry additional active README.md files unless a future phase classifies them as generated/\allowbreak{}raw-export artifacts with explicit non-authoritative status. Generated PDFs must expose the Editor and Assistant credits from metadata.\\
+\hline
+\addlinespace[0.24em]
+GNG30 & generated PDF section-pagebreak invariant & Full documentation generator, context documentation generator, review PDFs, future documentation layout profiles, and generated-secondary review packets & Top-level sections in generated PDFs must start on new pages automatically. The invariant is implemented in the generators, not by manually editing disposable TeX/\allowbreak{}PDF outputs. Layout changes must not change Lean code, Master-YAML truth semantics, or context-matching logic.\\
+\hline
+\addlinespace[0.24em]
+GNG31 & no white direct-Lean derivation phases and no release without derived-only object evidence & Phase table, implementation scratchpad, pre-implementation checks, object register, proof dossiers, active cursor selection, generated PDFs/\allowbreak{}TSVs, future database/\allowbreak{}status dashboards & If a phase\_type is derivation and the phase is not green, yellow, or orange, it must be red. A red derivation phase may become yellow or orange only after a pre-implementation release check references the required already-derived Lean objects/\allowbreak{}proof dossiers. White is reserved for refactor/\allowbreak{}tool/\allowbreak{}infrastructure/\allowbreak{}documentation/\allowbreak{}comparison work that does not itself require direct Lean-code derivation release.\\
+\hline
+\addlinespace[0.24em]
+GNG32 & main phase table is the release surface;\newline module-change manifest is appendix-only & Full documentation, context documentation, phase status release workflow, module-change/\allowbreak{}refactor audits, implementation scratchpads, README/\allowbreak{}manual use & Do not read the module-change manifest as a second phase table. It may only record concrete module/\allowbreak{}API/\allowbreak{}import-surface change contracts. Phase release status, dependencies and derived-only evidence belong to the main phase table, object register and proof dossiers. Static explanatory prose must stay generator-owned;\newline table rows remain dynamic.\\
+\hline
+\addlinespace[0.24em]
+GNG33 & no new substantive Lean code before full IST intake, neutral naming/\allowbreak{}refactor, post-scan and release proof & All future Lean implementation prompts, 1.1.1.2 blue-object correction, Phase 1.x neutralization, public API/\allowbreak{}firewall phases, and later red locked derivation phases & Before any new substantive Lean content phase becomes yellow, the plan must reference closed LEG37-LEG41 or spawn a red blocker at the natural source layer. Refactoring/\allowbreak{}tooling may proceed only inside the pre-code readiness chain and must preserve old imports through facades until build-proven.\\
+\hline
+\addlinespace[0.24em]
+GNG34 & no database mirror row is a CNNA truth source;\newline public access remains read-only & database/\allowbreak{}publication mirror, future web frontend, generated-secondary exports, review tooling and online visualization & No database mirror row may release a phase or replace Lean/\allowbreak{}YAML provenance. Public/\allowbreak{}public read-only access is SELECT-only on api.* views. No public writes. No browser admin write credential key. No DB update without snapshot\_id, source hashes and import report. Every public row must be traceable to a Lean/\allowbreak{}YAML snapshot.\\
+\hline
+\addlinespace[0.24em]
+GNG35 & generated PDF typography changes must be generator-level and semantic-neutral & Full documentation generator, context documentation generator, table generator, graph-label generation, generated PDF review packets and future documentation layout profiles & Font-size changes must be applied in generators/\allowbreak{}source tables, not by manual PDF edits. They must not alter Lean code, YAML row semantics, context filtering, phase status logic, proof status, or public database/\allowbreak{}export semantics.\\
+\hline
+\addlinespace[0.24em]
+GNG37 & Quaternion/\allowbreak{}geometric-algebra references are target gates only & Horn 0709.2238v1, Hamilton quaternion relations, Pauli matrices, Clifford/\allowbreak{}geometric algebra, biquaternions, spacetime algebra, conformal GA, mathlib Quaternion/\allowbreak{}CliffordAlgebra APIs and future GA comparison modules. & These references may define comparison profiles, sign audits, scratchpad notes and expert-review targets only. They cannot generate CNNA objects, set scalar layers, choose orientations/\allowbreak{}dimensions, release phases, create handoff data or shortcut derived-only proofs.\\
+\hline
+\addlinespace[0.24em]
+GNG38 & Status/\allowbreak{}context orthogonality and Lean-facing subclass separation. Phase status and Object status encode release/\allowbreak{}proof-state only;\newline Context class encodes type/\allowbreak{}class membership. No ToolInfrastructureObject, DatabaseMirrorObject, GeneratedArtifactObject, DocumentationObject, GovernancePolicyObject or ReferenceGateObject may be consumed as a LeanSourceObject/\allowbreak{}LeanTargetObject or as derived mathematical data because it is green, linked or documented. LeanRefactorObject, LeanHandoffContractObject and LeanGovernanceObject are Lean-facing control classes, not automatically mathematical CNNA data. & All phase, object, proof-dossier, scratchpad, generated export, DB mirror and implementation-prompt surfaces. & All new phase/\allowbreak{}object rows must declare Context class from the taxonomy. Generated tables render Context class beside status. Future DB schema must mirror the field. Any phase release must cite LeanSourceObject/\allowbreak{}LeanTargetObject evidence, not merely a green tool/\allowbreak{}reference/\allowbreak{}governance object.\\
+\hline
+\addlinespace[0.24em]
+GNG39 & no version-axis conflation & all metadata, release artifacts, generated exports, YAML2SQL snapshots, README/\allowbreak{}PDF titles, and Explorer provenance rows & lean\_data\_version records the Lean toolchain/\allowbreak{}API level and changes only on Lean/\allowbreak{}toolchain-version upgrade;\newline lean\_data\_timestamp advances only with Lean source/\allowbreak{}data changes. planning-data version/\allowbreak{}timestamp advances with YAML phase/\allowbreak{}object/\allowbreak{}scratchpad/\allowbreak{}dossier/\allowbreak{}policy state changes;\newline tool-infrastructure version/\allowbreak{}timestamp advances only with generator/\allowbreak{}importer/\allowbreak{}frontend/\allowbreak{}tool-code changes. Compatibility aliases may mirror the axes but may not collapse them.\\
+\hline
+\addlinespace[0.24em]
+GNG40 & no timestampless semantic version records & metadata, latest-change overview, generated exports, db\_snapshots/\allowbreak{}YAML2SQL imports, Explorer nodes/\allowbreak{}edges/\allowbreak{}history, release filenames/\allowbreak{}reports and future public API provenance rows & Every persisted or exported semantic version reference must include the corresponding timestamp. Required pairs are lean\_data\_version+lean\_data\_timestamp, planning\_data\_version+planning\_data\_timestamp and tool\_infrastructure\_version+tool\_infrastructure\_timestamp. For the Lean axis, lean\_data\_version is the Lean toolchain/\allowbreak{}API level and lean\_data\_timestamp is the Lean source/\allowbreak{}data snapshot time. Any DB snapshot, generated report or Explorer history row that stores a version without its timestamp is invalid and must be rejected or marked incomplete before publication.\\
+\hline
+\addlinespace[0.24em]
+GNG41 & No destructive object overwrite after patch, rename, deletion or retirement. & All object registers, proof dossiers, scratchpads, generated exports, SQL mirrors and Explorer views. & A changed object must retain its old row/\allowbreak{}dossier as historical provenance, carry an explicit lifecycle state and point to successor/\allowbreak{}current object or terminal retirement. Phases are never marked outdated;\newline corrections are represented by successor/\allowbreak{}patch phase links.\\
+\hline
+\addlinespace[0.24em]
+GNG42 & No cyclic current-successor lifecycle chains. & Object lifecycle pointers, Explorer graph edges, SQL mirror imports and history timeline. & Lifecycle successor/\allowbreak{}current-object edges must be acyclic and must terminate in a current object or explicit deleted-retired terminal row. Cycles are allowed only for separately typed non-derivation/\allowbreak{}reference edges and must never define object currency.\\
+\hline
+\addlinespace[0.24em]
+GNG43 & No untyped, unbucketed or lifecycle-less Lean declaration after source-intake or Explorer-readiness closure. & LEG37, CEX0, CEX11, generated declaration inventories, YAML2SQL mirror, Explorer declaration nodes and public API/\allowbreak{}refactor release gates. & Every Lean declaration must have declaration\_kind, semantic\_role, triviality\_tier, significance/\allowbreak{}documentation policy, lifecycle\_state, public\_surface\_status and owning object or explicit non-object bucket. Unknown/\allowbreak{}manual-review labels are blockers, not closure evidence.\\
+\hline
+\addlinespace[0.24em]
+GNG44 & No heuristic-only triviality or significance decision for Lean declarations. & All declaration classifiers, object/\allowbreak{}proof-dossier generation, Explorer filters and documentation-depth assignment. & Automatic labels from rfl/\allowbreak{}projection/\allowbreak{}body shape, declaration keyword, path or reference count are candidate labels only. Curated override must exist for boundary/\allowbreak{}handoff/\allowbreak{}fundamental contracts and for demoting ledger/\allowbreak{}status scaffolding.\\
+\hline
+\addlinespace[0.24em]
+GNG45 & No Explorer completeness claim from consumption classification alone. & LEG5, LEG37, CEX0, CEX11, SQL mirror imports, Explorer inspector panels and public-read documentation. & Consumption class records may feed CEX11 but cannot prove total declaration sorting. Closure requires all required axes plus owner bucket, documentation policy and lifecycle status.\\
+\hline
+\addlinespace[0.24em]
+GNG46 & No de-seeding without source map, derived-only gate, notation/\allowbreak{}readability binding, old-path regression and rollback evidence. Seed/\allowbreak{}Scaffold/\allowbreak{}Window modules may not lose their suffix or become current public API unless free cutoffs/\allowbreak{}states/\allowbreak{}dictionaries/\allowbreak{}observers are removed or explicitly downgraded to derived residual data, the importgraph is cycle-audited and the old path remains a regression oracle or lifecycle-retired object. &  & \\
+\hline
+\addlinespace[0.24em]
+GNG47 & No full-derived QFT/\allowbreak{}AQFT face without complement-net modular chain. Bright-only recovery, finite boundary algebra, GNS/\allowbreak{}KMS scaffold or split-property-like evidence does not suffice for vN/\allowbreak{}Type-III/\allowbreak{}CPT/\allowbreak{}spin-statistics/\allowbreak{}Kramers claims unless ComplementLocalNet/\allowbreak{}ComplementStateNet/\allowbreak{}ComplementGNS/\allowbreak{}SeparatingProperty/\allowbreak{}TomitaTakesakiData/\allowbreak{}ModularConjugation/\allowbreak{}ComplementKMS/\allowbreak{}ComplementSpectrumCondition are derived or explicitly marked as open gates. &  & \\
+\hline
+\addlinespace[0.24em]
+GNG48 & No fermionic, CPT, spin-statistics or Kramers semantics before graded algebra plus modular B chain plus D-causality/\allowbreak{}BW bridge. Statistics, spin, CPT and Kramers labels must not float on an ungraded or non-modular AQFT surface. &  & \\
+\hline
+\addlinespace[0.24em]
+GNG49 & No silent primitive rest-parameter export after ParameterClosure. b, Lmax, beta and numerical regularizers must either be derived through BranchingWitness/\allowbreak{}selectors/\allowbreak{}HorizonLevel/\allowbreak{}BackreactionFixedPoint/\allowbreak{}RegularizationClosure or remain explicitly marked as scaffold/\allowbreak{}residual variables;\newline they may not become hidden ontic inputs. &  & \\
+\hline
+\addlinespace[0.24em]
+GNG50 & No matter or causal-geometry closure from name overlap. Time reversal alone is not Matter;\newline GlobalStateCone or cone-like state families are not causal lightcones;\newline established physics words may define audit gates, not automatic CNNA semantics. &  & \\
+\hline
+\addlinespace[0.24em]
+GNG51 & No 1:1 REALOQS legacy code port into CNNA. & All future REALOQS migration, especially AQFT/\allowbreak{}PillarB. & Every legacy declaration/\allowbreak{}module must receive migration disposition and CNNA source-map before implementation. Direct import/\allowbreak{}copy is blocked unless a later phase proves semantic compatibility and still records lifecycle provenance.\\
+\hline
+\addlinespace[0.24em]
+GNG52 & No legacy A-internal or config-harness dependency in CNNA PillarB. & A->B handoff and AQFT migration. & PillarB may consume only explicit CNNA A->B handoff data. Legacy TreeOfCliques/\allowbreak{}Config/\allowbreak{}BInterfaces dependencies are migration risks to be inverted, not accepted inputs.\\
+\hline
+\addlinespace[0.24em]
+GNG53 & No legacy noncomputable/\allowbreak{}simp-rich AQFT layer in the operational path. & BoundaryMatrix, KMS/\allowbreak{}GNS/\allowbreak{}modular and finite boundary-matrix migration. & Noncomputable analytic legacy constructions must be isolated in allowed mirror/\allowbreak{}reference layers or rebuilt through operational proof-carrying structures. Legacy @[simp] proofs do not authorize operational simplification policy changes.\\
+\hline
+\addlinespace[0.24em]
+GNG54 & No Explorer or planning edge may render REALOQS legacy provenance as CNNA-derived provenance. & CNNA Explorer, SQL mirror, object lifecycle and legacy overlays. & Legacy nodes and edges require explicit LegacyCodeReference classes and reference/\allowbreak{}migration edge types. They cannot unlock green CNNA objects without a new CNNA-derived proof phase.\\
+\hline
+\addlinespace[0.24em]
+GNG55 & No derived-only closure from algebraic skeleton alone. A green/\allowbreak{}closed claim requires structural skeleton, discharged proof obligations and a genuine generated-data operational smoke path for the relevant claim. & All CNNA phases, especially arithmetic smoke tests, AQFT gates and Explorer status rendering. & A phase/\allowbreak{}object may not be marked green merely because the algebraic framework compiles;\newline the scratchpad/\allowbreak{}dossier must identify the generated data path and its verification evidence.\\
+\hline
+\addlinespace[0.24em]
+GNG56 & No missing-structure consumer patch. If a downstream consumer exposes a missing structure, the downstream phase becomes blocked and the structure must be created at its earliest natural source layer, not inserted where the failure was observed. & All implementation and refactor phases. & The red-blocker workflow must record the missing structure, rejected patch site, selected natural origin, and proof/\allowbreak{}audit reason for that origin before the consumer can reopen.\\
+\hline
+\addlinespace[0.24em]
+GNG57 & No implementation-readiness claim without implementation-thought-experiment pressure test. A phase-check must simulate the implementation path sufficiently to expose likely hidden dependencies before yellow/\allowbreak{}orange status is assigned. & Pre-implementation phase checks and active-phase selection. & The pre-implementation check must distinguish a superficial dependency scan from a forced implementation scenario;\newline missing dependencies found in the scenario become red blockers.\\
+\hline
+\addlinespace[0.24em]
+GNG58 & No linear-document sufficiency claim for CNNA planning. PDF/\allowbreak{}TeX views are generated secondary renderings and cannot serve as the primary machine-readable planning state once YAML/\allowbreak{}SQL/\allowbreak{}Explorer data exist. & Planning tool, Explorer, generated documentation and future database mirror. & The Master YAML remains the planning data source;\newline PDFs and TeX files are review/\allowbreak{}render outputs. Claims of completeness must cite YAML/\allowbreak{}ledger checks, not page count or prose presence.\\
+\hline
+\addlinespace[0.24em]
+GNG59 & No free physical parameter export from the Foundation. Parameters such as L\_max, branching strength, beta/\allowbreak{}regularizers, horizon-like quantities and backreaction inputs must have an internal origin, an explicit future backreaction handoff, or be marked unresolved. & Foundation, ParameterClosure, A->B/\allowbreak{}A->C/\allowbreak{}A->D/\allowbreak{}A->E handoffs and Explorer parameter displays. & Any parameter field without source provenance becomes red/\allowbreak{}orange depending on whether a natural upstream or backreaction phase exists. It cannot be silently exported as foundation data.\\
+\hline
+\addlinespace[0.24em]
+GNG60 & No stochastic primitive. Stochasticity/\allowbreak{}noise/\allowbreak{}randomization cannot be introduced as an ontic input;\newline it must be derived from CNNA structure or kept as external comparison-only language. & Pillar A, OQS, spacetime/\allowbreak{}Causal-Set comparisons, AQFT/\allowbreak{}OQS bridge and simulation layers. & Explorer and planning rows must label stochastic language as derived, pending derivation, or external-reference only. No stochastic object can close a CNNA phase unless its source path is explicit.\\
+\hline
+\addlinespace[0.24em]
+GNG61 & No cyclic pillar co-development. Pillars B-E may be co-developed and mutually constraining, but only through explicit acyclic handoff/\allowbreak{}input edges;\newline no pillar may consume its own output or a higher-pillar output outside the declared input-handoff channel. & Pillar B-E planning, handoffs and Explorer graph semantics. & Graph edges must separate derivation, handoff, backreaction, comparison and hypothesis semantics;\newline cycles in proof-producing provenance are blocked even if visual co-development is allowed.\\
+\hline
+\addlinespace[0.24em]
+GNG62 & No unbacked repository automation. Assistant/\allowbreak{}API/\allowbreak{}CI-driven repository mutation must not target the default branch directly as the normal path;\newline a recoverable backup tag/\allowbreak{}branch and a work branch/\allowbreak{}PR path are required before mutation. & GitHub repository operations, assistant-mediated changes, CI setup, release branches and generated planning zip synchronization. & Planning and implementation prompts must record backup ref, work branch/\allowbreak{}PR and CI status. Any direct-main mutation requires explicit emergency override and rollback evidence.\\
+\hline
+\addlinespace[0.24em]
+GNG63 & No public or unproven database write authority. Webhosting/\allowbreak{}MySQL, SQL/\allowbreak{}API and Explorer layers are read-only for public users and generated-secondary;\newline production/\allowbreak{}current mirror state may change only through validated snapshot import/\allowbreak{}swap. & Phase 21 database mirror, Webhosting importer, public API, frontend, credentials and future cnna-project.net deployment. & Importer/\allowbreak{}admin credentials must stay outside browser/\allowbreak{}chat/\allowbreak{}repository plaintext. Public API tests must prove read-only behavior;\newline SQL rows must carry commit/\allowbreak{}toolchain/\allowbreak{}hash provenance.\\
+\hline
+\addlinespace[0.24em]
+GNG64 & No deployment without rollback and local archive path. Automated CI/\allowbreak{}DB/\allowbreak{}Explorer updates require independent recovery paths for Git state, generated artifacts and MySQL mirror state. & GitHub releases, workflow artifacts, Webhosting/\allowbreak{}MySQL imports, Explorer public snapshots and local archival handoff. & A release cannot close deployment-hardening until backup tag/\allowbreak{}branch or bundle, artifact manifest, SQL dump/\allowbreak{}snapshot and restore instructions are recorded.\\
+\hline
+\addlinespace[0.24em]
+GNG65 & No silent CI phase-state drift. A red Lean CI build must not leave the attempted active phase in an implementable/\allowbreak{}active-success state and must not update production/\allowbreak{}current mirrors;\newline it must mark the phase red, create or activate a predecessor repair phase at the natural source layer, and publish a visible read-only failure-history snapshot. A green Lean CI build must not advance the phase cursor unless required closeout evidence is present. & GitHub Actions, assistant/\allowbreak{}repository automation, phase closeout, red-build repair generation, MySQL/\allowbreak{}Webhosting deployment and Explorer history. & CEX15 transition manifests and CEX16 failure snapshots must record commit SHA, run ID, active phase, red/\allowbreak{}green conclusion, evidence files and resulting phase changes. Red transitions block merge and production/\allowbreak{}current import/\allowbreak{}deploy but publish failure history;\newline green transitions require completed scratchpad/\allowbreak{}dossier/\allowbreak{}object evidence and must leave exactly one active cursor.\\
+\hline
+\addlinespace[0.24em]
+GNG66 & No hidden red builds. Failed Lean/\allowbreak{}scan runs that affect phase state must be visible as generated-secondary failure-history artifacts and linked to their repair predecessor or localization gate. & GitHub Actions, phase-state controller, Webhosting/\allowbreak{}MySQL history tables/\allowbreak{}views, Explorer/\allowbreak{}API build history, release notes and expert-review workflow. & A red CI transition is invalid unless it emits red\_failure\_snapshot.json or equivalent, exposes a read-only history/\allowbreak{}API row, links to the generated repair phase, preserves the last green production/\allowbreak{}current snapshot and records no-current-swap evidence. Sensitive credentials and excessive logs must not be public.\\
+\hline
+\addlinespace[0.24em]
+GNG67 & No default full-PDF churn for bounded planning changes. When a planning update changes only a timestamp-bounded set of rows, the user-facing PDF deliverable must be the delta slice of exactly those changed records;\newline the full documentation PDF is optional or reserved for explicit full-release/\allowbreak{}audit checkpoints. & Plan-document generation, context-slice generation, release artifacts, Webhosting/\allowbreak{}Explorer documentation snapshots, review packets and archive packages. & Every changed YAML row must carry the same Change version and Change timestamp for the update set. The default PDF generator selects rows by that pair and emits a delta PDF plus matched-row exports. Full-PDF generation must be explicit, periodic, or release-gated and must not replace the delta as the primary review artifact for small changes.\\
+\hline
+\addlinespace[0.24em]
+GNG68 & No workflow self-sabotage or contradictory transition semantics. Workflow policies that affect phase status, CI evidence, MySQL/\allowbreak{}Explorer mirrors, backup/\allowbreak{}rollback, public visibility or documentation output must share one ordered state model and may not encode mutually incompatible exits. & All workflow\_policy rows, phase-state controller CEX15, red-build visibility CEX16, GitHub automation, Webhosting/\allowbreak{}MySQL importer, Explorer/\allowbreak{}API history, documentation generation and phase closeout. & Before modifying workflow policy, run the workflow-coherence audit: distinguish missing evidence from red failure, require visible red history without production/\allowbreak{}current swap, require green closeout evidence before cursor advance, preserve read-only public mirrors, keep backup/\allowbreak{}rollback before deploy, and use delta PDFs for bounded updates unless a full release/\allowbreak{}audit checkpoint is explicit. Any contradiction must become a static finding and be patched at the workflow/\allowbreak{}source layer before implementation.\\
+\hline
+\addlinespace[0.24em]
+\end{longtable}
+\arrayrulecolor{black}
+\normalsize

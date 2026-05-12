@@ -1,0 +1,177 @@
+[
+  {
+    "source_discipline": "dirichlet_dtn_schur_network",
+    "target_discipline": "prenumeric_toc_substrate_graph",
+    "edge_count": 5,
+    "edges": [
+      {
+        "source": "CNNA.PillarA.DtN.DtNStabilized",
+        "target": "CNNA.PillarA.Foundation.MatrixNorms",
+        "source_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "target_disciplines": [
+          "prenumeric_toc_substrate_graph",
+          "topology_algebra_cd_completion"
+        ],
+        "target_group": "PillarA/Foundation"
+      },
+      {
+        "source": "CNNA.PillarA.DtN.DtNStabilized",
+        "target": "CNNA.PillarA.Foundation.RegularizationPolicy",
+        "source_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "target_disciplines": [
+          "prenumeric_toc_substrate_graph"
+        ],
+        "target_group": "PillarA/Foundation"
+      },
+      {
+        "source": "CNNA.PillarA.Finite.DirichletLaplacian",
+        "target": "CNNA.PillarA.Finite.Approximant",
+        "source_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "target_disciplines": [
+          "prenumeric_toc_substrate_graph"
+        ],
+        "target_group": "PillarA/Finite"
+      },
+      {
+        "source": "CNNA.PillarA.Finite.DirichletLaplacian",
+        "target": "CNNA.PillarA.Foundation.MatrixNorms",
+        "source_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "target_disciplines": [
+          "prenumeric_toc_substrate_graph",
+          "topology_algebra_cd_completion"
+        ],
+        "target_group": "PillarA/Foundation"
+      },
+      {
+        "source": "CNNA.PillarA.Finite.DirichletLaplacian",
+        "target": "CNNA.PillarA.Foundation.WeightPolicy",
+        "source_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "target_disciplines": [
+          "prenumeric_toc_substrate_graph"
+        ],
+        "target_group": "PillarA/Foundation"
+      }
+    ]
+  },
+  {
+    "source_discipline": "dirichlet_dtn_schur_network",
+    "target_discipline": "topology_algebra_cd_completion",
+    "edge_count": 2,
+    "edges": [
+      {
+        "source": "CNNA.PillarA.DtN.DtNStabilized",
+        "target": "CNNA.PillarA.Foundation.MatrixNorms",
+        "source_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "target_disciplines": [
+          "prenumeric_toc_substrate_graph",
+          "topology_algebra_cd_completion"
+        ],
+        "target_group": "PillarA/Foundation"
+      },
+      {
+        "source": "CNNA.PillarA.Finite.DirichletLaplacian",
+        "target": "CNNA.PillarA.Foundation.MatrixNorms",
+        "source_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "target_disciplines": [
+          "prenumeric_toc_substrate_graph",
+          "topology_algebra_cd_completion"
+        ],
+        "target_group": "PillarA/Foundation"
+      }
+    ]
+  },
+  {
+    "source_discipline": "topology_algebra_cd_completion",
+    "target_discipline": "dirichlet_dtn_schur_network",
+    "edge_count": 5,
+    "edges": [
+      {
+        "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+        "target": "CNNA.PillarA.Closure.Notation",
+        "source_disciplines": [
+          "topology_algebra_cd_completion"
+        ],
+        "target_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "target_group": "PillarA/Closure"
+      },
+      {
+        "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+        "target": "CNNA.PillarA.Closure.RegularizationClosure",
+        "source_disciplines": [
+          "topology_algebra_cd_completion"
+        ],
+        "target_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "target_group": "PillarA/Closure"
+      },
+      {
+        "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+        "target": "CNNA.PillarA.Coupling.MultiSchur",
+        "source_disciplines": [
+          "topology_algebra_cd_completion"
+        ],
+        "target_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "target_group": "PillarA/Coupling"
+      },
+      {
+        "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+        "target": "CNNA.PillarA.DtN.Notation",
+        "source_disciplines": [
+          "topology_algebra_cd_completion"
+        ],
+        "target_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "target_group": "PillarA/DtN"
+      },
+      {
+        "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+        "target": "CNNA.PillarA.Network.InfiniteCarrier",
+        "source_disciplines": [
+          "topology_algebra_cd_completion"
+        ],
+        "target_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "target_group": "PillarA/Network"
+      }
+    ]
+  },
+  {
+    "source_discipline": "topology_algebra_cd_completion",
+    "target_discipline": "prenumeric_toc_substrate_graph",
+    "edge_count": 1,
+    "edges": [
+      {
+        "source": "CNNA.PillarA.Geometry.LCPMeasure",
+        "target": "CNNA.PillarA.ToC.Addressing",
+        "source_disciplines": [
+          "topology_algebra_cd_completion"
+        ],
+        "target_disciplines": [
+          "prenumeric_toc_substrate_graph"
+        ],
+        "target_group": "PillarA/ToC"
+      }
+    ]
+  }
+]

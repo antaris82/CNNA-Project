@@ -1,0 +1,44 @@
+\footnotesize
+\arrayrulecolor{black!22}
+\begin{longtable}{L{0.115\linewidth} L{0.245\linewidth} L{0.23\linewidth} L{0.19\linewidth} L{0.18\linewidth}}
+\hline
+\textbf{Class} & \textbf{Meaning} & \textbf{Evidence rule} & \textbf{Public/\allowbreak{}API disposition} & \textbf{Blocked promotion rule}\\
+\hline
+\endfirsthead
+\hline
+\textbf{Class} & \textbf{Meaning} & \textbf{Evidence rule} & \textbf{Public/\allowbreak{}API disposition} & \textbf{Blocked promotion rule}\\
+\hline
+\endhead
+core-computational & Internal derived computational definitions that are neither policy, wrapper, phase alias, nor proof-only bridge. & Pillar-A internal module/\allowbreak{}declaration without governance, wrapper, smoke-phase, obstruction, or proof-bridge markers;\newline module reference counts are evidence only, not public API rights. & May be used internally by later derived phases after import/\allowbreak{}consumer discipline is checked. & Cannot become public-final merely because it is imported;\newline public API contract and object proof dossier are still required.\\
+\hline
+\addlinespace[0.24em]
+proof-bridge & Certificates, equality bridges, correctness/\allowbreak{}witness declarations, and other proof-carrying connectors. & Names/\allowbreak{}modules carrying proof, certificate, correctness, identity, witness, equality, or bridge roles. & May discharge local proof obligations but is not automatically a public object. & Cannot hide a missing natural source structure;\newline if a consumer needs new structure, backjump to the source layer.\\
+\hline
+\addlinespace[0.24em]
+public-wrapper & BuildAll, umbrella, or import-facing wrapper modules whose purpose is exposure/\allowbreak{}routing rather than semantic generation. & Inventory flags build modules, top-level pillar wrappers, or module names ending in BuildAll. & Exposure surface only;\newline it may route imports after public API rules are closed. & Wrapper reachability is not semantic consumption evidence and cannot make a blue object final.\\
+\hline
+\addlinespace[0.24em]
+legacy-status & Legacy/\allowbreak{}status-gate declarations or modules that encode old one-constructor states or deprecated status control. & Name/\allowbreak{}path contains legacy or status-gate/\allowbreak{}status markers. & Quarantine/\allowbreak{}refactor candidate, normally hidden behind legacy/\allowbreak{}status policy. & Cannot be consumed by implementation phases except through the explicit quarantine/\allowbreak{}correction path.\\
+\hline
+\addlinespace[0.24em]
+legacy-policy & Policy, ledger, decision, format, audit, inventory, report, and governance/\allowbreak{}control-surface material. & Name/\allowbreak{}path/\allowbreak{}layer contains policy, ledger, decision, format, audit, inventory, contract, report, planning, governance, or legacy control markers. & May govern work;\newline does not supply ontic or mathematical CNNA input. & Cannot be cited as derived mathematical structure;\newline must stay prose/\allowbreak{}planning/\allowbreak{}audit unless mirrored by checked source.\\
+\hline
+\addlinespace[0.24em]
+phase-alias & Phase- or smoke-test-specific names carrying implementation-history aliases such as SM-numbered records. & Name/\allowbreak{}module contains SM-numbered aliases or lives in Smoke namespace. & Internal migration/\allowbreak{}scaffold evidence only;\newline later public names must be neutral. & Cannot become stable public API without wrapper/\allowbreak{}correction and consumer whitelist.\\
+\hline
+\addlinespace[0.24em]
+audit-only & Read-only diagnostic or inventory material not part of the CNNA generator chain. & Non-Pillar-A, unclassified, or diagnostic inventory material without derived generator role. & Documentation/\allowbreak{}diagnostic evidence only. & Cannot be used as ontic input or proof of mathematical closure.\\
+\hline
+\addlinespace[0.24em]
+blue-semantic-correction & Proof-carrying but semantically/\allowbreak{}API-incomplete objects that must be corrected before final/\allowbreak{}public consumption. & Object status B in the object register;\newline declarations/\allowbreak{}modules may later be linked by the blue-correction ledger. & Blocked from public-final consumption;\newline only temporary internal correction consumers are allowed. & Must not be classified as final-output or public-wrapper before correction phase, proof dossier, and API contract close.\\
+\hline
+\addlinespace[0.24em]
+dead-candidate & Rejected, blocked, negative, impossible, obstruction, or black/\allowbreak{}quarantined candidates. & Names/\allowbreak{}path contain NoGo/\allowbreak{}obstruction/\allowbreak{}blocked/\allowbreak{}dead/\allowbreak{}impossible/\allowbreak{}negative or object status R/\allowbreak{}K. & No direct public/\allowbreak{}API consumption;\newline may be cited as obstruction evidence only. & Cannot be deleted or repurposed before the pruning/\allowbreak{}dead-candidate ledger closes.\\
+\hline
+\addlinespace[0.24em]
+final-output & Intentional output candidates or green documented objects after proof/\allowbreak{}audit closure. & Architectural sink taxonomy intentional output, or green documented non-governance object in the object register. & Candidate final output, still subject to explicit public API contract and consumer whitelist. & A blue/\allowbreak{}quarantined object can never enter this class directly;\newline documented proof alone is insufficient.\\
+\hline
+\addlinespace[0.24em]
+\end{longtable}
+\arrayrulecolor{black}
+\normalsize

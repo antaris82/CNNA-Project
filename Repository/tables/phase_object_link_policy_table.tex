@@ -1,0 +1,26 @@
+\small
+\arrayrulecolor{black!22}
+\begin{longtable}{L{0.075\linewidth} L{0.245\linewidth} L{0.315\linewidth} L{0.315\linewidth}}
+\hline
+\textbf{Kind} & \textbf{Meaning} & \textbf{Required evidence} & \textbf{Rendering rule}\\
+\hline
+\endfirsthead
+\hline
+\textbf{Kind} & \textbf{Meaning} & \textbf{Required evidence} & \textbf{Rendering rule}\\
+\hline
+\endhead
+direct & Phase directly owns registered object(s). & At least one object has Phase exactly equal to the phase id. & Render direct object hyperlinks. Do not aggregate child phase objects as direct ownership.\\
+\hline
+\addlinespace[0.24em]
+scope\_only & Phase is an umbrella/\allowbreak{}routing/\allowbreak{}scope phase;\newline objects are owned by child phases. & No direct objects and at least one descendant phase has direct object(s). & Render scope-only plus a bounded child-object summary.\\
+\hline
+\addlinespace[0.24em]
+no\_direct\_object & Phase intentionally has no direct object, e.g. baseline, audit, closeout, generator/\allowbreak{}view infrastructure without object ownership. & No direct objects and no descendant-object ownership needed for the phase semantics, plus explanation. & Render no direct object with reason;\newline never leave cell blank.\\
+\hline
+\addlinespace[0.24em]
+moved & Historical placeholder or routing note whose active objects are owned elsewhere. & Main goal/\allowbreak{}definition/\allowbreak{}proof goal identifies the destination phase or ownership move. & Render moved placeholder and reason/\allowbreak{}destination;\newline no direct object links unless the placeholder also owns an explicit audit object.\\
+\hline
+\addlinespace[0.24em]
+\end{longtable}
+\arrayrulecolor{black}
+\normalsize

@@ -1,0 +1,13 @@
+digraph group_pillara_coupling {
+  rankdir="LR";
+  node [shape=box, fontsize=10];
+  "CNNA.PillarA.Coupling.BuildAll" [tooltip="PillarA/Coupling"];
+  "CNNA.PillarA.Coupling.GeneralizedDtN" [tooltip="PillarA/Coupling"];
+  "CNNA.PillarA.Coupling.MultiSchur" [tooltip="PillarA/Coupling"];
+  "CNNA.PillarA.Coupling.Notation" [tooltip="PillarA/Coupling"];
+  "CNNA.PillarA.Coupling.BuildAll" -> "CNNA.PillarA.Coupling.GeneralizedDtN";
+  "CNNA.PillarA.Coupling.BuildAll" -> "CNNA.PillarA.Coupling.MultiSchur";
+  "CNNA.PillarA.Coupling.BuildAll" -> "CNNA.PillarA.Coupling.Notation";
+  "CNNA.PillarA.Coupling.MultiSchur" -> "CNNA.PillarA.Coupling.GeneralizedDtN";
+  "CNNA.PillarA.Coupling.Notation" -> "CNNA.PillarA.Coupling.MultiSchur";
+}

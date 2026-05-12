@@ -1,0 +1,64 @@
+{
+  "change_version": "P1.40",
+  "change_timestamp": "2026-05-12T08:18:00+02:00",
+  "delta_pdf": "Repository/generated_docs/CNNA_Delta_P1_40_Workflow_Coherence_Audit.pdf",
+  "lean_build_run": false,
+  "tool_infrastructure_changed": false,
+  "lean_source_changed": false,
+  "sections": {
+    "code_audit": {
+      "count": 3,
+      "records": [
+        "SCF68",
+        "SCF69",
+        "SCF70"
+      ]
+    },
+    "phases": {
+      "count": 2,
+      "records": [
+        "21.3",
+        "21.9"
+      ]
+    },
+    "objects": {
+      "count": 2,
+      "records": [
+        "CEX3",
+        "CEX9"
+      ]
+    },
+    "object_proof_dossiers": {
+      "count": 2,
+      "records": [
+        "CEX3",
+        "CEX9"
+      ]
+    },
+    "implementation_scratchpad": {
+      "count": 2,
+      "records": [
+        "21.3",
+        "21.9"
+      ]
+    },
+    "global_no_go_guardrails": {
+      "count": 1,
+      "records": [
+        "GNG68"
+      ]
+    },
+    "workflow_policy": {
+      "count": 7,
+      "records": [
+        "Implementation from last green baseline",
+        "Post-green closeout",
+        "Provider-neutral SQL public read-only mirror and web-frontend workflow",
+        "GitHub backup-gated assistant/repository automation workflow",
+        "Local archival and rollback workflow for automated snapshots",
+        "Timestamp-bounded delta-PDF generation workflow",
+        "Workflow coherence, precedence and anti-self-sabotage audit workflow"
+      ]
+    }
+  }
+}

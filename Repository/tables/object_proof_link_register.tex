@@ -1,0 +1,840 @@
+\footnotesize
+\par\smallskip\noindent\begin{minipage}{0.99\linewidth}\footnotesize\raggedright\textbf{Table legend.} \colorbox{white}{\strut W} = white/finished public object; \colorbox{cyan!20}{\strut B} = blue/proof-carrying but semantic/API correction still open; \colorbox{green!18}{\strut G} = green/locally closable; \colorbox{yellow!25}{\strut Y} = yellow/known route with prerequisites; \colorbox{red!20}{\strut R} = red/derivation layer incomplete or unclear; \colorbox{black!18}{\strut K} = black/registered side or future target. Context class is orthogonal to status.\end{minipage}\par\vspace{0.25em}
+\arrayrulecolor{black!22}
+\begin{longtable}{L{0.02\linewidth} L{0.078\linewidth} L{0.058\linewidth} L{0.028\linewidth} L{0.038\linewidth} L{0.05\linewidth} L{0.024\linewidth} L{0.058\linewidth} L{0.19\linewidth} L{0.045\linewidth} L{0.05\linewidth} L{0.052\linewidth} L{0.076\linewidth} L{0.02\linewidth}}
+\hline
+\textbf{ID} & \textbf{Object} & \textbf{Context class} & \textbf{Tier} & \textbf{Lifecycle} & \textbf{Successor/\allowbreak{}current} & \textbf{Object status} & \textbf{Proof documentation status} & \textbf{Documentation depth requirement} & \textbf{Proof dossier} & \textbf{Current dossier pointer} & \textbf{Change version} & \textbf{Change timestamp} & \textbf{Phase}\\
+\hline
+\endfirsthead
+\hline
+\textbf{ID} & \textbf{Object} & \textbf{Context class} & \textbf{Tier} & \textbf{Lifecycle} & \textbf{Successor/\allowbreak{}current} & \textbf{Object status} & \textbf{Proof documentation status} & \textbf{Documentation depth requirement} & \textbf{Proof dossier} & \textbf{Current dossier pointer} & \textbf{Change version} & \textbf{Change timestamp} & \textbf{Phase}\\
+\hline
+\endhead
+\hyperlink{object-row-G00}{G00} & Generator provenance & Lean;\newline Source;\newline Object & F0 & current & none & \cellcolor{green!18}G & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:G00}{G00} & proof:G00 &  &  & \hyperlink{phase-row-1-2-2}{1.2.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-H00}{H00} & A input handoff B->A & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & none & \cellcolor{yellow!25}Y & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:H00}{H00} & proof:H00 &  &  & \hyperlink{phase-row-2-3-1}{2.3.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-H01}{H01} & A input handoff C->A & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & none & \cellcolor{yellow!25}Y & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:H01}{H01} & proof:H01 &  &  & \hyperlink{phase-row-2-3-1}{2.3.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-H02}{H02} & A input handoff D->A & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & none & \cellcolor{yellow!25}Y & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:H02}{H02} & proof:H02 &  &  & \hyperlink{phase-row-2-3-1}{2.3.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-H03}{H03} & A input handoff E->A & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & none & \cellcolor{yellow!25}Y & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:H03}{H03} & proof:H03 &  &  & \hyperlink{phase-row-2-3-1}{2.3.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-O00}{O00} & ExecComplex & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{white}W & partial & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:O00}{O00} & proof:O00 &  &  & \hyperlink{phase-row-1-2-1}{1.2.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-G01}{G01} & substrate: regular branching & Lean;\newline Source;\newline Object & F0 & current & none & \cellcolor{yellow!25}Y & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:G01}{G01} & proof:G01 &  &  & \hyperlink{phase-row-1-2-3}{1.2.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-G02}{G02} & substrate: variable branching & Lean;\newline Source;\newline Object & F0 & current & none & \cellcolor{yellow!25}Y & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:G02}{G02} & proof:G02 &  &  & \hyperlink{phase-row-1-2-4}{1.2.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-G03}{G03} & Level /\allowbreak{} Cutoff & Lean;\newline Source;\newline Object & F0 & current & none & \cellcolor{yellow!25}Y & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:G03}{G03} & proof:G03 &  &  & \hyperlink{phase-row-1-2-5}{1.2.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-G04}{G04} & Carrier /\allowbreak{} index type & Lean;\newline Source;\newline Object & F0 & current & none & \cellcolor{yellow!25}Y & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:G04}{G04} & proof:G04 &  &  & \hyperlink{phase-row-1-2-6}{1.2.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-G05}{G05} & Boundary /\allowbreak{} interface /\allowbreak{} interior partition & Lean;\newline Source;\newline Object & F0 & current & none & \cellcolor{yellow!25}Y & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:G05}{G05} & proof:G05 &  &  & \hyperlink{phase-row-1-3-1}{1.3.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-G06}{G06} & Regime: noOuterEnvironment & Lean;\newline Source;\newline Object & F0 & current & none & \cellcolor{yellow!25}Y & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:G06}{G06} & proof:G06 &  &  & \hyperlink{phase-row-1-3-2}{1.3.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-G07}{G07} & Regime: hasOuterEnvironment & Lean;\newline Source;\newline Object & F0 & current & none & \cellcolor{yellow!25}Y & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:G07}{G07} & proof:G07 &  &  & \hyperlink{phase-row-1-3-2}{1.3.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-G08}{G08} & Complement families: UV tail & Lean;\newline Source;\newline Object & F0 & current & none & \cellcolor{red!20}R & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:G08}{G08} & proof:G08 &  &  & \hyperlink{phase-row-1-3-3}{1.3.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-G09}{G09} & Complement families: IR/\allowbreak{}parent-path tail & Lean;\newline Source;\newline Object & F0 & current & none & \cellcolor{red!20}R & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:G09}{G09} & proof:G09 &  &  & \hyperlink{phase-row-1-3-3}{1.3.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-G10}{G10} & Complement families: sideways environment & Lean;\newline Source;\newline Object & F0 & current & none & \cellcolor{red!20}R & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:G10}{G10} & proof:G10 &  &  & \hyperlink{phase-row-1-3-3}{1.3.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CD0}{CD0} & Cayley-Dickson source & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{cyan!20}B & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:CD0}{CD0} & proof:CD0 &  &  & \hyperlink{phase-row-1-4-1}{1.4.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CD1}{CD1} & Scalar part & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{cyan!20}B & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:CD1}{CD1} & proof:CD1 &  &  & \hyperlink{phase-row-1-4-2}{1.4.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CD2}{CD2} & Cayley-Dickson star/\allowbreak{}conjugation & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{cyan!20}B & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:CD2}{CD2} & proof:CD2 &  &  & \hyperlink{phase-row-1-4-3}{1.4.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CD3}{CD3} & CD normSq & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{cyan!20}B & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:CD3}{CD3} & proof:CD3 &  &  & \hyperlink{phase-row-1-4-4}{1.4.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CD4}{CD4} & CD multiplication/\allowbreak{}product & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{cyan!20}B & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:CD4}{CD4} & proof:CD4 &  &  & \hyperlink{phase-row-1-4-5}{1.4.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CD5}{CD5} & Alternative law & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{cyan!20}B & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:CD5}{CD5} & proof:CD5 &  &  & \hyperlink{phase-row-1-4-6}{1.4.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CD6}{CD6} & Norm multiplicativity & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{cyan!20}B & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:CD6}{CD6} & proof:CD6 &  &  & \hyperlink{phase-row-1-4-7}{1.4.7}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CD7}{CD7} & Hurwitz stop /\allowbreak{} R,C,H,O classification & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{cyan!20}B & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:CD7}{CD7} & proof:CD7 &  &  & \hyperlink{phase-row-1-4-8}{1.4.8}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-S00}{S00} & Dirichlet-Laplacian & Lean;\newline Source;\newline Object & F0 & current & none & \cellcolor{yellow!25}Y & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:S00}{S00} & proof:S00 &  &  & \hyperlink{phase-row-3-1}{3.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-S01}{S01} & Interior block & Lean;\newline Source;\newline Object & F0 & current & none & \cellcolor{cyan!20}B & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:S01}{S01} & proof:S01 &  &  & \hyperlink{phase-row-3-2}{3.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-S02}{S02} & Interior inverse candidate & Lean;\newline Source;\newline Object & F0 & current & none & \cellcolor{cyan!20}B & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:S02}{S02} & proof:S02 &  &  & \hyperlink{phase-row-3-3}{3.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-S03}{S03} & Two-sided inverse certificate & Lean;\newline Source;\newline Object & F0 & current & none & \cellcolor{cyan!20}B & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:S03}{S03} & proof:S03 &  &  & \hyperlink{phase-row-3-4}{3.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-S04}{S04} & InteriorEliminationData & Lean;\newline Source;\newline Object & F0 & current & none & \cellcolor{cyan!20}B & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:S04}{S04} & proof:S04 &  &  & \hyperlink{phase-row-3-5}{3.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-S05}{S05} & DtN boundary operator & Lean;\newline Source;\newline Object & F0 & current & none & \cellcolor{cyan!20}B & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:S05}{S05} & proof:S05 &  &  & \hyperlink{phase-row-3-6}{3.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-S06}{S06} & GeneralizedDtN /\allowbreak{} MultiSchur & Lean;\newline Source;\newline Object & F0 & current & none & \cellcolor{cyan!20}B & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:S06}{S06} & proof:S06 &  &  & \hyperlink{phase-row-3-7}{3.7}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-O01}{O01} & Boundary matrix over ExecComplex & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{cyan!20}B & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:O01}{O01} & proof:O01 &  &  & \hyperlink{phase-row-4-1}{4.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-O02}{O02} & Determinant coefficient recurrence & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{cyan!20}B & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:O02}{O02} & proof:O02 &  &  & \hyperlink{phase-row-4-2}{4.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-O03}{O03} & Operational polynomial profile & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{cyan!20}B & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:O03}{O03} & proof:O03 &  &  & \hyperlink{phase-row-4-3}{4.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-O04}{O04} & Quadratic coefficient window & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{cyan!20}B & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:O04}{O04} & proof:O04 &  &  & \hyperlink{phase-row-4-4}{4.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-O05}{O05} & Operational discriminant D\_op & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{cyan!20}B & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:O05}{O05} & proof:O05 &  &  & \hyperlink{phase-row-4-5}{4.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-O06}{O06} & Comparison target policy & Reference;\newline Gate;\newline Object & F2 & current & none & \cellcolor{green!18}G & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:O06}{O06} & proof:O06 &  &  & \hyperlink{phase-row-4-6}{4.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-O07}{O07} & General finite computation test matrix profile & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{yellow!25}Y & planned dossier;\newline must be filled before implementation & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:O07}{O07} & proof:O07 &  &  & \hyperlink{phase-row-4-0-1}{4.0.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N00}{N00} & Fundamental discriminant D\_fund & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{green!18}G & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:N00}{N00} & proof:N00 &  &  & \hyperlink{phase-row-5-1}{5.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N01}{N01} & Conductor f & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{green!18}G & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:N01}{N01} & proof:N01 &  &  & \hyperlink{phase-row-5-1}{5.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N02}{N02} & Quadratic field K=Q(sqrt(D)) & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:N02}{N02} & proof:N02 &  &  & \hyperlink{phase-row-5-2}{5.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N03}{N03} & Quadratic order O\_D & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:N03}{N03} & proof:N03 &  &  & \hyperlink{phase-row-5-3}{5.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N04}{N04} & Integral basis /\allowbreak{} omega\_D & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:N04}{N04} & proof:N04 &  &  & \hyperlink{phase-row-5-4}{5.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N05}{N05} & Trace form & Lean;\newline Target;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:N05}{N05} & proof:N05 &  &  & \hyperlink{phase-row-5-5}{5.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N06}{N06} & Norm form & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:N06}{N06} & proof:N06 &  &  & \hyperlink{phase-row-5-5}{5.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N07}{N07} & Conjugation & Lean;\newline Target;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:N07}{N07} & proof:N07 &  &  & \hyperlink{phase-row-5-5}{5.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N08}{N08} & Unit group O\_D\textasciicircum{}* & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{yellow!25}Y & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:N08}{N08} & proof:N08 &  &  & \hyperlink{phase-row-6-1}{6.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N09}{N09} & Class group Cl(O\_D) & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{yellow!25}Y & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:N09}{N09} & proof:N09 &  &  & \hyperlink{phase-row-6-2}{6.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N10}{N10} & Class number h(D) & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{yellow!25}Y & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:N10}{N10} & proof:N10 &  &  & \hyperlink{phase-row-6-2}{6.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N11}{N11} & Fractional/\allowbreak{}integral ideas & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{yellow!25}Y & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:N11}{N11} & proof:N11 &  &  & \hyperlink{phase-row-6-2-1}{6.2.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N12}{N12} & Principal ideal predicate & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{yellow!25}Y & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:N12}{N12} & proof:N12 &  &  & \hyperlink{phase-row-6-2-2}{6.2.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N13}{N13} & Heegner/\allowbreak{}PID/\allowbreak{}UFD indicator & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{yellow!25}Y & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:N13}{N13} & proof:N13 &  &  & \hyperlink{phase-row-6-3}{6.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N14}{N14} & Prime splitting behavior & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{yellow!25}Y & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:N14}{N14} & proof:N14 &  &  & \hyperlink{phase-row-6-4}{6.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N15}{N15} & Kronecker/\allowbreak{}Dirichlet character chi\_D & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{yellow!25}Y & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:N15}{N15} & proof:N15 &  &  & \hyperlink{phase-row-6-4}{6.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CD8}{CD8} & Arithmetic-CD compatibility as Schur-duality corollary & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{black!18}K & no - dependency-order corrected in v31 & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:CD8}{CD8} & proof:CD8 &  &  & \hyperlink{phase-row-10-4-2}{10.4.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-L00}{L00} & Lattice embedding Lambda -> C & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{yellow!25}Y & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:L00}{L00} & proof:L00 &  &  & \hyperlink{phase-row-7-1}{7.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-L01}{L01} & Lattice basis & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{yellow!25}Y & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:L01}{L01} & proof:L01 &  &  & \hyperlink{phase-row-7-1}{7.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-L02}{L02} & Gram matrix & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{yellow!25}Y & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:L02}{L02} & proof:L02 &  &  & \hyperlink{phase-row-7-2}{7.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-L03}{L03} & Lattice determinant /\allowbreak{} covolume & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{yellow!25}Y & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:L03}{L03} & proof:L03 &  &  & \hyperlink{phase-row-7-2}{7.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-L04}{L04} & Period ratio tau & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{yellow!25}Y & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:L04}{L04} & proof:L04 &  &  & \hyperlink{phase-row-7-3}{7.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-L05}{L05} & Upper half-plane condition & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{yellow!25}Y & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:L05}{L05} & proof:L05 &  &  & \hyperlink{phase-row-7-3}{7.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-L06}{L06} & Angle /\allowbreak{} cosine profile & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{yellow!25}Y & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:L06}{L06} & proof:L06 &  &  & \hyperlink{phase-row-7-4}{7.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-L07}{L07} & Lattice automorphism group & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{yellow!25}Y & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:L07}{L07} & proof:L07 &  &  & \hyperlink{phase-row-7-5}{7.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-M02}{M02} & Eisenstein series G4,G6 & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{yellow!25}Y & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:M02}{M02} & proof:M02 &  &  & \hyperlink{phase-row-8-1}{8.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-M03}{M03} & Weierstrass invariants g2,g3 & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{yellow!25}Y & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:M03}{M03} & proof:M03 &  &  & \hyperlink{phase-row-8-2}{8.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-M04}{M04} & Modular discriminant Delta\_mod & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{yellow!25}Y & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:M04}{M04} & proof:M04 &  &  & \hyperlink{phase-row-8-3}{8.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-M05}{M05} & j-invariant & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{yellow!25}Y & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:M05}{M05} & proof:M05 &  &  & \hyperlink{phase-row-8-4}{8.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-SP0}{SP0} & Eigenvalue profile & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:SP0}{SP0} & proof:SP0 &  &  & \hyperlink{phase-row-10-1}{10.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-SP1}{SP1} & Spectral gap & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:SP1}{SP1} & proof:SP1 &  &  & \hyperlink{phase-row-10-1}{10.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P00}{P00} & Operator algebra & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:P00}{P00} & proof:P00 &  &  & \hyperlink{phase-row-10-2}{10.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P01}{P01} & Star operation & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:P01}{P01} & proof:P01 &  &  & \hyperlink{phase-row-10-2}{10.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P02}{P02} & State functional & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:P02}{P02} & proof:P02 &  &  & \hyperlink{phase-row-10-2}{10.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P03}{P03} & Gibbs state & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:P03}{P03} & proof:P03 &  &  & \hyperlink{phase-row-10-2}{10.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P04}{P04} & Time evolution & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:P04}{P04} & proof:P04 &  &  & \hyperlink{phase-row-10-2}{10.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P05}{P05} & Unitarity certificate & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:P05}{P05} & proof:P05 &  &  & \hyperlink{phase-row-10-2}{10.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P06}{P06} & Open channel /\allowbreak{} effective openness & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{red!20}R & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:P06}{P06} & proof:P06 &  &  & \hyperlink{phase-row-10-2}{10.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N16}{N16} & Dirichlet L-function L(s,chi\_D) & Reference;\newline Gate;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:N16}{N16} & proof:N16 &  &  & \hyperlink{phase-row-9-2}{9.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N17}{N17} & Class number formula & Reference;\newline Gate;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:N17}{N17} & proof:N17 &  &  & \hyperlink{phase-row-9-3}{9.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-L08}{L08} & Theta series Theta\_Lambda & Reference;\newline Gate;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:L08}{L08} & proof:L08 &  &  & \hyperlink{phase-row-9-1}{9.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-M00}{M00} & Modular group action SL2Z & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:M00}{M00} & proof:M00 &  &  & \hyperlink{phase-row-8-0}{8.0}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-M01}{M01} & Fundamental domain representative & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:M01}{M01} & proof:M01 &  &  & \hyperlink{phase-row-8-0}{8.0}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-M06}{M06} & q-expansion of j & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:M06}{M06} & proof:M06 &  &  & \hyperlink{phase-row-8-8}{8.8}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-M07}{M07} & Hilbert class polynomial H\_D & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:M07}{M07} & proof:M07 &  &  & \hyperlink{phase-row-8-8}{8.8}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-TM0}{TM0} & Transfermatrix T\_k & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:TM0}{TM0} & proof:TM0 &  &  & \hyperlink{phase-row-10-4}{10.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-TM1}{TM1} & Transfermatrix product & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:TM1}{TM1} & proof:TM1 &  &  & \hyperlink{phase-row-10-4}{10.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-TM2}{TM2} & Moebius/\allowbreak{}continued fraction relation & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:TM2}{TM2} & proof:TM2 &  &  & \hyperlink{phase-row-10-4}{10.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-SP2}{SP2} & Heat kernel K(t) & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:SP2}{SP2} & proof:SP2 &  &  & \hyperlink{phase-row-10-3}{10.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-SP3}{SP3} & Spectral zeta zeta\_H & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:SP3}{SP3} & proof:SP3 &  &  & \hyperlink{phase-row-10-3}{10.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-SP4}{SP4} & Spectral dimension & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:SP4}{SP4} & proof:SP4 &  &  & \hyperlink{phase-row-10-3}{10.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-SP5}{SP5} & Zeta-regularized determinant & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:SP5}{SP5} & proof:SP5 &  &  & \hyperlink{phase-row-10-3}{10.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P07}{P07} & KMS condition & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:P07}{P07} & proof:P07 &  &  & \hyperlink{phase-row-13-4}{13.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P08}{P08} & GNS Hilbert space & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:P08}{P08} & proof:P08 &  &  & \hyperlink{phase-row-13-4}{13.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P09}{P09} & Tomita operator S & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:P09}{P09} & proof:P09 &  &  & \hyperlink{phase-row-13-5}{13.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P10}{P10} & Modular operator Delta & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:P10}{P10} & proof:P10 &  &  & \hyperlink{phase-row-13-5}{13.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P11}{P11} & Modular conjugation J & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:P11}{P11} & proof:P11 &  &  & \hyperlink{phase-row-13-5}{13.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P12}{P12} & Bisognano-Wichmann/\allowbreak{}CPT bridge & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:P12}{P12} & proof:P12 &  &  & \hyperlink{phase-row-13-6}{13.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P13}{P13} & Spin-statistics & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:P13}{P13} & proof:P13 &  &  & \hyperlink{phase-row-13-6}{13.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P14}{P14} & Kramers degeneracy & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:P14}{P14} & proof:P14 &  &  & \hyperlink{phase-row-13-6}{13.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P15}{P15} & Split property & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:P15}{P15} & proof:P15 &  &  & \hyperlink{phase-row-13-6}{13.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P16}{P16} & Local net /\allowbreak{} Haag-Kastler algebraic axioms & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:P16}{P16} & proof:P16 &  &  & \hyperlink{phase-row-13-3}{13.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-H10}{H10} & A->B bright handoff & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & none & \cellcolor{yellow!25}Y & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:H10}{H10} & proof:H10 &  &  & \hyperlink{phase-row-11-1}{11.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-H11}{H11} & A->B prime/\allowbreak{}dark future handoff & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & none & \cellcolor{red!20}R & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:H11}{H11} & proof:H11 &  &  & \hyperlink{phase-row-11-2}{11.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-H12}{H12} & A->C handoff & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & none & \cellcolor{yellow!25}Y & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:H12}{H12} & proof:H12 &  &  & \hyperlink{phase-row-11-3}{11.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-H13}{H13} & A->D handoff & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & none & \cellcolor{yellow!25}Y & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:H13}{H13} & proof:H13 &  &  & \hyperlink{phase-row-11-4}{11.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-H14}{H14} & A->E handoff & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & none & \cellcolor{black!18}K & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:H14}{H14} & proof:H14 &  &  & \hyperlink{phase-row-11-5}{11.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-MOON0}{MOON0} & j coefficient stream & Reference;\newline Gate;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:MOON0}{MOON0} & proof:MOON0 &  &  & \hyperlink{phase-row-12-1}{12.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-MOON1}{MOON1} & Monster dimension comparison profile & Reference;\newline Gate;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:MOON1}{MOON1} & proof:MOON1 &  &  & \hyperlink{phase-row-12-2}{12.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-MOON2}{MOON2} & McKay-Thompson comparison profile & Reference;\newline Gate;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:MOON2}{MOON2} & proof:MOON2 &  &  & \hyperlink{phase-row-12-3}{12.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-B00}{B00} & Pillar B input contract from A & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & none & \cellcolor{black!18}K & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:B00}{B00} & proof:B00 &  &  & \hyperlink{phase-row-13-1}{13.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-B01}{B01} & Boundary star-algebra /\allowbreak{} observable algebra & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:B01}{B01} & proof:B01 &  &  & \hyperlink{phase-row-13-2}{13.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-B02}{B02} & Local net /\allowbreak{} QFT algebraic profile & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:B02}{B02} & proof:B02 &  &  & \hyperlink{phase-row-13-3}{13.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-B03}{B03} & B state/\allowbreak{}GNS/\allowbreak{}KMS profile & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:B03}{B03} & proof:B03 &  &  & \hyperlink{phase-row-13-4}{13.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-B04}{B04} & Tomita-Takesaki modular data & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:B04}{B04} & proof:B04 &  &  & \hyperlink{phase-row-13-5}{13.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-B05}{B05} & CPT/\allowbreak{}BW/\allowbreak{}spin-statistics/\allowbreak{}split gates & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:B05}{B05} & proof:B05 &  &  & \hyperlink{phase-row-13-6}{13.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-B06}{B06} & B->A allowed output profile & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:B06}{B06} & proof:B06 &  &  & \hyperlink{phase-row-13-7}{13.7}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-C00}{C00} & Pillar C OQS input contract from A & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & none & \cellcolor{black!18}K & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:C00}{C00} & proof:C00 &  &  & \hyperlink{phase-row-14-1}{14.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-C01}{C01} & Finite CP/\allowbreak{}channel profile & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:C01}{C01} & proof:C01 &  &  & \hyperlink{phase-row-14-2}{14.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-C02}{C02} & Effective OQS generator /\allowbreak{} Lindblad gate & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:C02}{C02} & proof:C02 &  &  & \hyperlink{phase-row-14-3}{14.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-C03}{C03} & Decoherence/\allowbreak{}noise profile & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:C03}{C03} & proof:C03 &  &  & \hyperlink{phase-row-14-4}{14.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-C04}{C04} & C->A allowed output profile & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:C04}{C04} & proof:C04 &  &  & \hyperlink{phase-row-14-5}{14.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-D00}{D00} & Pillar D spacetime input contract & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & none & \cellcolor{black!18}K & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:D00}{D00} & proof:D00 &  &  & \hyperlink{phase-row-15-1}{15.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-D01}{D01} & Region/\allowbreak{}localization/\allowbreak{}causal-order candidate & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:D01}{D01} & proof:D01 &  &  & \hyperlink{phase-row-15-2}{15.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-D02}{D02} & Metric/\allowbreak{}coarse-geometry/\allowbreak{}covariance gate & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:D02}{D02} & proof:D02 &  &  & \hyperlink{phase-row-15-3}{15.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-D03}{D03} & D->A allowed output profile & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:D03}{D03} & proof:D03 &  &  & \hyperlink{phase-row-15-4}{15.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-E00}{E00} & Pillar E matter input contract & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & none & \cellcolor{black!18}K & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:E00}{E00} & proof:E00 &  &  & \hyperlink{phase-row-16-1}{16.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-E01}{E01} & Matter sector and internal symmetry candidate & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:E01}{E01} & proof:E01 &  &  & \hyperlink{phase-row-16-2}{16.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-E02}{E02} & Observable coupling and phenomenology comparison & Reference;\newline Gate;\newline Object & F3 & current & none & \cellcolor{black!18}K & no & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:E02}{E02} & proof:E02 &  &  & \hyperlink{phase-row-16-3}{16.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-E03}{E03} & E->A allowed output profile & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:E03}{E03} & proof:E03 &  &  & \hyperlink{phase-row-16-4}{16.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR00}{BR00} & Backreaction input DAG & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:BR00}{BR00} & proof:BR00 &  &  & \hyperlink{phase-row-17}{17}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR01}{BR01} & B->A backreaction input gate & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:BR01}{BR01} & proof:BR01 &  &  & \hyperlink{phase-row-17-1}{17.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR02}{BR02} & C->A OQS backreaction input gate & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:BR02}{BR02} & proof:BR02 &  &  & \hyperlink{phase-row-17-2}{17.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR03}{BR03} & D->A spacetime backreaction input gate & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:BR03}{BR03} & proof:BR03 &  &  & \hyperlink{phase-row-17-3}{17.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR04}{BR04} & E->A matter backreaction input gate & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:BR04}{BR04} & proof:BR04 &  &  & \hyperlink{phase-row-17-4}{17.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR05}{BR05} & Pre/\allowbreak{}post-emergence switch for A statements & Lean;\newline Source;\newline Object & F0 & current & none & \cellcolor{black!18}K & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:BR05}{BR05} & proof:BR05 &  &  & \hyperlink{phase-row-17-5}{17.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-SIDE0}{SIDE0} & Full ToE comparison profile & Reference;\newline Gate;\newline Object & F4 & current & none & \cellcolor{black!18}K & no & Mention and pointer only: name, context class, status, and reason for non-consumption. No full proof dossier unless promoted. & \hyperlink{objproof:SIDE0}{SIDE0} & proof:SIDE0 &  &  & \hyperlink{phase-row-18-1}{18.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-SIDE1}{SIDE1} & String-theory comparison profile & Reference;\newline Gate;\newline Object & F4 & current & none & \cellcolor{black!18}K & no & Mention and pointer only: name, context class, status, and reason for non-consumption. No full proof dossier unless promoted. & \hyperlink{objproof:SIDE1}{SIDE1} & proof:SIDE1 &  &  & \hyperlink{phase-row-18-2}{18.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-SIDE2}{SIDE2} & Loop quantum gravity comparison profile & Reference;\newline Gate;\newline Object & F4 & current & none & \cellcolor{black!18}K & no & Mention and pointer only: name, context class, status, and reason for non-consumption. No full proof dossier unless promoted. & \hyperlink{objproof:SIDE2}{SIDE2} & proof:SIDE2 &  &  & \hyperlink{phase-row-18-3}{18.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-SIDE3}{SIDE3} & Noncommutative geometry comparison profile & Reference;\newline Gate;\newline Object & F4 & current & none & \cellcolor{black!18}K & no & Mention and pointer only: name, context class, status, and reason for non-consumption. No full proof dossier unless promoted. & \hyperlink{objproof:SIDE3}{SIDE3} & proof:SIDE3 &  &  & \hyperlink{phase-row-18-4}{18.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-MOON3}{MOON3} & Finite simple group comparison profile & Reference;\newline Gate;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:MOON3}{MOON3} & proof:MOON3 &  &  & \hyperlink{phase-row-12-4}{12.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-MOON4}{MOON4} & Sporadic/\allowbreak{}Monster comparison boundary & Reference;\newline Gate;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:MOON4}{MOON4} & proof:MOON4 &  &  & \hyperlink{phase-row-12-4}{12.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-MOON5}{MOON5} & Leech lattice comparison profile & Reference;\newline Gate;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:MOON5}{MOON5} & proof:MOON5 &  &  & \hyperlink{phase-row-12-5}{12.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-MOON6}{MOON6} & Leech theta/\allowbreak{}shell coefficient comparison & Reference;\newline Gate;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:MOON6}{MOON6} & proof:MOON6 &  &  & \hyperlink{phase-row-12-6}{12.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-MOON7}{MOON7} & VOA/\allowbreak{}moonshine-module comparison profile & Reference;\newline Gate;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:MOON7}{MOON7} & proof:MOON7 &  &  & \hyperlink{phase-row-12-7}{12.7}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-MOON8}{MOON8} & Common-indicator /\allowbreak{} Hauptmodul bridge-test profile & Reference;\newline Gate;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:MOON8}{MOON8} & proof:MOON8 &  &  & \hyperlink{phase-row-12-8}{12.8}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG0}{LEG0} & Consumption and split inventory umbrella & Governance;\newline Policy;\newline Object & F3 & current & none & \cellcolor{yellow!25}Y & no & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:LEG0}{LEG0} & proof:LEG0 &  &  & \hyperlink{phase-row-1-1-1}{1.1.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG1}{LEG1} & Legacy single-constructor status gates & Lean;\newline Refactor;\newline Object & F3 & current & none & \cellcolor{yellow!25}Y & no & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:LEG1}{LEG1} & proof:LEG1 &  &  & \hyperlink{phase-row-1-1-2}{1.1.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG2}{LEG2} & CoreSymbols true notation surface & Lean;\newline Refactor;\newline Object & F3 & current & none & \cellcolor{yellow!25}Y & no & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:LEG2}{LEG2} & proof:LEG2 &  &  & \hyperlink{phase-row-1-1-3}{1.1.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG3}{LEG3} & Legacy phase aliases compatibility surface & Lean;\newline Refactor;\newline Object & F3 & current & none & \cellcolor{yellow!25}Y & no & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:LEG3}{LEG3} & proof:LEG3 &  &  & \hyperlink{phase-row-1-1-4}{1.1.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG4}{LEG4} & Neutral import firewall for post-notation phases & Governance;\newline Policy;\newline Object & F3 & current & none & \cellcolor{yellow!25}Y & no & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:LEG4}{LEG4} & proof:LEG4 &  &  & \hyperlink{phase-row-1-1-5}{1.1.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG5}{LEG5} & Declaration consumption classification map & Governance;\newline Policy;\newline Object & F3 & current & none & \cellcolor{green!18}G & documented-in-v43 & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:LEG5}{LEG5} & proof:LEG5 &  &  & \hyperlink{phase-row-1-1-1-1-4}{1.1.1.1.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG7}{LEG7} & Blue-object semantic correction ledger & Governance;\newline Policy;\newline Object & F3 & current & none & \cellcolor{yellow!25}Y & no & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:LEG7}{LEG7} & proof:LEG7 &  &  & \hyperlink{phase-row-1-1-1-2}{1.1.1.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG6}{LEG6} & Public API contract and consumer whitelist & Governance;\newline Policy;\newline Object & F3 & current & none & \cellcolor{yellow!25}Y & no & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:LEG6}{LEG6} & proof:LEG6 &  &  & \hyperlink{phase-row-1-1-1-3}{1.1.1.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG8}{LEG8} & Pruning and dead-candidate ledger & Governance;\newline Policy;\newline Object & F3 & current & none & \cellcolor{yellow!25}Y & no & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:LEG8}{LEG8} & proof:LEG8 &  &  & \hyperlink{phase-row-1-1-1-4}{1.1.1.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG9}{LEG9} & Generated-view authority and implementation-lock contract & Governance;\newline Policy;\newline Object & F3 & current & none & \cellcolor{yellow!25}Y & no & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:LEG9}{LEG9} & proof:LEG9 &  &  & \hyperlink{phase-row-1-1-1-5}{1.1.1.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG10}{LEG10} & Implementation module manifest and semantic placement contract & Governance;\newline Policy;\newline Object & F1 & current & none & \cellcolor{green!18}G & documented-in-v40 & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:LEG10}{LEG10} & proof:LEG10 &  &  & \hyperlink{phase-row-1-1-1-1-1}{1.1.1.1.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG11}{LEG11} & Reuse/\allowbreak{}duplication ledger and canonical generator policy & Governance;\newline Policy;\newline Object & F1 & current & none & \cellcolor{green!18}G & documented-in-v41 & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:LEG11}{LEG11} & proof:LEG11 &  &  & \hyperlink{phase-row-1-1-1-1-2}{1.1.1.1.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG12}{LEG12} & Object and size proof-documentation infrastructure & Governance;\newline Policy;\newline Object & F1 & current & none & \cellcolor{green!18}G & documented-in-v42 & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:LEG12}{LEG12} & proof:LEG12 &  &  & \hyperlink{phase-row-1-1-1-1-3}{1.1.1.1.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG13}{LEG13} & Global no-go guardrail contract & Governance;\newline Policy;\newline Object & F0 & current & none & \cellcolor{green!18}G & yes & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:LEG13}{LEG13} & proof:LEG13 &  &  & \hyperlink{phase-row-1-1-1-1-0}{1.1.1.1.0}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG14}{LEG14} & Concrete computable instance traversal contract & Governance;\newline Policy;\newline Object & F3 & current & none & \cellcolor{green!18}G & yes-infrastructure & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:LEG14}{LEG14} & proof:LEG14 &  &  & \hyperlink{phase-row-1-1-1-1-0-1}{1.1.1.1.0.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG15}{LEG15} & Mathlib complication and noncomputable-boundary log & Governance;\newline Policy;\newline Object & F3 & current & none & \cellcolor{green!18}G & yes-infrastructure & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:LEG15}{LEG15} & proof:LEG15 &  &  & \hyperlink{phase-row-1-1-1-1-0-1}{1.1.1.1.0.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG16}{LEG16} & Semi-automated existing-code documentation coverage & Reference;\newline Gate;\newline Object & F3 & current & none & \cellcolor{black!18}K & no & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:LEG16}{LEG16} & proof:LEG16 &  &  & \hyperlink{phase-row-19-1}{19.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG17}{LEG17} & Derivation-graph geometry diagnostics & Reference;\newline Gate;\newline Object & F3 & current & none & \cellcolor{black!18}K & no & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:LEG17}{LEG17} & proof:LEG17 &  &  & \hyperlink{phase-row-19-2}{19.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG18}{LEG18} & Open-system emergence-path forensics & Reference;\newline Gate;\newline Object & F3 & current & none & \cellcolor{black!18}K & no & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:LEG18}{LEG18} & proof:LEG18 &  &  & \hyperlink{phase-row-19-3}{19.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG19}{LEG19} & Reflective CNNA/\allowbreak{}formalization graph comparison boundary & Reference;\newline Gate;\newline Object & F3 & current & none & \cellcolor{black!18}K & no & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:LEG19}{LEG19} & proof:LEG19 &  &  & \hyperlink{phase-row-19-4}{19.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG20}{LEG20} & EXEC-2 rational ExecComplex boundary policy & Lean;\newline Governance;\newline Object & F1 & current & none & \cellcolor{green!18}G & yes & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:LEG20}{LEG20} & proof:LEG20 &  &  & \hyperlink{phase-row-1-1-1-1-0-2}{1.1.1.1.0.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG21}{LEG21} & Refactor regression and incremental migration protocol & Lean;\newline Governance;\newline Object & F1 & current & none & \cellcolor{green!18}G & yes & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:LEG21}{LEG21} & proof:LEG21 &  &  & \hyperlink{phase-row-1-1-1-1-0-3}{1.1.1.1.0.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG22}{LEG22} & Lean/\allowbreak{}mathlib version migration policy & Lean;\newline Governance;\newline Object & F1 & current & none & \cellcolor{green!18}G & yes & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:LEG22}{LEG22} & proof:LEG22 &  &  & \hyperlink{phase-row-1-1-1-1-0-4}{1.1.1.1.0.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG23}{LEG23} & Phase-type-specific scratchpad schema and governance retrospective & Documentation;\newline Object & F3 & current & none & \cellcolor{green!18}G & yes & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:LEG23}{LEG23} & proof:LEG23 &  &  & \hyperlink{phase-row-1-1-1-1-0-5}{1.1.1.1.0.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG24}{LEG24} & Phase 3 to Phase 4 consumer-contract direction & Lean;\newline Governance;\newline Object & F1 & current & none & \cellcolor{green!18}G & yes & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:LEG24}{LEG24} & proof:LEG24 &  &  & \hyperlink{phase-row-1-1-1-1-0-6}{1.1.1.1.0.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG25}{LEG25} & IdealThread/\allowbreak{}CutSpec.full extremal-route contract & Governance;\newline Policy;\newline Object & F1 & current & none & \cellcolor{white}W & yes & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:LEG25}{LEG25} & proof:LEG25 &  &  & \hyperlink{phase-row-1-1-1-1-0-7}{1.1.1.1.0.7}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-S07}{S07} & IdealThread singleton directed-family profile & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{green!18}G & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:S07}{S07} & proof:S07 &  &  & \hyperlink{phase-row-1-2-7}{1.2.7}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-S08}{S08} & CutSpec.full maximal-carrier profile & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{green!18}G & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:S08}{S08} & proof:S08 &  &  & \hyperlink{phase-row-1-2-8}{1.2.8}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR06}{BR06} & Boundary-route extrema contract & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{green!18}G & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:BR06}{BR06} & proof:BR06 &  &  & \hyperlink{phase-row-3-0}{3.0}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR07}{BR07} & Thread-recursion arithmetic-shadow audit profile & Lean;\newline Source;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:BR07}{BR07} & proof:BR07 &  &  & \hyperlink{phase-row-4-0}{4.0}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR09}{BR09} & Subsystem-induced invariant bifurcation profile & Lean;\newline Target;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:BR09}{BR09} & proof:BR09 &  &  & \hyperlink{phase-row-10-4-1}{10.4.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR08}{BR08} & Horizontal/\allowbreak{}vertical Schur-duality bridge & Lean;\newline Target;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:BR08}{BR08} & proof:BR08 &  &  & \hyperlink{phase-row-10-4-1}{10.4.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG26}{LEG26} & Reflective thread/\allowbreak{}full-boundary analogy diagnostic boundary & Governance;\newline Policy;\newline Object & F4 & current & none & \cellcolor{black!18}K & no & Mention and pointer only: name, context class, status, and reason for non-consumption. No full proof dossier unless promoted. & \hyperlink{objproof:LEG26}{LEG26} & proof:LEG26 &  &  & \hyperlink{phase-row-19-5}{19.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG27}{LEG27} & Horizontal/\allowbreak{}vertical Schur-duality dependency-order lock & Governance;\newline Policy;\newline Object & F1 & current & none & \cellcolor{green!18}G & yes & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:LEG27}{LEG27} & proof:LEG27 &  &  & \hyperlink{phase-row-1-1-1-1-0-8}{1.1.1.1.0.8}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG28}{LEG28} & Heuristic Eisenstein/\allowbreak{}Gauss lattice test-matrix boundary contract & Governance;\newline Policy;\newline Object & F1 & current & none & \cellcolor{green!18}G & yes & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:LEG28}{LEG28} & proof:LEG28 &  &  & \hyperlink{phase-row-1-1-1-1-0-9}{1.1.1.1.0.9}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG29}{LEG29} & General early finite computation test-matrix contract & Governance;\newline Policy;\newline Object & F1 & current & none & \cellcolor{green!18}G & documented as planning invariant & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:LEG29}{LEG29} & proof:LEG29 &  &  & \hyperlink{phase-row-1-1-1-1-0-10}{1.1.1.1.0.10}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-L09}{L09} & Static branching Eisenstein/\allowbreak{}Gauss lattice test matrix & Reference;\newline Gate;\newline Object & F2 & current & none & \cellcolor{yellow!25}Y & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:L09}{L09} & proof:L09 &  &  & \hyperlink{phase-row-8-5}{8.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-L10}{L10} & Dynamic branching and L\_max lattice test sweep & Reference;\newline Gate;\newline Object & F2 & current & none & \cellcolor{yellow!25}Y & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:L10}{L10} & proof:L10 &  &  & \hyperlink{phase-row-8-6}{8.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-M08}{M08} & Eisenstein/\allowbreak{}Gauss CM and j special-value test targets & Reference;\newline Gate;\newline Object & F2 & current & none & \cellcolor{yellow!25}Y & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:M08}{M08} & proof:M08 &  &  & \hyperlink{phase-row-8-5}{8.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR10}{BR10} & Hierarchical versus spiral embedding collision and closure audit & Reference;\newline Gate;\newline Object & F2 & current & none & \cellcolor{yellow!25}Y & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:BR10}{BR10} & proof:BR10 &  &  & \hyperlink{phase-row-8-6}{8.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG30}{LEG30} & Regime-typed early test-matrix contract & Governance;\newline Policy;\newline Object & F1 & current & none & \cellcolor{green!18}G & documented as planning invariant & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:LEG30}{LEG30} & proof:LEG30 &  &  & \hyperlink{phase-row-1-1-1-1-0-11}{1.1.1.1.0.11}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-O08}{O08} & Regime-typed finite computation test matrix profile & Lean;\newline Target;\newline Object & F2 & current & none & \cellcolor{yellow!25}Y & planned dossier;\newline must be filled before implementation & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:O08}{O08} & proof:O08 &  &  & \hyperlink{phase-row-4-0-2}{4.0.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N18}{N18} & Heegner regime-projection classification profile & Lean;\newline Target;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:N18}{N18} & proof:N18 &  &  & \hyperlink{phase-row-7-2-1}{7.2.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR11}{BR11} & IDEAL\_infty projection and complement-family Heegner boundary & Lean;\newline Target;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:BR11}{BR11} & proof:BR11 &  &  & \hyperlink{phase-row-7-2-1}{7.2.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR12}{BR12} & noOuter REAL-root Eisenstein/\allowbreak{}Gauss sentinel hypothesis & Lean;\newline Target;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:BR12}{BR12} & proof:BR12 &  &  & \hyperlink{phase-row-4-0-2}{4.0.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG31}{LEG31} & Computable scalar architecture contract & Governance;\newline Policy;\newline Object & F0 & current & none & \cellcolor{green!18}G & yes & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:LEG31}{LEG31} & proof:LEG31 &  &  & \hyperlink{phase-row-1-1-1-1-0-12}{1.1.1.1.0.12}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG32}{LEG32} & Derived-only exact quadratic provenance contract & Governance;\newline Policy;\newline Object & F0 & current & none & \cellcolor{green!18}G & yes & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:LEG32}{LEG32} & proof:LEG32 &  &  & \hyperlink{phase-row-1-1-1-1-0-13}{1.1.1.1.0.13}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG33}{LEG33} & Phase 5-10 bifurcation and dependency repair contract & Governance;\newline Policy;\newline Object & F1 & current & none & \cellcolor{green!18}G & yes & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:LEG33}{LEG33} & proof:LEG33 &  &  & \hyperlink{phase-row-1-1-1-1-0-14}{1.1.1.1.0.14}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-O09}{O09} & Required exact quadratic operational scalar schema & Lean;\newline Target;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:O09}{O09} & proof:O09 &  &  & \hyperlink{phase-row-1-2-1-2}{1.2.1.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-O10}{O10} & Proof-carrying discriminant-indexed quadratic scalar instance & Lean;\newline Target;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:O10}{O10} & proof:O10 &  &  & \hyperlink{phase-row-4-5-1}{4.5.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR13}{BR13} & ExecComplex to exact-quadratic projection bridge & Lean;\newline Target;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:BR13}{BR13} & proof:BR13 &  &  & \hyperlink{phase-row-4-0-3}{4.0.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR14}{BR14} & Discriminant-source to exact-quadratic algebra instantiation bridge & Lean;\newline Target;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:BR14}{BR14} & proof:BR14 &  &  & \hyperlink{phase-row-4-5-1}{4.5.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CD9}{CD9} & Cayley-Dickson C-layer noncircularity audit & Reference;\newline Gate;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:CD9}{CD9} & proof:CD9 &  &  & \hyperlink{phase-row-10-4-3}{10.4.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG34}{LEG34} & Phase-object-link policy contract & Governance;\newline Policy;\newline Object & F1 & current & none & \cellcolor{green!18}G & documented-in-v38 & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:LEG34}{LEG34} & proof:LEG34 &  &  & \hyperlink{phase-row-1-1-1-1-0-15}{1.1.1.1.0.15}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG35}{LEG35} & Ontic subsystem-minimality contract & Governance;\newline Policy;\newline Object & F0 & current & none & \cellcolor{green!18}G & documented-in-v39 & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:LEG35}{LEG35} & proof:LEG35 &  &  & \hyperlink{phase-row-1-1-1-1-0-16}{1.1.1.1.0.16}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR0}{DBR0} & Database-ready CNNA review and documentation structure & Documentation;\newline Object & F3 & current & none & \cellcolor{green!18}G & yes & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:DBR0}{DBR0} & proof:DBR0 &  &  & \hyperlink{phase-row-20}{20}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR1}{DBR1} & Expert-review and no-infallibility epistemic rule & Documentation;\newline Object & F1 & current & none & \cellcolor{green!18}G & yes & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:DBR1}{DBR1} & proof:DBR1 &  &  & \hyperlink{phase-row-20-1}{20.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR2}{DBR2} & Database-ready YAML schema and round-trip target & Tool;\newline Infrastructure;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:DBR2}{DBR2} & proof:DBR2 &  &  & \hyperlink{phase-row-20-2}{20.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR3}{DBR3} & Discipline-separated expert-review matrix & Documentation;\newline Object & F3 & current & none & \cellcolor{black!18}K & no & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:DBR3}{DBR3} & proof:DBR3 &  &  & \hyperlink{phase-row-20-3}{20.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR4}{DBR4} & Blue/\allowbreak{}reference-theory audit ledger & Documentation;\newline Object & F3 & current & none & \cellcolor{black!18}K & no & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:DBR4}{DBR4} & proof:DBR4 &  &  & \hyperlink{phase-row-20-4}{20.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR5}{DBR5} & Interactive/\allowbreak{}online database-backed documentation views & Tool;\newline Infrastructure;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:DBR5}{DBR5} & proof:DBR5 &  &  & \hyperlink{phase-row-20-5}{20.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR6}{DBR6} & Context-filtered documentation slice generator & Generated;\newline Artifact;\newline Object & F3 & current & none & \cellcolor{green!18}G & yes & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:DBR6}{DBR6} & proof:DBR6 &  &  & \hyperlink{phase-row-20-6}{20.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR7}{DBR7} & Stats front section and tool-interface documentation layer & Generated;\newline Artifact;\newline Object & F3 & current & none & \cellcolor{green!18}G & yes & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:DBR7}{DBR7} & proof:DBR7 &  &  & \hyperlink{phase-row-20-7}{20.7}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG36}{LEG36} & Semantic module consolidation ledger & Governance;\newline Policy;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & active-prepared-in-V1.12 & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:LEG36}{LEG36} & proof:LEG36 &  &  & \hyperlink{phase-row-1-1-1-1-5}{1.1.1.1.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR8}{DBR8} & Root artifact retention and cleanup policy & Generated;\newline Artifact;\newline Object & F3 & current & none & \cellcolor{green!18}G & yes & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:DBR8}{DBR8} & proof:DBR8 &  &  & \hyperlink{phase-row-20-8}{20.8}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR9}{DBR9} & Current README and workflow-orientation manual & Generated;\newline Artifact;\newline Object & F3 & current & none & \cellcolor{green!18}G & yes & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:DBR9}{DBR9} & proof:DBR9 &  &  & \hyperlink{phase-row-20-9}{20.9}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR10}{DBR10} & Root Lean/\allowbreak{}Lake project-control files & Generated;\newline Artifact;\newline Object & F3 & current & none & \cellcolor{green!18}G & yes & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:DBR10}{DBR10} & proof:DBR10 &  &  & \hyperlink{phase-row-20-10}{20.10}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR11}{DBR11} & Root license, single-root README, credits and assistant-requirement surface & Generated;\newline Artifact;\newline Object & F3 & current & none & \cellcolor{green!18}G & yes & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:DBR11}{DBR11} & proof:DBR11 &  &  & \hyperlink{phase-row-20-11}{20.11}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR12}{DBR12} & Generated PDF section-pagebreak layout invariant & Generated;\newline Artifact;\newline Object & F3 & current & none & \cellcolor{green!18}G & yes & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:DBR12}{DBR12} & proof:DBR12 &  &  & \hyperlink{phase-row-20-12}{20.12}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR13}{DBR13} & Phase status release policy and red-lock ledger & Generated;\newline Artifact;\newline Object & F3 & current & none & \cellcolor{green!18}G & yes & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:DBR13}{DBR13} & proof:DBR13 &  &  & \hyperlink{phase-row-20-13}{20.13}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR14}{DBR14} & Static documentation explanations and module-change appendix policy & Generated;\newline Artifact;\newline Object & F3 & current & none & \cellcolor{green!18}G & yes & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:DBR14}{DBR14} & proof:DBR14 &  &  & \hyperlink{phase-row-20-14}{20.14}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG37}{LEG37} & Current source intake completeness ledger & Governance;\newline Policy;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & active-prepared & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:LEG37}{LEG37} & proof:LEG37 &  &  & \hyperlink{phase-row-1-1-1-1-5-1}{1.1.1.1.5.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG38}{LEG38} & Neutral module-name and facade migration map & Governance;\newline Policy;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & active-prepared & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:LEG38}{LEG38} & proof:LEG38 &  &  & \hyperlink{phase-row-1-1-1-1-5-2}{1.1.1.1.5.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG39}{LEG39} & Neutral refactor execution certificate & Governance;\newline Policy;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & active-prepared & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:LEG39}{LEG39} & proof:LEG39 &  &  & \hyperlink{phase-row-1-1-1-1-5-3}{1.1.1.1.5.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG40}{LEG40} & Post-refactor inventory closure certificate & Governance;\newline Policy;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & active-prepared & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:LEG40}{LEG40} & proof:LEG40 &  &  & \hyperlink{phase-row-1-1-1-1-5-4}{1.1.1.1.5.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG41}{LEG41} & Pre-substantive-code release certificate & Governance;\newline Policy;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & active-prepared & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:LEG41}{LEG41} & proof:LEG41 &  &  & \hyperlink{phase-row-1-1-1-1-5-5}{1.1.1.1.5.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR15}{DBR15} & provider-neutral SQL database mirror feasibility and schema design & Database;\newline Mirror;\newline Object & F1 & current & none & \cellcolor{white}W & planned & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:DBR15}{DBR15} & proof:DBR15 &  &  & \hyperlink{phase-row-20-15}{20.15}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR16}{DBR16} & YAML/\allowbreak{}exports to SQL import and roundtrip contract & Database;\newline Mirror;\newline Object & F1 & current & none & \cellcolor{white}W & planned & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:DBR16}{DBR16} & proof:DBR16 &  &  & \hyperlink{phase-row-20-16}{20.16}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR17}{DBR17} & Append-only snapshot and checksum model & Database;\newline Mirror;\newline Object & F1 & current & none & \cellcolor{white}W & planned & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:DBR17}{DBR17} & proof:DBR17 &  &  & \hyperlink{phase-row-20-17}{20.17}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR18}{DBR18} & Public read-only API views and read-only access policies & Database;\newline Mirror;\newline Object & F1 & current & none & \cellcolor{white}W & planned & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:DBR18}{DBR18} & proof:DBR18 &  &  & \hyperlink{phase-row-20-18}{20.18}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR19}{DBR19} & cnna-project.net web-frontend data contract & Database;\newline Mirror;\newline Object & F1 & current & none & \cellcolor{white}W & planned & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:DBR19}{DBR19} & proof:DBR19 &  &  & \hyperlink{phase-row-20-19}{20.19}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR20}{DBR20} & Reviewer annotation and future admin-write model & Database;\newline Mirror;\newline Object & F1 & current & none & \cellcolor{white}W & planned & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:DBR20}{DBR20} & proof:DBR20 &  &  & \hyperlink{phase-row-20-20}{20.20}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR21}{DBR21} & Enlarged generated-PDF typography profile & Generated;\newline Artifact;\newline Object & F3 & current & none & \cellcolor{green!18}G & yes & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:DBR21}{DBR21} & proof:DBR21 &  &  & \hyperlink{phase-row-20-21}{20.21}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-GA0}{GA0} & Horn quaternion/\allowbreak{}geometric-algebra reference-gate packet & Reference;\newline Gate;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:GA0}{GA0} & proof:GA0 &  &  & \hyperlink{phase-row-1-4-9}{1.4.9}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-GA1}{GA1} & Hamilton unit and Pauli/\allowbreak{}Cartan sign-convention comparison profile & Reference;\newline Gate;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:GA1}{GA1} & proof:GA1 &  &  & \hyperlink{phase-row-1-4-9-1}{1.4.9.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-GA2}{GA2} & Pauli bivector/\allowbreak{}pseudoscalar duality comparison profile & Reference;\newline Gate;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:GA2}{GA2} & proof:GA2 &  &  & \hyperlink{phase-row-1-4-9-2}{1.4.9.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-GA3}{GA3} & Complex-quaternion eight-basis multivector comparison profile & Reference;\newline Gate;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:GA3}{GA3} & proof:GA3 &  &  & \hyperlink{phase-row-1-4-9-2}{1.4.9.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-GA4}{GA4} & Boundary Pauli/\allowbreak{}Clifford comparison gate & Reference;\newline Gate;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:GA4}{GA4} & proof:GA4 &  &  & \hyperlink{phase-row-13-2-1}{13.2.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-GA5}{GA5} & Dirac/\allowbreak{}spacetime-algebra comparison target gate & Reference;\newline Gate;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:GA5}{GA5} & proof:GA5 &  &  & \hyperlink{phase-row-13-6-1}{13.6.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-GA6}{GA6} & Geometric and conformal algebra side-comparison register & Reference;\newline Gate;\newline Object & F2 & current & none & \cellcolor{black!18}K & no & Standard dossier: short definition, source objects, proof target, implementation location, and next documentation action. No large narrative unless it blocks implementation. & \hyperlink{objproof:GA6}{GA6} & proof:GA6 &  &  & \hyperlink{phase-row-18-5}{18.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR27}{DBR27} & Phase/\allowbreak{}Object context-class taxonomy & Tool;\newline Infrastructure;\newline Object & F3 & current & none & \cellcolor{green!18}G & yes & Compact record: what exists, why it exists, owning phase, source location, and whether it may affect Lean objects. Avoid proofbook bloat. & \hyperlink{objproof:DBR27}{DBR27} & proof:DBR27 &  &  & \hyperlink{phase-row-20-27}{20.27}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX0}{CEX0} & Explorer-readiness audit ledger & Lean;\newline Refactor;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & active-prepared & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:CEX0}{CEX0} & proof:CEX0 &  &  & \hyperlink{phase-row-21-0}{21.0}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX1}{CEX1} & Explorer semantic graph schema & Tool;\newline Infrastructure;\newline Object & F1 & current & none & \cellcolor{white}W & planned & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:CEX1}{CEX1} & proof:CEX1 &  &  & \hyperlink{phase-row-21-1}{21.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX2}{CEX2} & YAML2SQL/\allowbreak{}MySQL mirror contract & Database;\newline Mirror;\newline Object & F1 & current & none & \cellcolor{white}W & planned & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:CEX2}{CEX2} & proof:CEX2 &  &  & \hyperlink{phase-row-21-2}{21.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX3}{CEX3} & Explorer read-only API/\allowbreak{}query projection contract & Database;\newline Mirror;\newline Object & F1 & current & none & \cellcolor{white}W & planned & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:CEX3}{CEX3} & proof:CEX3 & P1.40 & 2026-05-12T08:18:00+02:00 & \hyperlink{phase-row-21-3}{21.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX4}{CEX4} & Dark Pillar-hub star-map UI shell & Tool;\newline Infrastructure;\newline Object & F1 & current & none & \cellcolor{white}W & planned & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:CEX4}{CEX4} & proof:CEX4 &  &  & \hyperlink{phase-row-21-4}{21.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX5}{CEX5} & Inspector/\allowbreak{}menu/\allowbreak{}i18n explanation contract & Tool;\newline Infrastructure;\newline Object & F1 & current & none & \cellcolor{white}W & planned & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:CEX5}{CEX5} & proof:CEX5 &  &  & \hyperlink{phase-row-21-5}{21.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX6}{CEX6} & Explorer filter and projection engine & Tool;\newline Infrastructure;\newline Object & F1 & current & none & \cellcolor{white}W & planned & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:CEX6}{CEX6} & proof:CEX6 &  &  & \hyperlink{phase-row-21-6}{21.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX7}{CEX7} & History and hypothesis lifecycle layer & Tool;\newline Infrastructure;\newline Object & F1 & current & none & \cellcolor{white}W & planned & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:CEX7}{CEX7} & proof:CEX7 &  &  & \hyperlink{phase-row-21-7}{21.7}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX8}{CEX8} & Explorer lab-boundary contract & Tool;\newline Infrastructure;\newline Object & F1 & current & none & \cellcolor{white}W & planned & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:CEX8}{CEX8} & proof:CEX8 &  &  & \hyperlink{phase-row-21-8}{21.8}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX9}{CEX9} & CNNA Explorer deployment and Universe Explorer roadmap & Generated;\newline Artifact;\newline Object & F1 & current & none & \cellcolor{white}W & planned & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:CEX9}{CEX9} & proof:CEX9 & P1.40 & 2026-05-12T08:18:00+02:00 & \hyperlink{phase-row-21-9}{21.9}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX10}{CEX10} & Object lifecycle and historical provenance ledger & Lifecycle;\newline Governance;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & active-prepared & Extended dossier: lifecycle states, successor/\allowbreak{}predecessor semantics, patch/\allowbreak{}rename/\allowbreak{}delete workflows, acyclicity requirements, and downstream Explorer/\allowbreak{}SQL consumers. & \hyperlink{objproof:CEX10}{CEX10} & proof:CEX10 &  &  & \hyperlink{phase-row-21-0}{21.0}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX11}{CEX11} & Total Lean declaration classification ledger & Lean;\newline Governance;\newline Object & F1 & current & none & \cellcolor{yellow!25}Y & active-prepared & Extended dossier: declaration-kind taxonomy, semantic role, triviality tiers, ownership/\allowbreak{}non-object buckets, documentation policy, lifecycle state, manual override rules, closure blockers and downstream Explorer/\allowbreak{}SQL consumers. & \hyperlink{objproof:CEX11}{CEX11} & proof:CEX11 &  &  & \hyperlink{phase-row-21-0}{21.0}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX12}{CEX12} & GitHub repository automation and backup-gated PR contract & Tool;\newline Infrastructure;\newline Object & F1 & current & none & \cellcolor{white}W & planned & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:CEX12}{CEX12} & proof:CEX12 &  &  & \hyperlink{phase-row-21-2-1}{21.2.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX13}{CEX13} & GitHub Actions Lean-build and snapshot-artifact pipeline & Tool;\newline Infrastructure;\newline Object & F1 & current & none & \cellcolor{white}W & planned & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:CEX13}{CEX13} & proof:CEX13 & P1.39 & 2026-05-12T07:55:00+02:00 & \hyperlink{phase-row-21-2-2}{21.2.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX14}{CEX14} & Webhosting-local MySQL staging import, read-only swap and rollback contract & Database;\newline Mirror;\newline Object & F1 & current & none & \cellcolor{white}W & planned & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. & \hyperlink{objproof:CEX14}{CEX14} & proof:CEX14 & P1.39 & 2026-05-12T07:55:00+02:00 & \hyperlink{phase-row-21-2-3}{21.2.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX15}{CEX15} & CI build-result phase-state controller and automatic repair-phase generator & Tool;\newline Infrastructure;\newline Object & F1 & current & none & \cellcolor{white}W & planned & Extended dossier: red/\allowbreak{}green transition state machine, source evidence, failure-log preservation, visible red failure-snapshot emission, repair-phase schema, closeout/\allowbreak{}cursor invariants, no-production-current-deploy rule, and semantic uncertainty. & \hyperlink{objproof:CEX15}{CEX15} & proof:CEX15 & P1.39 & 2026-05-12T07:55:00+02:00 & \hyperlink{phase-row-21-2-4}{21.2.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX16}{CEX16} & Red-build failure visibility snapshot and repair-phase publication channel & Database;\newline Mirror;\newline Object & F1 & current & none & \cellcolor{white}W & planned & Extended dossier: failure-snapshot schema, evidence fields, repair-phase linkage, public read-only boundary, current-green separation, no-truth-source rule and rollback semantics. & \hyperlink{objproof:CEX16}{CEX16} & proof:CEX16 & P1.39 & 2026-05-12T07:55:00+02:00 & \hyperlink{phase-row-21-2-5}{21.2.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-B07}{B07} & Complement-net modular B core chain & Lean;\newline Target;\newline Object & F0 & current & none & \cellcolor{red!20}R & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:B07}{B07} & proof:B07 &  &  & \hyperlink{phase-row-13-8}{13.8}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-B08}{B08} & Nuclearity/\allowbreak{}DHR/\allowbreak{}DR reconstruction bridge & Lean;\newline Target;\newline Object & F0 & current & none & \cellcolor{red!20}R & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:B08}{B08} & proof:B08 &  &  & \hyperlink{phase-row-13-9}{13.9}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-PC00}{PC00} & ParameterClosure chain & Lean;\newline Target;\newline Object & F0 & current & none & \cellcolor{red!20}R & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:PC00}{PC00} & proof:PC00 &  &  & \hyperlink{phase-row-15-5}{15.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-D04}{D04} & LCQFT/\allowbreak{}Hadamard/\allowbreak{}Wick D gate chain & Lean;\newline Target;\newline Object & F0 & current & none & \cellcolor{red!20}R & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:D04}{D04} & proof:D04 &  &  & \hyperlink{phase-row-15-6}{15.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DE00}{DE00} & D/\allowbreak{}E bridge gate chain & Lean;\newline Target;\newline Object & F0 & current & none & \cellcolor{red!20}R & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:DE00}{DE00} & proof:DE00 &  &  & \hyperlink{phase-row-16-5}{16.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-E04}{E04} & Feynman matter audit gate & Lean;\newline Target;\newline Object & F0 & current & none & \cellcolor{red!20}R & no & Full dossier required before promotion or consumption: definition, natural provenance, exact source objects, proof target, proof sketch, verification/\allowbreak{}audit, consumer rights, and semantic uncertainty. & \hyperlink{objproof:E04}{E04} & proof:E04 &  &  & \hyperlink{phase-row-16-5}{16.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-E05}{E05} & Particle/\allowbreak{}scattering/\allowbreak{}IR horizon window & Reference;\newline Gate;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier required: canonical source, dependency order, planned proof/\allowbreak{}validation obligations, review risks, and explicit distinction between reference target and CNNA-derived data. & \hyperlink{objproof:E05}{E05} & proof:E05 &  &  & \hyperlink{phase-row-16-6}{16.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RDV0}{RDV0} & Original roadmap source/\allowbreak{}definition/\allowbreak{}notation audit ledger & Documentation;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier required: canonical source, dependency order, planned proof/\allowbreak{}validation obligations, review risks, and explicit distinction between reference target and CNNA-derived data. & \hyperlink{objproof:RDV0}{RDV0} & proof:RDV0 &  &  & \hyperlink{phase-row-22-0}{22.0}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RDV1}{RDV1} & Roadmap migration disposition ledger & Governance;\newline Policy;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier required: canonical source, dependency order, planned proof/\allowbreak{}validation obligations, review risks, and explicit distinction between reference target and CNNA-derived data. & \hyperlink{objproof:RDV1}{RDV1} & proof:RDV1 &  &  & \hyperlink{phase-row-22-1}{22.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RDV2}{RDV2} & Roadmap de-seeding/\allowbreak{}regression/\allowbreak{}rollback workflow ledger & Governance;\newline Policy;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier required: canonical source, dependency order, planned proof/\allowbreak{}validation obligations, review risks, and explicit distinction between reference target and CNNA-derived data. & \hyperlink{objproof:RDV2}{RDV2} & proof:RDV2 &  &  & \hyperlink{phase-row-22-2}{22.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RDV3}{RDV3} & Roadmap modular B gate-sheet ledger & Reference;\newline Gate;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier required: canonical source, dependency order, planned proof/\allowbreak{}validation obligations, review risks, and explicit distinction between reference target and CNNA-derived data. & \hyperlink{objproof:RDV3}{RDV3} & proof:RDV3 &  &  & \hyperlink{phase-row-22-3}{22.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RDV4}{RDV4} & Roadmap ParameterClosure gate-sheet ledger & Reference;\newline Gate;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier required: canonical source, dependency order, planned proof/\allowbreak{}validation obligations, review risks, and explicit distinction between reference target and CNNA-derived data. & \hyperlink{objproof:RDV4}{RDV4} & proof:RDV4 &  &  & \hyperlink{phase-row-22-4}{22.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RDV5}{RDV5} & Roadmap D/\allowbreak{}E bridge and local-covariance gate-sheet ledger & Reference;\newline Gate;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier required: canonical source, dependency order, planned proof/\allowbreak{}validation obligations, review risks, and explicit distinction between reference target and CNNA-derived data. & \hyperlink{objproof:RDV5}{RDV5} & proof:RDV5 &  &  & \hyperlink{phase-row-22-5}{22.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RDV6}{RDV6} & Roadmap Feynman/\allowbreak{}scattering/\allowbreak{}IR audit ledger & Reference;\newline Gate;\newline Object & F1 & current & none & \cellcolor{black!18}K & no & Extended dossier required: canonical source, dependency order, planned proof/\allowbreak{}validation obligations, review risks, and explicit distinction between reference target and CNNA-derived data. & \hyperlink{objproof:RDV6}{RDV6} & proof:RDV6 &  &  & \hyperlink{phase-row-22-6}{22.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RLC0}{RLC0} & REALOQS v0.0605 legacy source inventory ledger & Legacy;\newline Code;\newline Reference;\newline Object & F1 & current & RLC0 & \cellcolor{black!18}K & no & Extended dossier required: legacy source path, migration disposition, dependency inversion risk, CNNA source objects required before reuse, target gates, and explicit distinction between legacy code evidence and CNNA-derived Lean closure. & \hyperlink{objproof:RLC0}{RLC0} & proof:RLC0 &  &  & \hyperlink{phase-row-23-0}{23.0}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RLC1}{RLC1} & REALOQS AQFT foundation migration-disposition ledger & Legacy;\newline Code;\newline Reference;\newline Object & F1 & current & RLC1 & \cellcolor{red!20}R & no & Extended dossier required: legacy source path, migration disposition, dependency inversion risk, CNNA source objects required before reuse, target gates, and explicit distinction between legacy code evidence and CNNA-derived Lean closure. & \hyperlink{objproof:RLC1}{RLC1} & proof:RLC1 &  &  & \hyperlink{phase-row-23-1}{23.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RLC2}{RLC2} & REALOQS-to-CNNA A->B handoff compatibility ledger & Legacy;\newline Code;\newline Reference;\newline Object & F1 & current & RLC2 & \cellcolor{red!20}R & no & Extended dossier required: legacy source path, migration disposition, dependency inversion risk, CNNA source objects required before reuse, target gates, and explicit distinction between legacy code evidence and CNNA-derived Lean closure. & \hyperlink{objproof:RLC2}{RLC2} & proof:RLC2 &  &  & \hyperlink{phase-row-23-2}{23.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RLC3}{RLC3} & REALOQS boundary-matrix AQFT rewrite ledger & Legacy;\newline Code;\newline Reference;\newline Object & F1 & current & RLC3 & \cellcolor{red!20}R & no & Extended dossier required: legacy source path, migration disposition, dependency inversion risk, CNNA source objects required before reuse, target gates, and explicit distinction between legacy code evidence and CNNA-derived Lean closure. & \hyperlink{objproof:RLC3}{RLC3} & proof:RLC3 &  &  & \hyperlink{phase-row-23-3}{23.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RLC4}{RLC4} & REALOQS Haag-Kastler gate extraction ledger & Legacy;\newline Code;\newline Reference;\newline Object & F1 & current & RLC4 & \cellcolor{red!20}R & no & Extended dossier required: legacy source path, migration disposition, dependency inversion risk, CNNA source objects required before reuse, target gates, and explicit distinction between legacy code evidence and CNNA-derived Lean closure. & \hyperlink{objproof:RLC4}{RLC4} & proof:RLC4 &  &  & \hyperlink{phase-row-23-4}{23.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RLC5}{RLC5} & REALOQS state-GNS-KMS-modular route map & Legacy;\newline Code;\newline Reference;\newline Object & F1 & current & RLC5 & \cellcolor{red!20}R & no & Extended dossier required: legacy source path, migration disposition, dependency inversion risk, CNNA source objects required before reuse, target gates, and explicit distinction between legacy code evidence and CNNA-derived Lean closure. & \hyperlink{objproof:RLC5}{RLC5} & proof:RLC5 &  &  & \hyperlink{phase-row-23-5}{23.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RLC6}{RLC6} & REALOQS quasi-local split/\allowbreak{}nuclearity horizon map & Legacy;\newline Code;\newline Reference;\newline Object & F1 & current & RLC6 & \cellcolor{red!20}R & no & Extended dossier required: legacy source path, migration disposition, dependency inversion risk, CNNA source objects required before reuse, target gates, and explicit distinction between legacy code evidence and CNNA-derived Lean closure. & \hyperlink{objproof:RLC6}{RLC6} & proof:RLC6 &  &  & \hyperlink{phase-row-23-6}{23.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RLC7}{RLC7} & REALOQS examples/\allowbreak{}meta quarantine and regression ledger & Legacy;\newline Code;\newline Reference;\newline Object & F1 & current & RLC7 & \cellcolor{red!20}R & no & Extended dossier required: legacy source path, migration disposition, dependency inversion risk, CNNA source objects required before reuse, target gates, and explicit distinction between legacy code evidence and CNNA-derived Lean closure. & \hyperlink{objproof:RLC7}{RLC7} & proof:RLC7 &  &  & \hyperlink{phase-row-23-7}{23.7}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RLC8}{RLC8} & REALOQS declaration crosswalk and Explorer legacy overlay ledger & Legacy;\newline Code;\newline Reference;\newline Object & F1 & current & RLC8 & \cellcolor{red!20}R & no & Extended dossier required: legacy source path, migration disposition, dependency inversion risk, CNNA source objects required before reuse, target gates, and explicit distinction between legacy code evidence and CNNA-derived Lean closure. & \hyperlink{objproof:RLC8}{RLC8} & proof:RLC8 &  &  & \hyperlink{phase-row-23-8}{23.8}\\
+\hline
+\addlinespace[0.24em]
+\end{longtable}
+\arrayrulecolor{black}
+\normalsize

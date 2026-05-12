@@ -1,0 +1,16 @@
+digraph group_pillara_geometry {
+  rankdir="LR";
+  node [shape=box, fontsize=10];
+  "CNNA.PillarA.Geometry.BuildAll" [tooltip="PillarA/Geometry"];
+  "CNNA.PillarA.Geometry.Foliation" [tooltip="PillarA/Geometry"];
+  "CNNA.PillarA.Geometry.LCPMeasure" [tooltip="PillarA/Geometry"];
+  "CNNA.PillarA.Geometry.Notation" [tooltip="PillarA/Geometry"];
+  "CNNA.PillarA.Geometry.SpacetimePaths" [tooltip="PillarA/Geometry"];
+  "CNNA.PillarA.Geometry.BuildAll" -> "CNNA.PillarA.Geometry.Foliation";
+  "CNNA.PillarA.Geometry.BuildAll" -> "CNNA.PillarA.Geometry.LCPMeasure";
+  "CNNA.PillarA.Geometry.BuildAll" -> "CNNA.PillarA.Geometry.Notation";
+  "CNNA.PillarA.Geometry.BuildAll" -> "CNNA.PillarA.Geometry.SpacetimePaths";
+  "CNNA.PillarA.Geometry.Foliation" -> "CNNA.PillarA.Geometry.LCPMeasure";
+  "CNNA.PillarA.Geometry.Notation" -> "CNNA.PillarA.Geometry.SpacetimePaths";
+  "CNNA.PillarA.Geometry.SpacetimePaths" -> "CNNA.PillarA.Geometry.Foliation";
+}

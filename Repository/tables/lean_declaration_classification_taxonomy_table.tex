@@ -1,0 +1,173 @@
+\footnotesize
+\arrayrulecolor{black!22}
+\begin{longtable}{L{0.105\linewidth} L{0.095\linewidth} L{0.11\linewidth} L{0.255\linewidth} L{0.215\linewidth} L{0.185\linewidth}}
+\hline
+\textbf{Axis} & \textbf{Code} & \textbf{Name} & \textbf{Meaning} & \textbf{Assignment rule} & \textbf{Closure rule}\\
+\hline
+\endfirsthead
+\hline
+\textbf{Axis} & \textbf{Code} & \textbf{Name} & \textbf{Meaning} & \textbf{Assignment rule} & \textbf{Closure rule}\\
+\hline
+\endhead
+declaration\_kind & def & Definition & Lean definition or constant-producing definition. & Read from parsed Lean declaration/\allowbreak{}inventory, not inferred only from filename. & Must be paired with semantic\_role, triviality\_tier, lifecycle\_state, owner bucket and documentation policy.\\
+\hline
+\addlinespace[0.24em]
+declaration\_kind & theorem & Theorem & Named theorem declaration. & Read from source/\allowbreak{}inventory declaration kind. & May be trivial syntactically yet high-significance semantically;\newline require override channel.\\
+\hline
+\addlinespace[0.24em]
+declaration\_kind & lemma & Lemma & Named lemma declaration. & Read from source/\allowbreak{}inventory declaration kind. & Same classification burden as theorem;\newline local helper status must be explicit.\\
+\hline
+\addlinespace[0.24em]
+declaration\_kind & structure & Structure & Lean structure/\allowbreak{}class-like record declaration when parsed as structure. & Read from source/\allowbreak{}inventory declaration kind. & Must distinguish fundamental object carrier from ledger/\allowbreak{}scaffold/\allowbreak{}overhead record.\\
+\hline
+\addlinespace[0.24em]
+declaration\_kind & class & Typeclass & Lean class/\allowbreak{}typeclass declaration. & Read from source/\allowbreak{}inventory declaration kind. & Must state whether operational, mirror-only, legacy, external assumption, or refactor target.\\
+\hline
+\addlinespace[0.24em]
+declaration\_kind & inductive & Inductive & Inductive type declaration. & Read from source/\allowbreak{}inventory declaration kind. & Constructors and generated recursors may be bucketed separately or inherited with explicit rule.\\
+\hline
+\addlinespace[0.24em]
+declaration\_kind & abbrev & Abbreviation & Lean abbreviation/\allowbreak{}alias. & Read from source/\allowbreak{}inventory declaration kind. & Must distinguish harmless alias, legacy facade, renamed alias or public API surface.\\
+\hline
+\addlinespace[0.24em]
+declaration\_kind & instance & Instance & Typeclass instance declaration. & Read from source/\allowbreak{}inventory declaration kind. & Must state whether it affects operational path, mirror path, classical/\allowbreak{}noncomputable exposure or only tooling.\\
+\hline
+\addlinespace[0.24em]
+declaration\_kind & notation-syntax-macro & Notation/\allowbreak{}syntax/\allowbreak{}macro & Notation, syntax, macro or parser-level declaration. & Read from source/\allowbreak{}inventory and notation module scan. & Must be classified as API, legacy/\allowbreak{}phase alias, notation core, or quarantine candidate.\\
+\hline
+\addlinespace[0.24em]
+declaration\_kind & namespace-only & Namespace-only surface & Namespace/\allowbreak{}opening organization without direct mathematical object payload. & Detected from source structure;\newline not counted as derived mathematical object. & May be mention-only but still needs owner bucket and lifecycle state.\\
+\hline
+\addlinespace[0.24em]
+declaration\_kind & attribute-config & Attribute/\allowbreak{}configuration & Attribute, option, lint/\allowbreak{}config or generated declaration-control surface. & Detected from source or tool inventory. & Must be checked against operational no-go rules such as no operational @[simp].\\
+\hline
+\addlinespace[0.24em]
+declaration\_kind & example-test-eval & Example/\allowbreak{}test/\allowbreak{}eval & Example, smoke-test evaluator, \#eval-facing declaration or test-only artifact. & Detected from source/\allowbreak{}inventory and module path, with manual override where path is misleading. & Must not be promoted to core object without explicit producer/\allowbreak{}consumer and proof-dossier upgrade.\\
+\hline
+\addlinespace[0.24em]
+declaration\_kind & unknown-manual-review & Unknown/\allowbreak{}manual review & Temporary classification for declarations the scanner cannot type safely. & Only allowed as open audit residue, never as closed source-intake evidence. & Blocks LEG37/\allowbreak{}CEX0 closure until resolved or explicitly bucketed with a justified non-object status.\\
+\hline
+\addlinespace[0.24em]
+semantic\_role & core-computational & Core computational declaration & Participates in computable/\allowbreak{}operational construction path. & Evidence must come from actual dependency/\allowbreak{}consumer path, not only module name. & Requires documentation policy at least standard unless triviality/\allowbreak{}significance override justifies compact record.\\
+\hline
+\addlinespace[0.24em]
+semantic\_role & proof-bridge & Proof bridge & Connects definitions/\allowbreak{}theorems or transports evidence across layers. & Identify by use in proof targets and consumers. & May be T2/\allowbreak{}T3 but must preserve source/\allowbreak{}target theorem semantics.\\
+\hline
+\addlinespace[0.24em]
+semantic\_role & structural-constructor & Structural constructor & Builds an entry/\allowbreak{}ledger/\allowbreak{}object/\allowbreak{}certificate structure. & Identify constructor/\allowbreak{}projection role explicitly. & Must distinguish natural-origin structure from consumer-side patch.\\
+\hline
+\addlinespace[0.24em]
+semantic\_role & projection-wrapper & Projection/\allowbreak{}wrapper & Definitional wrapper, projection, accessor or compatibility facade. & Detected by body/\allowbreak{}projection/\allowbreak{}facade pattern and consumer checks. & Usually T2/\allowbreak{}T3, but can be high-significance when it is a boundary/\allowbreak{}handoff contract.\\
+\hline
+\addlinespace[0.24em]
+semantic\_role & public-api & Public API surface & Declaration intentionally exposed to downstream consumers. & Requires public-surface whitelist or object/\allowbreak{}phase evidence. & Must have consumer rights and documentation policy;\newline blue/\allowbreak{}legacy rows cannot be public-final.\\
+\hline
+\addlinespace[0.24em]
+semantic\_role & legacy-status & Legacy status enum/\allowbreak{}marker & Legacy single-constructor/\allowbreak{}status gate or historical phase marker. & Detected by status-gate quarantine and source scan. & Quarantined or compact-record unless still consumed by current public API.\\
+\hline
+\addlinespace[0.24em]
+semantic\_role & legacy-policy & Legacy policy/\allowbreak{}facade & Old policy/\allowbreak{}facade retained for compatibility. & Detected by lifecycle/\allowbreak{}renaming/\allowbreak{}refactor map. & Must point to successor/\allowbreak{}current object or explicit retirement.\\
+\hline
+\addlinespace[0.24em]
+semantic\_role & phase-alias & Phase alias/\allowbreak{}name residue & Declaration or module name that carries phase semantics rather than neutral object semantics. & Detected by naming scan and manual review. & Must be neutralized, quarantined or documented as historical facade before new substantive code.\\
+\hline
+\addlinespace[0.24em]
+semantic\_role & audit-only & Audit-only declaration & Exists for inventory, check, report or governance only. & Evidence from module path plus usage;\newline manual override required if used mathematically. & Not a Lean mathematical object for CNNA truth;\newline mention-only/\allowbreak{}compact documentation.\\
+\hline
+\addlinespace[0.24em]
+semantic\_role & generated-artifact & Generated artifact & Output generated from YAML/\allowbreak{}inventory/\allowbreak{}tooling, not manually maintained Lean truth. & Trace to generator snapshot and source hash. & Must never be cited as primary Lean truth.\\
+\hline
+\addlinespace[0.24em]
+semantic\_role & external-reference-marker & External reference marker & Established-theory/\allowbreak{}reference/\allowbreak{}comparison marker. & Blue/\allowbreak{}reference source provenance required. & May guide target gates but cannot be imported as CNNA generator.\\
+\hline
+\addlinespace[0.24em]
+semantic\_role & dead-candidate & Dead candidate & Unused, obsolete or negative-path candidate kept for history. & Requires no-current-consumer or supersession evidence. & Must have lifecycle state deprecated/\allowbreak{}superseded/\allowbreak{}deleted-retired or explicit legacy facade.\\
+\hline
+\addlinespace[0.24em]
+semantic\_role & unknown-manual-review & Unknown/\allowbreak{}manual review & Temporary unresolved semantic role. & Only from scanner inability or conflicting evidence. & Blocks total-classification closure until resolved.\\
+\hline
+\addlinespace[0.24em]
+triviality\_tier & T0 & Fundamental/\allowbreak{}nontrivial & Defines or proves a fundamental CNNA object, boundary contract, generator, handoff or nontrivial theorem. & Manual/\allowbreak{}curated evidence may override syntactic simplicity. & Full dossier/\allowbreak{}extended proof documentation required;\newline may not be hidden by rfl/\allowbreak{}body heuristics.\\
+\hline
+\addlinespace[0.24em]
+triviality\_tier & T1 & Structural local & Nontrivial but local structural construction, lemma family or certificate. & Needs local proof/\allowbreak{}consumer evidence. & Standard or extended dossier depending on significance.\\
+\hline
+\addlinespace[0.24em]
+triviality\_tier & T2 & Proof bridge/\allowbreak{}API wrapper & Bridge, wrapper or API connector with meaningful consumer effect. & Auto-candidate by wrapper/\allowbreak{}proof-bridge role;\newline manual override allowed. & Compact or standard record;\newline public API requires explicit consumer rights.\\
+\hline
+\addlinespace[0.24em]
+triviality\_tier & T3 & Definitional/\allowbreak{}rfl/\allowbreak{}projection & Mostly definitional equality, projection, alias or rfl-level support. & Heuristic candidate from proof body/\allowbreak{}body shape;\newline not final without override check. & Mention-only/\allowbreak{}compact unless it carries boundary/\allowbreak{}handoff/\allowbreak{}fundamental semantics.\\
+\hline
+\addlinespace[0.24em]
+triviality\_tier & T4 & Status/\allowbreak{}policy/\allowbreak{}audit marker & Governance marker, status enum, policy row or audit-only declaration. & Evidence from source role and no mathematical consumer. & Compact/\allowbreak{}mention-only;\newline quarantine if phase-semantic or legacy.\\
+\hline
+\addlinespace[0.24em]
+triviality\_tier & T5 & Legacy/\allowbreak{}dead/\allowbreak{}generated/\allowbreak{}no semantic payload & Dead, legacy, generated-secondary or no-current-semantic-payload declaration. & Requires lifecycle/\allowbreak{}consumer evidence. & Exclude from public docs unless referenced;\newline retain history non-destructively.\\
+\hline
+\addlinespace[0.24em]
+triviality\_tier & T? & Unresolved triviality & Temporary unresolved triviality classification. & Allowed only while source-intake audit is open. & Blocks LEG37/\allowbreak{}CEX0 closure.\\
+\hline
+\addlinespace[0.24em]
+documentation\_requirement & full-dossier & Full dossier & Complete source/\allowbreak{}provenance/\allowbreak{}proof/\allowbreak{}verification/\allowbreak{}consumer-rights documentation. & Default for T0/\allowbreak{}F0 or public-final fundamental objects. & Required before promotion or downstream consumption.\\
+\hline
+\addlinespace[0.24em]
+documentation\_requirement & extended-dossier & Extended dossier & Detailed proof route, risks and consumers. & Default for F1 and structural/\allowbreak{}explorer/\allowbreak{}governance gates. & Required before activating dependent schema/\allowbreak{}frontend/\allowbreak{}import phases.\\
+\hline
+\addlinespace[0.24em]
+documentation\_requirement & standard-dossier & Standard dossier & Normal object/\allowbreak{}proof summary with source and consumer links. & Default for T1/\allowbreak{}T2 non-public-core declarations. & Enough to avoid re-reading chat history.\\
+\hline
+\addlinespace[0.24em]
+documentation\_requirement & compact-record & Compact record & Short record for helpers, policy rows, wrappers, status markers. & Allowed for T3/\allowbreak{}T4/\allowbreak{}F3 if not public-final core. & Must still include owner bucket and lifecycle state.\\
+\hline
+\addlinespace[0.24em]
+documentation\_requirement & mention-only & Mention only & Visible in generated inventory but no proofbook expansion. & Allowed for T4/\allowbreak{}T5 with no public mathematical consumer. & Still must be queryable and lifecycle-tagged.\\
+\hline
+\addlinespace[0.24em]
+documentation\_requirement & exclude-public-unless-referenced & Exclude unless referenced & Hidden from public/\allowbreak{}high-level docs unless a selected object/\allowbreak{}phase references it. & Allowed for T5/\allowbreak{}generated/\allowbreak{}dead residues. & Explorer may reveal it through history/\allowbreak{}provenance filters only.\\
+\hline
+\addlinespace[0.24em]
+documentation\_requirement & manual-review-required & Manual review required & Documentation policy cannot be fixed automatically. & Used for conflicting classifier evidence. & Blocks total-classification closure until resolved.\\
+\hline
+\addlinespace[0.24em]
+lifecycle\_state & current & Current declaration & Current declaration in the active Lean snapshot. & Present in current source and not superseded/\allowbreak{}retired. & Must have owner bucket, documentation policy and public-surface status.\\
+\hline
+\addlinespace[0.24em]
+lifecycle\_state & superseded & Superseded declaration & Replaced by a newer declaration/\allowbreak{}object but retained historically. & Requires successor pointer and version/\allowbreak{}timestamp evidence. & Old row remains;\newline consumers must point to current successor unless explicitly historical.\\
+\hline
+\addlinespace[0.24em]
+lifecycle\_state & renamed-alias & Renamed alias & Old name retained as alias/\allowbreak{}facade after rename. & Requires rename map, predecessor/\allowbreak{}successor and facade policy. & May not be treated as independent current object.\\
+\hline
+\addlinespace[0.24em]
+lifecycle\_state & deprecated & Deprecated declaration & Still present but discouraged or scheduled for quarantine/\allowbreak{}removal. & Requires deprecation reason and consumer audit. & Public-final use blocked unless explicitly grandfathered.\\
+\hline
+\addlinespace[0.24em]
+lifecycle\_state & deleted-retired & Deleted/\allowbreak{}retired declaration & No longer present in current Lean snapshot but retained in history. & Detected by snapshot diff and retirement record. & Must terminate lifecycle chain without dangling consumers.\\
+\hline
+\addlinespace[0.24em]
+lifecycle\_state & legacy-facade & Legacy facade & Compatibility surface retained to avoid breaking old imports. & Requires neutral target and facade decommission/\allowbreak{}review policy. & Must point to current canonical declaration/\allowbreak{}object.\\
+\hline
+\addlinespace[0.24em]
+lifecycle\_state & unknown-manual-review & Unknown/\allowbreak{}manual review & Lifecycle cannot be decided from current inventory. & Only temporary during diff/\allowbreak{}source-intake audit. & Blocks closure until resolved.\\
+\hline
+\addlinespace[0.24em]
+public\_surface\_status & public-final & Public final & Allowed public/\allowbreak{}current API declaration. & Requires derived/\allowbreak{}current status, consumer rights and documentation policy. & Forbidden for blue, unknown, deprecated, superseded or hypothesis-only declarations.\\
+\hline
+\addlinespace[0.24em]
+public\_surface\_status & internal-only & Internal only & Usable only inside the allowed internal source layer. & Default for helpers and operational internals unless promoted. & Explorer may display but must not advertise as public API.\\
+\hline
+\addlinespace[0.24em]
+public\_surface\_status & facade-only & Facade only & Compatibility alias/\allowbreak{}wrapper, not canonical current object. & Requires successor/\allowbreak{}current target. & Consumer docs must point to canonical target.\\
+\hline
+\addlinespace[0.24em]
+public\_surface\_status & audit-only & Audit only & Inventory/\allowbreak{}governance/\allowbreak{}testing declaration with no API role. & Requires no mathematical consumer or explicit audit purpose. & Not public-final and not CNNA truth.\\
+\hline
+\addlinespace[0.24em]
+public\_surface\_status & quarantined & Quarantined & Legacy/\allowbreak{}phase-semantic/\allowbreak{}unsafe or unresolved declaration kept away from public consumers. & Requires reason and release condition. & Cannot be consumed by new substantive Lean phases.\\
+\hline
+\addlinespace[0.24em]
+public\_surface\_status & manual-review-required & Manual review required & Public-surface status unresolved. & Temporary only. & Blocks LEG37/\allowbreak{}CEX0 closure.\\
+\hline
+\addlinespace[0.24em]
+\end{longtable}
+\arrayrulecolor{black}
+\normalsize

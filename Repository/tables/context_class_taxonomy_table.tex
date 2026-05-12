@@ -1,0 +1,89 @@
+\small
+\arrayrulecolor{black!22}
+\begin{longtable}{L{0.115\linewidth} L{0.055\linewidth} L{0.135\linewidth} L{0.245\linewidth} L{0.23\linewidth} L{0.17\linewidth}}
+\hline
+\textbf{Class} & \textbf{Applies to} & \textbf{Parent class} & \textbf{Meaning} & \textbf{Truth role} & \textbf{Allowed consumers}\\
+\hline
+\endfirsthead
+\hline
+\textbf{Class} & \textbf{Applies to} & \textbf{Parent class} & \textbf{Meaning} & \textbf{Truth role} & \textbf{Allowed consumers}\\
+\hline
+\endhead
+PhaseBase & phase & root & Abstract superclass for all roadmap phases. & No truth role by itself;\newline subclasses determine whether the phase may touch Lean, tooling, documentation, DB or reference material. & Only used by generated validators/\allowbreak{}tables.\\
+\hline
+\addlinespace[0.24em]
+LeanDerivationPhase & phase & PhaseBase/\allowbreak{}LeanPhase & Direct Lean mathematical/\allowbreak{}content derivation phase. & May eventually create or close checked Lean objects, but only after derived-only release evidence. & Lean implementation prompt, object proof dossier, downstream phases after closure.\\
+\hline
+\addlinespace[0.24em]
+LeanRefactorPhase & phase & PhaseBase/\allowbreak{}LeanPhase & Lean code/\allowbreak{}API/\allowbreak{}name/\allowbreak{}import-surface refactor phase without new mathematical content by itself. & Preserves/\allowbreak{}reorganizes checked code;\newline does not prove new mathematics unless separately registered. & Build/\allowbreak{}refactor workflow and later Lean phases after regression checks.\\
+\hline
+\addlinespace[0.24em]
+LeanGovernancePhase & phase & PhaseBase/\allowbreak{}GovernancePhase & Policy/\allowbreak{}release/\allowbreak{}import/\allowbreak{}consumer-governance phase that controls Lean work but is not itself a Lean theorem. & Planning authority only;\newline must not be cited as mathematical proof. & Implementation prompts and generated validators.\\
+\hline
+\addlinespace[0.24em]
+ReferenceGatePhase & phase & PhaseBase/\allowbreak{}ComparisonPhase & External established-theory or side-theory comparison/\allowbreak{}target gate. & Comparison/\allowbreak{}reference only;\newline never CNNA generator or input. & Scratchpads, review gates and later consistency checks after CNNA-derived data exists.\\
+\hline
+\addlinespace[0.24em]
+ToolInfrastructurePhase & phase & PhaseBase/\allowbreak{}ToolPhase & Python/\allowbreak{}YAML/\allowbreak{}generator/\allowbreak{}schema/\allowbreak{}tooling phase. & Generated-secondary tooling;\newline cannot release Lean mathematical claims. & Documentation tool, exporters, future DB mirror.\\
+\hline
+\addlinespace[0.24em]
+DatabaseMirrorPhase & phase & PhaseBase/\allowbreak{}ToolPhase & Provider-neutral SQL/\allowbreak{}public-read mirror or frontend publication phase. & Read/\allowbreak{}query/\allowbreak{}publication mirror only;\newline not a truth source. & Public API/\allowbreak{}frontend/\allowbreak{}review tooling after snapshot/\allowbreak{}checksum rules.\\
+\hline
+\addlinespace[0.24em]
+GeneratedArtifactPhase & phase & PhaseBase/\allowbreak{}ToolPhase & PDF/\allowbreak{}TSV/\allowbreak{}DOT/\allowbreak{}README/\allowbreak{}package generated-output phase. & Rendering/\allowbreak{}navigation/\allowbreak{}release packaging only. & Readers, documentation exports, release packages.\\
+\hline
+\addlinespace[0.24em]
+DocumentationPhase & phase & PhaseBase/\allowbreak{}DocumentationPhase & Human-readable documentation, review matrix, no-infallibility statement, or manual workflow phase. & Interpretive documentation;\newline expert review required. & Reviewers and future tool/\allowbreak{}database views.\\
+\hline
+\addlinespace[0.24em]
+BaselinePhase & phase & PhaseBase & Frozen baseline or package state phase. & Records baseline identity only. & Regression comparison and package history.\\
+\hline
+\addlinespace[0.24em]
+ObjectBase & object & root & Abstract superclass for all registered objects/\allowbreak{}quantities/\allowbreak{}control artifacts. & No truth role by itself;\newline subclasses determine whether the row is Lean, target, tool, DB, reference, generated or governance. & Object register/\allowbreak{}proofbook validators.\\
+\hline
+\addlinespace[0.24em]
+LeanSourceObject & object & ObjectBase/\allowbreak{}LeanObject & Object has an existing Lean source/\allowbreak{}seed or canonical Lean module site. & Potential checked-code object;\newline exact semantic status still governed by Object status and proof dossier. & Lean phases subject to import/\allowbreak{}consumer discipline.\\
+\hline
+\addlinespace[0.24em]
+LeanTargetObject & object & ObjectBase/\allowbreak{}LeanObject & Planned or future Lean object/\allowbreak{}candidate, not a checked final object yet. & Target only until implemented and proof-checked. & Planning/\allowbreak{}proof rehearsal;\newline not public-final.\\
+\hline
+\addlinespace[0.24em]
+LeanRefactorObject & object & ObjectBase/\allowbreak{}LeanObject/\allowbreak{}RefactorObject & Lean-facing refactor, notation, facade, quarantine or import-surface object. It may point to Lean modules, but its semantic role is reorganization/\allowbreak{}compatibility rather than new mathematics. & Code-shape object only;\newline preserves or exposes checked code and must not be cited as a new derived mathematical theorem. & Lean refactor phases, regression checks and downstream phases after build-compatible migration evidence.\\
+\hline
+\addlinespace[0.24em]
+LeanHandoffContractObject & object & ObjectBase/\allowbreak{}LeanObject/\allowbreak{}ContractObject & Lean-facing handoff/\allowbreak{}input/\allowbreak{}output contract object. It controls access between pillars or phase layers and may have a Lean target module, but it is not itself the mathematical data transported by the handoff. & Interface/\allowbreak{}consumer-rights object;\newline downstream phases may consume only the separately registered LeanSourceObject or LeanTargetObject data named by the contract. & Handoff validators, pillar-boundary phases and later Lean phases subject to access rights.\\
+\hline
+\addlinespace[0.24em]
+LeanGovernanceObject & object & ObjectBase/\allowbreak{}LeanObject/\allowbreak{}GovernanceObject & Lean-facing policy/\allowbreak{}audit object whose natural representation may be a Lean module or proof-carrying record, while the content remains governance rather than mathematical CNNA data. & Checked governance/\allowbreak{}audit boundary if implemented;\newline never a substitute for a derived mathematical object. & Static audits, import/\allowbreak{}consumer discipline, release gates and implementation prompts.\\
+\hline
+\addlinespace[0.24em]
+GovernancePolicyObject & object & ObjectBase/\allowbreak{}GovernanceObject & Policy, ledger, guardrail, release, import or consumer-control object. & Controls work;\newline does not constitute mathematical CNNA data. & Implementation prompts, validators and review checklists.\\
+\hline
+\addlinespace[0.24em]
+ReferenceGateObject & object & ObjectBase/\allowbreak{}ComparisonObject & External theory/\allowbreak{}reference/\allowbreak{}comparison/\allowbreak{}target-gate object. & Comparison-only;\newline never ontic or generative CNNA input. & Scratchpads and later consistency gates after CNNA-derived objects exist.\\
+\hline
+\addlinespace[0.24em]
+ToolInfrastructureObject & object & ObjectBase/\allowbreak{}ToolObject & YAML/\allowbreak{}schema/\allowbreak{}script/\allowbreak{}export/\allowbreak{}tooling object. & Generated-secondary/\allowbreak{}tooling;\newline cannot be mistaken for Lean object. & Documentation tool and future database importer.\\
+\hline
+\addlinespace[0.24em]
+DatabaseMirrorObject & object & ObjectBase/\allowbreak{}ToolObject & Provider-neutral SQL/\allowbreak{}frontend/\allowbreak{}read-only mirror object. & Publication/\allowbreak{}query mirror only;\newline never Lean/\allowbreak{}YAML truth replacement. & Public read-only API/\allowbreak{}frontend/\allowbreak{}review tooling.\\
+\hline
+\addlinespace[0.24em]
+GeneratedArtifactObject & object & ObjectBase/\allowbreak{}ToolObject & PDF/\allowbreak{}TSV/\allowbreak{}DOT/\allowbreak{}README/\allowbreak{}package output or generated rendering contract. & Rendering/\allowbreak{}navigation artifact;\newline semantically reviewable and secondary. & Readers and release packages.\\
+\hline
+\addlinespace[0.24em]
+DocumentationObject & object & ObjectBase/\allowbreak{}DocumentationObject & Documentation/\allowbreak{}review statement or expert-review object. & Interpretive;\newline expert review remains required. & Reviewers and documentation slices.\\
+\hline
+\addlinespace[0.24em]
+LifecycleGovernanceObject & object & GovernancePolicyObject & An object whose content governs object currency, supersession, rename/\allowbreak{}delete history, successor pointers and historical provenance. & planning/\allowbreak{}tooling governance;\newline not Lean truth and not a CNNA generator & Explorer schema, SQL mirror, history timeline, object register/\allowbreak{}proofbook generators and review workflows\\
+\hline
+\addlinespace[0.24em]
+LegacyCodeReferencePhase & Phases & ReferenceGatePhase & Phase that scans or migrates uploaded legacy code as reference/\allowbreak{}migration evidence only. & Secondary code-evidence layer: useful for target gates and regression ideas, but not CNNA truth and not direct Lean-source authority. & Planning, Explorer, future migration phases and expert review;\newline Lean consumers only after a derived-only source map and new CNNA implementation exist.\\
+\hline
+\addlinespace[0.24em]
+LegacyCodeReferenceObject & Objects & ReferenceGateObject & Object/\allowbreak{}ledger recording legacy-code structures, migration dispositions, risks or regression targets. & Reference/\allowbreak{}migration object, never a CNNA-derived theorem/\allowbreak{}object by itself. & Planning, Explorer, migration ledgers and review. CNNA Lean phases may consume only its audited target obligations, not its legacy code as source.\\
+\hline
+\addlinespace[0.24em]
+\end{longtable}
+\arrayrulecolor{black}
+\normalsize

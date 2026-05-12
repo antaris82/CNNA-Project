@@ -1,0 +1,2873 @@
+{
+  "discipline_count": 3,
+  "disciplines": {
+    "prenumeric_toc_substrate_graph": {
+      "name": "prenumeric_toc_substrate_graph",
+      "slug": "prenumeric_toc_substrate_graph",
+      "description": "Pre-numeric substrate, ToC, addressing, finite region/core and graph-facing foundations.",
+      "module_count": 30,
+      "modules": [
+        "CNNA.PillarA.Finite.Approximant",
+        "CNNA.PillarA.Finite.BoundaryPorts",
+        "CNNA.PillarA.Finite.CutSpec",
+        "CNNA.PillarA.Finite.RegionCore",
+        "CNNA.PillarA.Finite.Selection",
+        "CNNA.PillarA.Foundation.BuildAll",
+        "CNNA.PillarA.Foundation.ConcreteSubstrate",
+        "CNNA.PillarA.Foundation.Determinism",
+        "CNNA.PillarA.Foundation.ExecComplex",
+        "CNNA.PillarA.Foundation.ExecComplexBridge",
+        "CNNA.PillarA.Foundation.ExecComplexLemmas",
+        "CNNA.PillarA.Foundation.FiniteHilbert",
+        "CNNA.PillarA.Foundation.HermitianStructure",
+        "CNNA.PillarA.Foundation.Interfaces",
+        "CNNA.PillarA.Foundation.LevelVariableSubstrate",
+        "CNNA.PillarA.Foundation.MatrixAlgebra",
+        "CNNA.PillarA.Foundation.MatrixNorms",
+        "CNNA.PillarA.Foundation.Notation",
+        "CNNA.PillarA.Foundation.RegularizationPolicy",
+        "CNNA.PillarA.Foundation.SubstrateAnalysis",
+        "CNNA.PillarA.Foundation.SubstrateClass",
+        "CNNA.PillarA.Foundation.WeightPolicy",
+        "CNNA.PillarA.ToC.Addressing",
+        "CNNA.PillarA.ToC.BuildAll",
+        "CNNA.PillarA.ToC.Concrete",
+        "CNNA.PillarA.ToC.ConcreteIdeal",
+        "CNNA.PillarA.ToC.Contract",
+        "CNNA.PillarA.ToC.GeneratedBranchFamily",
+        "CNNA.PillarA.ToC.IdealAddressEquiv",
+        "CNNA.PillarA.ToC.Notation"
+      ],
+      "entry_modules": [
+        "CNNA.PillarA.Finite.Selection",
+        "CNNA.PillarA.Foundation.BuildAll",
+        "CNNA.PillarA.ToC.BuildAll"
+      ],
+      "terminal_modules": [
+        "CNNA.PillarA.Foundation.HermitianStructure",
+        "CNNA.PillarA.Foundation.SubstrateClass"
+      ],
+      "internal_edge_count": 73,
+      "internal_edges": [
+        {
+          "source": "CNNA.PillarA.Finite.Approximant",
+          "target": "CNNA.PillarA.Finite.BoundaryPorts"
+        },
+        {
+          "source": "CNNA.PillarA.Finite.BoundaryPorts",
+          "target": "CNNA.PillarA.Finite.RegionCore"
+        },
+        {
+          "source": "CNNA.PillarA.Finite.CutSpec",
+          "target": "CNNA.PillarA.ToC.Notation"
+        },
+        {
+          "source": "CNNA.PillarA.Finite.RegionCore",
+          "target": "CNNA.PillarA.Finite.CutSpec"
+        },
+        {
+          "source": "CNNA.PillarA.Finite.Selection",
+          "target": "CNNA.PillarA.Finite.Approximant"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.BuildAll",
+          "target": "CNNA.PillarA.Foundation.ConcreteSubstrate"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.BuildAll",
+          "target": "CNNA.PillarA.Foundation.Determinism"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.BuildAll",
+          "target": "CNNA.PillarA.Foundation.ExecComplex"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.BuildAll",
+          "target": "CNNA.PillarA.Foundation.ExecComplexBridge"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.BuildAll",
+          "target": "CNNA.PillarA.Foundation.ExecComplexLemmas"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.BuildAll",
+          "target": "CNNA.PillarA.Foundation.FiniteHilbert"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.BuildAll",
+          "target": "CNNA.PillarA.Foundation.HermitianStructure"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.BuildAll",
+          "target": "CNNA.PillarA.Foundation.Interfaces"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.BuildAll",
+          "target": "CNNA.PillarA.Foundation.LevelVariableSubstrate"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.BuildAll",
+          "target": "CNNA.PillarA.Foundation.MatrixAlgebra"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.BuildAll",
+          "target": "CNNA.PillarA.Foundation.MatrixNorms"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.BuildAll",
+          "target": "CNNA.PillarA.Foundation.Notation"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.BuildAll",
+          "target": "CNNA.PillarA.Foundation.RegularizationPolicy"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.BuildAll",
+          "target": "CNNA.PillarA.Foundation.SubstrateAnalysis"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.BuildAll",
+          "target": "CNNA.PillarA.Foundation.SubstrateClass"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.BuildAll",
+          "target": "CNNA.PillarA.Foundation.WeightPolicy"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.ConcreteSubstrate",
+          "target": "CNNA.PillarA.Foundation.Determinism"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.Determinism",
+          "target": "CNNA.PillarA.Foundation.Interfaces"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.ExecComplex",
+          "target": "CNNA.PillarA.Foundation.HermitianStructure"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.ExecComplexBridge",
+          "target": "CNNA.PillarA.Foundation.MatrixAlgebra"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.ExecComplexBridge",
+          "target": "CNNA.PillarA.Foundation.MatrixNorms"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.ExecComplexLemmas",
+          "target": "CNNA.PillarA.Foundation.ExecComplex"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.FiniteHilbert",
+          "target": "CNNA.PillarA.Foundation.HermitianStructure"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.Interfaces",
+          "target": "CNNA.PillarA.Foundation.FiniteHilbert"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.Interfaces",
+          "target": "CNNA.PillarA.Foundation.MatrixAlgebra"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.Interfaces",
+          "target": "CNNA.PillarA.Foundation.MatrixNorms"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.Interfaces",
+          "target": "CNNA.PillarA.Foundation.SubstrateClass"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.LevelVariableSubstrate",
+          "target": "CNNA.PillarA.Foundation.Determinism"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.MatrixAlgebra",
+          "target": "CNNA.PillarA.Foundation.FiniteHilbert"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.MatrixNorms",
+          "target": "CNNA.PillarA.Foundation.ExecComplex"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.Notation",
+          "target": "CNNA.PillarA.Foundation.ConcreteSubstrate"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.Notation",
+          "target": "CNNA.PillarA.Foundation.ExecComplex"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.Notation",
+          "target": "CNNA.PillarA.Foundation.Interfaces"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.Notation",
+          "target": "CNNA.PillarA.Foundation.LevelVariableSubstrate"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.Notation",
+          "target": "CNNA.PillarA.Foundation.MatrixAlgebra"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.Notation",
+          "target": "CNNA.PillarA.Foundation.MatrixNorms"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.Notation",
+          "target": "CNNA.PillarA.Foundation.RegularizationPolicy"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.Notation",
+          "target": "CNNA.PillarA.Foundation.SubstrateAnalysis"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.Notation",
+          "target": "CNNA.PillarA.Foundation.SubstrateClass"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.Notation",
+          "target": "CNNA.PillarA.Foundation.WeightPolicy"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.RegularizationPolicy",
+          "target": "CNNA.PillarA.Foundation.Determinism"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.RegularizationPolicy",
+          "target": "CNNA.PillarA.Foundation.MatrixNorms"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.SubstrateAnalysis",
+          "target": "CNNA.PillarA.Foundation.ConcreteSubstrate"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.SubstrateAnalysis",
+          "target": "CNNA.PillarA.Foundation.LevelVariableSubstrate"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.WeightPolicy",
+          "target": "CNNA.PillarA.Foundation.Determinism"
+        },
+        {
+          "source": "CNNA.PillarA.ToC.Addressing",
+          "target": "CNNA.PillarA.Foundation.Notation"
+        },
+        {
+          "source": "CNNA.PillarA.ToC.Addressing",
+          "target": "CNNA.PillarA.ToC.Contract"
+        },
+        {
+          "source": "CNNA.PillarA.ToC.BuildAll",
+          "target": "CNNA.PillarA.ToC.Addressing"
+        },
+        {
+          "source": "CNNA.PillarA.ToC.BuildAll",
+          "target": "CNNA.PillarA.ToC.Concrete"
+        },
+        {
+          "source": "CNNA.PillarA.ToC.BuildAll",
+          "target": "CNNA.PillarA.ToC.ConcreteIdeal"
+        },
+        {
+          "source": "CNNA.PillarA.ToC.BuildAll",
+          "target": "CNNA.PillarA.ToC.Contract"
+        },
+        {
+          "source": "CNNA.PillarA.ToC.BuildAll",
+          "target": "CNNA.PillarA.ToC.GeneratedBranchFamily"
+        },
+        {
+          "source": "CNNA.PillarA.ToC.BuildAll",
+          "target": "CNNA.PillarA.ToC.IdealAddressEquiv"
+        },
+        {
+          "source": "CNNA.PillarA.ToC.BuildAll",
+          "target": "CNNA.PillarA.ToC.Notation"
+        },
+        {
+          "source": "CNNA.PillarA.ToC.Concrete",
+          "target": "CNNA.PillarA.Foundation.Determinism"
+        },
+        {
+          "source": "CNNA.PillarA.ToC.Concrete",
+          "target": "CNNA.PillarA.Foundation.LevelVariableSubstrate"
+        },
+        {
+          "source": "CNNA.PillarA.ToC.Concrete",
+          "target": "CNNA.PillarA.ToC.ConcreteIdeal"
+        },
+        {
+          "source": "CNNA.PillarA.ToC.Concrete",
+          "target": "CNNA.PillarA.ToC.IdealAddressEquiv"
+        },
+        {
+          "source": "CNNA.PillarA.ToC.ConcreteIdeal",
+          "target": "CNNA.PillarA.Foundation.ConcreteSubstrate"
+        },
+        {
+          "source": "CNNA.PillarA.ToC.ConcreteIdeal",
+          "target": "CNNA.PillarA.ToC.IdealAddressEquiv"
+        },
+        {
+          "source": "CNNA.PillarA.ToC.Contract",
+          "target": "CNNA.PillarA.Foundation.Determinism"
+        },
+        {
+          "source": "CNNA.PillarA.ToC.Contract",
+          "target": "CNNA.PillarA.Foundation.Notation"
+        },
+        {
+          "source": "CNNA.PillarA.ToC.GeneratedBranchFamily",
+          "target": "CNNA.PillarA.Foundation.ConcreteSubstrate"
+        },
+        {
+          "source": "CNNA.PillarA.ToC.GeneratedBranchFamily",
+          "target": "CNNA.PillarA.Foundation.LevelVariableSubstrate"
+        },
+        {
+          "source": "CNNA.PillarA.ToC.GeneratedBranchFamily",
+          "target": "CNNA.PillarA.ToC.Concrete"
+        },
+        {
+          "source": "CNNA.PillarA.ToC.IdealAddressEquiv",
+          "target": "CNNA.PillarA.ToC.Addressing"
+        },
+        {
+          "source": "CNNA.PillarA.ToC.Notation",
+          "target": "CNNA.PillarA.ToC.Concrete"
+        },
+        {
+          "source": "CNNA.PillarA.ToC.Notation",
+          "target": "CNNA.PillarA.ToC.ConcreteIdeal"
+        }
+      ],
+      "outgoing_bridge_count": 0,
+      "incoming_bridge_count": 29,
+      "outgoing_bridges": [],
+      "incoming_bridges": [
+        {
+          "source": "CNNA.PillarA.Arithmetic.BoundarySource.LevelHistoryMatrix",
+          "target": "CNNA.PillarA.Foundation.ExecComplex",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Arithmetic"
+        },
+        {
+          "source": "CNNA.PillarA.Arithmetic.Core.Source",
+          "target": "CNNA.PillarA.ToC.BuildAll",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "source_group": "PillarA/Arithmetic"
+        },
+        {
+          "source": "CNNA.PillarA.Arithmetic.Schur.CharpolyC",
+          "target": "CNNA.PillarA.Foundation.ExecComplexBridge",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Arithmetic"
+        },
+        {
+          "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedArithmeticSourceExecBoundaryOperatorSM5q",
+          "target": "CNNA.PillarA.Foundation.ExecComplexBridge",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Arithmetic"
+        },
+        {
+          "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedDirichletEntry",
+          "target": "CNNA.PillarA.Foundation.WeightPolicy",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "source_group": "PillarA/Arithmetic"
+        },
+        {
+          "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedDirichletExecEntrySourceSM3bq",
+          "target": "CNNA.PillarA.Foundation.ExecComplexBridge",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Arithmetic"
+        },
+        {
+          "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryExecMirrorSourceSM9a",
+          "target": "CNNA.PillarA.Foundation.ExecComplexBridge",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Arithmetic"
+        },
+        {
+          "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelStepExecMirrorSourceSM6b",
+          "target": "CNNA.PillarA.Foundation.ExecComplexBridge",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Arithmetic"
+        },
+        {
+          "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedMultiSchurExecBoundaryOperatorSM4q",
+          "target": "CNNA.PillarA.Foundation.ExecComplexBridge",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Arithmetic"
+        },
+        {
+          "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedSource",
+          "target": "CNNA.PillarA.ToC.GeneratedBranchFamily",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "source_group": "PillarA/Arithmetic"
+        },
+        {
+          "source": "CNNA.PillarA.BuildAll",
+          "target": "CNNA.PillarA.Foundation.BuildAll",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "source_group": "PillarA"
+        },
+        {
+          "source": "CNNA.PillarA.BuildAll",
+          "target": "CNNA.PillarA.ToC.BuildAll",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "source_group": "PillarA"
+        },
+        {
+          "source": "CNNA.PillarA.DtN.DtNStabilized",
+          "target": "CNNA.PillarA.Foundation.MatrixNorms",
+          "source_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/DtN"
+        },
+        {
+          "source": "CNNA.PillarA.DtN.DtNStabilized",
+          "target": "CNNA.PillarA.Foundation.RegularizationPolicy",
+          "source_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "source_group": "PillarA/DtN"
+        },
+        {
+          "source": "CNNA.PillarA.Finite.BuildAll",
+          "target": "CNNA.PillarA.Finite.Approximant",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "source_group": "PillarA/Finite"
+        },
+        {
+          "source": "CNNA.PillarA.Finite.BuildAll",
+          "target": "CNNA.PillarA.Finite.BoundaryPorts",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "source_group": "PillarA/Finite"
+        },
+        {
+          "source": "CNNA.PillarA.Finite.BuildAll",
+          "target": "CNNA.PillarA.Finite.CutSpec",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "source_group": "PillarA/Finite"
+        },
+        {
+          "source": "CNNA.PillarA.Finite.BuildAll",
+          "target": "CNNA.PillarA.Finite.RegionCore",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "source_group": "PillarA/Finite"
+        },
+        {
+          "source": "CNNA.PillarA.Finite.BuildAll",
+          "target": "CNNA.PillarA.Finite.Selection",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "source_group": "PillarA/Finite"
+        },
+        {
+          "source": "CNNA.PillarA.Finite.DirichletLaplacian",
+          "target": "CNNA.PillarA.Finite.Approximant",
+          "source_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "source_group": "PillarA/Finite"
+        },
+        {
+          "source": "CNNA.PillarA.Finite.DirichletLaplacian",
+          "target": "CNNA.PillarA.Foundation.MatrixNorms",
+          "source_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Finite"
+        },
+        {
+          "source": "CNNA.PillarA.Finite.DirichletLaplacian",
+          "target": "CNNA.PillarA.Foundation.WeightPolicy",
+          "source_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "source_group": "PillarA/Finite"
+        },
+        {
+          "source": "CNNA.PillarA.Finite.Notation",
+          "target": "CNNA.PillarA.Finite.Selection",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "source_group": "PillarA/Finite"
+        },
+        {
+          "source": "CNNA.PillarA.Finite.SpectralDecompositionC",
+          "target": "CNNA.PillarA.Foundation.ExecComplexBridge",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Finite"
+        },
+        {
+          "source": "CNNA.PillarA.Geometry.LCPMeasure",
+          "target": "CNNA.PillarA.ToC.Addressing",
+          "source_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "source_group": "PillarA/Geometry"
+        },
+        {
+          "source": "CNNA.PillarA.Notation",
+          "target": "CNNA.PillarA.Foundation.Notation",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "source_group": "PillarA"
+        },
+        {
+          "source": "CNNA.PillarA.Notation",
+          "target": "CNNA.PillarA.ToC.Notation",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "source_group": "PillarA"
+        },
+        {
+          "source": "CNNA.PillarA.Structural.CayleyDickson.S6CanonicalScalarPart",
+          "target": "CNNA.PillarA.Foundation.MatrixNorms",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Structural"
+        },
+        {
+          "source": "CNNA.PillarA.Structural.CayleyDickson.S6CayleyDicksonIdentification",
+          "target": "CNNA.PillarA.Foundation.MatrixNorms",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Structural"
+        }
+      ],
+      "dependency_order": [
+        "CNNA.PillarA.Foundation.HermitianStructure",
+        "CNNA.PillarA.Foundation.SubstrateClass",
+        "CNNA.PillarA.Foundation.ExecComplex",
+        "CNNA.PillarA.Foundation.FiniteHilbert",
+        "CNNA.PillarA.Foundation.ExecComplexLemmas",
+        "CNNA.PillarA.Foundation.MatrixNorms",
+        "CNNA.PillarA.Foundation.MatrixAlgebra",
+        "CNNA.PillarA.Foundation.ExecComplexBridge",
+        "CNNA.PillarA.Foundation.Interfaces",
+        "CNNA.PillarA.Foundation.Determinism",
+        "CNNA.PillarA.Foundation.ConcreteSubstrate",
+        "CNNA.PillarA.Foundation.LevelVariableSubstrate",
+        "CNNA.PillarA.Foundation.RegularizationPolicy",
+        "CNNA.PillarA.Foundation.WeightPolicy",
+        "CNNA.PillarA.Foundation.SubstrateAnalysis",
+        "CNNA.PillarA.Foundation.Notation",
+        "CNNA.PillarA.Foundation.BuildAll",
+        "CNNA.PillarA.ToC.Contract",
+        "CNNA.PillarA.ToC.Addressing",
+        "CNNA.PillarA.ToC.IdealAddressEquiv",
+        "CNNA.PillarA.ToC.ConcreteIdeal",
+        "CNNA.PillarA.ToC.Concrete",
+        "CNNA.PillarA.ToC.GeneratedBranchFamily",
+        "CNNA.PillarA.ToC.Notation",
+        "CNNA.PillarA.Finite.CutSpec",
+        "CNNA.PillarA.ToC.BuildAll",
+        "CNNA.PillarA.Finite.RegionCore",
+        "CNNA.PillarA.Finite.BoundaryPorts",
+        "CNNA.PillarA.Finite.Approximant",
+        "CNNA.PillarA.Finite.Selection"
+      ],
+      "acyclic": true,
+      "cycles": [],
+      "spec": {
+        "name": "prenumeric_toc_substrate_graph",
+        "description": "Pre-numeric substrate, ToC, addressing, finite region/core and graph-facing foundations.",
+        "include_modules": [],
+        "include_prefixes": [
+          "CNNA.PillarA.Foundation",
+          "CNNA.PillarA.ToC",
+          "CNNA.PillarA.Finite.CutSpec",
+          "CNNA.PillarA.Finite.RegionCore",
+          "CNNA.PillarA.Finite.BoundaryPorts",
+          "CNNA.PillarA.Finite.Selection",
+          "CNNA.PillarA.Finite.Approximant"
+        ],
+        "include_regexes": [],
+        "exclude_modules": [],
+        "exclude_prefixes": [],
+        "exclude_regexes": []
+      }
+    },
+    "dirichlet_dtn_schur_network": {
+      "name": "dirichlet_dtn_schur_network",
+      "slug": "dirichlet_dtn_schur_network",
+      "description": "Dirichlet, DtN, closure regularization, Schur coupling and network-facing transport.",
+      "module_count": 29,
+      "modules": [
+        "CNNA.PillarA.Closure.BuildAll",
+        "CNNA.PillarA.Closure.Notation",
+        "CNNA.PillarA.Closure.ParameterClosure",
+        "CNNA.PillarA.Closure.RegularizationClosure",
+        "CNNA.PillarA.Coupling.BuildAll",
+        "CNNA.PillarA.Coupling.GeneralizedDtN",
+        "CNNA.PillarA.Coupling.MultiSchur",
+        "CNNA.PillarA.Coupling.Notation",
+        "CNNA.PillarA.DtN.BuildAll",
+        "CNNA.PillarA.DtN.DtN",
+        "CNNA.PillarA.DtN.DtNStabilized",
+        "CNNA.PillarA.DtN.Notation",
+        "CNNA.PillarA.Finite.DirichletLaplacian",
+        "CNNA.PillarA.Network.BuildAll",
+        "CNNA.PillarA.Network.InfiniteCarrier",
+        "CNNA.PillarA.Network.Notation",
+        "CNNA.PillarA.Network.RegionNet",
+        "CNNA.PillarA.Network.RelativeEntropyFlow",
+        "CNNA.PillarA.Network.SectorChannels",
+        "CNNA.PillarA.Network.SectorSysEnv",
+        "CNNA.PillarA.Sectors.BranchPatch",
+        "CNNA.PillarA.Sectors.BranchingSelector",
+        "CNNA.PillarA.Sectors.BranchingWitness",
+        "CNNA.PillarA.Sectors.BuildAll",
+        "CNNA.PillarA.Sectors.ComplementSectorFamily",
+        "CNNA.PillarA.Sectors.Notation",
+        "CNNA.PillarA.Sectors.SectorSplit",
+        "CNNA.PillarA.Sectors.SelectedBranching",
+        "CNNA.PillarA.Sectors.UVSpectralSelector"
+      ],
+      "entry_modules": [
+        "CNNA.PillarA.Closure.BuildAll",
+        "CNNA.PillarA.Coupling.BuildAll",
+        "CNNA.PillarA.DtN.BuildAll",
+        "CNNA.PillarA.Network.BuildAll",
+        "CNNA.PillarA.Sectors.BuildAll"
+      ],
+      "terminal_modules": [
+        "CNNA.PillarA.Finite.DirichletLaplacian"
+      ],
+      "internal_edge_count": 51,
+      "internal_edges": [
+        {
+          "source": "CNNA.PillarA.Closure.BuildAll",
+          "target": "CNNA.PillarA.Closure.Notation"
+        },
+        {
+          "source": "CNNA.PillarA.Closure.BuildAll",
+          "target": "CNNA.PillarA.Closure.ParameterClosure"
+        },
+        {
+          "source": "CNNA.PillarA.Closure.BuildAll",
+          "target": "CNNA.PillarA.Closure.RegularizationClosure"
+        },
+        {
+          "source": "CNNA.PillarA.Closure.Notation",
+          "target": "CNNA.PillarA.Closure.RegularizationClosure"
+        },
+        {
+          "source": "CNNA.PillarA.Closure.ParameterClosure",
+          "target": "CNNA.PillarA.DtN.DtNStabilized"
+        },
+        {
+          "source": "CNNA.PillarA.Closure.ParameterClosure",
+          "target": "CNNA.PillarA.Sectors.BranchingSelector"
+        },
+        {
+          "source": "CNNA.PillarA.Closure.RegularizationClosure",
+          "target": "CNNA.PillarA.Closure.ParameterClosure"
+        },
+        {
+          "source": "CNNA.PillarA.Coupling.BuildAll",
+          "target": "CNNA.PillarA.Coupling.GeneralizedDtN"
+        },
+        {
+          "source": "CNNA.PillarA.Coupling.BuildAll",
+          "target": "CNNA.PillarA.Coupling.MultiSchur"
+        },
+        {
+          "source": "CNNA.PillarA.Coupling.BuildAll",
+          "target": "CNNA.PillarA.Coupling.Notation"
+        },
+        {
+          "source": "CNNA.PillarA.Coupling.GeneralizedDtN",
+          "target": "CNNA.PillarA.DtN.DtN"
+        },
+        {
+          "source": "CNNA.PillarA.Coupling.GeneralizedDtN",
+          "target": "CNNA.PillarA.Sectors.SectorSplit"
+        },
+        {
+          "source": "CNNA.PillarA.Coupling.MultiSchur",
+          "target": "CNNA.PillarA.Coupling.GeneralizedDtN"
+        },
+        {
+          "source": "CNNA.PillarA.Coupling.Notation",
+          "target": "CNNA.PillarA.Coupling.MultiSchur"
+        },
+        {
+          "source": "CNNA.PillarA.DtN.BuildAll",
+          "target": "CNNA.PillarA.DtN.DtN"
+        },
+        {
+          "source": "CNNA.PillarA.DtN.BuildAll",
+          "target": "CNNA.PillarA.DtN.DtNStabilized"
+        },
+        {
+          "source": "CNNA.PillarA.DtN.BuildAll",
+          "target": "CNNA.PillarA.DtN.Notation"
+        },
+        {
+          "source": "CNNA.PillarA.DtN.DtN",
+          "target": "CNNA.PillarA.Finite.DirichletLaplacian"
+        },
+        {
+          "source": "CNNA.PillarA.DtN.DtNStabilized",
+          "target": "CNNA.PillarA.DtN.DtN"
+        },
+        {
+          "source": "CNNA.PillarA.DtN.Notation",
+          "target": "CNNA.PillarA.DtN.DtNStabilized"
+        },
+        {
+          "source": "CNNA.PillarA.Network.BuildAll",
+          "target": "CNNA.PillarA.Network.InfiniteCarrier"
+        },
+        {
+          "source": "CNNA.PillarA.Network.BuildAll",
+          "target": "CNNA.PillarA.Network.Notation"
+        },
+        {
+          "source": "CNNA.PillarA.Network.BuildAll",
+          "target": "CNNA.PillarA.Network.RegionNet"
+        },
+        {
+          "source": "CNNA.PillarA.Network.BuildAll",
+          "target": "CNNA.PillarA.Network.RelativeEntropyFlow"
+        },
+        {
+          "source": "CNNA.PillarA.Network.BuildAll",
+          "target": "CNNA.PillarA.Network.SectorChannels"
+        },
+        {
+          "source": "CNNA.PillarA.Network.BuildAll",
+          "target": "CNNA.PillarA.Network.SectorSysEnv"
+        },
+        {
+          "source": "CNNA.PillarA.Network.InfiniteCarrier",
+          "target": "CNNA.PillarA.Network.RegionNet"
+        },
+        {
+          "source": "CNNA.PillarA.Network.Notation",
+          "target": "CNNA.PillarA.Network.InfiniteCarrier"
+        },
+        {
+          "source": "CNNA.PillarA.Network.Notation",
+          "target": "CNNA.PillarA.Network.RegionNet"
+        },
+        {
+          "source": "CNNA.PillarA.Network.Notation",
+          "target": "CNNA.PillarA.Network.RelativeEntropyFlow"
+        },
+        {
+          "source": "CNNA.PillarA.Network.Notation",
+          "target": "CNNA.PillarA.Network.SectorChannels"
+        },
+        {
+          "source": "CNNA.PillarA.Network.RegionNet",
+          "target": "CNNA.PillarA.Sectors.SectorSplit"
+        },
+        {
+          "source": "CNNA.PillarA.Network.RelativeEntropyFlow",
+          "target": "CNNA.PillarA.Network.SectorSysEnv"
+        },
+        {
+          "source": "CNNA.PillarA.Network.SectorChannels",
+          "target": "CNNA.PillarA.Coupling.GeneralizedDtN"
+        },
+        {
+          "source": "CNNA.PillarA.Network.SectorSysEnv",
+          "target": "CNNA.PillarA.Network.SectorChannels"
+        },
+        {
+          "source": "CNNA.PillarA.Sectors.BranchPatch",
+          "target": "CNNA.PillarA.DtN.DtNStabilized"
+        },
+        {
+          "source": "CNNA.PillarA.Sectors.BranchingSelector",
+          "target": "CNNA.PillarA.Sectors.UVSpectralSelector"
+        },
+        {
+          "source": "CNNA.PillarA.Sectors.BranchingWitness",
+          "target": "CNNA.PillarA.Sectors.SectorSplit"
+        },
+        {
+          "source": "CNNA.PillarA.Sectors.BuildAll",
+          "target": "CNNA.PillarA.Sectors.BranchPatch"
+        },
+        {
+          "source": "CNNA.PillarA.Sectors.BuildAll",
+          "target": "CNNA.PillarA.Sectors.BranchingSelector"
+        },
+        {
+          "source": "CNNA.PillarA.Sectors.BuildAll",
+          "target": "CNNA.PillarA.Sectors.BranchingWitness"
+        },
+        {
+          "source": "CNNA.PillarA.Sectors.BuildAll",
+          "target": "CNNA.PillarA.Sectors.ComplementSectorFamily"
+        },
+        {
+          "source": "CNNA.PillarA.Sectors.BuildAll",
+          "target": "CNNA.PillarA.Sectors.Notation"
+        },
+        {
+          "source": "CNNA.PillarA.Sectors.BuildAll",
+          "target": "CNNA.PillarA.Sectors.SectorSplit"
+        },
+        {
+          "source": "CNNA.PillarA.Sectors.BuildAll",
+          "target": "CNNA.PillarA.Sectors.SelectedBranching"
+        },
+        {
+          "source": "CNNA.PillarA.Sectors.BuildAll",
+          "target": "CNNA.PillarA.Sectors.UVSpectralSelector"
+        },
+        {
+          "source": "CNNA.PillarA.Sectors.ComplementSectorFamily",
+          "target": "CNNA.PillarA.Sectors.BranchPatch"
+        },
+        {
+          "source": "CNNA.PillarA.Sectors.Notation",
+          "target": "CNNA.PillarA.Sectors.BranchingSelector"
+        },
+        {
+          "source": "CNNA.PillarA.Sectors.SectorSplit",
+          "target": "CNNA.PillarA.Sectors.ComplementSectorFamily"
+        },
+        {
+          "source": "CNNA.PillarA.Sectors.SelectedBranching",
+          "target": "CNNA.PillarA.Sectors.BranchingWitness"
+        },
+        {
+          "source": "CNNA.PillarA.Sectors.UVSpectralSelector",
+          "target": "CNNA.PillarA.Sectors.SelectedBranching"
+        }
+      ],
+      "outgoing_bridge_count": 5,
+      "incoming_bridge_count": 24,
+      "outgoing_bridges": [
+        {
+          "source": "CNNA.PillarA.DtN.DtNStabilized",
+          "target": "CNNA.PillarA.Foundation.MatrixNorms",
+          "source_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "target_group": "PillarA/Foundation"
+        },
+        {
+          "source": "CNNA.PillarA.DtN.DtNStabilized",
+          "target": "CNNA.PillarA.Foundation.RegularizationPolicy",
+          "source_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "target_group": "PillarA/Foundation"
+        },
+        {
+          "source": "CNNA.PillarA.Finite.DirichletLaplacian",
+          "target": "CNNA.PillarA.Finite.Approximant",
+          "source_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "target_group": "PillarA/Finite"
+        },
+        {
+          "source": "CNNA.PillarA.Finite.DirichletLaplacian",
+          "target": "CNNA.PillarA.Foundation.MatrixNorms",
+          "source_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "target_group": "PillarA/Foundation"
+        },
+        {
+          "source": "CNNA.PillarA.Finite.DirichletLaplacian",
+          "target": "CNNA.PillarA.Foundation.WeightPolicy",
+          "source_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "target_group": "PillarA/Foundation"
+        }
+      ],
+      "incoming_bridges": [
+        {
+          "source": "CNNA.PillarA.Arithmetic.Core.Source",
+          "target": "CNNA.PillarA.Coupling.MultiSchur",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "source_group": "PillarA/Arithmetic"
+        },
+        {
+          "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTwoSidedInv",
+          "target": "CNNA.PillarA.DtN.DtN",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "source_group": "PillarA/Arithmetic"
+        },
+        {
+          "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTwoSidedInvFromSM3db7R",
+          "target": "CNNA.PillarA.DtN.DtN",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "source_group": "PillarA/Arithmetic"
+        },
+        {
+          "source": "CNNA.PillarA.BuildAll",
+          "target": "CNNA.PillarA.Closure.BuildAll",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "source_group": "PillarA"
+        },
+        {
+          "source": "CNNA.PillarA.BuildAll",
+          "target": "CNNA.PillarA.Coupling.BuildAll",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "source_group": "PillarA"
+        },
+        {
+          "source": "CNNA.PillarA.BuildAll",
+          "target": "CNNA.PillarA.DtN.BuildAll",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "source_group": "PillarA"
+        },
+        {
+          "source": "CNNA.PillarA.BuildAll",
+          "target": "CNNA.PillarA.Network.BuildAll",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "source_group": "PillarA"
+        },
+        {
+          "source": "CNNA.PillarA.BuildAll",
+          "target": "CNNA.PillarA.Sectors.BuildAll",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "source_group": "PillarA"
+        },
+        {
+          "source": "CNNA.PillarA.Finite.BuildAll",
+          "target": "CNNA.PillarA.Finite.DirichletLaplacian",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "source_group": "PillarA/Finite"
+        },
+        {
+          "source": "CNNA.PillarA.Finite.Notation",
+          "target": "CNNA.PillarA.Finite.DirichletLaplacian",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "source_group": "PillarA/Finite"
+        },
+        {
+          "source": "CNNA.PillarA.Finite.SpectralDecompositionCore",
+          "target": "CNNA.PillarA.Finite.DirichletLaplacian",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "source_group": "PillarA/Finite"
+        },
+        {
+          "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+          "target": "CNNA.PillarA.Closure.Notation",
+          "source_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "source_group": "PillarA/Handoff"
+        },
+        {
+          "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+          "target": "CNNA.PillarA.Closure.RegularizationClosure",
+          "source_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "source_group": "PillarA/Handoff"
+        },
+        {
+          "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+          "target": "CNNA.PillarA.Coupling.MultiSchur",
+          "source_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "source_group": "PillarA/Handoff"
+        },
+        {
+          "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+          "target": "CNNA.PillarA.DtN.Notation",
+          "source_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "source_group": "PillarA/Handoff"
+        },
+        {
+          "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+          "target": "CNNA.PillarA.Network.InfiniteCarrier",
+          "source_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "source_group": "PillarA/Handoff"
+        },
+        {
+          "source": "CNNA.PillarA.Notation",
+          "target": "CNNA.PillarA.Closure.Notation",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "source_group": "PillarA"
+        },
+        {
+          "source": "CNNA.PillarA.Notation",
+          "target": "CNNA.PillarA.Coupling.Notation",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "source_group": "PillarA"
+        },
+        {
+          "source": "CNNA.PillarA.Notation",
+          "target": "CNNA.PillarA.DtN.Notation",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "source_group": "PillarA"
+        },
+        {
+          "source": "CNNA.PillarA.Notation",
+          "target": "CNNA.PillarA.Network.Notation",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "source_group": "PillarA"
+        },
+        {
+          "source": "CNNA.PillarA.Notation",
+          "target": "CNNA.PillarA.Sectors.Notation",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "source_group": "PillarA"
+        },
+        {
+          "source": "CNNA.PillarA.Structural.CayleyDickson.Source",
+          "target": "CNNA.PillarA.Closure.RegularizationClosure",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "source_group": "PillarA/Structural"
+        },
+        {
+          "source": "CNNA.PillarA.Structural.CayleyDickson.Source",
+          "target": "CNNA.PillarA.Coupling.MultiSchur",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "source_group": "PillarA/Structural"
+        },
+        {
+          "source": "CNNA.PillarA.Structural.CayleyDickson.Source",
+          "target": "CNNA.PillarA.Network.InfiniteCarrier",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "source_group": "PillarA/Structural"
+        }
+      ],
+      "dependency_order": [
+        "CNNA.PillarA.Finite.DirichletLaplacian",
+        "CNNA.PillarA.DtN.DtN",
+        "CNNA.PillarA.DtN.DtNStabilized",
+        "CNNA.PillarA.DtN.Notation",
+        "CNNA.PillarA.Sectors.BranchPatch",
+        "CNNA.PillarA.DtN.BuildAll",
+        "CNNA.PillarA.Sectors.ComplementSectorFamily",
+        "CNNA.PillarA.Sectors.SectorSplit",
+        "CNNA.PillarA.Coupling.GeneralizedDtN",
+        "CNNA.PillarA.Network.RegionNet",
+        "CNNA.PillarA.Sectors.BranchingWitness",
+        "CNNA.PillarA.Coupling.MultiSchur",
+        "CNNA.PillarA.Network.SectorChannels",
+        "CNNA.PillarA.Network.InfiniteCarrier",
+        "CNNA.PillarA.Sectors.SelectedBranching",
+        "CNNA.PillarA.Coupling.Notation",
+        "CNNA.PillarA.Network.SectorSysEnv",
+        "CNNA.PillarA.Sectors.UVSpectralSelector",
+        "CNNA.PillarA.Coupling.BuildAll",
+        "CNNA.PillarA.Network.RelativeEntropyFlow",
+        "CNNA.PillarA.Sectors.BranchingSelector",
+        "CNNA.PillarA.Network.Notation",
+        "CNNA.PillarA.Closure.ParameterClosure",
+        "CNNA.PillarA.Sectors.Notation",
+        "CNNA.PillarA.Network.BuildAll",
+        "CNNA.PillarA.Closure.RegularizationClosure",
+        "CNNA.PillarA.Sectors.BuildAll",
+        "CNNA.PillarA.Closure.Notation",
+        "CNNA.PillarA.Closure.BuildAll"
+      ],
+      "acyclic": true,
+      "cycles": [],
+      "spec": {
+        "name": "dirichlet_dtn_schur_network",
+        "description": "Dirichlet, DtN, closure regularization, Schur coupling and network-facing transport.",
+        "include_modules": [],
+        "include_prefixes": [
+          "CNNA.PillarA.Finite.DirichletLaplacian",
+          "CNNA.PillarA.DtN",
+          "CNNA.PillarA.Closure",
+          "CNNA.PillarA.Coupling",
+          "CNNA.PillarA.Network",
+          "CNNA.PillarA.Sectors"
+        ],
+        "include_regexes": [],
+        "exclude_modules": [],
+        "exclude_prefixes": [],
+        "exclude_regexes": []
+      }
+    },
+    "topology_algebra_cd_completion": {
+      "name": "topology_algebra_cd_completion",
+      "slug": "topology_algebra_cd_completion",
+      "description": "Algebraic, geometric and Cayley-Dickson-completion-facing layer, including Handoff closure material.",
+      "module_count": 16,
+      "modules": [
+        "CNNA.PillarA.Foundation.ExecComplex",
+        "CNNA.PillarA.Foundation.ExecComplexBridge",
+        "CNNA.PillarA.Foundation.ExecComplexLemmas",
+        "CNNA.PillarA.Foundation.FiniteHilbert",
+        "CNNA.PillarA.Foundation.HermitianStructure",
+        "CNNA.PillarA.Foundation.MatrixAlgebra",
+        "CNNA.PillarA.Foundation.MatrixNorms",
+        "CNNA.PillarA.Geometry.BuildAll",
+        "CNNA.PillarA.Geometry.Foliation",
+        "CNNA.PillarA.Geometry.LCPMeasure",
+        "CNNA.PillarA.Geometry.Notation",
+        "CNNA.PillarA.Geometry.SpacetimePaths",
+        "CNNA.PillarA.Handoff.Core.SectorExport",
+        "CNNA.PillarA.Handoff.Core.Step1MathData",
+        "CNNA.PillarA.Handoff.Core.Step1StrongCore",
+        "CNNA.PillarA.Handoff.Outputs.A_to_B"
+      ],
+      "entry_modules": [
+        "CNNA.PillarA.Foundation.ExecComplexBridge",
+        "CNNA.PillarA.Foundation.ExecComplexLemmas",
+        "CNNA.PillarA.Geometry.BuildAll",
+        "CNNA.PillarA.Handoff.Outputs.A_to_B"
+      ],
+      "terminal_modules": [
+        "CNNA.PillarA.Foundation.HermitianStructure",
+        "CNNA.PillarA.Geometry.LCPMeasure",
+        "CNNA.PillarA.Handoff.Core.SectorExport"
+      ],
+      "internal_edge_count": 17,
+      "internal_edges": [
+        {
+          "source": "CNNA.PillarA.Foundation.ExecComplex",
+          "target": "CNNA.PillarA.Foundation.HermitianStructure"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.ExecComplexBridge",
+          "target": "CNNA.PillarA.Foundation.MatrixAlgebra"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.ExecComplexBridge",
+          "target": "CNNA.PillarA.Foundation.MatrixNorms"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.ExecComplexLemmas",
+          "target": "CNNA.PillarA.Foundation.ExecComplex"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.FiniteHilbert",
+          "target": "CNNA.PillarA.Foundation.HermitianStructure"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.MatrixAlgebra",
+          "target": "CNNA.PillarA.Foundation.FiniteHilbert"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.MatrixNorms",
+          "target": "CNNA.PillarA.Foundation.ExecComplex"
+        },
+        {
+          "source": "CNNA.PillarA.Geometry.BuildAll",
+          "target": "CNNA.PillarA.Geometry.Foliation"
+        },
+        {
+          "source": "CNNA.PillarA.Geometry.BuildAll",
+          "target": "CNNA.PillarA.Geometry.LCPMeasure"
+        },
+        {
+          "source": "CNNA.PillarA.Geometry.BuildAll",
+          "target": "CNNA.PillarA.Geometry.Notation"
+        },
+        {
+          "source": "CNNA.PillarA.Geometry.BuildAll",
+          "target": "CNNA.PillarA.Geometry.SpacetimePaths"
+        },
+        {
+          "source": "CNNA.PillarA.Geometry.Foliation",
+          "target": "CNNA.PillarA.Geometry.LCPMeasure"
+        },
+        {
+          "source": "CNNA.PillarA.Geometry.Notation",
+          "target": "CNNA.PillarA.Geometry.SpacetimePaths"
+        },
+        {
+          "source": "CNNA.PillarA.Geometry.SpacetimePaths",
+          "target": "CNNA.PillarA.Geometry.Foliation"
+        },
+        {
+          "source": "CNNA.PillarA.Handoff.Core.Step1MathData",
+          "target": "CNNA.PillarA.Handoff.Core.Step1StrongCore"
+        },
+        {
+          "source": "CNNA.PillarA.Handoff.Core.Step1StrongCore",
+          "target": "CNNA.PillarA.Handoff.Core.SectorExport"
+        },
+        {
+          "source": "CNNA.PillarA.Handoff.Outputs.A_to_B",
+          "target": "CNNA.PillarA.Handoff.Core.Step1MathData"
+        }
+      ],
+      "outgoing_bridge_count": 6,
+      "incoming_bridge_count": 36,
+      "outgoing_bridges": [
+        {
+          "source": "CNNA.PillarA.Geometry.LCPMeasure",
+          "target": "CNNA.PillarA.ToC.Addressing",
+          "source_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "target_group": "PillarA/ToC"
+        },
+        {
+          "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+          "target": "CNNA.PillarA.Closure.Notation",
+          "source_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_group": "PillarA/Closure"
+        },
+        {
+          "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+          "target": "CNNA.PillarA.Closure.RegularizationClosure",
+          "source_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_group": "PillarA/Closure"
+        },
+        {
+          "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+          "target": "CNNA.PillarA.Coupling.MultiSchur",
+          "source_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_group": "PillarA/Coupling"
+        },
+        {
+          "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+          "target": "CNNA.PillarA.DtN.Notation",
+          "source_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_group": "PillarA/DtN"
+        },
+        {
+          "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+          "target": "CNNA.PillarA.Network.InfiniteCarrier",
+          "source_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_group": "PillarA/Network"
+        }
+      ],
+      "incoming_bridges": [
+        {
+          "source": "CNNA.PillarA.Arithmetic.BoundarySource.LevelHistoryMatrix",
+          "target": "CNNA.PillarA.Foundation.ExecComplex",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Arithmetic"
+        },
+        {
+          "source": "CNNA.PillarA.Arithmetic.Schur.CharpolyC",
+          "target": "CNNA.PillarA.Foundation.ExecComplexBridge",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Arithmetic"
+        },
+        {
+          "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedArithmeticSourceExecBoundaryOperatorSM5q",
+          "target": "CNNA.PillarA.Foundation.ExecComplexBridge",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Arithmetic"
+        },
+        {
+          "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedDirichletExecEntrySourceSM3bq",
+          "target": "CNNA.PillarA.Foundation.ExecComplexBridge",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Arithmetic"
+        },
+        {
+          "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryExecMirrorSourceSM9a",
+          "target": "CNNA.PillarA.Foundation.ExecComplexBridge",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Arithmetic"
+        },
+        {
+          "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelStepExecMirrorSourceSM6b",
+          "target": "CNNA.PillarA.Foundation.ExecComplexBridge",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Arithmetic"
+        },
+        {
+          "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedMultiSchurExecBoundaryOperatorSM4q",
+          "target": "CNNA.PillarA.Foundation.ExecComplexBridge",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Arithmetic"
+        },
+        {
+          "source": "CNNA.PillarA.BuildAll",
+          "target": "CNNA.PillarA.Geometry.BuildAll",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA"
+        },
+        {
+          "source": "CNNA.PillarA.DtN.DtNStabilized",
+          "target": "CNNA.PillarA.Foundation.MatrixNorms",
+          "source_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/DtN"
+        },
+        {
+          "source": "CNNA.PillarA.Finite.DirichletLaplacian",
+          "target": "CNNA.PillarA.Foundation.MatrixNorms",
+          "source_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Finite"
+        },
+        {
+          "source": "CNNA.PillarA.Finite.SpectralDecompositionC",
+          "target": "CNNA.PillarA.Foundation.ExecComplexBridge",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Finite"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.BuildAll",
+          "target": "CNNA.PillarA.Foundation.ExecComplex",
+          "source_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Foundation"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.BuildAll",
+          "target": "CNNA.PillarA.Foundation.ExecComplexBridge",
+          "source_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Foundation"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.BuildAll",
+          "target": "CNNA.PillarA.Foundation.ExecComplexLemmas",
+          "source_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Foundation"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.BuildAll",
+          "target": "CNNA.PillarA.Foundation.FiniteHilbert",
+          "source_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Foundation"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.BuildAll",
+          "target": "CNNA.PillarA.Foundation.HermitianStructure",
+          "source_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Foundation"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.BuildAll",
+          "target": "CNNA.PillarA.Foundation.MatrixAlgebra",
+          "source_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Foundation"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.BuildAll",
+          "target": "CNNA.PillarA.Foundation.MatrixNorms",
+          "source_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Foundation"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.Interfaces",
+          "target": "CNNA.PillarA.Foundation.FiniteHilbert",
+          "source_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Foundation"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.Interfaces",
+          "target": "CNNA.PillarA.Foundation.MatrixAlgebra",
+          "source_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Foundation"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.Interfaces",
+          "target": "CNNA.PillarA.Foundation.MatrixNorms",
+          "source_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Foundation"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.Notation",
+          "target": "CNNA.PillarA.Foundation.ExecComplex",
+          "source_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Foundation"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.Notation",
+          "target": "CNNA.PillarA.Foundation.MatrixAlgebra",
+          "source_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Foundation"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.Notation",
+          "target": "CNNA.PillarA.Foundation.MatrixNorms",
+          "source_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Foundation"
+        },
+        {
+          "source": "CNNA.PillarA.Foundation.RegularizationPolicy",
+          "target": "CNNA.PillarA.Foundation.MatrixNorms",
+          "source_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Foundation"
+        },
+        {
+          "source": "CNNA.PillarA.Handoff.Core.BuildAll",
+          "target": "CNNA.PillarA.Handoff.Core.SectorExport",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Handoff"
+        },
+        {
+          "source": "CNNA.PillarA.Handoff.Core.BuildAll",
+          "target": "CNNA.PillarA.Handoff.Core.Step1MathData",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Handoff"
+        },
+        {
+          "source": "CNNA.PillarA.Handoff.Core.BuildAll",
+          "target": "CNNA.PillarA.Handoff.Core.Step1StrongCore",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Handoff"
+        },
+        {
+          "source": "CNNA.PillarA.Handoff.Outputs.A_to_C",
+          "target": "CNNA.PillarA.Handoff.Core.SectorExport",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Handoff"
+        },
+        {
+          "source": "CNNA.PillarA.Handoff.Outputs.A_to_D",
+          "target": "CNNA.PillarA.Handoff.Core.SectorExport",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Handoff"
+        },
+        {
+          "source": "CNNA.PillarA.Handoff.Outputs.A_to_E",
+          "target": "CNNA.PillarA.Handoff.Core.SectorExport",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Handoff"
+        },
+        {
+          "source": "CNNA.PillarA.Handoff.Outputs.BuildAll",
+          "target": "CNNA.PillarA.Handoff.Outputs.A_to_B",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Handoff"
+        },
+        {
+          "source": "CNNA.PillarA.Handoff.Outputs.Closed",
+          "target": "CNNA.PillarA.Handoff.Outputs.A_to_B",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Handoff"
+        },
+        {
+          "source": "CNNA.PillarA.Notation",
+          "target": "CNNA.PillarA.Geometry.Notation",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA"
+        },
+        {
+          "source": "CNNA.PillarA.Structural.CayleyDickson.S6CanonicalScalarPart",
+          "target": "CNNA.PillarA.Foundation.MatrixNorms",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Structural"
+        },
+        {
+          "source": "CNNA.PillarA.Structural.CayleyDickson.S6CayleyDicksonIdentification",
+          "target": "CNNA.PillarA.Foundation.MatrixNorms",
+          "source_disciplines": [],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "source_group": "PillarA/Structural"
+        }
+      ],
+      "dependency_order": [
+        "CNNA.PillarA.Foundation.HermitianStructure",
+        "CNNA.PillarA.Geometry.LCPMeasure",
+        "CNNA.PillarA.Handoff.Core.SectorExport",
+        "CNNA.PillarA.Foundation.ExecComplex",
+        "CNNA.PillarA.Foundation.FiniteHilbert",
+        "CNNA.PillarA.Geometry.Foliation",
+        "CNNA.PillarA.Handoff.Core.Step1StrongCore",
+        "CNNA.PillarA.Foundation.ExecComplexLemmas",
+        "CNNA.PillarA.Foundation.MatrixNorms",
+        "CNNA.PillarA.Foundation.MatrixAlgebra",
+        "CNNA.PillarA.Geometry.SpacetimePaths",
+        "CNNA.PillarA.Handoff.Core.Step1MathData",
+        "CNNA.PillarA.Foundation.ExecComplexBridge",
+        "CNNA.PillarA.Geometry.Notation",
+        "CNNA.PillarA.Handoff.Outputs.A_to_B",
+        "CNNA.PillarA.Geometry.BuildAll"
+      ],
+      "acyclic": true,
+      "cycles": [],
+      "spec": {
+        "name": "topology_algebra_cd_completion",
+        "description": "Algebraic, geometric and Cayley-Dickson-completion-facing layer, including Handoff closure material.",
+        "include_modules": [],
+        "include_prefixes": [
+          "CNNA.PillarA.Geometry",
+          "CNNA.PillarA.Handoff.Core.Step1MathData",
+          "CNNA.PillarA.Handoff.Core.Step1StrongCore",
+          "CNNA.PillarA.Handoff.Core.SectorExport",
+          "CNNA.PillarA.Handoff.Outputs.A_to_B",
+          "CNNA.PillarA.Foundation.ExecComplex",
+          "CNNA.PillarA.Foundation.ExecComplexLemmas",
+          "CNNA.PillarA.Foundation.ExecComplexBridge",
+          "CNNA.PillarA.Foundation.MatrixAlgebra",
+          "CNNA.PillarA.Foundation.MatrixNorms",
+          "CNNA.PillarA.Foundation.HermitianStructure",
+          "CNNA.PillarA.Foundation.FiniteHilbert"
+        ],
+        "include_regexes": [
+          "^CNNA\\.Structural\\.CayleyDickson\\.S6"
+        ],
+        "exclude_modules": [],
+        "exclude_prefixes": [],
+        "exclude_regexes": []
+      }
+    }
+  },
+  "module_memberships": {
+    "CNNA.PillarA.Closure.BuildAll": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.Closure.Notation": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.Closure.ParameterClosure": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.Closure.RegularizationClosure": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.Coupling.BuildAll": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.Coupling.GeneralizedDtN": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.Coupling.MultiSchur": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.Coupling.Notation": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.DtN.BuildAll": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.DtN.DtN": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.DtN.DtNStabilized": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.DtN.Notation": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.Finite.Approximant": [
+      "prenumeric_toc_substrate_graph"
+    ],
+    "CNNA.PillarA.Finite.BoundaryPorts": [
+      "prenumeric_toc_substrate_graph"
+    ],
+    "CNNA.PillarA.Finite.CutSpec": [
+      "prenumeric_toc_substrate_graph"
+    ],
+    "CNNA.PillarA.Finite.DirichletLaplacian": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.Finite.RegionCore": [
+      "prenumeric_toc_substrate_graph"
+    ],
+    "CNNA.PillarA.Finite.Selection": [
+      "prenumeric_toc_substrate_graph"
+    ],
+    "CNNA.PillarA.Foundation.BuildAll": [
+      "prenumeric_toc_substrate_graph"
+    ],
+    "CNNA.PillarA.Foundation.ConcreteSubstrate": [
+      "prenumeric_toc_substrate_graph"
+    ],
+    "CNNA.PillarA.Foundation.Determinism": [
+      "prenumeric_toc_substrate_graph"
+    ],
+    "CNNA.PillarA.Foundation.ExecComplex": [
+      "prenumeric_toc_substrate_graph",
+      "topology_algebra_cd_completion"
+    ],
+    "CNNA.PillarA.Foundation.ExecComplexBridge": [
+      "prenumeric_toc_substrate_graph",
+      "topology_algebra_cd_completion"
+    ],
+    "CNNA.PillarA.Foundation.ExecComplexLemmas": [
+      "prenumeric_toc_substrate_graph",
+      "topology_algebra_cd_completion"
+    ],
+    "CNNA.PillarA.Foundation.FiniteHilbert": [
+      "prenumeric_toc_substrate_graph",
+      "topology_algebra_cd_completion"
+    ],
+    "CNNA.PillarA.Foundation.HermitianStructure": [
+      "prenumeric_toc_substrate_graph",
+      "topology_algebra_cd_completion"
+    ],
+    "CNNA.PillarA.Foundation.Interfaces": [
+      "prenumeric_toc_substrate_graph"
+    ],
+    "CNNA.PillarA.Foundation.LevelVariableSubstrate": [
+      "prenumeric_toc_substrate_graph"
+    ],
+    "CNNA.PillarA.Foundation.MatrixAlgebra": [
+      "prenumeric_toc_substrate_graph",
+      "topology_algebra_cd_completion"
+    ],
+    "CNNA.PillarA.Foundation.MatrixNorms": [
+      "prenumeric_toc_substrate_graph",
+      "topology_algebra_cd_completion"
+    ],
+    "CNNA.PillarA.Foundation.Notation": [
+      "prenumeric_toc_substrate_graph"
+    ],
+    "CNNA.PillarA.Foundation.RegularizationPolicy": [
+      "prenumeric_toc_substrate_graph"
+    ],
+    "CNNA.PillarA.Foundation.SubstrateAnalysis": [
+      "prenumeric_toc_substrate_graph"
+    ],
+    "CNNA.PillarA.Foundation.SubstrateClass": [
+      "prenumeric_toc_substrate_graph"
+    ],
+    "CNNA.PillarA.Foundation.WeightPolicy": [
+      "prenumeric_toc_substrate_graph"
+    ],
+    "CNNA.PillarA.Geometry.BuildAll": [
+      "topology_algebra_cd_completion"
+    ],
+    "CNNA.PillarA.Geometry.Foliation": [
+      "topology_algebra_cd_completion"
+    ],
+    "CNNA.PillarA.Geometry.LCPMeasure": [
+      "topology_algebra_cd_completion"
+    ],
+    "CNNA.PillarA.Geometry.Notation": [
+      "topology_algebra_cd_completion"
+    ],
+    "CNNA.PillarA.Geometry.SpacetimePaths": [
+      "topology_algebra_cd_completion"
+    ],
+    "CNNA.PillarA.Handoff.Core.SectorExport": [
+      "topology_algebra_cd_completion"
+    ],
+    "CNNA.PillarA.Handoff.Core.Step1MathData": [
+      "topology_algebra_cd_completion"
+    ],
+    "CNNA.PillarA.Handoff.Core.Step1StrongCore": [
+      "topology_algebra_cd_completion"
+    ],
+    "CNNA.PillarA.Handoff.Outputs.A_to_B": [
+      "topology_algebra_cd_completion"
+    ],
+    "CNNA.PillarA.Network.BuildAll": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.Network.InfiniteCarrier": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.Network.Notation": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.Network.RegionNet": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.Network.RelativeEntropyFlow": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.Network.SectorChannels": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.Network.SectorSysEnv": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.Sectors.BranchPatch": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.Sectors.BranchingSelector": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.Sectors.BranchingWitness": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.Sectors.BuildAll": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.Sectors.ComplementSectorFamily": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.Sectors.Notation": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.Sectors.SectorSplit": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.Sectors.SelectedBranching": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.Sectors.UVSpectralSelector": [
+      "dirichlet_dtn_schur_network"
+    ],
+    "CNNA.PillarA.ToC.Addressing": [
+      "prenumeric_toc_substrate_graph"
+    ],
+    "CNNA.PillarA.ToC.BuildAll": [
+      "prenumeric_toc_substrate_graph"
+    ],
+    "CNNA.PillarA.ToC.Concrete": [
+      "prenumeric_toc_substrate_graph"
+    ],
+    "CNNA.PillarA.ToC.ConcreteIdeal": [
+      "prenumeric_toc_substrate_graph"
+    ],
+    "CNNA.PillarA.ToC.Contract": [
+      "prenumeric_toc_substrate_graph"
+    ],
+    "CNNA.PillarA.ToC.GeneratedBranchFamily": [
+      "prenumeric_toc_substrate_graph"
+    ],
+    "CNNA.PillarA.ToC.IdealAddressEquiv": [
+      "prenumeric_toc_substrate_graph"
+    ],
+    "CNNA.PillarA.ToC.Notation": [
+      "prenumeric_toc_substrate_graph"
+    ]
+  },
+  "unassigned_modules": [
+    "CNNA.Basic",
+    "CNNA.BuildAll",
+    "CNNA.Notation",
+    "CNNA.PillarA",
+    "CNNA.PillarA.Arithmetic.Actions.ActionFormatDecision",
+    "CNNA.PillarA.Arithmetic.Actions.ActionPackage",
+    "CNNA.PillarA.Arithmetic.Actions.GeneratorActionInventory",
+    "CNNA.PillarA.Arithmetic.BoundarySource.BoundarySourceConvergence",
+    "CNNA.PillarA.Arithmetic.BoundarySource.BoundarySourceDecisionLedger",
+    "CNNA.PillarA.Arithmetic.BoundarySource.BoundarySourceInterface",
+    "CNNA.PillarA.Arithmetic.BoundarySource.BoundarySourceTypeDecision",
+    "CNNA.PillarA.Arithmetic.BoundarySource.BoundaryStateSubstrate",
+    "CNNA.PillarA.Arithmetic.BoundarySource.BranchAddressSubstrate",
+    "CNNA.PillarA.Arithmetic.BoundarySource.ExistingIdealThreadNoGo",
+    "CNNA.PillarA.Arithmetic.BoundarySource.GeneratedSubstrateRoute",
+    "CNNA.PillarA.Arithmetic.BoundarySource.HistoryExpandedSubstrate",
+    "CNNA.PillarA.Arithmetic.BoundarySource.InterfaceExposureSubstrate",
+    "CNNA.PillarA.Arithmetic.BoundarySource.LevelHistoryIndex",
+    "CNNA.PillarA.Arithmetic.BoundarySource.LevelHistoryMatrix",
+    "CNNA.PillarA.Arithmetic.BoundarySource.LevelStepWitness",
+    "CNNA.PillarA.Arithmetic.BoundarySource.MultiSchurToLevelHistoryAdapter",
+    "CNNA.PillarA.Arithmetic.BoundarySource.RecursiveLevelHistoryCarrier",
+    "CNNA.PillarA.Arithmetic.BoundarySource.RecursiveLevelHistoryRoute",
+    "CNNA.PillarA.Arithmetic.BoundarySource.RecursiveLevelHistoryTypeDecision",
+    "CNNA.PillarA.Arithmetic.BuildAll",
+    "CNNA.PillarA.Arithmetic.CayleyDickson.ArithmeticCDBridge",
+    "CNNA.PillarA.Arithmetic.Convergence.CDArithmeticCompatibility",
+    "CNNA.PillarA.Arithmetic.Convergence.QuaternionRamanujanInterface",
+    "CNNA.PillarA.Arithmetic.Core.BrightDtNSource",
+    "CNNA.PillarA.Arithmetic.Core.FullBoundaryAudit",
+    "CNNA.PillarA.Arithmetic.Core.MatrixTransport",
+    "CNNA.PillarA.Arithmetic.Core.Source",
+    "CNNA.PillarA.Arithmetic.Graph.CheegerSeed",
+    "CNNA.PillarA.Arithmetic.Graph.RamanujanTest",
+    "CNNA.PillarA.Arithmetic.Graph.SpectralGapSeed",
+    "CNNA.PillarA.Arithmetic.Notation",
+    "CNNA.PillarA.Arithmetic.Orders.DiscriminantConvention",
+    "CNNA.PillarA.Arithmetic.Orders.NormForms",
+    "CNNA.PillarA.Arithmetic.Orders.QuadraticOrder",
+    "CNNA.PillarA.Arithmetic.Schur.CharpolyC",
+    "CNNA.PillarA.Arithmetic.Schur.CharpolyExec",
+    "CNNA.PillarA.Arithmetic.Schur.HigherLevelCertificates",
+    "CNNA.PillarA.Arithmetic.Schur.HigherLevelDiscriminants",
+    "CNNA.PillarA.Arithmetic.Schur.HigherLevelOutcomeRouter",
+    "CNNA.PillarA.Arithmetic.Schur.HigherLevelPredictionLedger",
+    "CNNA.PillarA.Arithmetic.Schur.IdentityLedger",
+    "CNNA.PillarA.Arithmetic.Schur.L1Baseline",
+    "CNNA.PillarA.Arithmetic.Schur.L2Eisenstein",
+    "CNNA.PillarA.Arithmetic.Schur.L3Gaussian",
+    "CNNA.PillarA.Arithmetic.Schur.MobiusTransfer",
+    "CNNA.PillarA.Arithmetic.Schur.Recurrence",
+    "CNNA.PillarA.Arithmetic.Schur.RecursiveSchurSource",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedApproximantCore",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedArithmeticSourceExecBoundaryOperatorFromSM4qRecheckSM5q",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedArithmeticSourceExecBoundaryOperatorSM5q",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedArithmeticSourceSM5",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedBoundaryInteriorPartition",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedDegreeFormulaAuditSM3db2eR0",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedDegreePivotReciprocalProfileFromWeightPolicySM3db2eR",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedDegreePivotScaleSourceSM3db2dR",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedDirichletEntry",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedDirichletExecEntrySourceSM3bq",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedGeneralizedTopBoundaryDtNSM3hR",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorAccumulatedEntryCancellationFromTerminalIdentityR3c1e",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorAccumulatedEntryCancellationR3c1",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorAccumulatedTraceEvaluation",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlock",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldInvarianceR3c1c",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldKernelLocalSchurResidualBridgeR3c1b1",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldNormalFormR3c1a",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldTerminalIdentityFromSM3db4aWR3c1dFull",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldTerminalIdentityR3c1d",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCandidate",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCandidateEntry",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCarrier",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCertificateSM3fR",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationStep",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationTrace",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateEntry",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateMatrix",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateShapeSeparation",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateStart",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepCancellationR3c1bFull",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepSchurCancellationInvariantSM3db2aR",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepSchurCancellationSourceAuditR3c1b0",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorPerPivotRegularityFromTraceSM3db2bR",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorProductIdentityProofR4a",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorProvenTwoSidedInvR5",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalFoldResidualCoverageSM3db4aT",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalFoldResidualIdentityEquationSourceSM3db4aV",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalFoldResidualIdentityFieldsSM3db4aU",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalIdentityFieldCertificateFromEquationSourceSM3db4aW",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTraceCancellationDerivation",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTraceCancellationR3c2",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTracePivotScaleWitnessFromGeneratedDegreeSM3db2cR",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTracePivotTerminalCoverageSourceSM3db3aR",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTwoSidedInv",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTwoSidedInvFromSM3db7R",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInverseCandidateExecEntrySourceSM3eRq",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryBoundaryPortSourceSM6a",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryCharpolyExecFromMirrorSM9b",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryExecMatrixFromSM6bRecheckSM8",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryExecMirrorSourceFromSM8RecheckSM9a",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryExecMirrorSourceSM9a",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryMatrixFromBridgeSM8",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryOperationalCharpolyPolynomialProfileFromSM9b",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryOperationalCoefficientSourceFromSM9c",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistorySchurIndexBridgeRecheckSM7a",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryToSchurIndexSM7",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelStepExecMirrorSourceFromSM5qRecheckSM6b",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelStepExecMirrorSourceSM6b",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelStepWitnessSM6",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedMainPath",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedMultiSchurExecBoundaryOperatorFromSM3fqPlusSM4q",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedMultiSchurExecBoundaryOperatorSM4q",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedMultiSchurSM4",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDegreeReciprocalSourceSM3db2fR",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDeterminantCoefficientRecurrenceSM9e",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDeterminantEvaluationBridgeFromSM9e",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDeterminantForwardEvaluationBridgeFromSM9ePlus",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDiscriminantFactorGateFromSM9fFull",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalQuadraticCoefficientWindowFromSM9dSM9e",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalQuadraticDiscriminantSourceFromSM9g1Window",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedResetSM3LedgerSM3iR",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedSM3fSchurExecCompletionSM3fqPlus",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedSM3fSchurExecEntrySourceSM3fq",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedSource",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedTopBoundaryDtNSM3gR",
+    "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialEvaluationNormalFormSM9ePlus",
+    "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialForwardEvaluationSourceSM9ePlus",
+    "CNNA.PillarA.Arithmetic.Smoke.SM3dbRToSM3eRHandoff",
+    "CNNA.PillarA.BuildAll",
+    "CNNA.PillarA.Finite.BuildAll",
+    "CNNA.PillarA.Finite.ChannelSeed",
+    "CNNA.PillarA.Finite.DynamicsAdapter",
+    "CNNA.PillarA.Finite.ExecSpectral.BuildAll",
+    "CNNA.PillarA.Finite.ExecSpectral.Certificates",
+    "CNNA.PillarA.Finite.ExecSpectral.CharpolyCore",
+    "CNNA.PillarA.Finite.ExecSpectral.EigenvectorKernel",
+    "CNNA.PillarA.Finite.ExecSpectral.Notation",
+    "CNNA.PillarA.Finite.ExecSpectral.PolynomialCore",
+    "CNNA.PillarA.Finite.ExecSpectral.ProjectorCore",
+    "CNNA.PillarA.Finite.ExecSpectral.RootIsolation",
+    "CNNA.PillarA.Finite.GibbsStateSeed",
+    "CNNA.PillarA.Finite.MatrixExponential",
+    "CNNA.PillarA.Finite.Notation",
+    "CNNA.PillarA.Finite.SpectralBridge",
+    "CNNA.PillarA.Finite.SpectralDecomposition",
+    "CNNA.PillarA.Finite.SpectralDecompositionC",
+    "CNNA.PillarA.Finite.SpectralDecompositionCore",
+    "CNNA.PillarA.Finite.StateSpace",
+    "CNNA.PillarA.Finite.UnitaryEvolution",
+    "CNNA.PillarA.Handoff.BuildAll",
+    "CNNA.PillarA.Handoff.CayleyDicksonAdapter",
+    "CNNA.PillarA.Handoff.Core.BuildAll",
+    "CNNA.PillarA.Handoff.Inputs.B_to_A",
+    "CNNA.PillarA.Handoff.Inputs.BuildAll",
+    "CNNA.PillarA.Handoff.Inputs.C_to_A",
+    "CNNA.PillarA.Handoff.Inputs.D_to_A",
+    "CNNA.PillarA.Handoff.Inputs.E_to_A",
+    "CNNA.PillarA.Handoff.Notation",
+    "CNNA.PillarA.Handoff.Outputs.A_to_C",
+    "CNNA.PillarA.Handoff.Outputs.A_to_CayleyDickson",
+    "CNNA.PillarA.Handoff.Outputs.A_to_D",
+    "CNNA.PillarA.Handoff.Outputs.A_to_E",
+    "CNNA.PillarA.Handoff.Outputs.BuildAll",
+    "CNNA.PillarA.Handoff.Outputs.Closed",
+    "CNNA.PillarA.Handoff.ProofObligationI.BuildAll",
+    "CNNA.PillarA.Handoff.ProofObligationI.Completion",
+    "CNNA.PillarA.Handoff.ProofObligationII.BuildAll",
+    "CNNA.PillarA.Handoff.ProofObligationII.Preparation",
+    "CNNA.PillarA.Handoff.ProofObligationIII.BuildAll",
+    "CNNA.PillarA.Handoff.ProofObligationIII.Preparation",
+    "CNNA.PillarA.Notation",
+    "CNNA.PillarA.Structural.BuildAll",
+    "CNNA.PillarA.Structural.CayleyDickson.BuildAll",
+    "CNNA.PillarA.Structural.CayleyDickson.S6AdditionalFinding",
+    "CNNA.PillarA.Structural.CayleyDickson.S6AlternativeLawScaffold",
+    "CNNA.PillarA.Structural.CayleyDickson.S6CanonicalDivisionFromNormSq",
+    "CNNA.PillarA.Structural.CayleyDickson.S6CanonicalIdealAlgebraizationPath",
+    "CNNA.PillarA.Structural.CayleyDickson.S6CanonicalNormSqBlockSystem",
+    "CNNA.PillarA.Structural.CayleyDickson.S6CanonicalNormSqCandidate",
+    "CNNA.PillarA.Structural.CayleyDickson.S6CanonicalNormSqDefined",
+    "CNNA.PillarA.Structural.CayleyDickson.S6CanonicalNormSqReduction",
+    "CNNA.PillarA.Structural.CayleyDickson.S6CanonicalNormSqSimultaneousSystem",
+    "CNNA.PillarA.Structural.CayleyDickson.S6CanonicalProductMultiplicationCandidate",
+    "CNNA.PillarA.Structural.CayleyDickson.S6CanonicalProductSurfaceCandidate",
+    "CNNA.PillarA.Structural.CayleyDickson.S6CanonicalScalarPart",
+    "CNNA.PillarA.Structural.CayleyDickson.S6CanonicalStar",
+    "CNNA.PillarA.Structural.CayleyDickson.S6CayleyDicksonIdentification",
+    "CNNA.PillarA.Structural.CayleyDickson.S6ConcreteSeeds",
+    "CNNA.PillarA.Structural.CayleyDickson.S6DivisionConclusionDecomposition",
+    "CNNA.PillarA.Structural.CayleyDickson.S6DivisionConclusionScaffold",
+    "CNNA.PillarA.Structural.CayleyDickson.S6DivisionUpgrade",
+    "CNNA.PillarA.Structural.CayleyDickson.S6FullAlternativeLawBoundary",
+    "CNNA.PillarA.Structural.CayleyDickson.S6HurwitzStopSeed",
+    "CNNA.PillarA.Structural.CayleyDickson.S6NormDefinitenessScaffold",
+    "CNNA.PillarA.Structural.CayleyDickson.S6NormMultiplicativityScaffold",
+    "CNNA.PillarA.Structural.CayleyDickson.S6NormUpgrade",
+    "CNNA.PillarA.Structural.CayleyDickson.S6OctonionicSeed",
+    "CNNA.PillarA.Structural.CayleyDickson.S6PhaseICompactClosure",
+    "CNNA.PillarA.Structural.CayleyDickson.S6ProofDutyGroups",
+    "CNNA.PillarA.Structural.CayleyDickson.S6QuaternionicSeed",
+    "CNNA.PillarA.Structural.CayleyDickson.S6ResearchReadinessBridge",
+    "CNNA.PillarA.Structural.CayleyDickson.S6ResearchSchema",
+    "CNNA.PillarA.Structural.CayleyDickson.S6RoleCompositionSeed",
+    "CNNA.PillarA.Structural.CayleyDickson.S6Slot1AlternativeLaw",
+    "CNNA.PillarA.Structural.CayleyDickson.S6Slot2NormSqMultiplicativity",
+    "CNNA.PillarA.Structural.CayleyDickson.S6Slot3DivisionFromNormSqLogic",
+    "CNNA.PillarA.Structural.CayleyDickson.S6StatusLayer",
+    "CNNA.PillarA.Structural.CayleyDickson.Source",
+    "CNNA.PillarB",
+    "CNNA.PillarB.BuildAll",
+    "CNNA.PillarC",
+    "CNNA.PillarC.BuildAll",
+    "CNNA.PillarD",
+    "CNNA.PillarD.BuildAll",
+    "CNNA.PillarE",
+    "CNNA.PillarE.BuildAll"
+  ],
+  "overlapping_memberships": {
+    "CNNA.PillarA.Foundation.ExecComplex": [
+      "prenumeric_toc_substrate_graph",
+      "topology_algebra_cd_completion"
+    ],
+    "CNNA.PillarA.Foundation.ExecComplexBridge": [
+      "prenumeric_toc_substrate_graph",
+      "topology_algebra_cd_completion"
+    ],
+    "CNNA.PillarA.Foundation.ExecComplexLemmas": [
+      "prenumeric_toc_substrate_graph",
+      "topology_algebra_cd_completion"
+    ],
+    "CNNA.PillarA.Foundation.FiniteHilbert": [
+      "prenumeric_toc_substrate_graph",
+      "topology_algebra_cd_completion"
+    ],
+    "CNNA.PillarA.Foundation.HermitianStructure": [
+      "prenumeric_toc_substrate_graph",
+      "topology_algebra_cd_completion"
+    ],
+    "CNNA.PillarA.Foundation.MatrixAlgebra": [
+      "prenumeric_toc_substrate_graph",
+      "topology_algebra_cd_completion"
+    ],
+    "CNNA.PillarA.Foundation.MatrixNorms": [
+      "prenumeric_toc_substrate_graph",
+      "topology_algebra_cd_completion"
+    ]
+  },
+  "bridges": [
+    {
+      "source_discipline": "dirichlet_dtn_schur_network",
+      "target_discipline": "prenumeric_toc_substrate_graph",
+      "edge_count": 5,
+      "edges": [
+        {
+          "source": "CNNA.PillarA.DtN.DtNStabilized",
+          "target": "CNNA.PillarA.Foundation.MatrixNorms",
+          "source_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "target_group": "PillarA/Foundation"
+        },
+        {
+          "source": "CNNA.PillarA.DtN.DtNStabilized",
+          "target": "CNNA.PillarA.Foundation.RegularizationPolicy",
+          "source_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "target_group": "PillarA/Foundation"
+        },
+        {
+          "source": "CNNA.PillarA.Finite.DirichletLaplacian",
+          "target": "CNNA.PillarA.Finite.Approximant",
+          "source_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "target_group": "PillarA/Finite"
+        },
+        {
+          "source": "CNNA.PillarA.Finite.DirichletLaplacian",
+          "target": "CNNA.PillarA.Foundation.MatrixNorms",
+          "source_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "target_group": "PillarA/Foundation"
+        },
+        {
+          "source": "CNNA.PillarA.Finite.DirichletLaplacian",
+          "target": "CNNA.PillarA.Foundation.WeightPolicy",
+          "source_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "target_group": "PillarA/Foundation"
+        }
+      ]
+    },
+    {
+      "source_discipline": "dirichlet_dtn_schur_network",
+      "target_discipline": "topology_algebra_cd_completion",
+      "edge_count": 2,
+      "edges": [
+        {
+          "source": "CNNA.PillarA.DtN.DtNStabilized",
+          "target": "CNNA.PillarA.Foundation.MatrixNorms",
+          "source_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "target_group": "PillarA/Foundation"
+        },
+        {
+          "source": "CNNA.PillarA.Finite.DirichletLaplacian",
+          "target": "CNNA.PillarA.Foundation.MatrixNorms",
+          "source_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph",
+            "topology_algebra_cd_completion"
+          ],
+          "target_group": "PillarA/Foundation"
+        }
+      ]
+    },
+    {
+      "source_discipline": "topology_algebra_cd_completion",
+      "target_discipline": "dirichlet_dtn_schur_network",
+      "edge_count": 5,
+      "edges": [
+        {
+          "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+          "target": "CNNA.PillarA.Closure.Notation",
+          "source_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_group": "PillarA/Closure"
+        },
+        {
+          "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+          "target": "CNNA.PillarA.Closure.RegularizationClosure",
+          "source_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_group": "PillarA/Closure"
+        },
+        {
+          "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+          "target": "CNNA.PillarA.Coupling.MultiSchur",
+          "source_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_group": "PillarA/Coupling"
+        },
+        {
+          "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+          "target": "CNNA.PillarA.DtN.Notation",
+          "source_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_group": "PillarA/DtN"
+        },
+        {
+          "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+          "target": "CNNA.PillarA.Network.InfiniteCarrier",
+          "source_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "target_disciplines": [
+            "dirichlet_dtn_schur_network"
+          ],
+          "target_group": "PillarA/Network"
+        }
+      ]
+    },
+    {
+      "source_discipline": "topology_algebra_cd_completion",
+      "target_discipline": "prenumeric_toc_substrate_graph",
+      "edge_count": 1,
+      "edges": [
+        {
+          "source": "CNNA.PillarA.Geometry.LCPMeasure",
+          "target": "CNNA.PillarA.ToC.Addressing",
+          "source_disciplines": [
+            "topology_algebra_cd_completion"
+          ],
+          "target_disciplines": [
+            "prenumeric_toc_substrate_graph"
+          ],
+          "target_group": "PillarA/ToC"
+        }
+      ]
+    }
+  ],
+  "bridge_rankings": {
+    "bridge_pair_rankings": [
+      {
+        "source_discipline": "dirichlet_dtn_schur_network",
+        "target_discipline": "prenumeric_toc_substrate_graph",
+        "edge_count": 5
+      },
+      {
+        "source_discipline": "topology_algebra_cd_completion",
+        "target_discipline": "dirichlet_dtn_schur_network",
+        "edge_count": 5
+      },
+      {
+        "source_discipline": "dirichlet_dtn_schur_network",
+        "target_discipline": "topology_algebra_cd_completion",
+        "edge_count": 2
+      },
+      {
+        "source_discipline": "topology_algebra_cd_completion",
+        "target_discipline": "prenumeric_toc_substrate_graph",
+        "edge_count": 1
+      }
+    ],
+    "bridge_module_rankings": [
+      {
+        "module": "CNNA.PillarA.Handoff.Core.SectorExport",
+        "group": "PillarA/Handoff",
+        "bridge_participation_count": 5,
+        "as_source_count": 5,
+        "as_target_count": 0
+      },
+      {
+        "module": "CNNA.PillarA.Finite.DirichletLaplacian",
+        "group": "PillarA/Finite",
+        "bridge_participation_count": 4,
+        "as_source_count": 4,
+        "as_target_count": 0
+      },
+      {
+        "module": "CNNA.PillarA.Foundation.MatrixNorms",
+        "group": "PillarA/Foundation",
+        "bridge_participation_count": 4,
+        "as_source_count": 0,
+        "as_target_count": 4
+      },
+      {
+        "module": "CNNA.PillarA.DtN.DtNStabilized",
+        "group": "PillarA/DtN",
+        "bridge_participation_count": 3,
+        "as_source_count": 3,
+        "as_target_count": 0
+      },
+      {
+        "module": "CNNA.PillarA.Closure.Notation",
+        "group": "PillarA/Closure",
+        "bridge_participation_count": 1,
+        "as_source_count": 0,
+        "as_target_count": 1
+      },
+      {
+        "module": "CNNA.PillarA.Closure.RegularizationClosure",
+        "group": "PillarA/Closure",
+        "bridge_participation_count": 1,
+        "as_source_count": 0,
+        "as_target_count": 1
+      },
+      {
+        "module": "CNNA.PillarA.Coupling.MultiSchur",
+        "group": "PillarA/Coupling",
+        "bridge_participation_count": 1,
+        "as_source_count": 0,
+        "as_target_count": 1
+      },
+      {
+        "module": "CNNA.PillarA.DtN.Notation",
+        "group": "PillarA/DtN",
+        "bridge_participation_count": 1,
+        "as_source_count": 0,
+        "as_target_count": 1
+      },
+      {
+        "module": "CNNA.PillarA.Finite.Approximant",
+        "group": "PillarA/Finite",
+        "bridge_participation_count": 1,
+        "as_source_count": 0,
+        "as_target_count": 1
+      },
+      {
+        "module": "CNNA.PillarA.Foundation.RegularizationPolicy",
+        "group": "PillarA/Foundation",
+        "bridge_participation_count": 1,
+        "as_source_count": 0,
+        "as_target_count": 1
+      },
+      {
+        "module": "CNNA.PillarA.Foundation.WeightPolicy",
+        "group": "PillarA/Foundation",
+        "bridge_participation_count": 1,
+        "as_source_count": 0,
+        "as_target_count": 1
+      },
+      {
+        "module": "CNNA.PillarA.Geometry.LCPMeasure",
+        "group": "PillarA/Geometry",
+        "bridge_participation_count": 1,
+        "as_source_count": 1,
+        "as_target_count": 0
+      },
+      {
+        "module": "CNNA.PillarA.Network.InfiniteCarrier",
+        "group": "PillarA/Network",
+        "bridge_participation_count": 1,
+        "as_source_count": 0,
+        "as_target_count": 1
+      },
+      {
+        "module": "CNNA.PillarA.ToC.Addressing",
+        "group": "PillarA/ToC",
+        "bridge_participation_count": 1,
+        "as_source_count": 0,
+        "as_target_count": 1
+      }
+    ],
+    "bridge_edge_rankings": [
+      {
+        "source": "CNNA.PillarA.DtN.DtNStabilized",
+        "target": "CNNA.PillarA.Foundation.MatrixNorms",
+        "source_group": "PillarA/DtN",
+        "target_group": "PillarA/Foundation",
+        "count": 2,
+        "source_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "target_disciplines": [
+          "prenumeric_toc_substrate_graph",
+          "topology_algebra_cd_completion"
+        ],
+        "discipline_pairs": [
+          {
+            "source_discipline": "dirichlet_dtn_schur_network",
+            "target_discipline": "prenumeric_toc_substrate_graph"
+          },
+          {
+            "source_discipline": "dirichlet_dtn_schur_network",
+            "target_discipline": "topology_algebra_cd_completion"
+          }
+        ]
+      },
+      {
+        "source": "CNNA.PillarA.Finite.DirichletLaplacian",
+        "target": "CNNA.PillarA.Foundation.MatrixNorms",
+        "source_group": "PillarA/Finite",
+        "target_group": "PillarA/Foundation",
+        "count": 2,
+        "source_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "target_disciplines": [
+          "prenumeric_toc_substrate_graph",
+          "topology_algebra_cd_completion"
+        ],
+        "discipline_pairs": [
+          {
+            "source_discipline": "dirichlet_dtn_schur_network",
+            "target_discipline": "prenumeric_toc_substrate_graph"
+          },
+          {
+            "source_discipline": "dirichlet_dtn_schur_network",
+            "target_discipline": "topology_algebra_cd_completion"
+          }
+        ]
+      },
+      {
+        "source": "CNNA.PillarA.DtN.DtNStabilized",
+        "target": "CNNA.PillarA.Foundation.RegularizationPolicy",
+        "source_group": "PillarA/DtN",
+        "target_group": "PillarA/Foundation",
+        "count": 1,
+        "source_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "target_disciplines": [
+          "prenumeric_toc_substrate_graph"
+        ],
+        "discipline_pairs": [
+          {
+            "source_discipline": "dirichlet_dtn_schur_network",
+            "target_discipline": "prenumeric_toc_substrate_graph"
+          }
+        ]
+      },
+      {
+        "source": "CNNA.PillarA.Finite.DirichletLaplacian",
+        "target": "CNNA.PillarA.Finite.Approximant",
+        "source_group": "PillarA/Finite",
+        "target_group": "PillarA/Finite",
+        "count": 1,
+        "source_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "target_disciplines": [
+          "prenumeric_toc_substrate_graph"
+        ],
+        "discipline_pairs": [
+          {
+            "source_discipline": "dirichlet_dtn_schur_network",
+            "target_discipline": "prenumeric_toc_substrate_graph"
+          }
+        ]
+      },
+      {
+        "source": "CNNA.PillarA.Finite.DirichletLaplacian",
+        "target": "CNNA.PillarA.Foundation.WeightPolicy",
+        "source_group": "PillarA/Finite",
+        "target_group": "PillarA/Foundation",
+        "count": 1,
+        "source_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "target_disciplines": [
+          "prenumeric_toc_substrate_graph"
+        ],
+        "discipline_pairs": [
+          {
+            "source_discipline": "dirichlet_dtn_schur_network",
+            "target_discipline": "prenumeric_toc_substrate_graph"
+          }
+        ]
+      },
+      {
+        "source": "CNNA.PillarA.Geometry.LCPMeasure",
+        "target": "CNNA.PillarA.ToC.Addressing",
+        "source_group": "PillarA/Geometry",
+        "target_group": "PillarA/ToC",
+        "count": 1,
+        "source_disciplines": [
+          "topology_algebra_cd_completion"
+        ],
+        "target_disciplines": [
+          "prenumeric_toc_substrate_graph"
+        ],
+        "discipline_pairs": [
+          {
+            "source_discipline": "topology_algebra_cd_completion",
+            "target_discipline": "prenumeric_toc_substrate_graph"
+          }
+        ]
+      },
+      {
+        "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+        "target": "CNNA.PillarA.Closure.Notation",
+        "source_group": "PillarA/Handoff",
+        "target_group": "PillarA/Closure",
+        "count": 1,
+        "source_disciplines": [
+          "topology_algebra_cd_completion"
+        ],
+        "target_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "discipline_pairs": [
+          {
+            "source_discipline": "topology_algebra_cd_completion",
+            "target_discipline": "dirichlet_dtn_schur_network"
+          }
+        ]
+      },
+      {
+        "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+        "target": "CNNA.PillarA.Closure.RegularizationClosure",
+        "source_group": "PillarA/Handoff",
+        "target_group": "PillarA/Closure",
+        "count": 1,
+        "source_disciplines": [
+          "topology_algebra_cd_completion"
+        ],
+        "target_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "discipline_pairs": [
+          {
+            "source_discipline": "topology_algebra_cd_completion",
+            "target_discipline": "dirichlet_dtn_schur_network"
+          }
+        ]
+      },
+      {
+        "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+        "target": "CNNA.PillarA.Coupling.MultiSchur",
+        "source_group": "PillarA/Handoff",
+        "target_group": "PillarA/Coupling",
+        "count": 1,
+        "source_disciplines": [
+          "topology_algebra_cd_completion"
+        ],
+        "target_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "discipline_pairs": [
+          {
+            "source_discipline": "topology_algebra_cd_completion",
+            "target_discipline": "dirichlet_dtn_schur_network"
+          }
+        ]
+      },
+      {
+        "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+        "target": "CNNA.PillarA.DtN.Notation",
+        "source_group": "PillarA/Handoff",
+        "target_group": "PillarA/DtN",
+        "count": 1,
+        "source_disciplines": [
+          "topology_algebra_cd_completion"
+        ],
+        "target_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "discipline_pairs": [
+          {
+            "source_discipline": "topology_algebra_cd_completion",
+            "target_discipline": "dirichlet_dtn_schur_network"
+          }
+        ]
+      },
+      {
+        "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+        "target": "CNNA.PillarA.Network.InfiniteCarrier",
+        "source_group": "PillarA/Handoff",
+        "target_group": "PillarA/Network",
+        "count": 1,
+        "source_disciplines": [
+          "topology_algebra_cd_completion"
+        ],
+        "target_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "discipline_pairs": [
+          {
+            "source_discipline": "topology_algebra_cd_completion",
+            "target_discipline": "dirichlet_dtn_schur_network"
+          }
+        ]
+      }
+    ]
+  }
+}

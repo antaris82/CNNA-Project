@@ -1,0 +1,48 @@
+digraph G {
+  graph [rankdir=LR, bgcolor="white", margin=0.05, nodesep=0.45, ranksep=0.55];
+  node [shape=box, style="rounded,filled", fillcolor="white", fontname="DejaVu Sans", fontsize=11];
+  edge [color="gray30", arrowsize=0.7];
+  s0 [label="1. generated source
+main path
+GeneratedMainPath / GeneratedApproximantCore"];
+  s1 [label="2. boundary and
+partition
+BoundaryInteriorPartition / DirichletEntry"];
+  s2 [label="3. interior block and
+elimination candidate
+InteriorBlock / CandidateEntry"];
+  s3 [label="4. trace, fold and
+accumulated entry
+TraceEvaluation / AccumulatedEntryFold"];
+  s4 [label="5. local cancellation
+and pivot scale
+LocalStepCancellation / PivotScaleWitness"];
+  s5 [label="6. terminal identity
+and two-sided inverse
+TerminalIdentity / ProductIdentity / TwoSidedInv"];
+  s6 [label="7. DtN and generalized
+boundary operator
+GeneratedDtN / GeneralizedDtN / MultiSchur"];
+  s7 [label="8. Exec boundary
+and arithmetic source
+ExecBoundaryOperator / ArithmeticSource"];
+  s8 [label="9. level history
+Exec matrix
+LevelHistory / ExecMatrix / Mirror"];
+  s9 [label="10. charpoly, recurrence
+and window
+CharpolyExec / CoeffRecurrence / QuadraticWindow"];
+  s10 [label="11. operational
+discriminant
+OperationalQuadraticDiscriminantSourceSM9h"];
+  s0 -> s1;
+  s1 -> s2;
+  s2 -> s3;
+  s3 -> s4;
+  s4 -> s5;
+  s5 -> s6;
+  s6 -> s7;
+  s7 -> s8;
+  s8 -> s9;
+  s9 -> s10;
+}

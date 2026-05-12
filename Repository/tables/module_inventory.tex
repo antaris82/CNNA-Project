@@ -1,0 +1,18 @@
+
+\paragraph{Module inventory rule.} This section is a generated repository view, not a second planning source. It is derived from the frozen SM9h Lean source snapshot by \texttt{scripts/build\_export\_script\_v1.8.py}. The planning YAML remains the only manually maintained roadmap source; the module catalog, dependency summaries, source-path links, and graph figures are regenerated from the repository snapshot.
+\subsection*{Inventory summary}
+\input{tables/module_inventory_summary.tex}
+\subsection*{Module dependency graphs}
+\subsection*{Graph A: group-level import/dependency overview}
+\paragraph{Arrow convention.} An edge \(A \to B\) means that at least one module in group \(A\) imports or depends on a module in group \(B\). The arrow points from the importing/consuming group to the required dependency. This is a technical import graph, not a semantic derivation graph.
+\begin{center}\includegraphics[width=0.98\linewidth,height=0.40\textheight,keepaspectratio]{figures/module_group_dependency_graph.pdf}\end{center}
+\subsection*{Graph B: robust semantic core mainline}
+\paragraph{Arrow convention.} An edge \(A \to B\) means that \(B\) is the next curated semantic construction step derived from \(A\) along the robust core mainline. The arrow points in the intended derived-only construction direction. This is a semantic mainline view, not a complete import graph.
+\begin{center}\includegraphics[width=0.98\linewidth,height=0.32\textheight,keepaspectratio]{figures/core_robust_semantic_mainline.pdf}\end{center}
+
+\subsection*{Group summary}
+\input{tables/module_group_summary.tex}
+\subsection*{Import hotspots}
+\input{tables/module_hotspots.tex}
+\subsection*{Complete Lean module catalog, dependency-first order}
+\input{tables/module_catalog.tex}

@@ -1,0 +1,21 @@
+section_id	section_title	source	matched_rows	total_rows
+project_stats	Stats: project facts and repository module inventory	export-prefix	2156	9396
+latest_change_overview	Latest change overview	master	0	6
+format_decision	Working format and module mapping	master	8	37
+code_audit	Static code findings	master	4	42
+global_no_go_guardrails	Global no-go guardrails	master	3	25
+global_postulates	Global ontic postulates	master	1	1
+phase_object_link_policy	Phase-object-link policy	master	0	4
+external_source_crosscheck	TomS thread source cross-check	master	2	15
+secondary_long_term_goals	Secondary long-term goals	master	4	6
+workflow_policy	Standardized phase-preparation, implementation, and documentation workflows	master	4	36
+pre_implementation_phase_check_policy	Pre-implementation phase-check policy	master	0	4
+pre_implementation_phase_check_results	Current pre-implementation phase-window check	master	0	4
+implementation_scaling_phase_plan	Implementation-scaling phase plan	master	1	11
+module_implementation_manifest	Implementation module manifest and semantic placement gate	export	25	204
+reuse_duplication_ledger	Reuse/duplication ledger and canonical generator policy	master	2	7
+consumption_classification_map	Declaration consumption classification map	export-prefix	2135	9374
+object_register	Canonical object register with code derivation sites	master:objects	34	207
+object_proof_documentation	Object and quantities proof documentation	master:object_proof_dossiers	18	207
+phase_roadmap	Phase table in natural derivation order	master:phases	27	204
+implementation_scratchpad	Implementation scratch pad	master	33	204

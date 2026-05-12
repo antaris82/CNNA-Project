@@ -1,0 +1,360 @@
+{
+  "artifact_module_count": 46,
+  "core_module_count": 241,
+  "artifact_reason_counts": {
+    "build_module": 26,
+    "isolated_internal_module": 1,
+    "notation_module": 14,
+    "top_level_umbrella": 5
+  },
+  "files": {
+    "artifact_modules": "architectural_core/artifact_modules.json",
+    "syntactic_signal_plan": "architectural_core/syntactic_signal_plan/summary.json",
+    "semantic_signal_plan": "architectural_core/semantic_signal_plan/summary.json",
+    "clean_discipline_bridges": "architectural_core/clean_discipline_bridges.json",
+    "clean_bridge_rankings": "architectural_core/clean_bridge_rankings.json",
+    "mainline_mismatch_report": "architectural_core/mainline_mismatch_report.json",
+    "mainline_edge_forensics": "architectural_core/mainline_edge_forensics.json",
+    "weak_mainline_edges": "architectural_core/weak_mainline_edges.json",
+    "missing_mainline_edge_forensics": "architectural_core/missing_mainline_edge_forensics.json",
+    "weak_edge_reports": null,
+    "edge_case_report_index": "architectural_core/edge_case_reports/index.json",
+    "sink_taxonomy": "architectural_core/sink_taxonomy.json",
+    "trunk_vs_extensions": "architectural_core/trunk_vs_extensions.json",
+    "robust_semantic_signal_plan": "architectural_core/robust_semantic_signal_plan/summary.json"
+  },
+  "syntactic_signal_plan": {
+    "node_count": 241,
+    "edge_count": 307,
+    "source_count": 3,
+    "sink_count": 31,
+    "reduced_edge_count": 285,
+    "mainline_length": 68,
+    "mainline_source": "CNNA.PillarA.Foundation.HermitianStructure",
+    "mainline_sink": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalQuadraticDiscriminantSourceFromSM9g1Window"
+  },
+  "semantic_signal_plan": {
+    "node_count": 241,
+    "edge_count": 287,
+    "source_count": 21,
+    "sink_count": 43,
+    "reduced_edge_count": 271,
+    "mainline_length": 56,
+    "weighted_mainline_length": 44,
+    "weighted_mainline_score": 2605.0,
+    "mainline_source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedMainPath",
+    "mainline_sink": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalQuadraticDiscriminantSourceFromSM9g1Window"
+  },
+  "clean_discipline_bridges": {
+    "bridge_count": 4,
+    "bridge_module_count": 12,
+    "top_bridge_modules": [
+      {
+        "module": "CNNA.PillarA.Finite.DirichletLaplacian",
+        "group": "PillarA/Finite",
+        "bridge_participation_count": 4,
+        "as_source_count": 4,
+        "as_target_count": 0
+      },
+      {
+        "module": "CNNA.PillarA.Foundation.MatrixNorms",
+        "group": "PillarA/Foundation",
+        "bridge_participation_count": 4,
+        "as_source_count": 0,
+        "as_target_count": 4
+      },
+      {
+        "module": "CNNA.PillarA.DtN.DtNStabilized",
+        "group": "PillarA/DtN",
+        "bridge_participation_count": 3,
+        "as_source_count": 3,
+        "as_target_count": 0
+      },
+      {
+        "module": "CNNA.PillarA.Handoff.Core.SectorExport",
+        "group": "PillarA/Handoff",
+        "bridge_participation_count": 3,
+        "as_source_count": 3,
+        "as_target_count": 0
+      },
+      {
+        "module": "CNNA.PillarA.Closure.RegularizationClosure",
+        "group": "PillarA/Closure",
+        "bridge_participation_count": 1,
+        "as_source_count": 0,
+        "as_target_count": 1
+      },
+      {
+        "module": "CNNA.PillarA.Coupling.MultiSchur",
+        "group": "PillarA/Coupling",
+        "bridge_participation_count": 1,
+        "as_source_count": 0,
+        "as_target_count": 1
+      },
+      {
+        "module": "CNNA.PillarA.Finite.Approximant",
+        "group": "PillarA/Finite",
+        "bridge_participation_count": 1,
+        "as_source_count": 0,
+        "as_target_count": 1
+      },
+      {
+        "module": "CNNA.PillarA.Foundation.RegularizationPolicy",
+        "group": "PillarA/Foundation",
+        "bridge_participation_count": 1,
+        "as_source_count": 0,
+        "as_target_count": 1
+      },
+      {
+        "module": "CNNA.PillarA.Foundation.WeightPolicy",
+        "group": "PillarA/Foundation",
+        "bridge_participation_count": 1,
+        "as_source_count": 0,
+        "as_target_count": 1
+      },
+      {
+        "module": "CNNA.PillarA.Geometry.LCPMeasure",
+        "group": "PillarA/Geometry",
+        "bridge_participation_count": 1,
+        "as_source_count": 1,
+        "as_target_count": 0
+      }
+    ],
+    "top_bridge_edges": [
+      {
+        "source": "CNNA.PillarA.DtN.DtNStabilized",
+        "target": "CNNA.PillarA.Foundation.MatrixNorms",
+        "source_group": "PillarA/DtN",
+        "target_group": "PillarA/Foundation",
+        "count": 2,
+        "source_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "target_disciplines": [
+          "prenumeric_toc_substrate_graph",
+          "topology_algebra_cd_completion"
+        ],
+        "discipline_pairs": [
+          {
+            "source_discipline": "dirichlet_dtn_schur_network",
+            "target_discipline": "prenumeric_toc_substrate_graph"
+          },
+          {
+            "source_discipline": "dirichlet_dtn_schur_network",
+            "target_discipline": "topology_algebra_cd_completion"
+          }
+        ]
+      },
+      {
+        "source": "CNNA.PillarA.Finite.DirichletLaplacian",
+        "target": "CNNA.PillarA.Foundation.MatrixNorms",
+        "source_group": "PillarA/Finite",
+        "target_group": "PillarA/Foundation",
+        "count": 2,
+        "source_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "target_disciplines": [
+          "prenumeric_toc_substrate_graph",
+          "topology_algebra_cd_completion"
+        ],
+        "discipline_pairs": [
+          {
+            "source_discipline": "dirichlet_dtn_schur_network",
+            "target_discipline": "prenumeric_toc_substrate_graph"
+          },
+          {
+            "source_discipline": "dirichlet_dtn_schur_network",
+            "target_discipline": "topology_algebra_cd_completion"
+          }
+        ]
+      },
+      {
+        "source": "CNNA.PillarA.DtN.DtNStabilized",
+        "target": "CNNA.PillarA.Foundation.RegularizationPolicy",
+        "source_group": "PillarA/DtN",
+        "target_group": "PillarA/Foundation",
+        "count": 1,
+        "source_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "target_disciplines": [
+          "prenumeric_toc_substrate_graph"
+        ],
+        "discipline_pairs": [
+          {
+            "source_discipline": "dirichlet_dtn_schur_network",
+            "target_discipline": "prenumeric_toc_substrate_graph"
+          }
+        ]
+      },
+      {
+        "source": "CNNA.PillarA.Finite.DirichletLaplacian",
+        "target": "CNNA.PillarA.Finite.Approximant",
+        "source_group": "PillarA/Finite",
+        "target_group": "PillarA/Finite",
+        "count": 1,
+        "source_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "target_disciplines": [
+          "prenumeric_toc_substrate_graph"
+        ],
+        "discipline_pairs": [
+          {
+            "source_discipline": "dirichlet_dtn_schur_network",
+            "target_discipline": "prenumeric_toc_substrate_graph"
+          }
+        ]
+      },
+      {
+        "source": "CNNA.PillarA.Finite.DirichletLaplacian",
+        "target": "CNNA.PillarA.Foundation.WeightPolicy",
+        "source_group": "PillarA/Finite",
+        "target_group": "PillarA/Foundation",
+        "count": 1,
+        "source_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "target_disciplines": [
+          "prenumeric_toc_substrate_graph"
+        ],
+        "discipline_pairs": [
+          {
+            "source_discipline": "dirichlet_dtn_schur_network",
+            "target_discipline": "prenumeric_toc_substrate_graph"
+          }
+        ]
+      },
+      {
+        "source": "CNNA.PillarA.Geometry.LCPMeasure",
+        "target": "CNNA.PillarA.ToC.Addressing",
+        "source_group": "PillarA/Geometry",
+        "target_group": "PillarA/ToC",
+        "count": 1,
+        "source_disciplines": [
+          "topology_algebra_cd_completion"
+        ],
+        "target_disciplines": [
+          "prenumeric_toc_substrate_graph"
+        ],
+        "discipline_pairs": [
+          {
+            "source_discipline": "topology_algebra_cd_completion",
+            "target_discipline": "prenumeric_toc_substrate_graph"
+          }
+        ]
+      },
+      {
+        "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+        "target": "CNNA.PillarA.Closure.RegularizationClosure",
+        "source_group": "PillarA/Handoff",
+        "target_group": "PillarA/Closure",
+        "count": 1,
+        "source_disciplines": [
+          "topology_algebra_cd_completion"
+        ],
+        "target_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "discipline_pairs": [
+          {
+            "source_discipline": "topology_algebra_cd_completion",
+            "target_discipline": "dirichlet_dtn_schur_network"
+          }
+        ]
+      },
+      {
+        "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+        "target": "CNNA.PillarA.Coupling.MultiSchur",
+        "source_group": "PillarA/Handoff",
+        "target_group": "PillarA/Coupling",
+        "count": 1,
+        "source_disciplines": [
+          "topology_algebra_cd_completion"
+        ],
+        "target_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "discipline_pairs": [
+          {
+            "source_discipline": "topology_algebra_cd_completion",
+            "target_discipline": "dirichlet_dtn_schur_network"
+          }
+        ]
+      },
+      {
+        "source": "CNNA.PillarA.Handoff.Core.SectorExport",
+        "target": "CNNA.PillarA.Network.InfiniteCarrier",
+        "source_group": "PillarA/Handoff",
+        "target_group": "PillarA/Network",
+        "count": 1,
+        "source_disciplines": [
+          "topology_algebra_cd_completion"
+        ],
+        "target_disciplines": [
+          "dirichlet_dtn_schur_network"
+        ],
+        "discipline_pairs": [
+          {
+            "source_discipline": "topology_algebra_cd_completion",
+            "target_discipline": "dirichlet_dtn_schur_network"
+          }
+        ]
+      }
+    ]
+  },
+  "mainline_mismatch_report": {
+    "syntactic_mainline_length": 68,
+    "semantic_mainline_length": 56,
+    "weighted_semantic_mainline_length": 44,
+    "shared_edge_count_with_semantic_mainline": 55,
+    "shared_edge_count_with_weighted_mainline": 37,
+    "syntactic_edges_missing_in_semantic_graph": 3,
+    "syntactic_edges_only_weakly_supported": 0
+  },
+  "mainline_edge_forensics": {
+    "edge_count": 67,
+    "status_counts": {
+      "missing": 3,
+      "strong": 64
+    }
+  },
+  "weak_mainline_edges": {
+    "edge_count": 3
+  },
+  "edge_case_reports": {
+    "report_count": 3,
+    "missing_report_count": 3,
+    "weak_report_count": 0
+  },
+  "sink_taxonomy": {
+    "sink_count": 31,
+    "classification_counts": {
+      "ambiguous_leaf": 13,
+      "diagnostic_leaf": 5,
+      "foundation_aux_leaf": 2,
+      "intentional_output": 7,
+      "proof_obligation_terminal": 3,
+      "research_leaf": 1
+    }
+  },
+  "trunk_vs_extensions": {
+    "minimum_confidence_weight": 3,
+    "minimum_confidence_classes": [
+      "anchored_open_namespace",
+      "exact_qualified",
+      "qualified_suffix",
+      "same_namespace_short_name"
+    ],
+    "robust_edge_count": 282,
+    "heuristic_edge_count": 5,
+    "robust_trunk": {
+      "mainline_length": 56,
+      "weighted_mainline_length": 44,
+      "source_count": 25,
+      "sink_count": 44,
+      "summary_file": "architectural_core/robust_semantic_signal_plan/summary.json"
+    }
+  }
+}

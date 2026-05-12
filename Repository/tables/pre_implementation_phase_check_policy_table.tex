@@ -1,0 +1,27 @@
+\small
+\par\smallskip\noindent\begin{minipage}{0.99\linewidth}\footnotesize\raggedright\textbf{Table legend.} \colorbox{green!18}{\strut G} = green/closed and derived-only; \colorbox{orange!28}{\strut O} = orange/implementable after stated predecessor closure; \colorbox{yellow!25}{\strut Y} = yellow/active and implementable now; \colorbox{red!20}{\strut R} = red/locked Lean-derivation phase; release requires derived-only object/proof evidence. Context class is orthogonal to status.\end{minipage}\par\vspace{0.25em}
+\arrayrulecolor{black!22}
+\begin{longtable}{L{0.055\linewidth} L{0.065\linewidth} L{0.305\linewidth} L{0.345\linewidth} L{0.19\linewidth}}
+\hline
+\textbf{ID} & \textbf{Check status} & \textbf{Meaning} & \textbf{Required action} & \textbf{Ledger effect}\\
+\hline
+\endfirsthead
+\hline
+\textbf{ID} & \textbf{Check status} & \textbf{Meaning} & \textbf{Required action} & \textbf{Ledger effect}\\
+\hline
+\endhead
+PIPC-G & \cellcolor{green!18}G & Closed/\allowbreak{}derived-only in the inspected window: the phase or gate is already closed and its relevant outputs are available under the current Lean-data timestamp or governance closeout. & Do not reopen or reimplement. It may be consumed as a completed predecessor if its scratchpad/\allowbreak{}proof/\allowbreak{}ledger evidence is present. & Record as a closed predecessor in the check output when a window includes already closed phases.\\
+\hline
+\addlinespace[0.24em]
+PIPC-Y & \cellcolor{yellow!25}Y & Active implementable now: the current active phase has all visible prerequisites, object/\allowbreak{}proof dependencies, import seams, and consumer-contract constraints satisfied at the current cursor. & May be proposed for implementation from the current cursor, subject to normal implementation prompt and post-green closeout. No Lean data timestamp changes during the check itself. & Record the Y result with scope now, evidence basis, proof-risk note, and tool version/\allowbreak{}timestamp in the pre-implementation check output.\\
+\hline
+\addlinespace[0.24em]
+PIPC-O & \cellcolor{orange!28}O & Implementable in derivation chain: a later phase is not active now, but becomes implementable after the explicitly listed predecessor closures in the thought experiment. & Do not activate immediately. Preserve the predecessor assumptions and activate only after the listed chain has actually closed. & Record the O result with required predecessor closures and assumptions;\newline it must not count as the unique active phase.\\
+\hline
+\addlinespace[0.24em]
+PIPC-R & \cellcolor{red!20}R & Blocked: at least one required dependency, object, proof bridge, source extraction, module seam, or consumer contract is missing or not naturally generated at the required layer. & Do not start the blocked phase. Add the finding to Static code findings and generate one or more upstream addressing phases at the natural emergence layer of the missing structure before the blocked phase. & Record the R result, missing dependency, natural addressing layer, generated addressing phase(s), and tool version/\allowbreak{}timestamp in the pre-implementation check output.\\
+\hline
+\addlinespace[0.24em]
+\end{longtable}
+\arrayrulecolor{black}
+\normalsize

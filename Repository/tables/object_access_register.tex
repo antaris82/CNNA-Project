@@ -1,0 +1,840 @@
+\footnotesize
+\par\smallskip\noindent\begin{minipage}{0.99\linewidth}\footnotesize\raggedright\textbf{Table legend.} \colorbox{white}{\strut W} = white/finished public object; \colorbox{cyan!20}{\strut B} = blue/proof-carrying but semantic/API correction still open; \colorbox{green!18}{\strut G} = green/locally closable; \colorbox{yellow!25}{\strut Y} = yellow/known route with prerequisites; \colorbox{red!20}{\strut R} = red/derivation layer incomplete or unclear; \colorbox{black!18}{\strut K} = black/registered side or future target. Context class is orthogonal to status.\end{minipage}\par\vspace{0.25em}
+\arrayrulecolor{black!22}
+\begin{longtable}{L{0.022\linewidth} L{0.064\linewidth} L{0.063\linewidth} L{0.032\linewidth} L{0.04\linewidth} L{0.026\linewidth} L{0.135\linewidth} L{0.115\linewidth} L{0.11\linewidth} L{0.3\linewidth} L{0.022\linewidth}}
+\hline
+\textbf{ID} & \textbf{Object} & \textbf{Context class} & \textbf{Tier} & \textbf{Lifecycle} & \textbf{Object status} & \textbf{Pillar-A access} & \textbf{Handoff rights} & \textbf{May be consumed by} & \textbf{Current code modules /\allowbreak{} derivation site} & \textbf{Phase}\\
+\hline
+\endfirsthead
+\hline
+\textbf{ID} & \textbf{Object} & \textbf{Context class} & \textbf{Tier} & \textbf{Lifecycle} & \textbf{Object status} & \textbf{Pillar-A access} & \textbf{Handoff rights} & \textbf{May be consumed by} & \textbf{Current code modules /\allowbreak{} derivation site} & \textbf{Phase}\\
+\hline
+\endhead
+\hyperlink{object-row-G00}{G00} & Generator provenance & Lean;\newline Source;\newline Object & F0 & current & \cellcolor{green!18}G & A-internal readable only along import order;\newline no self-handoff use. & Do not export directly;\newline only derived Profile in A->*. & All A-internal Profile;\newline B/\allowbreak{}C/\allowbreak{}D/\allowbreak{}E only through outputs. & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedSource.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedMainPath.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}BoundarySource/\allowbreak{}GeneratedSubstrateRoute.lean & \hyperlink{phase-row-1-2-2}{1.2.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-H00}{H00} & A input handoff B->A & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & \cellcolor{yellow!25}Y & A may consume only this input, never A->B. & B->A input. & A post-emergence rules. & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}B\_to\_A.lean & \hyperlink{phase-row-2-3-1}{2.3.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-H01}{H01} & A input handoff C->A & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & \cellcolor{yellow!25}Y & A may consume only this input, never A->C. & C->A input. & A post-emergence geometry effects. & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}C\_to\_A.lean & \hyperlink{phase-row-2-3-1}{2.3.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-H02}{H02} & A input handoff D->A & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & \cellcolor{yellow!25}Y & A may consume only this input, never A->D. & D->A input. & A post-emergence dynamics effects. & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}D\_to\_A.lean & \hyperlink{phase-row-2-3-1}{2.3.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-H03}{H03} & A input handoff E->A & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & \cellcolor{yellow!25}Y & A may consume only this input, never A->E. & E->A input. & A post-emergence high-level effects. & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}E\_to\_A.lean & \hyperlink{phase-row-2-3-1}{2.3.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-O00}{O00} & ExecComplex & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{white}W & Allowed A-internally and in output Profile. & May appear in A->B/\allowbreak{}C/\allowbreak{}D/\allowbreak{}E as operational mirror when semantically released. & All operational Profile. & CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}ExecComplex.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}ExecComplexBridge.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}ExecComplexLemmas.lean & \hyperlink{phase-row-1-2-1}{1.2.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-G01}{G01} & substrate: regular branching & Lean;\newline Source;\newline Object & F0 & current & \cellcolor{yellow!25}Y & A-internal;\newline may be parameterized request-side. & A->B only indirectly as carrier/\allowbreak{}operator;\newline A->C later as geometry source. & arithmetic, geometry, handoff bridges. & CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}ConcreteSubstrate.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}BoundarySource/\allowbreak{}BranchAddressSubstrate.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}BoundarySource/\allowbreak{}BoundaryStatesubstrate.lean & \hyperlink{phase-row-1-2-3}{1.2.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-G02}{G02} & substrate: variable branching & Lean;\newline Source;\newline Object & F0 & current & \cellcolor{yellow!25}Y & A-internal;\newline separated from regular but with common interface. & A->B indirectly if operator profile is derived. & arithmetic-Scan, regime tests. & CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}LevelVariableSubstrate.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}WeightPolicy.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedDegreeFormulaAuditSM3db2eR0.lean & \hyperlink{phase-row-1-2-4}{1.2.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-G03}{G03} & Level /\allowbreak{} Cutoff & Lean;\newline Source;\newline Object & F0 & current & \cellcolor{yellow!25}Y & A-internal;\newline must be fixed before carrier and matrix. & A->B as selected level only if the consumer needs it;\newline A must not consume its own output. & Carrier, Matrix, Handoff. & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}BoundarySource/\allowbreak{}LevelHistoryIndex.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}BoundarySource/\allowbreak{}LevelStepWitness.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Core/\allowbreak{}Step1MathData.lean & \hyperlink{phase-row-1-2-5}{1.2.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-G04}{G04} & Carrier /\allowbreak{} index type & Lean;\newline Source;\newline Object & F0 & current & \cellcolor{yellow!25}Y & A-internal;\newline no free reindexing. & A->B as Omega/\allowbreak{}boundary carrier;\newline A->C as finite-geometry carrier. & Matrix, operator algebra, Handoff. & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}BoundarySource/\allowbreak{}RecursiveLevelHistoryCarrier.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}BoundarySource/\allowbreak{}LevelHistoryIndex.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedLevelStepWitnessSM6.lean & \hyperlink{phase-row-1-2-6}{1.2.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-G05}{G05} & Boundary /\allowbreak{} interface /\allowbreak{} interior partition & Lean;\newline Source;\newline Object & F0 & current & \cellcolor{yellow!25}Y & A-internal;\newline basis for Schur/\allowbreak{}DtN. & A->B only boundary/\allowbreak{}interface abstracted;\newline dark complement not directly to B. & Schur, DtN, AQFT bright consumer. & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedBoundaryInteriorPartition.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}CutSpec.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}BoundaryPorts.lean & \hyperlink{phase-row-1-3-1}{1.3.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-G06}{G06} & Regime: noOuterEnvironment & Lean;\newline Source;\newline Object & F0 & current & \cellcolor{yellow!25}Y & derive A-internally;\newline must not be misused as plan status. & A->B as regime flag allowed;\newline A must not consume A->B. & B closed/\allowbreak{}unitary branch, D dynamics. & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Outputs/\allowbreak{}A\_to\_B.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Sectors/\allowbreak{}SectorSplit.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Sectors/\allowbreak{}ComplementSectorFamily.lean & \hyperlink{phase-row-1-3-2}{1.3.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-G07}{G07} & Regime: hasOuterEnvironment & Lean;\newline Source;\newline Object & F0 & current & \cellcolor{yellow!25}Y & derive A-internally;\newline no stochasticity as input. & A->B as regime flag + effective operator;\newline complement not directly. & B open-system branch, D channels. & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Outputs/\allowbreak{}A\_to\_B.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Sectors/\allowbreak{}ComplementSectorFamily.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Network/\allowbreak{}SectorSysEnv.lean & \hyperlink{phase-row-1-3-2}{1.3.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-G08}{G08} & Complement families: UV tail & Lean;\newline Source;\newline Object & F0 & current & \cellcolor{red!20}R & A-internal;\newline may only come naturally from complement layer. & Not directly to B-bright;\newline possibly A->B-prime via effective data;\newline B-prime dark later. & Regime, spectral gap, dark sector. & CNNA/\allowbreak{}PillarA/\allowbreak{}Sectors/\allowbreak{}UVSpectralSelector.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Sectors/\allowbreak{}ComplementSectorFamily.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Outputs/\allowbreak{}A\_to\_B.lean & \hyperlink{phase-row-1-3-3}{1.3.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-G09}{G09} & Complement families: IR/\allowbreak{}parent-path tail & Lean;\newline Source;\newline Object & F0 & current & \cellcolor{red!20}R & A-internal. & Not directly to B-bright. & Regime, scale, spectral tests. & CNNA/\allowbreak{}PillarA/\allowbreak{}Sectors/\allowbreak{}ComplementSectorFamily.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Outputs/\allowbreak{}A\_to\_B.lean & \hyperlink{phase-row-1-3-3}{1.3.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-G10}{G10} & Complement families: sideways environment & Lean;\newline Source;\newline Object & F0 & current & \cellcolor{red!20}R & A-internal. & Not directly to B-bright. & open branch, channels. & CNNA/\allowbreak{}PillarA/\allowbreak{}Sectors/\allowbreak{}ComplementSectorFamily.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Network/\allowbreak{}SectorSysEnv.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Network/\allowbreak{}SectorChannels.lean & \hyperlink{phase-row-1-3-3}{1.3.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CD0}{CD0} & Cayley-Dickson source & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{cyan!20}B & A-internal;\newline reintegrate as structural consumer of A data, not separate generator. BLUE quarantine: derived-only evidence may be audited, but semantic/\allowbreak{}API use must go through the planned neutral correction phase. & A->CayleyDickson output only;\newline A must not consume own output. Uncorrected blue form is not handoff-exportable. & CD structural proofs.;\newline blue-correction chain only until neutral API closes;\newline no direct Phase 3+/\allowbreak{}handoff public consumption & CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}Source.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}CayleyDicksonAdapter.lean & \hyperlink{phase-row-1-4-1}{1.4.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CD1}{CD1} & Scalar part & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{cyan!20}B & A-internal structural;\newline not arithmetic source. BLUE quarantine: derived-only evidence may be audited, but semantic/\allowbreak{}API use must go through the planned neutral correction phase. & A->CD only. Uncorrected blue form is not handoff-exportable. & star/\allowbreak{}norm.;\newline blue-correction chain only until neutral API closes;\newline no direct Phase 3+/\allowbreak{}handoff public consumption & CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}S6CanonicalScalarPart.lean & \hyperlink{phase-row-1-4-2}{1.4.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CD2}{CD2} & Cayley-Dickson star/\allowbreak{}conjugation & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{cyan!20}B & A-internal structural. BLUE quarantine: derived-only evidence may be audited, but semantic/\allowbreak{}API use must go through the planned neutral correction phase. & A->CD only;\newline possible analogy to number conjugation only after bridge. Uncorrected blue form is not handoff-exportable. & normSq.;\newline blue-correction chain only until neutral API closes;\newline no direct Phase 3+/\allowbreak{}handoff public consumption & CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}S6CanonicalStar.lean & \hyperlink{phase-row-1-4-3}{1.4.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CD3}{CD3} & CD normSq & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{cyan!20}B & A-internal structural. BLUE quarantine: derived-only evidence may be audited, but semantic/\allowbreak{}API use must go through the planned neutral correction phase. & A->CD only. Uncorrected blue form is not handoff-exportable. & Hurwitz/\allowbreak{}division.;\newline blue-correction chain only until neutral API closes;\newline no direct Phase 3+/\allowbreak{}handoff public consumption & CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}S6CanonicalNormSqDefined.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}S6CanonicalNormSqReduction.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}S6CanonicalNormSqBlockSystem.lean & \hyperlink{phase-row-1-4-4}{1.4.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CD4}{CD4} & CD multiplication/\allowbreak{}product & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{cyan!20}B & A-internal structural. BLUE quarantine: derived-only evidence may be audited, but semantic/\allowbreak{}API use must go through the planned neutral correction phase. & A->CD only. Uncorrected blue form is not handoff-exportable. & alternative law, norm multiplicativity.;\newline blue-correction chain only until neutral API closes;\newline no direct Phase 3+/\allowbreak{}handoff public consumption & CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}S6CanonicalProductSurfaceCandidate.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}S6CanonicalProductMultiplicationCandidate.lean & \hyperlink{phase-row-1-4-5}{1.4.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CD5}{CD5} & Alternative law & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{cyan!20}B & A-internal structural. BLUE quarantine: derived-only evidence may be audited, but semantic/\allowbreak{}API use must go through the planned neutral correction phase. & A->CD only. Uncorrected blue form is not handoff-exportable. & Hurwitz stop.;\newline blue-correction chain only until neutral API closes;\newline no direct Phase 3+/\allowbreak{}handoff public consumption & CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}S6AlternativeLawScaffold.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}S6FullAlternativeLawBoundary.lean & \hyperlink{phase-row-1-4-6}{1.4.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CD6}{CD6} & Norm multiplicativity & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{cyan!20}B & A-internal structural. BLUE quarantine: derived-only evidence may be audited, but semantic/\allowbreak{}API use must go through the planned neutral correction phase. & A->CD only. Uncorrected blue form is not handoff-exportable. & division.;\newline blue-correction chain only until neutral API closes;\newline no direct Phase 3+/\allowbreak{}handoff public consumption & CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}S6NormSqMultiplicativity.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}S6NormMultiplicativityScaffold.lean & \hyperlink{phase-row-1-4-7}{1.4.7}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CD7}{CD7} & Hurwitz stop /\allowbreak{} R,C,H,O classification & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{cyan!20}B & A-internal structural;\newline must be fully reintegrated as closed subproject. BLUE quarantine: derived-only evidence may be audited, but semantic/\allowbreak{}API use must go through the planned neutral correction phase. & A->CD, later A->E as structural invariant. Uncorrected blue form is not handoff-exportable. & Architecture consistency.;\newline blue-correction chain only until neutral API closes;\newline no direct Phase 3+/\allowbreak{}handoff public consumption;\newline BR08 horizontal/\allowbreak{}vertical Schur-duality bridge & CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}S6HurwitzStopSeed.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}S6CayleyDicksonIdentification.lean & \hyperlink{phase-row-1-4-8}{1.4.8}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-S00}{S00} & Dirichlet-Laplacian & Lean;\newline Source;\newline Object & F0 & current & \cellcolor{yellow!25}Y & A-internal;\newline consumers may use only Profile. & A->B only after boundary reduction/\allowbreak{}effective operator. & Schur, DtN, spectrum. & CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}DirichletLaplacian.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedDirichletEntry.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedDirichletExecEntrySourceSM3bq.lean & \hyperlink{phase-row-3-1}{3.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-S01}{S01} & Interior block & Lean;\newline Source;\newline Object & F0 & current & \cellcolor{cyan!20}B & Present in SM3 chain, but plan-semantically named. BLUE quarantine: derived-only evidence may be audited, but semantic/\allowbreak{}API use must go through the planned neutral correction phase. & Do not export directly;\newline results only. Uncorrected blue form is not handoff-exportable. & Interior inverse, Schur.;\newline blue-correction chain only until neutral API closes;\newline no direct Phase 3+/\allowbreak{}handoff public consumption & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedInteriorBlock.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedInteriorEliminationCarrier.lean & \hyperlink{phase-row-3-2}{3.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-S02}{S02} & Interior inverse candidate & Lean;\newline Source;\newline Object & F0 & current & \cellcolor{cyan!20}B & A-internal, legacy plan-semantic. BLUE quarantine: derived-only evidence may be audited, but semantic/\allowbreak{}API use must go through the planned neutral correction phase. & Do not export directly. Uncorrected blue form is not handoff-exportable. & TwoSidedInv proof.;\newline blue-correction chain only until neutral API closes;\newline no direct Phase 3+/\allowbreak{}handoff public consumption & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedInteriorInverseCandidateStart.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedInteriorInverseCandidateEntry.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedInteriorAccumulatedTraceEvaluation.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedInteriorInverseCandidateMatrix.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedInteriorInverseCandidateShapeSeparation.lean & \hyperlink{phase-row-3-3}{3.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-S03}{S03} & Two-sided inverse certificate & Lean;\newline Source;\newline Object & F0 & current & \cellcolor{cyan!20}B & A-internal;\newline consumable as certificate. BLUE quarantine: derived-only evidence may be audited, but semantic/\allowbreak{}API use must go through the planned neutral correction phase. & Do not export directly;\newline DtN output may be exported. Uncorrected blue form is not handoff-exportable. & InteriorEliminationData, DtN.;\newline blue-correction chain only until neutral API closes;\newline no direct Phase 3+/\allowbreak{}handoff public consumption & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedInteriorProductIdentityProofR4a.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedInteriorTwoSidedInvFromSM3db7R.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedInteriorProvenTwoSidedInvR5.lean & \hyperlink{phase-row-3-4}{3.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-S04}{S04} & InteriorEliminationData & Lean;\newline Source;\newline Object & F0 & current & \cellcolor{cyan!20}B & A-internal;\newline may be consumed by DtN. BLUE quarantine: derived-only evidence may be audited, but semantic/\allowbreak{}API use must go through the planned neutral correction phase. & Not raw an B;\newline only boundary operator. Uncorrected blue form is not handoff-exportable. & DtN, generalized DtN.;\newline blue-correction chain only until neutral API closes;\newline no direct Phase 3+/\allowbreak{}handoff public consumption & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedInteriorEliminationCertificateSM3fR.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}DtN/\allowbreak{}DtN.lean & \hyperlink{phase-row-3-5}{3.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-S05}{S05} & DtN boundary operator & Lean;\newline Source;\newline Object & F0 & current & \cellcolor{cyan!20}B & A-internal;\newline central output. BLUE quarantine: derived-only evidence may be audited, but semantic/\allowbreak{}API use must go through the planned neutral correction phase. & A->B as L/\allowbreak{}Operator erlaubt;\newline A->C geometry optional;\newline A may Output not konsumieren. Uncorrected blue form is not handoff-exportable. & arithmetic, B bright AQFT.;\newline blue-correction chain only until neutral API closes;\newline no direct Phase 3+/\allowbreak{}handoff public consumption;\newline BR08 horizontal/\allowbreak{}vertical Schur-duality bridge & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedTopBoundaryDtNSM3gR.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}DtN/\allowbreak{}DtN.lean & \hyperlink{phase-row-3-6}{3.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-S06}{S06} & GeneralizedDtN /\allowbreak{} MultiSchur & Lean;\newline Source;\newline Object & F0 & current & \cellcolor{cyan!20}B & A-internal;\newline legacy plan-semantic. BLUE quarantine: derived-only evidence may be audited, but semantic/\allowbreak{}API use must go through the planned neutral correction phase. & A->B only if bright handoff specified;\newline A->D dynamics optional. Uncorrected blue form is not handoff-exportable. & arithmetic matrices, Handoff.;\newline blue-correction chain only until neutral API closes;\newline no direct Phase 3+/\allowbreak{}handoff public consumption & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedGeneralizedTopBoundaryDtNSM3hR.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedMultiSchurSM4.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Coupling/\allowbreak{}GeneralizedDtN.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Coupling/\allowbreak{}MultiSchur.lean & \hyperlink{phase-row-3-7}{3.7}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-O01}{O01} & Boundary matrix over ExecComplex & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{cyan!20}B & A-internal;\newline neutral wrapper missing. BLUE quarantine: derived-only evidence may be audited, but semantic/\allowbreak{}API use must go through the planned neutral correction phase. & A->B as bright operator;\newline A->C as spectral/\allowbreak{}geometric source. Uncorrected blue form is not handoff-exportable. & Charpoly, algebra, B.;\newline blue-correction chain only until neutral API closes;\newline no direct Phase 3+/\allowbreak{}handoff public consumption & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedMultiSchurExecBoundaryOperatorSM4q.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedMultiSchurExecBoundaryOperatorFromSM3fqPlusSM4q.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedLevelHistoryExecMatrixFromSM6bRecheckSM8.lean & \hyperlink{phase-row-4-1}{4.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-O02}{O02} & Determinant coefficient recurrence & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{cyan!20}B & A-internal;\newline historical name. BLUE quarantine: derived-only evidence may be audited, but semantic/\allowbreak{}API use must go through the planned neutral correction phase. & Not directly an B;\newline arithmeticconsumer. Uncorrected blue form is not handoff-exportable. & Quadratic window, discriminant.;\newline blue-correction chain only until neutral API closes;\newline no direct Phase 3+/\allowbreak{}handoff public consumption & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedOperationalDeterminantCoefficientRecurrenceSM9e.lean & \hyperlink{phase-row-4-2}{4.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-O03}{O03} & Operational polynomial profile & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{cyan!20}B & A-internal;\newline neutralize. BLUE quarantine: derived-only evidence may be audited, but semantic/\allowbreak{}API use must go through the planned neutral correction phase. & A->C/\allowbreak{}E only if a polynomial invariant is needed. Uncorrected blue form is not handoff-exportable. & Window, spectrum.;\newline blue-correction chain only until neutral API closes;\newline no direct Phase 3+/\allowbreak{}handoff public consumption & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedLevelHistoryOperationalCharpolyPolynomialProfileFromSM9b.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedLevelHistoryOperationalCoefficientSourceFromSM9c.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}OperationalBoundedPolynomialEvaluationNormalFormSM9ePlus.lean & \hyperlink{phase-row-4-3}{4.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-O04}{O04} & Quadratic coefficient window & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{cyan!20}B & A-internal;\newline Teil-2-Wrapper first. BLUE quarantine: derived-only evidence may be audited, but semantic/\allowbreak{}API use must go through the planned neutral correction phase. & Not directly an B;\newline A->C optional as invariant. Uncorrected blue form is not handoff-exportable. & Discriminant.;\newline blue-correction chain only until neutral API closes;\newline no direct Phase 3+/\allowbreak{}handoff public consumption & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedOperationalQuadraticCoefficientWindowFromSM9dSM9e.lean & \hyperlink{phase-row-4-4}{4.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-O05}{O05} & Operational discriminant D\_op & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{cyan!20}B & A-internal;\newline erster frozen Teil-2-Resetpunkt. BLUE quarantine: derived-only evidence may be audited, but semantic/\allowbreak{}API use must go through the planned neutral correction phase. & A->C/\allowbreak{}E as arithmetic invariant;\newline not as B-Dynamikquelle. Uncorrected blue form is not handoff-exportable. & Comparison, CM seed.;\newline blue-correction chain only until neutral API closes;\newline no direct Phase 3+/\allowbreak{}handoff public consumption;\newline BR08 horizontal/\allowbreak{}vertical Schur-duality bridge & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedOperationalQuadraticDiscriminantSourceFromSM9g1Window.lean & \hyperlink{phase-row-4-5}{4.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-O06}{O06} & Comparison target policy & Reference;\newline Gate;\newline Object & F2 & current & \cellcolor{green!18}G & A-internal;\newline only after computed D\_op. & A->E meta/\allowbreak{}report optional;\newline not an B. & Tests. & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedOperationalDiscriminantFactorGateFromSM9fFull.lean;\newline current code has target-exclusion/\allowbreak{}gate only, no general target policy & \hyperlink{phase-row-4-6}{4.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-O07}{O07} & General finite computation test matrix profile & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{yellow!25}Y & A-internal reusable testing object;\newline not a generative axiom. & none until proof-carrying rows are derived;\newline comparison columns cannot be handed off as operational data. & Phase 4 wrappers, Phase 8 lattice sentinel tests, refactor regression checks, documentation/\allowbreak{}proof dossiers., O08 regime-typed extension & Future module selected by Phase 1.1.1.1.1;\newline must reuse existing Smoke/\allowbreak{}Generator modules. & \hyperlink{phase-row-4-0-1}{4.0.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N00}{N00} & Fundamental discriminant D\_fund & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{green!18}G & A-internal;\newline before CM. & A->C as number-theoretic invariant. & CM order, conductor. & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Orders/\allowbreak{}DiscriminantConvention.lean (special Gaussian/\allowbreak{}Eisenstein bridge;\newline not general derived D\_fund) & \hyperlink{phase-row-5-1}{5.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N01}{N01} & Conductor f & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{green!18}G & A-internal. & A->C as arithmetic invariant. & Order profile. & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Orders/\allowbreak{}DiscriminantConvention.lean (implicit/\allowbreak{}bridge status;\newline conductor not canonical) & \hyperlink{phase-row-5-1}{5.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N02}{N02} & Quadratic field K=Q(sqrt(D)) & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal;\newline not before D\_fund. & A->C, A->E maybe;\newline B not directly. & Order, embeddings. & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Orders/\allowbreak{}QuadraticOrder.lean (special shapes) & \hyperlink{phase-row-5-2}{5.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N03}{N03} & Quadratic order O\_D & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal;\newline canonical once. & A->C as CM seed;\newline A->E as invariant. & Norm, units, class group. & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Orders/\allowbreak{}QuadraticOrder.lean (special Gaussian/\allowbreak{}Eisenstein examples) & \hyperlink{phase-row-5-3}{5.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N04}{N04} & Integral basis /\allowbreak{} omega\_D & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal. & A->C geometry. & Norm, trace, lattice. & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Orders/\allowbreak{}QuadraticOrder.lean (halfIntegral shape;\newline basis not general API) & \hyperlink{phase-row-5-4}{5.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N05}{N05} & Trace form & Lean;\newline Target;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal. & A->C, A->E. & Gram, norm. & no current general module;\newline partial arithmetic in CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Orders/\allowbreak{}NormForms.lean & \hyperlink{phase-row-5-5}{5.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N06}{N06} & Norm form & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal;\newline critical for prime claims. & A->C/\allowbreak{}E as invariant;\newline not B. & Theta, prime splitting. & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Orders/\allowbreak{}NormForms.lean (special BinaryQuadraticNormForm) & \hyperlink{phase-row-5-5}{5.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N07}{N07} & Conjugation & Lean;\newline Target;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal. & A->C if embeddings exported. & Norm/\allowbreak{}trace/\allowbreak{}star analogies. & no current general module;\newline should live with QuadraticOrder/\allowbreak{}NormForms & \hyperlink{phase-row-5-5}{5.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N08}{N08} & Unit group O\_D\textasciicircum{}* & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{yellow!25}Y & A-internal;\newline must not be inferred from drawing. & A->C symmetry;\newline A->B only if operator action derived. & Lattice automorphisms, angles. & no current derived module;\newline only UnitConventionStatus in NormForms.lean & \hyperlink{phase-row-6-1}{6.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N09}{N09} & Class group Cl(O\_D) & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{yellow!25}Y & A-internal but complex;\newline far from immediate. & A->C/\allowbreak{}E as invariant. & Heegner/\allowbreak{}PID/\allowbreak{}UFD, Hilbert class polynomial. & no current module & \hyperlink{phase-row-6-2}{6.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N10}{N10} & Class number h(D) & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{yellow!25}Y & A-internal;\newline not target table input. & A->C/\allowbreak{}E. & Heegner, j algebraicity degree. & no current module & \hyperlink{phase-row-6-2}{6.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N11}{N11} & Fractional/\allowbreak{}integral ideas & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{yellow!25}Y & A-internal. & A->C/\allowbreak{}E only as abstract invariant. & Class group, Hilbert class polynomial. & no current module & \hyperlink{phase-row-6-2-1}{6.2.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N12}{N12} & Principal ideal predicate & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{yellow!25}Y & A-internal. & A->C/\allowbreak{}E. & Heegner tests. & no current module & \hyperlink{phase-row-6-2-2}{6.2.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N13}{N13} & Heegner/\allowbreak{}PID/\allowbreak{}UFD indicator & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{yellow!25}Y & A-internal;\newline after h(D), not before. & A->E report;\newline A->C. & Prime generation claims., N18 regime-projection classification & no current module;\newline old HeegnerDiscriminantBridge in DiscriminantConvention.lean is not full h(D) & \hyperlink{phase-row-6-3}{6.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N14}{N14} & Prime splitting behavior & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{yellow!25}Y & A-internal. & A->C/\allowbreak{}E;\newline B not direct. & Prime/\allowbreak{}norm interpretation. & no current module & \hyperlink{phase-row-6-4}{6.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N15}{N15} & Kronecker/\allowbreak{}Dirichlet character chi\_D & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{yellow!25}Y & A-internal. & A->C/\allowbreak{}E. & L-function, splitting. & no current module & \hyperlink{phase-row-6-4}{6.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CD8}{CD8} & Arithmetic-CD compatibility as Schur-duality corollary & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{black!18}K & A-internal bridge after both algebraic and arithmetic Schur routes, not a Phase-6 public output. & A->E only after theorem. & Unification only after BR08 theorem;\newline not by earlier CD/\allowbreak{}arithmetic source phases. & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}CayleyDickson/\allowbreak{}ArithmeticCDBridge.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Convergence/\allowbreak{}CDArithmeticCompatibility.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Convergence/\allowbreak{}QuaternionRamanujanInterface.lean & \hyperlink{phase-row-10-4-2}{10.4.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-L00}{L00} & Lattice embedding Lambda -> C & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{yellow!25}Y & A-internal;\newline no drawing input. & A->C geometry;\newline maybe B geometric if later. & Gram, tau, angles. & no current CM-lattice module;\newline Geometry/\allowbreak{}* is spacetime/\allowbreak{}foliation, not CM embedding & \hyperlink{phase-row-7-1}{7.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-L01}{L01} & Lattice basis & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{yellow!25}Y & A-internal. & A->C. & Gram, tau. & no current CM-lattice module & \hyperlink{phase-row-7-1}{7.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-L02}{L02} & Gram matrix & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{yellow!25}Y & A-internal. & A->C;\newline A->B not direct. & Angles, determinant, automorphisms. & no current CM-lattice Gram module & \hyperlink{phase-row-7-2}{7.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-L03}{L03} & Lattice determinant /\allowbreak{} covolume & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{yellow!25}Y & A-internal. & A->C/\allowbreak{}E. & Discriminant consistency. & no current CM-lattice determinant/\allowbreak{}covolume module & \hyperlink{phase-row-7-2}{7.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-L04}{L04} & Period ratio tau & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{yellow!25}Y & A-internal;\newline prerequisite for j. & A->C. & Modular forms, j.;\newline M08 CM/\allowbreak{}j special-value test targets & no current tau module & \hyperlink{phase-row-7-3}{7.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-L05}{L05} & Upper half-plane condition & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{yellow!25}Y & A-internal. & A->C. & Modular group, j. & no current upper-half-plane module & \hyperlink{phase-row-7-3}{7.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-L06}{L06} & Angle /\allowbreak{} cosine profile & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{yellow!25}Y & A-internal after Gram. & A->C;\newline maybe report to E. & Symmetry tests.;\newline L09/\allowbreak{}L10 heuristic lattice tests & no current derived angle module;\newline drawings/\allowbreak{}visual intuition not code source & \hyperlink{phase-row-7-4}{7.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-L07}{L07} & Lattice automorphism group & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{yellow!25}Y & A-internal. & A->C;\newline A->B only if operator action derived. & Angles, CD analogies. & no current lattice automorphism module & \hyperlink{phase-row-7-5}{7.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-M02}{M02} & Eisenstein series G4,G6 & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{yellow!25}Y & A-internal after tau/\allowbreak{}lattice. & A->C/\allowbreak{}E. & g2,g3,j. & no current Eisenstein-series module & \hyperlink{phase-row-8-1}{8.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-M03}{M03} & Weierstrass invariants g2,g3 & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{yellow!25}Y & A-internal. & A->C/\allowbreak{}E. & Delta\_mod, j. & no current Weierstrass-invariant module & \hyperlink{phase-row-8-2}{8.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-M04}{M04} & Modular discriminant Delta\_mod & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{yellow!25}Y & A-internal;\newline name disambiguation mandatory. & A->C/\allowbreak{}E. & j. & no current modular-discriminant module & \hyperlink{phase-row-8-3}{8.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-M05}{M05} & j-invariant & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{yellow!25}Y & A-internal after modular prerequisites. & A->C/\allowbreak{}E. & CM comparison, moonshine later.;\newline M08;\newline L09 test matrix & no current j-invariant module & \hyperlink{phase-row-8-4}{8.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-SP0}{SP0} & Eigenvalue profile & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal after matrix. & A->B maybe as spectral data only if specified;\newline A->C/\allowbreak{}E. & Heat kernel, gaps.;\newline v37 Path B consumers & CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}ExecSpectral/\allowbreak{}CharpolyCore.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}ExecSpectral/\allowbreak{}EigenvectorKernel.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}SpectralBridge.lean & \hyperlink{phase-row-10-1}{10.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-SP1}{SP1} & Spectral gap & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal. & A->B/\allowbreak{}D only as allowed profile. & Dynamics, UV cut.;\newline v37 Path B consumers & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Graph/\allowbreak{}SpectralGapSeed.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}ExecSpectral/\allowbreak{}Certificates.lean & \hyperlink{phase-row-10-1}{10.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P00}{P00} & Operator algebra & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal as profile;\newline B consumes output. & A->B allowed after bridge;\newline A cannot reimport. & B bright, finite seeds.;\newline v37 Path B consumers & CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}MatrixAlgebra.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}StateSpace.lean & \hyperlink{phase-row-10-2}{10.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P01}{P01} & Star operation & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal. & A->B part of operator algebra. & State positivity, KMS.;\newline v37 Path B consumers & CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}ExecComplex.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}HermitianStructure.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}MatrixAlgebra.lean & \hyperlink{phase-row-10-2}{10.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P02}{P02} & State functional & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal/\allowbreak{}far. & A->B after derivation. & GNS/\allowbreak{}KMS.;\newline v37 Path B consumers & CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}StateSpace.lean & \hyperlink{phase-row-10-2}{10.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P03}{P03} & Gibbs state & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal/\allowbreak{}far. & A->B/\allowbreak{}D. & KMS, dynamics.;\newline v37 Path B consumers & CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}GibbsStateSeed.lean & \hyperlink{phase-row-10-2}{10.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P04}{P04} & Time evolution & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal/\allowbreak{}far. & A->D/\allowbreak{}B. & unitarity/\allowbreak{}open dynamics.;\newline v37 Path B consumers & CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}MatrixExponential.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}UnitaryEvolution.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}DynamicsAdapter.lean & \hyperlink{phase-row-10-2}{10.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P05}{P05} & Unitarity certificate & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal after noOuter. & A->B/\allowbreak{}D. & closed branch theorem.;\newline v37 Path B consumers & CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}UnitaryEvolution.lean (finite seed;\newline regime split still pending) & \hyperlink{phase-row-10-2}{10.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P06}{P06} & Open channel /\allowbreak{} effective openness & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{red!20}R & A-internal after hasOuter;\newline no stochastic input. & A->D/\allowbreak{}B as effective data. & OQS consumer.;\newline v37 Path B consumers & CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}ChannelSeed.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Network/\allowbreak{}SectorChannels.lean & \hyperlink{phase-row-10-2}{10.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N16}{N16} & Dirichlet L-function L(s,chi\_D) & Reference;\newline Gate;\newline Object & F2 & current & \cellcolor{black!18}K & A-internal far target;\newline not immediate. & A->E only after analytic bridge. & Class number formula. & no current module & \hyperlink{phase-row-9-2}{9.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N17}{N17} & Class number formula & Reference;\newline Gate;\newline Object & F2 & current & \cellcolor{black!18}K & Far target;\newline not a source for early h(D). & A->E optional. & Consistency. & no current module & \hyperlink{phase-row-9-3}{9.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-L08}{L08} & Theta series Theta\_Lambda & Reference;\newline Gate;\newline Object & F2 & current & \cellcolor{black!18}K & Far target but registered. & A->C/\allowbreak{}E only after profile. & Prime/\allowbreak{}norm statistics. & no current theta-series module & \hyperlink{phase-row-9-1}{9.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-M00}{M00} & Modular group action SL2Z & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{black!18}K & Far target. & A->C. & j invariance, fundamental domain. & no current modular-action module & \hyperlink{phase-row-8-0}{8.0}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-M01}{M01} & Fundamental domain representative & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{black!18}K & Far target. & A->C/\allowbreak{}E. & j comparison. & no current fundamental-domain module & \hyperlink{phase-row-8-0}{8.0}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-M06}{M06} & q-expansion of j & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{black!18}K & Far target. & A->E/\allowbreak{}report. & j computation consistency. & no current q-expansion module & \hyperlink{phase-row-8-8}{8.8}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-M07}{M07} & Hilbert class polynomial H\_D & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{black!18}K & Far target. & A->C/\allowbreak{}E. & class field consistency. & no current Hilbert-class-polynomial module & \hyperlink{phase-row-8-8}{8.8}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-TM0}{TM0} & Transfermatrix T\_k & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{black!18}K & A-internal far target;\newline not needed for immediate wrapper. & A->E only after proof. & Schur theory explanation.;\newline BR08 horizontal/\allowbreak{}vertical Schur-duality bridge & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Schur/\allowbreak{}MobiusTransfer.lean (anchor/\allowbreak{}status only);\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Schur/\allowbreak{}Recurrence.lean;\newline no full M2(Z[lambda]) proof & \hyperlink{phase-row-10-4}{10.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-TM1}{TM1} & Transfermatrix product & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{black!18}K & Far target. & A->E. & charpoly connection.;\newline BR08 horizontal/\allowbreak{}vertical Schur-duality bridge & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Schur/\allowbreak{}MobiusTransfer.lean (no product formalization) & \hyperlink{phase-row-10-4}{10.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-TM2}{TM2} & Moebius/\allowbreak{}continued fraction relation & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{black!18}K & Far target. & A->E. & Theoretical bridge.;\newline BR08 horizontal/\allowbreak{}vertical Schur-duality bridge & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Schur/\allowbreak{}MobiusTransfer.lean (route/\allowbreak{}status;\newline no theoremically complete Moebius-chain) & \hyperlink{phase-row-10-4}{10.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-SP2}{SP2} & Heat kernel K(t) & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{black!18}K & Far target. & A->D/\allowbreak{}E. & Spectral dimension.;\newline v37 Path B consumers & no current heat-kernel module;\newline MatrixExponential is related but not HeatKernelProfile & \hyperlink{phase-row-10-3}{10.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-SP3}{SP3} & Spectral zeta zeta\_H & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{black!18}K & Far target. & A->E. & regularized determinant.;\newline v37 Path B consumers & no current spectral-zeta module & \hyperlink{phase-row-10-3}{10.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-SP4}{SP4} & Spectral dimension & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{black!18}K & Far target. & A->D/\allowbreak{}E. & physical interpretation.;\newline v37 Path B consumers & no current spectral-dimension module & \hyperlink{phase-row-10-3}{10.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-SP5}{SP5} & Zeta-regularized determinant & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{black!18}K & Far target. & A->E. & consistency.;\newline v37 Path B consumers & no current zeta-regularized determinant module & \hyperlink{phase-row-10-3}{10.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P07}{P07} & KMS condition & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{black!18}K & A may consume only if returned through explicit B->A input;\newline never from A->B output. & B internal /\allowbreak{} possible B->A output only after explicit gate. & B. & no current KMS proof module;\newline GibbsStateSeed is prerequisite only & \hyperlink{phase-row-13-4}{13.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P08}{P08} & GNS Hilbert space & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{black!18}K & A may consume only if returned through explicit B->A input;\newline never from A->B output. & B internal /\allowbreak{} possible B->A output only after explicit gate. & Tomita. & no current GNS module & \hyperlink{phase-row-13-4}{13.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P09}{P09} & Tomita operator S & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{black!18}K & A may consume only if returned through explicit B->A input;\newline never from A->B output. & B internal /\allowbreak{} possible B->A output only after explicit gate. & Delta,J. & no current Tomita module & \hyperlink{phase-row-13-5}{13.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P10}{P10} & Modular operator Delta & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{black!18}K & A may consume only if returned through explicit B->A input;\newline never from A->B output. & B internal /\allowbreak{} possible B->A output only after explicit gate. & KMS/\allowbreak{}CPT. & no current modular-operator module & \hyperlink{phase-row-13-5}{13.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P11}{P11} & Modular conjugation J & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{black!18}K & A may consume only if returned through explicit B->A input;\newline never from A->B output. & B internal /\allowbreak{} possible B->A output only after explicit gate. & CPT, spin-statistics. & no current modular-conjugation module & \hyperlink{phase-row-13-5}{13.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P12}{P12} & Bisognano-Wichmann/\allowbreak{}CPT bridge & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{black!18}K & A may consume only if returned through explicit B->A input;\newline never from A->B output. & B internal /\allowbreak{} possible B->A output only after explicit gate. & CPT. & no current BW/\allowbreak{}CPT module & \hyperlink{phase-row-13-6}{13.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P13}{P13} & Spin-statistics & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{black!18}K & A may consume only if returned through explicit B->A input;\newline never from A->B output. & B internal /\allowbreak{} possible B->A output only after explicit gate. & physics consistency. & no current spin-statistics module & \hyperlink{phase-row-13-6}{13.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P14}{P14} & Kramers degeneracy & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{black!18}K & A may consume only if returned through explicit B->A input;\newline never from A->B output. & B internal /\allowbreak{} possible B->A output only after explicit gate. & physics tests. & no current Kramers module & \hyperlink{phase-row-13-6}{13.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P15}{P15} & Split property & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{black!18}K & A may consume only if returned through explicit B->A input;\newline never from A->B output. & B internal /\allowbreak{} possible B->A output only after explicit gate. & AQFT consistency. & CNNA/\allowbreak{}PillarA/\allowbreak{}Sectors/\allowbreak{}SectorSplit.lean;\newline Handoff has split fields;\newline AQFT split property not derived & \hyperlink{phase-row-13-6}{13.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-P16}{P16} & Local net /\allowbreak{} Haag-Kastler algebraic axioms & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{black!18}K & A may consume only if returned through explicit B->A input;\newline never from A->B output. & B internal /\allowbreak{} possible B->A output only after explicit gate. & AQFT branch. & no current local-net/\allowbreak{}HK module;\newline legacy target only & \hyperlink{phase-row-13-3}{13.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-H10}{H10} & A->B bright handoff & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & \cellcolor{yellow!25}Y & A forbidden to consume own A->B output. & A->B output only. & Pillar B bright consumer. & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Outputs/\allowbreak{}A\_to\_B.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Core/\allowbreak{}Step1MathData.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Core/\allowbreak{}SectorExport.lean & \hyperlink{phase-row-11-1}{11.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-H11}{H11} & A->B prime/\allowbreak{}dark future handoff & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & \cellcolor{red!20}R & A forbidden to consume;\newline not current B. & A->B prime output only, future. & Pillar B prime. & no current dark/\allowbreak{}B-prime handoff module & \hyperlink{phase-row-11-2}{11.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-H12}{H12} & A->C handoff & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & \cellcolor{yellow!25}Y & A forbidden to consume own A->C output. & A->C output. & Pillar C. & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Outputs/\allowbreak{}A\_to\_C.lean & \hyperlink{phase-row-11-3}{11.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-H13}{H13} & A->D handoff & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & \cellcolor{yellow!25}Y & A forbidden to consume own A->D output. & A->D output. & Pillar D. & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Outputs/\allowbreak{}A\_to\_D.lean & \hyperlink{phase-row-11-4}{11.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-H14}{H14} & A->E handoff & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & \cellcolor{black!18}K & A forbidden to consume own A->E output. & A->E output. & Pillar E. & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Outputs/\allowbreak{}A\_to\_E.lean & \hyperlink{phase-row-11-5}{11.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-MOON0}{MOON0} & j coefficient stream & Reference;\newline Gate;\newline Object & F2 & current & \cellcolor{black!18}K & A-internal after modular-form prerequisites;\newline not a source for earlier A. & May be exported only as comparison output after derivation. & Moonshine comparison side consumers. & no current Lean module & \hyperlink{phase-row-12-1}{12.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-MOON1}{MOON1} & Monster dimension comparison profile & Reference;\newline Gate;\newline Object & F2 & current & \cellcolor{black!18}K & A may compare after derivation;\newline may not consume as source. & External comparison only. & Moonshine comparison;\newline documentation. & no current Lean module & \hyperlink{phase-row-12-2}{12.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-MOON2}{MOON2} & McKay-Thompson comparison profile & Reference;\newline Gate;\newline Object & F2 & current & \cellcolor{black!18}K & A may not import it into core derivation. & External comparison only. & Moonshine comparison side target. & no current Lean module & \hyperlink{phase-row-12-3}{12.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-B00}{B00} & Pillar B input contract from A & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & \cellcolor{black!18}K & A cannot consume this;\newline B consumes A->B. & A->B output consumed by B;\newline B->A only via explicit input. & Pillar B QFT/\allowbreak{}AQFT modules. & CNNA/\allowbreak{}PillarB/\allowbreak{}BuildAll.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Outputs/\allowbreak{}A\_to\_B.lean & \hyperlink{phase-row-13-1}{13.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-B01}{B01} & Boundary star-algebra /\allowbreak{} observable algebra & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{black!18}K & A does not consume B algebra except typed B->A result. & B internal;\newline possible B->A theorem output only if registered. & B local net/\allowbreak{}state/\allowbreak{}KMS consumers. & CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}StateSpace.lean;\newline CNNA/\allowbreak{}PillarB/\allowbreak{}BuildAll.lean & \hyperlink{phase-row-13-2}{13.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-B02}{B02} & Local net /\allowbreak{} QFT algebraic profile & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{black!18}K & Not A-consumable except via B->A. & B internal;\newline output only as typed B theorem. & B KMS/\allowbreak{}modular/\allowbreak{}split phases. & CNNA/\allowbreak{}PillarB/\allowbreak{}BuildAll.lean & \hyperlink{phase-row-13-3}{13.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-B03}{B03} & B state/\allowbreak{}GNS/\allowbreak{}KMS profile & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{black!18}K & A may not use B state unless B->A input. & B internal;\newline possible B->A theorem output. & B modular theory. & CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}GibbsStateSeed.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}MatrixExponential.lean & \hyperlink{phase-row-13-4}{13.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-B04}{B04} & Tomita-Takesaki modular data & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{black!18}K & A cannot consume except explicit B->A. & B theorem output only if registered. & CPT/\allowbreak{}BW/\allowbreak{}spin-statistics gates. & CNNA/\allowbreak{}PillarB/\allowbreak{}BuildAll.lean & \hyperlink{phase-row-13-5}{13.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-B05}{B05} & CPT/\allowbreak{}BW/\allowbreak{}spin-statistics/\allowbreak{}split gates & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{black!18}K & A cannot consume except explicit B->A. & B theorem output only if registered. & B->A, documentation, later physics consumers. & CNNA/\allowbreak{}PillarB/\allowbreak{}BuildAll.lean & \hyperlink{phase-row-13-6}{13.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-B06}{B06} & B->A allowed output profile & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{black!18}K & A may consume only after it arrives as B->A. & B->A input only;\newline never A->B. & A post-emergence/\allowbreak{}backreaction phases. & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}B\_to\_A.lean & \hyperlink{phase-row-13-7}{13.7}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-C00}{C00} & Pillar C OQS input contract from A & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & \cellcolor{black!18}K & A cannot consume C internals except C->A. & A->C consumed by C. & C OQS modules. & CNNA/\allowbreak{}PillarC/\allowbreak{}BuildAll.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Outputs/\allowbreak{}A\_to\_C if created later & \hyperlink{phase-row-14-1}{14.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-C01}{C01} & Finite CP/\allowbreak{}channel profile & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{black!18}K & A may not consume except C->A. & C internal;\newline C->A only for typed outputs. & Effective dynamics/\allowbreak{}noise phases. & CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}ChannelSeed.lean;\newline CNNA/\allowbreak{}PillarC/\allowbreak{}BuildAll.lean & \hyperlink{phase-row-14-2}{14.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-C02}{C02} & Effective OQS generator /\allowbreak{} Lindblad gate & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{black!18}K & No A consumption except C->A. & C theorem output only if registered. & Noise/\allowbreak{}decoherence and C->A. & CNNA/\allowbreak{}PillarC/\allowbreak{}BuildAll.lean & \hyperlink{phase-row-14-3}{14.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-C03}{C03} & Decoherence/\allowbreak{}noise profile & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{black!18}K & No A consumption except C->A. & C->A typed OQS input. & Backreaction;\newline phenomenology. & CNNA/\allowbreak{}PillarC/\allowbreak{}BuildAll.lean & \hyperlink{phase-row-14-4}{14.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-C04}{C04} & C->A allowed output profile & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{black!18}K & A may consume only through C->A. & C->A input only;\newline never A->C. & A post-emergence/\allowbreak{}backreaction phases. & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}C\_to\_A.lean & \hyperlink{phase-row-14-5}{14.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-D00}{D00} & Pillar D spacetime input contract & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & \cellcolor{black!18}K & A cannot consume D internals except D->A. & A->D consumed by D. & D spacetime modules. & CNNA/\allowbreak{}PillarD/\allowbreak{}BuildAll.lean & \hyperlink{phase-row-15-1}{15.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-D01}{D01} & Region/\allowbreak{}localization/\allowbreak{}causal-order candidate & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{black!18}K & No A consumption except D->A. & D theorem output only if registered. & Metric/\allowbreak{}covariance and backreaction. & CNNA/\allowbreak{}PillarD/\allowbreak{}BuildAll.lean & \hyperlink{phase-row-15-2}{15.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-D02}{D02} & Metric/\allowbreak{}coarse-geometry/\allowbreak{}covariance gate & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{black!18}K & No A consumption except D->A. & D theorem output only if registered. & D->A;\newline E matter coupling;\newline comparison side targets. & CNNA/\allowbreak{}PillarD/\allowbreak{}BuildAll.lean & \hyperlink{phase-row-15-3}{15.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-D03}{D03} & D->A allowed output profile & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{black!18}K & A may consume only through D->A. & D->A input only;\newline never A->D. & A post-emergence/\allowbreak{}backreaction phases. & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}D\_to\_A.lean & \hyperlink{phase-row-15-4}{15.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-E00}{E00} & Pillar E matter input contract & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & \cellcolor{black!18}K & A cannot consume E internals except E->A. & A->E/\allowbreak{}B/\allowbreak{}C/\allowbreak{}D->E if explicitly allowed. & E matter modules. & CNNA/\allowbreak{}PillarE/\allowbreak{}BuildAll.lean & \hyperlink{phase-row-16-1}{16.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-E01}{E01} & Matter sector and internal symmetry candidate & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{black!18}K & No A consumption except E->A. & E theorem output only if registered. & Phenomenology comparison. & CNNA/\allowbreak{}PillarE/\allowbreak{}BuildAll.lean & \hyperlink{phase-row-16-2}{16.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-E02}{E02} & Observable coupling and phenomenology comparison & Reference;\newline Gate;\newline Object & F3 & current & \cellcolor{black!18}K & No A consumption except E->A. & External comparison only unless typed E->A input. & E->A, documentation. & CNNA/\allowbreak{}PillarE/\allowbreak{}BuildAll.lean & \hyperlink{phase-row-16-3}{16.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-E03}{E03} & E->A allowed output profile & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{black!18}K & A may consume only through E->A. & E->A input only;\newline never A->E. & A post-emergence/\allowbreak{}backreaction phases. & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}E\_to\_A.lean & \hyperlink{phase-row-16-4}{16.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR00}{BR00} & Backreaction input DAG & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{black!18}K & A may consume only listed inputs. & B/\allowbreak{}C/\allowbreak{}D/\allowbreak{}E -> A only. & A post-emergence interpretation. & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}*.lean & \hyperlink{phase-row-17}{17}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR01}{BR01} & B->A backreaction input gate & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{black!18}K & A may consume through this gate only. & B->A. & A post-emergence. & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}B\_to\_A.lean & \hyperlink{phase-row-17-1}{17.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR02}{BR02} & C->A OQS backreaction input gate & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{black!18}K & A may consume through this gate only. & C->A. & A post-emergence. & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}C\_to\_A.lean & \hyperlink{phase-row-17-2}{17.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR03}{BR03} & D->A spacetime backreaction input gate & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{black!18}K & A may consume through this gate only. & D->A. & A post-emergence. & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}D\_to\_A.lean & \hyperlink{phase-row-17-3}{17.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR04}{BR04} & E->A matter backreaction input gate & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{black!18}K & A may consume through this gate only. & E->A. & A post-emergence. & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}E\_to\_A.lean & \hyperlink{phase-row-17-4}{17.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR05}{BR05} & Pre/\allowbreak{}post-emergence switch for A statements & Lean;\newline Source;\newline Object & F0 & current & \cellcolor{black!18}K & A-internal after input gate validation. & No output;\newline governs A interpretation. & A theorem statements after higher-pillar emergence. & no current neutral module & \hyperlink{phase-row-17-5}{17.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-SIDE0}{SIDE0} & Full ToE comparison profile & Reference;\newline Gate;\newline Object & F4 & current & \cellcolor{black!18}K & Forbidden as source for A or any core derivation. & external comparison only. & Documentation/\allowbreak{}comparison. & no current Lean module & \hyperlink{phase-row-18-1}{18.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-SIDE1}{SIDE1} & String-theory comparison profile & Reference;\newline Gate;\newline Object & F4 & current & \cellcolor{black!18}K & Forbidden as source for A or any core derivation. & external comparison only. & Documentation/\allowbreak{}comparison. & no current Lean module & \hyperlink{phase-row-18-2}{18.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-SIDE2}{SIDE2} & Loop quantum gravity comparison profile & Reference;\newline Gate;\newline Object & F4 & current & \cellcolor{black!18}K & Forbidden as source for A or any core derivation. & external comparison only. & Documentation/\allowbreak{}comparison. & no current Lean module & \hyperlink{phase-row-18-3}{18.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-SIDE3}{SIDE3} & Noncommutative geometry comparison profile & Reference;\newline Gate;\newline Object & F4 & current & \cellcolor{black!18}K & Forbidden as source for A or any core derivation. & external comparison only. & Documentation/\allowbreak{}comparison. & no current Lean module & \hyperlink{phase-row-18-4}{18.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-MOON3}{MOON3} & Finite simple group comparison profile & Reference;\newline Gate;\newline Object & F2 & current & \cellcolor{black!18}K & A may register as comparison only;\newline not consumable by earlier A derivations. & External comparison only. & Moonshine comparison;\newline later E symmetry comparison if generated. & no current Lean module & \hyperlink{phase-row-12-4}{12.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-MOON4}{MOON4} & Sporadic/\allowbreak{}Monster comparison boundary & Reference;\newline Gate;\newline Object & F2 & current & \cellcolor{black!18}K & Comparison only after derivation;\newline forbidden as source. & External comparison only. & Monster dimension comparison;\newline common-indicator bridge tests. & no current Lean module & \hyperlink{phase-row-12-4}{12.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-MOON5}{MOON5} & Leech lattice comparison profile & Reference;\newline Gate;\newline Object & F2 & current & \cellcolor{black!18}K & External comparison only;\newline no Leech data upstream of derivation. & External comparison only. & Leech theta comparison;\newline VOA comparison. & no current Lean module & \hyperlink{phase-row-12-5}{12.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-MOON6}{MOON6} & Leech theta/\allowbreak{}shell coefficient comparison & Reference;\newline Gate;\newline Object & F2 & current & \cellcolor{black!18}K & Comparison only after CNNA coefficient stream exists. & External comparison only. & Common-indicator bridge tests;\newline documentation. & no current Lean module & \hyperlink{phase-row-12-6}{12.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-MOON7}{MOON7} & VOA/\allowbreak{}moonshine-module comparison profile & Reference;\newline Gate;\newline Object & F2 & current & \cellcolor{black!18}K & Forbidden as A source;\newline possible comparison consumer after generated algebra exists. & External comparison only;\newline possible B/\allowbreak{}E consumer target. & Moonshine comparison;\newline later AQFT/\allowbreak{}string-theory side comparisons. & no current Lean module & \hyperlink{phase-row-12-7}{12.7}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-MOON8}{MOON8} & Common-indicator /\allowbreak{} Hauptmodul bridge-test profile & Reference;\newline Gate;\newline Object & F2 & current & \cellcolor{black!18}K & Comparison only;\newline not a generator. & External comparison only. & Moonshine/\allowbreak{}McKay-Thompson comparison;\newline documentation. & no current Lean module & \hyperlink{phase-row-12-8}{12.8}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG0}{LEG0} & Consumption and split inventory umbrella & Governance;\newline Policy;\newline Object & F3 & current & \cellcolor{yellow!25}Y & A-internal refactor governance only. & none & 1.1.1 child gates only & Arithmetic/\allowbreak{}Notation.lean;\newline repo\_inventory/\allowbreak{}raw\_export & \hyperlink{phase-row-1-1-1}{1.1.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG1}{LEG1} & Legacy single-constructor status gates & Lean;\newline Refactor;\newline Object & F3 & current & \cellcolor{yellow!25}Y & Legacy-only;\newline forbidden to Phase 3+ neutral imports. & no handoff & Legacy compatibility modules only & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Notation.lean & \hyperlink{phase-row-1-1-2}{1.1.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG2}{LEG2} & CoreSymbols true notation surface & Lean;\newline Refactor;\newline Object & F3 & current & \cellcolor{yellow!25}Y & A-internal public neutral import surface. & no handoff & 1.2+ neutral modules;\newline Phase 3+ & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Notation.lean;\newline Foundation/\allowbreak{}Notation.lean;\newline Finite/\allowbreak{}Notation.lean;\newline Handoff/\allowbreak{}Notation.lean & \hyperlink{phase-row-1-1-3}{1.1.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG3}{LEG3} & Legacy phase aliases compatibility surface & Lean;\newline Refactor;\newline Object & F3 & current & \cellcolor{yellow!25}Y & Legacy-only except explicitly neutral wrappers. & no handoff & old modules;\newline neutral wrapper seam only & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Notation.lean;\newline historical SM*/\allowbreak{}S6* modules & \hyperlink{phase-row-1-1-4}{1.1.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG4}{LEG4} & Neutral import firewall for post-notation phases & Governance;\newline Policy;\newline Object & F3 & current & \cellcolor{yellow!25}Y & A-internal governance only. & no handoff & 1.2+ and 3+ only as an import rule & BuildAll.lean;\newline repo\_inventory/\allowbreak{}raw\_export/\allowbreak{}module\_imports.tsv & \hyperlink{phase-row-1-1-5}{1.1.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG5}{LEG5} & Declaration consumption classification map & Governance;\newline Policy;\newline Object & F3 & current & \cellcolor{green!18}G & A-internal planning/\allowbreak{}control surface only;\newline not a mathematical generator & none & 1.1.1.2, 1.1.1.3, 1.1.1.4, 1.1.2, CEX11, all public-API/\allowbreak{}correction prompts & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline generated\_exports/\allowbreak{}consumption\_classification\_map.generated.tsv;\newline generated\_exports/\allowbreak{}module\_consumption\_records.generated.tsv;\newline generated\_exports/\allowbreak{}declaration\_consumption\_records.generated.tsv;\newline generated\_exports/\allowbreak{}object\_consumption\_classification.generated.tsv;\newline tables/\allowbreak{}consumption\_classification\_map.tex & \hyperlink{phase-row-1-1-1-1-4}{1.1.1.1.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG7}{LEG7} & Blue-object semantic correction ledger & Governance;\newline Policy;\newline Object & F3 & current & \cellcolor{yellow!25}Y & A-internal planning/\allowbreak{}control surface only;\newline not a mathematical generator & none & 1.1.1.3, 1.1.4, 1.1.5, and each natural B-object correction phase & object register;\newline Structural/\allowbreak{}CayleyDickson/\allowbreak{}*;\newline Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedInterior*;\newline Arithmetic/\allowbreak{}Smoke/\allowbreak{}*Operational* & \hyperlink{phase-row-1-1-1-2}{1.1.1.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG6}{LEG6} & Public API contract and consumer whitelist & Governance;\newline Policy;\newline Object & F3 & current & \cellcolor{yellow!25}Y & A-internal planning/\allowbreak{}control surface only;\newline not a mathematical generator & none & 1.1.2, 1.1.3, 1.1.4, 1.1.5, Phase 3+ import firewall checks & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline planned CoreSymbols/\allowbreak{}Legacy/\allowbreak{}NeutralWrappers modules & \hyperlink{phase-row-1-1-1-3}{1.1.1.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG8}{LEG8} & Pruning and dead-candidate ledger & Governance;\newline Policy;\newline Object & F3 & current & \cellcolor{yellow!25}Y & A-internal planning/\allowbreak{}control surface only;\newline not a mathematical generator & none & 1.1.5 and future optional pruning phase after quarantine/\allowbreak{}wrappers close & planning master;\newline generated reports;\newline repo\_inventory/\allowbreak{}raw\_export & \hyperlink{phase-row-1-1-1-4}{1.1.1.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG9}{LEG9} & Generated-view authority and implementation-lock contract & Governance;\newline Policy;\newline Object & F3 & current & \cellcolor{yellow!25}Y & A-internal planning/\allowbreak{}control surface only;\newline not a mathematical generator & none & 1.1.2 implementation prompt and post-green closeout workflow & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline generated exports;\newline PDF & \hyperlink{phase-row-1-1-1-5}{1.1.1.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG10}{LEG10} & Implementation module manifest and semantic placement contract & Governance;\newline Policy;\newline Object & F1 & current & \cellcolor{green!18}G & A-internal planning/\allowbreak{}control surface only;\newline not a mathematical generator & none & all future implementation prompts;\newline 1.1.1.1.2;\newline 1.1.1.1.3;\newline 1.1.1.3;\newline post-green closeout & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline generated\_exports/\allowbreak{}module\_implementation\_manifest.generated.tsv;\newline tables/\allowbreak{}module\_implementation\_manifest.tex & \hyperlink{phase-row-1-1-1-1-1}{1.1.1.1.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG11}{LEG11} & Reuse/\allowbreak{}duplication ledger and canonical generator policy & Governance;\newline Policy;\newline Object & F1 & current & \cellcolor{green!18}G & A-internal governance only;\newline public only as an implementation rule and comparison/\allowbreak{}audit surface & none & 1.1.1.1.3, 1.1.1.3, Phase 5 experiment request/\allowbreak{}output, O07 finite computation-test matrix, heuristic lattice test matrices, all future generator-like phases & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline generated\_exports/\allowbreak{}reuse\_duplication\_ledger.generated.tsv;\newline tables/\allowbreak{}reuse\_duplication\_ledger.tex;\newline Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedSource.lean;\newline Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedMainPath.lean;\newline Actions/\allowbreak{}GeneratorActionInventory.lean;\newline Actions/\allowbreak{}ActionFormatDecision.lean & \hyperlink{phase-row-1-1-1-1-2}{1.1.1.1.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG12}{LEG12} & Object and size proof-documentation infrastructure & Governance;\newline Policy;\newline Object & F1 & current & \cellcolor{green!18}G & A-internal planning/\allowbreak{}read-only governance;\newline no mathematical input to generator chain. & No handoff export;\newline only documentation evidence may cite it. & 1.1.1.1.4 declaration classification, Phase preparation, blue-object correction, public API contract, review workflow. & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline generated\_exports/\allowbreak{}object\_proof\_documentation.generated.tsv;\newline tables/\allowbreak{}object\_proof\_documentation.tex;\newline tables/\allowbreak{}object\_proof\_link\_register.tex & \hyperlink{phase-row-1-1-1-1-3}{1.1.1.1.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG13}{LEG13} & Global no-go guardrail contract & Governance;\newline Policy;\newline Object & F0 & current & \cellcolor{green!18}G & A-internal global governance;\newline constrains all Pillar-A implementation prompts and later consumer/\allowbreak{}firewall phases. & No mathematical handoff;\newline policy evidence only. & all phases, all implementation prompts, object proof documentation workflow, closeout workflow, Phase 3+ import firewall checks & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline tables/\allowbreak{}global\_no\_go\_guardrails.tex;\newline generated\_exports/\allowbreak{}global\_no\_go\_guardrails.generated.tsv & \hyperlink{phase-row-1-1-1-1-0}{1.1.1.1.0}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG14}{LEG14} & Concrete computable instance traversal contract & Governance;\newline Policy;\newline Object & F3 & current & \cellcolor{green!18}G & A-internal workflow invariant. & No handoff payload. & All future implementation prompts and scratchpad closeout checks. & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline implementation\_scratchpad & \hyperlink{phase-row-1-1-1-1-0-1}{1.1.1.1.0.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG15}{LEG15} & Mathlib complication and noncomputable-boundary log & Governance;\newline Policy;\newline Object & F3 & current & \cellcolor{green!18}G & A-internal workflow invariant. & No handoff payload. & All future implementation prompts, especially ExecComplex, matrix, polynomial, inverse, determinant, and mirror phases. & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline implementation\_scratchpad & \hyperlink{phase-row-1-1-1-1-0-1}{1.1.1.1.0.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG16}{LEG16} & Semi-automated existing-code documentation coverage & Reference;\newline Gate;\newline Object & F3 & current & \cellcolor{black!18}K & A-internal diagnostic/\allowbreak{}documentation only;\newline may not alter derived objects. & No pillar handoff rights. & Planning workflow, proofbook workflow, human review only. & repo\_inventory/\allowbreak{}raw\_export/\allowbreak{}*.json;\newline generated\_exports/\allowbreak{}*.tsv;\newline tables/\allowbreak{}object\_proof\_documentation.tex & \hyperlink{phase-row-19-1}{19.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG17}{LEG17} & Derivation-graph geometry diagnostics & Reference;\newline Gate;\newline Object & F3 & current & \cellcolor{black!18}K & Diagnostic only;\newline cannot introduce A-internal axioms or objects. & No pillar handoff rights. & Secondary reports, architecture review, pruning/\allowbreak{}API review. & repo\_inventory/\allowbreak{}raw\_export/\allowbreak{}import\_edges.json;\newline figures/\allowbreak{}*.dot/\allowbreak{}pdf & \hyperlink{phase-row-19-2}{19.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG18}{LEG18} & Open-system emergence-path forensics & Reference;\newline Gate;\newline Object & F3 & current & \cellcolor{black!18}K & Diagnostic only;\newline emergence claims must be proved from CNNA objects, not graph metadata. & No handoff rights. & Later A/\allowbreak{}C review and secondary architecture reports. & future A/\allowbreak{}C modules plus repo\_inventory/\allowbreak{}raw\_export path analysis & \hyperlink{phase-row-19-3}{19.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG19}{LEG19} & Reflective CNNA/\allowbreak{}formalization graph comparison boundary & Reference;\newline Gate;\newline Object & F3 & current & \cellcolor{black!18}K & May constrain interpretation/\allowbreak{}prose;\newline cannot supply CNNA data. & No handoff rights. & Secondary research notes and architecture reviews only. & generated graph views and proofbook links & \hyperlink{phase-row-19-4}{19.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG20}{LEG20} & EXEC-2 rational ExecComplex boundary policy & Lean;\newline Governance;\newline Object & F1 & current & \cellcolor{green!18}G & A-internal governance;\newline applies to operational/\allowbreak{}mirror separation & No direct handoff;\newline constrains future A->* numeric exports & All ExecComplex, geometry, modular, spectral and arithmetic phases & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline format\_decision EXEC-2;\newline workflow\_policy EXEC-2 & \hyperlink{phase-row-1-1-1-1-0-2}{1.1.1.1.0.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG21}{LEG21} & Refactor regression and incremental migration protocol & Lean;\newline Governance;\newline Object & F1 & current & \cellcolor{green!18}G & A-internal governance for refactor phases & No direct handoff & Phase 1.1.2 and all module-split/\allowbreak{}quarantine phases & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline workflow\_policy refactor regression & \hyperlink{phase-row-1-1-1-1-0-3}{1.1.1.1.0.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG22}{LEG22} & Lean/\allowbreak{}mathlib version migration policy & Lean;\newline Governance;\newline Object & F1 & current & \cellcolor{green!18}G & A-internal governance;\newline applies to all imports & No direct handoff & All phases touching mathlib imports & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline workflow\_policy version management & \hyperlink{phase-row-1-1-1-1-0-4}{1.1.1.1.0.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG23}{LEG23} & Phase-type-specific scratchpad schema and governance retrospective & Documentation;\newline Object & F3 & current & \cellcolor{green!18}G & A-internal planning/\allowbreak{}documentation & No direct handoff & All phase preparation and closeout workflows & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py scratchpad renderer & \hyperlink{phase-row-1-1-1-1-0-5}{1.1.1.1.0.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG24}{LEG24} & Phase 3 to Phase 4 consumer-contract direction & Lean;\newline Governance;\newline Object & F1 & current & \cellcolor{green!18}G & A-internal;\newline constrains wrapper design & A->B only later through filtered profiles, not through implementation modules & Phase 3.6 and Phase 4.1 & masters/\allowbreak{}cnna\_roadmap\_master.yaml phase goals 3.6 and 4.1 & \hyperlink{phase-row-1-1-1-1-0-6}{1.1.1.1.0.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG25}{LEG25} & IdealThread/\allowbreak{}CutSpec.full extremal-route contract & Governance;\newline Policy;\newline Object & F1 & current & \cellcolor{white}W & Global workflow/\allowbreak{}access policy only;\newline no mathematical object export. & None. & Phase 1 module-manifest gate, Phase 1.2.7/\allowbreak{}1.2.8, Phase 3.0, Phase 4.0. & CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}SubstrateClass.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}ToC/\allowbreak{}Contract.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}CutSpec.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}BoundarySource/\allowbreak{}ExistingIdealThreadNoGo.lean & \hyperlink{phase-row-1-1-1-1-0-7}{1.1.1.1.0.7}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-S07}{S07} & IdealThread singleton directed-family profile & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{green!18}G & A-internal structural profile. & None directly;\newline not an A->B boundary matrix. & Boundary-route audit, scalar/\allowbreak{}thread-recursion audit, secondary diagnostics.;\newline BR08 horizontal/\allowbreak{}vertical Schur-duality bridge & CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}SubstrateClass.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}ToC/\allowbreak{}Contract.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}BoundarySource/\allowbreak{}ExistingIdealThreadNoGo.lean & \hyperlink{phase-row-1-2-7}{1.2.7}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-S08}{S08} & CutSpec.full maximal-carrier profile & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{green!18}G & A-internal structural profile. & No direct handoff;\newline downstream boundary operator may be exported only after Schur/\allowbreak{}DtN closure. & Full-boundary Schur/\allowbreak{}DtN route, boundary-route audit, sector/\allowbreak{}complement geometry.;\newline BR08 horizontal/\allowbreak{}vertical Schur-duality bridge & CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}CutSpec.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Core/\allowbreak{}FullBoundaryAudit.lean & \hyperlink{phase-row-1-2-8}{1.2.8}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR06}{BR06} & Boundary-route extrema contract & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{green!18}G & A-internal route governance. & None;\newline protects A->B handoff from scalar/\allowbreak{}thread collapse. & Phase 3 Schur/\allowbreak{}DtN wrappers and Phase 4 arithmetic wrappers.;\newline BR08 horizontal/\allowbreak{}vertical Schur-duality bridge & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}BoundarySource/\allowbreak{}ExistingIdealThreadNoGo.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Core/\allowbreak{}FullBoundaryAudit.lean & \hyperlink{phase-row-3-0}{3.0}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR07}{BR07} & Thread-recursion arithmetic-shadow audit profile & Lean;\newline Source;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal audit profile. & None directly;\newline discriminant outputs follow only via operational arithmetic phases. & Phase 4 arithmetic wrappers, Phase 5 number-theory phases, secondary diagnostics.;\newline BR08 horizontal/\allowbreak{}vertical Schur-duality bridge;\newline L09/\allowbreak{}L10 test matrix if thread-recursion arithmetic shadows are later connected to geometry & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Schur/\allowbreak{}RecursiveSchurSource.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Schur/\allowbreak{}MobiusTransfer.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Schur/\allowbreak{}CharpolyExec.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}*SM9*.lean & \hyperlink{phase-row-4-0}{4.0}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR09}{BR09} & Subsystem-induced invariant bifurcation profile & Lean;\newline Target;\newline Object & F1 & current & \cellcolor{black!18}K & A-internal explanatory bridge after BR08. & No handoff until mathematically proved and downgraded to a precise theorem statement. & Long-term derivation-geometry diagnostics;\newline proofbook explanations. & No canonical module yet. & \hyperlink{phase-row-10-4-1}{10.4.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR08}{BR08} & Horizontal/\allowbreak{}vertical Schur-duality bridge & Lean;\newline Target;\newline Object & F1 & current & \cellcolor{black!18}K & A-internal far bridge;\newline cannot be consumed by earlier source phases. & No A->B/\allowbreak{}C/\allowbreak{}D/\allowbreak{}E handoff until theorem is proved and access policy is reviewed. & CD8;\newline secondary derivation-geometry diagnostics;\newline possibly later Pillar-A unification reports. & No canonical module yet;\newline source audit must inspect Schur/\allowbreak{}DtN, Arithmetic/\allowbreak{}Smoke, Structural/\allowbreak{}CayleyDickson, and Transfer modules. & \hyperlink{phase-row-10-4-1}{10.4.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG26}{LEG26} & Reflective thread/\allowbreak{}full-boundary analogy diagnostic boundary & Governance;\newline Policy;\newline Object & F4 & current & \cellcolor{black!18}K & Comparison-only;\newline forbidden as A-internal generative input. & None. & Secondary long-term meta-analysis only. & repo\_inventory/\allowbreak{}raw\_export/\allowbreak{}*;\newline future generated documentation views & \hyperlink{phase-row-19-5}{19.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG27}{LEG27} & Horizontal/\allowbreak{}vertical Schur-duality dependency-order lock & Governance;\newline Policy;\newline Object & F1 & current & \cellcolor{green!18}G & Global planning invariant. & No handoff output;\newline constrains A-internal phase order. & BR08;\newline BR09;\newline CD8;\newline Phase 10.4.1/\allowbreak{}10.4.2. & masters/\allowbreak{}cnna\_roadmap\_master.yaml & \hyperlink{phase-row-1-1-1-1-0-8}{1.1.1.1.0.8}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG28}{LEG28} & Heuristic Eisenstein/\allowbreak{}Gauss lattice test-matrix boundary contract & Governance;\newline Policy;\newline Object & F1 & current & \cellcolor{green!18}G & A-internal planning/\allowbreak{}test governance only. & No handoff export. & 8.5, 8.6, 8.7 and later documentation/\allowbreak{}test closeout phases. & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline generated workflow/\allowbreak{}phase/\allowbreak{}proofbook views & \hyperlink{phase-row-1-1-1-1-0-9}{1.1.1.1.0.9}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG29}{LEG29} & General early finite computation test-matrix contract & Governance;\newline Policy;\newline Object & F1 & current & \cellcolor{green!18}G & A-internal governance only;\newline not mathematical generator input. & none & all future computation/\allowbreak{}refactor/\allowbreak{}test phases;\newline especially 1.1.1.1.1, 4.0.1, 8.5, 8.6 & masters/\allowbreak{}cnna\_roadmap\_master.yaml & \hyperlink{phase-row-1-1-1-1-0-10}{1.1.1.1.0.10}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-L09}{L09} & Static branching Eisenstein/\allowbreak{}Gauss lattice test matrix & Reference;\newline Gate;\newline Object & F2 & current & \cellcolor{yellow!25}Y & A-internal test consumer;\newline not a source for generator definitions. & No handoff;\newline comparison/\allowbreak{}test only. & Phase 8.7;\newline documentation;\newline comparison diagnostics. It may not replace O07 generic coverage. & Not yet;\newline placement must be decided by Phase 1.1.1.1.1 and future 8.5 manifest. & \hyperlink{phase-row-8-5}{8.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-L10}{L10} & Dynamic branching and L\_max lattice test sweep & Reference;\newline Gate;\newline Object & F2 & current & \cellcolor{yellow!25}Y & A-internal test consumer only. & No handoff. & 8.7 closeout;\newline later derivation-geometry diagnostics. & Not yet;\newline future placement must reuse canonical generator. & \hyperlink{phase-row-8-6}{8.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-M08}{M08} & Eisenstein/\allowbreak{}Gauss CM and j special-value test targets & Reference;\newline Gate;\newline Object & F2 & current & \cellcolor{yellow!25}Y & A-internal comparison consumer only. & No handoff until separately derived and approved;\newline likely documentation/\allowbreak{}test only. & 8.5, 8.7, later modular comparison phases. & Not yet;\newline future mirror/\allowbreak{}comparison module after M05. & \hyperlink{phase-row-8-5}{8.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR10}{BR10} & Hierarchical versus spiral embedding collision and closure audit & Reference;\newline Gate;\newline Object & F2 & current & \cellcolor{yellow!25}Y & A-internal test/\allowbreak{}audit consumer;\newline cannot drive generator semantics. & No handoff. & 8.6, 8.7, secondary derivation-geometry diagnostics. & Not yet;\newline future test/\allowbreak{}profile module. & \hyperlink{phase-row-8-6}{8.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG30}{LEG30} & Regime-typed early test-matrix contract & Governance;\newline Policy;\newline Object & F1 & current & \cellcolor{green!18}G & A-internal governance only;\newline not a mathematical generator input. & none & 1.1.1.1.1, 4.0.2, 7.2.1, 8.5-8.7, proof dossiers and comparison diagnostics & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline generated views & \hyperlink{phase-row-1-1-1-1-0-11}{1.1.1.1.0.11}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-O08}{O08} & Regime-typed finite computation test matrix profile & Lean;\newline Target;\newline Object & F2 & current & \cellcolor{yellow!25}Y & A-internal reusable test object;\newline not a generative axiom. & none until proof-carrying rows are derived;\newline comparison columns cannot be exported as operational data. & Phase 4 wrappers, regime diagnostics, Phase 8 lattice sentinel tests, Heegner classification, documentation/\allowbreak{}proof dossiers & future module selected by Phase 1.1.1.1.1;\newline must extend/\allowbreak{}reuse O07 surface & \hyperlink{phase-row-4-0-2}{4.0.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-N18}{N18} & Heegner regime-projection classification profile & Lean;\newline Target;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal consumer profile only. & no handoff;\newline comparison/\allowbreak{}regime documentation only until later approval & 7.2.1, 8.5-8.7, modular comparison diagnostics, secondary long-term derivation-geometry studies & no current module;\newline may consume old HeegnerDiscriminantBridge only after neutralization & \hyperlink{phase-row-7-2-1}{7.2.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR11}{BR11} & IDEAL\_infty projection and complement-family Heegner boundary & Lean;\newline Target;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal bridge constraint;\newline not an input to generator definitions. & none & 7.2.1, 8.7, 19.* derivation-geometry diagnostics & no current module & \hyperlink{phase-row-7-2-1}{7.2.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR12}{BR12} & noOuter REAL-root Eisenstein/\allowbreak{}Gauss sentinel hypothesis & Lean;\newline Target;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal test hypothesis only;\newline not a generator input. & none & 4.0.2, 8.5, 8.7, proof dossiers & no current module;\newline future placement with O08/\allowbreak{}L09/\allowbreak{}M08 after manifest & \hyperlink{phase-row-4-0-2}{4.0.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG31}{LEG31} & Computable scalar architecture contract & Governance;\newline Policy;\newline Object & F0 & current & \cellcolor{green!18}G & A-internal & none & all scalar/\allowbreak{}CM/\allowbreak{}lattice/\allowbreak{}arithmetic implementation phases & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline repo\_snapshot audit paths & \hyperlink{phase-row-1-1-1-1-0-12}{1.1.1.1.0.12}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG32}{LEG32} & Derived-only exact quadratic provenance contract & Governance;\newline Policy;\newline Object & F0 & current & \cellcolor{green!18}G & A-internal & none & O09, O10, BR13, BR14, N02/\allowbreak{}N04/\allowbreak{}N06, Lattice/\allowbreak{}CM tests, CD9 & masters/\allowbreak{}cnna\_roadmap\_master.yaml & \hyperlink{phase-row-1-1-1-1-0-13}{1.1.1.1.0.13}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG33}{LEG33} & Phase 5-10 bifurcation and dependency repair contract & Governance;\newline Policy;\newline Object & F1 & current & \cellcolor{green!18}G & global planning invariant & none;\newline governance only & Phase 5-10 planning;\newline module manifest gate;\newline dependency-depth audit & masters/\allowbreak{}cnna\_roadmap\_master.yaml & \hyperlink{phase-row-1-1-1-1-0-14}{1.1.1.1.0.14}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-O09}{O09} & Required exact quadratic operational scalar schema & Lean;\newline Target;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal & none until proven stable & O10/\allowbreak{}BR14 after D-source;\newline Phase 4.0.3 tests;\newline 5.x/\allowbreak{}7.x/\allowbreak{}8.x exact quadratic rows;\newline CD9 only for late comparison & none yet;\newline candidate informed by Mathlib.Algebra.QuadraticAlgebra and future manifest & \hyperlink{phase-row-1-2-1-2}{1.2.1.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-O10}{O10} & Proof-carrying discriminant-indexed quadratic scalar instance & Lean;\newline Target;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal;\newline not before D-source correction & none until stable;\newline only invariant projections may become handoff candidates later & N02, N04, N06, L00/\allowbreak{}L02/\allowbreak{}L04/\allowbreak{}L09/\allowbreak{}L10, M08, BR13 & none yet;\newline future module names require Phase 1.1.1.1.1 manifest & \hyperlink{phase-row-4-5-1}{4.5.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR13}{BR13} & ExecComplex to exact-quadratic projection bridge & Lean;\newline Target;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal & none & O07/\allowbreak{}O08/\allowbreak{}O09 tests, N04/\allowbreak{}N06, M08 comparisons & none yet & \hyperlink{phase-row-4-0-3}{4.0.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-BR14}{BR14} & Discriminant-source to exact-quadratic algebra instantiation bridge & Lean;\newline Target;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal & none & BR13, N02/\allowbreak{}N04/\allowbreak{}N06, lattice/\allowbreak{}CM/\allowbreak{}test-matrix rows & none yet & \hyperlink{phase-row-4-5-1}{4.5.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CD9}{CD9} & Cayley-Dickson C-layer noncircularity audit & Reference;\newline Gate;\newline Object & F1 & current & \cellcolor{black!18}K & A-internal;\newline future bridge & none & CD8, BR08/\allowbreak{}BR09, optional future scalar layer comparison & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}CayleyDickson/\allowbreak{}ArithmeticCDBridge.lean & \hyperlink{phase-row-10-4-3}{10.4.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG34}{LEG34} & Phase-object-link policy contract & Governance;\newline Policy;\newline Object & F1 & current & \cellcolor{green!18}G & planning-only;\newline no Pillar-A mathematical input & none;\newline documentation/\allowbreak{}governance only & all planning phases, phase table generator, implementation manifest gate, proofbook/\allowbreak{}documentation workflow & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline generated phase table & \hyperlink{phase-row-1-1-1-1-0-15}{1.1.1.1.0.15}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG35}{LEG35} & Ontic subsystem-minimality contract & Governance;\newline Policy;\newline Object & F0 & current & \cellcolor{green!18}G & global Pillar-A ontic constraint;\newline no mathematical input beyond subsystem-being & may constrain all handoffs;\newline exports no physics, arithmetic, geometry or dynamics as primitives & all phases and object dossiers;\newline regime split;\newline complement-family phases;\newline Schur/\allowbreak{}DtN phases;\newline spectral/\allowbreak{}physical consumers;\newline documentation workflow & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline tables/\allowbreak{}global\_postulates.tex;\newline global no-go table;\newline proof dossiers & \hyperlink{phase-row-1-1-1-1-0-16}{1.1.1.1.0.16}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR0}{DBR0} & Database-ready CNNA review and documentation structure & Documentation;\newline Object & F3 & current & \cellcolor{green!18}G & A-internal documentation/\allowbreak{}review only;\newline may not alter derived objects. & No pillar handoff rights. & Planning workflow, documentation generator, expert-review process, database/\allowbreak{}export tooling. & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline generated exports and PDF views & \hyperlink{phase-row-20}{20}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR1}{DBR1} & Expert-review and no-infallibility epistemic rule & Documentation;\newline Object & F1 & current & \cellcolor{green!18}G & Global review constraint;\newline cannot generate A-internal mathematics. & No pillar handoff rights. & All phase scratchpads, proof dossiers, documentation outputs, expert-review workflows. & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline generated\_exports/\allowbreak{}global\_no\_go\_guardrails.generated.tsv;\newline generated PDF & \hyperlink{phase-row-20-1}{20.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR2}{DBR2} & Database-ready YAML schema and round-trip target & Tool;\newline Infrastructure;\newline Object & F1 & current & \cellcolor{black!18}K & Documentation/\allowbreak{}query only;\newline no CNNA generator role. & No pillar handoff rights. & Tooling, documentation, expert-review views. & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline generated\_exports/\allowbreak{}*.tsv & \hyperlink{phase-row-20-2}{20.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR3}{DBR3} & Discipline-separated expert-review matrix & Documentation;\newline Object & F3 & current & \cellcolor{black!18}K & Review only;\newline cannot supply A-internal objects. & No pillar handoff rights. & Expert reviewers, documentation workflow, phase closeout audits. & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline object\_proof\_dossiers section & \hyperlink{phase-row-20-3}{20.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR4}{DBR4} & Blue/\allowbreak{}reference-theory audit ledger & Documentation;\newline Object & F3 & current & \cellcolor{black!18}K & Audit/\allowbreak{}comparison marking only;\newline may not import established theory as A-source. & No pillar handoff rights. & Documentation workflow, expert-review matrix, comparison-theory ledgers. & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline generated\_exports/\allowbreak{}status\_legend.generated.tsv & \hyperlink{phase-row-20-4}{20.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR5}{DBR5} & Interactive/\allowbreak{}online database-backed documentation views & Tool;\newline Infrastructure;\newline Object & F1 & current & \cellcolor{black!18}K & Documentation and review only;\newline no mathematical source role. & No pillar handoff rights. & Human review, online docs, visualization, sharing and exploration workflows. & generated\_exports/\allowbreak{}*.tsv;\newline figures/\allowbreak{}*.dot/\allowbreak{}pdf;\newline future DB/\allowbreak{}export scripts & \hyperlink{phase-row-20-5}{20.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR6}{DBR6} & Context-filtered documentation slice generator & Generated;\newline Artifact;\newline Object & F3 & current & \cellcolor{green!18}G & Documentation/\allowbreak{}review only;\newline may reference Pillar-A rows but cannot generate A-internal mathematics. & No pillar handoff rights. & Human review, phase closeout documentation, targeted documentation requests, online/\allowbreak{}database-ready generated views. & scripts/\allowbreak{}generate\_context\_doc.py;\newline masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline context\_docs/\allowbreak{}dtn\_matrix/\allowbreak{}* sample output & \hyperlink{phase-row-20-6}{20.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR7}{DBR7} & Stats front section and tool-interface documentation layer & Generated;\newline Artifact;\newline Object & F3 & current & \cellcolor{green!18}G & Documentation/\allowbreak{}review only;\newline may reference Pillar-A rows and module counts but cannot generate A-internal mathematics. & No pillar handoff rights. & Human review, phase closeout summaries, context documentation slices, database-ready views, online documentation, project onboarding. & scripts/\allowbreak{}generate\_tables.py;\newline masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline tables/\allowbreak{}stats.tex;\newline generated\_exports/\allowbreak{}project\_stats.generated.tsv & \hyperlink{phase-row-20-7}{20.7}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG36}{LEG36} & Semantic module consolidation ledger & Governance;\newline Policy;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal refactor/\allowbreak{}documentation governance only;\newline not a mathematical generator & none & 1.1.1.2, 1.1.1.3, public API/\allowbreak{}firewall phases, pruning/\allowbreak{}refactor phases, future Lean implementation prompts & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline repo\_snapshot/\allowbreak{}CNNA/\allowbreak{}**/\allowbreak{}*.lean;\newline repo\_inventory/\allowbreak{}raw\_export/\allowbreak{}*.json;\newline generated\_exports/\allowbreak{}*.tsv;\newline SEMANTIC\_MODULE\_CONSOLIDATION\_AUDIT\_REPORT.md & \hyperlink{phase-row-1-1-1-1-5}{1.1.1.1.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR8}{DBR8} & Root artifact retention and cleanup policy & Generated;\newline Artifact;\newline Object & F3 & current & \cellcolor{green!18}G & Documentation/\allowbreak{}review only;\newline no Pillar-A mathematical object access. & No pillar handoff rights. & Release packaging, documentation generation, root hygiene checks, database-ready review/\allowbreak{}export workflows, human review. & scripts/\allowbreak{}generate\_full\_document.py;\newline scripts/\allowbreak{}clean\_generated\_root\_artifacts.py;\newline README.md;\newline archive/\allowbreak{}reports/\allowbreak{};\newline masters/\allowbreak{}cnna\_roadmap\_master.yaml & \hyperlink{phase-row-20-8}{20.8}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR9}{DBR9} & Current README and workflow-orientation manual & Generated;\newline Artifact;\newline Object & F3 & current & \cellcolor{green!18}G & Documentation/\allowbreak{}review only;\newline no Pillar-A mathematical object access. & No pillar handoff rights. & Human users, ChatGPT-assisted tool updates, documentation generation, workflow extension, release packaging, expert review onboarding. & README.md;\newline masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline archive/\allowbreak{}reports/\allowbreak{}V1\_14\_README\_WORKFLOW\_ORIENTATION\_REPORT.md & \hyperlink{phase-row-20-9}{20.9}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR10}{DBR10} & Root Lean/\allowbreak{}Lake project-control files & Generated;\newline Artifact;\newline Object & F3 & current & \cellcolor{green!18}G & No mathematical access rights;\newline build/\allowbreak{}toolchain surface only. & No pillar handoff rights. & Local build workflow, release packaging, root cleanup workflow, README/\allowbreak{}manual use, future CI/\allowbreak{}database packaging. & CNNA.lean;\newline lakefile.lean;\newline lake-manifest.json;\newline lean-toolchain;\newline Repository/\allowbreak{}scripts/\allowbreak{}clean\_generated\_root\_artifacts.py;\newline README.md;\newline Repository/\allowbreak{}masters/\allowbreak{}cnna\_roadmap\_master.yaml & \hyperlink{phase-row-20-10}{20.10}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR11}{DBR11} & Root license, single-root README, credits and assistant-requirement surface & Generated;\newline Artifact;\newline Object & F3 & current & \cellcolor{green!18}G & Documentation/\allowbreak{}review only;\newline no Pillar-A mathematical object access. & No pillar handoff rights. & Human users, release packaging, documentation generation, ChatGPT-assisted workflow onboarding, licensing review, future CI/\allowbreak{}database packaging. & README.md;\newline LICENSE;\newline Repository/\allowbreak{}scripts/\allowbreak{}generate\_full\_document.py;\newline Repository/\allowbreak{}scripts/\allowbreak{}generate\_context\_doc.py;\newline Repository/\allowbreak{}scripts/\allowbreak{}generate\_tables.py;\newline Repository/\allowbreak{}scripts/\allowbreak{}clean\_generated\_root\_artifacts.py;\newline Repository/\allowbreak{}masters/\allowbreak{}cnna\_roadmap\_master.yaml & \hyperlink{phase-row-20-11}{20.11}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR12}{DBR12} & Generated PDF section-pagebreak layout invariant & Generated;\newline Artifact;\newline Object & F3 & current & \cellcolor{green!18}G & Documentation/\allowbreak{}review only;\newline no Pillar-A mathematical object access. & No pillar handoff rights. & Human reviewers, ChatGPT-assisted context documentation, generated PDF readers, future online/\allowbreak{}documentation layout layers. & Repository/\allowbreak{}scripts/\allowbreak{}generate\_full\_document.py;\newline Repository/\allowbreak{}scripts/\allowbreak{}generate\_context\_doc.py;\newline Repository/\allowbreak{}masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline README.md;\newline Repository/\allowbreak{}archive/\allowbreak{}reports/\allowbreak{}V1\_18\_SECTION\_PAGEBREAKS\_REPORT.md & \hyperlink{phase-row-20-12}{20.12}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR13}{DBR13} & Phase status release policy and red-lock ledger & Generated;\newline Artifact;\newline Object & F3 & current & \cellcolor{green!18}G & Documentation/\allowbreak{}planning only;\newline no Pillar-A mathematical object access. & No pillar handoff rights. & Phase preparation, pre-implementation checks, active cursor selection, ChatGPT-assisted planning workflows, README/\allowbreak{}manual use, future database/\allowbreak{}status dashboards. & Repository/\allowbreak{}masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline Repository/\allowbreak{}scripts/\allowbreak{}generate\_tables.py;\newline README.md;\newline Repository/\allowbreak{}archive/\allowbreak{}reports/\allowbreak{}V1\_19\_PHASE\_STATUS\_RELEASE\_POLICY\_REPORT.md & \hyperlink{phase-row-20-13}{20.13}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR14}{DBR14} & Static documentation explanations and module-change appendix policy & Generated;\newline Artifact;\newline Object & F3 & current & \cellcolor{green!18}G & Documentation/\allowbreak{}review only;\newline no Pillar-A mathematical object access. & No pillar handoff rights. & Human reviewers, ChatGPT-assisted documentation, phase status review, module refactor audits, future database/\allowbreak{}online documentation layer. & Repository/\allowbreak{}scripts/\allowbreak{}generate\_full\_document.py;\newline Repository/\allowbreak{}scripts/\allowbreak{}generate\_context\_doc.py;\newline Repository/\allowbreak{}scripts/\allowbreak{}generate\_tables.py;\newline Repository/\allowbreak{}masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline README.md;\newline Repository/\allowbreak{}archive/\allowbreak{}reports/\allowbreak{}V1\_20\_DOC\_SECTION\_EXPLANATIONS\_AND\_MODULE\_MANIFEST\_APPENDIX\_REPORT.md & \hyperlink{phase-row-20-14}{20.14}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG37}{LEG37} & Current source intake completeness ledger & Governance;\newline Policy;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal planning/\allowbreak{}refactor governance only;\newline no pillar handoff use. & none & 1.1.1.1.5 child phases, CEX0-CEX11, 1.1.1.2, public API/\allowbreak{}firewall phases, future Lean implementation prompts & repo\_inventory/\allowbreak{}raw\_export/\allowbreak{}*.json;\newline generated\_exports/\allowbreak{}*consumption*.tsv;\newline masters/\allowbreak{}cnna\_roadmap\_master.yaml & \hyperlink{phase-row-1-1-1-1-5-1}{1.1.1.1.5.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG38}{LEG38} & Neutral module-name and facade migration map & Governance;\newline Policy;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal planning/\allowbreak{}refactor governance only;\newline no pillar handoff use. & none & 1.1.1.1.5 child phases, 1.1.1.2, public API/\allowbreak{}firewall phases, future Lean implementation prompts & repo\_snapshot/\allowbreak{}CNNA/\allowbreak{}**/\allowbreak{}*.lean;\newline masters/\allowbreak{}cnna\_roadmap\_master.yaml & \hyperlink{phase-row-1-1-1-1-5-2}{1.1.1.1.5.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG39}{LEG39} & Neutral refactor execution certificate & Governance;\newline Policy;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal planning/\allowbreak{}refactor governance only;\newline no pillar handoff use. & none & 1.1.1.1.5 child phases, 1.1.1.2, public API/\allowbreak{}firewall phases, future Lean implementation prompts & future modified Lean modules authorized by LEG38 & \hyperlink{phase-row-1-1-1-1-5-3}{1.1.1.1.5.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG40}{LEG40} & Post-refactor inventory closure certificate & Governance;\newline Policy;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal planning/\allowbreak{}refactor governance only;\newline no pillar handoff use. & none & 1.1.1.1.5 child phases, 1.1.1.2, public API/\allowbreak{}firewall phases, future Lean implementation prompts & repo\_inventory/\allowbreak{}raw\_export/\allowbreak{}*.json after refactor;\newline generated\_exports/\allowbreak{}*.tsv & \hyperlink{phase-row-1-1-1-1-5-4}{1.1.1.1.5.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-LEG41}{LEG41} & Pre-substantive-code release certificate & Governance;\newline Policy;\newline Object & F1 & current & \cellcolor{yellow!25}Y & A-internal planning/\allowbreak{}refactor governance only;\newline no pillar handoff use. & none & 1.1.1.1.5 child phases, 1.1.1.2, public API/\allowbreak{}firewall phases, future Lean implementation prompts & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline generated\_exports/\allowbreak{}pre\_implementation\_phase\_check\_results.generated.tsv & \hyperlink{phase-row-1-1-1-1-5-5}{1.1.1.1.5.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR15}{DBR15} & provider-neutral SQL database mirror feasibility and schema design & Database;\newline Mirror;\newline Object & F1 & current & \cellcolor{white}W & Documentation/\allowbreak{}query/\allowbreak{}publication layer only;\newline no Pillar-A mathematical object access. & No pillar handoff rights and no phase-release rights. & DB mirror planning phases 20.15-20.20, future cnna-project.net frontend, public read-only API views, expert-review navigation tooling. & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline generated\_exports/\allowbreak{}*.tsv;\newline future DB migration/\allowbreak{}import/\allowbreak{}frontend artifacts & \hyperlink{phase-row-20-15}{20.15}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR16}{DBR16} & YAML/\allowbreak{}exports to SQL import and roundtrip contract & Database;\newline Mirror;\newline Object & F1 & current & \cellcolor{white}W & Documentation/\allowbreak{}query/\allowbreak{}publication layer only;\newline no Pillar-A mathematical object access. & No pillar handoff rights and no phase-release rights. & DB mirror planning phases 20.15-20.20, future cnna-project.net frontend, public read-only API views, expert-review navigation tooling. & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline generated\_exports/\allowbreak{}*.tsv;\newline future DB migration/\allowbreak{}import/\allowbreak{}frontend artifacts & \hyperlink{phase-row-20-16}{20.16}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR17}{DBR17} & Append-only snapshot and checksum model & Database;\newline Mirror;\newline Object & F1 & current & \cellcolor{white}W & Documentation/\allowbreak{}query/\allowbreak{}publication layer only;\newline no Pillar-A mathematical object access. & No pillar handoff rights and no phase-release rights. & DB mirror planning phases 20.15-20.20, future cnna-project.net frontend, public read-only API views, expert-review navigation tooling. & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline generated\_exports/\allowbreak{}*.tsv;\newline future DB migration/\allowbreak{}import/\allowbreak{}frontend artifacts & \hyperlink{phase-row-20-17}{20.17}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR18}{DBR18} & Public read-only API views and read-only access policies & Database;\newline Mirror;\newline Object & F1 & current & \cellcolor{white}W & Documentation/\allowbreak{}query/\allowbreak{}publication layer only;\newline no Pillar-A mathematical object access. & No pillar handoff rights and no phase-release rights. & DB mirror planning phases 20.15-20.20, future cnna-project.net frontend, public read-only API views, expert-review navigation tooling. & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline generated\_exports/\allowbreak{}*.tsv;\newline future DB migration/\allowbreak{}import/\allowbreak{}frontend artifacts & \hyperlink{phase-row-20-18}{20.18}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR19}{DBR19} & cnna-project.net web-frontend data contract & Database;\newline Mirror;\newline Object & F1 & current & \cellcolor{white}W & Documentation/\allowbreak{}query/\allowbreak{}publication layer only;\newline no Pillar-A mathematical object access. & No pillar handoff rights and no phase-release rights. & DB mirror planning phases 20.15-20.20, future cnna-project.net frontend, public read-only API views, expert-review navigation tooling. & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline generated\_exports/\allowbreak{}*.tsv;\newline future DB migration/\allowbreak{}import/\allowbreak{}frontend artifacts & \hyperlink{phase-row-20-19}{20.19}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR20}{DBR20} & Reviewer annotation and future admin-write model & Database;\newline Mirror;\newline Object & F1 & current & \cellcolor{white}W & Documentation/\allowbreak{}query/\allowbreak{}publication layer only;\newline no Pillar-A mathematical object access. & No pillar handoff rights and no phase-release rights. & DB mirror planning phases 20.15-20.20, future cnna-project.net frontend, public read-only API views, expert-review navigation tooling. & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline generated\_exports/\allowbreak{}*.tsv;\newline future DB migration/\allowbreak{}import/\allowbreak{}frontend artifacts & \hyperlink{phase-row-20-20}{20.20}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR21}{DBR21} & Enlarged generated-PDF typography profile & Generated;\newline Artifact;\newline Object & F3 & current & \cellcolor{green!18}G & Documentation/\allowbreak{}review only;\newline no Pillar-A mathematical object access. & No pillar handoff rights. & Human reviewers, generated PDF readers, context documentation, future web/\allowbreak{}export layout profiles. & Repository/\allowbreak{}scripts/\allowbreak{}generate\_full\_document.py;\newline Repository/\allowbreak{}scripts/\allowbreak{}generate\_context\_doc.py;\newline Repository/\allowbreak{}scripts/\allowbreak{}generate\_tables.py;\newline Repository/\allowbreak{}scripts/\allowbreak{}build\_export\_script\_v1.8.py;\newline README.md;\newline Repository/\allowbreak{}masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline Repository/\allowbreak{}archive/\allowbreak{}reports/\allowbreak{}V1\_23\_PDF\_FONT\_SCALE\_REPORT.md & \hyperlink{phase-row-20-21}{20.21}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-GA0}{GA0} & Horn quaternion/\allowbreak{}geometric-algebra reference-gate packet & Reference;\newline Gate;\newline Object & F2 & current & \cellcolor{black!18}K & Reference/\allowbreak{}comparison only;\newline prohibited as a source or generator. & none & 1.4.9.1, 1.4.9.2, 13.2.1, 13.6.1, 18.5 as comparison targets only & No current Lean module;\newline masters/\allowbreak{}cnna\_roadmap\_master.yaml scratchpad/\allowbreak{}source-crosscheck only. & \hyperlink{phase-row-1-4-9}{1.4.9}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-GA1}{GA1} & Hamilton unit and Pauli/\allowbreak{}Cartan sign-convention comparison profile & Reference;\newline Gate;\newline Object & F2 & current & \cellcolor{black!18}K & Reference/\allowbreak{}comparison only;\newline no generator rights. & none & 1.4.9.2;\newline 13.2.1 comparison gates after CNNA-derived data exists & Future comparison may inspect CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}*.lean after neutral reintegration. & \hyperlink{phase-row-1-4-9-1}{1.4.9.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-GA2}{GA2} & Pauli bivector/\allowbreak{}pseudoscalar duality comparison profile & Reference;\newline Gate;\newline Object & F2 & current & \cellcolor{black!18}K & Reference/\allowbreak{}comparison only;\newline no basis/\allowbreak{}orientation/\allowbreak{}dimension generator rights. & none & 13.2.1, 13.6.1 and 18.5 as comparison targets only & No current Lean module;\newline future reference-gate only. & \hyperlink{phase-row-1-4-9-2}{1.4.9.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-GA3}{GA3} & Complex-quaternion eight-basis multivector comparison profile & Reference;\newline Gate;\newline Object & F2 & current & \cellcolor{black!18}K & Reference/\allowbreak{}comparison only;\newline no scalar-layer generator rights. & none & 10.4.3 CD9 audit, 13.6.1 Dirac/\allowbreak{}STA comparison, 18.5 side-comparison & Could later relate to 10.4.3 CD9 only after noncircular C-layer audit. & \hyperlink{phase-row-1-4-9-2}{1.4.9.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-GA4}{GA4} & Boundary Pauli/\allowbreak{}Clifford comparison gate & Reference;\newline Gate;\newline Object & F2 & current & \cellcolor{black!18}K & No direct A access;\newline B consumer may only compare against A->B handoff-derived algebra outputs. & none & 13.6.1 and 18.5 as later comparison/\allowbreak{}reference gates & PillarB empty;\newline future CNNA/\allowbreak{}PillarB/\allowbreak{}QFT/\allowbreak{}BoundaryStarAlgebra.lean consumer output. & \hyperlink{phase-row-13-2-1}{13.2.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-GA5}{GA5} & Dirac/\allowbreak{}spacetime-algebra comparison target gate & Reference;\newline Gate;\newline Object & F2 & current & \cellcolor{black!18}K & No direct A access;\newline comparison only after B consumer chain. & none & 18.5 side-comparison and later expert-review documentation & PillarB empty;\newline no current STA/\allowbreak{}Dirac module. & \hyperlink{phase-row-13-6-1}{13.6.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-GA6}{GA6} & Geometric and conformal algebra side-comparison register & Reference;\newline Gate;\newline Object & F2 & current & \cellcolor{black!18}K & No A-source rights;\newline side comparison only. & none & Documentation workflow, expert review and later side-comparison packets & No current Lean module. & \hyperlink{phase-row-18-5}{18.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DBR27}{DBR27} & Phase/\allowbreak{}Object context-class taxonomy & Tool;\newline Infrastructure;\newline Object & F3 & current & \cellcolor{green!18}G & No mathematical Pillar-A access. Planning/\allowbreak{}control surface only. & No pillar handoff rights and no release-proof rights. & phase table;\newline object register;\newline proof dossiers;\newline implementation scratchpad;\newline module-change manifest;\newline future DB/\allowbreak{}public API schema;\newline implementation prompts & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline scripts/\allowbreak{}generate\_full\_document.py;\newline generated\_exports/\allowbreak{}phase\_roadmap.generated.tsv;\newline generated\_exports/\allowbreak{}object\_register.generated.tsv & \hyperlink{phase-row-20-27}{20.27}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX0}{CEX0} & Explorer-readiness audit ledger & Lean;\newline Refactor;\newline Object & F1 & current & \cellcolor{yellow!25}Y & Documentation/\allowbreak{}query/\allowbreak{}tooling layer only;\newline no Pillar-A mathematical object access and no pillar handoff use. & No pillar handoff rights and no phase-release rights. & 21.1-21.9;\newline CEX10;\newline CEX11;\newline future YAML2SQL/\allowbreak{}importer/\allowbreak{}frontend work;\newline pre-Explorer release checks & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline repo\_inventory/\allowbreak{}raw\_export/\allowbreak{}*.json;\newline generated\_exports/\allowbreak{}*.tsv & \hyperlink{phase-row-21-0}{21.0}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX1}{CEX1} & Explorer semantic graph schema & Tool;\newline Infrastructure;\newline Object & F1 & current & \cellcolor{white}W & Documentation/\allowbreak{}query/\allowbreak{}tooling layer only;\newline no Pillar-A mathematical object access and no pillar handoff use. & No pillar handoff rights and no phase-release rights. & 21.2-21.9;\newline future frontend/\allowbreak{}query tooling & future Repository/\allowbreak{}explorer/\allowbreak{}schema/\allowbreak{}* & \hyperlink{phase-row-21-1}{21.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX2}{CEX2} & YAML2SQL/\allowbreak{}MySQL mirror contract & Database;\newline Mirror;\newline Object & F1 & current & \cellcolor{white}W & Documentation/\allowbreak{}query/\allowbreak{}tooling layer only;\newline no Pillar-A mathematical object access and no pillar handoff use. & No pillar handoff rights and no phase-release rights. & 21.2.1-21.9;\newline future public read-only frontend;\newline CI/\allowbreak{}importer/\allowbreak{}deployment contracts & future Repository/\allowbreak{}explorer/\allowbreak{}yaml2sql/\allowbreak{}* & \hyperlink{phase-row-21-2}{21.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX3}{CEX3} & Explorer read-only API/\allowbreak{}query projection contract & Database;\newline Mirror;\newline Object & F1 & current & \cellcolor{white}W & Documentation/\allowbreak{}query/\allowbreak{}tooling layer only;\newline no Pillar-A mathematical object access and no pillar handoff use. & No pillar handoff rights and no phase-release rights. & 21.4-21.9;\newline frontend shell, history/\allowbreak{}filter layers and public red/\allowbreak{}green CI status views & future Repository/\allowbreak{}explorer/\allowbreak{}api\_contract/\allowbreak{}* & \hyperlink{phase-row-21-3}{21.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX4}{CEX4} & Dark Pillar-hub star-map UI shell & Tool;\newline Infrastructure;\newline Object & F1 & current & \cellcolor{white}W & Documentation/\allowbreak{}query/\allowbreak{}tooling layer only;\newline no Pillar-A mathematical object access and no pillar handoff use. & No pillar handoff rights and no phase-release rights. & 21.5-21.9;\newline user-facing Explorer & future Repository/\allowbreak{}explorer/\allowbreak{}frontend/\allowbreak{}* & \hyperlink{phase-row-21-4}{21.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX5}{CEX5} & Inspector/\allowbreak{}menu/\allowbreak{}i18n explanation contract & Tool;\newline Infrastructure;\newline Object & F1 & current & \cellcolor{white}W & Documentation/\allowbreak{}query/\allowbreak{}tooling layer only;\newline no Pillar-A mathematical object access and no pillar handoff use. & No pillar handoff rights and no phase-release rights. & 21.6-21.9;\newline public UI documentation & future Repository/\allowbreak{}explorer/\allowbreak{}frontend/\allowbreak{}*;\newline future localized\_text schema & \hyperlink{phase-row-21-5}{21.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX6}{CEX6} & Explorer filter and projection engine & Tool;\newline Infrastructure;\newline Object & F1 & current & \cellcolor{white}W & Documentation/\allowbreak{}query/\allowbreak{}tooling layer only;\newline no Pillar-A mathematical object access and no pillar handoff use. & No pillar handoff rights and no phase-release rights. & 21.7-21.9;\newline graph/\allowbreak{}history/\allowbreak{}lab views & future Repository/\allowbreak{}explorer/\allowbreak{}frontend/\allowbreak{}* & \hyperlink{phase-row-21-6}{21.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX7}{CEX7} & History and hypothesis lifecycle layer & Tool;\newline Infrastructure;\newline Object & F1 & current & \cellcolor{white}W & Documentation/\allowbreak{}query/\allowbreak{}tooling layer only;\newline no Pillar-A mathematical object access and no pillar handoff use. & No pillar handoff rights and no phase-release rights. & 21.8-21.9;\newline research timeline and Universe Explorer backlog & future Repository/\allowbreak{}explorer/\allowbreak{}history/\allowbreak{}* & \hyperlink{phase-row-21-7}{21.7}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX8}{CEX8} & Explorer lab-boundary contract & Tool;\newline Infrastructure;\newline Object & F1 & current & \cellcolor{white}W & Documentation/\allowbreak{}query/\allowbreak{}tooling layer only;\newline no Pillar-A mathematical object access and no pillar handoff use. & No pillar handoff rights and no phase-release rights. & 21.9;\newline later Universe Explorer labs & future Repository/\allowbreak{}explorer/\allowbreak{}labs/\allowbreak{}* & \hyperlink{phase-row-21-8}{21.8}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX9}{CEX9} & CNNA Explorer deployment and Universe Explorer roadmap & Generated;\newline Artifact;\newline Object & F1 & current & \cellcolor{white}W & Documentation/\allowbreak{}query/\allowbreak{}tooling layer only;\newline no Pillar-A mathematical object access and no pillar handoff use. & No pillar handoff rights and no phase-release rights. & future public Explorer release and generated documentation & future Repository/\allowbreak{}explorer/\allowbreak{}*;\newline future .github/\allowbreak{}workflows/\allowbreak{}*;\newline future public host/\allowbreak{}importer;\newline generated release manifests & \hyperlink{phase-row-21-9}{21.9}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX10}{CEX10} & Object lifecycle and historical provenance ledger & Lifecycle;\newline Governance;\newline Object & F1 & current & \cellcolor{yellow!25}Y & Documentation/\allowbreak{}query/\allowbreak{}tooling layer only;\newline no Pillar-A mathematical object access and no pillar handoff use. & No pillar handoff rights and no phase-release rights. & CEX0;\newline 21.1 semantic graph schema;\newline 21.2 YAML2SQL mirror;\newline 21.7 history timeline;\newline future patch/\allowbreak{}rename/\allowbreak{}delete workflows & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline generated\_exports/\allowbreak{}object\_register.generated.tsv & \hyperlink{phase-row-21-0}{21.0}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX11}{CEX11} & Total Lean declaration classification ledger & Lean;\newline Governance;\newline Object & F1 & current & \cellcolor{yellow!25}Y & Documentation/\allowbreak{}query/\allowbreak{}tooling layer only;\newline no Pillar-A mathematical object access and no pillar handoff use. & No pillar handoff rights and no phase-release rights. & LEG37;\newline CEX0;\newline 21.1 semantic graph schema;\newline 21.2 YAML2SQL mirror;\newline 21.5 inspector;\newline 21.6 filters;\newline 21.7 history/\allowbreak{}hypothesis layer;\newline public API/\allowbreak{}firewall reviews & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline generated\_exports/\allowbreak{}declaration\_consumption\_records.generated.tsv;\newline future total\_declaration\_classification.generated.tsv & \hyperlink{phase-row-21-0}{21.0}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX12}{CEX12} & GitHub repository automation and backup-gated PR contract & Tool;\newline Infrastructure;\newline Object & F1 & current & \cellcolor{white}W & Documentation/\allowbreak{}query/\allowbreak{}tooling layer only;\newline no Pillar-A mathematical object access and no pillar handoff use. & No pillar handoff rights and no phase-release rights. CI/\allowbreak{}DB/\allowbreak{}Explorer signals may open audit findings only. & 21.2.2-21.9;\newline future assistant/\allowbreak{}GitHub workflow;\newline release hardening & future .github/\allowbreak{}workflows/\allowbreak{}*;\newline future branch/\allowbreak{}tag policy;\newline masters/\allowbreak{}cnna\_roadmap\_master.yaml & \hyperlink{phase-row-21-2-1}{21.2.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX13}{CEX13} & GitHub Actions Lean-build and snapshot-artifact pipeline & Tool;\newline Infrastructure;\newline Object & F1 & current & \cellcolor{white}W & Documentation/\allowbreak{}query/\allowbreak{}tooling layer only;\newline no Pillar-A mathematical object access and no pillar handoff use. & No pillar handoff rights and no phase-release rights. CI/\allowbreak{}DB/\allowbreak{}Explorer signals may open audit findings only. & 21.2.3-21.2.5;\newline 21.3-21.9;\newline Webhosting importer;\newline public Explorer release;\newline red-build failure-history channel & future .github/\allowbreak{}workflows/\allowbreak{}cnna-ci.yml;\newline future Repository/\allowbreak{}scripts/\allowbreak{}ci/\allowbreak{}*;\newline existing generation scripts & \hyperlink{phase-row-21-2-2}{21.2.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX14}{CEX14} & Webhosting-local MySQL staging import, read-only swap and rollback contract & Database;\newline Mirror;\newline Object & F1 & current & \cellcolor{white}W & Documentation/\allowbreak{}query/\allowbreak{}tooling layer only;\newline no Pillar-A mathematical object access and no pillar handoff use. & No pillar handoff rights and no phase-release rights. CI/\allowbreak{}DB/\allowbreak{}Explorer signals may open audit findings only. & 21.2.4-21.2.5;\newline 21.3-21.9;\newline read-only API;\newline public frontend & future Webhosting importer script;\newline future SQL migrations;\newline future Repository/\allowbreak{}explorer/\allowbreak{}yaml2sql/\allowbreak{}*;\newline future deployment manifest & \hyperlink{phase-row-21-2-3}{21.2.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX15}{CEX15} & CI build-result phase-state controller and automatic repair-phase generator & Tool;\newline Infrastructure;\newline Object & F1 & current & \cellcolor{white}W & Documentation/\allowbreak{}query/\allowbreak{}tooling layer only;\newline no Pillar-A mathematical object access and no pillar handoff use. & No pillar handoff rights and no phase-release rights. CI signals may only close or block phases according to registered evidence and may create repair/\allowbreak{}audit phases, not mathematical handoffs. & Post-green closeout workflow;\newline natural-origin missing-structure workflow;\newline CEX16 red-build failure visibility channel;\newline 21.3-21.9 Explorer/\allowbreak{}API/\allowbreak{}history/\allowbreak{}deployment layers;\newline future GitHub automation & future .github/\allowbreak{}workflows/\allowbreak{}cnna-phase-controller.yml;\newline future Repository/\allowbreak{}scripts/\allowbreak{}ci/\allowbreak{}phase\_state\_controller.*;\newline masters/\allowbreak{}cnna\_roadmap\_master.yaml & \hyperlink{phase-row-21-2-4}{21.2.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-CEX16}{CEX16} & Red-build failure visibility snapshot and repair-phase publication channel & Database;\newline Mirror;\newline Object & F1 & current & \cellcolor{white}W & Documentation/\allowbreak{}query/\allowbreak{}tooling layer only;\newline no Pillar-A mathematical object access and no pillar handoff use. & No pillar handoff rights and no phase-release rights. A red failure snapshot may create visibility and audit obligations only;\newline it cannot certify mathematical content or update green production state. & CEX15 controller;\newline 21.3 read-only API/\allowbreak{}history;\newline 21.4 UI status badges;\newline 21.9 deployment hardening;\newline expert audit/\allowbreak{}review workflows & future Repository/\allowbreak{}scripts/\allowbreak{}ci/\allowbreak{}red\_failure\_snapshot.*;\newline future Repository/\allowbreak{}explorer/\allowbreak{}api/\allowbreak{}build\_history.*;\newline future MySQL history tables/\allowbreak{}views;\newline masters/\allowbreak{}cnna\_roadmap\_master.yaml & \hyperlink{phase-row-21-2-5}{21.2.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-B07}{B07} & Complement-net modular B core chain & Lean;\newline Target;\newline Object & F0 & current & \cellcolor{red!20}R & No Pillar-A access except through explicit B->A input handoff after B closes. & B->A only via explicit output profile;\newline no self-handoff use. & Pillar B phases 13.8-13.9;\newline later D/\allowbreak{}E gates after closure. & roadmap section Kettenblatt des modularen B-Kerns;\newline phases 13.3-13.6 & \hyperlink{phase-row-13-8}{13.8}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-B08}{B08} & Nuclearity/\allowbreak{}DHR/\allowbreak{}DR reconstruction bridge & Lean;\newline Target;\newline Object & F0 & current & \cellcolor{red!20}R & No Pillar-A access except explicit B->A handoff after closure. & B/\allowbreak{}E bridge only after B modular core;\newline no direct A consumption. & B, D/\allowbreak{}E bridge and E matter phases after closure. & roadmap sections Spät-B-/\allowbreak{}Früh-E-Ergänzung and E Vorzone & \hyperlink{phase-row-13-9}{13.9}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-PC00}{PC00} & ParameterClosure chain & Lean;\newline Target;\newline Object & F0 & current & \cellcolor{red!20}R & A may only consume closure effects through explicit C/\allowbreak{}D/\allowbreak{}E->A inputs. & C/\allowbreak{}D bridge;\newline backreaction input only after explicit output handoff. & Pillar D geometry;\newline backreaction phases;\newline later E only after closure. & roadmap Parameter-Closure chain sheet;\newline phases 14/\allowbreak{}15/\allowbreak{}17 & \hyperlink{phase-row-15-5}{15.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-D04}{D04} & LCQFT/\allowbreak{}Hadamard/\allowbreak{}Wick D gate chain & Lean;\newline Target;\newline Object & F0 & current & \cellcolor{red!20}R & A may receive D effects only through D->A input handoff after D closure. & D->A only via explicit input/\allowbreak{}output profiles. & Pillar D and D/\allowbreak{}E bridge phases. & roadmap Minimaler D-Dateibaum;\newline phases 15.1-15.6 & \hyperlink{phase-row-15-6}{15.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-DE00}{DE00} & D/\allowbreak{}E bridge gate chain & Lean;\newline Target;\newline Object & F0 & current & \cellcolor{red!20}R & No direct A consumption except through explicit D/\allowbreak{}E->A inputs. & D/\allowbreak{}E bridge only;\newline E->A after closure. & Pillar E matter sector after bridge closure. & roadmap Kettenblatt der D/\allowbreak{}E-Brücke;\newline phases 15.6 and 16.5 & \hyperlink{phase-row-16-5}{16.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-E04}{E04} & Feynman matter audit gate & Lean;\newline Target;\newline Object & F0 & current & \cellcolor{red!20}R & A may only receive E results through E->A input handoff. & E->A only after explicit output profile. & Pillar E matter and phenomenology phases after prerequisites. & roadmap Feynman-Audit für Matter;\newline phases 16.5 & \hyperlink{phase-row-16-5}{16.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-E05}{E05} & Particle/\allowbreak{}scattering/\allowbreak{}IR horizon window & Reference;\newline Gate;\newline Object & F1 & current & \cellcolor{black!18}K & No Pillar-A access. & No handoff until explicit late E output profile. & Late E/\allowbreak{}phenomenology comparison only. & roadmap Späte Horizontschicht für Teilchen-, Scattering- und IR-Physik & \hyperlink{phase-row-16-6}{16.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RDV0}{RDV0} & Original roadmap source/\allowbreak{}definition/\allowbreak{}notation audit ledger & Documentation;\newline Object & F1 & current & \cellcolor{black!18}K & No Pillar-A mathematical access. & No handoff rights. & Tooling, Explorer and review phases only. & uploaded roadmap TeX;\newline current YAML & \hyperlink{phase-row-22-0}{22.0}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RDV1}{RDV1} & Roadmap migration disposition ledger & Governance;\newline Policy;\newline Object & F1 & current & \cellcolor{black!18}K & No Pillar-A mathematical access. & No handoff rights. & Refactor and source-intake phases. & roadmap migration law & \hyperlink{phase-row-22-1}{22.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RDV2}{RDV2} & Roadmap de-seeding/\allowbreak{}regression/\allowbreak{}rollback workflow ledger & Governance;\newline Policy;\newline Object & F1 & current & \cellcolor{black!18}K & No Pillar-A mathematical access. & No handoff rights. & Refactor, lifecycle and total declaration classification workflows. & roadmap de-seeding/\allowbreak{}regression/\allowbreak{}naming/\allowbreak{}rollback rules & \hyperlink{phase-row-22-2}{22.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RDV3}{RDV3} & Roadmap modular B gate-sheet ledger & Reference;\newline Gate;\newline Object & F1 & current & \cellcolor{black!18}K & No Pillar-A access except via explicit future handoff records. & No handoff rights by itself. & B/\allowbreak{}AQFT future phases. & roadmap modular B chain and gates & \hyperlink{phase-row-22-3}{22.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RDV4}{RDV4} & Roadmap ParameterClosure gate-sheet ledger & Reference;\newline Gate;\newline Object & F1 & current & \cellcolor{black!18}K & No direct A mathematical access. & No handoff rights by itself. & C/\allowbreak{}D/\allowbreak{}backreaction future phases. & roadmap ParameterClosure chain & \hyperlink{phase-row-22-4}{22.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RDV5}{RDV5} & Roadmap D/\allowbreak{}E bridge and local-covariance gate-sheet ledger & Reference;\newline Gate;\newline Object & F1 & current & \cellcolor{black!18}K & No direct A mathematical access. & No handoff rights by itself. & D/\allowbreak{}E future phases. & roadmap D/\allowbreak{}E bridge and D tree & \hyperlink{phase-row-22-5}{22.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RDV6}{RDV6} & Roadmap Feynman/\allowbreak{}scattering/\allowbreak{}IR audit ledger & Reference;\newline Gate;\newline Object & F1 & current & \cellcolor{black!18}K & No direct A mathematical access. & No handoff rights by itself. & E matter/\allowbreak{}phenomenology future phases. & roadmap Feynman audit and scattering/\allowbreak{}IR horizon & \hyperlink{phase-row-22-6}{22.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RLC0}{RLC0} & REALOQS v0.0605 legacy source inventory ledger & Legacy;\newline Code;\newline Reference;\newline Object & F1 & current & \cellcolor{black!18}K & No Pillar-A mathematical access. Legacy A-interface imports are evidence of migration risk, not current consumption rights. & No handoff rights. Later B phases may consume only explicit CNNA A->B handoff data. & CNNA planning/\allowbreak{}tooling, Explorer, future PillarB reference/\allowbreak{}migration phases, and expert review only. & archived REALOQS v0.0605 source zip;\newline V1.35 REALOQS scan JSON and module TSV reports & \hyperlink{phase-row-23-0}{23.0}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RLC1}{RLC1} & REALOQS AQFT foundation migration-disposition ledger & Legacy;\newline Code;\newline Reference;\newline Object & F1 & current & \cellcolor{red!20}R & No Pillar-A mathematical access. Legacy A-interface imports are evidence of migration risk, not current consumption rights. & No handoff rights. Later B phases may consume only explicit CNNA A->B handoff data. & CNNA planning/\allowbreak{}tooling, Explorer, future PillarB reference/\allowbreak{}migration phases, and expert review only. & archived REALOQS v0.0605 source zip;\newline V1.35 REALOQS scan JSON and module TSV reports & \hyperlink{phase-row-23-1}{23.1}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RLC2}{RLC2} & REALOQS-to-CNNA A->B handoff compatibility ledger & Legacy;\newline Code;\newline Reference;\newline Object & F1 & current & \cellcolor{red!20}R & No Pillar-A mathematical access. Legacy A-interface imports are evidence of migration risk, not current consumption rights. & No handoff rights. Later B phases may consume only explicit CNNA A->B handoff data. & CNNA planning/\allowbreak{}tooling, Explorer, future PillarB reference/\allowbreak{}migration phases, and expert review only. & archived REALOQS v0.0605 source zip;\newline V1.35 REALOQS scan JSON and module TSV reports & \hyperlink{phase-row-23-2}{23.2}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RLC3}{RLC3} & REALOQS boundary-matrix AQFT rewrite ledger & Legacy;\newline Code;\newline Reference;\newline Object & F1 & current & \cellcolor{red!20}R & No Pillar-A mathematical access. Legacy A-interface imports are evidence of migration risk, not current consumption rights. & No handoff rights. Later B phases may consume only explicit CNNA A->B handoff data. & CNNA planning/\allowbreak{}tooling, Explorer, future PillarB reference/\allowbreak{}migration phases, and expert review only. & archived REALOQS v0.0605 source zip;\newline V1.35 REALOQS scan JSON and module TSV reports & \hyperlink{phase-row-23-3}{23.3}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RLC4}{RLC4} & REALOQS Haag-Kastler gate extraction ledger & Legacy;\newline Code;\newline Reference;\newline Object & F1 & current & \cellcolor{red!20}R & No Pillar-A mathematical access. Legacy A-interface imports are evidence of migration risk, not current consumption rights. & No handoff rights. Later B phases may consume only explicit CNNA A->B handoff data. & CNNA planning/\allowbreak{}tooling, Explorer, future PillarB reference/\allowbreak{}migration phases, and expert review only. & archived REALOQS v0.0605 source zip;\newline V1.35 REALOQS scan JSON and module TSV reports & \hyperlink{phase-row-23-4}{23.4}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RLC5}{RLC5} & REALOQS state-GNS-KMS-modular route map & Legacy;\newline Code;\newline Reference;\newline Object & F1 & current & \cellcolor{red!20}R & No Pillar-A mathematical access. Legacy A-interface imports are evidence of migration risk, not current consumption rights. & No handoff rights. Later B phases may consume only explicit CNNA A->B handoff data. & CNNA planning/\allowbreak{}tooling, Explorer, future PillarB reference/\allowbreak{}migration phases, and expert review only. & archived REALOQS v0.0605 source zip;\newline V1.35 REALOQS scan JSON and module TSV reports & \hyperlink{phase-row-23-5}{23.5}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RLC6}{RLC6} & REALOQS quasi-local split/\allowbreak{}nuclearity horizon map & Legacy;\newline Code;\newline Reference;\newline Object & F1 & current & \cellcolor{red!20}R & No Pillar-A mathematical access. Legacy A-interface imports are evidence of migration risk, not current consumption rights. & No handoff rights. Later B phases may consume only explicit CNNA A->B handoff data. & CNNA planning/\allowbreak{}tooling, Explorer, future PillarB reference/\allowbreak{}migration phases, and expert review only. & archived REALOQS v0.0605 source zip;\newline V1.35 REALOQS scan JSON and module TSV reports & \hyperlink{phase-row-23-6}{23.6}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RLC7}{RLC7} & REALOQS examples/\allowbreak{}meta quarantine and regression ledger & Legacy;\newline Code;\newline Reference;\newline Object & F1 & current & \cellcolor{red!20}R & No Pillar-A mathematical access. Legacy A-interface imports are evidence of migration risk, not current consumption rights. & No handoff rights. Later B phases may consume only explicit CNNA A->B handoff data. & CNNA planning/\allowbreak{}tooling, Explorer, future PillarB reference/\allowbreak{}migration phases, and expert review only. & archived REALOQS v0.0605 source zip;\newline V1.35 REALOQS scan JSON and module TSV reports & \hyperlink{phase-row-23-7}{23.7}\\
+\hline
+\addlinespace[0.24em]
+\hyperlink{object-row-RLC8}{RLC8} & REALOQS declaration crosswalk and Explorer legacy overlay ledger & Legacy;\newline Code;\newline Reference;\newline Object & F1 & current & \cellcolor{red!20}R & No Pillar-A mathematical access. Legacy A-interface imports are evidence of migration risk, not current consumption rights. & No handoff rights. Later B phases may consume only explicit CNNA A->B handoff data. & CNNA planning/\allowbreak{}tooling, Explorer, future PillarB reference/\allowbreak{}migration phases, and expert review only. & archived REALOQS v0.0605 source zip;\newline V1.35 REALOQS scan JSON and module TSV reports & \hyperlink{phase-row-23-8}{23.8}\\
+\hline
+\addlinespace[0.24em]
+\end{longtable}
+\arrayrulecolor{black}
+\normalsize

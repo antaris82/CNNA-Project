@@ -1,0 +1,343 @@
+{
+  "path": [
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedMainPath",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedApproximantCore",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedBoundaryInteriorPartition",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedDirichletEntry",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlock",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCandidate",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCandidateEntry",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTwoSidedInv",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateStart",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCarrier",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationStep",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationTrace",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateEntry",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorAccumulatedTraceEvaluation",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldNormalFormR3c1a",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepSchurCancellationSourceAuditR3c1b0",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepSchurCancellationInvariantSM3db2aR",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorPerPivotRegularityFromTraceSM3db2bR",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTracePivotScaleWitnessFromGeneratedDegreeSM3db2cR",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedDegreePivotScaleSourceSM3db2dR",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedDegreeFormulaAuditSM3db2eR0",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedDegreePivotReciprocalProfileFromWeightPolicySM3db2eR",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDegreeReciprocalSourceSM3db2fR",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldKernelLocalSchurResidualBridgeR3c1b1",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepCancellationR3c1bFull",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldInvarianceR3c1c",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTracePivotTerminalCoverageSourceSM3db3aR",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalFoldResidualCoverageSM3db4aT",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalFoldResidualIdentityFieldsSM3db4aU",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldTerminalIdentityR3c1d",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorAccumulatedEntryCancellationFromTerminalIdentityR3c1e",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTraceCancellationR3c2",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorProductIdentityProofR4a",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorProvenTwoSidedInvR5",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCertificateSM3fR",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedTopBoundaryDtNSM3gR",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedGeneralizedTopBoundaryDtNSM3hR",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedResetSM3LedgerSM3iR",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedMultiSchurSM4",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedArithmeticSourceSM5",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelStepWitnessSM6",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryBoundaryPortSourceSM6a",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistorySchurIndexBridgeRecheckSM7a",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryMatrixFromBridgeSM8",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryExecMatrixFromSM6bRecheckSM8",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryExecMirrorSourceFromSM8RecheckSM9a",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryCharpolyExecFromMirrorSM9b",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryOperationalCharpolyPolynomialProfileFromSM9b",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryOperationalCoefficientSourceFromSM9c",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDeterminantCoefficientRecurrenceSM9e",
+    "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialEvaluationNormalFormSM9ePlus",
+    "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialForwardEvaluationSourceSM9ePlus",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDeterminantForwardEvaluationBridgeFromSM9ePlus",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDiscriminantFactorGateFromSM9fFull",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalQuadraticCoefficientWindowFromSM9dSM9e",
+    "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalQuadraticDiscriminantSourceFromSM9g1Window"
+  ],
+  "length": 56,
+  "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedMainPath",
+  "sink": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalQuadraticDiscriminantSourceFromSM9g1Window",
+  "groups": [
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic",
+    "PillarA/Arithmetic"
+  ],
+  "edges": [
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedMainPath",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedApproximantCore"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedApproximantCore",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedBoundaryInteriorPartition"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedBoundaryInteriorPartition",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedDirichletEntry"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedDirichletEntry",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlock"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlock",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCandidate"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCandidate",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCandidateEntry"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCandidateEntry",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTwoSidedInv"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTwoSidedInv",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateStart"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateStart",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCarrier"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCarrier",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationStep"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationStep",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationTrace"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationTrace",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateEntry"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorInverseCandidateEntry",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorAccumulatedTraceEvaluation"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorAccumulatedTraceEvaluation",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldNormalFormR3c1a"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldNormalFormR3c1a",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepSchurCancellationSourceAuditR3c1b0"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepSchurCancellationSourceAuditR3c1b0",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepSchurCancellationInvariantSM3db2aR"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepSchurCancellationInvariantSM3db2aR",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorPerPivotRegularityFromTraceSM3db2bR"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorPerPivotRegularityFromTraceSM3db2bR",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTracePivotScaleWitnessFromGeneratedDegreeSM3db2cR"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTracePivotScaleWitnessFromGeneratedDegreeSM3db2cR",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedDegreePivotScaleSourceSM3db2dR"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedDegreePivotScaleSourceSM3db2dR",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedDegreeFormulaAuditSM3db2eR0"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedDegreeFormulaAuditSM3db2eR0",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedDegreePivotReciprocalProfileFromWeightPolicySM3db2eR"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedDegreePivotReciprocalProfileFromWeightPolicySM3db2eR",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDegreeReciprocalSourceSM3db2fR"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDegreeReciprocalSourceSM3db2fR",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldKernelLocalSchurResidualBridgeR3c1b1"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldKernelLocalSchurResidualBridgeR3c1b1",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepCancellationR3c1bFull"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepCancellationR3c1bFull",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldInvarianceR3c1c"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldInvarianceR3c1c",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTracePivotTerminalCoverageSourceSM3db3aR"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTracePivotTerminalCoverageSourceSM3db3aR",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalFoldResidualCoverageSM3db4aT"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalFoldResidualCoverageSM3db4aT",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalFoldResidualIdentityFieldsSM3db4aU"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalFoldResidualIdentityFieldsSM3db4aU",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldTerminalIdentityR3c1d"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldTerminalIdentityR3c1d",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorAccumulatedEntryCancellationFromTerminalIdentityR3c1e"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorAccumulatedEntryCancellationFromTerminalIdentityR3c1e",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTraceCancellationR3c2"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTraceCancellationR3c2",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorProductIdentityProofR4a"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorProductIdentityProofR4a",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorProvenTwoSidedInvR5"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorProvenTwoSidedInvR5",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCertificateSM3fR"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCertificateSM3fR",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedTopBoundaryDtNSM3gR"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedTopBoundaryDtNSM3gR",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedGeneralizedTopBoundaryDtNSM3hR"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedGeneralizedTopBoundaryDtNSM3hR",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedResetSM3LedgerSM3iR"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedResetSM3LedgerSM3iR",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedMultiSchurSM4"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedMultiSchurSM4",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedArithmeticSourceSM5"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedArithmeticSourceSM5",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelStepWitnessSM6"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelStepWitnessSM6",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryBoundaryPortSourceSM6a"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryBoundaryPortSourceSM6a",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistorySchurIndexBridgeRecheckSM7a"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistorySchurIndexBridgeRecheckSM7a",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryMatrixFromBridgeSM8"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryMatrixFromBridgeSM8",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryExecMatrixFromSM6bRecheckSM8"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryExecMatrixFromSM6bRecheckSM8",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryExecMirrorSourceFromSM8RecheckSM9a"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryExecMirrorSourceFromSM8RecheckSM9a",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryCharpolyExecFromMirrorSM9b"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryCharpolyExecFromMirrorSM9b",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryOperationalCharpolyPolynomialProfileFromSM9b"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryOperationalCharpolyPolynomialProfileFromSM9b",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryOperationalCoefficientSourceFromSM9c"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedLevelHistoryOperationalCoefficientSourceFromSM9c",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDeterminantCoefficientRecurrenceSM9e"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDeterminantCoefficientRecurrenceSM9e",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialEvaluationNormalFormSM9ePlus"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialEvaluationNormalFormSM9ePlus",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialForwardEvaluationSourceSM9ePlus"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.OperationalBoundedPolynomialForwardEvaluationSourceSM9ePlus",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDeterminantForwardEvaluationBridgeFromSM9ePlus"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDeterminantForwardEvaluationBridgeFromSM9ePlus",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDiscriminantFactorGateFromSM9fFull"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalDiscriminantFactorGateFromSM9fFull",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalQuadraticCoefficientWindowFromSM9dSM9e"
+    },
+    {
+      "source": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalQuadraticCoefficientWindowFromSM9dSM9e",
+      "target": "CNNA.PillarA.Arithmetic.Smoke.GeneratedOperationalQuadraticDiscriminantSourceFromSM9g1Window"
+    }
+  ]
+}

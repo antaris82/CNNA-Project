@@ -1,0 +1,19 @@
+# Disposable full-document build outputs: regenerate with scripts/generate_full_document.py
+/CNNA_Planning_and_Documentation_Tool_*.pdf
+/CNNA_Planning_and_Documentation_Tool_*.tex
+/*.aux
+/*.log
+/*.out
+/*.toc
+/*.fls
+/*.fdb_latexmk
+/*.synctex.gz
+/generated_docs/
+
+# Context-doc PDFs/TeX are generated on demand; keep manifests/TSV when useful.
+/context_docs/*/*.pdf
+/context_docs/*/*.tex
+/context_docs/*/*.log
+/context_docs/*/*.aux
+/context_docs/*/*.out
+/context_docs/*/*.toc

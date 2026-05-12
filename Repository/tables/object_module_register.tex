@@ -1,0 +1,840 @@
+\footnotesize
+\par\smallskip\noindent\begin{minipage}{0.99\linewidth}\footnotesize\raggedright\textbf{Table legend.} \colorbox{white}{\strut W} = white/finished public object; \colorbox{cyan!20}{\strut B} = blue/proof-carrying but semantic/API correction still open; \colorbox{green!18}{\strut G} = green/locally closable; \colorbox{yellow!25}{\strut Y} = yellow/known route with prerequisites; \colorbox{red!20}{\strut R} = red/derivation layer incomplete or unclear; \colorbox{black!18}{\strut K} = black/registered side or future target. Context class is orthogonal to status.\end{minipage}\par\vspace{0.25em}
+\arrayrulecolor{black!22}
+\begin{longtable}{L{0.022\linewidth} L{0.086\linewidth} L{0.063\linewidth} L{0.032\linewidth} L{0.044\linewidth} L{0.048\linewidth} L{0.028\linewidth} L{0.07\linewidth} L{0.247\linewidth} L{0.205\linewidth} L{0.022\linewidth}}
+\hline
+\textbf{ID} & \textbf{Object} & \textbf{Context class} & \textbf{Tier} & \textbf{Lifecycle} & \textbf{Layer} & \textbf{Object status} & \textbf{Code status} & \textbf{Current code modules /\allowbreak{} derivation site} & \textbf{Neutral target location /\allowbreak{} canonical API} & \textbf{Phase}\\
+\hline
+\endfirsthead
+\hline
+\textbf{ID} & \textbf{Object} & \textbf{Context class} & \textbf{Tier} & \textbf{Lifecycle} & \textbf{Layer} & \textbf{Object status} & \textbf{Code status} & \textbf{Current code modules /\allowbreak{} derivation site} & \textbf{Neutral target location /\allowbreak{} canonical API} & \textbf{Phase}\\
+\hline
+\endhead
+\hypertarget{object-row-G00}{\hyperlink{objproof:G00}{G00}} & Generator provenance & Lean;\newline Source;\newline Object & F0 & current & Foundation & \cellcolor{green!18}G & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedSource.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedMainPath.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}BoundarySource/\allowbreak{}GeneratedSubstrateRoute.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}GeneratorProvenance.lean & \hyperlink{phase-row-1-2-2}{1.2.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-H00}{\hyperlink{objproof:H00}{H00}} & A input handoff B->A & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & Handoff policy & \cellcolor{yellow!25}Y & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}B\_to\_A.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}AinputhandoffBA.lean & \hyperlink{phase-row-2-3-1}{2.3.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-H01}{\hyperlink{objproof:H01}{H01}} & A input handoff C->A & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & Handoff policy & \cellcolor{yellow!25}Y & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}C\_to\_A.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}AinputhandoffCA.lean & \hyperlink{phase-row-2-3-1}{2.3.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-H02}{\hyperlink{objproof:H02}{H02}} & A input handoff D->A & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & Handoff policy & \cellcolor{yellow!25}Y & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}D\_to\_A.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}AinputhandoffDA.lean & \hyperlink{phase-row-2-3-1}{2.3.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-H03}{\hyperlink{objproof:H03}{H03}} & A input handoff E->A & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & Handoff policy & \cellcolor{yellow!25}Y & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}E\_to\_A.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}AinputhandoffEA.lean & \hyperlink{phase-row-2-3-1}{2.3.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-O00}{\hyperlink{objproof:O00}{O00}} & ExecComplex & Lean;\newline Source;\newline Object & F1 & current & Operational scalar & \cellcolor{white}W & canonically derived-only;\newline consumable as computable scalar path & CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}ExecComplex.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}ExecComplexBridge.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}ExecComplexLemmas.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}ExecComplex.lean & \hyperlink{phase-row-1-2-1}{1.2.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-G01}{\hyperlink{objproof:G01}{G01}} & substrate: regular branching & Lean;\newline Source;\newline Object & F0 & current & Foundation & \cellcolor{yellow!25}Y & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}ConcreteSubstrate.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}BoundarySource/\allowbreak{}BranchAddressSubstrate.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}BoundarySource/\allowbreak{}BoundaryStatesubstrate.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}Substrate/\allowbreak{}Regular.lean & \hyperlink{phase-row-1-2-3}{1.2.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-G02}{\hyperlink{objproof:G02}{G02}} & substrate: variable branching & Lean;\newline Source;\newline Object & F0 & current & Foundation & \cellcolor{yellow!25}Y & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}LevelVariableSubstrate.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}WeightPolicy.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedDegreeFormulaAuditSM3db2eR0.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}Substrate/\allowbreak{}Variable.lean & \hyperlink{phase-row-1-2-4}{1.2.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-G03}{\hyperlink{objproof:G03}{G03}} & Level /\allowbreak{} Cutoff & Lean;\newline Source;\newline Object & F0 & current & Finite carrier & \cellcolor{yellow!25}Y & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}BoundarySource/\allowbreak{}LevelHistoryIndex.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}BoundarySource/\allowbreak{}LevelStepWitness.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Core/\allowbreak{}Step1MathData.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}LevelProfile.lean & \hyperlink{phase-row-1-2-5}{1.2.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-G04}{\hyperlink{objproof:G04}{G04}} & Carrier /\allowbreak{} index type & Lean;\newline Source;\newline Object & F0 & current & Finite carrier & \cellcolor{yellow!25}Y & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}BoundarySource/\allowbreak{}RecursiveLevelHistoryCarrier.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}BoundarySource/\allowbreak{}LevelHistoryIndex.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedLevelStepWitnessSM6.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}CarrierProfile.lean & \hyperlink{phase-row-1-2-6}{1.2.6}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-G05}{\hyperlink{objproof:G05}{G05}} & Boundary /\allowbreak{} interface /\allowbreak{} interior partition & Lean;\newline Source;\newline Object & F0 & current & Schur geometry & \cellcolor{yellow!25}Y & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedBoundaryInteriorPartition.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}CutSpec.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}BoundaryPorts.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Schur/\allowbreak{}PartitionProfile.lean & \hyperlink{phase-row-1-3-1}{1.3.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-G06}{\hyperlink{objproof:G06}{G06}} & Regime: noOuterEnvironment & Lean;\newline Source;\newline Object & F0 & current & Regime & \cellcolor{yellow!25}Y & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Outputs/\allowbreak{}A\_to\_B.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Sectors/\allowbreak{}SectorSplit.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Sectors/\allowbreak{}ComplementSectorFamily.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Regime/\allowbreak{}NoOuter.lean & \hyperlink{phase-row-1-3-2}{1.3.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-G07}{\hyperlink{objproof:G07}{G07}} & Regime: hasOuterEnvironment & Lean;\newline Source;\newline Object & F0 & current & Regime & \cellcolor{yellow!25}Y & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Outputs/\allowbreak{}A\_to\_B.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Sectors/\allowbreak{}ComplementSectorFamily.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Network/\allowbreak{}SectorSysEnv.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Regime/\allowbreak{}HasOuter.lean & \hyperlink{phase-row-1-3-2}{1.3.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-G08}{\hyperlink{objproof:G08}{G08}} & Complement families: UV tail & Lean;\newline Source;\newline Object & F0 & current & Regime/\allowbreak{}Complement & \cellcolor{red!20}R & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Sectors/\allowbreak{}UVSpectralSelector.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Sectors/\allowbreak{}ComplementSectorFamily.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Outputs/\allowbreak{}A\_to\_B.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Regime/\allowbreak{}Complement/\allowbreak{}UVTail.lean & \hyperlink{phase-row-1-3-3}{1.3.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-G09}{\hyperlink{objproof:G09}{G09}} & Complement families: IR/\allowbreak{}parent-path tail & Lean;\newline Source;\newline Object & F0 & current & Regime/\allowbreak{}Complement & \cellcolor{red!20}R & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Sectors/\allowbreak{}ComplementSectorFamily.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Outputs/\allowbreak{}A\_to\_B.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Regime/\allowbreak{}Complement/\allowbreak{}IRTail.lean & \hyperlink{phase-row-1-3-3}{1.3.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-G10}{\hyperlink{objproof:G10}{G10}} & Complement families: sideways environment & Lean;\newline Source;\newline Object & F0 & current & Regime/\allowbreak{}Complement & \cellcolor{red!20}R & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Sectors/\allowbreak{}ComplementSectorFamily.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Network/\allowbreak{}SectorSysEnv.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Network/\allowbreak{}SectorChannels.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Regime/\allowbreak{}Complement/\allowbreak{}SideEnvironment.lean & \hyperlink{phase-row-1-3-3}{1.3.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-CD0}{\hyperlink{objproof:CD0}{CD0}} & Cayley-Dickson source & Lean;\newline Source;\newline Object & F1 & current & Structural algebra & \cellcolor{cyan!20}B & derived-only/\allowbreak{}proof-carrying present, but BLUE semantic/\allowbreak{}API correction remains open;\newline not public final API until LEG7 and the object natural correction phase close & CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}Source.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}CayleyDicksonAdapter.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}Source.lean & \hyperlink{phase-row-1-4-1}{1.4.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-CD1}{\hyperlink{objproof:CD1}{CD1}} & Scalar part & Lean;\newline Source;\newline Object & F1 & current & Cayley-Dickson & \cellcolor{cyan!20}B & derived-only/\allowbreak{}proof-carrying present, but BLUE semantic/\allowbreak{}API correction remains open;\newline not public final API until LEG7 and the object natural correction phase close & CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}S6CanonicalScalarPart.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}ScalarPart.lean & \hyperlink{phase-row-1-4-2}{1.4.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-CD2}{\hyperlink{objproof:CD2}{CD2}} & Cayley-Dickson star/\allowbreak{}conjugation & Lean;\newline Source;\newline Object & F1 & current & Cayley-Dickson & \cellcolor{cyan!20}B & derived-only/\allowbreak{}proof-carrying present, but BLUE semantic/\allowbreak{}API correction remains open;\newline not public final API until LEG7 and the object natural correction phase close & CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}S6CanonicalStar.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}Star.lean & \hyperlink{phase-row-1-4-3}{1.4.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-CD3}{\hyperlink{objproof:CD3}{CD3}} & CD normSq & Lean;\newline Source;\newline Object & F1 & current & Cayley-Dickson & \cellcolor{cyan!20}B & derived-only/\allowbreak{}proof-carrying present, but BLUE semantic/\allowbreak{}API correction remains open;\newline not public final API until LEG7 and the object natural correction phase close & CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}S6CanonicalNormSqDefined.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}S6CanonicalNormSqReduction.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}S6CanonicalNormSqBlockSystem.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}NormSq.lean & \hyperlink{phase-row-1-4-4}{1.4.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-CD4}{\hyperlink{objproof:CD4}{CD4}} & CD multiplication/\allowbreak{}product & Lean;\newline Source;\newline Object & F1 & current & Cayley-Dickson & \cellcolor{cyan!20}B & derived-only/\allowbreak{}proof-carrying present, but BLUE semantic/\allowbreak{}API correction remains open;\newline not public final API until LEG7 and the object natural correction phase close & CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}S6CanonicalProductSurfaceCandidate.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}S6CanonicalProductMultiplicationCandidate.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}Product.lean & \hyperlink{phase-row-1-4-5}{1.4.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-CD5}{\hyperlink{objproof:CD5}{CD5}} & Alternative law & Lean;\newline Source;\newline Object & F1 & current & Cayley-Dickson & \cellcolor{cyan!20}B & derived-only/\allowbreak{}proof-carrying present, but BLUE semantic/\allowbreak{}API correction remains open;\newline not public final API until LEG7 and the object natural correction phase close & CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}S6AlternativeLawScaffold.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}S6FullAlternativeLawBoundary.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}AlternativeLaw.lean & \hyperlink{phase-row-1-4-6}{1.4.6}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-CD6}{\hyperlink{objproof:CD6}{CD6}} & Norm multiplicativity & Lean;\newline Source;\newline Object & F1 & current & Cayley-Dickson & \cellcolor{cyan!20}B & derived-only/\allowbreak{}proof-carrying present, but BLUE semantic/\allowbreak{}API correction remains open;\newline not public final API until LEG7 and the object natural correction phase close & CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}S6NormSqMultiplicativity.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}S6NormMultiplicativityScaffold.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}NormMultiplicativity.lean & \hyperlink{phase-row-1-4-7}{1.4.7}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-CD7}{\hyperlink{objproof:CD7}{CD7}} & Hurwitz stop /\allowbreak{} R,C,H,O classification & Lean;\newline Source;\newline Object & F1 & current & Cayley-Dickson & \cellcolor{cyan!20}B & derived-only/\allowbreak{}proof-carrying present, but BLUE semantic/\allowbreak{}API correction remains open;\newline not public final API until LEG7 and the object natural correction phase close & CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}S6HurwitzStopSeed.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}S6CayleyDicksonIdentification.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}HurwitzStop.lean & \hyperlink{phase-row-1-4-8}{1.4.8}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-S00}{\hyperlink{objproof:S00}{S00}} & Dirichlet-Laplacian & Lean;\newline Source;\newline Object & F0 & current & Schur/\allowbreak{}DtN & \cellcolor{yellow!25}Y & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}DirichletLaplacian.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedDirichletEntry.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedDirichletExecEntrySourceSM3bq.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Schur/\allowbreak{}DirichletLaplacian.lean & \hyperlink{phase-row-3-1}{3.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-S01}{\hyperlink{objproof:S01}{S01}} & Interior block & Lean;\newline Source;\newline Object & F0 & current & Schur/\allowbreak{}DtN & \cellcolor{cyan!20}B & derived-only/\allowbreak{}proof-carrying present, but BLUE semantic/\allowbreak{}API correction remains open;\newline not public final API until LEG7 and the object natural correction phase close & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedInteriorBlock.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedInteriorEliminationCarrier.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Schur/\allowbreak{}InteriorBlock.lean & \hyperlink{phase-row-3-2}{3.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-S02}{\hyperlink{objproof:S02}{S02}} & Interior inverse candidate & Lean;\newline Source;\newline Object & F0 & current & Schur/\allowbreak{}DtN & \cellcolor{cyan!20}B & derived-only/\allowbreak{}proof-carrying present, but BLUE semantic/\allowbreak{}API correction remains open;\newline not public final API until LEG7 and the object natural correction phase close & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedInteriorInverseCandidateStart.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedInteriorInverseCandidateEntry.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedInteriorAccumulatedTraceEvaluation.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedInteriorInverseCandidateMatrix.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedInteriorInverseCandidateShapeSeparation.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Schur/\allowbreak{}InteriorInverseCandidate.lean & \hyperlink{phase-row-3-3}{3.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-S03}{\hyperlink{objproof:S03}{S03}} & Two-sided inverse certificate & Lean;\newline Source;\newline Object & F0 & current & Schur/\allowbreak{}DtN & \cellcolor{cyan!20}B & derived-only/\allowbreak{}proof-carrying present, but BLUE semantic/\allowbreak{}API correction remains open;\newline not public final API until LEG7 and the object natural correction phase close & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedInteriorProductIdentityProofR4a.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedInteriorTwoSidedInvFromSM3db7R.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedInteriorProvenTwoSidedInvR5.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Schur/\allowbreak{}TwoSidedInverse.lean & \hyperlink{phase-row-3-4}{3.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-S04}{\hyperlink{objproof:S04}{S04}} & InteriorEliminationData & Lean;\newline Source;\newline Object & F0 & current & Schur/\allowbreak{}DtN & \cellcolor{cyan!20}B & derived-only/\allowbreak{}proof-carrying present, but BLUE semantic/\allowbreak{}API correction remains open;\newline not public final API until LEG7 and the object natural correction phase close & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedInteriorEliminationCertificateSM3fR.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}DtN/\allowbreak{}DtN.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Schur/\allowbreak{}InteriorElimination.lean & \hyperlink{phase-row-3-5}{3.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-S05}{\hyperlink{objproof:S05}{S05}} & DtN boundary operator & Lean;\newline Source;\newline Object & F0 & current & Schur/\allowbreak{}DtN & \cellcolor{cyan!20}B & derived-only/\allowbreak{}proof-carrying present, but BLUE semantic/\allowbreak{}API correction remains open;\newline not public final API until LEG7 and the object natural correction phase close & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedTopBoundaryDtNSM3gR.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}DtN/\allowbreak{}DtN.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Schur/\allowbreak{}BoundaryOperator.lean & \hyperlink{phase-row-3-6}{3.6}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-S06}{\hyperlink{objproof:S06}{S06}} & GeneralizedDtN /\allowbreak{} MultiSchur & Lean;\newline Source;\newline Object & F0 & current & Schur/\allowbreak{}DtN & \cellcolor{cyan!20}B & derived-only/\allowbreak{}proof-carrying present, but BLUE semantic/\allowbreak{}API correction remains open;\newline not public final API until LEG7 and the object natural correction phase close & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedGeneralizedTopBoundaryDtNSM3hR.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedMultiSchurSM4.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Coupling/\allowbreak{}GeneralizedDtN.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Coupling/\allowbreak{}MultiSchur.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Schur/\allowbreak{}GeneralizedBoundaryOperator.lean & \hyperlink{phase-row-3-7}{3.7}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-O01}{\hyperlink{objproof:O01}{O01}} & Boundary matrix over ExecComplex & Lean;\newline Source;\newline Object & F1 & current & Operational operator & \cellcolor{cyan!20}B & derived-only/\allowbreak{}proof-carrying present, but BLUE semantic/\allowbreak{}API correction remains open;\newline not public final API until LEG7 and the object natural correction phase close & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedMultiSchurExecBoundaryOperatorSM4q.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedMultiSchurExecBoundaryOperatorFromSM3fqPlusSM4q.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedLevelHistoryExecMatrixFromSM6bRecheckSM8.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Operational/\allowbreak{}BoundaryMatrix.lean & \hyperlink{phase-row-4-1}{4.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-O02}{\hyperlink{objproof:O02}{O02}} & Determinant coefficient recurrence & Lean;\newline Source;\newline Object & F1 & current & Operational polynomial & \cellcolor{cyan!20}B & derived-only/\allowbreak{}proof-carrying present, but BLUE semantic/\allowbreak{}API correction remains open;\newline not public final API until LEG7 and the object natural correction phase close & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedOperationalDeterminantCoefficientRecurrenceSM9e.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Operational/\allowbreak{}DeterminantRecurrence.lean & \hyperlink{phase-row-4-2}{4.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-O03}{\hyperlink{objproof:O03}{O03}} & Operational polynomial profile & Lean;\newline Source;\newline Object & F1 & current & Operational polynomial & \cellcolor{cyan!20}B & derived-only/\allowbreak{}proof-carrying present, but BLUE semantic/\allowbreak{}API correction remains open;\newline not public final API until LEG7 and the object natural correction phase close & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedLevelHistoryOperationalCharpolyPolynomialProfileFromSM9b.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedLevelHistoryOperationalCoefficientSourceFromSM9c.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}OperationalBoundedPolynomialEvaluationNormalFormSM9ePlus.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Operational/\allowbreak{}PolynomialProfile.lean & \hyperlink{phase-row-4-3}{4.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-O04}{\hyperlink{objproof:O04}{O04}} & Quadratic coefficient window & Lean;\newline Source;\newline Object & F1 & current & Operational polynomial & \cellcolor{cyan!20}B & derived-only/\allowbreak{}proof-carrying present, but BLUE semantic/\allowbreak{}API correction remains open;\newline not public final API until LEG7 and the object natural correction phase close & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedOperationalQuadraticCoefficientWindowFromSM9dSM9e.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Operational/\allowbreak{}QuadraticWindow.lean & \hyperlink{phase-row-4-4}{4.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-O05}{\hyperlink{objproof:O05}{O05}} & Operational discriminant D\_op & Lean;\newline Source;\newline Object & F1 & current & Arithmetic & \cellcolor{cyan!20}B & derived-only/\allowbreak{}proof-carrying present, but BLUE semantic/\allowbreak{}API correction remains open;\newline not public final API until LEG7 and the object natural correction phase close & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedOperationalQuadraticDiscriminantSourceFromSM9g1Window.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Operational/\allowbreak{}QuadraticDiscriminant.lean & \hyperlink{phase-row-4-5}{4.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-O06}{\hyperlink{objproof:O06}{O06}} & Comparison target policy & Reference;\newline Gate;\newline Object & F2 & current & Arithmetic & \cellcolor{green!18}G & present, but incomplete/\allowbreak{}non-canonical & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedOperationalDiscriminantFactorGateFromSM9fFull.lean;\newline current code has target-exclusion/\allowbreak{}gate only, no general target policy & CNNA/\allowbreak{}PillarA/\allowbreak{}Operational/\allowbreak{}ComparisonTarget.lean & \hyperlink{phase-row-4-6}{4.6}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-O07}{\hyperlink{objproof:O07}{O07}} & General finite computation test matrix profile & Lean;\newline Target;\newline Object & F2 & current & Operational /\allowbreak{} test /\allowbreak{} computation readiness & \cellcolor{yellow!25}Y & planned;\newline no Lean implementation yet & Future module selected by Phase 1.1.1.1.1;\newline must reuse existing Smoke/\allowbreak{}Generator modules. & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke or Generator test-matrix API, exact path pending module manifest. & \hyperlink{phase-row-4-0-1}{4.0.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-N00}{\hyperlink{objproof:N00}{N00}} & Fundamental discriminant D\_fund & Lean;\newline Source;\newline Object & F1 & current & Number theory & \cellcolor{green!18}G & present, but incomplete/\allowbreak{}non-canonical & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Orders/\allowbreak{}DiscriminantConvention.lean (special Gaussian/\allowbreak{}Eisenstein bridge;\newline not general derived D\_fund) & CNNA/\allowbreak{}PillarA/\allowbreak{}NumberTheory/\allowbreak{}DiscriminantNormalization.lean & \hyperlink{phase-row-5-1}{5.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-N01}{\hyperlink{objproof:N01}{N01}} & Conductor f & Lean;\newline Source;\newline Object & F1 & current & Number theory & \cellcolor{green!18}G & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Orders/\allowbreak{}DiscriminantConvention.lean (implicit/\allowbreak{}bridge status;\newline conductor not canonical) & CNNA/\allowbreak{}PillarA/\allowbreak{}NumberTheory/\allowbreak{}Conductor.lean & \hyperlink{phase-row-5-1}{5.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-N02}{\hyperlink{objproof:N02}{N02}} & Quadratic field K=Q(sqrt(D)) & Lean;\newline Source;\newline Object & F1 & current & Number theory & \cellcolor{yellow!25}Y & present, but incomplete/\allowbreak{}non-canonical & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Orders/\allowbreak{}QuadraticOrder.lean (special shapes) & CNNA/\allowbreak{}PillarA/\allowbreak{}NumberTheory/\allowbreak{}QuadraticField.lean & \hyperlink{phase-row-5-2}{5.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-N03}{\hyperlink{objproof:N03}{N03}} & Quadratic order O\_D & Lean;\newline Source;\newline Object & F1 & current & Number theory & \cellcolor{yellow!25}Y & present, but incomplete/\allowbreak{}non-canonical & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Orders/\allowbreak{}QuadraticOrder.lean (special Gaussian/\allowbreak{}Eisenstein examples) & CNNA/\allowbreak{}PillarA/\allowbreak{}NumberTheory/\allowbreak{}QuadraticOrder.lean & \hyperlink{phase-row-5-3}{5.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-N04}{\hyperlink{objproof:N04}{N04}} & Integral basis /\allowbreak{} omega\_D & Lean;\newline Source;\newline Object & F1 & current & Number theory & \cellcolor{yellow!25}Y & present, but incomplete/\allowbreak{}non-canonical & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Orders/\allowbreak{}QuadraticOrder.lean (halfIntegral shape;\newline basis not general API) & CNNA/\allowbreak{}PillarA/\allowbreak{}NumberTheory/\allowbreak{}IntegralBasis.lean & \hyperlink{phase-row-5-4}{5.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-N05}{\hyperlink{objproof:N05}{N05}} & Trace form & Lean;\newline Target;\newline Object & F1 & current & Number theory & \cellcolor{yellow!25}Y & missing in code & no current general module;\newline partial arithmetic in CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Orders/\allowbreak{}NormForms.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}NumberTheory/\allowbreak{}TraceForm.lean & \hyperlink{phase-row-5-5}{5.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-N06}{\hyperlink{objproof:N06}{N06}} & Norm form & Lean;\newline Source;\newline Object & F1 & current & Number theory & \cellcolor{yellow!25}Y & present, but incomplete/\allowbreak{}non-canonical & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Orders/\allowbreak{}NormForms.lean (special BinaryQuadraticNormForm) & CNNA/\allowbreak{}PillarA/\allowbreak{}NumberTheory/\allowbreak{}NormForm.lean & \hyperlink{phase-row-5-5}{5.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-N07}{\hyperlink{objproof:N07}{N07}} & Conjugation & Lean;\newline Target;\newline Object & F1 & current & Number theory & \cellcolor{yellow!25}Y & missing in code & no current general module;\newline should live with QuadraticOrder/\allowbreak{}NormForms & CNNA/\allowbreak{}PillarA/\allowbreak{}NumberTheory/\allowbreak{}Conjugation.lean & \hyperlink{phase-row-5-5}{5.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-N08}{\hyperlink{objproof:N08}{N08}} & Unit group O\_D\textasciicircum{}* & Lean;\newline Target;\newline Object & F2 & current & Number theory/\allowbreak{}Symmetry & \cellcolor{yellow!25}Y & missing in code & no current derived module;\newline only UnitConventionStatus in NormForms.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}NumberTheory/\allowbreak{}UnitgroupOD.lean & \hyperlink{phase-row-6-1}{6.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-N09}{\hyperlink{objproof:N09}{N09}} & Class group Cl(O\_D) & Lean;\newline Target;\newline Object & F2 & current & Number theory & \cellcolor{yellow!25}Y & missing in code & no current module & CNNA/\allowbreak{}PillarA/\allowbreak{}NumberTheory/\allowbreak{}ClassgroupClOD.lean & \hyperlink{phase-row-6-2}{6.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-N10}{\hyperlink{objproof:N10}{N10}} & Class number h(D) & Lean;\newline Target;\newline Object & F2 & current & Number theory & \cellcolor{yellow!25}Y & missing in code & no current module & CNNA/\allowbreak{}PillarA/\allowbreak{}NumberTheory/\allowbreak{}ClassnumberhD.lean & \hyperlink{phase-row-6-2}{6.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-N11}{\hyperlink{objproof:N11}{N11}} & Fractional/\allowbreak{}integral ideas & Lean;\newline Target;\newline Object & F2 & current & Number theory & \cellcolor{yellow!25}Y & missing in code & no current module & CNNA/\allowbreak{}PillarA/\allowbreak{}NumberTheory/\allowbreak{}Fractionalintegralideas.lean & \hyperlink{phase-row-6-2-1}{6.2.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-N12}{\hyperlink{objproof:N12}{N12}} & Principal ideal predicate & Lean;\newline Target;\newline Object & F2 & current & Number theory & \cellcolor{yellow!25}Y & missing in code & no current module & CNNA/\allowbreak{}PillarA/\allowbreak{}NumberTheory/\allowbreak{}Principalidealpredicate.lean & \hyperlink{phase-row-6-2-2}{6.2.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-N13}{\hyperlink{objproof:N13}{N13}} & Heegner/\allowbreak{}PID/\allowbreak{}UFD indicator & Lean;\newline Target;\newline Object & F2 & current & Number theory & \cellcolor{yellow!25}Y & missing in code & no current module;\newline old HeegnerDiscriminantBridge in DiscriminantConvention.lean is not full h(D) & CNNA/\allowbreak{}PillarA/\allowbreak{}NumberTheory/\allowbreak{}HeegnerPIDUFDindicator.lean & \hyperlink{phase-row-6-3}{6.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-N14}{\hyperlink{objproof:N14}{N14}} & Prime splitting behavior & Lean;\newline Target;\newline Object & F2 & current & Number theory & \cellcolor{yellow!25}Y & missing in code & no current module & CNNA/\allowbreak{}PillarA/\allowbreak{}NumberTheory/\allowbreak{}Primesplittingbehavior.lean & \hyperlink{phase-row-6-4}{6.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-N15}{\hyperlink{objproof:N15}{N15}} & Kronecker/\allowbreak{}Dirichlet character chi\_D & Lean;\newline Target;\newline Object & F2 & current & Number theory & \cellcolor{yellow!25}Y & missing in code & no current module & CNNA/\allowbreak{}PillarA/\allowbreak{}NumberTheory/\allowbreak{}KroneckerDirichletcharacterchiD.lean & \hyperlink{phase-row-6-4}{6.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-CD8}{\hyperlink{objproof:CD8}{CD8}} & Arithmetic-CD compatibility as Schur-duality corollary & Lean;\newline Source;\newline Object & F1 & current & Bridge & \cellcolor{black!18}K & present as source/\allowbreak{}seed only;\newline final theorem deferred to BR08/\allowbreak{}Phase 10.4.2 & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}CayleyDickson/\allowbreak{}ArithmeticCDBridge.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Convergence/\allowbreak{}CDArithmeticCompatibility.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Convergence/\allowbreak{}QuaternionRamanujanInterface.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Bridge/\allowbreak{}ArithmeticCayleyDicksonCompatibility.lean & \hyperlink{phase-row-10-4-2}{10.4.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-L00}{\hyperlink{objproof:L00}{L00}} & Lattice embedding Lambda -> C & Lean;\newline Target;\newline Object & F2 & current & Geometry/\allowbreak{}CM & \cellcolor{yellow!25}Y & missing in code;\newline EXEC-2 mirror-boundary decision recorded & no current CM-lattice module;\newline Geometry/\allowbreak{}* is spacetime/\allowbreak{}foliation, not CM embedding & CNNA/\allowbreak{}PillarA/\allowbreak{}Geometry/\allowbreak{}LatticeembeddingLambdaC.lean & \hyperlink{phase-row-7-1}{7.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-L01}{\hyperlink{objproof:L01}{L01}} & Lattice basis & Lean;\newline Target;\newline Object & F2 & current & Geometry/\allowbreak{}CM & \cellcolor{yellow!25}Y & missing in code & no current CM-lattice module & CNNA/\allowbreak{}PillarA/\allowbreak{}Geometry/\allowbreak{}Latticebasis.lean & \hyperlink{phase-row-7-1}{7.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-L02}{\hyperlink{objproof:L02}{L02}} & Gram matrix & Lean;\newline Target;\newline Object & F2 & current & Geometry & \cellcolor{yellow!25}Y & missing in code;\newline EXEC-2 mirror-boundary decision recorded & no current CM-lattice Gram module & CNNA/\allowbreak{}PillarA/\allowbreak{}Geometry/\allowbreak{}Grammatrix.lean & \hyperlink{phase-row-7-2}{7.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-L03}{\hyperlink{objproof:L03}{L03}} & Lattice determinant /\allowbreak{} covolume & Lean;\newline Target;\newline Object & F2 & current & Geometry & \cellcolor{yellow!25}Y & missing in code & no current CM-lattice determinant/\allowbreak{}covolume module & CNNA/\allowbreak{}PillarA/\allowbreak{}Geometry/\allowbreak{}Latticedeterminantcovolume.lean & \hyperlink{phase-row-7-2}{7.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-L04}{\hyperlink{objproof:L04}{L04}} & Period ratio tau & Lean;\newline Target;\newline Object & F2 & current & Modular geometry & \cellcolor{yellow!25}Y & missing in code;\newline EXEC-2 mirror-boundary decision recorded & no current tau module & CNNA/\allowbreak{}PillarA/\allowbreak{}Geometry/\allowbreak{}Periodratiotau.lean & \hyperlink{phase-row-7-3}{7.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-L05}{\hyperlink{objproof:L05}{L05}} & Upper half-plane condition & Lean;\newline Target;\newline Object & F2 & current & Modular geometry & \cellcolor{yellow!25}Y & missing in code & no current upper-half-plane module & CNNA/\allowbreak{}PillarA/\allowbreak{}Geometry/\allowbreak{}Upperhalfplanecondition.lean & \hyperlink{phase-row-7-3}{7.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-L06}{\hyperlink{objproof:L06}{L06}} & Angle /\allowbreak{} cosine profile & Lean;\newline Target;\newline Object & F2 & current & Geometry & \cellcolor{yellow!25}Y & missing in code & no current derived angle module;\newline drawings/\allowbreak{}visual intuition not code source & CNNA/\allowbreak{}PillarA/\allowbreak{}Geometry/\allowbreak{}Anglecosineprofile.lean & \hyperlink{phase-row-7-4}{7.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-L07}{\hyperlink{objproof:L07}{L07}} & Lattice automorphism group & Lean;\newline Target;\newline Object & F2 & current & Geometry/\allowbreak{}Symmetry & \cellcolor{yellow!25}Y & missing in code & no current lattice automorphism module & CNNA/\allowbreak{}PillarA/\allowbreak{}Geometry/\allowbreak{}Latticeautomorphismgroup.lean & \hyperlink{phase-row-7-5}{7.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-M02}{\hyperlink{objproof:M02}{M02}} & Eisenstein series G4,G6 & Lean;\newline Target;\newline Object & F2 & current & Modular forms & \cellcolor{yellow!25}Y & missing in code & no current Eisenstein-series module & CNNA/\allowbreak{}PillarA/\allowbreak{}Modular/\allowbreak{}EisensteinseriesG4G6.lean & \hyperlink{phase-row-8-1}{8.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-M03}{\hyperlink{objproof:M03}{M03}} & Weierstrass invariants g2,g3 & Lean;\newline Target;\newline Object & F2 & current & Elliptic functions & \cellcolor{yellow!25}Y & missing in code & no current Weierstrass-invariant module & CNNA/\allowbreak{}PillarA/\allowbreak{}Modular/\allowbreak{}Weierstrassinvariantsg2g3.lean & \hyperlink{phase-row-8-2}{8.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-M04}{\hyperlink{objproof:M04}{M04}} & Modular discriminant Delta\_mod & Lean;\newline Target;\newline Object & F2 & current & Modular forms & \cellcolor{yellow!25}Y & missing in code & no current modular-discriminant module & CNNA/\allowbreak{}PillarA/\allowbreak{}Modular/\allowbreak{}ModulardiscriminantDeltamod.lean & \hyperlink{phase-row-8-3}{8.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-M05}{\hyperlink{objproof:M05}{M05}} & j-invariant & Lean;\newline Target;\newline Object & F2 & current & Modular forms/\allowbreak{}CM & \cellcolor{yellow!25}Y & missing in code;\newline EXEC-2 mirror-boundary decision recorded & no current j-invariant module & CNNA/\allowbreak{}PillarA/\allowbreak{}Modular/\allowbreak{}jinvariant.lean & \hyperlink{phase-row-8-4}{8.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-SP0}{\hyperlink{objproof:SP0}{SP0}} & Eigenvalue profile & Lean;\newline Source;\newline Object & F1 & current & Spectral & \cellcolor{yellow!25}Y & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized;\newline EXEC-2 mirror-boundary decision recorded & CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}ExecSpectral/\allowbreak{}CharpolyCore.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}ExecSpectral/\allowbreak{}EigenvectorKernel.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}SpectralBridge.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Schur/\allowbreak{}Eigenvalueprofile.lean & \hyperlink{phase-row-10-1}{10.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-SP1}{\hyperlink{objproof:SP1}{SP1}} & Spectral gap & Lean;\newline Source;\newline Object & F1 & current & Spectral & \cellcolor{yellow!25}Y & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Graph/\allowbreak{}SpectralGapSeed.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}ExecSpectral/\allowbreak{}Certificates.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Schur/\allowbreak{}Spectralgap.lean & \hyperlink{phase-row-10-1}{10.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-P00}{\hyperlink{objproof:P00}{P00}} & Operator algebra & Lean;\newline Source;\newline Object & F1 & current & AQFT/\allowbreak{}finite & \cellcolor{yellow!25}Y & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}MatrixAlgebra.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}StateSpace.lean & CNNA/\allowbreak{}PillarB/\allowbreak{}Derived/\allowbreak{}OperatorAlgebraFromA.lean & \hyperlink{phase-row-10-2}{10.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-P01}{\hyperlink{objproof:P01}{P01}} & Star operation & Lean;\newline Source;\newline Object & F1 & current & AQFT/\allowbreak{}finite & \cellcolor{yellow!25}Y & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}ExecComplex.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}HermitianStructure.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}MatrixAlgebra.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Physics/\allowbreak{}Staroperation.lean & \hyperlink{phase-row-10-2}{10.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-P02}{\hyperlink{objproof:P02}{P02}} & State functional & Lean;\newline Source;\newline Object & F1 & current & AQFT/\allowbreak{}finite & \cellcolor{yellow!25}Y & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}StateSpace.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Physics/\allowbreak{}Statefunctional.lean & \hyperlink{phase-row-10-2}{10.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-P03}{\hyperlink{objproof:P03}{P03}} & Gibbs state & Lean;\newline Source;\newline Object & F1 & current & AQFT/\allowbreak{}finite & \cellcolor{yellow!25}Y & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}GibbsStateSeed.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Physics/\allowbreak{}Gibbsstate.lean & \hyperlink{phase-row-10-2}{10.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-P04}{\hyperlink{objproof:P04}{P04}} & Time evolution & Lean;\newline Source;\newline Object & F1 & current & AQFT/\allowbreak{}dynamics & \cellcolor{yellow!25}Y & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}MatrixExponential.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}UnitaryEvolution.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}DynamicsAdapter.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Physics/\allowbreak{}Timeevolution.lean & \hyperlink{phase-row-10-2}{10.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-P05}{\hyperlink{objproof:P05}{P05}} & Unitarity certificate & Lean;\newline Source;\newline Object & F1 & current & AQFT/\allowbreak{}dynamics & \cellcolor{yellow!25}Y & present, but incomplete/\allowbreak{}non-canonical & CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}UnitaryEvolution.lean (finite seed;\newline regime split still pending) & CNNA/\allowbreak{}PillarA/\allowbreak{}Physics/\allowbreak{}Unitaritycertificate.lean & \hyperlink{phase-row-10-2}{10.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-P06}{\hyperlink{objproof:P06}{P06}} & Open channel /\allowbreak{} effective openness & Lean;\newline Source;\newline Object & F1 & current & OQS/\allowbreak{}dynamics & \cellcolor{red!20}R & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}ChannelSeed.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Network/\allowbreak{}SectorChannels.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Physics/\allowbreak{}Openchanneleffectiveopenness.lean & \hyperlink{phase-row-10-2}{10.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-N16}{\hyperlink{objproof:N16}{N16}} & Dirichlet L-function L(s,chi\_D) & Reference;\newline Gate;\newline Object & F2 & current & Analytic number theory & \cellcolor{black!18}K & missing in code & no current module & CNNA/\allowbreak{}PillarA/\allowbreak{}NumberTheory/\allowbreak{}DirichletLfunctionLschiD.lean & \hyperlink{phase-row-9-2}{9.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-N17}{\hyperlink{objproof:N17}{N17}} & Class number formula & Reference;\newline Gate;\newline Object & F2 & current & Analytic number theory & \cellcolor{black!18}K & missing in code & no current module & CNNA/\allowbreak{}PillarA/\allowbreak{}NumberTheory/\allowbreak{}Classnumberformula.lean & \hyperlink{phase-row-9-3}{9.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-L08}{\hyperlink{objproof:L08}{L08}} & Theta series Theta\_Lambda & Reference;\newline Gate;\newline Object & F2 & current & Modular forms/\allowbreak{}geometry & \cellcolor{black!18}K & missing in code & no current theta-series module & CNNA/\allowbreak{}PillarA/\allowbreak{}Geometry/\allowbreak{}ThetaseriesThetaLambda.lean & \hyperlink{phase-row-9-1}{9.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-M00}{\hyperlink{objproof:M00}{M00}} & Modular group action SL2Z & Lean;\newline Target;\newline Object & F2 & current & Modular forms & \cellcolor{black!18}K & missing in code & no current modular-action module & CNNA/\allowbreak{}PillarA/\allowbreak{}Modular/\allowbreak{}ModulargroupactionSL2Z.lean & \hyperlink{phase-row-8-0}{8.0}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-M01}{\hyperlink{objproof:M01}{M01}} & Fundamental domain representative & Lean;\newline Target;\newline Object & F2 & current & Modular forms & \cellcolor{black!18}K & missing in code & no current fundamental-domain module & CNNA/\allowbreak{}PillarA/\allowbreak{}Modular/\allowbreak{}Fundamentaldomainrepresentative.lean & \hyperlink{phase-row-8-0}{8.0}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-M06}{\hyperlink{objproof:M06}{M06}} & q-expansion of j & Lean;\newline Target;\newline Object & F2 & current & Modular forms & \cellcolor{black!18}K & missing in code & no current q-expansion module & CNNA/\allowbreak{}PillarA/\allowbreak{}Modular/\allowbreak{}qexpansionofj.lean & \hyperlink{phase-row-8-8}{8.8}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-M07}{\hyperlink{objproof:M07}{M07}} & Hilbert class polynomial H\_D & Lean;\newline Target;\newline Object & F2 & current & CM & \cellcolor{black!18}K & missing in code & no current Hilbert-class-polynomial module & CNNA/\allowbreak{}PillarA/\allowbreak{}Modular/\allowbreak{}HilbertclasspolynomialHD.lean & \hyperlink{phase-row-8-8}{8.8}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-TM0}{\hyperlink{objproof:TM0}{TM0}} & Transfermatrix T\_k & Lean;\newline Source;\newline Object & F1 & current & Schur algebra & \cellcolor{black!18}K & present, but incomplete/\allowbreak{}non-canonical & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Schur/\allowbreak{}MobiusTransfer.lean (anchor/\allowbreak{}status only);\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Schur/\allowbreak{}Recurrence.lean;\newline no full M2(Z[lambda]) proof & CNNA/\allowbreak{}PillarA/\allowbreak{}Transfer/\allowbreak{}TransfermatrixTk.lean & \hyperlink{phase-row-10-4}{10.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-TM1}{\hyperlink{objproof:TM1}{TM1}} & Transfermatrix product & Lean;\newline Source;\newline Object & F1 & current & Schur algebra & \cellcolor{black!18}K & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Schur/\allowbreak{}MobiusTransfer.lean (no product formalization) & CNNA/\allowbreak{}PillarA/\allowbreak{}Transfer/\allowbreak{}Transfermatrixproduct.lean & \hyperlink{phase-row-10-4}{10.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-TM2}{\hyperlink{objproof:TM2}{TM2}} & Moebius/\allowbreak{}continued fraction relation & Lean;\newline Source;\newline Object & F1 & current & Schur algebra & \cellcolor{black!18}K & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Schur/\allowbreak{}MobiusTransfer.lean (route/\allowbreak{}status;\newline no theoremically complete Moebius-chain) & CNNA/\allowbreak{}PillarA/\allowbreak{}Transfer/\allowbreak{}Moebiuscontinuedfractionrelation.lean & \hyperlink{phase-row-10-4}{10.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-SP2}{\hyperlink{objproof:SP2}{SP2}} & Heat kernel K(t) & Lean;\newline Target;\newline Object & F2 & current & Spectral geometry & \cellcolor{black!18}K & missing in code & no current heat-kernel module;\newline MatrixExponential is related but not HeatKernelProfile & CNNA/\allowbreak{}PillarA/\allowbreak{}Schur/\allowbreak{}HeatkernelKt.lean & \hyperlink{phase-row-10-3}{10.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-SP3}{\hyperlink{objproof:SP3}{SP3}} & Spectral zeta zeta\_H & Lean;\newline Target;\newline Object & F2 & current & Spectral geometry & \cellcolor{black!18}K & missing in code & no current spectral-zeta module & CNNA/\allowbreak{}PillarA/\allowbreak{}Schur/\allowbreak{}SpectralzetazetaH.lean & \hyperlink{phase-row-10-3}{10.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-SP4}{\hyperlink{objproof:SP4}{SP4}} & Spectral dimension & Lean;\newline Target;\newline Object & F2 & current & Spectral geometry & \cellcolor{black!18}K & missing in code & no current spectral-dimension module & CNNA/\allowbreak{}PillarA/\allowbreak{}Schur/\allowbreak{}Spectraldimension.lean & \hyperlink{phase-row-10-3}{10.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-SP5}{\hyperlink{objproof:SP5}{SP5}} & Zeta-regularized determinant & Lean;\newline Target;\newline Object & F2 & current & Spectral geometry & \cellcolor{black!18}K & missing in code & no current zeta-regularized determinant module & CNNA/\allowbreak{}PillarA/\allowbreak{}Schur/\allowbreak{}Zetaregularizeddeterminant.lean & \hyperlink{phase-row-10-3}{10.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-P07}{\hyperlink{objproof:P07}{P07}} & KMS condition & Lean;\newline Target;\newline Object & F2 & current & Pillar B AQFT & \cellcolor{black!18}K & missing in code & no current KMS proof module;\newline GibbsStateSeed is prerequisite only & CNNA/\allowbreak{}PillarA/\allowbreak{}Physics/\allowbreak{}KMScondition.lean & \hyperlink{phase-row-13-4}{13.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-P08}{\hyperlink{objproof:P08}{P08}} & GNS Hilbert space & Lean;\newline Target;\newline Object & F2 & current & Pillar B AQFT & \cellcolor{black!18}K & missing in code & no current GNS module & CNNA/\allowbreak{}PillarA/\allowbreak{}Physics/\allowbreak{}GNSHilbertspace.lean & \hyperlink{phase-row-13-4}{13.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-P09}{\hyperlink{objproof:P09}{P09}} & Tomita operator S & Lean;\newline Target;\newline Object & F2 & current & Pillar B AQFT modular & \cellcolor{black!18}K & missing in code & no current Tomita module & CNNA/\allowbreak{}PillarA/\allowbreak{}Physics/\allowbreak{}TomitaoperatorS.lean & \hyperlink{phase-row-13-5}{13.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-P10}{\hyperlink{objproof:P10}{P10}} & Modular operator Delta & Lean;\newline Target;\newline Object & F2 & current & Pillar B AQFT modular & \cellcolor{black!18}K & missing in code & no current modular-operator module & CNNA/\allowbreak{}PillarA/\allowbreak{}Physics/\allowbreak{}ModularoperatorDelta.lean & \hyperlink{phase-row-13-5}{13.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-P11}{\hyperlink{objproof:P11}{P11}} & Modular conjugation J & Lean;\newline Target;\newline Object & F2 & current & Pillar B AQFT modular & \cellcolor{black!18}K & missing in code & no current modular-conjugation module & CNNA/\allowbreak{}PillarA/\allowbreak{}Physics/\allowbreak{}ModularconjugationJ.lean & \hyperlink{phase-row-13-5}{13.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-P12}{\hyperlink{objproof:P12}{P12}} & Bisognano-Wichmann/\allowbreak{}CPT bridge & Lean;\newline Target;\newline Object & F2 & current & Pillar B AQFT & \cellcolor{black!18}K & missing in code & no current BW/\allowbreak{}CPT module & CNNA/\allowbreak{}PillarA/\allowbreak{}Physics/\allowbreak{}BisognanoWichmannCPTbridge.lean & \hyperlink{phase-row-13-6}{13.6}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-P13}{\hyperlink{objproof:P13}{P13}} & Spin-statistics & Lean;\newline Target;\newline Object & F2 & current & Pillar B AQFT & \cellcolor{black!18}K & missing in code & no current spin-statistics module & CNNA/\allowbreak{}PillarA/\allowbreak{}Physics/\allowbreak{}Spinstatistics.lean & \hyperlink{phase-row-13-6}{13.6}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-P14}{\hyperlink{objproof:P14}{P14}} & Kramers degeneracy & Lean;\newline Target;\newline Object & F2 & current & Pillar B Physics & \cellcolor{black!18}K & missing in code & no current Kramers module & CNNA/\allowbreak{}PillarA/\allowbreak{}Physics/\allowbreak{}Kramersdegeneracy.lean & \hyperlink{phase-row-13-6}{13.6}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-P15}{\hyperlink{objproof:P15}{P15}} & Split property & Lean;\newline Source;\newline Object & F1 & current & Pillar B AQFT & \cellcolor{black!18}K & present, but incomplete/\allowbreak{}non-canonical & CNNA/\allowbreak{}PillarA/\allowbreak{}Sectors/\allowbreak{}SectorSplit.lean;\newline Handoff has split fields;\newline AQFT split property not derived & CNNA/\allowbreak{}PillarA/\allowbreak{}Physics/\allowbreak{}SplitProperty.lean & \hyperlink{phase-row-13-6}{13.6}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-P16}{\hyperlink{objproof:P16}{P16}} & Local net /\allowbreak{} Haag-Kastler algebraic axioms & Lean;\newline Target;\newline Object & F2 & current & Pillar B AQFT & \cellcolor{black!18}K & missing in code & no current local-net/\allowbreak{}HK module;\newline legacy target only & CNNA/\allowbreak{}PillarA/\allowbreak{}Physics/\allowbreak{}LocalnetHaagKastleralgebraicaxioms.lean & \hyperlink{phase-row-13-3}{13.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-H10}{\hyperlink{objproof:H10}{H10}} & A->B bright handoff & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & Handoff policy & \cellcolor{yellow!25}Y & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Outputs/\allowbreak{}A\_to\_B.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Core/\allowbreak{}Step1MathData.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Core/\allowbreak{}SectorExport.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Outputs/\allowbreak{}A\_to\_B.lean & \hyperlink{phase-row-11-1}{11.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-H11}{\hyperlink{objproof:H11}{H11}} & A->B prime/\allowbreak{}dark future handoff & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & Handoff policy & \cellcolor{red!20}R & missing in code & no current dark/\allowbreak{}B-prime handoff module & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}ABprimedarkfuturehandoff.lean & \hyperlink{phase-row-11-2}{11.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-H12}{\hyperlink{objproof:H12}{H12}} & A->C handoff & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & Handoff policy & \cellcolor{yellow!25}Y & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Outputs/\allowbreak{}A\_to\_C.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}AChandoff.lean & \hyperlink{phase-row-11-3}{11.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-H13}{\hyperlink{objproof:H13}{H13}} & A->D handoff & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & Handoff policy & \cellcolor{yellow!25}Y & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Outputs/\allowbreak{}A\_to\_D.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}ADhandoff.lean & \hyperlink{phase-row-11-4}{11.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-H14}{\hyperlink{objproof:H14}{H14}} & A->E handoff & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & Handoff policy & \cellcolor{black!18}K & present as source/\allowbreak{}seed;\newline derivation still to be canonicalized & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Outputs/\allowbreak{}A\_to\_E.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}AEhandoff.lean & \hyperlink{phase-row-11-5}{11.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-MOON0}{\hyperlink{objproof:MOON0}{MOON0}} & j coefficient stream & Reference;\newline Gate;\newline Object & F2 & current & Moonshine/\allowbreak{}established math & \cellcolor{black!18}K & missing;\newline not in SM9h code & no current Lean module & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Moonshine/\allowbreak{}JCoefficientStream.lean & \hyperlink{phase-row-12-1}{12.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-MOON1}{\hyperlink{objproof:MOON1}{MOON1}} & Monster dimension comparison profile & Reference;\newline Gate;\newline Object & F2 & current & Moonshine/\allowbreak{}established math & \cellcolor{black!18}K & missing;\newline not in SM9h code & no current Lean module & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Moonshine/\allowbreak{}MonsterComparison.lean & \hyperlink{phase-row-12-2}{12.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-MOON2}{\hyperlink{objproof:MOON2}{MOON2}} & McKay-Thompson comparison profile & Reference;\newline Gate;\newline Object & F2 & current & Moonshine/\allowbreak{}established math & \cellcolor{black!18}K & missing;\newline not in SM9h code & no current Lean module & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Moonshine/\allowbreak{}McKayThompsonComparison.lean & \hyperlink{phase-row-12-3}{12.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-B00}{\hyperlink{objproof:B00}{B00}} & Pillar B input contract from A & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & Pillar B QFT & \cellcolor{black!18}K & PillarB namespace empty in SM9h;\newline handoff source exists in A & CNNA/\allowbreak{}PillarB/\allowbreak{}BuildAll.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Outputs/\allowbreak{}A\_to\_B.lean & CNNA/\allowbreak{}PillarB/\allowbreak{}Handoff/\allowbreak{}BInputFromA.lean & \hyperlink{phase-row-13-1}{13.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-B01}{\hyperlink{objproof:B01}{B01}} & Boundary star-algebra /\allowbreak{} observable algebra & Lean;\newline Source;\newline Object & F1 & current & Pillar B QFT & \cellcolor{black!18}K & not implemented in PillarB;\newline related finite seeds in A & CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}StateSpace.lean;\newline CNNA/\allowbreak{}PillarB/\allowbreak{}BuildAll.lean & CNNA/\allowbreak{}PillarB/\allowbreak{}QFT/\allowbreak{}BoundaryStarAlgebra.lean & \hyperlink{phase-row-13-2}{13.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-B02}{\hyperlink{objproof:B02}{B02}} & Local net /\allowbreak{} QFT algebraic profile & Lean;\newline Source;\newline Object & F1 & current & Pillar B QFT & \cellcolor{black!18}K & not implemented in PillarB & CNNA/\allowbreak{}PillarB/\allowbreak{}BuildAll.lean & CNNA/\allowbreak{}PillarB/\allowbreak{}AQFT/\allowbreak{}LocalNetFromBoundary.lean & \hyperlink{phase-row-13-3}{13.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-B03}{\hyperlink{objproof:B03}{B03}} & B state/\allowbreak{}GNS/\allowbreak{}KMS profile & Lean;\newline Source;\newline Object & F1 & current & Pillar B QFT & \cellcolor{black!18}K & not implemented in PillarB;\newline A seeds exist & CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}GibbsStateSeed.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}MatrixExponential.lean & CNNA/\allowbreak{}PillarB/\allowbreak{}QFT/\allowbreak{}StateGNSKMS.lean & \hyperlink{phase-row-13-4}{13.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-B04}{\hyperlink{objproof:B04}{B04}} & Tomita-Takesaki modular data & Lean;\newline Source;\newline Object & F1 & current & Pillar B AQFT & \cellcolor{black!18}K & not implemented in PillarB & CNNA/\allowbreak{}PillarB/\allowbreak{}BuildAll.lean & CNNA/\allowbreak{}PillarB/\allowbreak{}AQFT/\allowbreak{}ModularTheory.lean & \hyperlink{phase-row-13-5}{13.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-B05}{\hyperlink{objproof:B05}{B05}} & CPT/\allowbreak{}BW/\allowbreak{}spin-statistics/\allowbreak{}split gates & Lean;\newline Source;\newline Object & F1 & current & Pillar B AQFT & \cellcolor{black!18}K & not implemented in PillarB & CNNA/\allowbreak{}PillarB/\allowbreak{}BuildAll.lean & CNNA/\allowbreak{}PillarB/\allowbreak{}AQFT/\allowbreak{}StructuralTheorems.lean & \hyperlink{phase-row-13-6}{13.6}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-B06}{\hyperlink{objproof:B06}{B06}} & B->A allowed output profile & Lean;\newline Source;\newline Object & F1 & current & Pillar B handoff & \cellcolor{black!18}K & input stub exists on A side only & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}B\_to\_A.lean & CNNA/\allowbreak{}PillarB/\allowbreak{}Handoff/\allowbreak{}BToAOutput.lean & \hyperlink{phase-row-13-7}{13.7}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-C00}{\hyperlink{objproof:C00}{C00}} & Pillar C OQS input contract from A & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & Pillar C OQS & \cellcolor{black!18}K & PillarC namespace empty in SM9h & CNNA/\allowbreak{}PillarC/\allowbreak{}BuildAll.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Outputs/\allowbreak{}A\_to\_C if created later & CNNA/\allowbreak{}PillarC/\allowbreak{}Handoff/\allowbreak{}CInputFromA.lean & \hyperlink{phase-row-14-1}{14.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-C01}{\hyperlink{objproof:C01}{C01}} & Finite CP/\allowbreak{}channel profile & Lean;\newline Source;\newline Object & F1 & current & Pillar C OQS & \cellcolor{black!18}K & A channel seed exists;\newline PillarC empty & CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}ChannelSeed.lean;\newline CNNA/\allowbreak{}PillarC/\allowbreak{}BuildAll.lean & CNNA/\allowbreak{}PillarC/\allowbreak{}OQS/\allowbreak{}FiniteChannelProfile.lean & \hyperlink{phase-row-14-2}{14.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-C02}{\hyperlink{objproof:C02}{C02}} & Effective OQS generator /\allowbreak{} Lindblad gate & Lean;\newline Source;\newline Object & F1 & current & Pillar C OQS & \cellcolor{black!18}K & not implemented in PillarC & CNNA/\allowbreak{}PillarC/\allowbreak{}BuildAll.lean & CNNA/\allowbreak{}PillarC/\allowbreak{}OQS/\allowbreak{}EffectiveGenerator.lean & \hyperlink{phase-row-14-3}{14.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-C03}{\hyperlink{objproof:C03}{C03}} & Decoherence/\allowbreak{}noise profile & Lean;\newline Source;\newline Object & F1 & current & Pillar C OQS & \cellcolor{black!18}K & not implemented in PillarC & CNNA/\allowbreak{}PillarC/\allowbreak{}BuildAll.lean & CNNA/\allowbreak{}PillarC/\allowbreak{}OQS/\allowbreak{}DecoherenceProfile.lean & \hyperlink{phase-row-14-4}{14.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-C04}{\hyperlink{objproof:C04}{C04}} & C->A allowed output profile & Lean;\newline Source;\newline Object & F1 & current & Pillar C handoff & \cellcolor{black!18}K & input stub exists on A side only & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}C\_to\_A.lean & CNNA/\allowbreak{}PillarC/\allowbreak{}Handoff/\allowbreak{}CToAOutput.lean & \hyperlink{phase-row-14-5}{14.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-D00}{\hyperlink{objproof:D00}{D00}} & Pillar D spacetime input contract & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & Pillar D spacetime & \cellcolor{black!18}K & PillarD namespace empty in SM9h & CNNA/\allowbreak{}PillarD/\allowbreak{}BuildAll.lean & CNNA/\allowbreak{}PillarD/\allowbreak{}Handoff/\allowbreak{}DInputFromA.lean & \hyperlink{phase-row-15-1}{15.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-D01}{\hyperlink{objproof:D01}{D01}} & Region/\allowbreak{}localization/\allowbreak{}causal-order candidate & Lean;\newline Source;\newline Object & F1 & current & Pillar D spacetime & \cellcolor{black!18}K & not implemented in PillarD & CNNA/\allowbreak{}PillarD/\allowbreak{}BuildAll.lean & CNNA/\allowbreak{}PillarD/\allowbreak{}Spacetime/\allowbreak{}RegionCausalOrder.lean & \hyperlink{phase-row-15-2}{15.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-D02}{\hyperlink{objproof:D02}{D02}} & Metric/\allowbreak{}coarse-geometry/\allowbreak{}covariance gate & Lean;\newline Source;\newline Object & F1 & current & Pillar D spacetime & \cellcolor{black!18}K & not implemented in PillarD & CNNA/\allowbreak{}PillarD/\allowbreak{}BuildAll.lean & CNNA/\allowbreak{}PillarD/\allowbreak{}Spacetime/\allowbreak{}MetricCovariance.lean & \hyperlink{phase-row-15-3}{15.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-D03}{\hyperlink{objproof:D03}{D03}} & D->A allowed output profile & Lean;\newline Source;\newline Object & F1 & current & Pillar D handoff & \cellcolor{black!18}K & input stub exists on A side only & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}D\_to\_A.lean & CNNA/\allowbreak{}PillarD/\allowbreak{}Handoff/\allowbreak{}DToAOutput.lean & \hyperlink{phase-row-15-4}{15.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-E00}{\hyperlink{objproof:E00}{E00}} & Pillar E matter input contract & Lean;\newline Handoff;\newline Contract;\newline Object & F0 & current & Pillar E matter & \cellcolor{black!18}K & PillarE namespace empty in SM9h & CNNA/\allowbreak{}PillarE/\allowbreak{}BuildAll.lean & CNNA/\allowbreak{}PillarE/\allowbreak{}Handoff/\allowbreak{}EInputProfile.lean & \hyperlink{phase-row-16-1}{16.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-E01}{\hyperlink{objproof:E01}{E01}} & Matter sector and internal symmetry candidate & Lean;\newline Source;\newline Object & F1 & current & Pillar E matter & \cellcolor{black!18}K & not implemented in PillarE & CNNA/\allowbreak{}PillarE/\allowbreak{}BuildAll.lean & CNNA/\allowbreak{}PillarE/\allowbreak{}Matter/\allowbreak{}SectorSymmetry.lean & \hyperlink{phase-row-16-2}{16.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-E02}{\hyperlink{objproof:E02}{E02}} & Observable coupling and phenomenology comparison & Reference;\newline Gate;\newline Object & F3 & current & Pillar E matter & \cellcolor{black!18}K & not implemented in PillarE & CNNA/\allowbreak{}PillarE/\allowbreak{}BuildAll.lean & CNNA/\allowbreak{}PillarE/\allowbreak{}Matter/\allowbreak{}ObservableComparison.lean & \hyperlink{phase-row-16-3}{16.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-E03}{\hyperlink{objproof:E03}{E03}} & E->A allowed output profile & Lean;\newline Source;\newline Object & F1 & current & Pillar E handoff & \cellcolor{black!18}K & input stub exists on A side only & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}E\_to\_A.lean & CNNA/\allowbreak{}PillarE/\allowbreak{}Handoff/\allowbreak{}EToAOutput.lean & \hyperlink{phase-row-16-4}{16.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-BR00}{\hyperlink{objproof:BR00}{BR00}} & Backreaction input DAG & Lean;\newline Target;\newline Object & F2 & current & Backreaction governance & \cellcolor{black!18}K & partial A input handoff stubs exist & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}*.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Backreaction/\allowbreak{}InputDAG.lean & \hyperlink{phase-row-17}{17}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-BR01}{\hyperlink{objproof:BR01}{BR01}} & B->A backreaction input gate & Lean;\newline Source;\newline Object & F1 & current & Backreaction governance & \cellcolor{black!18}K & input stub exists & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}B\_to\_A.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Backreaction/\allowbreak{}BInputGate.lean & \hyperlink{phase-row-17-1}{17.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-BR02}{\hyperlink{objproof:BR02}{BR02}} & C->A OQS backreaction input gate & Lean;\newline Source;\newline Object & F1 & current & Backreaction governance & \cellcolor{black!18}K & input stub exists & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}C\_to\_A.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Backreaction/\allowbreak{}CInputGate.lean & \hyperlink{phase-row-17-2}{17.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-BR03}{\hyperlink{objproof:BR03}{BR03}} & D->A spacetime backreaction input gate & Lean;\newline Source;\newline Object & F1 & current & Backreaction governance & \cellcolor{black!18}K & input stub exists & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}D\_to\_A.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Backreaction/\allowbreak{}DInputGate.lean & \hyperlink{phase-row-17-3}{17.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-BR04}{\hyperlink{objproof:BR04}{BR04}} & E->A matter backreaction input gate & Lean;\newline Source;\newline Object & F1 & current & Backreaction governance & \cellcolor{black!18}K & input stub exists & CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}E\_to\_A.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Backreaction/\allowbreak{}EInputGate.lean & \hyperlink{phase-row-17-4}{17.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-BR05}{\hyperlink{objproof:BR05}{BR05}} & Pre/\allowbreak{}post-emergence switch for A statements & Lean;\newline Source;\newline Object & F0 & current & Backreaction governance & \cellcolor{black!18}K & not implemented neutrally & no current neutral module & CNNA/\allowbreak{}PillarA/\allowbreak{}Backreaction/\allowbreak{}EmergenceSwitch.lean & \hyperlink{phase-row-17-5}{17.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-SIDE0}{\hyperlink{objproof:SIDE0}{SIDE0}} & Full ToE comparison profile & Reference;\newline Gate;\newline Object & F4 & current & Side comparison & \cellcolor{black!18}K & not implemented & no current Lean module & CNNA/\allowbreak{}Comparisons/\allowbreak{}FullToE.lean & \hyperlink{phase-row-18-1}{18.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-SIDE1}{\hyperlink{objproof:SIDE1}{SIDE1}} & String-theory comparison profile & Reference;\newline Gate;\newline Object & F4 & current & Side comparison & \cellcolor{black!18}K & not implemented & no current Lean module & CNNA/\allowbreak{}Comparisons/\allowbreak{}StringTheory.lean & \hyperlink{phase-row-18-2}{18.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-SIDE2}{\hyperlink{objproof:SIDE2}{SIDE2}} & Loop quantum gravity comparison profile & Reference;\newline Gate;\newline Object & F4 & current & Side comparison & \cellcolor{black!18}K & not implemented & no current Lean module & CNNA/\allowbreak{}Comparisons/\allowbreak{}LoopQuantumGravity.lean & \hyperlink{phase-row-18-3}{18.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-SIDE3}{\hyperlink{objproof:SIDE3}{SIDE3}} & Noncommutative geometry comparison profile & Reference;\newline Gate;\newline Object & F4 & current & Side comparison & \cellcolor{black!18}K & not implemented & no current Lean module & CNNA/\allowbreak{}Comparisons/\allowbreak{}NoncommutativeGeometry.lean & \hyperlink{phase-row-18-4}{18.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-MOON3}{\hyperlink{objproof:MOON3}{MOON3}} & Finite simple group comparison profile & Reference;\newline Gate;\newline Object & F2 & current & Moonshine/\allowbreak{}established math & \cellcolor{black!18}K & missing;\newline not in SM9h code & no current Lean module & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Moonshine/\allowbreak{}FiniteSimpleGroupComparison.lean & \hyperlink{phase-row-12-4}{12.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-MOON4}{\hyperlink{objproof:MOON4}{MOON4}} & Sporadic/\allowbreak{}Monster comparison boundary & Reference;\newline Gate;\newline Object & F2 & current & Moonshine/\allowbreak{}established math & \cellcolor{black!18}K & missing;\newline not in SM9h code & no current Lean module & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Moonshine/\allowbreak{}SporadicMonsterBoundary.lean & \hyperlink{phase-row-12-4}{12.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-MOON5}{\hyperlink{objproof:MOON5}{MOON5}} & Leech lattice comparison profile & Reference;\newline Gate;\newline Object & F2 & current & Moonshine/\allowbreak{}Leech lattice & \cellcolor{black!18}K & missing;\newline not in SM9h code & no current Lean module & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Moonshine/\allowbreak{}LeechLatticeComparison.lean & \hyperlink{phase-row-12-5}{12.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-MOON6}{\hyperlink{objproof:MOON6}{MOON6}} & Leech theta/\allowbreak{}shell coefficient comparison & Reference;\newline Gate;\newline Object & F2 & current & Moonshine/\allowbreak{}Leech lattice & \cellcolor{black!18}K & missing;\newline not in SM9h code & no current Lean module & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Moonshine/\allowbreak{}LeechThetaComparison.lean & \hyperlink{phase-row-12-6}{12.6}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-MOON7}{\hyperlink{objproof:MOON7}{MOON7}} & VOA/\allowbreak{}moonshine-module comparison profile & Reference;\newline Gate;\newline Object & F2 & current & Moonshine/\allowbreak{}VOA & \cellcolor{black!18}K & missing;\newline not in SM9h code & no current Lean module & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Moonshine/\allowbreak{}VOAComparison.lean & \hyperlink{phase-row-12-7}{12.7}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-MOON8}{\hyperlink{objproof:MOON8}{MOON8}} & Common-indicator /\allowbreak{} Hauptmodul bridge-test profile & Reference;\newline Gate;\newline Object & F2 & current & Moonshine/\allowbreak{}established math & \cellcolor{black!18}K & missing;\newline not in SM9h code & no current Lean module & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Moonshine/\allowbreak{}CommonIndicatorBridgeTest.lean & \hyperlink{phase-row-12-8}{12.8}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG0}{\hyperlink{objproof:LEG0}{LEG0}} & Consumption and split inventory umbrella & Governance;\newline Policy;\newline Object & F3 & current & Refactor governance & \cellcolor{yellow!25}Y & planning/\allowbreak{}audit object;\newline split across 1.1.1.1-1.1.1.5 & Arithmetic/\allowbreak{}Notation.lean;\newline repo\_inventory/\allowbreak{}raw\_export & planning master only;\newline no Lean API until child gates close & \hyperlink{phase-row-1-1-1}{1.1.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG1}{\hyperlink{objproof:LEG1}{LEG1}} & Legacy single-constructor status gates & Lean;\newline Refactor;\newline Object & F3 & current & Legacy quarantine & \cellcolor{yellow!25}Y & present in legacy monolith;\newline target quarantine missing & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Notation.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Legacy/\allowbreak{}StatusGates.lean & \hyperlink{phase-row-1-1-2}{1.1.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG2}{\hyperlink{objproof:LEG2}{LEG2}} & CoreSymbols true notation surface & Lean;\newline Refactor;\newline Object & F3 & current & Notation & \cellcolor{yellow!25}Y & target module missing & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Notation.lean;\newline Foundation/\allowbreak{}Notation.lean;\newline Finite/\allowbreak{}Notation.lean;\newline Handoff/\allowbreak{}Notation.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Notation/\allowbreak{}CoreSymbols.lean & \hyperlink{phase-row-1-1-3}{1.1.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG3}{\hyperlink{objproof:LEG3}{LEG3}} & Legacy phase aliases compatibility surface & Lean;\newline Refactor;\newline Object & F3 & current & Legacy quarantine & \cellcolor{yellow!25}Y & target module missing & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Notation.lean;\newline historical SM*/\allowbreak{}S6* modules & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Legacy/\allowbreak{}PhaseAliases.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}NeutralWrappers.lean & \hyperlink{phase-row-1-1-4}{1.1.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG4}{\hyperlink{objproof:LEG4}{LEG4}} & Neutral import firewall for post-notation phases & Governance;\newline Policy;\newline Object & F3 & current & Import governance & \cellcolor{yellow!25}Y & missing;\newline requires post-split audit & BuildAll.lean;\newline repo\_inventory/\allowbreak{}raw\_export/\allowbreak{}module\_imports.tsv & generated\_exports/\allowbreak{}module inventory views;\newline masters/\allowbreak{}cnna\_roadmap\_master.yaml phase gates & \hyperlink{phase-row-1-1-5}{1.1.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG5}{\hyperlink{objproof:LEG5}{LEG5}} & Declaration consumption classification map & Governance;\newline Policy;\newline Object & F3 & current & Planning/\allowbreak{}API hygiene & \cellcolor{green!18}G & closed generated classification artifact;\newline no Lean source move & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline generated\_exports/\allowbreak{}consumption\_classification\_map.generated.tsv;\newline generated\_exports/\allowbreak{}module\_consumption\_records.generated.tsv;\newline generated\_exports/\allowbreak{}declaration\_consumption\_records.generated.tsv;\newline generated\_exports/\allowbreak{}object\_consumption\_classification.generated.tsv;\newline tables/\allowbreak{}consumption\_classification\_map.tex & planning master, generated consumption-classification section, generated module/\allowbreak{}declaration/\allowbreak{}object TSV ledgers;\newline optional future Lean audit mirror only & \hyperlink{phase-row-1-1-1-1-4}{1.1.1.1.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG7}{\hyperlink{objproof:LEG7}{LEG7}} & Blue-object semantic correction ledger & Governance;\newline Policy;\newline Object & F3 & current & Planning/\allowbreak{}API hygiene & \cellcolor{yellow!25}Y & planned;\newline prevents treating proof-carrying blue code as public final API & object register;\newline Structural/\allowbreak{}CayleyDickson/\allowbreak{}*;\newline Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedInterior*;\newline Arithmetic/\allowbreak{}Smoke/\allowbreak{}*Operational* & planning master;\newline target phase records 1.4.*, 3.*, 4.* & \hyperlink{phase-row-1-1-1-2}{1.1.1.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG6}{\hyperlink{objproof:LEG6}{LEG6}} & Public API contract and consumer whitelist & Governance;\newline Policy;\newline Object & F3 & current & Planning/\allowbreak{}API hygiene & \cellcolor{yellow!25}Y & planned contract;\newline no Lean source move yet & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline planned CoreSymbols/\allowbreak{}Legacy/\allowbreak{}NeutralWrappers modules & planning master and later CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Notation/\allowbreak{}CoreSymbols.lean /\allowbreak{} neutral wrappers & \hyperlink{phase-row-1-1-1-3}{1.1.1.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG8}{\hyperlink{objproof:LEG8}{LEG8}} & Pruning and dead-candidate ledger & Governance;\newline Policy;\newline Object & F3 & current & Planning/\allowbreak{}API hygiene & \cellcolor{yellow!25}Y & planned;\newline no deletion authorized by this object alone & planning master;\newline generated reports;\newline repo\_inventory/\allowbreak{}raw\_export & planning master;\newline later pruning implementation phase only if build evidence exists & \hyperlink{phase-row-1-1-1-4}{1.1.1.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG9}{\hyperlink{objproof:LEG9}{LEG9}} & Generated-view authority and implementation-lock contract & Governance;\newline Policy;\newline Object & F3 & current & Planning/\allowbreak{}API hygiene & \cellcolor{yellow!25}Y & planned generated-artifact lock;\newline no Lean build claim & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline generated exports;\newline PDF & README/\allowbreak{}report and generated planning PDF & \hyperlink{phase-row-1-1-1-5}{1.1.1.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG10}{\hyperlink{objproof:LEG10}{LEG10}} & Implementation module manifest and semantic placement contract & Governance;\newline Policy;\newline Object & F1 & current & Planning/\allowbreak{}API hygiene & \cellcolor{green!18}G & closed generated-artifact gate;\newline no Lean source move & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline generated\_exports/\allowbreak{}module\_implementation\_manifest.generated.tsv;\newline tables/\allowbreak{}module\_implementation\_manifest.tex & planning master, generated module-manifest table, and implementation scratchpad & \hyperlink{phase-row-1-1-1-1-1}{1.1.1.1.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG11}{\hyperlink{objproof:LEG11}{LEG11}} & Reuse/\allowbreak{}duplication ledger and canonical generator policy & Governance;\newline Policy;\newline Object & F1 & current & Planning/\allowbreak{}API hygiene & \cellcolor{green!18}G & closed generated-policy gate;\newline no Lean source move & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline generated\_exports/\allowbreak{}reuse\_duplication\_ledger.generated.tsv;\newline tables/\allowbreak{}reuse\_duplication\_ledger.tex;\newline Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedSource.lean;\newline Arithmetic/\allowbreak{}Smoke/\allowbreak{}GeneratedMainPath.lean;\newline Actions/\allowbreak{}GeneratorActionInventory.lean;\newline Actions/\allowbreak{}ActionFormatDecision.lean & planning master and generated reuse/\allowbreak{}duplication ledger now;\newline later neutral generator API only if a code phase proves the current Smoke namespace is too narrow while semantics match & \hyperlink{phase-row-1-1-1-1-2}{1.1.1.1.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG12}{\hyperlink{objproof:LEG12}{LEG12}} & Object and size proof-documentation infrastructure & Governance;\newline Policy;\newline Object & F1 & current & Legacy/\allowbreak{}Planning governance & \cellcolor{green!18}G & closed generated proof-documentation infrastructure;\newline no Lean code semantics & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline generated\_exports/\allowbreak{}object\_proof\_documentation.generated.tsv;\newline tables/\allowbreak{}object\_proof\_documentation.tex;\newline tables/\allowbreak{}object\_proof\_link\_register.tex & generated object proof documentation section and generator-validated object-register proof:<ID> links & \hyperlink{phase-row-1-1-1-1-3}{1.1.1.1.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG13}{\hyperlink{objproof:LEG13}{LEG13}} & Global no-go guardrail contract & Governance;\newline Policy;\newline Object & F0 & current & Planning/\allowbreak{}API hygiene & \cellcolor{green!18}G & planning infrastructure implemented in v26 master/\allowbreak{}generator;\newline no Lean code semantics claimed & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline tables/\allowbreak{}global\_no\_go\_guardrails.tex;\newline generated\_exports/\allowbreak{}global\_no\_go\_guardrails.generated.tsv & top-level generated global no-go guardrail section and inherited scratchpad field & \hyperlink{phase-row-1-1-1-1-0}{1.1.1.1.0}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG14}{\hyperlink{objproof:LEG14}{LEG14}} & Concrete computable instance traversal contract & Governance;\newline Policy;\newline Object & F3 & current & Workflow /\allowbreak{} operational executability & \cellcolor{green!18}G & planning/\allowbreak{}workflow infrastructure present in YAML and generated views;\newline no Lean declaration move & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline implementation\_scratchpad & Planning workflow contract;\newline optional later Lean audit mirror outside operational semantics & \hyperlink{phase-row-1-1-1-1-0-1}{1.1.1.1.0.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG15}{\hyperlink{objproof:LEG15}{LEG15}} & Mathlib complication and noncomputable-boundary log & Governance;\newline Policy;\newline Object & F3 & current & Workflow /\allowbreak{} mathlib audit & \cellcolor{green!18}G & planning/\allowbreak{}workflow infrastructure present in YAML and generated views;\newline no Lean declaration move & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline implementation\_scratchpad & Planning workflow contract;\newline optional later static audit script output & \hyperlink{phase-row-1-1-1-1-0-1}{1.1.1.1.0.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG16}{\hyperlink{objproof:LEG16}{LEG16}} & Semi-automated existing-code documentation coverage & Reference;\newline Gate;\newline Object & F3 & current & Secondary long-term meta-documentation & \cellcolor{black!18}K & future secondary documentation target;\newline no operational code & repo\_inventory/\allowbreak{}raw\_export/\allowbreak{}*.json;\newline generated\_exports/\allowbreak{}*.tsv;\newline tables/\allowbreak{}object\_proof\_documentation.tex & generated documentation coverage view;\newline optional future non-operational MetaAnalysis/\allowbreak{}DocumentationCoverage.* & \hyperlink{phase-row-19-1}{19.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG17}{\hyperlink{objproof:LEG17}{LEG17}} & Derivation-graph geometry diagnostics & Reference;\newline Gate;\newline Object & F3 & current & Secondary long-term meta-analysis & \cellcolor{black!18}K & future generated meta-analysis target;\newline no operational Lean code & repo\_inventory/\allowbreak{}raw\_export/\allowbreak{}import\_edges.json;\newline figures/\allowbreak{}*.dot/\allowbreak{}pdf & generated derivation-geometry view;\newline optional future MetaAnalysis/\allowbreak{}DerivationGraphGeometry.* & \hyperlink{phase-row-19-2}{19.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG18}{\hyperlink{objproof:LEG18}{LEG18}} & Open-system emergence-path forensics & Reference;\newline Gate;\newline Object & F3 & current & Secondary long-term meta-analysis & \cellcolor{black!18}K & future secondary target;\newline blocked until A/\allowbreak{}C derivations are present & future A/\allowbreak{}C modules plus repo\_inventory/\allowbreak{}raw\_export path analysis & generated emergence-path forensic report;\newline optional future MetaAnalysis/\allowbreak{}OpenSystemPathForensics.* & \hyperlink{phase-row-19-3}{19.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG19}{\hyperlink{objproof:LEG19}{LEG19}} & Reflective CNNA/\allowbreak{}formalization graph comparison boundary & Reference;\newline Gate;\newline Object & F3 & current & Secondary long-term meta-analysis & \cellcolor{black!18}K & future secondary comparison target;\newline no operational Lean code & generated graph views and proofbook links & optional future MetaAnalysis/\allowbreak{}ReflectiveComparisonBoundary.* & \hyperlink{phase-row-19-4}{19.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG20}{\hyperlink{objproof:LEG20}{LEG20}} & EXEC-2 rational ExecComplex boundary policy & Lean;\newline Governance;\newline Object & F1 & current & Architecture governance & \cellcolor{green!18}G & planning decision;\newline no Lean code yet & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline format\_decision EXEC-2;\newline workflow\_policy EXEC-2 & CNNA/\allowbreak{}PillarA/\allowbreak{}Operational/\allowbreak{}ExecComplexBoundaryPolicy.lean (future, if code-level record becomes useful) & \hyperlink{phase-row-1-1-1-1-0-2}{1.1.1.1.0.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG21}{\hyperlink{objproof:LEG21}{LEG21}} & Refactor regression and incremental migration protocol & Lean;\newline Governance;\newline Object & F1 & current & Architecture governance & \cellcolor{green!18}G & planning decision;\newline no Lean code yet & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline workflow\_policy refactor regression & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Legacy/\allowbreak{}RefactorRegressionPolicy.lean (future optional audit record) & \hyperlink{phase-row-1-1-1-1-0-3}{1.1.1.1.0.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG22}{\hyperlink{objproof:LEG22}{LEG22}} & Lean/\allowbreak{}mathlib version migration policy & Lean;\newline Governance;\newline Object & F1 & current & Architecture governance & \cellcolor{green!18}G & planning decision;\newline no Lean code yet & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline workflow\_policy version management & CNNA/\allowbreak{}PillarA/\allowbreak{}Architecture/\allowbreak{}VersionPolicy.lean (future optional audit record) & \hyperlink{phase-row-1-1-1-1-0-4}{1.1.1.1.0.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG23}{\hyperlink{objproof:LEG23}{LEG23}} & Phase-type-specific scratchpad schema and governance retrospective & Documentation;\newline Object & F3 & current & Documentation/\allowbreak{}governance & \cellcolor{green!18}G & planning decision;\newline generator updated & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py scratchpad renderer & generated implementation scratchpad view;\newline future schema validator & \hyperlink{phase-row-1-1-1-1-0-5}{1.1.1.1.0.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG24}{\hyperlink{objproof:LEG24}{LEG24}} & Phase 3 to Phase 4 consumer-contract direction & Lean;\newline Governance;\newline Object & F1 & current & Architecture governance & \cellcolor{green!18}G & planning decision;\newline no Lean code yet & masters/\allowbreak{}cnna\_roadmap\_master.yaml phase goals 3.6 and 4.1 & CNNA/\allowbreak{}PillarA/\allowbreak{}Schur/\allowbreak{}BoundaryOperatorProfile.lean plus CNNA/\allowbreak{}PillarA/\allowbreak{}Operational/\allowbreak{}ExecBoundaryMatrix.lean & \hyperlink{phase-row-1-1-1-1-0-6}{1.1.1.1.0.6}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG25}{\hyperlink{objproof:LEG25}{LEG25}} & IdealThread/\allowbreak{}CutSpec.full extremal-route contract & Governance;\newline Policy;\newline Object & F1 & current & Workflow /\allowbreak{} route governance & \cellcolor{white}W & planning decision closed;\newline no Lean source changed & CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}SubstrateClass.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}ToC/\allowbreak{}Contract.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}CutSpec.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}BoundarySource/\allowbreak{}ExistingIdealThreadNoGo.lean & YAML master plus future route-contract modules if implementation justifies them & \hyperlink{phase-row-1-1-1-1-0-7}{1.1.1.1.0.7}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-S07}{\hyperlink{objproof:S07}{S07}} & IdealThread singleton directed-family profile & Lean;\newline Source;\newline Object & F1 & current & ToC /\allowbreak{} substrate profile & \cellcolor{green!18}G & source theorems present;\newline neutral public API not yet extracted & CNNA/\allowbreak{}PillarA/\allowbreak{}Foundation/\allowbreak{}SubstrateClass.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}ToC/\allowbreak{}Contract.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}BoundarySource/\allowbreak{}ExistingIdealThreadNoGo.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}ToC/\allowbreak{}IdealThreadProfile.lean & \hyperlink{phase-row-1-2-7}{1.2.7}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-S08}{\hyperlink{objproof:S08}{S08}} & CutSpec.full maximal-carrier profile & Lean;\newline Source;\newline Object & F1 & current & Finite approximant /\allowbreak{} cut profile & \cellcolor{green!18}G & source theorem present;\newline neutral public API not yet extracted & CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}CutSpec.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Core/\allowbreak{}FullBoundaryAudit.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Finite/\allowbreak{}FullCutProfile.lean & \hyperlink{phase-row-1-2-8}{1.2.8}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-BR06}{\hyperlink{objproof:BR06}{BR06}} & Boundary-route extrema contract & Lean;\newline Source;\newline Object & F1 & current & Schur/\allowbreak{}DtN route governance & \cellcolor{green!18}G & planned neutral route contract;\newline source evidence exists in audits & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}BoundarySource/\allowbreak{}ExistingIdealThreadNoGo.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Core/\allowbreak{}FullBoundaryAudit.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Schur/\allowbreak{}BoundaryRouteContract.lean & \hyperlink{phase-row-3-0}{3.0}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-BR07}{\hyperlink{objproof:BR07}{BR07}} & Thread-recursion arithmetic-shadow audit profile & Lean;\newline Source;\newline Object & F1 & current & Operational arithmetic /\allowbreak{} route audit & \cellcolor{yellow!25}Y & recurrence code exists but route provenance still needs audit & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Schur/\allowbreak{}RecursiveSchurSource.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Schur/\allowbreak{}MobiusTransfer.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Schur/\allowbreak{}CharpolyExec.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke/\allowbreak{}*SM9*.lean & CNNA/\allowbreak{}PillarA/\allowbreak{}Operational/\allowbreak{}ThreadRecursionAudit.lean & \hyperlink{phase-row-4-0}{4.0}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-BR09}{\hyperlink{objproof:BR09}{BR09}} & Subsystem-induced invariant bifurcation profile & Lean;\newline Target;\newline Object & F1 & current & Bridge & \cellcolor{black!18}K & registered future explanatory bridge target;\newline no canonical code yet & No canonical module yet. & CNNA/\allowbreak{}PillarA/\allowbreak{}Bridge/\allowbreak{}SubsystemSchurInvariantBifurcation.lean & \hyperlink{phase-row-10-4-1}{10.4.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-BR08}{\hyperlink{objproof:BR08}{BR08}} & Horizontal/\allowbreak{}vertical Schur-duality bridge & Lean;\newline Target;\newline Object & F1 & current & Bridge & \cellcolor{black!18}K & registered future bridge target;\newline no canonical code yet & No canonical module yet;\newline source audit must inspect Schur/\allowbreak{}DtN, Arithmetic/\allowbreak{}Smoke, Structural/\allowbreak{}CayleyDickson, and Transfer modules. & CNNA/\allowbreak{}PillarA/\allowbreak{}Bridge/\allowbreak{}SchurHorizontalVerticalDuality.lean & \hyperlink{phase-row-10-4-1}{10.4.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG26}{\hyperlink{objproof:LEG26}{LEG26}} & Reflective thread/\allowbreak{}full-boundary analogy diagnostic boundary & Governance;\newline Policy;\newline Object & F4 & current & Secondary long-term diagnostics & \cellcolor{black!18}K & not implemented;\newline future diagnostic/\allowbreak{}documentation target & repo\_inventory/\allowbreak{}raw\_export/\allowbreak{}*;\newline future generated documentation views & Generated documentation/\allowbreak{}diagnostic reports;\newline no core Lean module unless a later theorem requires one. & \hyperlink{phase-row-19-5}{19.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG27}{\hyperlink{objproof:LEG27}{LEG27}} & Horizontal/\allowbreak{}vertical Schur-duality dependency-order lock & Governance;\newline Policy;\newline Object & F1 & current & Planning /\allowbreak{} bridge governance & \cellcolor{green!18}G & planning lock closed;\newline no Lean code changed & masters/\allowbreak{}cnna\_roadmap\_master.yaml & Planning only;\newline no Lean API target. & \hyperlink{phase-row-1-1-1-1-0-8}{1.1.1.1.0.8}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG28}{\hyperlink{objproof:LEG28}{LEG28}} & Heuristic Eisenstein/\allowbreak{}Gauss lattice test-matrix boundary contract & Governance;\newline Policy;\newline Object & F1 & current & Workflow /\allowbreak{} test governance & \cellcolor{green!18}G & planning decision lock only;\newline no Lean code yet & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline generated workflow/\allowbreak{}phase/\allowbreak{}proofbook views & No API. Future tests must be placed by module-manifest gate. & \hyperlink{phase-row-1-1-1-1-0-9}{1.1.1.1.0.9}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG29}{\hyperlink{objproof:LEG29}{LEG29}} & General early finite computation test-matrix contract & Governance;\newline Policy;\newline Object & F1 & current & Planning /\allowbreak{} workflow /\allowbreak{} computation readiness & \cellcolor{green!18}G & planning contract only;\newline no Lean code & masters/\allowbreak{}cnna\_roadmap\_master.yaml & Workflow policy plus Phase 4.0.1/\allowbreak{}O07 test-matrix profile. & \hyperlink{phase-row-1-1-1-1-0-10}{1.1.1.1.0.10}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-L09}{\hyperlink{objproof:L09}{L09}} & Static branching Eisenstein/\allowbreak{}Gauss lattice test matrix & Reference;\newline Gate;\newline Object & F2 & current & Lattice /\allowbreak{} test profile & \cellcolor{yellow!25}Y & not implemented;\newline planned test/\allowbreak{}profile object & Not yet;\newline placement must be decided by Phase 1.1.1.1.1 and future 8.5 manifest. & A compact neutral test/\allowbreak{}profile module only after semantic placement audit. & \hyperlink{phase-row-8-5}{8.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-L10}{\hyperlink{objproof:L10}{L10}} & Dynamic branching and L\_max lattice test sweep & Reference;\newline Gate;\newline Object & F2 & current & Lattice /\allowbreak{} test profile & \cellcolor{yellow!25}Y & not implemented;\newline planned test/\allowbreak{}profile object & Not yet;\newline future placement must reuse canonical generator. & Same test/\allowbreak{}profile surface as L09 unless module-manifest gate decides otherwise. & \hyperlink{phase-row-8-6}{8.6}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-M08}{\hyperlink{objproof:M08}{M08}} & Eisenstein/\allowbreak{}Gauss CM and j special-value test targets & Reference;\newline Gate;\newline Object & F2 & current & Modular /\allowbreak{} comparison target & \cellcolor{yellow!25}Y & not implemented;\newline planned comparison/\allowbreak{}test target object & Not yet;\newline future mirror/\allowbreak{}comparison module after M05. & Mirror/\allowbreak{}comparison test target profile, not A-operational API. & \hyperlink{phase-row-8-5}{8.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-BR10}{\hyperlink{objproof:BR10}{BR10}} & Hierarchical versus spiral embedding collision and closure audit & Reference;\newline Gate;\newline Object & F2 & current & Bridge /\allowbreak{} test audit & \cellcolor{yellow!25}Y & not implemented;\newline planned test audit object & Not yet;\newline future test/\allowbreak{}profile module. & Consumer-only audit profile. & \hyperlink{phase-row-8-6}{8.6}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG30}{\hyperlink{objproof:LEG30}{LEG30}} & Regime-typed early test-matrix contract & Governance;\newline Policy;\newline Object & F1 & current & Planning /\allowbreak{} workflow /\allowbreak{} regime governance & \cellcolor{green!18}G & planning contract only;\newline no Lean code & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline generated views & Workflow policy and future O08 extension of the O07 test-matrix profile. & \hyperlink{phase-row-1-1-1-1-0-11}{1.1.1.1.0.11}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-O08}{\hyperlink{objproof:O08}{O08}} & Regime-typed finite computation test matrix profile & Lean;\newline Target;\newline Object & F2 & current & Operational /\allowbreak{} test /\allowbreak{} regime readiness & \cellcolor{yellow!25}Y & planned;\newline no Lean implementation yet & future module selected by Phase 1.1.1.1.1;\newline must extend/\allowbreak{}reuse O07 surface & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Smoke or Generator test-matrix API;\newline exact path pending module manifest. & \hyperlink{phase-row-4-0-2}{4.0.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-N18}{\hyperlink{objproof:N18}{N18}} & Heegner regime-projection classification profile & Lean;\newline Target;\newline Object & F1 & current & Number theory /\allowbreak{} regime comparison & \cellcolor{yellow!25}Y & planned;\newline no implementation yet & no current module;\newline may consume old HeegnerDiscriminantBridge only after neutralization & CNNA/\allowbreak{}PillarA/\allowbreak{}NumberTheory/\allowbreak{}HeegnerRegimeProjection.lean or integrated profile after module manifest. & \hyperlink{phase-row-7-2-1}{7.2.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-BR11}{\hyperlink{objproof:BR11}{BR11}} & IDEAL\_infty projection and complement-family Heegner boundary & Lean;\newline Target;\newline Object & F1 & current & Bridge /\allowbreak{} regime /\allowbreak{} comparison boundary & \cellcolor{yellow!25}Y & planned bridge boundary only & no current module & Bridge/\allowbreak{}profile documentation or later small module if required by consumer API. & \hyperlink{phase-row-7-2-1}{7.2.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-BR12}{\hyperlink{objproof:BR12}{BR12}} & noOuter REAL-root Eisenstein/\allowbreak{}Gauss sentinel hypothesis & Lean;\newline Target;\newline Object & F1 & current & Bridge /\allowbreak{} test sentinel /\allowbreak{} regime & \cellcolor{yellow!25}Y & planned sentinel profile;\newline no implementation yet & no current module;\newline future placement with O08/\allowbreak{}L09/\allowbreak{}M08 after manifest & consumer-only sentinel row/\allowbreak{}profile under the test matrix surface & \hyperlink{phase-row-4-0-2}{4.0.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG31}{\hyperlink{objproof:LEG31}{LEG31}} & Computable scalar architecture contract & Governance;\newline Policy;\newline Object & F0 & current & governance & \cellcolor{green!18}G & planning lock & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline repo\_snapshot audit paths & global scalar architecture policy & \hyperlink{phase-row-1-1-1-1-0-12}{1.1.1.1.0.12}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG32}{\hyperlink{objproof:LEG32}{LEG32}} & Derived-only exact quadratic provenance contract & Governance;\newline Policy;\newline Object & F0 & current & governance/\allowbreak{}scalar & \cellcolor{green!18}G & planning lock & masters/\allowbreak{}cnna\_roadmap\_master.yaml & global scalar provenance policy;\newline later ExactQuadraticScalar schema and discriminant-instantiation bridge & \hyperlink{phase-row-1-1-1-1-0-13}{1.1.1.1.0.13}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG33}{\hyperlink{objproof:LEG33}{LEG33}} & Phase 5-10 bifurcation and dependency repair contract & Governance;\newline Policy;\newline Object & F1 & current & Planning/\allowbreak{}governance & \cellcolor{green!18}G & planning contract generated in YAML/\allowbreak{}PDF;\newline no Lean object & masters/\allowbreak{}cnna\_roadmap\_master.yaml & planning/\allowbreak{}generated views only & \hyperlink{phase-row-1-1-1-1-0-14}{1.1.1.1.0.14}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-O09}{\hyperlink{objproof:O09}{O09}} & Required exact quadratic operational scalar schema & Lean;\newline Target;\newline Object & F1 & current & operational scalar & \cellcolor{yellow!25}Y & planned & none yet;\newline candidate informed by Mathlib.Algebra.QuadraticAlgebra and future manifest & CNNA.PillarA.Foundation.ExactQuadraticScalar or a natural existing module if manifest proves semantic fit & \hyperlink{phase-row-1-2-1-2}{1.2.1.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-O10}{\hyperlink{objproof:O10}{O10}} & Proof-carrying discriminant-indexed quadratic scalar instance & Lean;\newline Target;\newline Object & F1 & current & operational scalar/\allowbreak{}arithmetic bridge & \cellcolor{yellow!25}Y & planned & none yet;\newline future module names require Phase 1.1.1.1.1 manifest & candidate discriminant-to-quadratic scalar instantiation profile/\allowbreak{}bridge adjacent to operational discriminant and exact quadratic schema & \hyperlink{phase-row-4-5-1}{4.5.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-BR13}{\hyperlink{objproof:BR13}{BR13}} & ExecComplex to exact-quadratic projection bridge & Lean;\newline Target;\newline Object & F1 & current & bridge & \cellcolor{yellow!25}Y & planned & none yet & candidate bridge API after scalar-layer pilot & \hyperlink{phase-row-4-0-3}{4.0.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-BR14}{\hyperlink{objproof:BR14}{BR14}} & Discriminant-source to exact-quadratic algebra instantiation bridge & Lean;\newline Target;\newline Object & F1 & current & bridge & \cellcolor{yellow!25}Y & planned & none yet & future scalar/\allowbreak{}discriminant bridge after module manifest & \hyperlink{phase-row-4-5-1}{4.5.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-CD9}{\hyperlink{objproof:CD9}{CD9}} & Cayley-Dickson C-layer noncircularity audit & Reference;\newline Gate;\newline Object & F1 & current & Cayley-Dickson/\allowbreak{}bridge & \cellcolor{black!18}K & planned & CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}CayleyDickson/\allowbreak{}ArithmeticCDBridge.lean & future BR/\allowbreak{}CD bridge only after BR08/\allowbreak{}CD8 & \hyperlink{phase-row-10-4-3}{10.4.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG34}{\hyperlink{objproof:LEG34}{LEG34}} & Phase-object-link policy contract & Governance;\newline Policy;\newline Object & F1 & current & LEG /\allowbreak{} planning infrastructure & \cellcolor{green!18}G & planned/\allowbreak{}documentation-generator infrastructure closed in v38;\newline no Lean code & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline generated phase table & phase object\_link\_policy fields;\newline generated phase-object-link-policy table;\newline validator rule in generate\_tables.py & \hyperlink{phase-row-1-1-1-1-0-15}{1.1.1.1.0.15}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG35}{\hyperlink{objproof:LEG35}{LEG35}} & Ontic subsystem-minimality contract & Governance;\newline Policy;\newline Object & F0 & current & LEG /\allowbreak{} global ontology and planning infrastructure & \cellcolor{green!18}G & planning/\allowbreak{}global-postulate infrastructure closed in v39;\newline no Lean code & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline tables/\allowbreak{}global\_postulates.tex;\newline global no-go table;\newline proof dossiers & global\_postulates.POST1;\newline LEG35 object dossier;\newline GNG22;\newline ontic subsystem-minimality workflow & \hyperlink{phase-row-1-1-1-1-0-16}{1.1.1.1.0.16}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-DBR0}{\hyperlink{objproof:DBR0}{DBR0}} & Database-ready CNNA review and documentation structure & Documentation;\newline Object & F3 & current & Main side objective /\allowbreak{} documentation-review infrastructure & \cellcolor{green!18}G & planning/\allowbreak{}tool infrastructure added in V1.07;\newline no Lean code & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline generated exports and PDF views & future database-ready schema/\allowbreak{}export layer;\newline optional Repository/\allowbreak{}scripts/\allowbreak{}db\_export\_*;\newline generated review/\allowbreak{}documentation views & \hyperlink{phase-row-20}{20}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-DBR1}{\hyperlink{objproof:DBR1}{DBR1}} & Expert-review and no-infallibility epistemic rule & Documentation;\newline Object & F1 & current & Global documentation/\allowbreak{}review governance & \cellcolor{green!18}G & planning/\allowbreak{}tool governance added in V1.07;\newline no Lean code & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline generated\_exports/\allowbreak{}global\_no\_go\_guardrails.generated.tsv;\newline generated PDF & global documentation maxim and review/\allowbreak{}audit ledger semantics & \hyperlink{phase-row-20-1}{20.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-DBR2}{\hyperlink{objproof:DBR2}{DBR2}} & Database-ready YAML schema and round-trip target & Tool;\newline Infrastructure;\newline Object & F1 & current & Future tool/\allowbreak{}database infrastructure & \cellcolor{black!18}K & future secondary tooling target;\newline no implementation yet & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline generated\_exports/\allowbreak{}*.tsv & future database schema/\allowbreak{}export scripts and round-trip validation reports & \hyperlink{phase-row-20-2}{20.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-DBR3}{\hyperlink{objproof:DBR3}{DBR3}} & Discipline-separated expert-review matrix & Documentation;\newline Object & F3 & current & Future review infrastructure & \cellcolor{black!18}K & future secondary review target;\newline no implementation yet & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline object\_proof\_dossiers section & future review\_matrix.generated.tsv/\allowbreak{}json/\allowbreak{}tex & \hyperlink{phase-row-20-3}{20.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-DBR4}{\hyperlink{objproof:DBR4}{DBR4}} & Blue/\allowbreak{}reference-theory audit ledger & Documentation;\newline Object & F3 & current & Future reference-theory audit infrastructure & \cellcolor{black!18}K & future audit target;\newline no implementation yet & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline generated\_exports/\allowbreak{}status\_legend.generated.tsv & future blue\_reference\_audit.generated.tsv/\allowbreak{}json/\allowbreak{}tex & \hyperlink{phase-row-20-4}{20.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-DBR5}{\hyperlink{objproof:DBR5}{DBR5}} & Interactive/\allowbreak{}online database-backed documentation views & Tool;\newline Infrastructure;\newline Object & F1 & current & Future interactive documentation infrastructure & \cellcolor{black!18}K & future interactive documentation target;\newline no implementation yet & generated\_exports/\allowbreak{}*.tsv;\newline figures/\allowbreak{}*.dot/\allowbreak{}pdf;\newline future DB/\allowbreak{}export scripts & future online/\allowbreak{}interactable review/\allowbreak{}documentation layer & \hyperlink{phase-row-20-5}{20.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-DBR6}{\hyperlink{objproof:DBR6}{DBR6}} & Context-filtered documentation slice generator & Generated;\newline Artifact;\newline Object & F3 & current & Generated-secondary documentation/\allowbreak{}review tooling & \cellcolor{green!18}G & implemented as V1.08 documentation generator;\newline no Lean code & scripts/\allowbreak{}generate\_context\_doc.py;\newline masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline context\_docs/\allowbreak{}dtn\_matrix/\allowbreak{}* sample output & python3 Repository/\allowbreak{}scripts/\allowbreak{}generate\_context\_doc.py "DtN Matrix" --profile dtn-matrix --slug dtn\_matrix & \hyperlink{phase-row-20-6}{20.6}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-DBR7}{\hyperlink{objproof:DBR7}{DBR7}} & Stats front section and tool-interface documentation layer & Generated;\newline Artifact;\newline Object & F3 & current & Generated-secondary documentation/\allowbreak{}review tooling & \cellcolor{green!18}G & implemented as V1.09 documentation generator/\allowbreak{}display update;\newline no Lean code & scripts/\allowbreak{}generate\_tables.py;\newline masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline tables/\allowbreak{}stats.tex;\newline generated\_exports/\allowbreak{}project\_stats.generated.tsv & python3 Repository/\allowbreak{}scripts/\allowbreak{}generate\_tables.py;\newline front PDF section Stats & \hyperlink{phase-row-20-7}{20.7}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG36}{\hyperlink{objproof:LEG36}{LEG36}} & Semantic module consolidation ledger & Governance;\newline Policy;\newline Object & F1 & current & Planning/\allowbreak{}API hygiene and refactor governance & \cellcolor{yellow!25}Y & active audit target;\newline no Lean source move yet & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline repo\_snapshot/\allowbreak{}CNNA/\allowbreak{}**/\allowbreak{}*.lean;\newline repo\_inventory/\allowbreak{}raw\_export/\allowbreak{}*.json;\newline generated\_exports/\allowbreak{}*.tsv;\newline SEMANTIC\_MODULE\_CONSOLIDATION\_AUDIT\_REPORT.md & planning master and future generated consolidation ledger;\newline possible later neutral Lean facades only after local build-proved migration & \hyperlink{phase-row-1-1-1-1-5}{1.1.1.1.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-DBR8}{\hyperlink{objproof:DBR8}{DBR8}} & Root artifact retention and cleanup policy & Generated;\newline Artifact;\newline Object & F3 & current & Generated-secondary documentation/\allowbreak{}review tooling & \cellcolor{green!18}G & implemented as V1.13 root cleanup tooling;\newline no Lean code & scripts/\allowbreak{}generate\_full\_document.py;\newline scripts/\allowbreak{}clean\_generated\_root\_artifacts.py;\newline README.md;\newline archive/\allowbreak{}reports/\allowbreak{};\newline masters/\allowbreak{}cnna\_roadmap\_master.yaml & python3 Repository/\allowbreak{}scripts/\allowbreak{}generate\_full\_document.py --compile;\newline python3 Repository/\allowbreak{}scripts/\allowbreak{}clean\_generated\_root\_artifacts.py --apply & \hyperlink{phase-row-20-8}{20.8}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-DBR9}{\hyperlink{objproof:DBR9}{DBR9}} & Current README and workflow-orientation manual & Generated;\newline Artifact;\newline Object & F3 & current & Generated-secondary documentation/\allowbreak{}review tooling & \cellcolor{green!18}G & implemented as V1.14 README/\allowbreak{}documentation update;\newline no Lean code & README.md;\newline masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline archive/\allowbreak{}reports/\allowbreak{}V1\_14\_README\_WORKFLOW\_ORIENTATION\_REPORT.md & README.md as root entry point;\newline command examples for scripts/\allowbreak{}generate\_tables.py, scripts/\allowbreak{}generate\_full\_document.py, scripts/\allowbreak{}generate\_context\_doc.py, scripts/\allowbreak{}build\_export\_script\_v1.8.py, scripts/\allowbreak{}clean\_generated\_root\_artifacts.py & \hyperlink{phase-row-20-9}{20.9}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-DBR10}{\hyperlink{objproof:DBR10}{DBR10}} & Root Lean/\allowbreak{}Lake project-control files & Generated;\newline Artifact;\newline Object & F3 & current & Build reproducibility and generated-secondary documentation/\allowbreak{}tooling & \cellcolor{green!18}G & implemented as V1.15 root build-entry/\allowbreak{}toolchain update;\newline no Lean source content changed inside repo\_snapshot/\allowbreak{}CNNA & CNNA.lean;\newline lakefile.lean;\newline lake-manifest.json;\newline lean-toolchain;\newline Repository/\allowbreak{}scripts/\allowbreak{}clean\_generated\_root\_artifacts.py;\newline README.md;\newline Repository/\allowbreak{}masters/\allowbreak{}cnna\_roadmap\_master.yaml & Run local Lean build from the package/\allowbreak{}project root with lake build;\newline Lake uses srcDir := "Repository/\allowbreak{}repo\_snapshot". & \hyperlink{phase-row-20-10}{20.10}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-DBR11}{\hyperlink{objproof:DBR11}{DBR11}} & Root license, single-root README, credits and assistant-requirement surface & Generated;\newline Artifact;\newline Object & F3 & current & Build reproducibility and generated-secondary documentation/\allowbreak{}tooling & \cellcolor{green!18}G & implemented as V1.17 documentation/\allowbreak{}license/\allowbreak{}build-surface update;\newline no Lean source content changed inside repo\_snapshot/\allowbreak{}CNNA & README.md;\newline LICENSE;\newline Repository/\allowbreak{}scripts/\allowbreak{}generate\_full\_document.py;\newline Repository/\allowbreak{}scripts/\allowbreak{}generate\_context\_doc.py;\newline Repository/\allowbreak{}scripts/\allowbreak{}generate\_tables.py;\newline Repository/\allowbreak{}scripts/\allowbreak{}clean\_generated\_root\_artifacts.py;\newline Repository/\allowbreak{}masters/\allowbreak{}cnna\_roadmap\_master.yaml & README.md and LICENSE in package root;\newline python3 Repository/\allowbreak{}scripts/\allowbreak{}generate\_full\_document.py --compile for PDF title/\allowbreak{}author credits;\newline no maintained README.md under Repository/\allowbreak{}. & \hyperlink{phase-row-20-11}{20.11}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-DBR12}{\hyperlink{objproof:DBR12}{DBR12}} & Generated PDF section-pagebreak layout invariant & Generated;\newline Artifact;\newline Object & F3 & current & Generated-secondary documentation/\allowbreak{}review tooling & \cellcolor{green!18}G & implemented as V1.18 PDF generator/\allowbreak{}layout update;\newline no Lean code & Repository/\allowbreak{}scripts/\allowbreak{}generate\_full\_document.py;\newline Repository/\allowbreak{}scripts/\allowbreak{}generate\_context\_doc.py;\newline Repository/\allowbreak{}masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline README.md;\newline Repository/\allowbreak{}archive/\allowbreak{}reports/\allowbreak{}V1\_18\_SECTION\_PAGEBREAKS\_REPORT.md & Full docs: python3 scripts/\allowbreak{}generate\_full\_document.py --compile. Context docs: python3 scripts/\allowbreak{}generate\_context\_doc.py "<topic>" --profile <profile> --slug <slug>. Both generators apply section pagebreaks automatically. & \hyperlink{phase-row-20-12}{20.12}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-DBR13}{\hyperlink{objproof:DBR13}{DBR13}} & Phase status release policy and red-lock ledger & Generated;\newline Artifact;\newline Object & F3 & current & Planning/\allowbreak{}governance and generated-secondary documentation/\allowbreak{}tooling & \cellcolor{green!18}G & implemented as V1.19 planning/\allowbreak{}governance and generator-validation update;\newline no Lean source content changed inside repo\_snapshot/\allowbreak{}CNNA & Repository/\allowbreak{}masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline Repository/\allowbreak{}scripts/\allowbreak{}generate\_tables.py;\newline README.md;\newline Repository/\allowbreak{}archive/\allowbreak{}reports/\allowbreak{}V1\_19\_PHASE\_STATUS\_RELEASE\_POLICY\_REPORT.md & python3 Repository/\allowbreak{}scripts/\allowbreak{}generate\_tables.py validates that no derivation phase remains white and that exactly one yellow phase is active. & \hyperlink{phase-row-20-13}{20.13}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-DBR14}{\hyperlink{objproof:DBR14}{DBR14}} & Static documentation explanations and module-change appendix policy & Generated;\newline Artifact;\newline Object & F3 & current & Generated-secondary documentation/\allowbreak{}review tooling & \cellcolor{green!18}G & implemented as V1.20 documentation generator/\allowbreak{}static prose update;\newline no Lean code & Repository/\allowbreak{}scripts/\allowbreak{}generate\_full\_document.py;\newline Repository/\allowbreak{}scripts/\allowbreak{}generate\_context\_doc.py;\newline Repository/\allowbreak{}scripts/\allowbreak{}generate\_tables.py;\newline Repository/\allowbreak{}masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline README.md;\newline Repository/\allowbreak{}archive/\allowbreak{}reports/\allowbreak{}V1\_20\_DOC\_SECTION\_EXPLANATIONS\_AND\_MODULE\_MANIFEST\_APPENDIX\_REPORT.md & Full docs and context docs generated by existing scripts;\newline module-change manifest appears as technical appendix after the primary phase/\allowbreak{}scratchpad sections. & \hyperlink{phase-row-20-14}{20.14}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG37}{\hyperlink{objproof:LEG37}{LEG37}} & Current source intake completeness ledger & Governance;\newline Policy;\newline Object & F1 & current & Planning/\allowbreak{}API hygiene and pre-code source audit & \cellcolor{yellow!25}Y & active audit target;\newline no Lean source move yet & repo\_inventory/\allowbreak{}raw\_export/\allowbreak{}*.json;\newline generated\_exports/\allowbreak{}*consumption*.tsv;\newline masters/\allowbreak{}cnna\_roadmap\_master.yaml & masters/\allowbreak{}cnna\_roadmap\_master.yaml plus future generated source-intake ledger/\allowbreak{}export & \hyperlink{phase-row-1-1-1-1-5-1}{1.1.1.1.5.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG38}{\hyperlink{objproof:LEG38}{LEG38}} & Neutral module-name and facade migration map & Governance;\newline Policy;\newline Object & F1 & current & Planning/\allowbreak{}API hygiene and compatibility-preserving refactor design & \cellcolor{yellow!25}Y & planned after LEG37;\newline no Lean move yet & repo\_snapshot/\allowbreak{}CNNA/\allowbreak{}**/\allowbreak{}*.lean;\newline masters/\allowbreak{}cnna\_roadmap\_master.yaml & future neutral module/\allowbreak{}facade map generated from YAML;\newline old modules retained until build-proven migration & \hyperlink{phase-row-1-1-1-1-5-2}{1.1.1.1.5.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG39}{\hyperlink{objproof:LEG39}{LEG39}} & Neutral refactor execution certificate & Governance;\newline Policy;\newline Object & F1 & current & Build reproducibility and compatibility-preserving refactor governance & \cellcolor{yellow!25}Y & planned after LEG38;\newline requires local build evidence when executed & future modified Lean modules authorized by LEG38 & post-refactor root/\allowbreak{}import surface with compatibility facades & \hyperlink{phase-row-1-1-1-1-5-3}{1.1.1.1.5.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG40}{\hyperlink{objproof:LEG40}{LEG40}} & Post-refactor inventory closure certificate & Governance;\newline Policy;\newline Object & F1 & current & Generated inventory and object/\allowbreak{}proof-dossier reclassification & \cellcolor{yellow!25}Y & planned after LEG39;\newline no current Lean move & repo\_inventory/\allowbreak{}raw\_export/\allowbreak{}*.json after refactor;\newline generated\_exports/\allowbreak{}*.tsv & fresh post-refactor source truth map & \hyperlink{phase-row-1-1-1-1-5-4}{1.1.1.1.5.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-LEG41}{\hyperlink{objproof:LEG41}{LEG41}} & Pre-substantive-code release certificate & Governance;\newline Policy;\newline Object & F1 & current & Release governance before new Lean content & \cellcolor{yellow!25}Y & planned final gate before 1.1.1.2 may become active & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline generated\_exports/\allowbreak{}pre\_implementation\_phase\_check\_results.generated.tsv & release proof for 1.1.1.2 or upstream red blockers & \hyperlink{phase-row-1-1-1-1-5-5}{1.1.1.1.5.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-DBR15}{\hyperlink{objproof:DBR15}{DBR15}} & provider-neutral SQL database mirror feasibility and schema design & Database;\newline Mirror;\newline Object & F1 & current & Generated-secondary database/\allowbreak{}web publication tooling & \cellcolor{white}W & planned DB/\allowbreak{}tooling object;\newline no implementation script or live DB connection yet & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline generated\_exports/\allowbreak{}*.tsv;\newline future DB migration/\allowbreak{}import/\allowbreak{}frontend artifacts & Future provider-neutral SQL database schemas internal.*, api.*, review.*, admin/\allowbreak{}import.* plus YAML/\allowbreak{}export importer and read-only web frontend contract. & \hyperlink{phase-row-20-15}{20.15}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-DBR16}{\hyperlink{objproof:DBR16}{DBR16}} & YAML/\allowbreak{}exports to SQL import and roundtrip contract & Database;\newline Mirror;\newline Object & F1 & current & Generated-secondary database/\allowbreak{}web publication tooling & \cellcolor{white}W & planned DB/\allowbreak{}tooling object;\newline no implementation script or live DB connection yet & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline generated\_exports/\allowbreak{}*.tsv;\newline future DB migration/\allowbreak{}import/\allowbreak{}frontend artifacts & Future provider-neutral SQL database schemas internal.*, api.*, review.*, admin/\allowbreak{}import.* plus YAML/\allowbreak{}export importer and read-only web frontend contract. & \hyperlink{phase-row-20-16}{20.16}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-DBR17}{\hyperlink{objproof:DBR17}{DBR17}} & Append-only snapshot and checksum model & Database;\newline Mirror;\newline Object & F1 & current & Generated-secondary database/\allowbreak{}web publication tooling & \cellcolor{white}W & planned DB/\allowbreak{}tooling object;\newline no implementation script or live DB connection yet & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline generated\_exports/\allowbreak{}*.tsv;\newline future DB migration/\allowbreak{}import/\allowbreak{}frontend artifacts & Future provider-neutral SQL database schemas internal.*, api.*, review.*, admin/\allowbreak{}import.* plus YAML/\allowbreak{}export importer and read-only web frontend contract. & \hyperlink{phase-row-20-17}{20.17}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-DBR18}{\hyperlink{objproof:DBR18}{DBR18}} & Public read-only API views and read-only access policies & Database;\newline Mirror;\newline Object & F1 & current & Generated-secondary database/\allowbreak{}web publication tooling & \cellcolor{white}W & planned DB/\allowbreak{}tooling object;\newline no implementation script or live DB connection yet & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline generated\_exports/\allowbreak{}*.tsv;\newline future DB migration/\allowbreak{}import/\allowbreak{}frontend artifacts & Future provider-neutral SQL database schemas internal.*, api.*, review.*, admin/\allowbreak{}import.* plus YAML/\allowbreak{}export importer and read-only web frontend contract. & \hyperlink{phase-row-20-18}{20.18}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-DBR19}{\hyperlink{objproof:DBR19}{DBR19}} & cnna-project.net web-frontend data contract & Database;\newline Mirror;\newline Object & F1 & current & Generated-secondary database/\allowbreak{}web publication tooling & \cellcolor{white}W & planned DB/\allowbreak{}tooling object;\newline no implementation script or live DB connection yet & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline generated\_exports/\allowbreak{}*.tsv;\newline future DB migration/\allowbreak{}import/\allowbreak{}frontend artifacts & Future provider-neutral SQL database schemas internal.*, api.*, review.*, admin/\allowbreak{}import.* plus YAML/\allowbreak{}export importer and read-only web frontend contract. & \hyperlink{phase-row-20-19}{20.19}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-DBR20}{\hyperlink{objproof:DBR20}{DBR20}} & Reviewer annotation and future admin-write model & Database;\newline Mirror;\newline Object & F1 & current & Generated-secondary database/\allowbreak{}web publication tooling & \cellcolor{white}W & planned DB/\allowbreak{}tooling object;\newline no implementation script or live DB connection yet & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline generated\_exports/\allowbreak{}*.tsv;\newline future DB migration/\allowbreak{}import/\allowbreak{}frontend artifacts & Future provider-neutral SQL database schemas internal.*, api.*, review.*, admin/\allowbreak{}import.* plus YAML/\allowbreak{}export importer and read-only web frontend contract. & \hyperlink{phase-row-20-20}{20.20}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-DBR21}{\hyperlink{objproof:DBR21}{DBR21}} & Enlarged generated-PDF typography profile & Generated;\newline Artifact;\newline Object & F3 & current & Generated-secondary documentation/\allowbreak{}review tooling & \cellcolor{green!18}G & implemented as V1.23 PDF typography generator update;\newline no Lean code & Repository/\allowbreak{}scripts/\allowbreak{}generate\_full\_document.py;\newline Repository/\allowbreak{}scripts/\allowbreak{}generate\_context\_doc.py;\newline Repository/\allowbreak{}scripts/\allowbreak{}generate\_tables.py;\newline Repository/\allowbreak{}scripts/\allowbreak{}build\_export\_script\_v1.8.py;\newline README.md;\newline Repository/\allowbreak{}masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline Repository/\allowbreak{}archive/\allowbreak{}reports/\allowbreak{}V1\_23\_PDF\_FONT\_SCALE\_REPORT.md & Full docs: python3 scripts/\allowbreak{}generate\_full\_document.py --compile. Context docs: python3 scripts/\allowbreak{}generate\_context\_doc.py "<topic>" --profile <profile> --slug <slug>. Both use the enlarged typography profile automatically. & \hyperlink{phase-row-20-21}{20.21}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-GA0}{\hyperlink{objproof:GA0}{GA0}} & Horn quaternion/\allowbreak{}geometric-algebra reference-gate packet & Reference;\newline Gate;\newline Object & F2 & current & External reference/\allowbreak{}comparison gate & \cellcolor{black!18}K & planned comparison/\allowbreak{}reference target;\newline no Lean module yet & No current Lean module;\newline masters/\allowbreak{}cnna\_roadmap\_master.yaml scratchpad/\allowbreak{}source-crosscheck only. & future CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}ReferenceGates/\allowbreak{}QuaternionGAGate.lean if released & \hyperlink{phase-row-1-4-9}{1.4.9}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-GA1}{\hyperlink{objproof:GA1}{GA1}} & Hamilton unit and Pauli/\allowbreak{}Cartan sign-convention comparison profile & Reference;\newline Gate;\newline Object & F2 & current & Cayley-Dickson/\allowbreak{}quaternion reference & \cellcolor{black!18}K & planned comparison/\allowbreak{}reference target;\newline no Lean module yet & Future comparison may inspect CNNA/\allowbreak{}PillarA/\allowbreak{}Structural/\allowbreak{}CayleyDickson/\allowbreak{}*.lean after neutral reintegration. & future QuaternionUnitComparisonProfile API under Structural/\allowbreak{}CayleyDickson/\allowbreak{}ReferenceGates & \hyperlink{phase-row-1-4-9-1}{1.4.9.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-GA2}{\hyperlink{objproof:GA2}{GA2}} & Pauli bivector/\allowbreak{}pseudoscalar duality comparison profile & Reference;\newline Gate;\newline Object & F2 & current & Cayley-Dickson/\allowbreak{}Clifford reference & \cellcolor{black!18}K & planned comparison/\allowbreak{}reference target;\newline no Lean module yet & No current Lean module;\newline future reference-gate only. & future CliffordDualityComparisonProfile API under Structural/\allowbreak{}CayleyDickson/\allowbreak{}ReferenceGates & \hyperlink{phase-row-1-4-9-2}{1.4.9.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-GA3}{\hyperlink{objproof:GA3}{GA3}} & Complex-quaternion eight-basis multivector comparison profile & Reference;\newline Gate;\newline Object & F2 & current & Biquaternion/\allowbreak{}geometric-algebra reference & \cellcolor{black!18}K & planned comparison/\allowbreak{}reference target;\newline no Lean module yet & Could later relate to 10.4.3 CD9 only after noncircular C-layer audit. & future BiquaternionMultivectorComparisonProfile API under ReferenceGates or bridge audit docs & \hyperlink{phase-row-1-4-9-2}{1.4.9.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-GA4}{\hyperlink{objproof:GA4}{GA4}} & Boundary Pauli/\allowbreak{}Clifford comparison gate & Reference;\newline Gate;\newline Object & F2 & current & Pillar B boundary algebra reference & \cellcolor{black!18}K & planned comparison/\allowbreak{}reference target;\newline no Lean module yet & PillarB empty;\newline future CNNA/\allowbreak{}PillarB/\allowbreak{}QFT/\allowbreak{}BoundaryStarAlgebra.lean consumer output. & future CNNA/\allowbreak{}PillarB/\allowbreak{}QFT/\allowbreak{}CliffordComparisonGate.lean & \hyperlink{phase-row-13-2-1}{13.2.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-GA5}{\hyperlink{objproof:GA5}{GA5}} & Dirac/\allowbreak{}spacetime-algebra comparison target gate & Reference;\newline Gate;\newline Object & F2 & current & Pillar B AQFT/\allowbreak{}STA reference & \cellcolor{black!18}K & planned comparison/\allowbreak{}reference target;\newline no Lean module yet & PillarB empty;\newline no current STA/\allowbreak{}Dirac module. & future CNNA/\allowbreak{}PillarB/\allowbreak{}AQFT/\allowbreak{}SpacetimeAlgebraComparisonGate.lean & \hyperlink{phase-row-13-6-1}{13.6.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-GA6}{\hyperlink{objproof:GA6}{GA6}} & Geometric and conformal algebra side-comparison register & Reference;\newline Gate;\newline Object & F2 & current & Side comparison/\allowbreak{}reference theory & \cellcolor{black!18}K & planned comparison/\allowbreak{}reference target;\newline no Lean module yet & No current Lean module. & future CNNA/\allowbreak{}Comparisons/\allowbreak{}GeometricAlgebra.lean or generated comparison ledger & \hyperlink{phase-row-18-5}{18.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-DBR27}{\hyperlink{objproof:DBR27}{DBR27}} & Phase/\allowbreak{}Object context-class taxonomy & Tool;\newline Infrastructure;\newline Object & F3 & current & Generated-secondary planning schema and OOP-style classification boundary & \cellcolor{green!18}G & implemented in V1.26 generated planning/\allowbreak{}tooling schema;\newline no Lean source changed & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline scripts/\allowbreak{}generate\_full\_document.py;\newline generated\_exports/\allowbreak{}phase\_roadmap.generated.tsv;\newline generated\_exports/\allowbreak{}object\_register.generated.tsv & Context class field on every phase/\allowbreak{}object row plus context\_class\_taxonomy generated table;\newline future database mirror schema should mirror it as phase\_context\_class/\allowbreak{}object\_context\_class. & \hyperlink{phase-row-20-27}{20.27}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-CEX0}{\hyperlink{objproof:CEX0}{CEX0}} & Explorer-readiness audit ledger & Lean;\newline Refactor;\newline Object & F1 & current & Explorer schema/\allowbreak{}refactor/\allowbreak{}source-intake audit & \cellcolor{yellow!25}Y & planned after active refactor/\allowbreak{}source-intake chain;\newline no Lean source move yet & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline repo\_inventory/\allowbreak{}raw\_export/\allowbreak{}*.json;\newline generated\_exports/\allowbreak{}*.tsv & Explorer readiness report and normalized source-intake/\allowbreak{}refactor/\allowbreak{}schema-audit ledger & \hyperlink{phase-row-21-0}{21.0}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-CEX1}{\hyperlink{objproof:CEX1}{CEX1}} & Explorer semantic graph schema & Tool;\newline Infrastructure;\newline Object & F1 & current & Explorer graph schema & \cellcolor{white}W & planned schema object;\newline no implementation yet & future Repository/\allowbreak{}explorer/\allowbreak{}schema/\allowbreak{}* & graph schema contract and edge taxonomy & \hyperlink{phase-row-21-1}{21.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-CEX2}{\hyperlink{objproof:CEX2}{CEX2}} & YAML2SQL/\allowbreak{}MySQL mirror contract & Database;\newline Mirror;\newline Object & F1 & current & Explorer SQL mirror/\allowbreak{}import tooling & \cellcolor{white}W & planned database/\allowbreak{}import object;\newline no live DB connection yet & future Repository/\allowbreak{}explorer/\allowbreak{}yaml2sql/\allowbreak{}* & MySQL-compatible DDL/\allowbreak{}import script/\allowbreak{}dry-run report with commit\_sha, lean\_toolchain, yaml\_hash, inventory\_hash and artifact\_hash fields & \hyperlink{phase-row-21-2}{21.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-CEX3}{\hyperlink{objproof:CEX3}{CEX3}} & Explorer read-only API/\allowbreak{}query projection contract & Database;\newline Mirror;\newline Object & F1 & current & Explorer API/\allowbreak{}public-view tooling & \cellcolor{white}W & planned API/\allowbreak{}view object;\newline no deployment yet & future Repository/\allowbreak{}explorer/\allowbreak{}api\_contract/\allowbreak{}* & api.* views and query projection contract & \hyperlink{phase-row-21-3}{21.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-CEX4}{\hyperlink{objproof:CEX4}{CEX4}} & Dark Pillar-hub star-map UI shell & Tool;\newline Infrastructure;\newline Object & F1 & current & Explorer frontend surface & \cellcolor{white}W & planned frontend UI object;\newline no code yet & future Repository/\allowbreak{}explorer/\allowbreak{}frontend/\allowbreak{}* & UI shell/\allowbreak{}prototype contract & \hyperlink{phase-row-21-4}{21.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-CEX5}{\hyperlink{objproof:CEX5}{CEX5}} & Inspector/\allowbreak{}menu/\allowbreak{}i18n explanation contract & Tool;\newline Infrastructure;\newline Object & F1 & current & Explorer frontend/\allowbreak{}content surface & \cellcolor{white}W & planned frontend/\allowbreak{}content object;\newline no code yet & future Repository/\allowbreak{}explorer/\allowbreak{}frontend/\allowbreak{}*;\newline future localized\_text schema & inspector cards and localized explanatory surfaces & \hyperlink{phase-row-21-5}{21.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-CEX6}{\hyperlink{objproof:CEX6}{CEX6}} & Explorer filter and projection engine & Tool;\newline Infrastructure;\newline Object & F1 & current & Explorer query/\allowbreak{}UI control surface & \cellcolor{white}W & planned frontend/\allowbreak{}query object;\newline no code yet & future Repository/\allowbreak{}explorer/\allowbreak{}frontend/\allowbreak{}* & filter/\allowbreak{}projection engine contract & \hyperlink{phase-row-21-6}{21.6}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-CEX7}{\hyperlink{objproof:CEX7}{CEX7}} & History and hypothesis lifecycle layer & Tool;\newline Infrastructure;\newline Object & F1 & current & Explorer research/\allowbreak{}audit surface & \cellcolor{white}W & planned history/\allowbreak{}research object;\newline no code yet & future Repository/\allowbreak{}explorer/\allowbreak{}history/\allowbreak{}* & history/\allowbreak{}hypothesis lifecycle schema & \hyperlink{phase-row-21-7}{21.7}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-CEX8}{\hyperlink{objproof:CEX8}{CEX8}} & Explorer lab-boundary contract & Tool;\newline Infrastructure;\newline Object & F1 & current & Explorer future lab/\allowbreak{}simulation boundary & \cellcolor{white}W & planned lab-boundary object;\newline no simulation yet & future Repository/\allowbreak{}explorer/\allowbreak{}labs/\allowbreak{}* & lab readiness/\allowbreak{}source-provenance schema & \hyperlink{phase-row-21-8}{21.8}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-CEX9}{\hyperlink{objproof:CEX9}{CEX9}} & CNNA Explorer deployment and Universe Explorer roadmap & Generated;\newline Artifact;\newline Object & F1 & current & Explorer release/\allowbreak{}deployment surface & \cellcolor{white}W & planned deployment/\allowbreak{}release object;\newline no public deployment yet & future Repository/\allowbreak{}explorer/\allowbreak{}*;\newline future .github/\allowbreak{}workflows/\allowbreak{}*;\newline future public host/\allowbreak{}importer;\newline generated release manifests & deployment checklist, backup/\allowbreak{}rollback manifest and Universe Explorer backlog & \hyperlink{phase-row-21-9}{21.9}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-CEX10}{\hyperlink{objproof:CEX10}{CEX10}} & Object lifecycle and historical provenance ledger & Lifecycle;\newline Governance;\newline Object & F1 & current & Explorer/\allowbreak{}schema/\allowbreak{}governance object lifecycle & \cellcolor{yellow!25}Y & planning/\allowbreak{}tooling schema prepared;\newline generator renders lifecycle fields in object register/\allowbreak{}proofbook;\newline no Lean source changed & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline generated\_exports/\allowbreak{}object\_register.generated.tsv & Object lifecycle register columns and later Explorer node/\allowbreak{}edge lifecycle API & \hyperlink{phase-row-21-0}{21.0}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-CEX11}{\hyperlink{objproof:CEX11}{CEX11}} & Total Lean declaration classification ledger & Lean;\newline Governance;\newline Object & F1 & current & Explorer/\allowbreak{}schema/\allowbreak{}source-intake Lean declaration taxonomy & \cellcolor{yellow!25}Y & planning/\allowbreak{}tooling schema prepared;\newline total-classification taxonomy added;\newline no full 8860-declaration classification generated yet;\newline no Lean source changed & masters/\allowbreak{}cnna\_roadmap\_master.yaml;\newline scripts/\allowbreak{}generate\_tables.py;\newline generated\_exports/\allowbreak{}declaration\_consumption\_records.generated.tsv;\newline future total\_declaration\_classification.generated.tsv & Total Lean declaration classification ledger and later Explorer declaration-node API & \hyperlink{phase-row-21-0}{21.0}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-CEX12}{\hyperlink{objproof:CEX12}{CEX12}} & GitHub repository automation and backup-gated PR contract & Tool;\newline Infrastructure;\newline Object & F1 & current & Explorer automation /\allowbreak{} repository safety & \cellcolor{white}W & planned GitHub workflow/\allowbreak{}governance object;\newline no code yet & future .github/\allowbreak{}workflows/\allowbreak{}*;\newline future branch/\allowbreak{}tag policy;\newline masters/\allowbreak{}cnna\_roadmap\_master.yaml & Git backup/\allowbreak{}branch/\allowbreak{}PR automation contract & \hyperlink{phase-row-21-2-1}{21.2.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-CEX13}{\hyperlink{objproof:CEX13}{CEX13}} & GitHub Actions Lean-build and snapshot-artifact pipeline & Tool;\newline Infrastructure;\newline Object & F1 & current & Explorer automation /\allowbreak{} CI artifact bridge & \cellcolor{white}W & planned GitHub Actions artifact object;\newline no code yet & future .github/\allowbreak{}workflows/\allowbreak{}cnna-ci.yml;\newline future Repository/\allowbreak{}scripts/\allowbreak{}ci/\allowbreak{}*;\newline existing generation scripts & CI workflow and snapshot\_manifest.json contract & \hyperlink{phase-row-21-2-2}{21.2.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-CEX14}{\hyperlink{objproof:CEX14}{CEX14}} & Webhosting-local MySQL staging import, read-only swap and rollback contract & Database;\newline Mirror;\newline Object & F1 & current & Explorer database mirror /\allowbreak{} Webhosting deployment & \cellcolor{white}W & planned Webhosting/\allowbreak{}MySQL importer object;\newline no code yet & future Webhosting importer script;\newline future SQL migrations;\newline future Repository/\allowbreak{}explorer/\allowbreak{}yaml2sql/\allowbreak{}*;\newline future deployment manifest & staging/\allowbreak{}current SQL importer and rollback contract & \hyperlink{phase-row-21-2-3}{21.2.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-CEX15}{\hyperlink{objproof:CEX15}{CEX15}} & CI build-result phase-state controller and automatic repair-phase generator & Tool;\newline Infrastructure;\newline Object & F1 & current & Explorer automation /\allowbreak{} phase governance /\allowbreak{} CI feedback & \cellcolor{white}W & planned CI phase-state controller;\newline no code yet & future .github/\allowbreak{}workflows/\allowbreak{}cnna-phase-controller.yml;\newline future Repository/\allowbreak{}scripts/\allowbreak{}ci/\allowbreak{}phase\_state\_controller.*;\newline masters/\allowbreak{}cnna\_roadmap\_master.yaml & phase\_state\_transition\_manifest.json plus red\_failure\_snapshot.json plus generated YAML patch/\allowbreak{}PR for red repair phase or green closeout/\allowbreak{}cursor advance & \hyperlink{phase-row-21-2-4}{21.2.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-CEX16}{\hyperlink{objproof:CEX16}{CEX16}} & Red-build failure visibility snapshot and repair-phase publication channel & Database;\newline Mirror;\newline Object & F1 & current & Explorer automation /\allowbreak{} CI failure history /\allowbreak{} read-only publication & \cellcolor{white}W & planned CI/\allowbreak{}Webhosting/\allowbreak{}Explorer failure-history object;\newline no code yet & future Repository/\allowbreak{}scripts/\allowbreak{}ci/\allowbreak{}red\_failure\_snapshot.*;\newline future Repository/\allowbreak{}explorer/\allowbreak{}api/\allowbreak{}build\_history.*;\newline future MySQL history tables/\allowbreak{}views;\newline masters/\allowbreak{}cnna\_roadmap\_master.yaml & red\_failure\_snapshot.json plus ci\_failure\_history read-only API/\allowbreak{}view and repair\_phase\_link relation & \hyperlink{phase-row-21-2-5}{21.2.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-B07}{\hyperlink{objproof:B07}{B07}} & Complement-net modular B core chain & Lean;\newline Target;\newline Object & F0 & current & Pillar B /\allowbreak{} AQFT modular core & \cellcolor{red!20}R & planned from roadmap;\newline no current neutral Lean implementation claimed & roadmap section Kettenblatt des modularen B-Kerns;\newline phases 13.3-13.6 & CNNA/\allowbreak{}PillarB/\allowbreak{}AQFT/\allowbreak{}ComplementModularCore.lean & \hyperlink{phase-row-13-8}{13.8}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-B08}{\hyperlink{objproof:B08}{B08}} & Nuclearity/\allowbreak{}DHR/\allowbreak{}DR reconstruction bridge & Lean;\newline Target;\newline Object & F0 & current & Pillar B /\allowbreak{} early E reconstruction & \cellcolor{red!20}R & planned from roadmap;\newline DHR/\allowbreak{}DR not yet Lean-derived in current plan & roadmap sections Spät-B-/\allowbreak{}Früh-E-Ergänzung and E Vorzone & CNNA/\allowbreak{}AQFT/\allowbreak{}NuclearitySeed.lean;\newline DHRSectorsSeed.lean;\newline FieldAlgebraReconstructionSeed.lean & \hyperlink{phase-row-13-9}{13.9}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-PC00}{\hyperlink{objproof:PC00}{PC00}} & ParameterClosure chain & Lean;\newline Target;\newline Object & F0 & current & Pillar C-D closure & \cellcolor{red!20}R & planned from roadmap;\newline no Lean closure claim yet & roadmap Parameter-Closure chain sheet;\newline phases 14/\allowbreak{}15/\allowbreak{}17 & CNNA/\allowbreak{}PillarC/\allowbreak{}ParameterClosure;\newline CNNA/\allowbreak{}Gates/\allowbreak{}ParameterClosure.lean & \hyperlink{phase-row-15-5}{15.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-D04}{\hyperlink{objproof:D04}{D04}} & LCQFT/\allowbreak{}Hadamard/\allowbreak{}Wick D gate chain & Lean;\newline Target;\newline Object & F0 & current & Pillar D /\allowbreak{} local covariance & \cellcolor{red!20}R & planned from roadmap;\newline no neutral Lean D module closure claimed & roadmap Minimaler D-Dateibaum;\newline phases 15.1-15.6 & CNNA/\allowbreak{}PillarD/\allowbreak{}DerivedSpacetime.lean;\newline LocalCovariance.lean;\newline HadamardStateSeed.lean & \hyperlink{phase-row-15-6}{15.6}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-DE00}{\hyperlink{objproof:DE00}{DE00}} & D/\allowbreak{}E bridge gate chain & Lean;\newline Target;\newline Object & F0 & current & Pillar D-E bridge & \cellcolor{red!20}R & planned from roadmap;\newline not yet Lean-derived & roadmap Kettenblatt der D/\allowbreak{}E-Brücke;\newline phases 15.6 and 16.5 & CNNA/\allowbreak{}Gates/\allowbreak{}CPT.lean;\newline CNNA/\allowbreak{}Gates/\allowbreak{}Statistics.lean;\newline CNNA/\allowbreak{}Gates/\allowbreak{}Kramers.lean & \hyperlink{phase-row-16-5}{16.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-E04}{\hyperlink{objproof:E04}{E04}} & Feynman matter audit gate & Lean;\newline Target;\newline Object & F0 & current & Pillar E /\allowbreak{} matter audit & \cellcolor{red!20}R & planned from roadmap;\newline current time-reversal modules are not matter derivations & roadmap Feynman-Audit für Matter;\newline phases 16.5 & CNNA/\allowbreak{}PillarE/\allowbreak{}MatterAuditFeynmanGate.lean & \hyperlink{phase-row-16-5}{16.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-E05}{\hyperlink{objproof:E05}{E05}} & Particle/\allowbreak{}scattering/\allowbreak{}IR horizon window & Reference;\newline Gate;\newline Object & F1 & current & Pillar E /\allowbreak{} late phenomenology & \cellcolor{black!18}K & future/\allowbreak{}reference horizon;\newline no current Lean implementation claimed & roadmap Späte Horizontschicht für Teilchen-, Scattering- und IR-Physik & CNNA/\allowbreak{}AQFT/\allowbreak{}ParticleInterpretationWindow.lean;\newline InfraredChargeClassSeed.lean & \hyperlink{phase-row-16-6}{16.6}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-RDV0}{\hyperlink{objproof:RDV0}{RDV0}} & Original roadmap source/\allowbreak{}definition/\allowbreak{}notation audit ledger & Documentation;\newline Object & F1 & current & Roadmap integration & \cellcolor{black!18}K & planned governance ledger & uploaded roadmap TeX;\newline current YAML & Repository/\allowbreak{}archive/\allowbreak{}source\_materials/\allowbreak{}CNNA\_Roadmap\_v0605\_revised\_v38\_reviewfix\_umlaute.tex;\newline generated external-source cross-check & \hyperlink{phase-row-22-0}{22.0}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-RDV1}{\hyperlink{objproof:RDV1}{RDV1}} & Roadmap migration disposition ledger & Governance;\newline Policy;\newline Object & F1 & current & Roadmap integration & \cellcolor{black!18}K & planned governance ledger & roadmap migration law & Repository/\allowbreak{}archive/\allowbreak{}source\_materials/\allowbreak{}CNNA\_Roadmap\_v0605\_revised\_v38\_reviewfix\_umlaute.tex & \hyperlink{phase-row-22-1}{22.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-RDV2}{\hyperlink{objproof:RDV2}{RDV2}} & Roadmap de-seeding/\allowbreak{}regression/\allowbreak{}rollback workflow ledger & Governance;\newline Policy;\newline Object & F1 & current & Roadmap integration & \cellcolor{black!18}K & planned governance ledger & roadmap de-seeding/\allowbreak{}regression/\allowbreak{}naming/\allowbreak{}rollback rules & Repository/\allowbreak{}archive/\allowbreak{}source\_materials/\allowbreak{}CNNA\_Roadmap\_v0605\_revised\_v38\_reviewfix\_umlaute.tex & \hyperlink{phase-row-22-2}{22.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-RDV3}{\hyperlink{objproof:RDV3}{RDV3}} & Roadmap modular B gate-sheet ledger & Reference;\newline Gate;\newline Object & F1 & current & Roadmap integration & \cellcolor{black!18}K & planned reference ledger & roadmap modular B chain and gates & Repository/\allowbreak{}archive/\allowbreak{}source\_materials/\allowbreak{}CNNA\_Roadmap\_v0605\_revised\_v38\_reviewfix\_umlaute.tex & \hyperlink{phase-row-22-3}{22.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-RDV4}{\hyperlink{objproof:RDV4}{RDV4}} & Roadmap ParameterClosure gate-sheet ledger & Reference;\newline Gate;\newline Object & F1 & current & Roadmap integration & \cellcolor{black!18}K & planned reference ledger & roadmap ParameterClosure chain & Repository/\allowbreak{}archive/\allowbreak{}source\_materials/\allowbreak{}CNNA\_Roadmap\_v0605\_revised\_v38\_reviewfix\_umlaute.tex & \hyperlink{phase-row-22-4}{22.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-RDV5}{\hyperlink{objproof:RDV5}{RDV5}} & Roadmap D/\allowbreak{}E bridge and local-covariance gate-sheet ledger & Reference;\newline Gate;\newline Object & F1 & current & Roadmap integration & \cellcolor{black!18}K & planned reference ledger & roadmap D/\allowbreak{}E bridge and D tree & Repository/\allowbreak{}archive/\allowbreak{}source\_materials/\allowbreak{}CNNA\_Roadmap\_v0605\_revised\_v38\_reviewfix\_umlaute.tex & \hyperlink{phase-row-22-5}{22.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-RDV6}{\hyperlink{objproof:RDV6}{RDV6}} & Roadmap Feynman/\allowbreak{}scattering/\allowbreak{}IR audit ledger & Reference;\newline Gate;\newline Object & F1 & current & Roadmap integration & \cellcolor{black!18}K & planned reference ledger & roadmap Feynman audit and scattering/\allowbreak{}IR horizon & Repository/\allowbreak{}archive/\allowbreak{}source\_materials/\allowbreak{}CNNA\_Roadmap\_v0605\_revised\_v38\_reviewfix\_umlaute.tex & \hyperlink{phase-row-22-6}{22.6}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-RLC0}{\hyperlink{objproof:RLC0}{RLC0}} & REALOQS v0.0605 legacy source inventory ledger & Legacy;\newline Code;\newline Reference;\newline Object & F1 & current & REALOQS legacy-code migration/\allowbreak{}reference layer & \cellcolor{black!18}K & legacy-reference/\allowbreak{}migration ledger;\newline not a CNNA Lean theorem/\allowbreak{}object & archived REALOQS v0.0605 source zip;\newline V1.35 REALOQS scan JSON and module TSV reports & Future neutral CNNA PillarB/\allowbreak{}AQFT modules only after A->B handoff contracts and total declaration classification close. & \hyperlink{phase-row-23-0}{23.0}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-RLC1}{\hyperlink{objproof:RLC1}{RLC1}} & REALOQS AQFT foundation migration-disposition ledger & Legacy;\newline Code;\newline Reference;\newline Object & F1 & current & REALOQS legacy-code migration/\allowbreak{}reference layer & \cellcolor{red!20}R & legacy-reference/\allowbreak{}migration ledger;\newline not a CNNA Lean theorem/\allowbreak{}object & archived REALOQS v0.0605 source zip;\newline V1.35 REALOQS scan JSON and module TSV reports & Future neutral CNNA PillarB/\allowbreak{}AQFT modules only after A->B handoff contracts and total declaration classification close. & \hyperlink{phase-row-23-1}{23.1}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-RLC2}{\hyperlink{objproof:RLC2}{RLC2}} & REALOQS-to-CNNA A->B handoff compatibility ledger & Legacy;\newline Code;\newline Reference;\newline Object & F1 & current & REALOQS legacy-code migration/\allowbreak{}reference layer & \cellcolor{red!20}R & legacy-reference/\allowbreak{}migration ledger;\newline not a CNNA Lean theorem/\allowbreak{}object & archived REALOQS v0.0605 source zip;\newline V1.35 REALOQS scan JSON and module TSV reports & Future neutral CNNA PillarB/\allowbreak{}AQFT modules only after A->B handoff contracts and total declaration classification close. & \hyperlink{phase-row-23-2}{23.2}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-RLC3}{\hyperlink{objproof:RLC3}{RLC3}} & REALOQS boundary-matrix AQFT rewrite ledger & Legacy;\newline Code;\newline Reference;\newline Object & F1 & current & REALOQS legacy-code migration/\allowbreak{}reference layer & \cellcolor{red!20}R & legacy-reference/\allowbreak{}migration ledger;\newline not a CNNA Lean theorem/\allowbreak{}object & archived REALOQS v0.0605 source zip;\newline V1.35 REALOQS scan JSON and module TSV reports & Future neutral CNNA PillarB/\allowbreak{}AQFT modules only after A->B handoff contracts and total declaration classification close. & \hyperlink{phase-row-23-3}{23.3}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-RLC4}{\hyperlink{objproof:RLC4}{RLC4}} & REALOQS Haag-Kastler gate extraction ledger & Legacy;\newline Code;\newline Reference;\newline Object & F1 & current & REALOQS legacy-code migration/\allowbreak{}reference layer & \cellcolor{red!20}R & legacy-reference/\allowbreak{}migration ledger;\newline not a CNNA Lean theorem/\allowbreak{}object & archived REALOQS v0.0605 source zip;\newline V1.35 REALOQS scan JSON and module TSV reports & Future neutral CNNA PillarB/\allowbreak{}AQFT modules only after A->B handoff contracts and total declaration classification close. & \hyperlink{phase-row-23-4}{23.4}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-RLC5}{\hyperlink{objproof:RLC5}{RLC5}} & REALOQS state-GNS-KMS-modular route map & Legacy;\newline Code;\newline Reference;\newline Object & F1 & current & REALOQS legacy-code migration/\allowbreak{}reference layer & \cellcolor{red!20}R & legacy-reference/\allowbreak{}migration ledger;\newline not a CNNA Lean theorem/\allowbreak{}object & archived REALOQS v0.0605 source zip;\newline V1.35 REALOQS scan JSON and module TSV reports & Future neutral CNNA PillarB/\allowbreak{}AQFT modules only after A->B handoff contracts and total declaration classification close. & \hyperlink{phase-row-23-5}{23.5}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-RLC6}{\hyperlink{objproof:RLC6}{RLC6}} & REALOQS quasi-local split/\allowbreak{}nuclearity horizon map & Legacy;\newline Code;\newline Reference;\newline Object & F1 & current & REALOQS legacy-code migration/\allowbreak{}reference layer & \cellcolor{red!20}R & legacy-reference/\allowbreak{}migration ledger;\newline not a CNNA Lean theorem/\allowbreak{}object & archived REALOQS v0.0605 source zip;\newline V1.35 REALOQS scan JSON and module TSV reports & Future neutral CNNA PillarB/\allowbreak{}AQFT modules only after A->B handoff contracts and total declaration classification close. & \hyperlink{phase-row-23-6}{23.6}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-RLC7}{\hyperlink{objproof:RLC7}{RLC7}} & REALOQS examples/\allowbreak{}meta quarantine and regression ledger & Legacy;\newline Code;\newline Reference;\newline Object & F1 & current & REALOQS legacy-code migration/\allowbreak{}reference layer & \cellcolor{red!20}R & legacy-reference/\allowbreak{}migration ledger;\newline not a CNNA Lean theorem/\allowbreak{}object & archived REALOQS v0.0605 source zip;\newline V1.35 REALOQS scan JSON and module TSV reports & Future neutral CNNA PillarB/\allowbreak{}AQFT modules only after A->B handoff contracts and total declaration classification close. & \hyperlink{phase-row-23-7}{23.7}\\
+\hline
+\addlinespace[0.24em]
+\hypertarget{object-row-RLC8}{\hyperlink{objproof:RLC8}{RLC8}} & REALOQS declaration crosswalk and Explorer legacy overlay ledger & Legacy;\newline Code;\newline Reference;\newline Object & F1 & current & REALOQS legacy-code migration/\allowbreak{}reference layer & \cellcolor{red!20}R & legacy-reference/\allowbreak{}migration ledger;\newline not a CNNA Lean theorem/\allowbreak{}object & archived REALOQS v0.0605 source zip;\newline V1.35 REALOQS scan JSON and module TSV reports & Future neutral CNNA PillarB/\allowbreak{}AQFT modules only after A->B handoff contracts and total declaration classification close. & \hyperlink{phase-row-23-8}{23.8}\\
+\hline
+\addlinespace[0.24em]
+\end{longtable}
+\arrayrulecolor{black}
+\normalsize

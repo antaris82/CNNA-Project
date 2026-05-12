@@ -1,0 +1,3 @@
+Scope	License	Reference	Boundary
+Documentation, prose, generated reports and PDFs	CC BY 4.0	https://creativecommons.org/licenses/by/4.0/deed.de	Applies to project-authored documentation artifacts, prose, generated reports and generated PDFs unless a file states otherwise; upstream quoted/reference material keeps its own rights. Editor: Jan Seeck (antaris); Assistant: ChatGPT (OpenAI).
+Source code, Lean files, Python scripts and tool code	MIT	https://opensource.org/license/mit	Applies to project-authored Lean code, Python scripts and tool code unless a file states otherwise; dependencies such as Lean, mathlib, TeX and Python packages keep their own licenses. Editor: Jan Seeck (antaris); Assistant: ChatGPT (OpenAI).

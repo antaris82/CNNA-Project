@@ -1,0 +1,14 @@
+Item	State
+Tool infrastructure version	V1.34
+Tool infrastructure timestamp	2026-05-12T01:06:43+02:00
+Planning data version	P1.40
+Planning data timestamp	2026-05-12T08:18:00+02:00
+Lean toolchain version	lean-4.28.0
+Lean data timestamp	2026-05-10T05:51:42+02:00
+Document title	CNNA Planning and Documentation Tool - original roadmap integration and timestamp-complete governance
+Planning data version	P1.40 records a workflow-coherence audit and small consistency corrections. Tool infrastructure remains V1.34; Lean data remains lean-4.28.0 / 2026-05-10T05:51:42+02:00 because no Lean source or generator code changed.
+Audit result	The workflow lattice is structurally usable after correction: backup-gated GitHub work, CI red/green transitions, visible red failure history, Webhosting/MySQL staging, rollback and delta-PDF output now share one ordered state machine.
+Corrected ambiguity	Implementation-from-last-green-baseline no longer treats absent build evidence as red. Only verified local/CI failure can set a phase R; missing evidence remains artifact-generated / build required under the local-build evidence rule.
+Corrected documentation closeout	Post-green closeout now requires regenerated/validated tables and the applicable requested documentation artifact: timestamp-bounded delta PDF for bounded changes, full PDF only for explicit full release/audit checkpoints.
+Corrected propagation of red-build visibility	CEX16 red-build failure history is now an explicit dependency of 21.3/CEX3 read-only API projections and 21.9/CEX9 deployment hardening, so visible failures cannot disappear between CI and Explorer views.
+Lean status	No CNNA Lean code changed. No Lean build was run. This package update is planning/tooling documentation plus generated table/delta-PDF regeneration only.

@@ -1,0 +1,275 @@
+{
+  "slug": "cnna_pillara_foundation_determinism_to_cnna_pillara_toc_contract",
+  "status": "missing",
+  "source": "CNNA.PillarA.Foundation.Determinism",
+  "target": "CNNA.PillarA.ToC.Contract",
+  "source_group": "PillarA/Foundation",
+  "target_group": "PillarA/ToC",
+  "source_path": "/mnt/data/toolchain_work/CNNA_Planning_Doc_Tool/Repository/repo_snapshot/CNNA/PillarA/Foundation/Determinism.lean",
+  "target_path": "/mnt/data/toolchain_work/CNNA_Planning_Doc_Tool/Repository/repo_snapshot/CNNA/PillarA/ToC/Contract.lean",
+  "confidence": {
+    "strongest_confidence": null,
+    "strongest_confidence_weight": 0,
+    "confidence_counts": {},
+    "weighted_score": 0.0,
+    "reference_count": 0,
+    "unique_symbol_count": 0
+  },
+  "edge_forensics": {
+    "source": "CNNA.PillarA.Foundation.Determinism",
+    "target": "CNNA.PillarA.ToC.Contract",
+    "source_group": "PillarA/Foundation",
+    "target_group": "PillarA/ToC",
+    "status": "missing",
+    "present_in_semantic_mainline": false,
+    "present_in_weighted_semantic_mainline": false,
+    "target_open_namespaces": [
+      "CNNA.PillarA.Foundation"
+    ],
+    "local_declaration_overlap": [],
+    "local_declaration_overlap_count": 0,
+    "source_alias_candidate_count": 132,
+    "source_opened_alias_candidate_count": 132,
+    "same_namespace_block": false,
+    "likely_causes": [
+      "open_namespace_resolution_surface",
+      "unqualified_import_alias_surface"
+    ],
+    "confidence_counts": {},
+    "weighted_score": 0.0,
+    "strongest_confidence": null,
+    "strongest_confidence_weight": 0,
+    "reference_count": 0,
+    "unique_symbol_count": 0,
+    "sample_symbols": []
+  },
+  "weak_edge_summary": {
+    "priority": 100,
+    "category": "missing_semantic_edge",
+    "recommendation": "inspect target module for unqualified or non-declaration usage; consider explicit qualification or extending the forensic heuristic for fields/classes",
+    "source": "CNNA.PillarA.Foundation.Determinism",
+    "target": "CNNA.PillarA.ToC.Contract",
+    "source_group": "PillarA/Foundation",
+    "target_group": "PillarA/ToC",
+    "status": "missing",
+    "present_in_semantic_mainline": false,
+    "present_in_weighted_semantic_mainline": false,
+    "target_open_namespaces": [
+      "CNNA.PillarA.Foundation"
+    ],
+    "local_declaration_overlap": [],
+    "local_declaration_overlap_count": 0,
+    "source_alias_candidate_count": 132,
+    "source_opened_alias_candidate_count": 132,
+    "same_namespace_block": false,
+    "likely_causes": [
+      "open_namespace_resolution_surface",
+      "unqualified_import_alias_surface"
+    ],
+    "confidence_counts": {},
+    "weighted_score": 0.0,
+    "strongest_confidence": null,
+    "strongest_confidence_weight": 0,
+    "reference_count": 0,
+    "unique_symbol_count": 0,
+    "sample_symbols": []
+  },
+  "dependency_detail": null,
+  "probable_failure_modes": [
+    "no_detected_dependency_detail",
+    "open_namespace_resolution_surface",
+    "unqualified_import_alias_surface"
+  ],
+  "suggested_actions": [
+    "Inspect the target module for structure-field, class-field or theorem-application usage that does not surface as a declaration token.",
+    "Consider explicitly qualifying at least one core source symbol in the target module to harden the semantic edge."
+  ],
+  "snippet_terms": {
+    "relevant_symbol_names": [],
+    "relevant_basenames": [
+      "KeyFaithful",
+      "KeyInvariant",
+      "KeyedFamily",
+      "KeyedMap",
+      "KeyedMapInvariant",
+      "PolicyKey",
+      "SameKey",
+      "eq_of_sameKey",
+      "instKeyInvariant_mkFromKey",
+      "instKeyedMapInvariant_mkFromKey",
+      "map_eq_of_key_eq",
+      "mkFromKey"
+    ],
+    "relevant_aliases": [],
+    "source_field_names": [],
+    "target_open_namespaces": [
+      "CNNA.PillarA.Foundation"
+    ]
+  },
+  "snippets": {
+    "source_declarations": [
+      {
+        "focus_line": 7,
+        "start_line": 5,
+        "end_line": 9,
+        "lines": [
+          {
+            "line": 5,
+            "text": ""
+          },
+          {
+            "line": 6,
+            "text": "namespace CNNA.PillarA.Foundation"
+          },
+          {
+            "line": 7,
+            "text": ""
+          },
+          {
+            "line": 8,
+            "text": "universe u v w z"
+          },
+          {
+            "line": 9,
+            "text": ""
+          }
+        ]
+      },
+      {
+        "focus_line": 14,
+        "start_line": 12,
+        "end_line": 16,
+        "lines": [
+          {
+            "line": 12,
+            "text": ""
+          },
+          {
+            "line": 13,
+            "text": "namespace PolicyKey"
+          },
+          {
+            "line": 14,
+            "text": ""
+          },
+          {
+            "line": 15,
+            "text": "variable {Policy : Type u} {Key : Type v}"
+          },
+          {
+            "line": 16,
+            "text": ""
+          }
+        ]
+      },
+      {
+        "focus_line": 17,
+        "start_line": 15,
+        "end_line": 19,
+        "lines": [
+          {
+            "line": 15,
+            "text": "variable {Policy : Type u} {Key : Type v}"
+          },
+          {
+            "line": 16,
+            "text": ""
+          },
+          {
+            "line": 17,
+            "text": "def SameKey (K : PolicyKey Policy Key) (p q : Policy) : Prop :="
+          },
+          {
+            "line": 18,
+            "text": "  K.key p = K.key q"
+          },
+          {
+            "line": 19,
+            "text": ""
+          }
+        ]
+      },
+      {
+        "focus_line": 21,
+        "start_line": 19,
+        "end_line": 23,
+        "lines": [
+          {
+            "line": 19,
+            "text": ""
+          },
+          {
+            "line": 20,
+            "text": "@[refl] theorem sameKey_refl (K : PolicyKey Policy Key) (p : Policy) :"
+          },
+          {
+            "line": 21,
+            "text": "    K.SameKey p p := by"
+          },
+          {
+            "line": 22,
+            "text": "  rfl"
+          },
+          {
+            "line": 23,
+            "text": ""
+          }
+        ]
+      },
+      {
+        "focus_line": 26,
+        "start_line": 24,
+        "end_line": 28,
+        "lines": [
+          {
+            "line": 24,
+            "text": "@[symm] theorem sameKey_symm (K : PolicyKey Policy Key) {p q : Policy} :"
+          },
+          {
+            "line": 25,
+            "text": "    K.SameKey p q → K.SameKey q p := by"
+          },
+          {
+            "line": 26,
+            "text": "  intro h"
+          },
+          {
+            "line": 27,
+            "text": "  exact h.symm"
+          },
+          {
+            "line": 28,
+            "text": ""
+          }
+        ]
+      }
+    ],
+    "target_reference_surface": [],
+    "target_open_namespace_surface": [
+      {
+        "focus_line": 8,
+        "matched_terms": [
+          "CNNA.PillarA.Foundation",
+          "Foundation"
+        ],
+        "start_line": 7,
+        "end_line": 9,
+        "lines": [
+          {
+            "line": 7,
+            "text": ""
+          },
+          {
+            "line": 8,
+            "text": "open CNNA.PillarA.Foundation"
+          },
+          {
+            "line": 9,
+            "text": ""
+          }
+        ]
+      }
+    ],
+    "target_projection_surface": []
+  }
+}
