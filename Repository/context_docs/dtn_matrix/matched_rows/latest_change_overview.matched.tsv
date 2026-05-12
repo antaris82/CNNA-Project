@@ -1,2 +1,0 @@
-context_score	matched_terms	Item	State
-21	dtn; dirichlet-to-neumann; schur; boundary; interface; laplacian; matrix; operator; elimination	Curated DtN profile	Added context profile dtn-matrix with primary DtN/Dirichlet-to-Neumann/Schur/Laplacian/tail-elimination/interface terms and secondary boundary/operator/matrix/coarse-graining terms.

@@ -1,6 +1,6 @@
 digraph group_pillara_dtn {
   rankdir="LR";
-  node [shape=box, fontsize=10];
+  node [shape=box, fontsize=11];
   "CNNA.PillarA.DtN.BuildAll" [tooltip="PillarA/DtN"];
   "CNNA.PillarA.DtN.DtN" [tooltip="PillarA/DtN"];
   "CNNA.PillarA.DtN.DtNStabilized" [tooltip="PillarA/DtN"];

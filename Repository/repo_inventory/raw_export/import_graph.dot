@@ -1,6 +1,6 @@
 digraph LeanImports {
   rankdir="LR";
-  node [fontsize=10];
+  node [fontsize=11];
   "CNNA.Basic" [shape=box];
   "CNNA.BuildAll" [shape=box, style="filled", fillcolor="lightgoldenrod1"];
   "CNNA.Notation" [shape=box, style="filled", fillcolor="lightcyan"];

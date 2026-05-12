@@ -1,6 +1,6 @@
 {
-  "repo_root": "/mnt/data/toolchain_work/CNNA_Planning_Doc_Tool/Repository/repo_snapshot",
-  "source_root": "/mnt/data/toolchain_work/CNNA_Planning_Doc_Tool/Repository/repo_snapshot/CNNA",
+  "repo_root": "/mnt/data/work_p144/Repository/repo_snapshot",
+  "source_root": "/mnt/data/work_p144/Repository/repo_snapshot/CNNA",
   "source_root_argument": "CNNA",
   "internal_prefixes": [
     "CNNA"

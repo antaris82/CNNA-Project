@@ -1,0 +1,91 @@
+{
+  "version": "P1.44",
+  "timestamp": "2026-05-12T11:50:00+02:00",
+  "phase": "1.1.1.1.5.1.1",
+  "object": "LEG43",
+  "input_ledger": "generated_exports/notation_surface_consumption_cleanup_ledger.generated.tsv",
+  "total_surfaces": 1156,
+  "consumed_out_of_scope": 484,
+  "unconsumed_surfaces": 672,
+  "leg44_approved_total": 494,
+  "leg44_approved_standalone": 391,
+  "leg44_approved_closed_cluster": 103,
+  "deferred_total": 178,
+  "decision_counts": {
+    "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE": 391,
+    "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE": 103,
+    "KEEP_CONSUMED_OUT_OF_REMOVAL_SCOPE": 484,
+    "DEFER_OWNER_DOMAIN_SURFACE_REVIEW": 101,
+    "DEFER_CORE_SYMBOL_SURFACE_REVIEW": 17,
+    "DEFER_UMBRELLA_FACADE_REVIEW": 60
+  },
+  "leg42_classification_counts": {
+    "legacy_phase_alias_candidate": 196,
+    "consumed_internal_helper": 484,
+    "unconsumed_domain_alias_candidate": 399,
+    "unconsumed_symbol_surface_candidate": 17,
+    "unconsumed_umbrella_alias_candidate": 60
+  },
+  "module_decision_counts": {
+    "CNNA.PillarA.Arithmetic.Notation": {
+      "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE": 391,
+      "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE": 103,
+      "KEEP_CONSUMED_OUT_OF_REMOVAL_SCOPE": 409
+    },
+    "CNNA.PillarA.Closure.Notation": {
+      "KEEP_CONSUMED_OUT_OF_REMOVAL_SCOPE": 4,
+      "DEFER_OWNER_DOMAIN_SURFACE_REVIEW": 1
+    },
+    "CNNA.PillarA.Coupling.Notation": {
+      "KEEP_CONSUMED_OUT_OF_REMOVAL_SCOPE": 2
+    },
+    "CNNA.PillarA.DtN.Notation": {
+      "DEFER_OWNER_DOMAIN_SURFACE_REVIEW": 9,
+      "KEEP_CONSUMED_OUT_OF_REMOVAL_SCOPE": 3
+    },
+    "CNNA.PillarA.Finite.ExecSpectral.Notation": {
+      "DEFER_OWNER_DOMAIN_SURFACE_REVIEW": 6
+    },
+    "CNNA.PillarA.Finite.Notation": {
+      "DEFER_OWNER_DOMAIN_SURFACE_REVIEW": 34
+    },
+    "CNNA.PillarA.Foundation.Notation": {
+      "DEFER_OWNER_DOMAIN_SURFACE_REVIEW": 25,
+      "KEEP_CONSUMED_OUT_OF_REMOVAL_SCOPE": 4,
+      "DEFER_CORE_SYMBOL_SURFACE_REVIEW": 12
+    },
+    "CNNA.PillarA.Geometry.Notation": {
+      "DEFER_OWNER_DOMAIN_SURFACE_REVIEW": 10,
+      "KEEP_CONSUMED_OUT_OF_REMOVAL_SCOPE": 2
+    },
+    "CNNA.PillarA.Handoff.Notation": {
+      "KEEP_CONSUMED_OUT_OF_REMOVAL_SCOPE": 2,
+      "DEFER_OWNER_DOMAIN_SURFACE_REVIEW": 8
+    },
+    "CNNA.PillarA.Network.Notation": {
+      "KEEP_CONSUMED_OUT_OF_REMOVAL_SCOPE": 5
+    },
+    "CNNA.PillarA.Notation": {
+      "DEFER_UMBRELLA_FACADE_REVIEW": 60,
+      "KEEP_CONSUMED_OUT_OF_REMOVAL_SCOPE": 42
+    },
+    "CNNA.PillarA.Sectors.Notation": {
+      "KEEP_CONSUMED_OUT_OF_REMOVAL_SCOPE": 7
+    },
+    "CNNA.PillarA.ToC.Notation": {
+      "KEEP_CONSUMED_OUT_OF_REMOVAL_SCOPE": 4,
+      "DEFER_OWNER_DOMAIN_SURFACE_REVIEW": 8,
+      "DEFER_CORE_SYMBOL_SURFACE_REVIEW": 5
+    }
+  },
+  "criteria": [
+    "Direct non-Notation consumers forbid deletion.",
+    "Scoped/core-symbol notations are deferred even if unconsumed because public syntax intent is not refuted by grep absence.",
+    "PillarA umbrella aliases are deferred to the neutral facade/quarantine map.",
+    "Arithmetic/Notation legacy or phase-domain abbrev/def/theorem surfaces without non-Notation consumers are approved for LEG44 review-only removal execution.",
+    "Rows with Notation-internal consumers may only be removed as closed dependency clusters.",
+    "LEG43 does not edit Lean source and does not replace local Lean build evidence."
+  ],
+  "lean_source_changed": false,
+  "lean_build_run": false
+}

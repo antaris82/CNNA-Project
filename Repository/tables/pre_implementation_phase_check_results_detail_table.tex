@@ -171,11 +171,11 @@ Static findings affected & SCF43-SCF45 created and routed to 1.1.1.1.5.\\
 \hline
 \textbf{Field} & \textbf{Record}\\
 \hline
-Check status & Y\\
+Check status & G\\
 \hline\addlinespace[0.20em]
 Check mode & static DAG/\allowbreak{}source-inventory audit plus code-name spot-check\\
 \hline\addlinespace[0.20em]
-Implementability scope & now\\
+Implementability scope & closed\\
 \hline\addlinespace[0.20em]
 Required predecessor closures & closed governance path through 1.1.1.1.4 and V1.20 documentation/\allowbreak{}tooling updates\\
 \hline\addlinespace[0.20em]
@@ -187,15 +187,81 @@ Lean proof risk & low for audit;\newline later refactor phases require local ful
 \hline\addlinespace[0.20em]
 Parent/\allowbreak{}subphase rule & Child active phase under 1.1.1.1.5;\newline parent is umbrella W, this leaf is the unique Y cursor.\\
 \hline\addlinespace[0.20em]
-Implementability finding & Implementable now as the next constructive pre-code gate. It replaces the too-broad active umbrella as the precise cursor.\\
+Implementability finding & LEG42 audit evidence is closed, but P1.43 inserts child removal-review/\allowbreak{}execution gates before neutral naming.\\
 \hline\addlinespace[0.20em]
-Required action & Fill LEG37 and route missing source/\allowbreak{}object mappings to LEG38-LEG41 or upstream red blockers.\\
+Required action & Proceed with 1.1.1.1.5.1.1 review before any deletion or neutral naming.\\
 \hline\addlinespace[0.20em]
 Would generate addressing phase? & already generated child sequence\\
 \hline\addlinespace[0.20em]
 Generated addressing phase & 1.1.1.1.5.1-1.1.1.1.5.5\\
 \hline\addlinespace[0.20em]
 Static findings affected & SCF52\\
+\hline\addlinespace[0.20em]
+\end{longtable}
+\phantomsection
+\subsection*{Pre-check detail PIC-2026-05-12-001 -- phase 1.1.1.1.5.1.1}
+\begin{longtable}{L{0.18\linewidth} L{0.78\linewidth}}
+\hline
+\textbf{Field} & \textbf{Record}\\
+\hline
+Check status & Y\\
+\hline\addlinespace[0.20em]
+Check mode & static LEG42 row-level review rehearsal\\
+\hline\addlinespace[0.20em]
+Implementability scope & now\\
+\hline\addlinespace[0.20em]
+Required predecessor closures & 1.1.1.1.5.1 /\allowbreak{} LEG42\\
+\hline\addlinespace[0.20em]
+Assumptions & LEG42 TSV/\allowbreak{}JSON evidence is complete enough for conservative removal review;\newline no Lean code is edited by this phase.\\
+\hline\addlinespace[0.20em]
+Evidence basis & 1156 surfaces total;\newline 484 with direct non-Notation consumers;\newline 672 without direct non-Notation consumers. Classification counts: \{'legacy\_phase\_alias\_candidate': 196, 'consumed\_internal\_helper': 484, 'unconsumed\_domain\_alias\_candidate': 399, 'unconsumed\_symbol\_surface\_candidate': 17, 'unconsumed\_umbrella\_alias\_candidate': 60\}. Disposition counts: \{'quarantine\_under\_legacy\_status\_or\_remove\_after\_facade\_plan': 196, 'keep\_now\_review\_publicity': 484, 'owner\_review\_keep\_internal\_or\_remove': 399, 'quarantine\_or\_keep\_as\_intentional\_public\_after\_phase\_1\_1\_1\_1\_5\_2': 17, 'facade\_review\_or\_quarantine': 60\}.\\
+\hline\addlinespace[0.20em]
+Lean proof risk & low for review;\newline no Lean edit. Risk lies in false deletion classification, mitigated by conservative keep/\allowbreak{}quarantine/\allowbreak{}facade defaults.\\
+\hline\addlinespace[0.20em]
+Parent/\allowbreak{}subphase rule & Child gate under 1.1.1.1.5.1;\newline unique active cursor in P1.43.\\
+\hline\addlinespace[0.20em]
+Implementability finding & Implementable now as a review gate over existing generated evidence.\\
+\hline\addlinespace[0.20em]
+Required action & Produce LEG43 row-level removal-review ledger;\newline activate LEG44 only for certified removable/\allowbreak{}no-op execution.\\
+\hline\addlinespace[0.20em]
+Would generate addressing phase? & no\\
+\hline\addlinespace[0.20em]
+Generated addressing phase & none\\
+\hline\addlinespace[0.20em]
+Static findings affected & none\\
+\hline\addlinespace[0.20em]
+\end{longtable}
+\phantomsection
+\subsection*{Pre-check detail PIC-2026-05-12-002 -- phase 1.1.1.1.5.1.2}
+\begin{longtable}{L{0.18\linewidth} L{0.78\linewidth}}
+\hline
+\textbf{Field} & \textbf{Record}\\
+\hline
+Check status & G\\
+\hline\addlinespace[0.20em]
+Check mode & execution/\allowbreak{}no-op readiness check\\
+\hline\addlinespace[0.20em]
+Implementability scope & closed\\
+\hline\addlinespace[0.20em]
+Required predecessor closures & 1.1.1.1.5.1.1 /\allowbreak{} LEG43\\
+\hline\addlinespace[0.20em]
+Assumptions & Removal may be no-op if no row is safely removable. If source changes, user must provide local build evidence.\\
+\hline\addlinespace[0.20em]
+Evidence basis & LEG43 review ledger;\newline exact P1.45 Notation.lean source diff;\newline consumer-regression/\allowbreak{}static source-token evidence;\newline user-reported green local lake build recorded in P1.46.\\
+\hline\addlinespace[0.20em]
+Lean proof risk & medium only if Lean source is edited;\newline mitigated by minimal diff and build evidence.\\
+\hline\addlinespace[0.20em]
+Parent/\allowbreak{}subphase rule & Child execution gate under 1.1.1.1.5.1;\newline must close before 1.1.1.1.5.2.\\
+\hline\addlinespace[0.20em]
+Implementability finding & Implemented and closed after user-reported green local build.\\
+\hline\addlinespace[0.20em]
+Required action & Closed;\newline activate LEG38.\\
+\hline\addlinespace[0.20em]
+Would generate addressing phase? & no\\
+\hline\addlinespace[0.20em]
+Generated addressing phase & none\\
+\hline\addlinespace[0.20em]
+Static findings affected & none\\
 \hline\addlinespace[0.20em]
 \end{longtable}
 \arrayrulecolor{black}

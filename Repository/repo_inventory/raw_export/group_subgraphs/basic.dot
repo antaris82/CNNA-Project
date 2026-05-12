@@ -1,5 +1,5 @@
 digraph group_basic {
   rankdir="LR";
-  node [shape=box, fontsize=10];
+  node [shape=box, fontsize=11];
   "CNNA.Basic" [tooltip="Basic"];
 }

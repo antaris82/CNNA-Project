@@ -1,6 +1,6 @@
 digraph group_pillara_handoff {
   rankdir="LR";
-  node [shape=box, fontsize=10];
+  node [shape=box, fontsize=11];
   "CNNA.PillarA.Handoff.BuildAll" [tooltip="PillarA/Handoff"];
   "CNNA.PillarA.Handoff.CayleyDicksonAdapter" [tooltip="PillarA/Handoff"];
   "CNNA.PillarA.Handoff.Core.BuildAll" [tooltip="PillarA/Handoff"];

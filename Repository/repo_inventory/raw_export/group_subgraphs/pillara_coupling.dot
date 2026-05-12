@@ -1,6 +1,6 @@
 digraph group_pillara_coupling {
   rankdir="LR";
-  node [shape=box, fontsize=10];
+  node [shape=box, fontsize=11];
   "CNNA.PillarA.Coupling.BuildAll" [tooltip="PillarA/Coupling"];
   "CNNA.PillarA.Coupling.GeneralizedDtN" [tooltip="PillarA/Coupling"];
   "CNNA.PillarA.Coupling.MultiSchur" [tooltip="PillarA/Coupling"];

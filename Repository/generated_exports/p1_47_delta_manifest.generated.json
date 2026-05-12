@@ -1,0 +1,16 @@
+{
+  "planning_data_version": "P1.47",
+  "planning_data_timestamp": "2026-05-12T15:05:00+02:00",
+  "changed_sections": [
+    "metadata",
+    "workflow_policy",
+    "latest_change_overview",
+    "generated_exports/p1_47_artifact_hygiene_cleanup.generated.json"
+  ],
+  "lean_source_changed": false,
+  "tool_infrastructure_changed": false,
+  "docs_generated": false,
+  "context_docs_present": false,
+  "generated_docs_present": false,
+  "root_readme_only": true
+}

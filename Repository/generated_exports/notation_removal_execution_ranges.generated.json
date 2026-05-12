@@ -1,0 +1,3466 @@
+{
+  "source_file": "repo_snapshot/CNNA/PillarA/Arithmetic/Notation.lean",
+  "approved_candidates": 494,
+  "removed_declarations": 494,
+  "removed_line_count_before_compaction": 3946,
+  "ranges": [
+    {
+      "surface": "ARSourceOf",
+      "start_line": 91,
+      "end_line": 91,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "ARSourceKind",
+      "start_line": 92,
+      "end_line": 92,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "ARStrandKind",
+      "start_line": 93,
+      "end_line": 94,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "ARReferenceSourceOf",
+      "start_line": 97,
+      "end_line": 97,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "ARVariationSourceOf",
+      "start_line": 98,
+      "end_line": 99,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2aFullCutSpecNegativeAuditOf",
+      "start_line": 104,
+      "end_line": 108,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2aReferenceFullCutSpecNegativeAuditOf",
+      "start_line": 109,
+      "end_line": 112,
+      "line_count": 4,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2aReferenceFullOneByOneAuditOf",
+      "start_line": 113,
+      "end_line": 116,
+      "line_count": 4,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b0ReferenceCutSpecNoGoOf",
+      "start_line": 121,
+      "end_line": 121,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b0VariationCutSpecNoGoOf",
+      "start_line": 122,
+      "end_line": 122,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b0ExistingIdealThreadSubstrateNoGoOf",
+      "start_line": 123,
+      "end_line": 124,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2bDLevelHistoryIndex",
+      "start_line": 129,
+      "end_line": 131,
+      "line_count": 3,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2bDLevelStepWitness",
+      "start_line": 132,
+      "end_line": 138,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2bDRecursiveCarrier",
+      "start_line": 139,
+      "end_line": 144,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2bDLevelHistoryMatrix",
+      "start_line": 145,
+      "end_line": 147,
+      "line_count": 3,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2bDMatrixPackage",
+      "start_line": 148,
+      "end_line": 154,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2bDBoundarySourceInterface",
+      "start_line": 155,
+      "end_line": 160,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2bDClosedDecisionLedger",
+      "start_line": 161,
+      "end_line": 163,
+      "line_count": 3,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2bDClosedDecisionLedger_status",
+      "start_line": 164,
+      "end_line": 168,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2bDClosedDecisionLedger_route",
+      "start_line": 169,
+      "end_line": 173,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b1GeneratedSubstrateCandidateObligations",
+      "start_line": 178,
+      "end_line": 180,
+      "line_count": 3,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b1GeneratedSubstrateRouteInventoryConditionalOpen",
+      "start_line": 181,
+      "end_line": 184,
+      "line_count": 4,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b1BranchAddressSubstrateLedger",
+      "start_line": 185,
+      "end_line": 188,
+      "line_count": 4,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b1BoundaryStateSubstrateLedger",
+      "start_line": 189,
+      "end_line": 192,
+      "line_count": 4,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b1HistoryExpandedSubstrateLedger",
+      "start_line": 193,
+      "end_line": 196,
+      "line_count": 4,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b1InterfaceExposureSubstrateLedger",
+      "start_line": 197,
+      "end_line": 200,
+      "line_count": 4,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b1GeneratedSubstrateRouteInventory_status",
+      "start_line": 201,
+      "end_line": 205,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b1BranchAddressSubstrate_status",
+      "start_line": 206,
+      "end_line": 210,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b1BoundaryStateSubstrate_status",
+      "start_line": 211,
+      "end_line": 215,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b1HistoryExpandedSubstrate_status",
+      "start_line": 216,
+      "end_line": 220,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b1InterfaceExposureSubstrate_status",
+      "start_line": 221,
+      "end_line": 225,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b1BranchAddressSubstrate_noFreeCarrier",
+      "start_line": 226,
+      "end_line": 230,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b1BoundaryStateSubstrate_noFreeCarrier",
+      "start_line": 231,
+      "end_line": 235,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b1HistoryExpandedSubstrate_noFreeCarrier",
+      "start_line": 236,
+      "end_line": 240,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b1InterfaceExposureSubstrate_noFreeCarrier",
+      "start_line": 241,
+      "end_line": 245,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b2RecursiveLevelHistoryRoute",
+      "start_line": 251,
+      "end_line": 256,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b2RecursiveLevelHistoryRouteLedger",
+      "start_line": 257,
+      "end_line": 262,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b2RecursiveLevelHistoryInterface",
+      "start_line": 263,
+      "end_line": 270,
+      "line_count": 8,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b2RecursiveLevelHistoryRouteLedgerOfRoute",
+      "start_line": 271,
+      "end_line": 278,
+      "line_count": 8,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b2RecursiveLevelHistoryInterface_route",
+      "start_line": 279,
+      "end_line": 287,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b2RecursiveLevelHistoryInterface_decisionClosed",
+      "start_line": 288,
+      "end_line": 296,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b3BoundarySource",
+      "start_line": 301,
+      "end_line": 306,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b3BoundarySourceConvergenceLedger",
+      "start_line": 307,
+      "end_line": 312,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b3BoundarySourceFromRecursiveRoute",
+      "start_line": 313,
+      "end_line": 320,
+      "line_count": 8,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b3BoundarySourceConvergenceLedgerFromRecursiveRoute",
+      "start_line": 321,
+      "end_line": 328,
+      "line_count": 8,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b3BoundarySource_route",
+      "start_line": 329,
+      "end_line": 337,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b3BoundarySourceConvergenceLedger_status",
+      "start_line": 338,
+      "end_line": 346,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR2b3BoundarySourceConvergenceLedger_generated_conditional",
+      "start_line": 347,
+      "end_line": 355,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3MatrixTransportLedgerFromBoundarySource",
+      "start_line": 399,
+      "end_line": 406,
+      "line_count": 8,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3MatrixTransportLedger_route",
+      "start_line": 407,
+      "end_line": 415,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3MatrixTransportLedger_consumptionPolicy",
+      "start_line": 416,
+      "end_line": 424,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3aActionPackage",
+      "start_line": 430,
+      "end_line": 436,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3aGeneratorActionCandidate",
+      "start_line": 437,
+      "end_line": 443,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3aGeneratorActionInventory",
+      "start_line": 444,
+      "end_line": 449,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3aIdentityBoundarySourceAction",
+      "start_line": 450,
+      "end_line": 457,
+      "line_count": 8,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3aGeneratorActionInventoryFromBoundarySource",
+      "start_line": 458,
+      "end_line": 465,
+      "line_count": 8,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3aGeneratorActionInventory_route",
+      "start_line": 466,
+      "end_line": 474,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3aGeneratorActionInventory_freeLevelPermutationBlocked",
+      "start_line": 475,
+      "end_line": 483,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3aGeneratorActionInventory_fullTreeAutomorphismBlocked",
+      "start_line": 484,
+      "end_line": 492,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3bActionFormatKind",
+      "start_line": 498,
+      "end_line": 498,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3bRootLatticeActionStatus",
+      "start_line": 499,
+      "end_line": 499,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3bActionFormatDecisionStatus",
+      "start_line": 500,
+      "end_line": 500,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3bGlobalActionClaimStatus",
+      "start_line": 501,
+      "end_line": 501,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3bHeckeActionClaimStatus",
+      "start_line": 502,
+      "end_line": 502,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3bProfiniteGaloisActionClaimStatus",
+      "start_line": 503,
+      "end_line": 503,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3bBuildingActionClaimStatus",
+      "start_line": 504,
+      "end_line": 504,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3bVOAOrbifoldActionClaimStatus",
+      "start_line": 505,
+      "end_line": 505,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3bActionFormatCoverageStatus",
+      "start_line": 506,
+      "end_line": 506,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3bActionFormatLedgerStatus",
+      "start_line": 507,
+      "end_line": 507,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3bActionFormatDataDisciplineStatus",
+      "start_line": 508,
+      "end_line": 509,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3bCandidateActionFormatDecision",
+      "start_line": 510,
+      "end_line": 516,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3bActionFormatDecisionLedger",
+      "start_line": 517,
+      "end_line": 522,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3bActionFormatDecisionLedgerFromBoundarySource",
+      "start_line": 523,
+      "end_line": 530,
+      "line_count": 8,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3bActionFormatDecisionLedger_status_closed",
+      "start_line": 531,
+      "end_line": 539,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3bActionFormatDecisionLedger_coverage_allCandidatesClassified",
+      "start_line": 540,
+      "end_line": 548,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3bActionFormatDecisionLedger_route",
+      "start_line": 549,
+      "end_line": 557,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3bActionFormatDecisionLedger_freeLevelPermutationBlocked",
+      "start_line": 558,
+      "end_line": 566,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR3bActionFormatDecisionLedger_fullTreeAutomorphismBlocked",
+      "start_line": 567,
+      "end_line": 575,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR4SchurRecursionNodeKind",
+      "start_line": 581,
+      "end_line": 581,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR4MobiusTransferSourceKind",
+      "start_line": 582,
+      "end_line": 582,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR4MobiusTransferParameterStatus",
+      "start_line": 583,
+      "end_line": 583,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR4MobiusActionDataStatus",
+      "start_line": 584,
+      "end_line": 584,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR4RootInteriorLeafSeparationStatus",
+      "start_line": 585,
+      "end_line": 585,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR4SchurMobiusRecurrenceStatus",
+      "start_line": 586,
+      "end_line": 586,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR4SchurNumeratorDenominatorStatus",
+      "start_line": 587,
+      "end_line": 587,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR4SchurFraction",
+      "start_line": 588,
+      "end_line": 589,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR4MobiusTransferParameters",
+      "start_line": 590,
+      "end_line": 596,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR4RecursiveSchurSource",
+      "start_line": 597,
+      "end_line": 602,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR4RootRecurrenceEquation",
+      "start_line": 603,
+      "end_line": 609,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR4InteriorRecurrenceEquation",
+      "start_line": 610,
+      "end_line": 617,
+      "line_count": 8,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR4LeafRecurrenceEquation",
+      "start_line": 618,
+      "end_line": 624,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR4SchurMobiusRecurrenceLedger",
+      "start_line": 625,
+      "end_line": 630,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR4MobiusTransferParametersFromBoundarySource",
+      "start_line": 631,
+      "end_line": 638,
+      "line_count": 8,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR4RecursiveSchurSourceFromBoundarySource",
+      "start_line": 639,
+      "end_line": 646,
+      "line_count": 8,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR4SchurMobiusRecurrenceLedgerFromBoundarySource",
+      "start_line": 647,
+      "end_line": 654,
+      "line_count": 8,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR4SchurMobiusRecurrenceLedger_status",
+      "start_line": 655,
+      "end_line": 664,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR4SchurMobiusRecurrenceLedger_root_relation",
+      "start_line": 665,
+      "end_line": 678,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR5SpectralParameter",
+      "start_line": 684,
+      "end_line": 684,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR5OperativeCharpolyComputationStatus",
+      "start_line": 685,
+      "end_line": 686,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR5SmallDimensionDeterminantStatus",
+      "start_line": 687,
+      "end_line": 688,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR5GeneralDimensionDeterminantStatus",
+      "start_line": 689,
+      "end_line": 690,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR5CharpolySchurNumeratorStatus",
+      "start_line": 691,
+      "end_line": 692,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR5OperativeCharpolyProfile",
+      "start_line": 695,
+      "end_line": 702,
+      "line_count": 8,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR5OperativeCharpolyLedger",
+      "start_line": 703,
+      "end_line": 709,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR5OperativeCharpolyLedgerFromBoundarySource",
+      "start_line": 710,
+      "end_line": 718,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR5OperativeCharpolyLedger_status",
+      "start_line": 719,
+      "end_line": 729,
+      "line_count": 11,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR5OperativeCharpolyLedger_noFreeAssumptions",
+      "start_line": 730,
+      "end_line": 740,
+      "line_count": 11,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR5OperativeCharpolyLedger_diagonal_agrees_with_schurNumerator",
+      "start_line": 741,
+      "end_line": 752,
+      "line_count": 12,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR6MirrorSpectralParameter",
+      "start_line": 759,
+      "end_line": 759,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR6CMirrorConstructionStatus",
+      "start_line": 760,
+      "end_line": 760,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR6CMirrorEigenvalueStatus",
+      "start_line": 761,
+      "end_line": 761,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR6CMirrorUpperHalfPlaneStatus",
+      "start_line": 762,
+      "end_line": 762,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR6CMirrorNoReverseConsumptionStatus",
+      "start_line": 763,
+      "end_line": 763,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR6CMirrorLegacySeparationStatus",
+      "start_line": 764,
+      "end_line": 764,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR6CMirrorParameterSeparationStatus",
+      "start_line": 765,
+      "end_line": 765,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR6MirrorUpperHalfPlanePoint",
+      "start_line": 766,
+      "end_line": 767,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR6CMirrorCharpolyProfile",
+      "start_line": 768,
+      "end_line": 775,
+      "line_count": 8,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR6CMirrorCharpolyLedger",
+      "start_line": 776,
+      "end_line": 782,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR6CMirrorCharpolyLedgerFromAR5",
+      "start_line": 783,
+      "end_line": 791,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR6CMirrorCharpolyLedgerFromBoundarySource",
+      "start_line": 792,
+      "end_line": 800,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR6_spectralParameterC_eq_ratCast",
+      "start_line": 801,
+      "end_line": 805,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR6_mirrorCharpolyEvaluation_eq_map_exec",
+      "start_line": 806,
+      "end_line": 812,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR6CMirrorCharpolyLedger_construction_status",
+      "start_line": 813,
+      "end_line": 823,
+      "line_count": 11,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR6CMirrorCharpolyLedger_charpoly_bridge",
+      "start_line": 824,
+      "end_line": 835,
+      "line_count": 12,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR6CMirrorCharpolyLedger_no_reverse_consumption",
+      "start_line": 836,
+      "end_line": 846,
+      "line_count": 11,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR6CMirrorCharpolyLedger_upperHalfPlane_carrier_only",
+      "start_line": 847,
+      "end_line": 857,
+      "line_count": 11,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR6CMirrorCharpolyLedger_parameter_separation",
+      "start_line": 858,
+      "end_line": 868,
+      "line_count": 11,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR8L2RhoMultiplicationMatrix",
+      "start_line": 874,
+      "end_line": 874,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR8L2EisensteinPolynomialEval",
+      "start_line": 875,
+      "end_line": 875,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR8L2EisensteinNormForm",
+      "start_line": 876,
+      "end_line": 876,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR8L2EisensteinNormDiscriminant",
+      "start_line": 877,
+      "end_line": 878,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR8L2EisensteinNormDiscriminant_eq_neg_three",
+      "start_line": 879,
+      "end_line": 882,
+      "line_count": 4,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR9L3GaussMultiplicationMatrix",
+      "start_line": 888,
+      "end_line": 888,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR9L3GaussianPolynomialEval",
+      "start_line": 889,
+      "end_line": 889,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR9L3GaussianNormForm",
+      "start_line": 890,
+      "end_line": 890,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR9L3GaussianNormDiscriminant",
+      "start_line": 891,
+      "end_line": 892,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR9L3GaussianNormDiscriminant_eq_neg_four",
+      "start_line": 893,
+      "end_line": 896,
+      "line_count": 4,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10IdentityLedgerStatus",
+      "start_line": 902,
+      "end_line": 902,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10MatrixTransportStatus",
+      "start_line": 903,
+      "end_line": 903,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10CharpolyNumeratorLedgerStatus",
+      "start_line": 904,
+      "end_line": 905,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10FactorizationLedgerStatus",
+      "start_line": 906,
+      "end_line": 906,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10NormDiscriminantLedgerStatus",
+      "start_line": 907,
+      "end_line": 907,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10TheoremOnlyLedgerStatus",
+      "start_line": 908,
+      "end_line": 908,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10DownstreamDisciplineStatus",
+      "start_line": 909,
+      "end_line": 910,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10IdentityLedgerFromBoundarySources",
+      "start_line": 911,
+      "end_line": 921,
+      "line_count": 11,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10_identity_ledger_closed",
+      "start_line": 922,
+      "end_line": 933,
+      "line_count": 12,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10_identity_ledger_theorem_only",
+      "start_line": 934,
+      "end_line": 946,
+      "line_count": 13,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10cHigherLevelFactorDegreeCandidateStatus",
+      "start_line": 951,
+      "end_line": 952,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10cHigherLevelDiscriminantCandidateStatus",
+      "start_line": 953,
+      "end_line": 954,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10cHigherLevelHeegnerCandidateStatus",
+      "start_line": 955,
+      "end_line": 956,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10cHigherLevelPredictionStatus",
+      "start_line": 957,
+      "end_line": 957,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10cHigherLevelAR11CertificateReferenceStatus",
+      "start_line": 958,
+      "end_line": 959,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10cHigherLevelTestPowerStatus",
+      "start_line": 960,
+      "end_line": 960,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10cHigherLevelCalibrationStatus",
+      "start_line": 961,
+      "end_line": 961,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10cHigherLevelDownstreamDisciplineStatus",
+      "start_line": 962,
+      "end_line": 963,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10cHigherLevelBoundaryDisciplineStatus",
+      "start_line": 964,
+      "end_line": 965,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10cHigherLevelPredictionLedgerStatus",
+      "start_line": 966,
+      "end_line": 968,
+      "line_count": 3,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10cHigherLevelPredictionRow",
+      "start_line": 969,
+      "end_line": 976,
+      "line_count": 8,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10cHigherLevelPredictionLedger",
+      "start_line": 977,
+      "end_line": 984,
+      "line_count": 8,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10cHigherLevelBoundaryFamily",
+      "start_line": 985,
+      "end_line": 990,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10cHigherLevelPredictionTestMatrix",
+      "start_line": 991,
+      "end_line": 997,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10cHigherLevelPredictionRowFromBoundarySource",
+      "start_line": 998,
+      "end_line": 1006,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10cHigherLevelPredictionLedgerFromBoundarySource",
+      "start_line": 1007,
+      "end_line": 1015,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10cHigherLevelPredictionTestMatrixFromBoundaryFamily",
+      "start_line": 1016,
+      "end_line": 1023,
+      "line_count": 8,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10cHigherLevelPredictionLedger_status_open",
+      "start_line": 1024,
+      "end_line": 1034,
+      "line_count": 11,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10cHigherLevelPredictionLedger_row_open",
+      "start_line": 1035,
+      "end_line": 1044,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10cHigherLevelPredictionLedger_no_ar11_certificate",
+      "start_line": 1045,
+      "end_line": 1055,
+      "line_count": 11,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10cHigherLevelPredictionLedger_no_downstream_input",
+      "start_line": 1056,
+      "end_line": 1066,
+      "line_count": 11,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10dQuaternionRamanujanStatus",
+      "start_line": 1072,
+      "end_line": 1072,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10dLPSComparisonClass",
+      "start_line": 1073,
+      "end_line": 1073,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10dLPSReconstructionDisciplineStatus",
+      "start_line": 1074,
+      "end_line": 1075,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10dQuaternionOrderConstraintStatus",
+      "start_line": 1076,
+      "end_line": 1077,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10dQuaternionNormConstraintStatus",
+      "start_line": 1078,
+      "end_line": 1079,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10dQuaternionPrimeConstraintStatus",
+      "start_line": 1080,
+      "end_line": 1081,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10dRamanujanNumericalComparisonStatus",
+      "start_line": 1082,
+      "end_line": 1083,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10dQuaternionRamanujanDerivedOnlyStatus",
+      "start_line": 1084,
+      "end_line": 1086,
+      "line_count": 3,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10dCDQuaternionRamanujanSurface",
+      "start_line": 1087,
+      "end_line": 1095,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10dQuaternionRamanujanInterface",
+      "start_line": 1096,
+      "end_line": 1107,
+      "line_count": 12,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10dQuaternionRamanujanInterfaceFromBoundarySources",
+      "start_line": 1108,
+      "end_line": 1121,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10dQuaternionRamanujanInterface_status",
+      "start_line": 1122,
+      "end_line": 1135,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR10dQuaternionRamanujanInterface_no_lps_reconstruction",
+      "start_line": 1136,
+      "end_line": 1150,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR11DiscriminantSearchLedger_three_way",
+      "start_line": 1235,
+      "end_line": 1246,
+      "line_count": 12,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR12QuadraticOrderConventionCertificate",
+      "start_line": 1256,
+      "end_line": 1256,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR12UnitNormWitness",
+      "start_line": 1261,
+      "end_line": 1261,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR12NonQuadraticDiscriminantBlock",
+      "start_line": 1272,
+      "end_line": 1273,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR12GaussianOrder",
+      "start_line": 1274,
+      "end_line": 1276,
+      "line_count": 3,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR12EisensteinOrder",
+      "start_line": 1277,
+      "end_line": 1279,
+      "line_count": 3,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR12GaussianDiscriminantBridge",
+      "start_line": 1280,
+      "end_line": 1282,
+      "line_count": 3,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR12EisensteinDiscriminantBridge",
+      "start_line": 1283,
+      "end_line": 1285,
+      "line_count": 3,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR12GaussianNormFormCertificate",
+      "start_line": 1286,
+      "end_line": 1288,
+      "line_count": 3,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR12EisensteinNormFormCertificate",
+      "start_line": 1289,
+      "end_line": 1291,
+      "line_count": 3,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR12_schur_discrim_to_fundamental_discrim",
+      "start_line": 1292,
+      "end_line": 1297,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR12GaussianOrder_discriminant",
+      "start_line": 1298,
+      "end_line": 1301,
+      "line_count": 4,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR12EisensteinOrder_discriminant",
+      "start_line": 1302,
+      "end_line": 1305,
+      "line_count": 4,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR12GaussianNormForm_discriminant",
+      "start_line": 1306,
+      "end_line": 1309,
+      "line_count": 4,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "AR12EisensteinNormForm_discriminant",
+      "start_line": 1310,
+      "end_line": 1313,
+      "line_count": 4,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM0GeneratedSourceLedgerMain",
+      "start_line": 1413,
+      "end_line": 1415,
+      "line_count": 3,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM0RegularGeneratedSmokeCarrier",
+      "start_line": 1416,
+      "end_line": 1418,
+      "line_count": 3,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM0VariableGeneratedSmokeCarrier",
+      "start_line": 1419,
+      "end_line": 1421,
+      "line_count": 3,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM0GeneratedSourceLedgerMain_status",
+      "start_line": 1422,
+      "end_line": 1426,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM0GeneratedSourceLedgerMain_cutSpecCoreStatus",
+      "start_line": 1427,
+      "end_line": 1431,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM0GeneratedSourceLedgerMain_matrixDataStatus",
+      "start_line": 1432,
+      "end_line": 1436,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM0RegularGeneratedSmokeCarrier_eq_univ",
+      "start_line": 1437,
+      "end_line": 1440,
+      "line_count": 4,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM0VariableGeneratedSmokeCarrier_eq_univ",
+      "start_line": 1441,
+      "end_line": 1444,
+      "line_count": 4,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM1RGeneratedMainPath",
+      "start_line": 1463,
+      "end_line": 1467,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM1RRegularGeneratedMainPath",
+      "start_line": 1468,
+      "end_line": 1470,
+      "line_count": 3,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM1RVariableGeneratedMainPath",
+      "start_line": 1471,
+      "end_line": 1473,
+      "line_count": 3,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM1RRegularVariableGeneratedPathPair",
+      "start_line": 1474,
+      "end_line": 1477,
+      "line_count": 4,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM1RPolicyProvenanceHookMain",
+      "start_line": 1483,
+      "end_line": 1487,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM1RWeightProvenanceHookMain",
+      "start_line": 1488,
+      "end_line": 1491,
+      "line_count": 4,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM1RRegularGeneratedMainPathMain",
+      "start_line": 1492,
+      "end_line": 1496,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM1RVariableGeneratedMainPathMain",
+      "start_line": 1497,
+      "end_line": 1501,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM1RRegularVariableGeneratedPathPairMain",
+      "start_line": 1502,
+      "end_line": 1507,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM1RGeneratedVariationLedgerMain",
+      "start_line": 1508,
+      "end_line": 1513,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM1RRegularGeneratedMainPath_toc",
+      "start_line": 1514,
+      "end_line": 1519,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM1RVariableGeneratedMainPath_toc",
+      "start_line": 1520,
+      "end_line": 1525,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM1RRegularGeneratedMainPath_noCutSpecCarrierClaim",
+      "start_line": 1526,
+      "end_line": 1532,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM1RVariableGeneratedMainPath_noCutSpecCarrierClaim",
+      "start_line": 1533,
+      "end_line": 1539,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM1RRegularGeneratedMainPath_noMatrixDataYet",
+      "start_line": 1540,
+      "end_line": 1546,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM1RVariableGeneratedMainPath_noMatrixDataYet",
+      "start_line": 1547,
+      "end_line": 1553,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM1RRegularVariableGeneratedPathPair_sameGeneratedToCPipeline",
+      "start_line": 1554,
+      "end_line": 1560,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM1RRegularVariableGeneratedPathPair_noArithmeticSpecialVariation",
+      "start_line": 1561,
+      "end_line": 1567,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM1RGeneratedVariationLedgerMain_status",
+      "start_line": 1568,
+      "end_line": 1573,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM2RGeneratedFiniteCarrierAPI",
+      "start_line": 1594,
+      "end_line": 1598,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM2RGeneratedTruncationWitness",
+      "start_line": 1599,
+      "end_line": 1605,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM2RGeneratedApproximantStrong",
+      "start_line": 1606,
+      "end_line": 1610,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM2RRegularGeneratedApproximantStrong",
+      "start_line": 1611,
+      "end_line": 1614,
+      "line_count": 4,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM2RVariableGeneratedApproximantStrong",
+      "start_line": 1615,
+      "end_line": 1618,
+      "line_count": 4,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM2RRegularGeneratedApproximantStrongMain",
+      "start_line": 1623,
+      "end_line": 1628,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM2RVariableGeneratedApproximantStrongMain",
+      "start_line": 1629,
+      "end_line": 1634,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM2RGeneratedApproximantLedgerMain",
+      "start_line": 1635,
+      "end_line": 1640,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM2RRegularGeneratedApproximantStrong_route",
+      "start_line": 1641,
+      "end_line": 1647,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM2RVariableGeneratedApproximantStrong_route",
+      "start_line": 1648,
+      "end_line": 1654,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM2RRegularGeneratedApproximantStrong_cutoff",
+      "start_line": 1655,
+      "end_line": 1662,
+      "line_count": 8,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM2RVariableGeneratedApproximantStrong_cutoff",
+      "start_line": 1663,
+      "end_line": 1670,
+      "line_count": 8,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM2RRegularGeneratedApproximantStrong_carrier_eq_univ_of_le",
+      "start_line": 1671,
+      "end_line": 1678,
+      "line_count": 8,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM2RVariableGeneratedApproximantStrong_carrier_eq_univ_of_le",
+      "start_line": 1679,
+      "end_line": 1686,
+      "line_count": 8,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM2RRegularGeneratedApproximantStrong_noBoundaryPorts",
+      "start_line": 1687,
+      "end_line": 1693,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM2RVariableGeneratedApproximantStrong_noBoundaryPorts",
+      "start_line": 1694,
+      "end_line": 1700,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM2RRegularGeneratedApproximantStrong_noCutSpec",
+      "start_line": 1701,
+      "end_line": 1707,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM2RVariableGeneratedApproximantStrong_noCutSpec",
+      "start_line": 1708,
+      "end_line": 1714,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM2RGeneratedApproximantLedgerMain_status",
+      "start_line": 1715,
+      "end_line": 1721,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM2RGeneratedApproximantLedgerMain_regularNoDirichletData",
+      "start_line": 1722,
+      "end_line": 1728,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM2RGeneratedApproximantLedgerMain_variableNoDirichletData",
+      "start_line": 1729,
+      "end_line": 1734,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3aRGeneratedApproximantIndex",
+      "start_line": 1750,
+      "end_line": 1755,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3aRGeneratedBoundaryIndex",
+      "start_line": 1756,
+      "end_line": 1761,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3aRGeneratedInteriorIndex",
+      "start_line": 1762,
+      "end_line": 1767,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3aRGeneratedPartitionFiniteAPI",
+      "start_line": 1768,
+      "end_line": 1773,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3aRGeneratedBoundaryInteriorPartition",
+      "start_line": 1774,
+      "end_line": 1779,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3aRRegularGeneratedBoundaryInteriorPartition",
+      "start_line": 1780,
+      "end_line": 1783,
+      "line_count": 4,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3aRVariableGeneratedBoundaryInteriorPartition",
+      "start_line": 1784,
+      "end_line": 1787,
+      "line_count": 4,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3aRRegularGeneratedBoundaryInteriorPartitionMain",
+      "start_line": 1792,
+      "end_line": 1796,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3aRVariableGeneratedBoundaryInteriorPartitionMain",
+      "start_line": 1797,
+      "end_line": 1801,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3aRGeneratedPartitionLedgerMain",
+      "start_line": 1802,
+      "end_line": 1806,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3aRRegularGeneratedBoundaryInteriorPartition_route",
+      "start_line": 1807,
+      "end_line": 1812,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3aRVariableGeneratedBoundaryInteriorPartition_route",
+      "start_line": 1813,
+      "end_line": 1818,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3aRGeneratedPartitionLedgerMain_status",
+      "start_line": 1819,
+      "end_line": 1824,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3aRGeneratedPartitionLedgerMain_regularNoMatrixData",
+      "start_line": 1825,
+      "end_line": 1830,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3aRGeneratedPartitionLedgerMain_variableNoMatrixData",
+      "start_line": 1831,
+      "end_line": 1836,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRGeneratedAdjacencySource",
+      "start_line": 1854,
+      "end_line": 1860,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRGeneratedWeightPolicyEntrySource",
+      "start_line": 1861,
+      "end_line": 1868,
+      "line_count": 8,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRGeneratedDirichletEntrySource",
+      "start_line": 1869,
+      "end_line": 1876,
+      "line_count": 8,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRRegularGeneratedAdjacencySource",
+      "start_line": 1877,
+      "end_line": 1883,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRVariableGeneratedAdjacencySource",
+      "start_line": 1884,
+      "end_line": 1890,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRRegularGeneratedWeightPolicyEntrySource",
+      "start_line": 1891,
+      "end_line": 1897,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRVariableGeneratedWeightPolicyEntrySource",
+      "start_line": 1898,
+      "end_line": 1904,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRRegularGeneratedDirichletEntrySource",
+      "start_line": 1905,
+      "end_line": 1911,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRVariableGeneratedDirichletEntrySource",
+      "start_line": 1912,
+      "end_line": 1918,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRRegularGeneratedAdjacencySourceMain",
+      "start_line": 1924,
+      "end_line": 1928,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRVariableGeneratedAdjacencySourceMain",
+      "start_line": 1929,
+      "end_line": 1933,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRRegularGeneratedWeightPolicyEntrySourceMain",
+      "start_line": 1934,
+      "end_line": 1938,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRVariableGeneratedWeightPolicyEntrySourceMain",
+      "start_line": 1939,
+      "end_line": 1943,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRRegularGeneratedDirichletEntrySourceMain",
+      "start_line": 1944,
+      "end_line": 1948,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRVariableGeneratedDirichletEntrySourceMain",
+      "start_line": 1949,
+      "end_line": 1953,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRGeneratedDirichletEntryLedgerMain",
+      "start_line": 1954,
+      "end_line": 1959,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRGeneratedDirichletEntry",
+      "start_line": 1960,
+      "end_line": 1969,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRGeneratedDirichletMatrix",
+      "start_line": 1970,
+      "end_line": 1979,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRRegularGeneratedAdjacencySource_noFreeAdjacency",
+      "start_line": 1980,
+      "end_line": 1985,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRVariableGeneratedAdjacencySource_noFreeAdjacency",
+      "start_line": 1986,
+      "end_line": 1991,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRRegularGeneratedWeightPolicyEntrySource_noFreeWeight",
+      "start_line": 1992,
+      "end_line": 1997,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRVariableGeneratedWeightPolicyEntrySource_noFreeWeight",
+      "start_line": 1998,
+      "end_line": 2003,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRRegularGeneratedDirichletEntrySource_noFreeMatrix",
+      "start_line": 2004,
+      "end_line": 2009,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRVariableGeneratedDirichletEntrySource_noFreeMatrix",
+      "start_line": 2010,
+      "end_line": 2015,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRGeneratedDirichletMatrix_entry",
+      "start_line": 2016,
+      "end_line": 2026,
+      "line_count": 11,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRGeneratedDirichlet_zero_of_not_adjacent",
+      "start_line": 2027,
+      "end_line": 2039,
+      "line_count": 13,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRGeneratedDirichlet_offdiag_of_adjacent",
+      "start_line": 2040,
+      "end_line": 2052,
+      "line_count": 13,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRGeneratedDirichlet_diag_degree",
+      "start_line": 2053,
+      "end_line": 2063,
+      "line_count": 11,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRGeneratedDirichletEntryLedgerMain_status",
+      "start_line": 2064,
+      "end_line": 2070,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRGeneratedDirichletEntryLedgerMain_regularNoInverse",
+      "start_line": 2071,
+      "end_line": 2077,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3bRGeneratedDirichletEntryLedgerMain_variableNoDtn",
+      "start_line": 2078,
+      "end_line": 2084,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3cRInteriorBlockStructureProfile",
+      "start_line": 2096,
+      "end_line": 2096,
+      "line_count": 1,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3cRGeneratedInteriorBlockStructureProfile",
+      "start_line": 2103,
+      "end_line": 2111,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3cRGeneratedInteriorBlockEntry",
+      "start_line": 2117,
+      "end_line": 2126,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3cRGeneratedInteriorBlock",
+      "start_line": 2127,
+      "end_line": 2136,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3cRRegularGeneratedInteriorBlock",
+      "start_line": 2137,
+      "end_line": 2143,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3cRVariableGeneratedInteriorBlock",
+      "start_line": 2144,
+      "end_line": 2150,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3cRGeneratedInteriorBlockLedgerMain",
+      "start_line": 2151,
+      "end_line": 2156,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3cRGeneratedInteriorBlock_from_dirichlet",
+      "start_line": 2157,
+      "end_line": 2170,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3cRGeneratedInteriorBlock_zero_of_not_adjacent",
+      "start_line": 2171,
+      "end_line": 2186,
+      "line_count": 16,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3cRGeneratedInteriorBlock_offdiag_of_parent_child_or_coupling",
+      "start_line": 2187,
+      "end_line": 2205,
+      "line_count": 19,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3cRGeneratedInteriorBlock_diag_degree_or_regularized_degree",
+      "start_line": 2206,
+      "end_line": 2217,
+      "line_count": 12,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3cRGeneratedInteriorBlockLedgerMain_status",
+      "start_line": 2218,
+      "end_line": 2224,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3cRGeneratedInteriorBlockLedgerMain_regularProfile_treeRecursive",
+      "start_line": 2225,
+      "end_line": 2231,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3cRGeneratedInteriorBlockLedgerMain_variableNoDtn",
+      "start_line": 2232,
+      "end_line": 2238,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3dRGeneratedInteriorEliminationCandidateSource",
+      "start_line": 2244,
+      "end_line": 2245,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3dRGeneratedInteriorEliminationCandidate",
+      "start_line": 2258,
+      "end_line": 2266,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3dRRegularGeneratedInteriorEliminationCandidateMain",
+      "start_line": 2273,
+      "end_line": 2281,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3dRVariableGeneratedInteriorEliminationCandidateMain",
+      "start_line": 2282,
+      "end_line": 2290,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3dRGeneratedInteriorEliminationCandidateLedgerMain",
+      "start_line": 2291,
+      "end_line": 2297,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3dRCandidate_profile_eq_SM3cR_profile",
+      "start_line": 2298,
+      "end_line": 2308,
+      "line_count": 11,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3dRGeneratedInteriorEliminationCandidateLedgerMain_status",
+      "start_line": 2309,
+      "end_line": 2315,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3dRGeneratedInteriorEliminationCandidateLedgerMain_regularSource_treeRecursive",
+      "start_line": 2316,
+      "end_line": 2322,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3dRGeneratedInteriorEliminationCandidateLedgerMain_variableSource_treeRecursive",
+      "start_line": 2323,
+      "end_line": 2329,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3dRGeneratedInteriorEliminationCandidateLedgerMain_regularNoMatrixInv",
+      "start_line": 2330,
+      "end_line": 2336,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3dRGeneratedInteriorEliminationCandidateLedgerMain_variableNoFreeInverse",
+      "start_line": 2337,
+      "end_line": 2343,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3dRGeneratedInteriorEliminationCandidateLedgerMain_regularNoTwoSidedInv",
+      "start_line": 2344,
+      "end_line": 2350,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3dRGeneratedInteriorEliminationCandidateLedgerMain_variableNoDtnDataYet",
+      "start_line": 2351,
+      "end_line": 2357,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3daRGeneratedInteriorEliminationCandidateEntrySource",
+      "start_line": 2363,
+      "end_line": 2364,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3daRGeneratedInteriorEliminationCandidateEntry",
+      "start_line": 2381,
+      "end_line": 2389,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3daRCandidateEntry_from_treeRecursiveProfile",
+      "start_line": 2396,
+      "end_line": 2408,
+      "line_count": 13,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3daRCandidateMatrix_from_candidateEntry",
+      "start_line": 2409,
+      "end_line": 2419,
+      "line_count": 11,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3daRRegularGeneratedInteriorEliminationCandidateEntryMain",
+      "start_line": 2420,
+      "end_line": 2428,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3daRVariableGeneratedInteriorEliminationCandidateEntryMain",
+      "start_line": 2429,
+      "end_line": 2437,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3daRGeneratedInteriorEliminationCandidateEntryLedgerMain",
+      "start_line": 2438,
+      "end_line": 2444,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3daRCandidateEntry_profile_eq_SM3dR_source",
+      "start_line": 2445,
+      "end_line": 2455,
+      "line_count": 11,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3daRCandidateMatrix_from_candidateEntry_entry",
+      "start_line": 2456,
+      "end_line": 2467,
+      "line_count": 12,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3daRNoMatrixInv_for_candidateEntry",
+      "start_line": 2468,
+      "end_line": 2478,
+      "line_count": 11,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3daRNoFreeEntryTable",
+      "start_line": 2479,
+      "end_line": 2489,
+      "line_count": 11,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3daRNoExternalInverseOracle",
+      "start_line": 2490,
+      "end_line": 2501,
+      "line_count": 12,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3daRGeneratedInteriorEliminationCandidateEntryLedgerMain_status",
+      "start_line": 2502,
+      "end_line": 2508,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3daRGeneratedInteriorEliminationCandidateEntryLedgerMain_regularNoFreeEntryTable",
+      "start_line": 2509,
+      "end_line": 2515,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3daRGeneratedInteriorEliminationCandidateEntryLedgerMain_variableNoExternalInverseOracle",
+      "start_line": 2516,
+      "end_line": 2522,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3daRGeneratedInteriorEliminationCandidateEntryLedgerMain_regularNoTwoSidedInv",
+      "start_line": 2523,
+      "end_line": 2529,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRGeneratedCandidateEntryShapeAuditOutcome",
+      "start_line": 2535,
+      "end_line": 2536,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRGeneratedInteriorTwoSidedInvObstructionReason",
+      "start_line": 2544,
+      "end_line": 2545,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRGeneratedInteriorTwoSidedInvReturnTarget",
+      "start_line": 2546,
+      "end_line": 2547,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRGeneratedCandidateEntryShapeAuditOf",
+      "start_line": 2551,
+      "end_line": 2559,
+      "line_count": 9,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRGeneratedInteriorTwoSidedInvProofOf",
+      "start_line": 2560,
+      "end_line": 2571,
+      "line_count": 12,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRGeneratedInteriorTwoSidedInvObstructionOf",
+      "start_line": 2572,
+      "end_line": 2583,
+      "line_count": 12,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eR0CandidateEntryShapeAuditLedgerMain",
+      "start_line": 2584,
+      "end_line": 2588,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRGeneratedTwoSidedInvLedgerMain",
+      "start_line": 2589,
+      "end_line": 2593,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRCandidateEntry_eq_interiorBlock",
+      "start_line": 2594,
+      "end_line": 2605,
+      "line_count": 12,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRCandidateMatrix_entry_eq_interiorBlock",
+      "start_line": 2606,
+      "end_line": 2617,
+      "line_count": 12,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eR0CandidateEntryShapeAuditLedgerMain_status",
+      "start_line": 2618,
+      "end_line": 2624,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRGeneratedTwoSidedInvLedgerMain_status",
+      "start_line": 2625,
+      "end_line": 2632,
+      "line_count": 8,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3daRPositivePathLockedOf",
+      "start_line": 2659,
+      "end_line": 2670,
+      "line_count": 12,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3dbRPositiveFirstContractOf",
+      "start_line": 2671,
+      "end_line": 2682,
+      "line_count": 12,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3daRPositivePathLockedMain",
+      "start_line": 2688,
+      "end_line": 2700,
+      "line_count": 13,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3dbRPositiveFirstContractMain",
+      "start_line": 2701,
+      "end_line": 2713,
+      "line_count": 13,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db0RPositiveFirstLedgerMain",
+      "start_line": 2714,
+      "end_line": 2719,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3daRPositivePathLockedMain_status",
+      "start_line": 2720,
+      "end_line": 2733,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3dbRPositiveFirstContractMain_noStartObstruction",
+      "start_line": 2734,
+      "end_line": 2747,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3dbRPositiveFirstContractMain_needsNewInverseCandidateEntry",
+      "start_line": 2748,
+      "end_line": 2761,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3dbRPositiveFirstContractMain_nextPhase",
+      "start_line": 2762,
+      "end_line": 2775,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db0RPositiveFirstLedgerMain_status",
+      "start_line": 2776,
+      "end_line": 2782,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db0RPositiveFirstLedgerMain_regularNoStartObstruction",
+      "start_line": 2783,
+      "end_line": 2789,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db0RPositiveFirstLedgerMain_variableNeedsNewInverseCandidateEntry",
+      "start_line": 2790,
+      "end_line": 2796,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db1RGeneratedInteriorEliminationNodeOf",
+      "start_line": 2829,
+      "end_line": 2838,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db1RGeneratedInteriorEliminationDepthOf",
+      "start_line": 2839,
+      "end_line": 2849,
+      "line_count": 11,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db1RGeneratedInteriorEliminationMeasureOf",
+      "start_line": 2850,
+      "end_line": 2861,
+      "line_count": 12,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db1RGeneratedInteriorEliminationCarrierOf",
+      "start_line": 2862,
+      "end_line": 2873,
+      "line_count": 12,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db1RGeneratedInteriorEliminationCarrierFromSM3cRSM3dR",
+      "start_line": 2880,
+      "end_line": 2892,
+      "line_count": 13,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db1RRegularGeneratedInteriorEliminationCarrierMain",
+      "start_line": 2893,
+      "end_line": 2902,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db1RVariableGeneratedInteriorEliminationCarrierMain",
+      "start_line": 2903,
+      "end_line": 2912,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db1RGeneratedInteriorEliminationCarrierLedgerMain",
+      "start_line": 2913,
+      "end_line": 2919,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db1RGeneratedInteriorEliminationCarrierMain_noFreeCarrier",
+      "start_line": 2920,
+      "end_line": 2934,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db1RGeneratedInteriorEliminationCarrierMain_noExternalOrderOracle",
+      "start_line": 2935,
+      "end_line": 2949,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db1RGeneratedInteriorEliminationCarrierLedgerMain_status",
+      "start_line": 2950,
+      "end_line": 2956,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db1RGeneratedInteriorEliminationCarrierLedgerMain_regularNoInverseEntryFunction",
+      "start_line": 2957,
+      "end_line": 2963,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db1RGeneratedInteriorEliminationCarrierLedgerMain_variableNoMatrixExport",
+      "start_line": 2964,
+      "end_line": 2970,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db1RGeneratedInteriorEliminationCarrierLedgerMain_regularNextPositivePhase",
+      "start_line": 2971,
+      "end_line": 2977,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db2RGeneratedInteriorPivotDatumOf",
+      "start_line": 3002,
+      "end_line": 3014,
+      "line_count": 13,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db2RGeneratedInteriorResidualDatumOf",
+      "start_line": 3015,
+      "end_line": 3028,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db2RGeneratedInteriorStepUpdateOf",
+      "start_line": 3029,
+      "end_line": 3043,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db2RGeneratedInteriorEliminationStepOf",
+      "start_line": 3044,
+      "end_line": 3056,
+      "line_count": 13,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db2RLocalStepFromSM3db1RNode",
+      "start_line": 3065,
+      "end_line": 3079,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db2RGeneratedInteriorEliminationStepFromProfile",
+      "start_line": 3080,
+      "end_line": 3094,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db2RRegularGeneratedInteriorEliminationStepMain",
+      "start_line": 3095,
+      "end_line": 3106,
+      "line_count": 12,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db2RVariableGeneratedInteriorEliminationStepMain",
+      "start_line": 3107,
+      "end_line": 3118,
+      "line_count": 12,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db2RGeneratedInteriorEliminationStepLedgerMain",
+      "start_line": 3119,
+      "end_line": 3128,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db2RGeneratedInteriorEliminationStepMain_noMatrixInv",
+      "start_line": 3129,
+      "end_line": 3143,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db2RGeneratedInteriorEliminationStepMain_noFreePivotData",
+      "start_line": 3144,
+      "end_line": 3158,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db2RGeneratedInteriorEliminationStepMain_noGlobalPivotOrder",
+      "start_line": 3159,
+      "end_line": 3173,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db2RGeneratedInteriorEliminationStepMain_noTraceSemantics",
+      "start_line": 3174,
+      "end_line": 3188,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db2RGeneratedInteriorEliminationStepLedgerMain_status",
+      "start_line": 3189,
+      "end_line": 3198,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db3RGeneratedInteriorEliminationTraceStep",
+      "start_line": 3213,
+      "end_line": 3226,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db3RGeneratedInteriorEliminationTrace",
+      "start_line": 3227,
+      "end_line": 3239,
+      "line_count": 13,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db3RTraceStepFromLocalEliminationStep",
+      "start_line": 3240,
+      "end_line": 3254,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db3RGeneratedInteriorEliminationTraceMain",
+      "start_line": 3255,
+      "end_line": 3268,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db3RGeneratedInteriorEliminationTraceMain_terminates",
+      "start_line": 3269,
+      "end_line": 3283,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db3RGeneratedInteriorEliminationTraceMain_source",
+      "start_line": 3284,
+      "end_line": 3299,
+      "line_count": 16,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db3RGeneratedInteriorEliminationTraceLedgerMain",
+      "start_line": 3300,
+      "end_line": 3309,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db3RGeneratedInteriorEliminationTraceLedgerMain_status",
+      "start_line": 3310,
+      "end_line": 3319,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db3RGeneratedInteriorEliminationTraceLedgerMain_noMatrixExport",
+      "start_line": 3320,
+      "end_line": 3329,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4RGeneratedInteriorTraceEntryFold",
+      "start_line": 3361,
+      "end_line": 3374,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4RGeneratedInteriorTraceEvaluation",
+      "start_line": 3375,
+      "end_line": 3388,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4RGeneratedInteriorInverseCandidateEntry",
+      "start_line": 3389,
+      "end_line": 3402,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4RTraceEntryFoldMain",
+      "start_line": 3403,
+      "end_line": 3417,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4RTraceEvaluationMain",
+      "start_line": 3418,
+      "end_line": 3432,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4RGeneratedInteriorInverseCandidateEntryMain",
+      "start_line": 3433,
+      "end_line": 3447,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4RGeneratedInteriorInverseCandidateEntryLedgerMain",
+      "start_line": 3448,
+      "end_line": 3457,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4RGeneratedInteriorInverseCandidateEntryMain_noMatrixInv",
+      "start_line": 3458,
+      "end_line": 3474,
+      "line_count": 17,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4RGeneratedInteriorInverseCandidateEntryMain_noMatrixExport",
+      "start_line": 3475,
+      "end_line": 3490,
+      "line_count": 16,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4RGeneratedInteriorInverseCandidateEntryLedgerMain_status",
+      "start_line": 3491,
+      "end_line": 3500,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4RGeneratedInteriorInverseCandidateEntryLedgerMain_regularNoProductProof",
+      "start_line": 3501,
+      "end_line": 3510,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4aRGeneratedInteriorAccumulatedEntryFold",
+      "start_line": 3530,
+      "end_line": 3543,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4aRGeneratedInteriorAccumulatedTraceEvaluation",
+      "start_line": 3544,
+      "end_line": 3557,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4aRGeneratedInteriorAccumulatedInverseCandidateEntry",
+      "start_line": 3558,
+      "end_line": 3571,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4aRAccumulatedEntryFoldMain",
+      "start_line": 3572,
+      "end_line": 3586,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4aRAccumulatedTraceEvaluationMain",
+      "start_line": 3587,
+      "end_line": 3601,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4aRAccumulatedInverseCandidateEntryMain",
+      "start_line": 3602,
+      "end_line": 3616,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4aRGeneratedInteriorAccumulatedEntryLedgerMain",
+      "start_line": 3617,
+      "end_line": 3626,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4aRAccumulatedEntryFoldMain_noFreeEntryTable",
+      "start_line": 3627,
+      "end_line": 3643,
+      "line_count": 17,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4aRAccumulatedEntryFoldMain_noExternalInverseOracle",
+      "start_line": 3644,
+      "end_line": 3660,
+      "line_count": 17,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4aRGeneratedInteriorAccumulatedEntryLedgerMain_status",
+      "start_line": 3661,
+      "end_line": 3670,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db5RGeneratedInteriorInverseCandidateMatrix",
+      "start_line": 3696,
+      "end_line": 3709,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db5RInverseCandidateMatrixMain",
+      "start_line": 3710,
+      "end_line": 3724,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db5RGeneratedInteriorInverseCandidateMatrixLedgerMain",
+      "start_line": 3725,
+      "end_line": 3734,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db5RInverseCandidateMatrixMain_entry_eq_accumulatedEntry",
+      "start_line": 3735,
+      "end_line": 3751,
+      "line_count": 17,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db5RInverseCandidateMatrixMain_noTwoSidedInv",
+      "start_line": 3752,
+      "end_line": 3767,
+      "line_count": 16,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db5RGeneratedInteriorInverseCandidateMatrixLedgerMain_status",
+      "start_line": 3768,
+      "end_line": 3777,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db5RGeneratedInteriorInverseCandidateMatrixLedgerMain_regularNextGate",
+      "start_line": 3778,
+      "end_line": 3787,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db6RGeneratedInteriorInverseCandidateShapeSeparation",
+      "start_line": 3808,
+      "end_line": 3822,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db6RShapeSeparationMain",
+      "start_line": 3823,
+      "end_line": 3838,
+      "line_count": 16,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db6RShapeSeparationLedgerMain",
+      "start_line": 3839,
+      "end_line": 3848,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db6RShapeSeparationMain_entry_eq_accumulatedTraceValue",
+      "start_line": 3849,
+      "end_line": 3866,
+      "line_count": 18,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db6RShapeSeparationMain_noProductProof",
+      "start_line": 3867,
+      "end_line": 3883,
+      "line_count": 17,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db6RShapeSeparationLedgerMain_status",
+      "start_line": 3884,
+      "end_line": 3893,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db6RShapeSeparationLedgerMain_regularNextGate",
+      "start_line": 3894,
+      "end_line": 3903,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db7RHandoffMain",
+      "start_line": 3936,
+      "end_line": 3952,
+      "line_count": 17,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db7RGeneratedInverseCandidateLedgerMain",
+      "start_line": 3953,
+      "end_line": 3962,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db7RHandoffMain_candidate_eq_SM3db6R_shapeSeparationMatrix",
+      "start_line": 3963,
+      "end_line": 3980,
+      "line_count": 18,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db7RHandoffMain_candidate_source_eq_SM3db5R_matrixExport",
+      "start_line": 3981,
+      "end_line": 3999,
+      "line_count": 19,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db7RHandoffMain_candidate_source_eq_SM3db4aR_accumulatedEntry",
+      "start_line": 4000,
+      "end_line": 4018,
+      "line_count": 19,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db7RHandoffMain_noLeftProduct",
+      "start_line": 4019,
+      "end_line": 4036,
+      "line_count": 18,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db7RHandoffMain_noRightProduct",
+      "start_line": 4037,
+      "end_line": 4054,
+      "line_count": 18,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db7RHandoffMain_noTwoSidedInv",
+      "start_line": 4055,
+      "end_line": 4072,
+      "line_count": 18,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db7RGeneratedInverseCandidateLedgerMain_status",
+      "start_line": 4073,
+      "end_line": 4082,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRr3cTraceCancellationSourceOf",
+      "start_line": 4110,
+      "end_line": 4126,
+      "line_count": 17,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRr3cTraceCancellationDerivationOf",
+      "start_line": 4127,
+      "end_line": 4143,
+      "line_count": 17,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRr3cTraceCancellationDerivationLedgerOf",
+      "start_line": 4144,
+      "end_line": 4160,
+      "line_count": 17,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRr3cTraceCancellationSourceFromSM3dbChain",
+      "start_line": 4161,
+      "end_line": 4178,
+      "line_count": 18,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRr3cTraceCancellationInvariantFromSM3dbChain",
+      "start_line": 4179,
+      "end_line": 4197,
+      "line_count": 19,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRr3cProductCancellationLedgerFromTraceCancellationDerivation",
+      "start_line": 4198,
+      "end_line": 4216,
+      "line_count": 19,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRReRunHandoffShapeAuditOf",
+      "start_line": 4217,
+      "end_line": 4233,
+      "line_count": 17,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRReRunTraceCancellationInvariantOf",
+      "start_line": 4234,
+      "end_line": 4250,
+      "line_count": 17,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRReRunProductCancellationLedgerOf",
+      "start_line": 4251,
+      "end_line": 4267,
+      "line_count": 17,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRReRunProductIdentityProofOf",
+      "start_line": 4268,
+      "end_line": 4284,
+      "line_count": 17,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRReRunGeneratedTwoSidedInvLedgerMain",
+      "start_line": 4285,
+      "end_line": 4290,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRReRunGeneratedTwoSidedInvLedgerMain_status",
+      "start_line": 4291,
+      "end_line": 4297,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRReRunGeneratedTwoSidedInvLedgerMain_regularProofGate",
+      "start_line": 4298,
+      "end_line": 4307,
+      "line_count": 10,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRr3c1aBlockFoldNormalFormOf",
+      "start_line": 4316,
+      "end_line": 4329,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRr3c1aBlockFoldNormalFormFromTrace",
+      "start_line": 4330,
+      "end_line": 4344,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRr3c1AccumulatedEntryCancellationInvariantOf",
+      "start_line": 4345,
+      "end_line": 4358,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRr3c2TraceCancellationLedgerOf",
+      "start_line": 4359,
+      "end_line": 4376,
+      "line_count": 18,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRr3c1b0LocalStepSchurCancellationSourceAuditOf",
+      "start_line": 4389,
+      "end_line": 4403,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_CLOSED_CLUSTER_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRr3c1b0LocalStepSchurCancellationSourceAuditFromTrace",
+      "start_line": 4404,
+      "end_line": 4419,
+      "line_count": 16,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRr3c1cBlockFoldInvarianceOf",
+      "start_line": 4443,
+      "end_line": 4457,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db3aRTracePivotTerminalCoverageSourceOf",
+      "start_line": 4477,
+      "end_line": 4490,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db3aRTerminalFoldResidualCoverageRequirementOf",
+      "start_line": 4491,
+      "end_line": 4505,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db3aRTracePivotTerminalCoverageAuditOf",
+      "start_line": 4506,
+      "end_line": 4519,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4aTTerminalFoldResidualCoverageAuditOf",
+      "start_line": 4540,
+      "end_line": 4553,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4aTTerminalFoldResidualCoverageLedgerOf",
+      "start_line": 4554,
+      "end_line": 4558,
+      "line_count": 5,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4aUTerminalFoldResidualIdentityFieldsAuditOf",
+      "start_line": 4585,
+      "end_line": 4599,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4aUTerminalFoldResidualIdentityFieldCertificateOf",
+      "start_line": 4600,
+      "end_line": 4614,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4aUTerminalFoldResidualIdentityFieldsLedgerOf",
+      "start_line": 4615,
+      "end_line": 4620,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRr3c1dTerminalCoverageAuditOf",
+      "start_line": 4642,
+      "end_line": 4655,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRr3c1dTerminalCoverageSourceOf",
+      "start_line": 4656,
+      "end_line": 4669,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRr3c1dTerminalIdentityOf",
+      "start_line": 4670,
+      "end_line": 4685,
+      "line_count": 16,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db2aRLocalPivotRegularityWitnessOf",
+      "start_line": 4694,
+      "end_line": 4707,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db2aRLocalStepSchurCancellationInvariantOf",
+      "start_line": 4708,
+      "end_line": 4721,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db2aRTraceLocalStepSchurCancellationInvariantOf",
+      "start_line": 4722,
+      "end_line": 4737,
+      "line_count": 16,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db2bRTracePivotEntryNonzeroRequirementOf",
+      "start_line": 4744,
+      "end_line": 4757,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db2bRTracePivotEntryNonzeroWitnessOf",
+      "start_line": 4758,
+      "end_line": 4771,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db2bRTracePivotScaleWitnessOf",
+      "start_line": 4772,
+      "end_line": 4785,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db2bRPerPivotRegularityFromTraceOf",
+      "start_line": 4786,
+      "end_line": 4800,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db2eR0DegreeFormulaAuditOf",
+      "start_line": 4813,
+      "end_line": 4826,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db2fROperationalDegreeReciprocalDatumOf",
+      "start_line": 4849,
+      "end_line": 4862,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db2fROperationalDegreeReciprocalSourceOf",
+      "start_line": 4863,
+      "end_line": 4876,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db2eRReciprocalProfileFromWeightPolicyOf",
+      "start_line": 4877,
+      "end_line": 4890,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4aVTerminalFoldResidualIdentityEquationDatumOf",
+      "start_line": 4918,
+      "end_line": 4931,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4aVTerminalFoldResidualIdentityEquationSourceAuditOf",
+      "start_line": 4932,
+      "end_line": 4945,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4aVTerminalFoldResidualIdentityEquationSourceOf",
+      "start_line": 4946,
+      "end_line": 4959,
+      "line_count": 14,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4aVTerminalFoldResidualIdentityEquationSourceAuditLedgerOf",
+      "start_line": 4960,
+      "end_line": 4965,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4aVTerminalFoldResidualIdentityEquationSourceLedgerOf",
+      "start_line": 4966,
+      "end_line": 4972,
+      "line_count": 7,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4aWTerminalIdentityFieldCertificateFromEquationSourceOf",
+      "start_line": 4993,
+      "end_line": 5007,
+      "line_count": 15,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3db4aWTerminalIdentityFieldCertificateFromEquationSourceLedgerOf",
+      "start_line": 5008,
+      "end_line": 5013,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3eRr3c1dFullTerminalIdentityFromSM3db4aWLedgerOf",
+      "start_line": 5014,
+      "end_line": 5019,
+      "line_count": 6,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM3hRGeneratedGeneralizedTopBoundaryDtN",
+      "start_line": 5034,
+      "end_line": 5036,
+      "line_count": 3,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM4GeneratedMultiSchur",
+      "start_line": 5047,
+      "end_line": 5048,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM5GeneratedArithmeticSourceKind",
+      "start_line": 5056,
+      "end_line": 5057,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM5GeneratedArithmeticSource",
+      "start_line": 5068,
+      "end_line": 5069,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM6GeneratedLevelHistoryIndex",
+      "start_line": 5078,
+      "end_line": 5079,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    },
+    {
+      "surface": "SM6GeneratedLevelStepWitness",
+      "start_line": 5088,
+      "end_line": 5089,
+      "line_count": 2,
+      "review_decision": "APPROVE_LEG44_STANDALONE_REMOVAL_CANDIDATE"
+    }
+  ]
+}

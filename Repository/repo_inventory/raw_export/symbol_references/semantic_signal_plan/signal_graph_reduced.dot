@@ -1,6 +1,6 @@
 digraph signal_graph_reduced {
   rankdir="LR";
-  node [shape=box, fontsize=10];
+  node [shape=box, fontsize=11];
   "CNNA.Basic" [tooltip="Basic"];
   "CNNA.BuildAll" [tooltip="BuildAll"];
   "CNNA.Notation" [tooltip="Notation"];
@@ -292,19 +292,13 @@ digraph signal_graph_reduced {
   "CNNA.PillarA.Arithmetic.Actions.ActionPackage" -> "CNNA.PillarA.Arithmetic.Actions.GeneratorActionInventory";
   "CNNA.PillarA.Arithmetic.Actions.GeneratorActionInventory" -> "CNNA.PillarA.Arithmetic.Actions.ActionFormatDecision";
   "CNNA.PillarA.Arithmetic.BoundarySource.BoundarySourceConvergence" -> "CNNA.PillarA.Arithmetic.Notation";
-  "CNNA.PillarA.Arithmetic.BoundarySource.BoundarySourceDecisionLedger" -> "CNNA.PillarA.Arithmetic.Notation";
   "CNNA.PillarA.Arithmetic.BoundarySource.BoundarySourceInterface" -> "CNNA.PillarA.Arithmetic.BoundarySource.RecursiveLevelHistoryRoute";
   "CNNA.PillarA.Arithmetic.BoundarySource.BoundarySourceTypeDecision" -> "CNNA.PillarA.Arithmetic.BoundarySource.BoundarySourceInterface";
-  "CNNA.PillarA.Arithmetic.BoundarySource.BoundaryStateSubstrate" -> "CNNA.PillarA.Arithmetic.Notation";
-  "CNNA.PillarA.Arithmetic.BoundarySource.BranchAddressSubstrate" -> "CNNA.PillarA.Arithmetic.Notation";
-  "CNNA.PillarA.Arithmetic.BoundarySource.ExistingIdealThreadNoGo" -> "CNNA.PillarA.Arithmetic.Notation";
   "CNNA.PillarA.Arithmetic.BoundarySource.GeneratedSubstrateRoute" -> "CNNA.PillarA.Arithmetic.BoundarySource.BoundarySourceDecisionLedger";
   "CNNA.PillarA.Arithmetic.BoundarySource.GeneratedSubstrateRoute" -> "CNNA.PillarA.Arithmetic.BoundarySource.BoundaryStateSubstrate";
   "CNNA.PillarA.Arithmetic.BoundarySource.GeneratedSubstrateRoute" -> "CNNA.PillarA.Arithmetic.BoundarySource.BranchAddressSubstrate";
   "CNNA.PillarA.Arithmetic.BoundarySource.GeneratedSubstrateRoute" -> "CNNA.PillarA.Arithmetic.BoundarySource.HistoryExpandedSubstrate";
   "CNNA.PillarA.Arithmetic.BoundarySource.GeneratedSubstrateRoute" -> "CNNA.PillarA.Arithmetic.BoundarySource.InterfaceExposureSubstrate";
-  "CNNA.PillarA.Arithmetic.BoundarySource.HistoryExpandedSubstrate" -> "CNNA.PillarA.Arithmetic.Notation";
-  "CNNA.PillarA.Arithmetic.BoundarySource.InterfaceExposureSubstrate" -> "CNNA.PillarA.Arithmetic.Notation";
   "CNNA.PillarA.Arithmetic.BoundarySource.LevelHistoryIndex" -> "CNNA.PillarA.Arithmetic.BoundarySource.LevelStepWitness";
   "CNNA.PillarA.Arithmetic.BoundarySource.LevelHistoryMatrix" -> "CNNA.PillarA.Arithmetic.BoundarySource.MultiSchurToLevelHistoryAdapter";
   "CNNA.PillarA.Arithmetic.BoundarySource.LevelStepWitness" -> "CNNA.PillarA.Arithmetic.BoundarySource.RecursiveLevelHistoryCarrier";
@@ -314,9 +308,7 @@ digraph signal_graph_reduced {
   "CNNA.PillarA.Arithmetic.CayleyDickson.ArithmeticCDBridge" -> "CNNA.PillarA.Arithmetic.Convergence.CDArithmeticCompatibility";
   "CNNA.PillarA.Arithmetic.CayleyDickson.ArithmeticCDBridge" -> "CNNA.PillarA.Arithmetic.Convergence.QuaternionRamanujanInterface";
   "CNNA.PillarA.Arithmetic.Convergence.CDArithmeticCompatibility" -> "CNNA.PillarA.Arithmetic.Notation";
-  "CNNA.PillarA.Arithmetic.Convergence.QuaternionRamanujanInterface" -> "CNNA.PillarA.Arithmetic.Notation";
   "CNNA.PillarA.Arithmetic.Core.BrightDtNSource" -> "CNNA.PillarA.Arithmetic.Notation";
-  "CNNA.PillarA.Arithmetic.Core.FullBoundaryAudit" -> "CNNA.PillarA.Arithmetic.Notation";
   "CNNA.PillarA.Arithmetic.Core.MatrixTransport" -> "CNNA.PillarA.Arithmetic.Core.BrightDtNSource";
   "CNNA.PillarA.Arithmetic.Core.Source" -> "CNNA.PillarA.Arithmetic.Notation";
   "CNNA.PillarA.Arithmetic.Graph.CheegerSeed" -> "CNNA.PillarA.Arithmetic.Graph.RamanujanTest";
@@ -333,9 +325,6 @@ digraph signal_graph_reduced {
   "CNNA.PillarA.Arithmetic.Schur.HigherLevelDiscriminants" -> "CNNA.PillarA.Arithmetic.Notation";
   "CNNA.PillarA.Arithmetic.Schur.HigherLevelOutcomeRouter" -> "CNNA.PillarA.Arithmetic.Schur.HigherLevelDiscriminants";
   "CNNA.PillarA.Arithmetic.Schur.HigherLevelPredictionLedger" -> "CNNA.PillarA.Arithmetic.Schur.HigherLevelCertificates";
-  "CNNA.PillarA.Arithmetic.Schur.IdentityLedger" -> "CNNA.PillarA.Arithmetic.Notation";
-  "CNNA.PillarA.Arithmetic.Schur.L1Baseline" -> "CNNA.PillarA.Arithmetic.Notation";
-  "CNNA.PillarA.Arithmetic.Schur.L2Eisenstein" -> "CNNA.PillarA.Arithmetic.Notation";
   "CNNA.PillarA.Arithmetic.Schur.L3Gaussian" -> "CNNA.PillarA.Arithmetic.Schur.IdentityLedger";
   "CNNA.PillarA.Arithmetic.Schur.MobiusTransfer" -> "CNNA.PillarA.Arithmetic.Schur.RecursiveSchurSource";
   "CNNA.PillarA.Arithmetic.Schur.Recurrence" -> "CNNA.PillarA.Arithmetic.Schur.CharpolyExec";
@@ -362,7 +351,6 @@ digraph signal_graph_reduced {
   "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldKernelLocalSchurResidualBridgeR3c1b1" -> "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepCancellationR3c1bFull";
   "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldNormalFormR3c1a" -> "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorAccumulatedEntryCancellationR3c1";
   "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldNormalFormR3c1a" -> "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorLocalStepSchurCancellationSourceAuditR3c1b0";
-  "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldTerminalIdentityFromSM3db4aWR3c1dFull" -> "CNNA.PillarA.Arithmetic.Notation";
   "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldTerminalIdentityR3c1d" -> "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorAccumulatedEntryCancellationFromTerminalIdentityR3c1e";
   "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldTerminalIdentityR3c1d" -> "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalIdentityFieldCertificateFromEquationSourceSM3db4aW";
   "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCandidate" -> "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorEliminationCandidateEntry";
@@ -386,6 +374,7 @@ digraph signal_graph_reduced {
   "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalFoldResidualIdentityEquationSourceSM3db4aV" -> "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalIdentityFieldCertificateFromEquationSourceSM3db4aW";
   "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalFoldResidualIdentityFieldsSM3db4aU" -> "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldTerminalIdentityR3c1d";
   "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalFoldResidualIdentityFieldsSM3db4aU" -> "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalFoldResidualIdentityEquationSourceSM3db4aV";
+  "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalIdentityFieldCertificateFromEquationSourceSM3db4aW" -> "CNNA.PillarA.Arithmetic.Notation";
   "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTerminalIdentityFieldCertificateFromEquationSourceSM3db4aW" -> "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorBlockFoldTerminalIdentityFromSM3db4aWR3c1dFull";
   "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTraceCancellationDerivation" -> "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTraceCancellationR3c2";
   "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorTraceCancellationR3c2" -> "CNNA.PillarA.Arithmetic.Smoke.GeneratedInteriorProductIdentityProofR4a";

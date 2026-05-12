@@ -1,6 +1,6 @@
 digraph group_pillara_finite {
   rankdir="LR";
-  node [shape=box, fontsize=10];
+  node [shape=box, fontsize=11];
   "CNNA.PillarA.Finite.Approximant" [tooltip="PillarA/Finite"];
   "CNNA.PillarA.Finite.BoundaryPorts" [tooltip="PillarA/Finite"];
   "CNNA.PillarA.Finite.BuildAll" [tooltip="PillarA/Finite"];

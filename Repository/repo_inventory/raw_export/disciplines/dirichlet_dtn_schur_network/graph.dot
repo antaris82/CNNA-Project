@@ -1,6 +1,6 @@
 digraph discipline_dirichlet_dtn_schur_network {
   rankdir="LR";
-  node [shape=box, fontsize=10];
+  node [shape=box, fontsize=11];
   "CNNA.PillarA.Closure.BuildAll" [tooltip="PillarA/Closure"];
   "CNNA.PillarA.Closure.Notation" [tooltip="PillarA/Closure"];
   "CNNA.PillarA.Closure.ParameterClosure" [tooltip="PillarA/Closure"];

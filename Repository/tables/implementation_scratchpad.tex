@@ -2905,7 +2905,7 @@ Duplicate-risk symbols or operations & \begin{itemize}[leftmargin=*,itemsep=0.05
 \hline\addlinespace[0.20em]
 \end{longtable}
 \phantomsection
-\subsection*{Phase 1.1.1.1.5 -- Pre-substantive-code readiness umbrella: semantic consolidation, full IST intake, neutral naming, refactor, post-scan, and release proof}
+\subsection*{Phase 1.1.1.1.5 -- Pre-substantive-code readiness umbrella: Notation audit, removal review/\allowbreak{}execution, neutral renaming/\allowbreak{}refactor, post-refactor 1:1 Lean mirror scan, Explorer-readiness handoff and release proof}
 \label{impl:phase-1-1-1-1-5}
 \par\smallskip\noindent\begin{minipage}{0.99\linewidth}\footnotesize\raggedright\textbf{Table legend.} \colorbox{green!18}{\strut G} = green/closed and derived-only; \colorbox{white}{\strut W} = white/non-direct-Lean tooling/refactor/infrastructure/documentation/comparison; \colorbox{orange!28}{\strut O} = orange/implementable after stated predecessor closure; \colorbox{yellow!25}{\strut Y} = yellow/active and implementable now; \colorbox{red!20}{\strut R} = red/locked Lean-derivation phase; release requires derived-only object/proof evidence. Context class is orthogonal to status.\end{minipage}\par\vspace{0.25em}
 \begin{longtable}{L{0.16\linewidth} L{0.81\linewidth}}
@@ -2994,9 +2994,9 @@ Implementation prompt contract & Before writing any new substantive Lean code, c
 \hline\addlinespace[0.20em]
 Global no-go inheritance & yes;\newline all global\_no\_go\_guardrails inherited (GNG01-GNG26)\\
 \hline\addlinespace[0.20em]
-How implemented & V1.21 delegates the active cursor to 1.1.1.1.5.1 and expands the old semantic consolidation gate into a five-step readiness chain before 1.1.1.2.\\
+How implemented & P1.43 extends the readiness umbrella with explicit notation-removal review/\allowbreak{}execution subgates between LEG42 and LEG38;\newline the active cursor is delegated to 1.1.1.1.5.1.1.\\
 \hline\addlinespace[0.20em]
-Verification /\allowbreak{} evidence & Static repository facts: 287 Lean modules and zero missing internal import edges from repo\_inventory;\newline direct spot-checks found clone/\allowbreak{}schema families in BoundarySource substrate ledgers and Handoff input/\allowbreak{}output wrappers;\newline long SM and Cayley-Dickson chains remain proof-stage candidates for keep/\allowbreak{}no-merge until a dedicated provenance-preservation proof exists.\\
+Verification /\allowbreak{} evidence & Planning-data validation plus existing LEG42 TSV/\allowbreak{}JSON evidence. No Lean source changed;\newline no Lean build run.\\
 \hline\addlinespace[0.20em]
 Proof strategy & Refactor-governance proof by finite inventory plus targeted code inspection: identify clusters, classify safe/\allowbreak{}unsafe consolidation, require compatibility facades and regression metrics before any Lean file is moved or merged.\\
 \hline\addlinespace[0.20em]
@@ -3010,7 +3010,7 @@ Implementation notes & This phase is deliberately before 1.1.1.2. Its output is 
 \hline\addlinespace[0.20em]
 Source materials /\allowbreak{} references & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item repo\_inventory/\allowbreak{}raw\_export/\allowbreak{}modules.json\item repo\_inventory/\allowbreak{}raw\_export/\allowbreak{}import\_edges.json\item repo\_inventory/\allowbreak{}raw\_export/\allowbreak{}symbol\_reference\_summary.json\item BoundarySource substrate candidate modules\item Handoff input/\allowbreak{}output wrapper modules\item Smoke/\allowbreak{}SM generated proof-chain modules\item Structural/\allowbreak{}CayleyDickson/\allowbreak{}S6 proof-chain modules\item Arithmetic/\allowbreak{}Notation.lean size/\allowbreak{}role observation\end{itemize}\\
 \hline\addlinespace[0.20em]
-Extracted established theory objects & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item safe-merge candidate cluster\item facade-preserve candidate cluster\item proof-stage no-merge cluster\item module compactness regression metric\item natural-layer merge placement rule\end{itemize}\\
+Extracted established theory objects & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item safe-merge candidate cluster\item facade-preserve candidate cluster\item proof-stage no-merge cluster\item notation-removal review ledger\item notation-removal execution certificate\item module compactness regression metric\item natural-layer merge placement rule\end{itemize}\\
 \hline\addlinespace[0.20em]
 Modified modules & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item Repository/\allowbreak{}masters/\allowbreak{}cnna\_roadmap\_master.yaml\item README.md\item Repository/\allowbreak{}SEMANTIC\_MODULE\_CONSOLIDATION\_AUDIT\_REPORT.md\item Repository/\allowbreak{}CNNA\_Planning\_and\_Documentation\_Tool\_V1\_12\_Data\_2026-05-10T05-51-42\_CEST\_A3\_English.tex\end{itemize}\\
 \hline\addlinespace[0.20em]
@@ -3024,8 +3024,369 @@ Duplicate-risk symbols or operations & \begin{itemize}[leftmargin=*,itemsep=0.05
 \hline\addlinespace[0.20em]
 \end{longtable}
 \phantomsection
-\subsection*{Phase 1.1.1.1.5.1 -- Full IST module/\allowbreak{}declaration/\allowbreak{}object intake completeness and total-classification audit before any new substantive code}
+\subsection*{Phase 1.1.1.1.5.1 -- Notation.lean usage, consumption and cleanup audit parent, with explicit downstream removal-review/\allowbreak{}removal-execution subgates before neutral renaming/\allowbreak{}refactor}
 \label{impl:phase-1-1-1-1-5-1}
+\par\smallskip\noindent\begin{minipage}{0.99\linewidth}\footnotesize\raggedright\textbf{Table legend.} \colorbox{green!18}{\strut G} = green/closed and derived-only; \colorbox{white}{\strut W} = white/non-direct-Lean tooling/refactor/infrastructure/documentation/comparison; \colorbox{orange!28}{\strut O} = orange/implementable after stated predecessor closure; \colorbox{yellow!25}{\strut Y} = yellow/active and implementable now; \colorbox{red!20}{\strut R} = red/locked Lean-derivation phase; release requires derived-only object/proof evidence. Context class is orthogonal to status.\end{minipage}\par\vspace{0.25em}
+\begin{longtable}{L{0.16\linewidth} L{0.81\linewidth}}
+\hline
+\textbf{Field} & \textbf{Record}\\
+\hline
+Phase status & \cellcolor{green!18}G\\
+\hline\addlinespace[0.20em]
+Context class & LeanGovernancePhase\\
+\hline\addlinespace[0.20em]
+Phase documentation tier & F1\\
+\hline\addlinespace[0.20em]
+Phase documentation depth requirement & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history.\\
+\hline\addlinespace[0.20em]
+Record change version & P1.42\\
+\hline\addlinespace[0.20em]
+Record change timestamp & 2026-05-12T11:15:00+02:00\\
+\hline\addlinespace[0.20em]
+Implementation status & completed\\
+\hline\addlinespace[0.20em]
+Preparation status & closed-audit-ledger\\
+\hline\addlinespace[0.20em]
+Phase type & refactor\\
+\hline\addlinespace[0.20em]
+Phase-type-specific contract & Pre-substantive-code readiness/\allowbreak{}refactor gate;\newline not a new mathematical derivation phase.\\
+\hline\addlinespace[0.20em]
+Title /\allowbreak{} state & Notation.lean usage, consumption and cleanup audit before neutral refactor\\
+\hline\addlinespace[0.20em]
+Preparation workflow & Semantic module consolidation and compatibility-preserving refactor workflow.\\
+\hline\addlinespace[0.20em]
+Source-to-CNNA mapping & This is not a mathematical CNNA object. It maps repository structure to refactor governance: only semantically identical representation layers may be consolidated;\newline proof-producing layers remain split unless their proof/\allowbreak{}provenance information is preserved by a better canonical module.\\
+\hline\addlinespace[0.20em]
+Dependency-depth audit & V1.21 identifies this phase as part of the hard pre-code readiness chain before 1.1.1.2.\\
+\hline\addlinespace[0.20em]
+Phase split decision & Explicit child split under 1.1.1.1.5;\newline avoids treating a broad semantic-consolidation umbrella as sufficient proof for new content code.\\
+\hline\addlinespace[0.20em]
+Positive path plan & Use LEG42 as input to 1.1.1.1.5.2: create neutral module-name and namespace/\allowbreak{}facade migration map, quarantine phase-semantic surfaces, preserve proof-stage provenance, then defer actual Lean edits to 1.1.1.1.5.3 with facade-first build evidence.\\
+\hline\addlinespace[0.20em]
+Module implementation manifest & No Lean module added now. Potential future modules, if authorized: CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Outputs/\allowbreak{}SectorExportAliases.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}FeedbackInput.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}BoundarySource/\allowbreak{}CandidateLedgers.lean. Old modules remain as facades initially.\\
+\hline\addlinespace[0.20em]
+Semantic placement decision & Natural placement is before blue-object semantic correction and any new Lean content;\newline do not patch later consumer phases.\\
+\hline\addlinespace[0.20em]
+Reuse and duplication audit & RD08 records the consolidation decision rule. Same-semantics wrappers may be unified;\newline proof-stage modules must remain separated until a stronger canonical proof module preserves their role.\\
+\hline\addlinespace[0.20em]
+Canonical generator policy & No generator change. If consolidation touches generated Smoke files later, it must use the existing canonical generated-source/\allowbreak{}main-path seams and must not create a second generator path.\\
+\hline\addlinespace[0.20em]
+Module compactness rule & Preserve or improve auditability;\newline neutralize names and consolidate only with facades/\allowbreak{}regression evidence.\\
+\hline\addlinespace[0.20em]
+Refactor regression protocol & Mandatory before any Lean merge: retain old modules as facades in pass 1;\newline record declarations\_migrated\_count, imports\_changed, import\_graph\_delta, consumer\_breakage\_audit, legacy/\allowbreak{}coexistence status, and local full-build evidence.\\
+\hline\addlinespace[0.20em]
+Refactor migration metrics & Not yet executed. Initial audit candidates: BoundarySource four substrate ledger clones;\newline Handoff three A\_to\_\{C,D,E\} output aliases;\newline Handoff four \{B,C,D,E\}\_to\_A feedback-input clones;\newline no-merge candidates: SM generated proof chains, Cayley-Dickson S6 chain;\newline watch item: Arithmetic/\allowbreak{}Notation monolith.\\
+\hline\addlinespace[0.20em]
+Lean/\allowbreak{}mathlib version policy & Baseline remains Lean 4.28.0/\allowbreak{}mathlib snapshot. No new import may be assumed;\newline refactor-only changes must compile locally before closeout.\\
+\hline\addlinespace[0.20em]
+ExecComplex boundary policy & EXEC-2 remains unchanged. Consolidation may not move rational executable data behind noncomputable or analytic mirrors.\\
+\hline\addlinespace[0.20em]
+Consumer-contract direction & Audit flows from code producers/\allowbreak{}import surfaces to consumers. If a consumer needs a consolidated API, the facade must be created at the producer/\allowbreak{}natural source layer, not patched in the consumer.\\
+\hline\addlinespace[0.20em]
+Governance-overhead review & This gate is justified because concrete clone families exist, but it must remain compact: one ledger, no broad rewrite, no full code normalization before the active content path.\\
+\hline\addlinespace[0.20em]
+Proof rehearsal before implementation & For each candidate cluster prove/\allowbreak{}check: same semantic operation, same or explicitly mapped public declarations, no consumer lost, import direction preserved or improved, natural generating layer chosen, old imports kept through facades, full local build green, and statement/\allowbreak{}provenance granularity not lost.\\
+\hline\addlinespace[0.20em]
+Expected tactics & If later Lean facades are created, expect explicit abbrev/\allowbreak{}def wrappers, namespace-preserving aliases, extensionality reuse where existing, and rfl proofs. Avoid tactic-heavy rewrites;\newline no @[simp] promotion in operational path.\\
+\hline\addlinespace[0.20em]
+Expected mathlib imports & No new mathlib imports expected for audit. Any later facade/\allowbreak{}refactor should reuse existing imports;\newline new imports require Lean 4.28.0 verification.\\
+\hline\addlinespace[0.20em]
+ExecComplex/\allowbreak{}computable plan & No ExecComplex changes in the audit. If Arithmetic/\allowbreak{}Notation or operational modules are touched later, preserve all concrete executable witnesses and rational-boundary policy.\\
+\hline\addlinespace[0.20em]
+Concrete computable instance traversal & Not a computation phase. Concrete evidence is the finite repository module/\allowbreak{}declaration graph plus direct code spot-checks of named files. Later executable refactors must preserve existing executable witnesses.\\
+\hline\addlinespace[0.20em]
+Computable path non-skeleton status & Audit-only. A later refactor may not skeletonize operational paths;\newline it must preserve concrete generated source, DtN/\allowbreak{}Schur, determinant, and discriminant witnesses.\\
+\hline\addlinespace[0.20em]
+Expected executable witness & For audit: generated module inventory and candidate report. For later code refactor: unchanged downstream Lean build plus regenerated module/\allowbreak{}declaration inventory showing no lost public declarations unless explicitly facaded.\\
+\hline\addlinespace[0.20em]
+Mathlib complication log & No mathlib complication in audit. Later code movement may expose import-minimization issues;\newline resolve by preserving existing import surfaces first.\\
+\hline\addlinespace[0.20em]
+Noncomputable boundary audit & No noncomputable introduced. Later operational refactor cannot introduce noncomputable/\allowbreak{}classical pressure into executable paths.\\
+\hline\addlinespace[0.20em]
+Mathlib mitigation/\allowbreak{}refactor layer & If new imports are needed, prefer local facade modules or existing imported modules rather than widening mathlib dependency surface.\\
+\hline\addlinespace[0.20em]
+Bridge gap status & Closed for LEG42 row-level audit. Open downstream for neutral naming/\allowbreak{}facade decisions in 1.1.1.1.5.2.\\
+\hline\addlinespace[0.20em]
+Natural backjump/\allowbreak{}refactor layer & Notation.lean and neutral public-surface layer, not downstream Explorer/\allowbreak{}API or later mathematical consumers.\\
+\hline\addlinespace[0.20em]
+Implementation prompt contract & Before writing any new substantive Lean code, complete the LEG36 audit. If refactor is authorized, produce a bounded migration packet: old-module facades, changed imports, declaration delta, consumer-breakage audit, generated inventory diff, and user/\allowbreak{}local Lean build result.\\
+\hline\addlinespace[0.20em]
+Global no-go inheritance & yes;\newline all global\_no\_go\_guardrails inherited (GNG01-GNG26)\\
+\hline\addlinespace[0.20em]
+How implemented & P1.42 closed LEG42 as audit evidence. P1.43 keeps that closure but inserts child subgates 1.1.1.1.5.1.1 and 1.1.1.1.5.1.2 so unconsumed notation rows are reviewed and, only if safe, removed before LEG38.\\
+\hline\addlinespace[0.20em]
+Verification /\allowbreak{} evidence & Generated evidence exports: generated\_exports/\allowbreak{}notation\_surface\_consumption\_cleanup\_ledger.generated.tsv and generated\_exports/\allowbreak{}notation\_surface\_consumption\_cleanup\_evidence.generated.json. Counts: 13 Notation.lean files, 1156 surfaces, 484 with direct non-Notation consumer hits, 672 without. Classification counts: \{'legacy\_phase\_alias\_candidate': 196, 'consumed\_internal\_helper': 484, 'unconsumed\_domain\_alias\_candidate': 399, 'unconsumed\_symbol\_surface\_candidate': 17, 'unconsumed\_umbrella\_alias\_candidate': 60\}. P1.43 adds downstream routing: absence of direct consumers is insufficient for deletion;\newline LEG43/\allowbreak{}LEG44 are now mandatory before LEG38.\\
+\hline\addlinespace[0.20em]
+Proof strategy & Closed as static governance proof: exhaustive extraction over Notation.lean surfaces plus repository-wide token/\allowbreak{}symbol consumer search. Rows with consumer evidence are kept for review;\newline rows without direct consumers are classified as legacy phase aliases, domain aliases, symbol-surface candidates or umbrella aliases and routed to LEG38. No full-source mirror, no semantic API release and no Lean deletion occur here.\\
+\hline\addlinespace[0.20em]
+Build result & No Lean source changed. No Lean build run or claimed. Python table generation and PDF generation were run after YAML updates.\\
+\hline\addlinespace[0.20em]
+Post-implementation plan check & P1.43 correction: LEG42 remains closed as audit evidence, but deletion authority is moved to LEG43/\allowbreak{}LEG44 before neutral naming/\allowbreak{}facade migration.\\
+\hline\addlinespace[0.20em]
+Artifact packaging rule & Return a full zip with updated YAML, exports, report and generated docs;\newline do not claim Lean build.\\
+\hline\addlinespace[0.20em]
+Implementation notes & The audit deliberately does not certify unconsumed aliases as public API. It only supplies row-level evidence and dispositions for 1.1.1.1.5.2. Direct grep/\allowbreak{}token evidence is strong enough for governance triage but not a Lean elaborator reference proof;\newline ambiguous rows require manual review in the neutral facade map.\\
+\hline\addlinespace[0.20em]
+Source materials /\allowbreak{} references & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item CNNA/\allowbreak{}Notation.lean\item CNNA/\allowbreak{}PillarA/\allowbreak{}Notation.lean\item CNNA/\allowbreak{}PillarA/\allowbreak{}**/\allowbreak{}Notation.lean\item import graph\item symbol-reference/\allowbreak{}grep audit\item LEG5 consumption classification map\end{itemize}\\
+\hline\addlinespace[0.20em]
+Extracted established theory objects & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item LEG42 notation surface consumption and cleanup ledger\end{itemize}\\
+\hline\addlinespace[0.20em]
+Modified modules & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item Repository/\allowbreak{}masters/\allowbreak{}cnna\_roadmap\_master.yaml\item README.md\item Repository/\allowbreak{}generated\_exports/\allowbreak{}notation\_surface\_consumption\_cleanup\_ledger.generated.tsv\item Repository/\allowbreak{}generated\_exports/\allowbreak{}notation\_surface\_consumption\_cleanup\_evidence.generated.json\item Repository/\allowbreak{}archive/\allowbreak{}reports/\allowbreak{}PHASE\_1\_1\_1\_1\_5\_1\_NOTATION\_SURFACE\_CONSUMPTION\_AUDIT\_REPORT.md\item Repository/\allowbreak{}tables/\allowbreak{}*.tex\item Repository/\allowbreak{}generated\_exports/\allowbreak{}*.generated.tsv\end{itemize}\\
+\hline\addlinespace[0.20em]
+Forbidden patterns checked & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item no Lean source move in the audit phase\item no merge by filename similarity alone\item no deletion of old import surfaces without facade migration\item no merging proof-stage chains that encode derivation/\allowbreak{}provenance order\item no new semantic truth layer from the audit ledger\end{itemize}\\
+\hline\addlinespace[0.20em]
+No-go guardrails & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item GLOBAL-INHERITED: all global\_no\_go\_guardrails apply, especially GNG03, GNG21, GNG23-GNG26.\item no semantic merge without natural-layer placement\item no deletion of compatibility imports in the first refactor pass\item no proof-stage chain merge by naming similarity\item no code slimming that reduces statement/\allowbreak{}provenance auditability\end{itemize}\\
+\hline\addlinespace[0.20em]
+Reusable existing modules & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}BoundarySource/\allowbreak{}GeneratedSubstrateRoute.lean\item CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Core/\allowbreak{}SectorExport.lean\item CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Outputs/\allowbreak{}Closed.lean\item repo\_inventory/\allowbreak{}raw\_export/\allowbreak{}*.json\item generated\_exports/\allowbreak{}consumption\_classification\_map.generated.tsv\end{itemize}\\
+\hline\addlinespace[0.20em]
+Duplicate-risk symbols or operations & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item phase-semantic module names;\newline unclassified declarations;\newline duplicate wrapper modules;\newline stale object/\allowbreak{}proof mappings.\end{itemize}\\
+\hline\addlinespace[0.20em]
+\end{longtable}
+\phantomsection
+\subsection*{Phase 1.1.1.1.5.1.1 -- Review which LEG42-unconsumed Notation.lean surfaces can actually be removed before neutral naming/\allowbreak{}facade planning}
+\label{impl:phase-1-1-1-1-5-1-1}
+\par\smallskip\noindent\begin{minipage}{0.99\linewidth}\footnotesize\raggedright\textbf{Table legend.} \colorbox{green!18}{\strut G} = green/closed and derived-only; \colorbox{white}{\strut W} = white/non-direct-Lean tooling/refactor/infrastructure/documentation/comparison; \colorbox{orange!28}{\strut O} = orange/implementable after stated predecessor closure; \colorbox{yellow!25}{\strut Y} = yellow/active and implementable now; \colorbox{red!20}{\strut R} = red/locked Lean-derivation phase; release requires derived-only object/proof evidence. Context class is orthogonal to status.\end{minipage}\par\vspace{0.25em}
+\begin{longtable}{L{0.16\linewidth} L{0.81\linewidth}}
+\hline
+\textbf{Field} & \textbf{Record}\\
+\hline
+Phase status & \cellcolor{green!18}G\\
+\hline\addlinespace[0.20em]
+Context class & LeanGovernancePhase\\
+\hline\addlinespace[0.20em]
+Phase documentation tier & F1\\
+\hline\addlinespace[0.20em]
+Phase documentation depth requirement & Extended dossier: define removal criteria, evidence basis, row-level classifications, uncertainty classes, downstream consumers, and exact transition criteria for the execution phase.\\
+\hline\addlinespace[0.20em]
+Record change version & P1.44\\
+\hline\addlinespace[0.20em]
+Record change timestamp & 2026-05-12T11:50:00+02:00\\
+\hline\addlinespace[0.20em]
+Implementation status & completed\\
+\hline\addlinespace[0.20em]
+Preparation status & closed-review-ledger\\
+\hline\addlinespace[0.20em]
+Phase type & refactor\\
+\hline\addlinespace[0.20em]
+Phase-type-specific contract & Review-only refactor governance: no Lean edits;\newline row-level deletion criteria and ambiguity policy required.\\
+\hline\addlinespace[0.20em]
+Title /\allowbreak{} state & Notation-removal review over LEG42 unconsumed surfaces\\
+\hline\addlinespace[0.20em]
+Preparation workflow & Notation cleanup and compatibility-preserving refactor workflow.\\
+\hline\addlinespace[0.20em]
+Source-to-CNNA mapping & This is not a mathematical CNNA object. It is a tooling/\allowbreak{}refactor governance gate ensuring notation cleanup does not delete latent public/\allowbreak{}API or compatibility surfaces.\\
+\hline\addlinespace[0.20em]
+Dependency-depth audit & Active because LEG42 is closed. It must close before 1.1.1.1.5.1.2 and 1.1.1.1.5.2.\\
+\hline\addlinespace[0.20em]
+Phase split decision & Split from LEG42 because audit evidence is not deletion authority. Review and execution are separated to prevent unsafe source edits.\\
+\hline\addlinespace[0.20em]
+Positive path plan & Advance to LEG44: perform a minimal source cleanup only for LEG43-approved candidates, with exact declaration-range diffs and local Lean build evidence. If deletion is too risky, close LEG44 as a no-op certificate and route remaining surfaces to LEG38.\\
+\hline\addlinespace[0.20em]
+Module implementation manifest & No Lean modules added/\allowbreak{}modified in P1.43;\newline future LEG44 may modify only certified Notation.lean declarations.\\
+\hline\addlinespace[0.20em]
+Semantic placement decision & Natural placement is immediately after LEG42 and before LEG38 because notation surface must be stabilized before neutral facade planning.\\
+\hline\addlinespace[0.20em]
+Reuse and duplication audit & No new duplicate Lean generator. The review may reduce notation-surface duplication later if certified by LEG44.\\
+\hline\addlinespace[0.20em]
+Canonical generator policy & No CNNA generator change;\newline documentation/\allowbreak{}tooling only.\\
+\hline\addlinespace[0.20em]
+Module compactness rule & Compactness may improve only after LEG44 build-verifiable removal. Review alone does not delete.\\
+\hline\addlinespace[0.20em]
+Refactor regression protocol & Prepare regression criteria for LEG44: exact diff, consumer search, import/\allowbreak{}API compatibility, local build evidence.\\
+\hline\addlinespace[0.20em]
+Refactor migration metrics & Input size: 1156 surfaces;\newline 672 unconsumed rows require conservative review;\newline output metric is number of certified-removable vs keep/\allowbreak{}quarantine/\allowbreak{}facade/\allowbreak{}defer rows.\\
+\hline\addlinespace[0.20em]
+Lean/\allowbreak{}mathlib version policy & Lean toolchain remains lean-4.28.0;\newline no Lean build is claimed.\\
+\hline\addlinespace[0.20em]
+ExecComplex boundary policy & No ExecComplex boundary change.\\
+\hline\addlinespace[0.20em]
+Consumer-contract direction & LEG43 consumes LEG42 only;\newline LEG38 must not consume raw unreviewed removal candidates.\\
+\hline\addlinespace[0.20em]
+Governance-overhead review & Necessary split: avoids conflating audit with deletion and keeps future refactor smaller.\\
+\hline\addlinespace[0.20em]
+Proof rehearsal before implementation & For every candidate check: no direct non-Notation consumer, no public-intentional status, no facade or legacy compatibility requirement, no owner-object dependency, no documentation/\allowbreak{}API downstream dependency. Failures become keep/\allowbreak{}quarantine/\allowbreak{}facade, not deletion.\\
+\hline\addlinespace[0.20em]
+Expected tactics & No Lean tactics in this review phase;\newline use static row filtering, source inspection and conservative manual classification.\\
+\hline\addlinespace[0.20em]
+Expected mathlib imports & No new Lean imports;\newline no mathlib lookup needed for planning-only review.\\
+\hline\addlinespace[0.20em]
+ExecComplex/\allowbreak{}computable plan & Not applicable. Existing executable witnesses must remain untouched.\\
+\hline\addlinespace[0.20em]
+Concrete computable instance traversal & Concrete input is the finite LEG42 ledger;\newline each row must receive a review disposition or explicit defer reason.\\
+\hline\addlinespace[0.20em]
+Computable path non-skeleton status & Not a computable path;\newline review must not alter computable Lean witnesses.\\
+\hline\addlinespace[0.20em]
+Expected executable witness & None in review phase.\\
+\hline\addlinespace[0.20em]
+Mathlib complication log & None expected;\newline no Lean/\allowbreak{}mathlib work.\\
+\hline\addlinespace[0.20em]
+Noncomputable boundary audit & No noncomputable Lean boundary introduced;\newline no Lean source edited.\\
+\hline\addlinespace[0.20em]
+Mathlib mitigation/\allowbreak{}refactor layer & Not applicable.\\
+\hline\addlinespace[0.20em]
+Bridge gap status & Closed for review. Open for execution/\allowbreak{}build evidence in 1.1.1.1.5.1.2.\\
+\hline\addlinespace[0.20em]
+Natural backjump/\allowbreak{}refactor layer & If a notation looks removable but has ambiguous owner/\allowbreak{}public semantics, do not delete;\newline route to the owner module/\allowbreak{}facade decision in LEG38 or to a legacy quarantine layer.\\
+\hline\addlinespace[0.20em]
+Implementation prompt contract & Do not edit Lean code in 1.1.1.1.5.1.1. Produce a review ledger only. Actual source edits, if any, belong to 1.1.1.1.5.1.2.\\
+\hline\addlinespace[0.20em]
+Global no-go inheritance & Inherited. No consumer-side patching, no source deletion without provenance/\allowbreak{}regression evidence, no public API removal without facade decision.\\
+\hline\addlinespace[0.20em]
+How implemented & P1.44 generated a conservative row-level LEG43 review ledger from the closed LEG42 TSV. No Lean source was edited. The ledger distinguishes consumed rows, standalone Arithmetic/\allowbreak{}Notation removal candidates, closed-cluster Arithmetic/\allowbreak{}Notation removal candidates, deferred owner-domain rows, deferred umbrella/\allowbreak{}facade rows and deferred scoped/\allowbreak{}core-symbol syntax rows.\\
+\hline\addlinespace[0.20em]
+Verification /\allowbreak{} evidence & generated\_exports/\allowbreak{}notation\_removal\_review\_ledger.generated.tsv and generated\_exports/\allowbreak{}notation\_removal\_review\_summary.generated.json. Counts: 1156 rows reviewed;\newline 484 consumed/\allowbreak{}out of scope;\newline 672 unconsumed;\newline 494 approved for LEG44 (391 standalone, 103 closed-cluster);\newline 178 deferred (101 owner-domain, 60 umbrella/\allowbreak{}facade, 17 symbol/\allowbreak{}core-syntax).\\
+\hline\addlinespace[0.20em]
+Proof strategy & Conservative finite-source review: consumed rows cannot be removed;\newline public/\allowbreak{}facade/\allowbreak{}core-symbol/\allowbreak{}owner-domain rows are deferred;\newline only Arithmetic/\allowbreak{}Notation legacy/\allowbreak{}phase-domain surfaces without non-Notation consumers are execution candidates, split into standalone vs cluster-bound by internal consumer count.\\
+\hline\addlinespace[0.20em]
+Build result & No Lean source changed. No Lean build run or claimed. Python table generation validates the YAML/\allowbreak{}export surface.\\
+\hline\addlinespace[0.20em]
+Post-implementation plan check & LEG44 is now the unique active cursor. LEG38 remains orange until LEG44 closes.\\
+\hline\addlinespace[0.20em]
+Artifact packaging rule & Return a full zip with updated YAML, generated exports and report;\newline no PDF required for this bounded planning/\allowbreak{}export update.\\
+\hline\addlinespace[0.20em]
+Implementation notes & LEG43 approval is not deletion. It means only that LEG44 may attempt minimal deletion/\allowbreak{}retirement for the approved Arithmetic/\allowbreak{}Notation candidates. Static grep/\allowbreak{}token evidence has residual uncertainty;\newline local Lean build evidence is mandatory after any edit.\\
+\hline\addlinespace[0.20em]
+Source materials /\allowbreak{} references & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item LEG42 notation ledger TSV\item LEG42 notation evidence JSON\item repo\_snapshot/\allowbreak{}CNNA/\allowbreak{}**/\allowbreak{}Notation.lean\item declaration consumption records\item public/\allowbreak{}API policy and facade requirements\end{itemize}\\
+\hline\addlinespace[0.20em]
+Extracted established theory objects & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item LEG43\item removable notation candidate\item keep/\allowbreak{}quarantine/\allowbreak{}facade decision\item public-intentional notation exception\item owner-ambiguous notation exception\end{itemize}\\
+\hline\addlinespace[0.20em]
+Modified modules & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item Repository/\allowbreak{}masters/\allowbreak{}cnna\_roadmap\_master.yaml\item Repository/\allowbreak{}generated\_exports/\allowbreak{}notation\_removal\_review\_ledger.generated.tsv\item Repository/\allowbreak{}generated\_exports/\allowbreak{}notation\_removal\_review\_summary.generated.json\item Repository/\allowbreak{}archive/\allowbreak{}reports/\allowbreak{}PHASE\_1\_1\_1\_1\_5\_1\_1\_NOTATION\_REMOVAL\_REVIEW\_REPORT.md\item README.md\item Repository/\allowbreak{}README.md\item Repository/\allowbreak{}tables/\allowbreak{}*.tex\item Repository/\allowbreak{}generated\_exports/\allowbreak{}*.generated.tsv\end{itemize}\\
+\hline\addlinespace[0.20em]
+Forbidden patterns checked & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item no Lean source move in the review phase\item no deletion from absence of grep evidence alone\item no removal of intentional public/\allowbreak{}facade/\allowbreak{}compatibility notation\item no semantic Lean mathematics change during notation cleanup\item no neutral refactor before notation-removal certificate closes\end{itemize}\\
+\hline\addlinespace[0.20em]
+No-go guardrails & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item GNG03/\allowbreak{}GNG26/\allowbreak{}GNG28-GNG32/\allowbreak{}GNG69-GNG71 plus P1.43 no-deletion-from-absence-of-consumers rule.\end{itemize}\\
+\hline\addlinespace[0.20em]
+Reusable existing modules & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item repo\_snapshot/\allowbreak{}CNNA/\allowbreak{}**/\allowbreak{}Notation.lean\end{itemize}\\
+\hline\addlinespace[0.20em]
+Duplicate-risk symbols or operations & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item LEG42 unconsumed notation rows, especially legacy phase aliases and umbrella aliases.\end{itemize}\\
+\hline\addlinespace[0.20em]
+\end{longtable}
+\phantomsection
+\subsection*{Phase 1.1.1.1.5.1.2 -- Remove only genuinely unused Notation.lean surfaces certified by the notation-removal review gate}
+\label{impl:phase-1-1-1-1-5-1-2}
+\par\smallskip\noindent\begin{minipage}{0.99\linewidth}\footnotesize\raggedright\textbf{Table legend.} \colorbox{green!18}{\strut G} = green/closed and derived-only; \colorbox{white}{\strut W} = white/non-direct-Lean tooling/refactor/infrastructure/documentation/comparison; \colorbox{orange!28}{\strut O} = orange/implementable after stated predecessor closure; \colorbox{yellow!25}{\strut Y} = yellow/active and implementable now; \colorbox{red!20}{\strut R} = red/locked Lean-derivation phase; release requires derived-only object/proof evidence. Context class is orthogonal to status.\end{minipage}\par\vspace{0.25em}
+\begin{longtable}{L{0.16\linewidth} L{0.81\linewidth}}
+\hline
+\textbf{Field} & \textbf{Record}\\
+\hline
+Phase status & \cellcolor{green!18}G\\
+\hline\addlinespace[0.20em]
+Context class & LeanRefactorPhase\\
+\hline\addlinespace[0.20em]
+Phase documentation tier & F1\\
+\hline\addlinespace[0.20em]
+Phase documentation depth requirement & Extended dossier: exact source diffs, consumer-regression evidence, local build evidence, no-op rationale for retained rows, and compatibility impact.\\
+\hline\addlinespace[0.20em]
+Record change version & P1.46\\
+\hline\addlinespace[0.20em]
+Record change timestamp & 2026-05-12T14:45:00+02:00\\
+\hline\addlinespace[0.20em]
+Implementation status & completed\\
+\hline\addlinespace[0.20em]
+Preparation status & closed\\
+\hline\addlinespace[0.20em]
+Phase type & refactor\\
+\hline\addlinespace[0.20em]
+Phase-type-specific contract & Execution refactor gate: source edit allowed only for LEG43-approved candidates;\newline build evidence required before closure.\\
+\hline\addlinespace[0.20em]
+Title /\allowbreak{} state & Remove genuinely unused Notation.lean surfaces or certify no-op\\
+\hline\addlinespace[0.20em]
+Preparation workflow & Notation cleanup and compatibility-preserving refactor workflow.\\
+\hline\addlinespace[0.20em]
+Source-to-CNNA mapping & This is not a mathematical CNNA object. It is a source-surface cleanup certificate that may reduce unused notation without changing derived CNNA semantics.\\
+\hline\addlinespace[0.20em]
+Dependency-depth audit & Blocked until LEG43 closes. It must close before LEG38 neutral naming/\allowbreak{}facade migration becomes active.\\
+\hline\addlinespace[0.20em]
+Phase split decision & Separated from review so deletion is not authorized until row-level removal criteria are closed.\\
+\hline\addlinespace[0.20em]
+Positive path plan & Closed. Downstream work proceeds to LEG38 /\allowbreak{} 1.1.1.1.5.2: neutral module-name, namespace and facade migration map. No further notation deletion is authorized by LEG44.\\
+\hline\addlinespace[0.20em]
+Module implementation manifest & Modified only CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Notation.lean in the Lean source tree;\newline no new Lean modules added.\\
+\hline\addlinespace[0.20em]
+Semantic placement decision & Natural placement is before neutral naming/\allowbreak{}facades because the notation surface should be simplified/\allowbreak{}stabilized first.\\
+\hline\addlinespace[0.20em]
+Reuse and duplication audit & May remove duplicate/\allowbreak{}unused aliases only after certification;\newline must not remove compatibility aliases still needed for facades.\\
+\hline\addlinespace[0.20em]
+Canonical generator policy & No CNNA generator change;\newline source-surface cleanup only.\\
+\hline\addlinespace[0.20em]
+Module compactness rule & Reduce notation clutter only where mathematically and API-safely unused.\\
+\hline\addlinespace[0.20em]
+Refactor regression protocol & Static regression done: removed-token scan across Lean sources, namespace/\allowbreak{}end balance check, and regenerated repo inventory. Mandatory remaining regression: local lake build.\\
+\hline\addlinespace[0.20em]
+Refactor migration metrics & Removed 494 declarations from Arithmetic/\allowbreak{}Notation: 391 standalone and 103 closed-cluster candidates;\newline preserved 484 consumed and 178 deferred rows.\\
+\hline\addlinespace[0.20em]
+Lean/\allowbreak{}mathlib version policy & Lean toolchain remains lean-4.28.0;\newline local build evidence required if source changes.\\
+\hline\addlinespace[0.20em]
+ExecComplex boundary policy & No ExecComplex boundary change permitted.\\
+\hline\addlinespace[0.20em]
+Consumer-contract direction & LEG44 consumes LEG43;\newline LEG38 consumes LEG44, not raw deletion assumptions.\\
+\hline\addlinespace[0.20em]
+Governance-overhead review & Minimal justified gate because deletion has higher risk than audit classification.\\
+\hline\addlinespace[0.20em]
+Proof rehearsal before implementation & For each removed declaration: cite LEG43 row, cite source location, show no non-Notation consumer, record compatibility/\allowbreak{}facade decision, run consumer-regression search, and require green local build evidence.\\
+\hline\addlinespace[0.20em]
+Expected tactics & Lean tactics only if source edits unexpectedly require local proof repair;\newline preferred path is deletion of unused aliases without touching proofs. Any proof repair must remain local and explicit.\\
+\hline\addlinespace[0.20em]
+Expected mathlib imports & No new mathlib imports expected;\newline removal should not add imports.\\
+\hline\addlinespace[0.20em]
+ExecComplex/\allowbreak{}computable plan & Existing computable paths must be preserved;\newline no ExecComplex source change intended.\\
+\hline\addlinespace[0.20em]
+Concrete computable instance traversal & Traverse only LEG43 certified-removable rows;\newline ambiguous rows are not touched.\\
+\hline\addlinespace[0.20em]
+Computable path non-skeleton status & No executable witness may be removed or weakened.\\
+\hline\addlinespace[0.20em]
+Expected executable witness & Local green Lean build if any Lean code changes.\\
+\hline\addlinespace[0.20em]
+Mathlib complication log & No mathlib complication expected;\newline any import/\allowbreak{}build break means backjump rather than patch deletion broadly.\\
+\hline\addlinespace[0.20em]
+Noncomputable boundary audit & No new noncomputable declarations allowed.\\
+\hline\addlinespace[0.20em]
+Mathlib mitigation/\allowbreak{}refactor layer & Not applicable unless build reveals import dependency;\newline then route to natural owner/\allowbreak{}facade layer.\\
+\hline\addlinespace[0.20em]
+Bridge gap status & Closed for build-validated notation removal. Remaining neutral naming/\allowbreak{}facade decisions belong to LEG38.\\
+\hline\addlinespace[0.20em]
+Natural backjump/\allowbreak{}refactor layer & If a removal would require proof repair or facade redesign, stop and route to LEG38 or an earlier natural owner module rather than patching consumers.\\
+\hline\addlinespace[0.20em]
+Implementation prompt contract & Edit only Notation.lean declarations certified by LEG43. Produce full zip including modified files and exact certificate. Do not run or claim Lean build unless actually executed locally/\allowbreak{}user-provided.\\
+\hline\addlinespace[0.20em]
+Global no-go inheritance & Inherited. No source deletion without provenance/\allowbreak{}regression/\allowbreak{}build evidence.\\
+\hline\addlinespace[0.20em]
+How implemented & P1.45 consumed the closed LEG43 review ledger and removed exactly the 494 approved declarations from repo\_snapshot/\allowbreak{}CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Notation.lean. The edit uses declaration-range deletion only;\newline no deferred/\allowbreak{}public/\allowbreak{}facade/\allowbreak{}core-symbol/\allowbreak{}owner-domain rows were touched.\\
+\hline\addlinespace[0.20em]
+Verification /\allowbreak{} evidence & generated\_exports/\allowbreak{}notation\_removal\_execution\_ranges.generated.json records 494 removed declaration ranges and 3946 source lines removed before blank-line compaction. generated\_exports/\allowbreak{}notation\_removal\_execution\_ledger.generated.tsv and notation\_removal\_execution\_summary.generated.json record 494 deleted, 484 consumed preserved, 178 deferred preserved. generated\_exports/\allowbreak{}notation\_removal\_post\_edit\_source\_token\_check.generated.json reports 0 removed-token hits across Lean sources. repo\_inventory/\allowbreak{}raw\_export was regenerated: 287 modules, 724 internal edges, 43 external edges, 0 missing internal imports, 8366 declarations. P1.46 additionally records the user report that the local lake build is green for this package.\\
+\hline\addlinespace[0.20em]
+Proof strategy & Conservative source cleanup: delete only LEG43-approved Arithmetic/\allowbreak{}Notation declaration ranges;\newline preserve consumed/\allowbreak{}deferred rows;\newline run post-edit token checks for removed names across all Lean sources;\newline regenerate static inventory;\newline require user-supplied local Lean build before green closeout.\\
+\hline\addlinespace[0.20em]
+Build result & User reported green local lake build after the P1.45 notation-removal package.\\
+\hline\addlinespace[0.20em]
+Post-implementation plan check & LEG44 closed green after user-reported local build. LEG38 /\allowbreak{} 1.1.1.1.5.2 is activated as the unique next phase.\\
+\hline\addlinespace[0.20em]
+Artifact packaging rule & Return a full zip with the source edit, YAML/\allowbreak{}register updates, generated exports and report;\newline no PDF required.\\
+\hline\addlinespace[0.20em]
+Implementation notes & LEG44 is closed by P1.46 using user-reported green local lake build evidence. The source edit itself remains the P1.45 notation cleanup;\newline P1.46 only records build validation and phase activation.\\
+\hline\addlinespace[0.20em]
+Source materials /\allowbreak{} references & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item LEG43 removal-review ledger\item LEG42 notation ledger TSV/\allowbreak{}JSON\item repo\_snapshot/\allowbreak{}CNNA/\allowbreak{}**/\allowbreak{}Notation.lean\item consumer-regression search output\item local Lean build log supplied by user if source changes\end{itemize}\\
+\hline\addlinespace[0.20em]
+Extracted established theory objects & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item LEG44\item notation removal/\allowbreak{}no-op certificate\item exact notation diff\item consumer-regression evidence\item build evidence requirement\end{itemize}\\
+\hline\addlinespace[0.20em]
+Implemented modules & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item repo\_snapshot/\allowbreak{}CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Notation.lean\end{itemize}\\
+\hline\addlinespace[0.20em]
+Modified modules & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item Repository/\allowbreak{}repo\_snapshot/\allowbreak{}CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}Notation.lean\item Repository/\allowbreak{}masters/\allowbreak{}cnna\_roadmap\_master.yaml\item Repository/\allowbreak{}generated\_exports/\allowbreak{}notation\_removal\_execution\_ledger.generated.tsv\item Repository/\allowbreak{}generated\_exports/\allowbreak{}notation\_removal\_execution\_summary.generated.json\item Repository/\allowbreak{}generated\_exports/\allowbreak{}notation\_removal\_execution\_ranges.generated.json\item Repository/\allowbreak{}generated\_exports/\allowbreak{}notation\_removal\_post\_edit\_source\_token\_check.generated.json\item Repository/\allowbreak{}repo\_inventory/\allowbreak{}raw\_export/\allowbreak{}*\item Repository/\allowbreak{}archive/\allowbreak{}reports/\allowbreak{}PHASE\_1\_1\_1\_1\_5\_1\_2\_NOTATION\_REMOVAL\_EXECUTION\_REPORT.md\item README.md\item Repository/\allowbreak{}README.md\item Repository/\allowbreak{}tables/\allowbreak{}*.tex\item Repository/\allowbreak{}generated\_exports/\allowbreak{}*.generated.tsv\end{itemize}\\
+\hline\addlinespace[0.20em]
+Forbidden patterns checked & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item no deletion outside LEG43-approved rows\item no modification of deferred public/\allowbreak{}facade/\allowbreak{}core-symbol/\allowbreak{}owner-domain rows\item no import widening\item no semantic mathematical source edit beyond removal of unused notation wrappers\item no green closeout without local Lean build\end{itemize}\\
+\hline\addlinespace[0.20em]
+No-go guardrails & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item GNG03/\allowbreak{}GNG26/\allowbreak{}GNG28-GNG32/\allowbreak{}GNG69-GNG71 plus P1.43 build-verifiable deletion rule.\end{itemize}\\
+\hline\addlinespace[0.20em]
+Proposed modified modules & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item repo\_snapshot/\allowbreak{}CNNA/\allowbreak{}**/\allowbreak{}Notation.lean only if LEG43 certifies safe removals\end{itemize}\\
+\hline\addlinespace[0.20em]
+Reusable existing modules & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item repo\_snapshot/\allowbreak{}CNNA/\allowbreak{}**/\allowbreak{}Notation.lean\end{itemize}\\
+\hline\addlinespace[0.20em]
+Duplicate-risk symbols or operations & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item Legacy phase aliases, domain aliases and umbrella aliases from LEG42 review.\end{itemize}\\
+\hline\addlinespace[0.20em]
+\end{longtable}
+\phantomsection
+\subsection*{Phase 1.1.1.1.5.2 -- Neutral module-name and namespace/\allowbreak{}facade migration plan after notation cleanup}
+\label{impl:phase-1-1-1-1-5-2}
 \par\smallskip\noindent\begin{minipage}{0.99\linewidth}\footnotesize\raggedright\textbf{Table legend.} \colorbox{green!18}{\strut G} = green/closed and derived-only; \colorbox{white}{\strut W} = white/non-direct-Lean tooling/refactor/infrastructure/documentation/comparison; \colorbox{orange!28}{\strut O} = orange/implementable after stated predecessor closure; \colorbox{yellow!25}{\strut Y} = yellow/active and implementable now; \colorbox{red!20}{\strut R} = red/locked Lean-derivation phase; release requires derived-only object/proof evidence. Context class is orthogonal to status.\end{minipage}\par\vspace{0.25em}
 \begin{longtable}{L{0.16\linewidth} L{0.81\linewidth}}
 \hline
@@ -3039,132 +3400,13 @@ Phase documentation tier & F1\\
 \hline\addlinespace[0.20em]
 Phase documentation depth requirement & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history.\\
 \hline\addlinespace[0.20em]
-Record change version & \\
+Record change version & P1.46\\
 \hline\addlinespace[0.20em]
-Record change timestamp & \\
+Record change timestamp & 2026-05-12T14:45:00+02:00\\
 \hline\addlinespace[0.20em]
-Implementation status & active-prepared\\
+Implementation status & active-after-LEG44-build-green\\
 \hline\addlinespace[0.20em]
-Preparation status & active-prepared\\
-\hline\addlinespace[0.20em]
-Phase type & refactor\\
-\hline\addlinespace[0.20em]
-Phase-type-specific contract & Pre-substantive-code readiness/\allowbreak{}refactor gate;\newline not a new mathematical derivation phase.\\
-\hline\addlinespace[0.20em]
-Title /\allowbreak{} state & Full IST module/\allowbreak{}declaration/\allowbreak{}object intake completeness audit\\
-\hline\addlinespace[0.20em]
-Preparation workflow & Semantic module consolidation and compatibility-preserving refactor workflow.\\
-\hline\addlinespace[0.20em]
-Source-to-CNNA mapping & This is not a mathematical CNNA object. It maps repository structure to refactor governance: only semantically identical representation layers may be consolidated;\newline proof-producing layers remain split unless their proof/\allowbreak{}provenance information is preserved by a better canonical module.\\
-\hline\addlinespace[0.20em]
-Dependency-depth audit & V1.21 identifies this phase as part of the hard pre-code readiness chain before 1.1.1.2.\\
-\hline\addlinespace[0.20em]
-Phase split decision & Explicit child split under 1.1.1.1.5;\newline avoids treating a broad semantic-consolidation umbrella as sufficient proof for new content code.\\
-\hline\addlinespace[0.20em]
-Positive path plan & Execute and close this gate constructively;\newline only create obstruction/\allowbreak{}red blockers if the positive closure attempt identifies missing source/\allowbreak{}proof data.\\
-\hline\addlinespace[0.20em]
-Module implementation manifest & No Lean module added now. Potential future modules, if authorized: CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Outputs/\allowbreak{}SectorExportAliases.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}FeedbackInput.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}BoundarySource/\allowbreak{}CandidateLedgers.lean. Old modules remain as facades initially.\\
-\hline\addlinespace[0.20em]
-Semantic placement decision & Natural placement is before blue-object semantic correction and any new Lean content;\newline do not patch later consumer phases.\\
-\hline\addlinespace[0.20em]
-Reuse and duplication audit & RD08 records the consolidation decision rule. Same-semantics wrappers may be unified;\newline proof-stage modules must remain separated until a stronger canonical proof module preserves their role.\\
-\hline\addlinespace[0.20em]
-Canonical generator policy & No generator change. If consolidation touches generated Smoke files later, it must use the existing canonical generated-source/\allowbreak{}main-path seams and must not create a second generator path.\\
-\hline\addlinespace[0.20em]
-Module compactness rule & Preserve or improve auditability;\newline neutralize names and consolidate only with facades/\allowbreak{}regression evidence.\\
-\hline\addlinespace[0.20em]
-Refactor regression protocol & Mandatory before any Lean merge: retain old modules as facades in pass 1;\newline record declarations\_migrated\_count, imports\_changed, import\_graph\_delta, consumer\_breakage\_audit, legacy/\allowbreak{}coexistence status, and local full-build evidence.\\
-\hline\addlinespace[0.20em]
-Refactor migration metrics & Not yet executed. Initial audit candidates: BoundarySource four substrate ledger clones;\newline Handoff three A\_to\_\{C,D,E\} output aliases;\newline Handoff four \{B,C,D,E\}\_to\_A feedback-input clones;\newline no-merge candidates: SM generated proof chains, Cayley-Dickson S6 chain;\newline watch item: Arithmetic/\allowbreak{}Notation monolith.\\
-\hline\addlinespace[0.20em]
-Lean/\allowbreak{}mathlib version policy & Baseline remains Lean 4.28.0/\allowbreak{}mathlib snapshot. No new import may be assumed;\newline refactor-only changes must compile locally before closeout.\\
-\hline\addlinespace[0.20em]
-ExecComplex boundary policy & EXEC-2 remains unchanged. Consolidation may not move rational executable data behind noncomputable or analytic mirrors.\\
-\hline\addlinespace[0.20em]
-Consumer-contract direction & Audit flows from code producers/\allowbreak{}import surfaces to consumers. If a consumer needs a consolidated API, the facade must be created at the producer/\allowbreak{}natural source layer, not patched in the consumer.\\
-\hline\addlinespace[0.20em]
-Governance-overhead review & This gate is justified because concrete clone families exist, but it must remain compact: one ledger, no broad rewrite, no full code normalization before the active content path.\\
-\hline\addlinespace[0.20em]
-Proof rehearsal before implementation & For each candidate cluster prove/\allowbreak{}check: same semantic operation, same or explicitly mapped public declarations, no consumer lost, import direction preserved or improved, natural generating layer chosen, old imports kept through facades, full local build green, and statement/\allowbreak{}provenance granularity not lost.\\
-\hline\addlinespace[0.20em]
-Expected tactics & If later Lean facades are created, expect explicit abbrev/\allowbreak{}def wrappers, namespace-preserving aliases, extensionality reuse where existing, and rfl proofs. Avoid tactic-heavy rewrites;\newline no @[simp] promotion in operational path.\\
-\hline\addlinespace[0.20em]
-Expected mathlib imports & No new mathlib imports expected for audit. Any later facade/\allowbreak{}refactor should reuse existing imports;\newline new imports require Lean 4.28.0 verification.\\
-\hline\addlinespace[0.20em]
-ExecComplex/\allowbreak{}computable plan & No ExecComplex changes in the audit. If Arithmetic/\allowbreak{}Notation or operational modules are touched later, preserve all concrete executable witnesses and rational-boundary policy.\\
-\hline\addlinespace[0.20em]
-Concrete computable instance traversal & Not a computation phase. Concrete evidence is the finite repository module/\allowbreak{}declaration graph plus direct code spot-checks of named files. Later executable refactors must preserve existing executable witnesses.\\
-\hline\addlinespace[0.20em]
-Computable path non-skeleton status & Audit-only. A later refactor may not skeletonize operational paths;\newline it must preserve concrete generated source, DtN/\allowbreak{}Schur, determinant, and discriminant witnesses.\\
-\hline\addlinespace[0.20em]
-Expected executable witness & For audit: generated module inventory and candidate report. For later code refactor: unchanged downstream Lean build plus regenerated module/\allowbreak{}declaration inventory showing no lost public declarations unless explicitly facaded.\\
-\hline\addlinespace[0.20em]
-Mathlib complication log & No mathlib complication in audit. Later code movement may expose import-minimization issues;\newline resolve by preserving existing import surfaces first.\\
-\hline\addlinespace[0.20em]
-Noncomputable boundary audit & No noncomputable introduced. Later operational refactor cannot introduce noncomputable/\allowbreak{}classical pressure into executable paths.\\
-\hline\addlinespace[0.20em]
-Mathlib mitigation/\allowbreak{}refactor layer & If new imports are needed, prefer local facade modules or existing imported modules rather than widening mathlib dependency surface.\\
-\hline\addlinespace[0.20em]
-Bridge gap status & Current bridge gap is governance-level: exact consolidation candidates are not yet fully ledgered. No mathematical bridge is missing. Do not patch consumers;\newline place any new facade at the natural source layer of the duplicate/\allowbreak{}schema family.\\
-\hline\addlinespace[0.20em]
-Natural backjump/\allowbreak{}refactor layer & BoundarySource candidate ledgers belong under Arithmetic/\allowbreak{}BoundarySource;\newline Handoff input/\allowbreak{}output wrapper consolidation belongs under Handoff/\allowbreak{}Inputs or Outputs;\newline notation normalization belongs at notation facade boundaries;\newline proof-stage chains stay in their proof-stage folders unless a canonical proof module is naturally introduced.\\
-\hline\addlinespace[0.20em]
-Implementation prompt contract & Before writing any new substantive Lean code, complete the LEG36 audit. If refactor is authorized, produce a bounded migration packet: old-module facades, changed imports, declaration delta, consumer-breakage audit, generated inventory diff, and user/\allowbreak{}local Lean build result.\\
-\hline\addlinespace[0.20em]
-Global no-go inheritance & yes;\newline all global\_no\_go\_guardrails inherited (GNG01-GNG26)\\
-\hline\addlinespace[0.20em]
-How implemented & V1.21 planning update only: Audit every current source module/\allowbreak{}declaration/\allowbreak{}object mapping before planning code movement.\\
-\hline\addlinespace[0.20em]
-Verification /\allowbreak{} evidence & No Lean source changed in V1.21. Closure requires exact inventory/\allowbreak{}refactor/\allowbreak{}build evidence recorded in the corresponding proof dossier and scratchpad.\\
-\hline\addlinespace[0.20em]
-Proof strategy & Close the phase by explicit references to derived-only Lean objects/\allowbreak{}proof dossiers, source inventory exports, and local build evidence where Lean refactor is executed. If proof fails, spawn upstream red blocker at natural source layer.\\
-\hline\addlinespace[0.20em]
-Build result & No Lean build run;\newline no Lean source changed. Python table/\allowbreak{}PDF generation only.\\
-\hline\addlinespace[0.20em]
-Post-implementation plan check & Do not advance to 1.1.1.2 until the complete 1.1.1.1.5.1-1.1.1.1.5.5 chain closes.\\
-\hline\addlinespace[0.20em]
-Artifact packaging rule & Return a full zip with updated YAML, exports, report and generated docs;\newline do not claim Lean build.\\
-\hline\addlinespace[0.20em]
-Implementation notes & Audit every current source module/\allowbreak{}declaration/\allowbreak{}object mapping before planning code movement.\\
-\hline\addlinespace[0.20em]
-Source materials /\allowbreak{} references & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item repo\_inventory/\allowbreak{}raw\_export/\allowbreak{}*.json\item generated\_exports/\allowbreak{}*.tsv\item repo\_snapshot/\allowbreak{}CNNA/\allowbreak{}**/\allowbreak{}*.lean\item masters/\allowbreak{}cnna\_roadmap\_master.yaml\end{itemize}\\
-\hline\addlinespace[0.20em]
-Extracted established theory objects & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item LEG37\end{itemize}\\
-\hline\addlinespace[0.20em]
-Modified modules & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item Repository/\allowbreak{}masters/\allowbreak{}cnna\_roadmap\_master.yaml\item README.md\item Repository/\allowbreak{}archive/\allowbreak{}reports/\allowbreak{}V1\_21\_PRE\_CODE\_READINESS\_DERIVATION\_ORDER\_AUDIT\_REPORT.md\end{itemize}\\
-\hline\addlinespace[0.20em]
-Forbidden patterns checked & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item no Lean source move in the audit phase\item no merge by filename similarity alone\item no deletion of old import surfaces without facade migration\item no merging proof-stage chains that encode derivation/\allowbreak{}provenance order\item no new semantic truth layer from the audit ledger\end{itemize}\\
-\hline\addlinespace[0.20em]
-No-go guardrails & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item GLOBAL-INHERITED: all global\_no\_go\_guardrails apply, especially GNG03, GNG21, GNG23-GNG26.\item no semantic merge without natural-layer placement\item no deletion of compatibility imports in the first refactor pass\item no proof-stage chain merge by naming similarity\item no code slimming that reduces statement/\allowbreak{}provenance auditability\end{itemize}\\
-\hline\addlinespace[0.20em]
-Reusable existing modules & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}BoundarySource/\allowbreak{}GeneratedSubstrateRoute.lean\item CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Core/\allowbreak{}SectorExport.lean\item CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Outputs/\allowbreak{}Closed.lean\item repo\_inventory/\allowbreak{}raw\_export/\allowbreak{}*.json\item generated\_exports/\allowbreak{}consumption\_classification\_map.generated.tsv\end{itemize}\\
-\hline\addlinespace[0.20em]
-Duplicate-risk symbols or operations & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item phase-semantic module names;\newline unclassified declarations;\newline duplicate wrapper modules;\newline stale object/\allowbreak{}proof mappings.\end{itemize}\\
-\hline\addlinespace[0.20em]
-\end{longtable}
-\phantomsection
-\subsection*{Phase 1.1.1.1.5.2 -- Neutral module-name and namespace/\allowbreak{}facade migration plan}
-\label{impl:phase-1-1-1-1-5-2}
-\par\smallskip\noindent\begin{minipage}{0.99\linewidth}\footnotesize\raggedright\textbf{Table legend.} \colorbox{green!18}{\strut G} = green/closed and derived-only; \colorbox{white}{\strut W} = white/non-direct-Lean tooling/refactor/infrastructure/documentation/comparison; \colorbox{orange!28}{\strut O} = orange/implementable after stated predecessor closure; \colorbox{yellow!25}{\strut Y} = yellow/active and implementable now; \colorbox{red!20}{\strut R} = red/locked Lean-derivation phase; release requires derived-only object/proof evidence. Context class is orthogonal to status.\end{minipage}\par\vspace{0.25em}
-\begin{longtable}{L{0.16\linewidth} L{0.81\linewidth}}
-\hline
-\textbf{Field} & \textbf{Record}\\
-\hline
-Phase status & \cellcolor{orange!28}O\\
-\hline\addlinespace[0.20em]
-Context class & LeanGovernancePhase\\
-\hline\addlinespace[0.20em]
-Phase documentation tier & F1\\
-\hline\addlinespace[0.20em]
-Phase documentation depth requirement & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history.\\
-\hline\addlinespace[0.20em]
-Record change version & \\
-\hline\addlinespace[0.20em]
-Record change timestamp & \\
-\hline\addlinespace[0.20em]
-Implementation status & implementable-after-listed-predecessor\\
-\hline\addlinespace[0.20em]
-Preparation status & prepared-after-predecessor\\
+Preparation status & active\\
 \hline\addlinespace[0.20em]
 Phase type & refactor\\
 \hline\addlinespace[0.20em]
@@ -3176,11 +3418,11 @@ Preparation workflow & Semantic module consolidation and compatibility-preservin
 \hline\addlinespace[0.20em]
 Source-to-CNNA mapping & This is not a mathematical CNNA object. It maps repository structure to refactor governance: only semantically identical representation layers may be consolidated;\newline proof-producing layers remain split unless their proof/\allowbreak{}provenance information is preserved by a better canonical module.\\
 \hline\addlinespace[0.20em]
-Dependency-depth audit & V1.21 identifies this phase as part of the hard pre-code readiness chain before 1.1.1.2.\\
+Dependency-depth audit & Active after LEG44 build validation. LEG38 may now consume the notation cleanup evidence and semantic consolidation findings.\\
 \hline\addlinespace[0.20em]
 Phase split decision & Explicit child split under 1.1.1.1.5;\newline avoids treating a broad semantic-consolidation umbrella as sufficient proof for new content code.\\
 \hline\addlinespace[0.20em]
-Positive path plan & Execute and close this gate constructively;\newline only create obstruction/\allowbreak{}red blockers if the positive closure attempt identifies missing source/\allowbreak{}proof data.\\
+Positive path plan & Cluster remaining notation/\allowbreak{}module rows by owner surface and disposition;\newline choose neutral target module names and compatibility facade boundaries;\newline record no-merge/\allowbreak{}proof-stage exceptions explicitly;\newline do not edit Lean source until LEG39.\\
 \hline\addlinespace[0.20em]
 Module implementation manifest & No Lean module added now. Potential future modules, if authorized: CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Outputs/\allowbreak{}SectorExportAliases.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Handoff/\allowbreak{}Inputs/\allowbreak{}FeedbackInput.lean;\newline CNNA/\allowbreak{}PillarA/\allowbreak{}Arithmetic/\allowbreak{}BoundarySource/\allowbreak{}CandidateLedgers.lean. Old modules remain as facades initially.\\
 \hline\addlinespace[0.20em]
@@ -3224,29 +3466,29 @@ Noncomputable boundary audit & No noncomputable introduced. Later operational re
 \hline\addlinespace[0.20em]
 Mathlib mitigation/\allowbreak{}refactor layer & If new imports are needed, prefer local facade modules or existing imported modules rather than widening mathlib dependency surface.\\
 \hline\addlinespace[0.20em]
-Bridge gap status & Current bridge gap is governance-level: exact consolidation candidates are not yet fully ledgered. No mathematical bridge is missing. Do not patch consumers;\newline place any new facade at the natural source layer of the duplicate/\allowbreak{}schema family.\\
+Bridge gap status & Open: neutral target/\allowbreak{}facade map not yet produced.\\
 \hline\addlinespace[0.20em]
 Natural backjump/\allowbreak{}refactor layer & BoundarySource candidate ledgers belong under Arithmetic/\allowbreak{}BoundarySource;\newline Handoff input/\allowbreak{}output wrapper consolidation belongs under Handoff/\allowbreak{}Inputs or Outputs;\newline notation normalization belongs at notation facade boundaries;\newline proof-stage chains stay in their proof-stage folders unless a canonical proof module is naturally introduced.\\
 \hline\addlinespace[0.20em]
-Implementation prompt contract & Before writing any new substantive Lean code, complete the LEG36 audit. If refactor is authorized, produce a bounded migration packet: old-module facades, changed imports, declaration delta, consumer-breakage audit, generated inventory diff, and user/\allowbreak{}local Lean build result.\\
+Implementation prompt contract & Produce LEG38 migration map only. No Lean source move or deletion in this phase unless explicitly split into refactor execution;\newline all executable changes belong to 1.1.1.1.5.3 with local build evidence.\\
 \hline\addlinespace[0.20em]
 Global no-go inheritance & yes;\newline all global\_no\_go\_guardrails inherited (GNG01-GNG26)\\
 \hline\addlinespace[0.20em]
-How implemented & V1.21 planning update only: Plan neutral names/\allowbreak{}facades/\allowbreak{}no-merge exceptions after LEG37 closes.\\
+How implemented & Activated in P1.46 after user-reported green local lake build closed LEG44. Implementation has not started;\newline this phase must first produce a neutral naming/\allowbreak{}facade migration map, not a source refactor.\\
 \hline\addlinespace[0.20em]
-Verification /\allowbreak{} evidence & No Lean source changed in V1.21. Closure requires exact inventory/\allowbreak{}refactor/\allowbreak{}build evidence recorded in the corresponding proof dossier and scratchpad.\\
+Verification /\allowbreak{} evidence & Inputs available: closed LEG42 notation-surface audit, closed LEG43 row-level removal review, closed/\allowbreak{}build-validated LEG44 notation-removal execution certificate, and semantic consolidation findings SCF44/\allowbreak{}SCF45/\allowbreak{}SCF52.\\
 \hline\addlinespace[0.20em]
-Proof strategy & Close the phase by explicit references to derived-only Lean objects/\allowbreak{}proof dossiers, source inventory exports, and local build evidence where Lean refactor is executed. If proof fails, spawn upstream red blocker at natural source layer.\\
+Proof strategy & Build the neutral migration map only after notation keep/\allowbreak{}quarantine/\allowbreak{}remove/\allowbreak{}rename decisions are fixed. Every rename/\allowbreak{}merge/\allowbreak{}split records notation/\allowbreak{}API impact.\\
 \hline\addlinespace[0.20em]
-Build result & No Lean build run;\newline no Lean source changed. Python table/\allowbreak{}PDF generation only.\\
+Build result & No Lean build needed for activation;\newline source refactor/\allowbreak{}build validation belongs to LEG39 after LEG38 emits a concrete map.\\
 \hline\addlinespace[0.20em]
-Post-implementation plan check & Do not advance to 1.1.1.2 until the complete 1.1.1.1.5.1-1.1.1.1.5.5 chain closes.\\
+Post-implementation plan check & Active cursor after P1.46. Close only when the migration map is explicit enough for bounded LEG39 refactor execution.\\
 \hline\addlinespace[0.20em]
 Artifact packaging rule & Return a full zip with updated YAML, exports, report and generated docs;\newline do not claim Lean build.\\
 \hline\addlinespace[0.20em]
-Implementation notes & Plan neutral names/\allowbreak{}facades/\allowbreak{}no-merge exceptions after LEG37 closes.\\
+Implementation notes & Active planning gate. No Lean modules should be moved/\allowbreak{}renamed yet. The required output is a migration map separating neutral canonical names, old-module facades, legacy quarantine, no-merge exceptions, and proof-stage exceptions.\\
 \hline\addlinespace[0.20em]
-Source materials /\allowbreak{} references & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item repo\_inventory/\allowbreak{}raw\_export/\allowbreak{}*.json\item generated\_exports/\allowbreak{}*.tsv\item repo\_snapshot/\allowbreak{}CNNA/\allowbreak{}**/\allowbreak{}*.lean\item masters/\allowbreak{}cnna\_roadmap\_master.yaml\end{itemize}\\
+Source materials /\allowbreak{} references & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item LEG42 notation ledger TSV/\allowbreak{}JSON\item SCF74 unconsumed notation finding\item CNNA/\allowbreak{}PillarA/\allowbreak{}**/\allowbreak{}Notation.lean\item module import graph\item phase-semantic module-name audit\end{itemize}\\
 \hline\addlinespace[0.20em]
 Extracted established theory objects & \begin{itemize}[leftmargin=*,itemsep=0.05em,topsep=0.05em]\item LEG38\end{itemize}\\
 \hline\addlinespace[0.20em]
@@ -3381,7 +3623,7 @@ Duplicate-risk symbols or operations & \begin{itemize}[leftmargin=*,itemsep=0.05
 \hline\addlinespace[0.20em]
 \end{longtable}
 \phantomsection
-\subsection*{Phase 1.1.1.1.5.4 -- Post-refactor inventory re-scan and IST-object/\allowbreak{}proof-dossier reclassification}
+\subsection*{Phase 1.1.1.1.5.4 -- Post-refactor full module/\allowbreak{}declaration/\allowbreak{}object scan and 1:1 Lean-mirrored object-state closure}
 \label{impl:phase-1-1-1-1-5-4}
 \par\smallskip\noindent\begin{minipage}{0.99\linewidth}\footnotesize\raggedright\textbf{Table legend.} \colorbox{green!18}{\strut G} = green/closed and derived-only; \colorbox{white}{\strut W} = white/non-direct-Lean tooling/refactor/infrastructure/documentation/comparison; \colorbox{orange!28}{\strut O} = orange/implementable after stated predecessor closure; \colorbox{yellow!25}{\strut Y} = yellow/active and implementable now; \colorbox{red!20}{\strut R} = red/locked Lean-derivation phase; release requires derived-only object/proof evidence. Context class is orthogonal to status.\end{minipage}\par\vspace{0.25em}
 \begin{longtable}{L{0.16\linewidth} L{0.81\linewidth}}
@@ -3396,9 +3638,9 @@ Phase documentation tier & F1\\
 \hline\addlinespace[0.20em]
 Phase documentation depth requirement & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history.\\
 \hline\addlinespace[0.20em]
-Record change version & \\
+Record change version & P1.41\\
 \hline\addlinespace[0.20em]
-Record change timestamp & \\
+Record change timestamp & 2026-05-12T09:10:00+02:00\\
 \hline\addlinespace[0.20em]
 Implementation status & implementable-after-listed-predecessor\\
 \hline\addlinespace[0.20em]
@@ -3408,7 +3650,7 @@ Phase type & refactor\\
 \hline\addlinespace[0.20em]
 Phase-type-specific contract & Pre-substantive-code readiness/\allowbreak{}refactor gate;\newline not a new mathematical derivation phase.\\
 \hline\addlinespace[0.20em]
-Title /\allowbreak{} state & Post-refactor inventory re-scan and reclassification\\
+Title /\allowbreak{} state & Post-refactor full module/\allowbreak{}declaration/\allowbreak{}object scan and 1:1 Lean mirror closure\\
 \hline\addlinespace[0.20em]
 Preparation workflow & Semantic module consolidation and compatibility-preserving refactor workflow.\\
 \hline\addlinespace[0.20em]
@@ -3462,7 +3704,7 @@ Noncomputable boundary audit & No noncomputable introduced. Later operational re
 \hline\addlinespace[0.20em]
 Mathlib mitigation/\allowbreak{}refactor layer & If new imports are needed, prefer local facade modules or existing imported modules rather than widening mathlib dependency surface.\\
 \hline\addlinespace[0.20em]
-Bridge gap status & Current bridge gap is governance-level: exact consolidation candidates are not yet fully ledgered. No mathematical bridge is missing. Do not patch consumers;\newline place any new facade at the natural source layer of the duplicate/\allowbreak{}schema family.\\
+Bridge gap status & Open until post-refactor source inventory and object/\allowbreak{}proof/\allowbreak{}register deltas close with no unclassified Lean surface.\\
 \hline\addlinespace[0.20em]
 Natural backjump/\allowbreak{}refactor layer & BoundarySource candidate ledgers belong under Arithmetic/\allowbreak{}BoundarySource;\newline Handoff input/\allowbreak{}output wrapper consolidation belongs under Handoff/\allowbreak{}Inputs or Outputs;\newline notation normalization belongs at notation facade boundaries;\newline proof-stage chains stay in their proof-stage folders unless a canonical proof module is naturally introduced.\\
 \hline\addlinespace[0.20em]
@@ -3470,11 +3712,11 @@ Implementation prompt contract & Before writing any new substantive Lean code, c
 \hline\addlinespace[0.20em]
 Global no-go inheritance & yes;\newline all global\_no\_go\_guardrails inherited (GNG01-GNG26)\\
 \hline\addlinespace[0.20em]
-How implemented & V1.21 planning update only: Regenerate and reconcile module/\allowbreak{}declaration/\allowbreak{}object/\allowbreak{}proof inventory after refactor.\\
+How implemented & Planned after notation cleanup and compatibility-preserving refactor. Regenerate the inventory from the refactored source and mirror every current Lean module/\allowbreak{}declaration/\allowbreak{}object relation 1:1 into YAML/\allowbreak{}object/\allowbreak{}proof/\allowbreak{}lifecycle registers or explicit non-object buckets.\\
 \hline\addlinespace[0.20em]
 Verification /\allowbreak{} evidence & No Lean source changed in V1.21. Closure requires exact inventory/\allowbreak{}refactor/\allowbreak{}build evidence recorded in the corresponding proof dossier and scratchpad.\\
 \hline\addlinespace[0.20em]
-Proof strategy & Close the phase by explicit references to derived-only Lean objects/\allowbreak{}proof dossiers, source inventory exports, and local build evidence where Lean refactor is executed. If proof fails, spawn upstream red blocker at natural source layer.\\
+Proof strategy & Use fresh post-refactor inventory exports, not pre-refactor data. Classify every declaration by CEX11 fields and open red blockers for unmirrored, stale or ambiguous declarations.\\
 \hline\addlinespace[0.20em]
 Build result & No Lean build run;\newline no Lean source changed. Python table/\allowbreak{}PDF generation only.\\
 \hline\addlinespace[0.20em]
@@ -21121,7 +21363,7 @@ Duplicate-risk symbols or operations & \begin{itemize}[leftmargin=*,itemsep=0.05
 \hline\addlinespace[0.20em]
 \end{longtable}
 \phantomsection
-\subsection*{Phase 21.0 -- Explorer Phase 0: YAML completeness/\allowbreak{}coherence, total Lean-declaration classification, object-lifecycle semantics, neutral naming/\allowbreak{}refactor consolidation and full IST Lean-object scan}
+\subsection*{Phase 21.0 -- Explorer Phase 0: post-refactor YAML/\allowbreak{}source completeness, total Lean-declaration classification, object-lifecycle semantics and neutral-surface readiness audit}
 \label{impl:phase-21-0}
 \par\smallskip\noindent\begin{minipage}{0.99\linewidth}\footnotesize\raggedright\textbf{Table legend.} \colorbox{green!18}{\strut G} = green/closed and derived-only; \colorbox{white}{\strut W} = white/non-direct-Lean tooling/refactor/infrastructure/documentation/comparison; \colorbox{orange!28}{\strut O} = orange/implementable after stated predecessor closure; \colorbox{yellow!25}{\strut Y} = yellow/active and implementable now; \colorbox{red!20}{\strut R} = red/locked Lean-derivation phase; release requires derived-only object/proof evidence. Context class is orthogonal to status.\end{minipage}\par\vspace{0.25em}
 \begin{longtable}{L{0.16\linewidth} L{0.81\linewidth}}
@@ -21136,9 +21378,9 @@ Phase documentation tier & F1\\
 \hline\addlinespace[0.20em]
 Phase documentation depth requirement & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history.\\
 \hline\addlinespace[0.20em]
-Record change version & \\
+Record change version & P1.41\\
 \hline\addlinespace[0.20em]
-Record change timestamp & \\
+Record change timestamp & 2026-05-12T09:10:00+02:00\\
 \hline\addlinespace[0.20em]
 Implementation status & planned-after-predecessor-closure\\
 \hline\addlinespace[0.20em]
@@ -21202,7 +21444,7 @@ Noncomputable boundary audit & No noncomputable Lean boundary involved. Later la
 \hline\addlinespace[0.20em]
 Mathlib mitigation/\allowbreak{}refactor layer & Not applicable unless an explicit Lean-facing parser/\allowbreak{}refactor module is added;\newline then isolate from operational path and verify locally.\\
 \hline\addlinespace[0.20em]
-Bridge gap status & No mathematical bridge closed. Current bridge is metadata/\allowbreak{}query/\allowbreak{}visualization: YAML/\allowbreak{}repo inventory -> SQL/\allowbreak{}public views -> Explorer UI.\\
+Bridge gap status & Blocked until LEG42/\allowbreak{}LEG38/\allowbreak{}LEG39/\allowbreak{}LEG37/\allowbreak{}LEG40/\allowbreak{}LEG41 close. Explorer must not begin on pre-refactor or partially mirrored data.\\
 \hline\addlinespace[0.20em]
 Natural backjump/\allowbreak{}refactor layer & If Explorer requirements expose missing fields, patch the YAML/\allowbreak{}export/\allowbreak{}schema or Lean-facing inventory ledger at the natural source layer;\newline do not patch frontend consumers to invent semantics.\\
 \hline\addlinespace[0.20em]
@@ -21210,11 +21452,11 @@ Implementation prompt contract & LeanRefactorPhase-style audit;\newline no Lean 
 \hline\addlinespace[0.20em]
 Global no-go inheritance & yes;\newline all global\_no\_go\_guardrails inherited\\
 \hline\addlinespace[0.20em]
-How implemented & Not implemented as a closed audit. P1.33 refines the Phase 21.0 plan so Explorer readiness includes total Lean-declaration classification in addition to YAML completeness, edge semantics, lifecycle, neutral naming/\allowbreak{}refactor consolidation and IST Lean scan.\\
+How implemented & Not implemented as a closed audit. P1.41 makes Explorer readiness explicitly downstream of notation cleanup, neutral refactor, and post-refactor 1:1 Lean mirror closure.\\
 \hline\addlinespace[0.20em]
 Verification /\allowbreak{} evidence & Planning/\allowbreak{}tooling evidence only: CEX11, taxonomy, guardrails and workflows added. Full verification requires a generated total declaration classification ledger over the current Lean snapshot;\newline no Lean build was run.\\
 \hline\addlinespace[0.20em]
-Proof strategy & Planning/\allowbreak{}tooling proof by explicit source separation: Lean code primary, YAML curated semantic mirror, SQL generated read-only mirror, frontend visual/\allowbreak{}query surface only.\\
+Proof strategy & Planning/\allowbreak{}tooling proof by explicit source separation after refactor: Lean code primary, YAML curated semantic mirror of the post-refactor source, SQL generated read-only mirror, frontend visual/\allowbreak{}query surface only.\\
 \hline\addlinespace[0.20em]
 Build result & No Lean build run;\newline no Lean source changed. Python table/\allowbreak{}PDF generation only after YAML update.\\
 \hline\addlinespace[0.20em]

@@ -15,37 +15,40 @@ Tool infrastructure version & V1.34\\
 Tool infrastructure timestamp & 2026-05-12T01:06:43+02:00\\
 \hline
 \addlinespace[0.24em]
-Planning data version & P1.40\\
+Planning data version & P1.48\\
 \hline
 \addlinespace[0.24em]
-Planning data timestamp & 2026-05-12T08:18:00+02:00\\
+Planning data timestamp & 2026-05-12T15:25:00+02:00\\
 \hline
 \addlinespace[0.24em]
 Lean toolchain version & lean-4.28.0\\
 \hline
 \addlinespace[0.24em]
-Lean data timestamp & 2026-05-10T05:51:42+02:00\\
+Lean data timestamp & 2026-05-12T14:15:00+02:00\\
 \hline
 \addlinespace[0.24em]
 Document title & CNNA Planning and Documentation Tool - original roadmap integration and timestamp-complete governance\\
 \hline
 \addlinespace[0.24em]
-Planning data version & P1.40 records a workflow-coherence audit and small consistency corrections. Tool infrastructure remains V1.34;\newline Lean data remains lean-4.28.0 /\allowbreak{} 2026-05-10T05:51:42+02:00 because no Lean source or generator code changed.\\
+Planning data version & P1.48 records a workflow-wide minimal-artifact audit. Tool infrastructure remains V1.34;\newline Lean toolchain remains lean-4.28.0;\newline Lean source timestamp remains 2026-05-12T14:15:00+02:00 because no Lean source changed in P1.48.\\
 \hline
 \addlinespace[0.24em]
-Audit result & The workflow lattice is structurally usable after correction: backup-gated GitHub work, CI red/\allowbreak{}green transitions, visible red failure history, Webhosting/\allowbreak{}MySQL staging, rollback and delta-PDF output now share one ordered state machine.\\
+Artifact hygiene & Repository/\allowbreak{}context\_docs/\allowbreak{} and Repository/\allowbreak{}generated\_docs/\allowbreak{} remain intentionally absent from the default package. Documentation directories are produced only by explicit documentation/\allowbreak{}layout/\allowbreak{}release gates;\newline generated\_exports remains as machine-readable secondary data.\\
 \hline
 \addlinespace[0.24em]
-Corrected ambiguity & Implementation-from-last-green-baseline no longer treats absent build evidence as red. Only verified local/\allowbreak{}CI failure can set a phase R;\newline missing evidence remains artifact-generated /\allowbreak{} build required under the local-build evidence rule.\\
+README policy & Only the package-root README.md is maintained in the distributed ZIP. Workflow rows now avoid README edits unless user-facing command/\allowbreak{}license/\allowbreak{}setup content actually changes or the user explicitly requests a README change.\\
 \hline
 \addlinespace[0.24em]
-Corrected documentation closeout & Post-green closeout now requires regenerated/\allowbreak{}validated tables and the applicable requested documentation artifact: timestamp-bounded delta PDF for bounded changes, full PDF only for explicit full release/\allowbreak{}audit checkpoints.\\
+Active cursor & Phase 1.1.1.1.5.2 /\allowbreak{} LEG38 remains the unique active phase after LEG44 was closed by user-reported green local build evidence.\\
 \hline
 \addlinespace[0.24em]
-Corrected propagation of red-build visibility & CEX16 red-build failure history is now an explicit dependency of 21.3/\allowbreak{}CEX3 read-only API projections and 21.9/\allowbreak{}CEX9 deployment hardening, so visible failures cannot disappear between CI and Explorer views.\\
+Process acceleration & All workflow rows that previously implied default PDF/\allowbreak{}context/\allowbreak{}generated-doc/\allowbreak{}README churn were audited. Ordinary green-build closeouts and bounded YAML-only edits now default to YAML plus TSV/\allowbreak{}JSON exports only.\\
 \hline
 \addlinespace[0.24em]
-Lean status & No CNNA Lean code changed. No Lean build was run. This package update is planning/\allowbreak{}tooling documentation plus generated table/\allowbreak{}delta-PDF regeneration only.\\
+Lean status & No Lean source edit and no Lean build were performed in P1.48. The prior user-reported green local lake build for P1.45 remains the LEG44 closeout evidence;\newline P1.48 is planning/\allowbreak{}workflow-only.\\
+\hline
+\addlinespace[0.24em]
+Workflow audit & P1.48 patched versioning, closeout, context documentation, root cleanup, README/\allowbreak{}license, PDF layout, typography, database-refresh, bounded-export and coherence workflows so the minimal-artifact rule has explicit precedence.\\
 \hline
 \addlinespace[0.24em]
 \end{longtable}

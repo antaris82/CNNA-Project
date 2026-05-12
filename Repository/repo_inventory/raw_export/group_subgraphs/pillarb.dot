@@ -1,6 +1,6 @@
 digraph group_pillarb {
   rankdir="LR";
-  node [shape=box, fontsize=10];
+  node [shape=box, fontsize=11];
   "CNNA.PillarB" [tooltip="PillarB"];
   "CNNA.PillarB.BuildAll" [tooltip="PillarB"];
   "CNNA.PillarB" -> "CNNA.PillarB.BuildAll";

@@ -8947,6 +8947,135 @@ Next documentation action & Extended dossier: definition, source chain, main lem
 \hline\addlinespace[0.20em]
 \end{longtable}
 \phantomsection
+\subsection*{Object or quantity LEG42 -- Notation surface consumption and cleanup ledger}
+\hypertarget{objproof:LEG42}{}
+\par\smallskip\noindent\begin{minipage}{0.99\linewidth}\footnotesize\raggedright\textbf{Table legend.} \colorbox{white}{\strut W} = white/finished public object; \colorbox{cyan!20}{\strut B} = blue/proof-carrying but semantic/API correction still open; \colorbox{green!18}{\strut G} = green/locally closable; \colorbox{yellow!25}{\strut Y} = yellow/known route with prerequisites; \colorbox{red!20}{\strut R} = red/derivation layer incomplete or unclear; \colorbox{black!18}{\strut K} = black/registered side or future target. Context class is orthogonal to status.\end{minipage}\par\vspace{0.25em}
+\begin{longtable}{L{0.16\linewidth} L{0.81\linewidth}}
+\hline
+\textbf{Field} & \textbf{Record}\\
+\hline
+Object ID & \hyperlink{object-row-LEG42}{LEG42}\\
+\hline\addlinespace[0.20em]
+Object status & \cellcolor{green!18}G\\
+\hline\addlinespace[0.20em]
+Context class & LeanRefactorObject\\
+\hline\addlinespace[0.20em]
+Significance tier & F1\\
+\hline\addlinespace[0.20em]
+Documentation depth requirement & Extended dossier required: list every notation declaration, consumer modules, owner object/\allowbreak{}non-object bucket, public/\allowbreak{}internal status, keep/\allowbreak{}quarantine/\allowbreak{}remove/\allowbreak{}rename disposition, collision risks, and build/\allowbreak{}regression evidence when code changes.\\
+\hline\addlinespace[0.20em]
+Documented & yes\\
+\hline\addlinespace[0.20em]
+Object lifecycle state & current\\
+\hline\addlinespace[0.20em]
+Lifecycle successor/\allowbreak{}current object & LEG42\\
+\hline\addlinespace[0.20em]
+Current dossier pointer & proof:LEG42\\
+\hline\addlinespace[0.20em]
+Lifecycle note & Current ledger closed by P1.42 as audit evidence. P1.43 inserts LEG43/\allowbreak{}LEG44 so deletion is not inferred from missing direct consumers;\newline no Lean deletion/\allowbreak{}refactor is authorized by LEG42 alone.\\
+\hline\addlinespace[0.20em]
+Phase & \hyperlink{phase-row-1-1-1-1-5-1}{1.1.1.1.5.1}\\
+\hline\addlinespace[0.20em]
+Source objects & All CNNA/\allowbreak{}**/\allowbreak{}Notation.lean files;\newline LEG5 consumption classes;\newline LEG10 module manifest;\newline generated repo inventory;\newline static token/\allowbreak{}symbol consumer audit across repo\_snapshot/\allowbreak{}CNNA.\\
+\hline\addlinespace[0.20em]
+Definitions & Closed audit ledger of 1156 Notation.lean surfaces with columns for file, module, line, declaration kind, surface/\allowbreak{}search key, classification, disposition, consumer counts/\allowbreak{}modules and source line text. Generated TSV and JSON are evidence exports, not Lean objects.\\
+\hline\addlinespace[0.20em]
+Proof target & Every current Notation.lean declaration/\allowbreak{}alias/\allowbreak{}symbol wrapper has an explicit audit row. Kept/\allowbreak{}consumed rows retain consumer evidence;\newline unconsumed, phase-semantic, umbrella or collision-prone rows are not accepted as neutral public API until LEG38 assigns facade/\allowbreak{}quarantine/\allowbreak{}remove/\allowbreak{}rename handling.\\
+\hline\addlinespace[0.20em]
+Proof sketch & Extract declarations and scoped-notation lines from all current Notation.lean files;\newline index Lean identifiers and exact symbol tokens over repo\_snapshot/\allowbreak{}CNNA;\newline exclude the defining line;\newline count non-Notation consumers separately from Notation-file self/\allowbreak{}umbrella references;\newline classify by consumer evidence and phase/\allowbreak{}umbrella/\allowbreak{}symbol risk;\newline export row-level evidence to TSV/\allowbreak{}JSON and route unresolved dispositions to 1.1.1.1.5.2.\\
+\hline\addlinespace[0.20em]
+Verification /\allowbreak{} audit & P1.42 generated TSV/\allowbreak{}JSON evidence. P1.43 adds that missing direct consumers are not deletion proof;\newline LEG43/\allowbreak{}LEG44 must decide and execute removal separately.\\
+\hline\addlinespace[0.20em]
+Next documentation action & Consume in LEG43 removal review before any deletion;\newline then LEG44 must record exact diff/\allowbreak{}no-op and build evidence before LEG38.\\
+\hline\addlinespace[0.20em]
+\end{longtable}
+\phantomsection
+\subsection*{Object or quantity LEG43 -- Notation removal review ledger}
+\hypertarget{objproof:LEG43}{}
+\par\smallskip\noindent\begin{minipage}{0.99\linewidth}\footnotesize\raggedright\textbf{Table legend.} \colorbox{white}{\strut W} = white/finished public object; \colorbox{cyan!20}{\strut B} = blue/proof-carrying but semantic/API correction still open; \colorbox{green!18}{\strut G} = green/locally closable; \colorbox{yellow!25}{\strut Y} = yellow/known route with prerequisites; \colorbox{red!20}{\strut R} = red/derivation layer incomplete or unclear; \colorbox{black!18}{\strut K} = black/registered side or future target. Context class is orthogonal to status.\end{minipage}\par\vspace{0.25em}
+\begin{longtable}{L{0.16\linewidth} L{0.81\linewidth}}
+\hline
+\textbf{Field} & \textbf{Record}\\
+\hline
+Object ID & \hyperlink{object-row-LEG43}{LEG43}\\
+\hline\addlinespace[0.20em]
+Object status & \cellcolor{green!18}G\\
+\hline\addlinespace[0.20em]
+Context class & LeanRefactorObject\\
+\hline\addlinespace[0.20em]
+Significance tier & F1\\
+\hline\addlinespace[0.20em]
+Documentation depth requirement & Extended dossier required: criteria for removable vs keep/\allowbreak{}quarantine/\allowbreak{}facade/\allowbreak{}rename, row-level evidence, uncertainty handling, and explicit statement that absence of direct consumers is not enough for deletion.\\
+\hline\addlinespace[0.20em]
+Documented & yes\\
+\hline\addlinespace[0.20em]
+Object lifecycle state & current\\
+\hline\addlinespace[0.20em]
+Lifecycle successor/\allowbreak{}current object & LEG44\\
+\hline\addlinespace[0.20em]
+Current dossier pointer & proof:LEG43\\
+\hline\addlinespace[0.20em]
+Lifecycle note & Closed by P1.44 as row-level review evidence. It authorizes only LEG44 candidate consideration;\newline no Lean deletion has occurred.\\
+\hline\addlinespace[0.20em]
+Phase & \hyperlink{phase-row-1-1-1-1-5-1-1}{1.1.1.1.5.1.1}\\
+\hline\addlinespace[0.20em]
+Source objects & LEG42 notation audit ledger;\newline generated LEG42 TSV/\allowbreak{}JSON;\newline all Notation.lean source files;\newline public/\allowbreak{}API and owner-object policy.\\
+\hline\addlinespace[0.20em]
+Definitions & LEG43 row-level notation-removal review ledger. Decisions: consumed rows kept/\allowbreak{}out of scope;\newline Arithmetic/\allowbreak{}Notation phase-domain and legacy aliases without non-Notation consumers approved for LEG44;\newline public/\allowbreak{}facade/\allowbreak{}core-symbol/\allowbreak{}owner-domain rows deferred.\\
+\hline\addlinespace[0.20em]
+Proof target & Show that deletion is not inferred merely from no direct consumers, and that only a bounded subset is safe enough to enter a build-verifiable execution gate.\\
+\hline\addlinespace[0.20em]
+Proof sketch & Finite TSV review over 1156 LEG42 rows. Direct non-Notation consumers block removal. Scoped notation, umbrella aliases and non-Arithmetic owner-domain aliases are deferred. Arithmetic/\allowbreak{}Notation unconsumed legacy/\allowbreak{}domain surfaces are approved only as LEG44 execution candidates, split by internal consumer count into standalone and cluster-bound candidates.\\
+\hline\addlinespace[0.20em]
+Verification /\allowbreak{} audit & generated\_exports/\allowbreak{}notation\_removal\_review\_ledger.generated.tsv;\newline generated\_exports/\allowbreak{}notation\_removal\_review\_summary.generated.json;\newline archive/\allowbreak{}reports/\allowbreak{}PHASE\_1\_1\_1\_1\_5\_1\_1\_NOTATION\_REMOVAL\_REVIEW\_REPORT.md. Counts: 494 LEG44-approved, 178 deferred, 484 consumed/\allowbreak{}out of scope.\\
+\hline\addlinespace[0.20em]
+Next documentation action & LEG44 must record exact source diffs and local Lean build evidence, or close as no-op. LEG38 must consume deferred rows for facade/\allowbreak{}core-symbol/\allowbreak{}quarantine mapping.\\
+\hline\addlinespace[0.20em]
+\end{longtable}
+\phantomsection
+\subsection*{Object or quantity LEG44 -- Notation removal execution certificate}
+\hypertarget{objproof:LEG44}{}
+\par\smallskip\noindent\begin{minipage}{0.99\linewidth}\footnotesize\raggedright\textbf{Table legend.} \colorbox{white}{\strut W} = white/finished public object; \colorbox{cyan!20}{\strut B} = blue/proof-carrying but semantic/API correction still open; \colorbox{green!18}{\strut G} = green/locally closable; \colorbox{yellow!25}{\strut Y} = yellow/known route with prerequisites; \colorbox{red!20}{\strut R} = red/derivation layer incomplete or unclear; \colorbox{black!18}{\strut K} = black/registered side or future target. Context class is orthogonal to status.\end{minipage}\par\vspace{0.25em}
+\begin{longtable}{L{0.16\linewidth} L{0.81\linewidth}}
+\hline
+\textbf{Field} & \textbf{Record}\\
+\hline
+Object ID & \hyperlink{object-row-LEG44}{LEG44}\\
+\hline\addlinespace[0.20em]
+Object status & \cellcolor{green!18}G\\
+\hline\addlinespace[0.20em]
+Context class & LeanRefactorObject\\
+\hline\addlinespace[0.20em]
+Significance tier & F1\\
+\hline\addlinespace[0.20em]
+Documentation depth requirement & Extended dossier required: exact removal/\allowbreak{}no-op diff, retained ambiguity rationale, consumer-regression evidence, import/\allowbreak{}API compatibility, local build result, and downstream handoff to LEG38.\\
+\hline\addlinespace[0.20em]
+Documented & closed-build-validated\\
+\hline\addlinespace[0.20em]
+Object lifecycle state & current\\
+\hline\addlinespace[0.20em]
+Lifecycle successor/\allowbreak{}current object & LEG38\\
+\hline\addlinespace[0.20em]
+Current dossier pointer & proof:LEG44\\
+\hline\addlinespace[0.20em]
+Lifecycle note & Closed by P1.46 after user-reported green local Lean build. LEG44 may now be consumed by LEG38 and later readiness gates.\\
+\hline\addlinespace[0.20em]
+Phase & \hyperlink{phase-row-1-1-1-1-5-1-2}{1.1.1.1.5.1.2}\\
+\hline\addlinespace[0.20em]
+Source objects & LEG42 notation surface audit;\newline LEG43 approved/\allowbreak{}deferred row-level review;\newline P1.45 execution ledger/\allowbreak{}ranges/\allowbreak{}summary;\newline post-edit token scan;\newline regenerated static inventory;\newline P1.46 user-reported green local lake build.\\
+\hline\addlinespace[0.20em]
+Definitions & LEG44 execution certificate for genuinely unused notation surfaces. P1.45 implemented source deletion for all 494 approved candidates but cannot close green until the local Lean build succeeds.\\
+\hline\addlinespace[0.20em]
+Proof target & Certify that source cleanup preserves all consumers and compiles locally. Static checks are complete;\newline Lean build verification remains open.\\
+\hline\addlinespace[0.20em]
+Proof sketch & Deleted only exact LEG43-approved declaration ranges. Preserved consumed and deferred rows. Regenerated post-edit evidence and static inventory. Remaining proof obligation: user local lake build.\\
+\hline\addlinespace[0.20em]
+Verification /\allowbreak{} audit & P1.45 static evidence: 494 declarations removed;\newline 0 removed-token hits across Lean source;\newline namespace/\allowbreak{}end balance 45/\allowbreak{}45;\newline inventory regenerated with 287 modules, 724 internal import edges, 43 external import edges, 0 missing internal imports, 8366 declarations. P1.46 closure evidence: user reports the local lake build is green.\\
+\hline\addlinespace[0.20em]
+Next documentation action & Consume in LEG38 neutral naming/\allowbreak{}facade migration map. No further deletion is authorized by LEG44.\\
+\hline\addlinespace[0.20em]
+\end{longtable}
+\phantomsection
 \subsection*{Object or quantity DBR8 -- Root artifact retention and cleanup policy}
 \hypertarget{objproof:DBR8}{}
 \par\smallskip\noindent\begin{minipage}{0.99\linewidth}\footnotesize\raggedright\textbf{Table legend.} \colorbox{white}{\strut W} = white/finished public object; \colorbox{cyan!20}{\strut B} = blue/proof-carrying but semantic/API correction still open; \colorbox{green!18}{\strut G} = green/locally closable; \colorbox{yellow!25}{\strut Y} = yellow/known route with prerequisites; \colorbox{red!20}{\strut R} = red/derivation layer incomplete or unclear; \colorbox{black!18}{\strut K} = black/registered side or future target. Context class is orthogonal to status.\end{minipage}\par\vspace{0.25em}
@@ -9248,7 +9377,7 @@ Next documentation action & If later sections become too verbose, trim static pr
 \hline\addlinespace[0.20em]
 \end{longtable}
 \phantomsection
-\subsection*{Object or quantity LEG37 -- Current source intake completeness ledger}
+\subsection*{Object or quantity LEG37 -- Post-refactor current source intake completeness ledger}
 \hypertarget{objproof:LEG37}{}
 \par\smallskip\noindent\begin{minipage}{0.99\linewidth}\footnotesize\raggedright\textbf{Table legend.} \colorbox{white}{\strut W} = white/finished public object; \colorbox{cyan!20}{\strut B} = blue/proof-carrying but semantic/API correction still open; \colorbox{green!18}{\strut G} = green/locally closable; \colorbox{yellow!25}{\strut Y} = yellow/known route with prerequisites; \colorbox{red!20}{\strut R} = red/derivation layer incomplete or unclear; \colorbox{black!18}{\strut K} = black/registered side or future target. Context class is orthogonal to status.\end{minipage}\par\vspace{0.25em}
 \begin{longtable}{L{0.16\linewidth} L{0.81\linewidth}}
@@ -9273,19 +9402,19 @@ Lifecycle successor/\allowbreak{}current object & none\\
 \hline\addlinespace[0.20em]
 Current dossier pointer & proof:LEG37\\
 \hline\addlinespace[0.20em]
-Lifecycle note & Current register row;\newline no supersession, rename or retirement recorded at this planning snapshot. Strengthened in P1.33 to require total Lean-declaration classification, not only consumption-class coverage.\\
+Lifecycle note & Reframed in P1.41: no longer a pre-refactor full scan. The full 1:1 Lean mirror is post-refactor only.\\
 \hline\addlinespace[0.20em]
-Phase & \hyperlink{phase-row-1-1-1-1-5-1}{1.1.1.1.5.1}\\
+Phase & \hyperlink{phase-row-1-1-1-1-5-4}{1.1.1.1.5.4}\\
 \hline\addlinespace[0.20em]
-Source objects & LEG10, LEG5, CEX11, repo\_inventory/\allowbreak{}raw\_export/\allowbreak{}modules.json, symbol\_reference\_summary.json, module/\allowbreak{}declaration consumption TSVs, direct Lean source scan.\\
+Source objects & LEG42;\newline LEG38;\newline LEG39;\newline CEX11;\newline post-refactor repo inventory\\
 \hline\addlinespace[0.20em]
-Definitions & A complete classification ledger for the current Lean source snapshot: every module/\allowbreak{}declaration is linked to an object/\allowbreak{}proof dossier, legacy/\allowbreak{}audit/\allowbreak{}generated/\allowbreak{}reference/\allowbreak{}tool/\allowbreak{}refactor bucket, or a newly created natural-origin ingestion phase;\newline every declaration receives declaration\_kind, semantic\_role, triviality\_tier, significance/\allowbreak{}documentation policy, lifecycle\_state, public\_surface\_status and owner bucket.\\
+Definitions & Complete 1:1 Lean mirror ledger for the refactored source snapshot.\\
 \hline\addlinespace[0.20em]
-Proof target & Close the corresponding pre-substantive-code readiness condition before new Lean content implementation is released. Consumption classification alone is not sufficient closure evidence.\\
+Proof target & Every refactored Lean module/\allowbreak{}declaration has exactly one owner object or explicit non-object/\allowbreak{}tool/\allowbreak{}legacy/\allowbreak{}generated/\allowbreak{}reference bucket and the total declaration-classification fields required by CEX11.\\
 \hline\addlinespace[0.20em]
-Proof sketch & Use generated inventory, direct source scan, LEG5 consumption classes, CEX11 total-classification taxonomy, object/\allowbreak{}proof-dossier register and local build evidence where required. If any declaration cannot be fully classified or bucketed, create or refine an upstream red blocker at the natural source layer instead of patching a consumer phase.\\
+Proof sketch & Run after notation cleanup and neutral refactor, regenerate inventory, compare module/\allowbreak{}declaration/\allowbreak{}object/\allowbreak{}proof registers, and open red blockers for unmirrored or ambiguous declarations.\\
 \hline\addlinespace[0.20em]
-Verification /\allowbreak{} audit & P1.33 records that the previous declaration consumption records are insufficient for total source-intake closure. Closure requires future generated total declaration classification evidence;\newline no Lean source is changed in P1.33.\\
+Verification /\allowbreak{} audit & Open;\newline must use post-refactor inventory, not pre-refactor scan.\\
 \hline\addlinespace[0.20em]
 Next documentation action & Generate and review the total declaration classification ledger. Do not mark 1.1.1.2 active until every declaration is typed, role-classified, triviality-tiered, lifecycle-tagged, public-surface-tagged and linked to an owner object/\allowbreak{}dossier or explicit non-object bucket.\\
 \hline\addlinespace[0.20em]
@@ -9308,7 +9437,7 @@ Significance tier & F1\\
 \hline\addlinespace[0.20em]
 Documentation depth requirement & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history.\\
 \hline\addlinespace[0.20em]
-Documented & active-prepared\\
+Documented & active-planning-gate\\
 \hline\addlinespace[0.20em]
 Object lifecycle state & current\\
 \hline\addlinespace[0.20em]
@@ -9316,11 +9445,11 @@ Lifecycle successor/\allowbreak{}current object & none\\
 \hline\addlinespace[0.20em]
 Current dossier pointer & proof:LEG38\\
 \hline\addlinespace[0.20em]
-Lifecycle note & Current register row;\newline no supersession, rename or retirement recorded at this planning snapshot.\\
+Lifecycle note & Current active object. It must produce a neutral naming/\allowbreak{}facade migration map before any compatibility-preserving refactor execution in LEG39.\\
 \hline\addlinespace[0.20em]
 Phase & \hyperlink{phase-row-1-1-1-1-5-2}{1.1.1.1.5.2}\\
 \hline\addlinespace[0.20em]
-Source objects & LEG37 plus direct source scan of SM*, S6*, StrengtheningPhase*, BoundarySource, Handoff and Notation/\allowbreak{}Legacy module families.\\
+Source objects & Closed LEG42, closed LEG43, closed/\allowbreak{}build-validated LEG44;\newline semantic consolidation findings SCF44/\allowbreak{}SCF45/\allowbreak{}SCF52.\\
 \hline\addlinespace[0.20em]
 Definitions & A migration map assigning phase-semantic or legacy module names to neutral target names, facade modules, no-merge exceptions, and proof-stage preservation constraints.\\
 \hline\addlinespace[0.20em]
@@ -9328,9 +9457,9 @@ Proof target & Close the corresponding pre-substantive-code readiness condition 
 \hline\addlinespace[0.20em]
 Proof sketch & Use generated inventory, direct source scan, object/\allowbreak{}proof-dossier register and local build evidence where required. If the condition cannot be closed, create or refine an upstream red blocker at the natural source layer instead of patching a consumer phase.\\
 \hline\addlinespace[0.20em]
-Verification /\allowbreak{} audit & V1.21 creates the readiness sequence and records the gap explicitly. Closure requires future local Lean/\allowbreak{}build/\allowbreak{}inventory evidence;\newline no Lean source is changed in V1.21.\\
+Verification /\allowbreak{} audit & Active after P1.46. Must produce explicit migration-map evidence before any LEG39 source refactor.\\
 \hline\addlinespace[0.20em]
-Next documentation action & Extended dossier: definition, source chain, main lemmas/\allowbreak{}proof obligations, dependency risks, and downstream consumers. Enough detail for later implementation without re-reading chat history. Fill with exact candidate rows and evidence during the corresponding child phase;\newline do not mark 1.1.1.2 active until this dossier chain is closed.\\
+Next documentation action & Create the neutral module-name and namespace/\allowbreak{}facade migration map;\newline classify remaining surfaces and no-merge exceptions.\\
 \hline\addlinespace[0.20em]
 \end{longtable}
 \phantomsection
