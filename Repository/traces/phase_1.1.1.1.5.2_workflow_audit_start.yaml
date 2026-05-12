@@ -1,10 +1,14 @@
 phase: "1.1.1.1.5.2"
 title: "Workflow acceleration and repeatability audit"
-status: "yellow-active"
-status_meaning: "active workflow/tooling phase; not a derived-only Lean phase"
+status: "green-closed"
+status_meaning: "closed workflow/tooling phase; not a derived-only Lean phase"
 started_on: "2026-05-12"
+closed_on: "2026-05-12"
 branch: "phase/1.1.1.1.5.2-workflow-audit"
+merged_pr: 3
 base_commit: "dbeaedf66b68f62dad603db091bec4ae4d320a9a"
+merge_commit: "92014317ce296ede2b76655a401f41a9b7edc22e"
+closeout_commit: "4b7bdfa8c8024ce313d9c77232d90f23115ba216"
 
 classification:
   context_class: "ToolWorkflowGovernance"
@@ -22,7 +26,10 @@ acceleration_targets:
   - "separate workflow/tooling evidence from Lean-derived proof objects"
 
 write_set:
-  added:
+  added_by_pr_3:
+    - "Repository/workflows/phase_1.1.1.1.5.2_workflow_acceleration_audit.md"
+    - "Repository/traces/phase_1.1.1.1.5.2_workflow_audit_start.yaml"
+  updated_by_closeout:
     - "Repository/workflows/phase_1.1.1.1.5.2_workflow_acceleration_audit.md"
     - "Repository/traces/phase_1.1.1.1.5.2_workflow_audit_start.yaml"
   intentionally_not_modified:
@@ -33,6 +40,14 @@ write_set:
     - "Repository/context_docs/**"
 
 gates:
-  may_close_green_after_user_review: true
+  user_reviewed_and_requested_closeout: true
   requires_local_build_for_lean_claims: true
-  green_claim_made_now: false
+  lean_build_claimed: false
+  green_claim_made_now: true
+
+closeout_evidence:
+  pr_merged: true
+  no_lean_files_changed: true
+  no_generated_docs_changed: true
+  no_root_readme_changed: true
+  direct_main_closeout_requested_by_user: true
