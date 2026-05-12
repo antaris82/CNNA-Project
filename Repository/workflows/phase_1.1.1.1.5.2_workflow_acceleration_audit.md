@@ -1,15 +1,17 @@
 # Phase 1.1.1.1.5.2 — Workflow acceleration and repeatability audit
 
-Status: yellow-active
+Status: green-closed
 Started: 2026-05-12
+Closed: 2026-05-12
 Branch: `phase/1.1.1.1.5.2-workflow-audit`
+Merged PR: #3
 Scope: workflow/tooling only; no Lean source change
 
 ## Purpose
 
 This phase turns repeated assistant-side CNNA maintenance work into faster, bounded, reproducible workflows. The immediate trigger is the observed overhead in routine green closeout, cleanup, branch handling, and documentation regeneration.
 
-The phase is not a mathematical derivation phase. It is a workflow/tooling governance phase inside the planning/documentation tool. It must not claim derived-only mathematical closure and must not change Lean semantics.
+The phase is not a mathematical derivation phase. It is a workflow/tooling governance phase inside the planning/documentation tool. It does not claim derived-only mathematical closure and does not change Lean semantics.
 
 ## Acceleration rule
 
@@ -56,18 +58,22 @@ For future phase-start tasks, apply this checklist before writing:
 4. If the authoritative master is unavailable or empty, create only explicit sidecar workflow evidence and do not fabricate master-plan semantics.
 5. Declare whether the task is Lean, planning, tooling, documentation, or generated-output work.
 6. Write only files belonging to that class.
-7. Open a PR when the diff is reviewable.
-8. Wait for the user's local build/evidence before green closeout.
+7. Open a PR when the diff is reviewable, unless the user explicitly requests a direct main closeout.
+8. Use the user's local build/evidence before green closeout when Lean source or generated build-sensitive files changed.
 ```
 
-## Closeout condition
+## Closeout evidence
 
-Phase 1.1.1.1.5.2 may become green only when:
+Phase 1.1.1.1.5.2 is closed as green for workflow/tooling scope because:
 
-- the workflow audit rules above are accepted or integrated into the authoritative planning source,
-- any required generated views are regenerated locally from the real Master YAML,
-- the branch diff contains no unrelated generated-documentation churn,
-- the user reports the relevant local check/build result.
+- PR #3 was merged into `main`.
+- The merged diff contained only workflow/trace files.
+- No Lean source files were changed.
+- No generated documentation/context documentation was changed.
+- No README churn was introduced.
+- The user explicitly requested the formal closeout after merge.
+
+No Lean build success is claimed by this closeout, because no Lean build was run in the assistant environment and no Lean source changed.
 
 ## Non-claims
 
