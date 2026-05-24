@@ -1,5 +1,0 @@
-digraph group_buildall {
-  rankdir="LR";
-  node [shape=box, fontsize=11];
-  "CNNA.BuildAll" [tooltip="BuildAll"];
-}

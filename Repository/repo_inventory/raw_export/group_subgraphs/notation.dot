@@ -1,5 +1,0 @@
-digraph group_notation {
-  rankdir="LR";
-  node [shape=box, fontsize=11];
-  "CNNA.Notation" [tooltip="Notation"];
-}
