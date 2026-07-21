@@ -5,18 +5,27 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/copy-cnna-snapshots.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/cnna-snapshot-copy-trigger'
   workflow_dispatch: {}
 
 permissions:
   contents: write
 
+concurrency:
+  group: copy-cnna-snapshots
+  cancel-in-progress: true
+
 jobs:
   copy:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out target repository
+      - name: Check out target main
         uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
 
       - name: Check out source repository
