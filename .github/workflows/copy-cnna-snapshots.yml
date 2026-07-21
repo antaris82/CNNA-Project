@@ -51,12 +51,11 @@ jobs:
             test -d "$src"
             rm -rf "$dst"
             cp -a "$src" "$dst"
+            diff -qr "$src" "$dst"
           done
 
           rm -rf source_repo
-          rm -f .github/workflows/copy-cnna-snapshots.yml
 
-          git add -A
-          git diff --cached --check
+          git add Snapshots/20160710 Snapshots/20260716 Snapshots/20260717
           git commit -m 'Copy CNNA snapshots 20160710, 20260716, 20260717'
           git push origin HEAD:main
