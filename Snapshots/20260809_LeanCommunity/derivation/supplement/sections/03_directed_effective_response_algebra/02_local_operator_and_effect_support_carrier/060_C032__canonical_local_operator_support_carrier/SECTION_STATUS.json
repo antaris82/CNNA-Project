@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "060",
+  "canonical_node_label": "060 \u00b7 C032",
+  "stable_node_directory_name": "060_C032__canonical_local_operator_support_carrier",
+  "id": "C032",
+  "section_path": "3.2.1",
+  "derivation_order": 60,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

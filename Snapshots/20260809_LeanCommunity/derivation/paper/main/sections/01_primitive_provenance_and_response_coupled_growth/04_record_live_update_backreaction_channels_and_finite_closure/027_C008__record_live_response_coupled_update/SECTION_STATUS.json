@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "027",
+  "canonical_node_label": "027 \u00b7 C008",
+  "stable_node_directory_name": "027_C008__record_live_response_coupled_update",
+  "id": "C008",
+  "section_path": "1.4.1",
+  "derivation_order": 27,
+  "main_documentation": "DOCUMENTED",
+  "supplement_documentation": "DOCUMENTED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

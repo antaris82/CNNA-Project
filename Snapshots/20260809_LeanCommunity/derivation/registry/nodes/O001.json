@@ -1,0 +1,612 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "O001",
+  "paper_section": "1.3.7",
+  "contract": {
+    "statement": "The bound legacy growth path contains executable response-independent mechanism classes: rank, forward, backward, node-load scalar, nonlinear mode, fixed backreaction scale, additive baseline, and geometric attenuation. O001 defines a falsifiable admission gate: M004 dependencies are admitted exactly when all eight presence flags are false, preserving only state, slot, response, and response-derived steering.",
+    "ownership_boundary": [
+      "owns source-bound executable-AST detection of the eight represented response-independent legacy mechanism classes",
+      "owns explicit rejection of each represented mechanism before the active M004 birth law",
+      "binds Python source evidence and the Lean all-false gate to the same eight class names",
+      "preserves exactly state, slot, response, and steering on successful admission",
+      "retains the historical three-channel witness as a regression but no longer treats it as complete",
+      "does not claim a universal mathematical no-go theorem",
+      "does not define replacement weights, C015, M003 positivity, M004, or C008"
+    ]
+  },
+  "cross_layer": {
+    "equivalence": "Python and Lean use the same eight-field presence record, the same exact equality-to-all-false admission predicate, the same complete all-active witness, and the same four-field admitted output. Python additionally binds each class to executable AST evidence in the exact retained legacy source; Lean proves generic rejection and preservation.",
+    "semantic_mismatch_known": false,
+    "semantic_identity_verified": false,
+    "identity_kind": "EXPANDED_EIGHT_CHANNEL_IMPLEMENTATION_OBSTRUCTION_PENDING_LOCAL_BUILD",
+    "identity_evidence": [
+      "The M004 Tier-C review showed that the frozen three-channel O001 audit omitted node-load, nonlinear-mode, fixed-backreaction, additive-baseline, and geometric-attenuation mechanisms present in the same legacy path.",
+      "The expanded Python AST audit detects all eight classes and rejects each class separately while ignoring comments/docstrings.",
+      "The corrected Lean source carries the same eight Boolean fields and individual block theorems; exact local build remains pending."
+    ]
+  },
+  "evidence": {
+    "audit_tier": "B",
+    "python": {
+      "status": "PASS_FULL_SUITE_CURRENT_SOURCE",
+      "node_tests": 4,
+      "full_suite_tests": 100,
+      "substantive_probe": "Exact legacy SHA bound; six growth functions inspected; all eight mechanism classes detected; executable symbol/baseline/attenuation witnesses checked; each class rejected separately; comments/docstrings ignored; four-field admission preserved.",
+      "verification_origin": "assistant_focused_and_full_python_suite_after_tier_c_completeness_repair"
+    },
+    "lean": {
+      "status": "PASS_USER_LOCAL_PREFIX_FREE_ROOT_BUILD_EIGHT_CHANNEL_GATE",
+      "source_sha256": "94a45ef69de61a5339b6f288295122ff6e36a386b67ef225a64b5dc6ea2d66a8",
+      "toolchain": "Lean 4.31.0 (project pin)",
+      "policy_scan_matches": 0,
+      "exact_hash_built": true,
+      "verification_origin": "user_local_prefix_free_26_job_core_build_20260804_plus_static_source_audit",
+      "proof_audit": {
+        "status": "PASS_ROOT_BUILD_AND_STATIC_POLICY_SCAN",
+        "nontrivial_theorems": [
+          "IstResponseIndependentDirectedBiasObstruction.accepted_preserves_state",
+          "IstResponseIndependentDirectedBiasObstruction.accepted_preserves_slot",
+          "IstResponseIndependentDirectedBiasObstruction.accepted_preserves_response",
+          "IstResponseIndependentDirectedBiasObstruction.accepted_preserves_steering",
+          "IstResponseIndependentDirectedBiasObstruction.rank_bias_blocks_acceptance",
+          "IstResponseIndependentDirectedBiasObstruction.forward_bias_blocks_acceptance",
+          "IstResponseIndependentDirectedBiasObstruction.backward_bias_blocks_acceptance",
+          "IstResponseIndependentDirectedBiasObstruction.node_load_scalar_blocks_acceptance",
+          "IstResponseIndependentDirectedBiasObstruction.nonlinear_mode_blocks_acceptance",
+          "IstResponseIndependentDirectedBiasObstruction.backreaction_scale_blocks_acceptance",
+          "IstResponseIndependentDirectedBiasObstruction.additive_baseline_blocks_acceptance",
+          "IstResponseIndependentDirectedBiasObstruction.geometric_attenuation_blocks_acceptance",
+          "IstResponseIndependentDirectedBiasObstruction.legacy_channels_not_removed",
+          "IstResponseIndependentDirectedBiasObstruction.legacy_candidate_not_admissible"
+        ],
+        "axiom_diagnostic_declarations": [
+          "IstResponseIndependentDirectedBiasObstruction.IndependentDirectedBiasPresence",
+          "IstResponseIndependentDirectedBiasObstruction.IsRemoved",
+          "IstResponseIndependentDirectedBiasObstruction.IsAdmissible",
+          "IstResponseIndependentDirectedBiasObstruction.acceptBiasFree",
+          "IstResponseIndependentDirectedBiasObstruction.node_load_scalar_blocks_acceptance",
+          "IstResponseIndependentDirectedBiasObstruction.nonlinear_mode_blocks_acceptance",
+          "IstResponseIndependentDirectedBiasObstruction.backreaction_scale_blocks_acceptance",
+          "IstResponseIndependentDirectedBiasObstruction.additive_baseline_blocks_acceptance",
+          "IstResponseIndependentDirectedBiasObstruction.geometric_attenuation_blocks_acceptance",
+          "IstResponseIndependentDirectedBiasObstruction.legacy_candidate_not_admissible"
+        ],
+        "verification_origin": "pending_user_local_validate_lean_build_coverage",
+        "forbidden_axioms": {
+          "Classical.choice": null,
+          "sorryAx": null
+        },
+        "declarations_resolved": 0
+      },
+      "build_coverage_verified": true,
+      "build_evidence": {
+        "source_sha256": "94a45ef69de61a5339b6f288295122ff6e36a386b67ef225a64b5dc6ea2d66a8",
+        "root_build_reported_green": true,
+        "root_build_jobs": 26,
+        "core_modules": 24,
+        "build_transcript": "derivation/code/lean/audit/evidence/USER_LOCAL_PREFIX_FREE_FULL_BUILD_20260804.txt",
+        "build_transcript_sha256": "61991521527cca32b3ebe78e4fe80ae07651f8c961250c5b123bb1b1544e9c70",
+        "source_hash_stable_across_documentation_phase": true
+      }
+    }
+  },
+  "artifacts": {
+    "python_source": "bbb97beceb7dbc32f167b780737d67a1b0b23ed4b176085dbf1324bd45345e75",
+    "python_test": "f4ad6dd624347fe166b23fd0f93ca3294162028625b134ba5fbe2dd2fb388708",
+    "lean_source": "09b0843724245af04405e5ac3b9ba7649ab4d445d3b399dad38d695e4ad72f04",
+    "math_prose": "273029d477ce1cbd0b3b25224e275f54a3f37fe676ebe16457ade80db0ffcf50",
+    "supplement_documentation": "c389eb2b05688f61f94826a3191c802a4ec9018895ed824d411c80c4891d9c7a"
+  },
+  "workflow": {
+    "node_semantics": "CLOSED_VERIFIED_EIGHT_CHANNEL_IMPLEMENTATION_OBSTRUCTION",
+    "documentation": "COMPLETE_V2",
+    "freeze_state": "FROZEN_VERIFIED_OBSTRUCTION",
+    "frozen_under_gate_version": "cnna-d8-obstruction-build-sync-v1",
+    "documentation_v2": "COMPLETE_V2"
+  },
+  "node_number": "022",
+  "derivation_rank": 14,
+  "derivation_order": 22,
+  "section_hierarchy": {
+    "section_path": "1.3.7",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Canonical cut, complement elimination and birth steering",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/022_O001__ist_response_independent_directed_bias_obstruction",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/022_O001__ist_response_independent_directed_bias_obstruction",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/022_O001__ist_response_independent_directed_bias_obstruction/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/022_O001__ist_response_independent_directed_bias_obstruction/DOCUMENTATION.md",
+    "introduction_reason": "Legacy-bias obstruction introduced at the affected birth-law gate."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D2",
+    "tier_name": "Load-bearing theorem, proof owner, obstruction, or quarantine gate",
+    "tier_assignment_rule": "PROOF_THEOREM_OWNER_OBSTRUCTION_OR_QUARANTINE_ROLE",
+    "main_paper_depth": "THEOREM_AND_PROOF_OVERVIEW",
+    "supplement_depth": "FULL_PROOF_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "formal_statement",
+      "hypotheses",
+      "introduction_reason",
+      "proof_strategy",
+      "lemma_chain",
+      "formal_realization",
+      "counterexamples_or_necessity_checks",
+      "axiom_profile",
+      "result",
+      "remaining_limits",
+      "downstream_handoff",
+      "code_line_register"
+    ],
+    "countercheck_requirement": "NEGATIVE_CONTROL_COUNTEREXAMPLE_OR_HYPOTHESIS_NECESSITY",
+    "countercheck_status": "PASS",
+    "v2_state": "COMPLETE_V2",
+    "python_anchor_status": "RESOLVED",
+    "lean_anchor_status": "RESOLVED",
+    "code_anchors": [
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s07_o001__ist_response_independent_directed_bias_obstruction.py",
+        "symbol": "IndependentDirectedBiasPresence",
+        "declaration_kind": "CLASS",
+        "start_line": 99,
+        "end_line": 117,
+        "source_sha256": "f7b9e6366d2f3b2bb9190d24625ca3afd7647e6f83b4f999905597486527e04b",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s07_o001__ist_response_independent_directed_bias_obstruction.py",
+        "symbol": "CandidateGrowthLawInputs",
+        "declaration_kind": "CLASS",
+        "start_line": 157,
+        "end_line": 164,
+        "source_sha256": "f7b9e6366d2f3b2bb9190d24625ca3afd7647e6f83b4f999905597486527e04b",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s07_o001__ist_response_independent_directed_bias_obstruction.py",
+        "symbol": "AdmittedGrowthLawInputs",
+        "declaration_kind": "CLASS",
+        "start_line": 168,
+        "end_line": 174,
+        "source_sha256": "f7b9e6366d2f3b2bb9190d24625ca3afd7647e6f83b4f999905597486527e04b",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s07_o001__ist_response_independent_directed_bias_obstruction.py",
+        "symbol": "ResponseIndependentBiasError",
+        "declaration_kind": "CLASS",
+        "start_line": 177,
+        "end_line": 178,
+        "source_sha256": "f7b9e6366d2f3b2bb9190d24625ca3afd7647e6f83b4f999905597486527e04b",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s07_o001__ist_response_independent_directed_bias_obstruction.py",
+        "symbol": "LegacyBiasFinding",
+        "declaration_kind": "CLASS",
+        "start_line": 182,
+        "end_line": 186,
+        "source_sha256": "f7b9e6366d2f3b2bb9190d24625ca3afd7647e6f83b4f999905597486527e04b",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s07_o001__ist_response_independent_directed_bias_obstruction.py",
+        "symbol": "LegacyBiasAudit",
+        "declaration_kind": "CLASS",
+        "start_line": 190,
+        "end_line": 207,
+        "source_sha256": "f7b9e6366d2f3b2bb9190d24625ca3afd7647e6f83b4f999905597486527e04b",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s07_o001__ist_response_independent_directed_bias_obstruction.py",
+        "symbol": "admit_growth_law_inputs",
+        "declaration_kind": "FUNCTION",
+        "start_line": 210,
+        "end_line": 229,
+        "source_sha256": "f7b9e6366d2f3b2bb9190d24625ca3afd7647e6f83b4f999905597486527e04b",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s07_o001__ist_response_independent_directed_bias_obstruction.py",
+        "symbol": "_function_symbol_references",
+        "declaration_kind": "FUNCTION",
+        "start_line": 232,
+        "end_line": 241,
+        "source_sha256": "f7b9e6366d2f3b2bb9190d24625ca3afd7647e6f83b4f999905597486527e04b",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s07_o001__ist_response_independent_directed_bias_obstruction.py",
+        "symbol": "_target_names",
+        "declaration_kind": "FUNCTION",
+        "start_line": 244,
+        "end_line": 249,
+        "source_sha256": "f7b9e6366d2f3b2bb9190d24625ca3afd7647e6f83b4f999905597486527e04b",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s07_o001__ist_response_independent_directed_bias_obstruction.py",
+        "symbol": "_contains_numeric_one",
+        "declaration_kind": "FUNCTION",
+        "start_line": 252,
+        "end_line": 258,
+        "source_sha256": "f7b9e6366d2f3b2bb9190d24625ca3afd7647e6f83b4f999905597486527e04b",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s07_o001__ist_response_independent_directed_bias_obstruction.py",
+        "symbol": "_contains_addition",
+        "declaration_kind": "FUNCTION",
+        "start_line": 261,
+        "end_line": 262,
+        "source_sha256": "f7b9e6366d2f3b2bb9190d24625ca3afd7647e6f83b4f999905597486527e04b",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s07_o001__ist_response_independent_directed_bias_obstruction.py",
+        "symbol": "_synthetic_findings",
+        "declaration_kind": "FUNCTION",
+        "start_line": 265,
+        "end_line": 300,
+        "source_sha256": "f7b9e6366d2f3b2bb9190d24625ca3afd7647e6f83b4f999905597486527e04b",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s07_o001__ist_response_independent_directed_bias_obstruction.py",
+        "symbol": "audit_legacy_response_independent_bias",
+        "declaration_kind": "FUNCTION",
+        "start_line": 303,
+        "end_line": 348,
+        "source_sha256": "f7b9e6366d2f3b2bb9190d24625ca3afd7647e6f83b4f999905597486527e04b",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s07_o001__ist_response_independent_directed_bias_obstruction.py",
+        "symbol": "audit_legacy_response_independent_bias_file",
+        "declaration_kind": "FUNCTION",
+        "start_line": 351,
+        "end_line": 353,
+        "source_sha256": "f7b9e6366d2f3b2bb9190d24625ca3afd7647e6f83b4f999905597486527e04b",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/test_s07_o001__ist_response_independent_directed_bias_obstruction.py",
+        "symbol": "_presence_only",
+        "declaration_kind": "FUNCTION",
+        "start_line": 18,
+        "end_line": 20,
+        "source_sha256": "838e65efd3035c9a02cb326a7e6734403873f3b5caf874b833a6cf7a9dba7d20",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/test_s07_o001__ist_response_independent_directed_bias_obstruction.py",
+        "symbol": "TestIstResponseIndependentDirectedBiasObstruction",
+        "declaration_kind": "CLASS",
+        "start_line": 23,
+        "end_line": 129,
+        "source_sha256": "838e65efd3035c9a02cb326a7e6734403873f3b5caf874b833a6cf7a9dba7d20",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S07_O001_IstResponseIndependentDirectedBiasObstruction.lean",
+        "symbol": "IndependentDirectedBiasPresence",
+        "declaration_kind": "STRUCTURE",
+        "start_line": 30,
+        "end_line": 40,
+        "source_sha256": "94a45ef69de61a5339b6f288295122ff6e36a386b67ef225a64b5dc6ea2d66a8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S07_O001_IstResponseIndependentDirectedBiasObstruction.lean",
+        "symbol": "noIndependentDirectedBias",
+        "declaration_kind": "DEF",
+        "start_line": 41,
+        "end_line": 51,
+        "source_sha256": "94a45ef69de61a5339b6f288295122ff6e36a386b67ef225a64b5dc6ea2d66a8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S07_O001_IstResponseIndependentDirectedBiasObstruction.lean",
+        "symbol": "legacyRankForwardBackwardBias",
+        "declaration_kind": "DEF",
+        "start_line": 52,
+        "end_line": 63,
+        "source_sha256": "94a45ef69de61a5339b6f288295122ff6e36a386b67ef225a64b5dc6ea2d66a8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S07_O001_IstResponseIndependentDirectedBiasObstruction.lean",
+        "symbol": "legacyResponseIndependentChannels",
+        "declaration_kind": "DEF",
+        "start_line": 64,
+        "end_line": 74,
+        "source_sha256": "94a45ef69de61a5339b6f288295122ff6e36a386b67ef225a64b5dc6ea2d66a8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S07_O001_IstResponseIndependentDirectedBiasObstruction.lean",
+        "symbol": "IsRemoved",
+        "declaration_kind": "DEF",
+        "start_line": 75,
+        "end_line": 78,
+        "source_sha256": "94a45ef69de61a5339b6f288295122ff6e36a386b67ef225a64b5dc6ea2d66a8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S07_O001_IstResponseIndependentDirectedBiasObstruction.lean",
+        "symbol": "CandidateGrowthLawInputs",
+        "declaration_kind": "STRUCTURE",
+        "start_line": 79,
+        "end_line": 88,
+        "source_sha256": "94a45ef69de61a5339b6f288295122ff6e36a386b67ef225a64b5dc6ea2d66a8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S07_O001_IstResponseIndependentDirectedBiasObstruction.lean",
+        "symbol": "BiasFreeGrowthLawInputs",
+        "declaration_kind": "STRUCTURE",
+        "start_line": 89,
+        "end_line": 97,
+        "source_sha256": "94a45ef69de61a5339b6f288295122ff6e36a386b67ef225a64b5dc6ea2d66a8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S07_O001_IstResponseIndependentDirectedBiasObstruction.lean",
+        "symbol": "IsAdmissible",
+        "declaration_kind": "DEF",
+        "start_line": 98,
+        "end_line": 103,
+        "source_sha256": "94a45ef69de61a5339b6f288295122ff6e36a386b67ef225a64b5dc6ea2d66a8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S07_O001_IstResponseIndependentDirectedBiasObstruction.lean",
+        "symbol": "acceptBiasFree",
+        "declaration_kind": "DEF",
+        "start_line": 104,
+        "end_line": 114,
+        "source_sha256": "94a45ef69de61a5339b6f288295122ff6e36a386b67ef225a64b5dc6ea2d66a8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S07_O001_IstResponseIndependentDirectedBiasObstruction.lean",
+        "symbol": "accepted_preserves_state",
+        "declaration_kind": "THEOREM",
+        "start_line": 115,
+        "end_line": 121,
+        "source_sha256": "94a45ef69de61a5339b6f288295122ff6e36a386b67ef225a64b5dc6ea2d66a8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S07_O001_IstResponseIndependentDirectedBiasObstruction.lean",
+        "symbol": "accepted_preserves_slot",
+        "declaration_kind": "THEOREM",
+        "start_line": 122,
+        "end_line": 128,
+        "source_sha256": "94a45ef69de61a5339b6f288295122ff6e36a386b67ef225a64b5dc6ea2d66a8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S07_O001_IstResponseIndependentDirectedBiasObstruction.lean",
+        "symbol": "accepted_preserves_response",
+        "declaration_kind": "THEOREM",
+        "start_line": 129,
+        "end_line": 135,
+        "source_sha256": "94a45ef69de61a5339b6f288295122ff6e36a386b67ef225a64b5dc6ea2d66a8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S07_O001_IstResponseIndependentDirectedBiasObstruction.lean",
+        "symbol": "accepted_preserves_steering",
+        "declaration_kind": "THEOREM",
+        "start_line": 136,
+        "end_line": 141,
+        "source_sha256": "94a45ef69de61a5339b6f288295122ff6e36a386b67ef225a64b5dc6ea2d66a8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S07_O001_IstResponseIndependentDirectedBiasObstruction.lean",
+        "symbol": "true_ne_false",
+        "declaration_kind": "THEOREM",
+        "start_line": 142,
+        "end_line": 146,
+        "source_sha256": "94a45ef69de61a5339b6f288295122ff6e36a386b67ef225a64b5dc6ea2d66a8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S07_O001_IstResponseIndependentDirectedBiasObstruction.lean",
+        "symbol": "rank_bias_blocks_acceptance",
+        "declaration_kind": "THEOREM",
+        "start_line": 147,
+        "end_line": 156,
+        "source_sha256": "94a45ef69de61a5339b6f288295122ff6e36a386b67ef225a64b5dc6ea2d66a8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S07_O001_IstResponseIndependentDirectedBiasObstruction.lean",
+        "symbol": "forward_bias_blocks_acceptance",
+        "declaration_kind": "THEOREM",
+        "start_line": 157,
+        "end_line": 166,
+        "source_sha256": "94a45ef69de61a5339b6f288295122ff6e36a386b67ef225a64b5dc6ea2d66a8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S07_O001_IstResponseIndependentDirectedBiasObstruction.lean",
+        "symbol": "backward_bias_blocks_acceptance",
+        "declaration_kind": "THEOREM",
+        "start_line": 167,
+        "end_line": 176,
+        "source_sha256": "94a45ef69de61a5339b6f288295122ff6e36a386b67ef225a64b5dc6ea2d66a8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S07_O001_IstResponseIndependentDirectedBiasObstruction.lean",
+        "symbol": "node_load_scalar_blocks_acceptance",
+        "declaration_kind": "THEOREM",
+        "start_line": 177,
+        "end_line": 186,
+        "source_sha256": "94a45ef69de61a5339b6f288295122ff6e36a386b67ef225a64b5dc6ea2d66a8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S07_O001_IstResponseIndependentDirectedBiasObstruction.lean",
+        "symbol": "nonlinear_mode_blocks_acceptance",
+        "declaration_kind": "THEOREM",
+        "start_line": 187,
+        "end_line": 196,
+        "source_sha256": "94a45ef69de61a5339b6f288295122ff6e36a386b67ef225a64b5dc6ea2d66a8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S07_O001_IstResponseIndependentDirectedBiasObstruction.lean",
+        "symbol": "backreaction_scale_blocks_acceptance",
+        "declaration_kind": "THEOREM",
+        "start_line": 197,
+        "end_line": 206,
+        "source_sha256": "94a45ef69de61a5339b6f288295122ff6e36a386b67ef225a64b5dc6ea2d66a8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S07_O001_IstResponseIndependentDirectedBiasObstruction.lean",
+        "symbol": "additive_baseline_blocks_acceptance",
+        "declaration_kind": "THEOREM",
+        "start_line": 207,
+        "end_line": 216,
+        "source_sha256": "94a45ef69de61a5339b6f288295122ff6e36a386b67ef225a64b5dc6ea2d66a8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S07_O001_IstResponseIndependentDirectedBiasObstruction.lean",
+        "symbol": "geometric_attenuation_blocks_acceptance",
+        "declaration_kind": "THEOREM",
+        "start_line": 217,
+        "end_line": 226,
+        "source_sha256": "94a45ef69de61a5339b6f288295122ff6e36a386b67ef225a64b5dc6ea2d66a8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S07_O001_IstResponseIndependentDirectedBiasObstruction.lean",
+        "symbol": "legacy_channels_not_removed",
+        "declaration_kind": "THEOREM",
+        "start_line": 227,
+        "end_line": 233,
+        "source_sha256": "94a45ef69de61a5339b6f288295122ff6e36a386b67ef225a64b5dc6ea2d66a8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S07_O001_IstResponseIndependentDirectedBiasObstruction.lean",
+        "symbol": "legacy_candidate_not_admissible",
+        "declaration_kind": "THEOREM",
+        "start_line": 234,
+        "end_line": 248,
+        "source_sha256": "94a45ef69de61a5339b6f288295122ff6e36a386b67ef225a64b5dc6ea2d66a8",
+        "resolution": "RESOLVED"
+      }
+    ],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false,
+    "completion_evidence": {
+      "main_artifact": "derivation/paper/main/sections/01_primitive_response_coupled_finite_provenance/03_recurrent_pre_birth_measurement_and_steering/022_O001__ist_response_independent_directed_bias_obstruction/SECTION.tex",
+      "supplement_artifact": "derivation/supplement/sections/01_primitive_response_coupled_finite_provenance/03_recurrent_pre_birth_measurement_and_steering/022_O001__ist_response_independent_directed_bias_obstruction/DOCUMENTATION.md",
+      "main_sha256": "273029d477ce1cbd0b3b25224e275f54a3f37fe676ebe16457ade80db0ffcf50",
+      "supplement_sha256": "c389eb2b05688f61f94826a3191c802a4ec9018895ed824d411c80c4891d9c7a",
+      "code_anchor_count": 40,
+      "source_code_changed": false,
+      "documentation_complete": true,
+      "required_sections_present": true,
+      "countercheck_present": true,
+      "code_anchors_resolved": true,
+      "completed_on": "2026-08-04"
+    }
+  },
+  "canonical_identity": {
+    "node_number": "022",
+    "semantic_id": "O001",
+    "canonical_node_label": "022 · O001",
+    "stable_node_directory_name": "022_O001__ist_response_independent_directed_bias_obstruction",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "019",
+  "canonical_node_label": "019 \u00b7 P003",
+  "stable_node_directory_name": "019_P003__birth_cut_canonicity_and_partition_well_formedness",
+  "id": "P003",
+  "section_path": "1.3.4.1",
+  "derivation_order": 19,
+  "main_documentation": "DOCUMENTED",
+  "supplement_documentation": "DOCUMENTED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

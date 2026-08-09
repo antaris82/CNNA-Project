@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "042",
+  "canonical_node_label": "042 \u00b7 CTRL001",
+  "stable_node_directory_name": "042_CTRL001__symmetric_null_steering_control",
+  "id": "CTRL001",
+  "section_path": "1.6.2",
+  "derivation_order": 42,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

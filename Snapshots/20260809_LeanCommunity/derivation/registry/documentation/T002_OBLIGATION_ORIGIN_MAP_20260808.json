@@ -1,0 +1,42 @@
+{
+  "schema": "cnna.t002-obligation-origin-map.v1",
+  "date": "2026-08-08",
+  "node": "T002",
+  "principle": "MISSING_CLOSURES_ARE_PROVED_AT_THEIR_SEMANTIC_ORIGIN",
+  "owners": {
+    "C004": [
+      "born_cutoff",
+      "born_nonroot",
+      "born_pairwise_order",
+      "born_initial_prefix"
+    ],
+    "C005": [
+      "generic_conductance_append_pairwise_closure"
+    ],
+    "C006": [
+      "exact_fraction_to_rat",
+      "same_value_to_rat",
+      "positive_steering_to_positive_rat"
+    ],
+    "C007": [
+      "canonical_state_directed_block_realization",
+      "state_directed_block_realization_existence"
+    ],
+    "M001": [
+      "port_support_structure"
+    ],
+    "M004": [
+      "live_update_endpoint_support",
+      "touches_new_child",
+      "endpoint_distinctness",
+      "new_pair_uniqueness"
+    ],
+    "T002": [
+      "old_new_pair_disjointness",
+      "state_assembly",
+      "post_live_coherence",
+      "successor_uniqueness"
+    ]
+  },
+  "scope_guard": "T002_MUST_NOT_ABSORB_ORIGIN_LOCAL_CLOSURE_FACTS"
+}

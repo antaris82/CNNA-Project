@@ -1,0 +1,65 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "C010",
+  "paper_section": "1.5.1",
+  "contract": {
+    "statement": "Discrete event-order label determined by the canonical schedule; not the response-derived physical time."
+  },
+  "workflow": {
+    "node_semantics": "CORE_DEFINED",
+    "documentation": "NOT_STARTED",
+    "freeze_state": "NOT_STARTED",
+    "frozen_under_gate_version": null,
+    "documentation_v2": "NOT_STARTED"
+  },
+  "dependencies": [
+    "C009",
+    "C018"
+  ],
+  "node_number": "033",
+  "derivation_rank": 20,
+  "derivation_order": 33,
+  "section_hierarchy": {
+    "section_path": "1.5.1",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Event order, response order and finite completion",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/05_event_order_response_order_and_finite_completion/033_C010__provenance_event_index",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/05_event_order_response_order_and_finite_completion/033_C010__provenance_event_index",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/05_event_order_response_order_and_finite_completion/033_C010__provenance_event_index/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/05_event_order_response_order_and_finite_completion/033_C010__provenance_event_index/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C009, C018; registered hard handoff(s): records_event_index, assigns_event_index."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D0",
+    "tier_name": "Atomic input or definitional node",
+    "tier_assignment_rule": "EXPLICIT_ATOMIC_OR_DEFINITIONAL_OVERRIDE",
+    "main_paper_depth": "COMPACT_DEFINITION",
+    "supplement_depth": "TRACEABLE_DEFINITION",
+    "required_sections": [
+      "position_in_derivation",
+      "definition_or_statement",
+      "introduction_reason",
+      "construction_or_encoding",
+      "boundary_case_or_countercheck",
+      "result",
+      "downstream_handoff",
+      "code_anchors"
+    ],
+    "countercheck_requirement": "ONE_DEFINITIONAL_BOUNDARY_OR_TYPE_REJECTION",
+    "countercheck_status": "NOT_STARTED",
+    "v2_state": "NOT_STARTED",
+    "python_anchor_status": "PLANNED",
+    "lean_anchor_status": "PLANNED",
+    "code_anchors": [],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false
+  },
+  "canonical_identity": {
+    "node_number": "033",
+    "semantic_id": "C010",
+    "canonical_node_label": "033 · C010",
+    "stable_node_directory_name": "033_C010__provenance_event_index",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  }
+}

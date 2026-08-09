@@ -1,0 +1,69 @@
+{
+  "schema": "cnna.m003-m004-kernel-build-evidence.v1",
+  "status": "PASS",
+  "date": "2026-08-06",
+  "origin": "USER_LOCAL_LEAN_BUILD",
+  "build_command": "./audit/run_package_boundary_audit.sh --build",
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "mathlib": "v4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "transcript": "derivation/code/lean/audit/evidence/USER_LOCAL_M003_M004_FULL_BUILD_20260806.txt",
+  "transcript_sha256": "d15167488dbe74c9b6d1bf7cb4629b34e83a1111ad63a548ee041cc9dc69bf24",
+  "core_build_jobs": 26,
+  "proof_build_jobs": 8596,
+  "proof_modules": 15,
+  "p001_proof_declarations": 142,
+  "m003_m004_proof_declarations": 11,
+  "total_audited_declarations": 153,
+  "source_warnings": 0,
+  "p001_current_proof_axiom_audit": "PASS",
+  "m003_m004_current_proof_axiom_audit": "PASS",
+  "full_package_boundary_audit": "PASS",
+  "p001_axiom_profile_counts": {
+    "choice_propext_quot": 117,
+    "propext_quot_only": 23,
+    "axiom_free": 2
+  },
+  "m003_m004_axiom_profile_counts": {
+    "choice_propext_quot": 6,
+    "propext_quot_only": 5,
+    "axiom_free": 0
+  },
+  "combined_axiom_profile_counts": {
+    "choice_propext_quot": 123,
+    "propext_quot_only": 28,
+    "axiom_free": 2
+  },
+  "allowed_transitive_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "verified_source_sha256": {
+    "core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S09_M003_CanonicalResponseSteeringFunctionalSigmaBRnS.lean": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+    "core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+    "proofs/src/CNNAProofs/M003M004/S01_CanonicalM003Closure.lean": "d96d928f48f0780e3b728b3777d2b58e99349ef901743113f172b1a5c0e7ce9c",
+    "proofs/src/CNNAProofs/M003M004/S02_CanonicalM004ClosureAndHandoff.lean": "2882f029f40a3b5742e987e3b201602ba5a5dd532121818418837747e825e93e",
+    "proofs/src/CNNAProofs.lean": "a4538f5c80aa62936cadef9fa5dfb5c2add858161046de2c05ccd36087e2d0c8",
+    "audit/M003M004_CurrentProofAxiomAudit.lean": "964e82cfaa357cc6da3ded790c11d9cd305ab8098f3eab201cf1ee91782a9f27"
+  },
+  "verified_artifacts": {
+    "core_olean": true,
+    "proofs_olean": true,
+    "proof_manifest": true,
+    "p001_semantic_olean": true,
+    "p001_maximum_principle_olean": true,
+    "p001_finite_linear_olean": true,
+    "p001_response_well_definedness_olean": true,
+    "p001_directed_laplacian_olean": true,
+    "p001_distinguished_positivity_olean": true,
+    "p001_canonical_instantiation_olean": true,
+    "p001_canonical_matrix_structure_olean": true,
+    "p001_canonical_backbone_reachability_olean": true,
+    "p001_m003_m004_facades_olean": true,
+    "p001_second_cut_reuse_olean": true,
+    "m003_canonical_closure_olean": true,
+    "m004_canonical_closure_handoff_olean": true
+  },
+  "retained_verified_p001_source_hash_match": true
+}

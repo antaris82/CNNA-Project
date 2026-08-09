@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "011",
+  "canonical_node_label": "011 \u00b7 C013",
+  "stable_node_directory_name": "011_C013__first_non_root_provenance_birth_v",
+  "id": "C013",
+  "section_path": "1.2.4",
+  "derivation_order": 11,
+  "main_documentation": "DOCUMENTED",
+  "supplement_documentation": "DOCUMENTED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

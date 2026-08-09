@@ -1,0 +1,59 @@
+{
+  "schema": "cnna.p001-kernel-build-evidence.v1",
+  "status": "PASS",
+  "date": "2026-08-06",
+  "origin": "USER_LOCAL_LEAN_BUILD",
+  "build_command": "./audit/run_package_boundary_audit.sh --build",
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "mathlib": "v4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "transcript": "derivation/code/lean/audit/evidence/USER_LOCAL_P001_FULL_BUILD_20260806.txt",
+  "transcript_sha256": "3329291658b2d7a5f46acc6c1bf48b8a60f6bade5d010aa96d7978be3943170a",
+  "core_build_jobs": 26,
+  "proof_build_jobs": 8595,
+  "proof_modules": 13,
+  "proof_declarations": 142,
+  "source_warnings": 0,
+  "p001_current_proof_axiom_audit": "PASS",
+  "full_package_boundary_audit": "PASS",
+  "axiom_profile_counts": {
+    "choice_propext_quot": 117,
+    "propext_quot_only": 23,
+    "axiom_free": 2
+  },
+  "allowed_transitive_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "verified_source_sha256": {
+    "proofs/src/CNNAProofs/P001/DirectedSchurDtnKronChannelClosure.lean": "19fce24b2000c8ff64690c0b78e4dacc9115bdf34b713bf6054f95f37886db43",
+    "proofs/src/CNNAProofs/P001/S01_ExactSemanticBridge.lean": "7139f45922bc14d7f8de4180075f7fe4ac687bd9d54b893dcb0e21a092b723d1",
+    "proofs/src/CNNAProofs/P001/S02_DirectedMaximumPrinciple.lean": "9cc036efcd855b49df4a8c0abe5d58a0ef793b0bc2c302e8f312a654ab561aa4",
+    "proofs/src/CNNAProofs/P001/S03_FiniteLinearWellPosedness.lean": "b0ef0574fd41c4f11e6dd43b81e73634030776a8d9265021d07e8ea4f302f317",
+    "proofs/src/CNNAProofs/P001/S04_ResponseWellDefinedness.lean": "c80d1dc00f55cd84420beb3d747d8b3ec33c0137a41a2a97627f23c94f7ffa07",
+    "proofs/src/CNNAProofs/P001/S05_ResponseDirectedLaplacian.lean": "7cfb905f5c409e8daa737037527f364ccc6fb6a23a49b1d851a0c6cf941270dc",
+    "proofs/src/CNNAProofs/P001/S06_DistinguishedPortStrictPositivity.lean": "4a4c4a94cd888638f483bdefa345798337acd39bbe0d5734524599ad1aa761c5",
+    "proofs/src/CNNAProofs/P001/S07_CanonicalBirthCutInstantiation.lean": "b2ebfafbb319bc64049eacec675f34fb4b7473280b73e03ba6d5d31a31217146",
+    "proofs/src/CNNAProofs/P001/S08_CanonicalDirectedMatrixStructure.lean": "0975bb3958c81032d07f27d1d0c58c5057942d70b884d4ad5bc69aeea99475f5",
+    "proofs/src/CNNAProofs/P001/S09_CanonicalBackboneReachability.lean": "49110c72b52c07384f0f67a37945f53b88565940464a5c5e62c9dcbaa60074a1",
+    "proofs/src/CNNAProofs/P001/S10_M003M004ProofFacades.lean": "1b0432d2df791fb24dc4d70937b078bea8f89fe42824b9aeb41113977088c53e",
+    "proofs/src/CNNAProofs/P001/S11_IndependentBidirectedChainCutReuse.lean": "1bf9b8cb1a7793c1a2c15f07b1d09fe3f959588f8f7eabcd4591bf1c9f85f470"
+  },
+  "verified_artifacts": {
+    "core_olean": true,
+    "proofs_olean": true,
+    "proof_manifest": true,
+    "p001_semantic_olean": true,
+    "p001_maximum_principle_olean": true,
+    "p001_finite_linear_olean": true,
+    "p001_response_well_definedness_olean": true,
+    "p001_directed_laplacian_olean": true,
+    "p001_distinguished_positivity_olean": true,
+    "p001_canonical_instantiation_olean": true,
+    "p001_canonical_matrix_structure_olean": true,
+    "p001_canonical_backbone_reachability_olean": true,
+    "p001_m003_m004_facades_olean": true,
+    "p001_second_cut_reuse_olean": true
+  }
+}

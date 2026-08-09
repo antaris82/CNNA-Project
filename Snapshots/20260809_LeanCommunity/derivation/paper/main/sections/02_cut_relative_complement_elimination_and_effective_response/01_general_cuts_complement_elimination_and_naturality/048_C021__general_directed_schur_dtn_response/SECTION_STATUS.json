@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "048",
+  "canonical_node_label": "048 \u00b7 C021",
+  "stable_node_directory_name": "048_C021__general_directed_schur_dtn_response",
+  "id": "C021",
+  "section_path": "2.1.2",
+  "derivation_order": 48,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

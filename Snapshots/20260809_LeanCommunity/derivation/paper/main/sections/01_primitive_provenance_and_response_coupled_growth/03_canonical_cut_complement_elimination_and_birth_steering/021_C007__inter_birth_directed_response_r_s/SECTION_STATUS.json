@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "021",
+  "canonical_node_label": "021 \u00b7 C007",
+  "stable_node_directory_name": "021_C007__inter_birth_directed_response_r_s",
+  "id": "C007",
+  "section_path": "1.3.6",
+  "derivation_order": 21,
+  "main_documentation": "DOCUMENTED",
+  "supplement_documentation": "DOCUMENTED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

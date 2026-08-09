@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "102",
+  "canonical_node_label": "102 \u00b7 P035",
+  "stable_node_directory_name": "102_P035__local_cone_restriction_and_hilbert_completion_canonicity",
+  "id": "P035",
+  "section_path": "5.4.1.1",
+  "derivation_order": 102,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

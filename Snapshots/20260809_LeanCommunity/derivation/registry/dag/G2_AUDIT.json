@@ -1,0 +1,29 @@
+{
+  "schema": "cnna.g2-user-yed-live-canonical-layout-audit.v1",
+  "status": "PASS",
+  "layout_authority": "USER_SUPPLIED_YED_LIVE_GRAPHML",
+  "nodes": 145,
+  "edges": 401,
+  "centered_labels": 145,
+  "origin_nodes": [
+    "I001",
+    "I002",
+    "C001"
+  ],
+  "origin_positions": {
+    "I001": [
+      2332.819841269841,
+      136.0
+    ],
+    "I002": [
+      2702.819841269841,
+      136.0
+    ],
+    "C001": [
+      3072.819841269841,
+      0.0
+    ]
+  },
+  "geometry_preservation_policy": "DO_NOT_RELAYOUT_WITH_PROJECT_RENDERER",
+  "errors": []
+}

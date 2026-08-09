@@ -1,0 +1,40 @@
+% Canonical node 028 · C016; current section path 1.4.2.
+\cnnaNodeHeading{028}{C016}{Immutable record channel}
+\cnnaNodePlacement{1.4.2}{D1}
+
+\paragraph*{Position and role.}
+C016 is the record projection of the already kernel-verified C008 update.  It
+introduces no second update law.  Its purpose is to isolate the part of the
+state that records relations at birth and to certify that a later admissible
+C008 step never rewrites the previously stored record.
+
+\paragraph*{Local immutability contract.}
+For an existing record $R$ and canonical M004 instruction $B$, C016 proves
+\[
+  R' = R\mathbin{\|}P(B),
+\]
+where $P(B)$ is exactly the direct parent/newborn birth pair.  Hence $R$ is a
+literal left prefix of $R'$.  Neither strict-ancestor nor sibling backreaction
+occurs in the appended record suffix.  The construction also respects the C006
+exact-fraction \texttt{SameValue} boundary inherited through C008.
+
+\begin{cnnaInfoBox}{Local immutability versus future invariance}
+C016 proves the strongest statement available before the recurrent successor
+carrier exists: every single admissible C008 update preserves the complete old
+record as a left prefix.  It does not yet quantify over an arbitrary number of
+future births.  That global theorem requires the C009/P005 recurrent chain and
+remains downstream.
+\end{cnnaInfoBox}
+
+\paragraph*{Kernel-verified result.}
+The 2026-08-08 Lean 4.31.0 run builds the C016 Core module and the shared
+\texttt{CNNAProofs.C016C017} facade.  Together with C017, twelve declarations
+are audited.  C016's representative-independence theorem has transitive profile
+$[\texttt{propext},\texttt{Quot.sound}]$; the contract/facade declarations may
+also inherit \texttt{Classical.choice}.  No project-local axiom or
+\texttt{sorryAx} is introduced, and the full package-boundary audit passes.
+
+\paragraph*{Handoff.}
+C016 now supplies the immutable record-channel input required by C009 and later
+by the record/live response comparison.  It does not define the later
+live-minus-record observable C024.

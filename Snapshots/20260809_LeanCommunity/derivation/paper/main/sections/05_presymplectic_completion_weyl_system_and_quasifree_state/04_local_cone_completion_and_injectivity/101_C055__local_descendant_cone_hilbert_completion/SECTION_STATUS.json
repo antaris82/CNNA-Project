@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "101",
+  "canonical_node_label": "101 \u00b7 C055",
+  "stable_node_directory_name": "101_C055__local_descendant_cone_hilbert_completion",
+  "id": "C055",
+  "section_path": "5.4.1",
+  "derivation_order": 101,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

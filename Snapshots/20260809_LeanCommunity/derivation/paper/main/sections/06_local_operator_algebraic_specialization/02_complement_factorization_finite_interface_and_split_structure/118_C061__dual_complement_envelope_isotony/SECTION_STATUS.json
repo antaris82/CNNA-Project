@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "118",
+  "canonical_node_label": "118 \u00b7 C061",
+  "stable_node_directory_name": "118_C061__dual_complement_envelope_isotony",
+  "id": "C061",
+  "section_path": "6.2.3",
+  "derivation_order": 118,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

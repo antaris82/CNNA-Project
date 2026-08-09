@@ -1,0 +1,47 @@
+% Canonical node 015 · C005; current section path 1.3.1.
+% Canonical owner: C005
+\cnnaNodeHeading{015}{C005}{Response-capable state schema $X_n$, $n\ge 1$}
+\cnnaNodePlacement{1.3.1}{D1}
+After the exceptional bootstrap, a recurrent state $X_n$ consists of the fixed
+finite provenance grammar and canonical birth schedule, the first $n\ge1$
+non-root addresses of that schedule, and the current positive directed
+conductances supported on the born carrier.  The born addresses therefore form
+an initial segment of the C018 order.  Every born non-root vertex retains both
+directed positive conductances to its provenance parent; additional positive
+directed conductances between already-born vertices are permitted.
+
+% CNNA-CONTEXT-BEGIN CTX-C005-WEIGHTED-DIGRAPH
+If the provenance labels are temporarily forgotten, $X_n$ is a finite positively weighted digraph with a distinguished bidirectional spanning parent backbone.  Standard digraph language therefore applies to paths and connectivity, while the schedule-prefix and provenance invariants remain CNNA-specific.
+
+% CNNA-EXTREF-BEGIN EXT-USE-C005-DIGRAPH-DIRECT
+\cite[Ch.~1, pp.~1--30]{BangJensenGutin2009Digraphs}.
+% CNNA-EXTREF-END EXT-USE-C005-DIGRAPH-DIRECT
+% CNNA-CONTEXT-END CTX-C005-WEIGHTED-DIGRAPH
+
+
+The bootstrap state of C014 embeds as the base case $X_1$.  Thus the root
+and first newborn are present with the two unit conductances inherited from the
+bootstrap construction.  The recurrent rational conductance fields are the
+explicit rational lifts of those two stored C014 values, rather than fresh
+unit literals; hence the C014-to-C005 scalar handoff is term-level.
+
+This node defines only the domain schema for recurrent growth.  It does not
+select the next open slot, choose the birth-local cut, compute a Schur/Dirichlet-to-Neumann
+response, apply a birth law, or construct $X_{n+1}$.  In particular,
+``response-capable'' here means that a finite positive weighted provenance
+carrier is available as input to the later response construction; the response
+itself is owned by subsequent DAG nodes.
+
+% CNNA-OPEN-PROVENANCE-BEGIN C005
+\begin{cnnaInfoBox}{Open-provenance role: Sufficient finite provenance state}
+C005 is the current finite candidate for a provenance-sufficient state: it carries the born prefix and response data needed by the next CNNA update.  Whether an arbitrary empirical reduced state admits such a completion is outside the present theorem scope.
+\end{cnnaInfoBox}
+% CNNA-OPEN-PROVENANCE-END C005
+
+\paragraph*{Verified closure and limits.}
+The formal state invariants require a nonempty C018 prefix, pairwise distinct
+born addresses, pairwise distinct directed conductance records, positive
+non-loop conductances with born endpoints, and both parent orientations for
+every born non-root vertex.  The constructor \texttt{fromBootstrap} proves
+that C014 inhabits this schema with $n=1$.  C005 is a state domain only: it
+contains neither a selected successor nor a response witness or update law.

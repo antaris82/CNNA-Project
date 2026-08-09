@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "047",
+  "canonical_node_label": "047 \u00b7 P007",
+  "stable_node_directory_name": "047_P007__general_admissible_cut_partition_and_canonicity",
+  "id": "P007",
+  "section_path": "2.1.1.1",
+  "derivation_order": 47,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

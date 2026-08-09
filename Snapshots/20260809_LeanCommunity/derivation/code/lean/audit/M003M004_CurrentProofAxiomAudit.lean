@@ -1,0 +1,13 @@
+import CNNAProofs.M003M004.S02_CanonicalM004ClosureAndHandoff
+
+#print axioms CNNAProofs.M003M004.CanonicalM003Closure
+#print axioms CNNAProofs.M003M004.canonicalM003Closure
+#print axioms CNNAProofs.M003M004.CanonicalM003ClosureContract
+#print axioms CNNAProofs.M003M004.canonicalM003ClosureContract
+#print axioms CNNAProofs.M003M004.CanonicalM004Closure
+#print axioms CNNAProofs.M003M004.canonicalM004Closure
+#print axioms CNNAProofs.M003M004.IsCanonicalBirthInstructionHandoff
+#print axioms CNNAProofs.M003M004.canonicalBirthInstructionHandoff_exists
+#print axioms CNNAProofs.M003M004.canonicalBirthInstructionHandoff_sameValue
+#print axioms CNNAProofs.M003M004.CanonicalM004ClosureContract
+#print axioms CNNAProofs.M003M004.canonicalM004ClosureContract

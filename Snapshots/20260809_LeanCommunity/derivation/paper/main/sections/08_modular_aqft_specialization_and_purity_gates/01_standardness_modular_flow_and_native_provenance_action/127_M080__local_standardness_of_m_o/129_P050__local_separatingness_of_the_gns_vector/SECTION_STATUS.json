@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "129",
+  "canonical_node_label": "129 \u00b7 P050",
+  "stable_node_directory_name": "129_P050__local_separatingness_of_the_gns_vector",
+  "id": "P050",
+  "section_path": "8.1.1.2",
+  "derivation_order": 129,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

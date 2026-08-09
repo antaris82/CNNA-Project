@@ -1,0 +1,143 @@
+% Canonical node 006 · C018; current section path 1.1.6.
+% Canonical owner: C018
+\cnnaNodeHeading{006}{C018}{Canonical BFS/lexicographic provenance birth schedule}
+\cnnaNodePlacement{1.1.6}{D2}
+
+\paragraph*{Position and scientific role.}
+\texttt{C018} consumes the finite $b$-ary address grammar of \texttt{C003} and
+fixes the active deterministic order in which admissible non-root provenance
+slots are considered.  It introduces no new free parameter.  The root has
+already been created by \texttt{C002}; consequently it is not an element of
+the non-root birth schedule.  The node owns an ordering convention only.  It
+does not yet assign an event number, a birth time, a response value, a
+conductance, a geometry, or a dynamical update.
+
+\paragraph*{Formal order.}
+Let $S_b=\{0,\ldots,b-1\}$ and let $S_b^*$ be the C003 address words.  Local
+slot ranks are ordered by the ordinary strict order on their values.  At equal
+word length, this induces the lexicographic relation $<_{\mathrm{lex}}$.
+C018 then defines
+\begin{equation}
+  a \prec_{\mathrm{BFSlex}} c
+  \quad\Longleftrightarrow\quad
+  |a|<|c|
+  \;\lor\;
+  \bigl(|a|=|c|\ \land\ a<_{\mathrm{lex}}c\bigr).
+  \label{eq:c018-bfslex}
+\end{equation}
+This is the shortlex order on provenance words: depth is compared first and
+lexicographic order breaks ties.  It is selected as the active CNNA
+construction convention; C003 alone does not force this convention against
+all other possible linearizations.
+% CNNA-EXTREF-BEGIN EXT-USE-C018-SHORTLEX-DIRECT
+\cite[Ch.~1, finite words and lexicographic order]{Lothaire1997CombinatoricsWords}.
+% CNNA-EXTREF-END EXT-USE-C018-SHORTLEX-DIRECT
+
+For one parent $u$ and ranks $r<s$, the order satisfies
+\begin{equation}
+  u\mathbin{\Vert}(r) \prec_{\mathrm{BFSlex}}
+  u\mathbin{\Vert}(s),
+  \label{eq:c018-sibling-order}
+\end{equation}
+and every parent precedes every child,
+\begin{equation}
+  u \prec_{\mathrm{BFSlex}} u\mathbin{\Vert}(r).
+  \label{eq:c018-parent-child}
+\end{equation}
+
+% CNNA-INFOBOX-BEGIN INFO-C018-SHORTLEX-BASEB
+\begin{cnnaInfoBox}{Shortlex order and the fixed-depth base-$b$ coordinate}
+At depth $d$, an address $a=(a_0,\ldots,a_{d-1})$ has the ordinary
+base-$b$ coordinate $\sum_{j=0}^{d-1}a_j b^{d-1-j}$.  Prefixing this
+coordinate by the number of words at smaller depths yields the closed index
+\[
+  1+\sum_{k=1}^{d-1}b^k+\sum_{j=0}^{d-1}a_j b^{d-1-j}
+\]
+for the non-root shortlex schedule.  Leading zero slots remain part of the
+word, so this is a coordinate for the chosen order rather than an
+identification of provenance words with integers.
+% CNNA-EXTREF-BEGIN EXT-USE-C018-WORDS-INFOBOX
+\cite[Ch.~1]{Lothaire1997CombinatoricsWords}.
+% CNNA-EXTREF-END EXT-USE-C018-WORDS-INFOBOX
+\end{cnnaInfoBox}
+% CNNA-INFOBOX-END INFO-C018-SHORTLEX-BASEB
+
+\paragraph*{Strict-total-order theorem.}
+The Lean development proves constructively that the address relation in
+Eq.~\eqref{eq:c018-bfslex} is irreflexive, transitive, asymmetric, and
+trichotomous:
+\begin{equation}
+  a\prec_{\mathrm{BFSlex}}c
+  \;\lor\;
+  a=c
+  \;\lor\;
+  c\prec_{\mathrm{BFSlex}}a.
+  \label{eq:c018-trichotomy}
+\end{equation}
+Hence distinct provenance addresses are comparable in exactly one direction.
+The proof first establishes irreflexivity, transitivity and trichotomy for the
+lexicographic word relation and then lifts these facts through the depth-first
+disjunction defining \texttt{BirthBefore}.  No classical case split is needed.
+
+\paragraph*{Bounded open slots.}
+For a C003 grammar with cutoff $L$, the formal slot object consists of a
+bounded parent $u$, a local rank $r$, and a proof that $|u|+1\le L$.  Its
+selected child is $u\mathbin{\Vert}(r)$.  The slot relation is defined by
+comparing these child addresses with $\prec_{\mathrm{BFSlex}}$.  It is
+therefore irreflexive, transitive and asymmetric; slots selecting distinct
+children are totally comparable.  The word ``open'' at this node means
+\emph{admissible potential birth slot}.  Openness relative to an evolving born set and uniqueness of the least
+currently open slot require additional state and are owned by C004.  P002
+certifies only the static order exported by C018; that six-declaration proof
+contract is now kernel-verified with an empty axiom profile.
+
+\paragraph*{Executable realization and cross-layer agreement.}
+Python stores one slot as $(u,r,u\mathbin{\Vert}(r))$ and orders it by
+\begin{equation}
+  K(u,r)=\bigl(|u|,u,r\bigr).
+  \label{eq:c018-python-key}
+\end{equation}
+A breadth-first parent queue emits ranks $0,\ldots,b-1$ in increasing order
+and appends each emitted child to the same queue.  Because every child has
+length $|u|+1$ and lexicographic comparison of $u\mathbin{\Vert}(r)$ first
+compares $u$ and then $r$, the key in Eq.~\eqref{eq:c018-python-key} is
+extensionally the same ordering criterion as the Lean child-address relation.
+The executable tests reproduce exact schedules for $(b,L)=(2,3)$ and $(3,2)$,
+strictness, transitivity, determinism, cutoff zero, and the finite carrier
+cardinality.
+
+\paragraph*{Necessity checks and ownership boundary.}
+Removing the depth comparison would produce depth-first lexicographic order,
+not breadth-first order.  Removing the final rank from the Python key would
+leave siblings of one parent unordered.  Treating the root as a birth slot
+would duplicate the C002 genesis.  Conversely, the ordering relation alone does not prove that a state-dependent
+selector possesses a unique least open slot, nor that the finite schedule
+enumerates every bounded address exactly once.  Static order certification is
+isolated in \texttt{P002} and is now closed; state-dependent least-open
+selection is owned by \texttt{C004}, and finite exhaustivity by \texttt{P004}.
+Those downstream obligations do not weaken the verified C018 order theorem.
+
+\paragraph*{Result and downstream handoff.}
+C018 yields a fixed, strict total order on provenance addresses and a derived
+strict order on admissible slots.  It selects the first slot for
+\texttt{C004A}, orders recurrent candidates for \texttt{C004}, supplies the
+ordering input later used by \texttt{C010}, \texttt{C019}, \texttt{C042} and
+the control \texttt{CTRL005}, and supports the proof gates \texttt{P002},
+\texttt{P003} and \texttt{P004}.  These outgoing edges expose dependencies;
+they do not close the downstream nodes.
+
+% CNNA-OPEN-PROVENANCE-BEGIN C018
+\begin{cnnaInfoBox}{Open-provenance role: Event provenance versus recurrent live dynamics}
+C018 orders birth events in an acyclic provenance history.  Later live-state feedback may be recurrent or cyclic without turning the event-provenance relation itself into a cycle.
+\end{cnnaInfoBox}
+% CNNA-OPEN-PROVENANCE-END C018
+
+\noindent\textbf{Primary code anchors.}
+Python:
+\path{derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s01_primitive_inputs_grammar_and_event_order/s06_c018__canonical_bfs_lexicographic_provenance_birth_schedule.py},
+\texttt{open\_slot\_key}, lines 46--53; \texttt{canonical\_birth\_slots},
+lines 61--88; \texttt{CanonicalBirthSchedule}, lines 97--121.  Lean:
+\path{derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S06_C018_CanonicalBfsLexicographicProvenanceBirthSchedule.lean},
+order definitions, lines 23--37; address-order proof chain, lines 39--236;
+bounded-slot realization, lines 241--325.  The complete declaration and hash
+register is given in the Supplement.

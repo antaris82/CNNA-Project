@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "028",
+  "canonical_node_label": "028 \u00b7 C016",
+  "stable_node_directory_name": "028_C016__immutable_record_channel",
+  "id": "C016",
+  "section_path": "1.4.2",
+  "derivation_order": 28,
+  "main_documentation": "DOCUMENTED",
+  "supplement_documentation": "DOCUMENTED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

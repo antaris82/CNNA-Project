@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "007",
+  "canonical_node_label": "007 \u00b7 P002",
+  "stable_node_directory_name": "007_P002__canonical_schedule_strict_total_order_closure",
+  "id": "P002",
+  "section_path": "1.1.6.1",
+  "derivation_order": 7,
+  "main_documentation": "DOCUMENTED",
+  "supplement_documentation": "DOCUMENTED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

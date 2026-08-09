@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "068",
+  "canonical_node_label": "068 \u00b7 P017",
+  "stable_node_directory_name": "068_P017__exact_inverse_depth_cauchy_hilbert_identification",
+  "id": "P017",
+  "section_path": "4.1.1.1",
+  "derivation_order": 68,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

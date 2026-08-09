@@ -1,0 +1,75 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "C019",
+  "paper_section": "1.5.5",
+  "contract": {
+    "statement": "Iterate the unique recurrent step in the canonical schedule from X₁ until every address of depth ≤L is born; this is the Section-1 finite carrier handed to later sections."
+  },
+  "workflow": {
+    "node_semantics": "CORE_BLOCKED",
+    "documentation": "NOT_STARTED",
+    "freeze_state": "NOT_STARTED",
+    "frozen_under_gate_version": null,
+    "documentation_v2": "NOT_STARTED"
+  },
+  "dependencies": [
+    "C014",
+    "T002",
+    "T003",
+    "C018",
+    "I002",
+    "C010",
+    "C012"
+  ],
+  "node_number": "037",
+  "derivation_rank": 22,
+  "derivation_order": 37,
+  "section_hierarchy": {
+    "section_path": "1.5.5",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Event order, response order and finite completion",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/05_event_order_response_order_and_finite_completion/037_C019__completed_finite_response_grown_carrier_x_b_l",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/05_event_order_response_order_and_finite_completion/037_C019__completed_finite_response_grown_carrier_x_b_l",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/05_event_order_response_order_and_finite_completion/037_C019__completed_finite_response_grown_carrier_x_b_l/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/05_event_order_response_order_and_finite_completion/037_C019__completed_finite_response_grown_carrier_x_b_l/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C014, T002, T003, C018, I002, C010, C012; registered hard handoff(s): supplies_finite_iteration_base_case, certifies_iterability, certifies_no_hardcoded_label_bias, orders_finite_iteration, sets_completion_depth, labels_completed_event_history, labels_completed_response_time_history."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D2",
+    "tier_name": "Load-bearing theorem, proof owner, obstruction, or quarantine gate",
+    "tier_assignment_rule": "PROOF_THEOREM_OWNER_OBSTRUCTION_OR_QUARANTINE_ROLE",
+    "main_paper_depth": "THEOREM_AND_PROOF_OVERVIEW",
+    "supplement_depth": "FULL_PROOF_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "formal_statement",
+      "hypotheses",
+      "introduction_reason",
+      "proof_strategy",
+      "lemma_chain",
+      "formal_realization",
+      "counterexamples_or_necessity_checks",
+      "axiom_profile",
+      "result",
+      "remaining_limits",
+      "downstream_handoff",
+      "code_line_register"
+    ],
+    "countercheck_requirement": "NEGATIVE_CONTROL_COUNTEREXAMPLE_OR_HYPOTHESIS_NECESSITY",
+    "countercheck_status": "NOT_STARTED",
+    "v2_state": "NOT_STARTED",
+    "python_anchor_status": "PLANNED",
+    "lean_anchor_status": "PLANNED",
+    "code_anchors": [],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false
+  },
+  "canonical_identity": {
+    "node_number": "037",
+    "semantic_id": "C019",
+    "canonical_node_label": "037 · C019",
+    "stable_node_directory_name": "037_C019__completed_finite_response_grown_carrier_x_b_l",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  }
+}

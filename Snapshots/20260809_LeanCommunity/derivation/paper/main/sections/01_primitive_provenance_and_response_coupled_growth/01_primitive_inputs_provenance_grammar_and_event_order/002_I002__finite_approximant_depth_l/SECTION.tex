@@ -1,0 +1,52 @@
+% Canonical node 002 · I002; current section path 1.1.2.
+% Canonical owner: I002
+\cnnaNodeHeading{002}{I002}{Finite approximant depth $L$}
+\cnnaNodePlacement{1.1.2}{D0}
+
+\paragraph*{Scientific role.}
+\texttt{I002} is the second free structural input.  It fixes the terminal
+provenance depth of the finite approximant.  It is neither a spatial
+coordinate nor an event time, and it does not encode an infinite-limit
+sentinel.
+
+\paragraph*{Formal contract.}
+The admissible domain is
+\begin{equation}
+  \mathcal L := \mathbb N_0,
+  \qquad L\in\mathcal L.
+  \label{eq:i002-depth-domain}
+\end{equation}
+Thus every nonnegative integer is admissible, including $L=0$.  The value is
+supplied explicitly and no default is derived.  At this node alone, $L=0$
+means only ``zero permitted provenance extension depth''; the later
+root-only interpretation additionally uses the root construction
+\texttt{C002} and the address grammar \texttt{C003}.
+
+\paragraph*{Executable and formal encoding.}
+Python uses a frozen \texttt{FiniteApproximantDepth} carrier and rejects
+negative or non-built-in-integer inputs.  Lean uses a structure with one
+\texttt{Nat} field.  No proof field is needed because \texttt{Nat} already
+represents exactly the required nonnegative values.  The theorem
+\texttt{zeroAdmissible} records explicitly that zero is an ordinary member of
+the domain rather than a special missing-value marker.
+
+\paragraph*{Boundary countercheck.}
+$L=0$ and arbitrary positive integers are admitted; negative integers,
+floating-point values, strings, \texttt{None}, and Boolean values are rejected
+at the Python boundary.  No test or theorem in this node establishes a
+continuum or infinite-depth limit.  Such a limit, if later constructed, is a
+separate downstream problem.
+
+\paragraph*{Result and handoff.}
+The node yields one validated finite cutoff.  Edge \texttt{E002} supplies it to
+\texttt{C003}; edge \texttt{E081} later fixes the completion depth of
+\texttt{C019}; and proof-support edge \texttt{E148} makes the same finite bound
+available to \texttt{P004}.  None of these handoffs changes the meaning of
+$L$.
+
+\noindent\textbf{Primary code anchors.}
+Python: \path{derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s01_primitive_inputs_grammar_and_event_order/s02_i002__finite_approximant_depth_l.py},
+\texttt{FiniteApproximantDepth}, lines 20--46.  Lean:
+\path{derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S02_I002_FiniteApproximantDepthL.lean},
+\texttt{FiniteApproximantDepth}, lines 18--23; \texttt{zeroAdmissible}, lines
+29--34.  Exact hashes and tests are given in the Supplement.

@@ -1,0 +1,1 @@
+import CNNAProofs.C009.S01_CanonicalCodomainStateAssemblyClosure

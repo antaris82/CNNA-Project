@@ -1,0 +1,101 @@
+% Canonical node 007 · P002; current section path 1.1.6.1.
+% Proof owner: C018
+\cnnaProofNodeHeading{007}{P002}{Canonical schedule strict-total-order closure}
+\cnnaNodePlacement{1.1.6.1}{D2}
+
+\paragraph*{Position and proof responsibility.}
+P002 is the static proof-certification child of C018.  It exports one stable
+contract for the breadth-first/lexicographic provenance order.  The contract
+contains no born-state, unsaturation, least-open, or executable-selector
+hypothesis.  Those state-dependent statements are owned by C004 after C005 has
+introduced the response-capable state.
+
+\paragraph*{Formal contract.}
+For provenance addresses $a,c$, C018 defines the strict order
+\[
+  a\prec c
+  \iff
+  |a|<|c|\;\lor\;\bigl(|a|=|c|\land a<_{\mathrm{lex}}c\bigr).
+\]
+P002 packages irreflexivity, transitivity, asymmetry, trichotomy, and
+comparability of distinct addresses.  This is the standard finite-word
+lexicographic setting, composed here with the separate depth comparison to form
+the C018 breadth-first/shortlex schedule.
+% CNNA-EXTREF-BEGIN EXT-USE-P002-WORDS-MAIN
+\cite[Ch.~1, finite words and lexicographic order]{Lothaire1997CombinatoricsWords}.
+% CNNA-EXTREF-END EXT-USE-P002-WORDS-MAIN
+For C018 open-slot records it packages
+irreflexivity, transitivity, and asymmetry of the induced order.  Because a
+slot record contains proof-bearing cutoff data, totality is stated
+extensionally:
+\[
+  s\prec_{\mathrm{slot}}t
+  \;\lor\;
+  \operatorname{child}(s)=\operatorname{child}(t)
+  \;\lor\;
+  t\prec_{\mathrm{slot}}s.
+\]
+Thus P002 claims a strict total order on selected child addresses, not
+proof-irrelevant equality of arbitrary slot records.
+
+\paragraph*{Minimal selected-child uniqueness.}
+For an explicitly supplied predicate $Q$ on C018 slot records, define
+\[
+  \operatorname{Minimal}_Q(s)
+  \iff
+  Q(s)\land \forall t\,[Q(t)\Rightarrow\neg(t\prec_{\mathrm{slot}}s)].
+\]
+P002 proves that two $Q$-minimal witnesses select the same child address.  The
+proof uses the C018 comparison theorem for distinct selected children: either
+one witness precedes the other, contradicting the corresponding minimality
+clause, or their selected children are equal.
+
+\paragraph*{Formal realization.}
+The dedicated proof module imports exactly the mathlib-free C018 owner module
+and consumes its public order theorems explicitly.  Its lexical relation is
+Lean Core \texttt{List.Lex}, rather than a project-local or mathlib-only replacement.
+% CNNA-EXTREF-BEGIN EXT-USE-P002-LEAN-LISTLEX-MAIN
+\cite[List.Lex and decidableLex in Init/Data/List/Basic.lean, Lean v4.31.0]{LeanListLex431}.
+% CNNA-EXTREF-END EXT-USE-P002-LEAN-LISTLEX-MAIN
+It exports one closure
+structure, one construction theorem, the minimality predicate and uniqueness
+theorem, and the stable proposition-valued contract.  The complete declaration
+list is given in the Supplement.  No Python module is required because P002
+introduces no executable selector.
+
+\paragraph*{Necessity and scope checks.}
+The extensional equality alternative is necessary: two proof-bearing records
+may select one child without being definitionally equal.  Total comparison is
+necessary for minimal-witness uniqueness.  Conversely, a static total order
+does not define the least address not yet born; that theorem requires the C005
+born prefix and remains at C004.  P002 therefore creates no backward dependency
+on recurrent-state data.
+
+\paragraph*{Trust boundary and verified result.}
+The source contains no project-local axiom, \texttt{sorry},
+\texttt{native\_decide}, \texttt{Classical}, \texttt{simp}, or
+\texttt{simpa}.  On 2026-08-08 the dedicated Lean 4.31.0 build completed
+successfully with 8599 proof-package jobs.  The P002 \texttt{\#print axioms}
+audit reports an empty axiom profile for each of all six public declarations;
+\texttt{P002\_CURRENT\_PROOF\_AXIOM\_AUDIT} and the full package-boundary
+audit both pass.  P002 is therefore frozen as kernel-verified for these exact
+source hashes.
+
+% CNNA-INFOBOX-BEGIN INFO-P002-ORDER-BEFORE-DYNAMICS
+\begin{cnnaInfoBox}{Order before dynamics}
+P002 closes the kinematic order of admissible provenance continuations before a
+state-dependent rule chooses which continuation is currently open.  This keeps
+the static event-order theorem logically separate from the C004 least-open
+selection on an evolving born prefix.
+\end{cnnaInfoBox}
+% CNNA-INFOBOX-END INFO-P002-ORDER-BEFORE-DYNAMICS
+
+\paragraph*{Downstream handoff.}
+The successful contract certifies the C018 owner and supplies the static order
+interface required by P004 for finite schedule exhaustivity.  P003 does not
+consume P002: birth-cut canonicity already depends directly on C018 and C004.
+
+\noindent\textbf{Code line register.}
+\path{derivation/code/lean/proofs/src/CNNAProofs/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S06_C018_CanonicalBfsLexicographicProvenanceBirthSchedule/Proofs/S01_P002_CanonicalScheduleStrictTotalOrderClosure.lean}, lines 19--65 (closure structure), 69--99 (closure
+construction), 104--109 (minimality predicate), 115--131 (extensional
+uniqueness), 134--135 (public contract), and 138--140 (contract witness).

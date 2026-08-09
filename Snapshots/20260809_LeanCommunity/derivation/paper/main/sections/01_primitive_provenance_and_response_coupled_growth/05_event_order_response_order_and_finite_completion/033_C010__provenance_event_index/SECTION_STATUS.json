@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "033",
+  "canonical_node_label": "033 \u00b7 C010",
+  "stable_node_directory_name": "033_C010__provenance_event_index",
+  "id": "C010",
+  "section_path": "1.5.1",
+  "derivation_order": 33,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

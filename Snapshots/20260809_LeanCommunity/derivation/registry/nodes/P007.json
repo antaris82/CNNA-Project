@@ -1,0 +1,97 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "P007",
+  "paper_section": "2.1.1.1",
+  "proof_owner": "C020",
+  "contract": {
+    "statement": "Prove exact boundary/interior partition, ordering, finiteness, and selector canonicity for the general cut family without sampling caps.",
+    "reuse_scope": "General cut interface reused by root, front, bulk, regional, and nested eliminations.",
+    "granularity_rule": "One separately falsifiable and reusable closure gate; routine lemmas remain internal to the proof module."
+  },
+  "cross_layer": {
+    "semantic_identity_required": true,
+    "python_path_planned": "derivation/code/python/src/cnna/derivation/s02_general_schur_dtn_effective_response/s01_admissible_cuts_and_schur_naturality/proofs/s01_p007__general_admissible_cut_partition_canonicity.py",
+    "lean_path_planned": "derivation/code/lean/proofs/src/CNNAProofs/Derivation/S02_GeneralSchurDtnEffectiveResponse/S01_AdmissibleCutsAndSchurNaturality/S01_C020_GeneralAdmissibleBoundaryInteriorCutFamily/Proofs/S01_P007_GeneralAdmissibleCutPartitionCanonicity.lean",
+    "documentation_path_planned": "derivation/paper/main/sections/02_general_schur_dtn_effective_response/01_admissible_cuts_and_schur_naturality/proofs/01_P007__general_admissible_cut_partition_canonicity.tex"
+  },
+  "evidence": {
+    "audit_tier": "B",
+    "python": {
+      "status": "NOT_STARTED"
+    },
+    "lean": {
+      "status": "NOT_STARTED",
+      "mathlib_policy": "ALLOWED_ONLY_FOR_GENERIC_PROOF_INFRASTRUCTURE"
+    }
+  },
+  "workflow": {
+    "node_semantics": "PLANNED_EXPLICIT_PROOF_GATE",
+    "documentation": "STRUCTURAL_REGISTRY_ONLY",
+    "freeze_state": "NOT_STARTED",
+    "frozen_under_gate_version": null,
+    "documentation_v2": "NOT_STARTED"
+  },
+  "dependencies": [
+    "C019",
+    "M001",
+    "P003",
+    "P005"
+  ],
+  "owner_import_direction": "P007 -> C020",
+  "node_number": "047",
+  "derivation_rank": 26,
+  "derivation_order": 47,
+  "section_hierarchy": {
+    "section_path": "2.1.1.1",
+    "root_title": "Cut-relative complement elimination and effective response",
+    "group_title": "General cuts, complement elimination and naturality",
+    "main_directory": "derivation/paper/main/sections/02_cut_relative_complement_elimination_and_effective_response/01_general_cuts_complement_elimination_and_naturality/046_C020__general_admissible_boundary_interior_cut_family/047_P007__general_admissible_cut_partition_and_canonicity",
+    "supplement_directory": "derivation/supplement/sections/02_cut_relative_complement_elimination_and_effective_response/01_general_cuts_complement_elimination_and_naturality/046_C020__general_admissible_boundary_interior_cut_family/047_P007__general_admissible_cut_partition_and_canonicity",
+    "main_artifact": "derivation/paper/main/sections/02_cut_relative_complement_elimination_and_effective_response/01_general_cuts_complement_elimination_and_naturality/046_C020__general_admissible_boundary_interior_cut_family/047_P007__general_admissible_cut_partition_and_canonicity/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/02_cut_relative_complement_elimination_and_effective_response/01_general_cuts_complement_elimination_and_naturality/046_C020__general_admissible_boundary_interior_cut_family/047_P007__general_admissible_cut_partition_and_canonicity/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C019, M001, P003, P005; registered hard handoff(s): supports_p007, supports_p007, supports_p007, supports_p007."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D2",
+    "tier_name": "Load-bearing theorem, proof owner, obstruction, or quarantine gate",
+    "tier_assignment_rule": "PROOF_THEOREM_OWNER_OBSTRUCTION_OR_QUARANTINE_ROLE",
+    "main_paper_depth": "THEOREM_AND_PROOF_OVERVIEW",
+    "supplement_depth": "FULL_PROOF_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "formal_statement",
+      "hypotheses",
+      "introduction_reason",
+      "proof_strategy",
+      "lemma_chain",
+      "formal_realization",
+      "counterexamples_or_necessity_checks",
+      "axiom_profile",
+      "result",
+      "remaining_limits",
+      "downstream_handoff",
+      "code_line_register"
+    ],
+    "countercheck_requirement": "NEGATIVE_CONTROL_COUNTEREXAMPLE_OR_HYPOTHESIS_NECESSITY",
+    "countercheck_status": "NOT_STARTED",
+    "v2_state": "NOT_STARTED",
+    "python_anchor_status": "NOT_REQUIRED_PROOF_NODE",
+    "lean_anchor_status": "PLANNED",
+    "code_anchors": [],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false
+  },
+  "canonical_identity": {
+    "node_number": "047",
+    "semantic_id": "P007",
+    "canonical_node_label": "047 · P007",
+    "stable_node_directory_name": "047_P007__general_admissible_cut_partition_and_canonicity",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "implementation_status": {
+    "status": "NOT_STARTED",
+    "source": "workflow.freeze_state",
+    "node_semantics": "PLANNED_EXPLICIT_PROOF_GATE"
+  }
+}

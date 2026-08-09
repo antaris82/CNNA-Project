@@ -1,0 +1,16 @@
+{
+  "schema": "cnna.freeze_gate.v3",
+  "current_gate_version": "cnna-per-node-freeze-v6",
+  "audit_tiers": {
+    "A": "root-import coverage + exact canonical Lean module build + exact hash stability + produced .olean + policy scan + relevant Python tests + documentation schema + baseline freeze; independent external rerun not required",
+    "B": "tier A + targeted declaration/axiom audit of nontrivial theorems + one substantive cross-layer/adversarial probe",
+    "C": "tier B + external full audit for critical theorem/obstruction paths"
+  },
+  "rule": "New freezes and re-freezes must pass v6: exact canonical Lean module build, source-hash stability, produced .olean, root-import coverage, policy scan, relevant Python evidence, documentation schema, and the tier-specific proof requirements. Historical v5 freezes remain explicitly versioned and accepted for dependency closure until independently revalidated.",
+  "tier_plan": "derivation/registry/AUDIT_TIERS.tsv",
+  "tier_rule": "AUDIT_TIERS.tsv is the planned minimum tier. A node may escalate to a higher tier when implementation reveals greater mathematical risk; freezing below the planned tier is forbidden.",
+  "accepted_historical_gate_versions": [
+    "cnna-per-node-freeze-v5"
+  ],
+  "build_coverage_rule": "For v6, the canonical module from CANONICAL_CROSS_LAYER_MAP_V12.tsv must be directly imported by src/CNNA.lean. Per-node validation actively runs `lake build +<lean_module>`, verifies the source hash before/after, requires the module .olean, and for Tier B/C resolves every named proof-audit declaration through `#print axioms` in an importing Lean environment. `validate_lean_build_coverage.py --all-frozen` applies the same active per-node module/.olean/axiom check to every currently FROZEN_VERIFIED node without rewriting its historical frozen_under_gate_version."
+}

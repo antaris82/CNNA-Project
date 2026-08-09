@@ -1,0 +1,13 @@
+{
+  "schema": "cnna.open-provenance-integration-audit.v1",
+  "status": "PASS",
+  "framework": "Generalized Open Provenance Systems",
+  "mapped_nodes": 36,
+  "map_entries": 47,
+  "concepts": 9,
+  "universal_completion_status": "RESEARCH_HYPOTHESIS_NOT_PROVED",
+  "legacy_povm_status": "MIGRATION_TARGET_NOT_CURRENT_DAG_THEOREM",
+  "references": 4,
+  "reference_uses": 8,
+  "errors": []
+}

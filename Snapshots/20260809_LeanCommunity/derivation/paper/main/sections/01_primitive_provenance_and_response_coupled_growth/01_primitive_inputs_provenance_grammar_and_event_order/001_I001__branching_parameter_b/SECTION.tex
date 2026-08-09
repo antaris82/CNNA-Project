@@ -1,0 +1,50 @@
+% Canonical node 001 · I001; current section path 1.1.1.
+% Canonical owner: I001
+\cnnaNodeHeading{001}{I001}{Branching parameter $b$}
+\cnnaNodePlacement{1.1.1}{D0}
+
+\paragraph*{Scientific role.}
+\texttt{I001} is the first free structural input.  It fixes only the number of
+available child slots at every provenance address; it is not inferred from a
+response, geometry, probability law, or later dynamical state.
+
+\paragraph*{Formal contract.}
+The admissible input domain is
+\begin{equation}
+  \mathcal B := \{b\in\mathbb N \mid 2\le b\}.
+  \label{eq:i001-branching-domain}
+\end{equation}
+A model instance must therefore supply one explicit $b\in\mathcal B$.  No
+default value is part of the scientific contract.  The exclusion of $b=1$ is
+a domain declaration for the present CNNA family; this node does not claim
+that the unary case is logically inconsistent.
+
+\paragraph*{Executable and formal encoding.}
+Python stores the value in a frozen, field-explicit
+\texttt{BranchingParameter} and rejects any object that is not a built-in
+integer or is below the lower bound.  Lean stores both the natural number and
+the proof $2\le b$ in the structure itself.  Consequently, Python enforces the
+contract by checked construction, whereas Lean makes an invalid value
+uninhabitable without an accompanying proof.  These are different mechanisms
+with the same admissible mathematical values.
+
+\paragraph*{Boundary countercheck.}
+The lower boundary $b=2$ is admitted.  Values $b<2$ are rejected.  Python also
+rejects \texttt{True} and \texttt{False}, even though \texttt{bool} is an
+implementation-level subclass of \texttt{int}; otherwise a logical flag could
+silently enter as a branching multiplicity.  This is a type-boundary guard,
+not an additional mathematical axiom.
+
+\paragraph*{Result and handoff.}
+The node yields one validated branching multiplicity and nothing else.  The
+hard derivation edge \texttt{E001} hands $b$ to \texttt{C003}, where the slot
+alphabet $\{0,\ldots,b-1\}$ is constructed.  The later proof-support edge
+\texttt{E147} supplies the same bound to \texttt{P004}; it adds no new content
+to the local contract.
+
+\noindent\textbf{Primary code anchors.}
+Python: \path{derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s01_primitive_inputs_grammar_and_event_order/s01_i001__branching_parameter_b.py},
+\texttt{BranchingParameter}, lines 20--46.  Lean:
+\path{derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S01_I001_BranchingParameterB.lean},
+\texttt{BranchingParameter}, lines 17--23; \texttt{lowerBound}, lines 24--27.
+The exact source hashes and test anchors are listed in the Supplement.

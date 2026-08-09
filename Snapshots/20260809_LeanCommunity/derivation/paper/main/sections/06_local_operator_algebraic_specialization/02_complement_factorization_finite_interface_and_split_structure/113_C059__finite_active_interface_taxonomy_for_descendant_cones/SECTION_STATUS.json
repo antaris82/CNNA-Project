@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "113",
+  "canonical_node_label": "113 \u00b7 C059",
+  "stable_node_directory_name": "113_C059__finite_active_interface_taxonomy_for_descendant_cones",
+  "id": "C059",
+  "section_path": "6.2.1",
+  "derivation_order": 113,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

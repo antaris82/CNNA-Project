@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "030",
+  "canonical_node_label": "030 \u00b7 C009",
+  "stable_node_directory_name": "030_C009__codomain_state_x",
+  "id": "C009",
+  "section_path": "1.4.4",
+  "derivation_order": 30,
+  "main_documentation": "DOCUMENTED",
+  "supplement_documentation": "DOCUMENTED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

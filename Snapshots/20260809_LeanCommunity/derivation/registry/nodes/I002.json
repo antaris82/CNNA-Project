@@ -1,0 +1,165 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "I002",
+  "paper_section": "1.1.2",
+  "contract": {
+    "statement": "Free finite cutoff L ∈ ℕ₀; L = 0 is admissible and no infinity sentinel is introduced.",
+    "ownership_boundary": [
+      "introduces only the finite depth cutoff"
+    ]
+  },
+  "cross_layer": {
+    "equivalence": "Math L ∈ ℕ₀, Python FiniteApproximantDepth, and Lean Nat carry the same admissible values.",
+    "semantic_mismatch_known": false
+  },
+  "evidence": {
+    "audit_tier": "A",
+    "python": {
+      "status": "PASS_REPRODUCED",
+      "node_tests": 4
+    },
+    "lean": {
+      "status": "PASS_INDEPENDENTLY_VERIFIED",
+      "source_sha256": "34114dc458a326e12ee1ceac368882d28c29c5f182d71f5e150f5e7220e26f43",
+      "toolchain": "Lean 4.31.0 / 68218e876d2a38b1985b8590fff244a83c321783",
+      "policy_scan_matches": 0,
+      "exact_hash_built": true,
+      "verification_origin": "external_independent_audit_supplied_by_user"
+    }
+  },
+  "artifacts": {
+    "python_source": "a83060144a74803dd06d4fa2582d29ccb7a1131887ed79f81ebcf7a2f018de23",
+    "python_test": "fdee3aa614550d85e096c6e6fb30d6dfbe7e98f5e28b0f0cea044ea3ebe498ac",
+    "lean_source": "34114dc458a326e12ee1ceac368882d28c29c5f182d71f5e150f5e7220e26f43",
+    "math_prose": "9e115f8b7362614b9eaa063642534e691b8b0b85af659af8a4a328755aed9cef",
+    "supplement_documentation": "f4ff9c3252d65ddca4bc8958cf0553d4db68b2176733bb4d7708d68f355bab46"
+  },
+  "workflow": {
+    "node_semantics": "CLOSED_AS_DECLARED_FREE_INPUT",
+    "documentation": "COMPLETE_V2",
+    "freeze_state": "FROZEN_VERIFIED",
+    "frozen_under_gate_version": "cnna-per-node-freeze-v5",
+    "documentation_v2": "COMPLETE_V2"
+  },
+  "node_number": "002",
+  "derivation_rank": 0,
+  "derivation_order": 2,
+  "section_hierarchy": {
+    "section_path": "1.1.2",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Primitive inputs, provenance grammar and event order",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/01_primitive_inputs_provenance_grammar_and_event_order/002_I002__finite_approximant_depth_l",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/01_primitive_inputs_provenance_grammar_and_event_order/002_I002__finite_approximant_depth_l",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/01_primitive_inputs_provenance_grammar_and_event_order/002_I002__finite_approximant_depth_l/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/01_primitive_inputs_provenance_grammar_and_event_order/002_I002__finite_approximant_depth_l/DOCUMENTATION.md",
+    "introduction_reason": "Free finite-depth input; visible at the origin."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D0",
+    "tier_name": "Atomic input or definitional node",
+    "tier_assignment_rule": "EXPLICIT_ATOMIC_OR_DEFINITIONAL_OVERRIDE",
+    "main_paper_depth": "COMPACT_DEFINITION",
+    "supplement_depth": "TRACEABLE_DEFINITION",
+    "required_sections": [
+      "position_in_derivation",
+      "definition_or_statement",
+      "introduction_reason",
+      "construction_or_encoding",
+      "boundary_case_or_countercheck",
+      "result",
+      "downstream_handoff",
+      "code_anchors"
+    ],
+    "countercheck_requirement": "ONE_DEFINITIONAL_BOUNDARY_OR_TYPE_REJECTION",
+    "countercheck_status": "PASS",
+    "v2_state": "COMPLETE_V2",
+    "python_anchor_status": "RESOLVED",
+    "lean_anchor_status": "RESOLVED",
+    "code_anchors": [
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s01_primitive_inputs_grammar_and_event_order/s02_i002__finite_approximant_depth_l.py",
+        "symbol": "FiniteApproximantDepth",
+        "declaration_kind": "CLASS",
+        "start_line": 20,
+        "end_line": 46,
+        "source_sha256": "f0f5fefe55d90835e8deead733579848d547b6b6df7e40b6491a1f578b64b326",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s01_primitive_inputs_grammar_and_event_order/test_s02_i002__finite_approximant_depth_l.py",
+        "symbol": "TestFiniteApproximantDepth",
+        "declaration_kind": "CLASS",
+        "start_line": 12,
+        "end_line": 33,
+        "source_sha256": "8836bb6a9740dc29d66c65ea121d3e3dc2445764b6f28f61e8928b5b6f70772b",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S02_I002_FiniteApproximantDepthL.lean",
+        "symbol": "FiniteApproximantDepth",
+        "declaration_kind": "STRUCTURE",
+        "start_line": 18,
+        "end_line": 23,
+        "source_sha256": "ae23109e12622fc6494aad18bc056bf59206d18199288c101520d9c58f5b99e8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S02_I002_FiniteApproximantDepthL.lean",
+        "symbol": "mk_value",
+        "declaration_kind": "THEOREM",
+        "start_line": 24,
+        "end_line": 28,
+        "source_sha256": "ae23109e12622fc6494aad18bc056bf59206d18199288c101520d9c58f5b99e8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S02_I002_FiniteApproximantDepthL.lean",
+        "symbol": "zeroAdmissible",
+        "declaration_kind": "THEOREM",
+        "start_line": 29,
+        "end_line": 34,
+        "source_sha256": "ae23109e12622fc6494aad18bc056bf59206d18199288c101520d9c58f5b99e8",
+        "resolution": "RESOLVED"
+      }
+    ],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false,
+    "completion_evidence": {
+      "main_artifact": "derivation/paper/main/sections/01_primitive_response_coupled_finite_provenance/01_primitive_inputs_grammar_and_event_order/002_I002__finite_approximant_depth_l/SECTION.tex",
+      "main_sha256": "9e115f8b7362614b9eaa063642534e691b8b0b85af659af8a4a328755aed9cef",
+      "supplement_artifact": "derivation/supplement/sections/01_primitive_response_coupled_finite_provenance/01_primitive_inputs_grammar_and_event_order/002_I002__finite_approximant_depth_l/DOCUMENTATION.md",
+      "supplement_sha256": "f4ff9c3252d65ddca4bc8958cf0553d4db68b2176733bb4d7708d68f355bab46",
+      "required_sections_present": true,
+      "countercheck_present": true,
+      "code_anchors_resolved": true,
+      "source_code_modified": false,
+      "completed_on": "2026-08-04"
+    }
+  },
+  "canonical_identity": {
+    "node_number": "002",
+    "semantic_id": "I002",
+    "canonical_node_label": "002 · I002",
+    "stable_node_directory_name": "002_I002__finite_approximant_depth_l",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "documentation_evidence": {
+    "schema": "cnna.node-documentation-completion.v1",
+    "state": "COMPLETE_V2",
+    "canonical_order_block": "001-003",
+    "scientific_scope": "origin inputs and primitive empty carrier",
+    "main_sha256": "9e115f8b7362614b9eaa063642534e691b8b0b85af659af8a4a328755aed9cef",
+    "supplement_sha256": "f4ff9c3252d65ddca4bc8958cf0553d4db68b2176733bb4d7708d68f355bab46"
+  }
+}

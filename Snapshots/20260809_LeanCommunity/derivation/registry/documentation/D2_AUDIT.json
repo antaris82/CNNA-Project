@@ -1,0 +1,22 @@
+{
+  "schema": "cnna.d2-structural-documentation-audit.v1",
+  "status": "PASS",
+  "documentation_tier_audit": "D2",
+  "documented_nodes": [
+    "I001",
+    "I002",
+    "C001",
+    "C002",
+    "C003"
+  ],
+  "structural_nodes": [
+    "C002",
+    "C003"
+  ],
+  "canonical_range": "001-005",
+  "complete_v2_nodes": 31,
+  "migration_required_nodes": 0,
+  "not_started_nodes": 114,
+  "source_code_modified": false,
+  "errors": []
+}

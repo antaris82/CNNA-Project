@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "005",
+  "canonical_node_label": "005 \u00b7 C003",
+  "stable_node_directory_name": "005_C003__finite_b_ary_provenance_grammar",
+  "id": "C003",
+  "section_path": "1.1.5",
+  "derivation_order": 5,
+  "main_documentation": "DOCUMENTED",
+  "supplement_documentation": "DOCUMENTED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

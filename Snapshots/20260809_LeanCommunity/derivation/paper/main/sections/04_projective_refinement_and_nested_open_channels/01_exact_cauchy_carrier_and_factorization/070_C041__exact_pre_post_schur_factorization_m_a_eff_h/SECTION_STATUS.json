@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "070",
+  "canonical_node_label": "070 \u00b7 C041",
+  "stable_node_directory_name": "070_C041__exact_pre_post_schur_factorization_m_a_eff_h",
+  "id": "C041",
+  "section_path": "4.1.2",
+  "derivation_order": 70,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

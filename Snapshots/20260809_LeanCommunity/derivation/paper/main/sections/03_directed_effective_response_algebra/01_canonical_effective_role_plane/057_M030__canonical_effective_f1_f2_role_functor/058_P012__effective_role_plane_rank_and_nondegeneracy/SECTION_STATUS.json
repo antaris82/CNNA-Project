@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "058",
+  "canonical_node_label": "058 \u00b7 P012",
+  "stable_node_directory_name": "058_P012__effective_role_plane_rank_and_nondegeneracy",
+  "id": "P012",
+  "section_path": "3.1.1.1",
+  "derivation_order": 58,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

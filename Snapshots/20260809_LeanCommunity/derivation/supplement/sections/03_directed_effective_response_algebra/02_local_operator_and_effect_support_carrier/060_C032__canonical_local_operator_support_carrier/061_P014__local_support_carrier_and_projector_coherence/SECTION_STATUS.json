@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "061",
+  "canonical_node_label": "061 \u00b7 P014",
+  "stable_node_directory_name": "061_P014__local_support_carrier_and_projector_coherence",
+  "id": "P014",
+  "section_path": "3.2.1.1",
+  "derivation_order": 61,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

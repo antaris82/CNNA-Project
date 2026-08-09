@@ -1,0 +1,63 @@
+% Canonical node 014 · C014; current section path 1.2.7.
+% Canonical owner: C014
+\cnnaNodeHeading{014}{C014}{Bootstrap state $X_1$}
+\cnnaNodePlacement{1.2.7}{D1}
+
+\paragraph*{Position and scientific role.}
+\texttt{C014} closes the exceptional bootstrap section.  It packages the
+concrete C013 birth and imports the two independent certificates T001 and M005.
+The result is the base case handed to the recurrent state schema \texttt{C005}.
+
+% CNNA-ARCHITECTURE-BEGIN C014
+\begin{cnnaInfoBox}{First response-capable CNNA state}
+C014 packages the first weighted two-node net.  From this point onward the complement architecture can become dynamical: later nodes may retain part of the net, eliminate a complementary interior, read the resulting response, and feed it into the next birth.  C014 itself performs none of those later operations; it supplies their minimal nontrivial carrier.
+\end{cnnaInfoBox}
+% CNNA-ARCHITECTURE-END C014
+
+\paragraph*{Explicit construction.}
+The mathematical contents are
+\begin{equation}
+  X_1=\bigl(V_1,\mathcal R_1,\mathcal C_1\bigr),
+  \qquad
+  V_1=\{r,v_1\},
+  \quad
+  \mathcal R_1=\bigl((r,v_1),(v_1,r)\bigr),
+  \quad
+  \mathcal C_1=(1,1),
+  \label{eq:c014-bootstrap-state}
+\end{equation}
+with $r=\varepsilon$ and $v_1=(0)$.  In the implementation this tuple is not
+stored redundantly: \texttt{BootstrapState} contains exactly one field, the
+verified C013 birth, and exposes the endpoints, relations and conductances by
+projection.
+
+\paragraph*{Invariants and certificates.}
+C014 inherits the root, newborn and unit-pair invariants from C013.  Lean then
+lifts T001 through the wrapper, proving that changing the explicit seed leaves
+$X_1$ unchanged.  It also rationally lifts the two actually stored conductances,
+identifies both with the N001 representative, and applies M005 separately to
+each orientation.  The comparison scale is not stored in $X_1$ and no second
+bootstrap state is constructed.
+
+\paragraph*{Boundary cases and counterchecks.}
+C014 can be built only after C013, hence only when $L\ge1$.  At $L=0$ the
+root-only approximant exists but no $X_1$ does.  Python rejects a non-C013
+payload and verifies that the dataclass has only the field \texttt{birth}.
+Neither layer stores the seed, a variable unit, a response value, a time,
+geometry or recurrent-update data.  ``Response-capable'' means only that a
+nontrivial weighted relation now exists on which later response operators can
+act.
+
+\paragraph*{Cross-layer agreement, result and handoff.}
+Python realizes the minimal wrapper and executable projections.  Lean realizes
+the same wrapper and additionally attaches theorem-level seed and unit
+certificates without adding runtime fields.  Verified edge \texttt{E014}
+provides the recurrent base case to \texttt{C005}.  The later finite-iteration
+handoffs \texttt{E077} and \texttt{E153} remain planned and blocked; C014 by
+itself proves no recurrent existence theorem.
+
+\noindent\textbf{Primary code anchors.}
+Python state, projections, constructor and test: lines 23--51 and 18--30.
+Lean wrapper, projections, seed-neutrality lift, rational conductance lift and
+unit-representative theorem: lines 23--99.  The Supplement lists all 12 anchors
+with exact source hashes.

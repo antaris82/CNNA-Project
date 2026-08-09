@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "055",
+  "canonical_node_label": "055 \u00b7 C025",
+  "stable_node_directory_name": "055_C025__canonical_regional_response_carrier",
+  "id": "C025",
+  "section_path": "2.3.1",
+  "derivation_order": 55,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

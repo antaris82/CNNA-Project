@@ -1,0 +1,209 @@
+{
+  "schema": "cnna.lean-package-boundary.v1",
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "core": {
+    "package": "cnna_core",
+    "library": "CNNA",
+    "configuration": "core/lakefile.toml",
+    "manifest": "core/lake-manifest.json",
+    "direct_dependencies": [],
+    "lean_modules": 35,
+    "mathlib_allowed": false,
+    "proof_imports_allowed": false
+  },
+  "proofs": {
+    "package": "cnna_proofs",
+    "library": "CNNAProofs",
+    "configuration": "proofs/lakefile.toml",
+    "manifest": "proofs/lake-manifest.json",
+    "direct_dependencies": [
+      {
+        "name": "mathlib",
+        "source": "git",
+        "url": "https://github.com/leanprover-community/mathlib4",
+        "rev": "v4.31.0"
+      },
+      {
+        "name": "cnna_core",
+        "source": "path",
+        "path": "../core"
+      }
+    ],
+    "lean_modules": 25,
+    "p001_state": "KERNEL_VERIFIED_EXACT_SOURCE_EVIDENCE",
+    "p001_implementation": "S01_S11_142_KERNEL_VERIFIED",
+    "p001_public_contract": "CNNAProofs.P001.PublicContract",
+    "m003_state": "KERNEL_VERIFIED_EXACT_SOURCE_EVIDENCE",
+    "m004_state": "KERNEL_VERIFIED_EXACT_SOURCE_EVIDENCE",
+    "libraries": [
+      "CNNAProofs",
+      "CNNAProofsP002"
+    ],
+    "verified_lean_modules": 25,
+    "module_count_semantics": {
+      "current_source_modules": 25,
+      "latest_kernel_verified_source_modules": 25,
+      "pending_t002_source_modules": 0
+    },
+    "p002_state": "KERNEL_VERIFIED_EXACT_SOURCE_EVIDENCE",
+    "c008_state": "KERNEL_VERIFIED_EXACT_SOURCE_EVIDENCE",
+    "c016_state": "KERNEL_VERIFIED_EXACT_SOURCE_EVIDENCE",
+    "c017_state": "KERNEL_VERIFIED_EXACT_SOURCE_EVIDENCE",
+    "c009_state": "KERNEL_VERIFIED_EXACT_SOURCE_EVIDENCE",
+    "t002_state": "KERNEL_VERIFIED_EXACT_SOURCE_EVIDENCE"
+  },
+  "allowed_direction": "CNNAProofs -> CNNA",
+  "forbidden_direction": "CNNA -> CNNAProofs",
+  "current_proof_node": "T003",
+  "p001": {
+    "status": "KERNEL_VERIFIED",
+    "proof_declarations": 142,
+    "kernel_verified_declarations": 142,
+    "source_supplied_unverified_declarations": 0,
+    "source_warnings": 0,
+    "proved_components": [
+      "ExactSemanticBridge",
+      "DirectedMaximumPrinciple",
+      "InteriorKernelTrivial",
+      "FiniteLinearWellPosedness",
+      "ResponseWellDefinedness",
+      "DirectedLaplacianResponseStructure",
+      "DistinguishedPortStrictPositivity",
+      "ReusableDirectedClosureContract",
+      "CanonicalParentCoordinateAndM003Handoff",
+      "ExactCanonicalC007MatrixStructure",
+      "CanonicalBackboneReachabilityAndDerivedClosure",
+      "M003M004ThinProofFacades",
+      "IndependentBidirectedChainCutReuse"
+    ],
+    "open_components": [],
+    "axiom_profile_counts": {
+      "choice_propext_quot": 117,
+      "propext_quot_only": 23,
+      "axiom_free": 2
+    },
+    "allowed_transitive_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "verified_source_sha256": {
+      "proofs/src/CNNAProofs/P001/DirectedSchurDtnKronChannelClosure.lean": "19fce24b2000c8ff64690c0b78e4dacc9115bdf34b713bf6054f95f37886db43",
+      "proofs/src/CNNAProofs/P001/S01_ExactSemanticBridge.lean": "7139f45922bc14d7f8de4180075f7fe4ac687bd9d54b893dcb0e21a092b723d1",
+      "proofs/src/CNNAProofs/P001/S02_DirectedMaximumPrinciple.lean": "9cc036efcd855b49df4a8c0abe5d58a0ef793b0bc2c302e8f312a654ab561aa4",
+      "proofs/src/CNNAProofs/P001/S03_FiniteLinearWellPosedness.lean": "b0ef0574fd41c4f11e6dd43b81e73634030776a8d9265021d07e8ea4f302f317",
+      "proofs/src/CNNAProofs/P001/S04_ResponseWellDefinedness.lean": "c80d1dc00f55cd84420beb3d747d8b3ec33c0137a41a2a97627f23c94f7ffa07",
+      "proofs/src/CNNAProofs/P001/S05_ResponseDirectedLaplacian.lean": "7cfb905f5c409e8daa737037527f364ccc6fb6a23a49b1d851a0c6cf941270dc",
+      "proofs/src/CNNAProofs/P001/S06_DistinguishedPortStrictPositivity.lean": "4a4c4a94cd888638f483bdefa345798337acd39bbe0d5734524599ad1aa761c5",
+      "proofs/src/CNNAProofs/P001/S07_CanonicalBirthCutInstantiation.lean": "b2ebfafbb319bc64049eacec675f34fb4b7473280b73e03ba6d5d31a31217146",
+      "proofs/src/CNNAProofs/P001/S08_CanonicalDirectedMatrixStructure.lean": "0975bb3958c81032d07f27d1d0c58c5057942d70b884d4ad5bc69aeea99475f5",
+      "proofs/src/CNNAProofs/P001/S09_CanonicalBackboneReachability.lean": "49110c72b52c07384f0f67a37945f53b88565940464a5c5e62c9dcbaa60074a1",
+      "proofs/src/CNNAProofs/P001/S10_M003M004ProofFacades.lean": "1b0432d2df791fb24dc4d70937b078bea8f89fe42824b9aeb41113977088c53e",
+      "proofs/src/CNNAProofs/P001/S11_IndependentBidirectedChainCutReuse.lean": "1bf9b8cb1a7793c1a2c15f07b1d09fe3f959588f8f7eabcd4591bf1c9f85f470"
+    },
+    "build_evidence": "derivation/code/lean/audit/evidence/USER_LOCAL_P001_FULL_BUILD_20260806.json",
+    "build_evidence_sha256": "5e1ad94ce3700a921f5ec78604156f8ecfc54e9313cf9317913d99642a63f486",
+    "build_transcript": "derivation/code/lean/audit/evidence/USER_LOCAL_P001_FULL_BUILD_20260806.txt",
+    "build_transcript_sha256": "3329291658b2d7a5f46acc6c1bf48b8a60f6bade5d010aa96d7978be3943170a",
+    "full_robustness_research_goal": "ELIMINATION_OF_TRANSITIVE_LIBRARY_AXIOMS_NOT_CLAIMED"
+  },
+  "m003_m004": {
+    "status": "KERNEL_VERIFIED",
+    "proof_modules": 2,
+    "proof_declarations": 11,
+    "kernel_verified_declarations": 11,
+    "axiom_profile_counts": {
+      "choice_propext_quot": 6,
+      "propext_quot_only": 5,
+      "axiom_free": 0
+    },
+    "allowed_transitive_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "verified_source_sha256": {
+      "core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S09_M003_CanonicalResponseSteeringFunctionalSigmaBRnS.lean": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+      "core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+      "proofs/src/CNNAProofs/M003M004/S01_CanonicalM003Closure.lean": "d96d928f48f0780e3b728b3777d2b58e99349ef901743113f172b1a5c0e7ce9c",
+      "proofs/src/CNNAProofs/M003M004/S02_CanonicalM004ClosureAndHandoff.lean": "2882f029f40a3b5742e987e3b201602ba5a5dd532121818418837747e825e93e",
+      "proofs/src/CNNAProofs.lean": "a4538f5c80aa62936cadef9fa5dfb5c2add858161046de2c05ccd36087e2d0c8",
+      "audit/M003M004_CurrentProofAxiomAudit.lean": "964e82cfaa357cc6da3ded790c11d9cd305ab8098f3eab201cf1ee91782a9f27"
+    },
+    "build_evidence": "derivation/code/lean/audit/evidence/USER_LOCAL_M003_M004_FULL_BUILD_20260806.json",
+    "build_evidence_sha256": "cd6c95a56c5dc3a21337b9006449b69a2d5a51b5a9c89b4180667279229287ad",
+    "build_transcript": "derivation/code/lean/audit/evidence/USER_LOCAL_M003_M004_FULL_BUILD_20260806.txt",
+    "build_transcript_sha256": "d15167488dbe74c9b6d1bf7cb4629b34e83a1111ad63a548ee041cc9dc69bf24",
+    "public_contracts": [
+      "CNNAProofs.M003M004.CanonicalM003ClosureContract",
+      "CNNAProofs.M003M004.CanonicalM004ClosureContract"
+    ],
+    "downstream_handoff": "CNNAProofs.M003M004.IsCanonicalBirthInstructionHandoff",
+    "open_components": [],
+    "full_robustness_research_goal": "ELIMINATION_OF_TRANSITIVE_LIBRARY_AXIOMS_NOT_CLAIMED"
+  },
+  "p002": {
+    "status": "KERNEL_VERIFIED",
+    "library": "CNNAProofsP002",
+    "proof_modules": 2,
+    "public_declarations": 6,
+    "kernel_verified_declarations": 6,
+    "source_supplied_unverified_declarations": 0,
+    "public_contract": "CNNAProofs.P002.CanonicalScheduleStrictTotalOrderContract",
+    "source_manifest": "derivation/code/lean/audit/P002_CURRENT_SOURCE_SHA256.txt",
+    "axiom_profile_counts": {
+      "choice_propext_quot": 0,
+      "propext_quot_only": 0,
+      "axiom_free": 6
+    },
+    "build_evidence": "derivation/code/lean/audit/evidence/USER_LOCAL_P002_FULL_BUILD_20260808.json",
+    "open_components": []
+  },
+  "c008": {
+    "status": "KERNEL_VERIFIED_EXACT_SOURCE_EVIDENCE",
+    "library": "CNNAProofs",
+    "core_modules": 1,
+    "proof_modules": 2,
+    "public_declarations": 7,
+    "kernel_verified_declarations": 7,
+    "source_supplied_unverified_declarations": 0,
+    "public_contract": "CNNAProofs.C008.CanonicalRecordLiveUpdateContract",
+    "source_manifest": "derivation/code/lean/audit/C008_CURRENT_SOURCE_SHA256.txt",
+    "axiom_profile_counts": {
+      "choice_propext_quot": 4,
+      "propext_quot_only": 3,
+      "axiom_free": 0
+    },
+    "allowed_transitive_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "build_evidence": "derivation/code/lean/audit/evidence/USER_LOCAL_C008_FULL_BUILD_20260808.json",
+    "python_regression": "PASS_106_TESTS_1086_SUBTESTS",
+    "next_active_node": "C016",
+    "open_components": []
+  },
+  "t002": {
+    "status": "KERNEL_VERIFIED_EXACT_SOURCE_EVIDENCE",
+    "library": "CNNAProofs",
+    "origin_extension_core_modules": 6,
+    "t002_core_modules": 1,
+    "proof_modules": 2,
+    "audited_declarations": 26,
+    "kernel_verified_declarations": 26,
+    "source_supplied_unverified_declarations": 0,
+    "public_contract": "CNNAProofs.T002.CanonicalRecurrentStateClosureContract",
+    "source_manifest": "derivation/code/lean/audit/T002_CURRENT_SOURCE_SHA256.txt",
+    "origin_closure_policy": "MISSING_CLOSURES_ARE_PROVED_AT_THEIR_SEMANTIC_ORIGIN",
+    "axiom_profile_counts": {
+      "choice_propext_quot": 19,
+      "propext_quot_only": 7,
+      "axiom_free": 0
+    },
+    "build_evidence": "derivation/code/lean/audit/evidence/USER_LOCAL_T002_FULL_BUILD_20260809.json",
+    "python_regression": "PASS_120_TESTS_1086_SUBTESTS_FINITE_EVIDENCE_ONLY",
+    "next_active_node": "T003",
+    "open_components": []
+  }
+}

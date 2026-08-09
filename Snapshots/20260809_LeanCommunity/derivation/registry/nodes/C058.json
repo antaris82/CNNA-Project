@@ -1,0 +1,83 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "C058",
+  "paper_section": "6.1.2",
+  "contract": {
+    "statement": "Requires completed injectivity plus a fully verified AW/ITPFI/ratio-set classification argument."
+  },
+  "workflow": {
+    "node_semantics": "CORE_REQUIRES_PROOF",
+    "documentation": "NOT_STARTED",
+    "freeze_state": "NOT_STARTED",
+    "frozen_under_gate_version": null,
+    "documentation_v2": "NOT_STARTED"
+  },
+  "dependencies": [
+    "C056",
+    "C057"
+  ],
+  "node_number": "109",
+  "derivation_rank": 72,
+  "derivation_order": 109,
+  "section_hierarchy": {
+    "section_path": "6.1.2",
+    "root_title": "Local operator-algebraic specialization",
+    "group_title": "GNS/Araki--Woods representation and type classification",
+    "main_directory": "derivation/paper/main/sections/06_local_operator_algebraic_specialization/01_gns_araki_woods_representation_and_type_classification/109_C058__local_hyperfinite_type_iii_factor",
+    "supplement_directory": "derivation/supplement/sections/06_local_operator_algebraic_specialization/01_gns_araki_woods_representation_and_type_classification/109_C058__local_hyperfinite_type_iii_factor",
+    "main_artifact": "derivation/paper/main/sections/06_local_operator_algebraic_specialization/01_gns_araki_woods_representation_and_type_classification/109_C058__local_hyperfinite_type_iii_factor/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/06_local_operator_algebraic_specialization/01_gns_araki_woods_representation_and_type_classification/109_C058__local_hyperfinite_type_iii_factor/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C056, C057; registered hard handoff(s): closes_local_factor_nondegeneracy, type_classification."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D2",
+    "tier_name": "Load-bearing theorem, proof owner, obstruction, or quarantine gate",
+    "tier_assignment_rule": "PROOF_THEOREM_OWNER_OBSTRUCTION_OR_QUARANTINE_ROLE",
+    "main_paper_depth": "THEOREM_AND_PROOF_OVERVIEW",
+    "supplement_depth": "FULL_PROOF_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "formal_statement",
+      "hypotheses",
+      "introduction_reason",
+      "proof_strategy",
+      "lemma_chain",
+      "formal_realization",
+      "counterexamples_or_necessity_checks",
+      "axiom_profile",
+      "result",
+      "remaining_limits",
+      "downstream_handoff",
+      "code_line_register"
+    ],
+    "countercheck_requirement": "NEGATIVE_CONTROL_COUNTEREXAMPLE_OR_HYPOTHESIS_NECESSITY",
+    "countercheck_status": "NOT_STARTED",
+    "v2_state": "NOT_STARTED",
+    "python_anchor_status": "PLANNED",
+    "lean_anchor_status": "PLANNED",
+    "code_anchors": [],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false
+  },
+  "canonical_identity": {
+    "node_number": "109",
+    "semantic_id": "C058",
+    "canonical_node_label": "109 · C058",
+    "stable_node_directory_name": "109_C058__local_hyperfinite_type_iii_factor",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "open_provenance_context": {
+    "framework": "GENERALIZED_OPEN_PROVENANCE_SYSTEMS",
+    "concept_ids": [
+      "OPS-AQFT-01"
+    ],
+    "roles": [
+      "Weyl/GNS/modular-AQFT specialization"
+    ],
+    "integration_status": [
+      "LATE_OPERATOR_ALGEBRAIC_SPECIALIZATION_NODEWISE_STATUS"
+    ],
+    "claim_guard": "Interpretive specialization map only. Mathematical force is exactly the node contract and its registered evidence; no universal open-system theorem is inferred."
+  }
+}

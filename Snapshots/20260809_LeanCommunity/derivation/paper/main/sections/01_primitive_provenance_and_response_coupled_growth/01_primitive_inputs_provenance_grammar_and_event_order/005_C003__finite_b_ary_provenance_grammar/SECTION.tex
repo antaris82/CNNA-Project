@@ -1,0 +1,144 @@
+% Canonical node 005 · C003; current section path 1.1.5.
+% Canonical owner: C003
+\cnnaNodeHeading{005}{C003}{Finite $b$-ary provenance grammar}
+\cnnaNodePlacement{1.1.5}{D1}
+
+\paragraph*{Position and scientific role.}
+\texttt{C003} is the first join of the three origin branches: \texttt{I001}
+supplies $b\ge2$, \texttt{I002} supplies the finite cutoff $L\ge0$, and
+\texttt{C002} supplies the already-born canonical root.  The node constructs
+the address grammar only.  It does not construct an event schedule, node IDs,
+geometry, conductance, response, or dynamics.
+
+% CNNA-ARCHITECTURE-BEGIN C003
+\begin{cnnaInfoBox}{CNNA grammar: realized prefix and open continuation}
+C003 gives the first structural form of the complement architecture.  A born address prefix and its admissible right-extensions belong to one $b$-ary provenance grammar, while only a finite prefix is realized at a given growth stage.  The complement here is the ordered family of admissible but not-yet-realized continuations, not a second externally supplied system.
+\end{cnnaInfoBox}
+% CNNA-ARCHITECTURE-END C003
+
+\paragraph*{Mathematical contract.}
+For a fixed branching parameter $b$, define the local slot alphabet
+\begin{equation}
+  S_b:=\{q\in\mathbb N\mid q<b\}=\{0,\ldots,b-1\}.
+  \label{eq:c003-slot-alphabet}
+\end{equation}
+The intrinsic address space is the free finite-word set $S_b^{*}$.  The
+finite approximant admits
+\begin{equation}
+  \mathcal A_{b,L}:=\{a\in S_b^{*}\mid |a|\le L\}
+  =\bigcup_{d=0}^{L}S_b^d.
+  \label{eq:c003-bounded-addresses}
+\end{equation}
+The C002 root is anchored to the empty word $\varepsilon$.  For $u\in S_b^*$
+and $q\in S_b$, intrinsic child formation is right extension
+\begin{equation}
+  \operatorname{snoc}(u,q):=u\mathbin{\Vert}(q),
+  \qquad |u\mathbin{\Vert}(q)|=|u|+1.
+  \label{eq:c003-child-extension}
+\end{equation}
+Admission into the finite approximant is a separate condition:
+$|u|+1\le L$.
+
+% CNNA-CONTEXT-BEGIN CTX-C003-STANDARD-GRAMMAR
+The finite-word encoding and the induced rooted ordered tree are standard:
+concatenation creates a child and deletion of the final symbol recovers its
+parent.  These textbook ingredients are not claimed as CNNA novelties; the
+CNNA-specific content is their exact provenance ownership, their separation
+from event order, and their role in the downstream derivation
+% CNNA-EXTREF-BEGIN EXT-USE-C003-WORDS-DIRECT
+\cite[Ch.~1 and free-monoid background]{Lothaire1997CombinatoricsWords}.
+% CNNA-EXTREF-END EXT-USE-C003-WORDS-DIRECT
+% CNNA-EXTREF-BEGIN EXT-USE-C003-TREE-DIRECT
+\cite[Ch.~1, The Basics]{Diestel2025GraphTheory}.
+% CNNA-EXTREF-END EXT-USE-C003-TREE-DIRECT
+% CNNA-CONTEXT-END CTX-C003-STANDARD-GRAMMAR
+
+\paragraph*{Structural invariants.}
+The empty word has depth zero.  Every non-root word admits a unique
+factorization
+\begin{equation}
+  a=u\mathbin{\Vert}(q),
+  \qquad q\in S_b,
+  \label{eq:c003-unique-decomposition}
+\end{equation}
+which defines
+\begin{equation}
+  \operatorname{parent}(a)=u,
+  \qquad \operatorname{rank}(a)=q.
+  \label{eq:c003-parent-rank}
+\end{equation}
+Consequently parent, local rank and depth are derived from the address word;
+they are not independent fields.  Equality
+$u\mathbin{\Vert}(q)=v\mathbin{\Vert}(s)$ forces both $u=v$ and $q=s$.
+
+\paragraph*{Cutoff separation and boundary cases.}
+The alphabet $S_b$ and the operation \texttt{snoc} do not depend on $L$.
+The cutoff only determines which already well-formed words are admitted.  In
+particular, $L=0$ yields the root-only approximant
+$\mathcal A_{b,0}=\{\varepsilon\}$ while the intrinsic alphabet still
+contains all $b$ slots.  The root has neither a parent nor a final rank.
+Ranks outside $S_b$, malformed address carriers and extensions beyond $L$ are
+rejected.
+
+% CNNA-INFOBOX-BEGIN INFO-C003-VONNEUMANN-UNARY
+\begin{cnnaInfoBox}{Structural comparison: finite von-Neumann ordinals and the unary chain}
+Extend the word grammar only for comparison to $S_1=\{0\}$.  Then there is
+exactly one address $0^d$ at each depth $d\le L$, and the immediate-successor
+graph on $0,\ldots,L$ is isomorphic to the rooted word chain
+$\varepsilon,0,00,\ldots,0^L$.  Von Neumann's finite ordinals instead encode
+$n$ as the transitive set of all predecessors.
+% CNNA-EXTREF-BEGIN EXT-USE-C003-VONNEUMANN-INFOBOX
+\cite[Introduction and displayed finite ordinals, pp.~199--200]{vonNeumann1923TransfiniteNumbers}.
+% CNNA-EXTREF-END EXT-USE-C003-VONNEUMANN-INFOBOX
+The comparison is therefore an exact graph isomorphism of successor skeletons,
+not an identification of words with ordinals.  The active CNNA domain remains
+$b\ge2$, where depth alone no longer identifies a node.
+\end{cnnaInfoBox}
+% CNNA-INFOBOX-END INFO-C003-VONNEUMANN-UNARY
+
+\paragraph*{Cross-layer realization and proof logic.}
+Python represents words by validated tuples of built-in integers.  Lean uses
+\texttt{List (Fin b.value)}, so slot admissibility is enforced by the element
+type itself.  The central Lean proof chain is
+\begin{equation}
+  \texttt{unsnoc?\_snoc}
+  \Longrightarrow
+  \{\texttt{parent?\_snoc},\texttt{finalSlot?\_snoc}\}
+  \Longrightarrow
+  \{\texttt{snoc\_parent\_unique},\texttt{snoc\_slot\_unique}\},
+  \label{eq:c003-proof-chain}
+\end{equation}
+while \texttt{depth\_snoc} establishes the successor-depth law and
+\texttt{BoundedProvenanceAddress.child} transports it through the cutoff
+proof.  Python tests exercise the same equations and rejection boundaries.
+
+\paragraph*{Countercheck and ownership boundary.}
+The implementation deliberately checks that the grammar object contains only
+the C002 rooted carrier, $b$, and $L$.  Event IDs, birth times, linearization
+indices, node IDs, positions, conductances and responses are absent.  This
+prevents a later schedule or physical field from being silently encoded in
+what should be a purely grammatical node.
+
+\paragraph*{Result and handoff.}
+\texttt{C003} yields the finite rooted ordered address grammar
+$\mathcal A_{b,L}$ with canonical parent/rank decomposition.  Edge
+\texttt{E005} supplies it to \texttt{C004A} for the first provenance slot;
+\texttt{E063} supplies it to \texttt{C018} for the separate canonical birth
+schedule.  The planned edge \texttt{E402} records that a provenance-derived
+metric remains a later obligation; no metric follows merely from the word
+grammar.
+
+% CNNA-OPEN-PROVENANCE-BEGIN C003
+\begin{cnnaInfoBox}{Open-provenance role: Provenance-complete carrier}
+C003 supplies the finite event-address grammar of the current CNNA specialization.  In the generalized open-provenance interpretation it is the carrier on which immutable event provenance can be recorded; it does not by itself assert that every empirical system has such a carrier.
+\end{cnnaInfoBox}
+% CNNA-OPEN-PROVENANCE-END C003
+
+\noindent\textbf{Primary code anchors.}
+Python: \path{derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s01_primitive_inputs_grammar_and_event_order/s05_c003__finite_b_ary_provenance_grammar.py},
+word primitives, lines 32--96; bounded grammar, lines 99--173.  Lean:
+\path{derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean},
+slot and address types, lines 25--30; word construction and decomposition,
+lines 33--139; bounded addresses, lines 143--188; grammar join and root anchor,
+lines 192--240.  The Supplement lists every definition, theorem, test block
+and exact source hash.

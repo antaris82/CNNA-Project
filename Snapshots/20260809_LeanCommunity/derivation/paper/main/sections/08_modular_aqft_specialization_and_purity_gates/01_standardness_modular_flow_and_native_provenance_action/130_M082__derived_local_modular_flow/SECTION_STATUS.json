@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "130",
+  "canonical_node_label": "130 \u00b7 M082",
+  "stable_node_directory_name": "130_M082__derived_local_modular_flow",
+  "id": "M082",
+  "section_path": "8.1.2",
+  "derivation_order": 130,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

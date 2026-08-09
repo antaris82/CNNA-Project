@@ -1,0 +1,58 @@
+% Canonical node 030 · C009; current section path 1.4.4.
+\cnnaNodeHeading{030}{C009}{Codomain state $X_{n+1}$}
+\cnnaNodePlacement{1.4.4}{D1}
+
+\paragraph*{Position and role.}
+C009 is the deterministic assembly boundary between one valid C005 state and
+its raw one-step codomain.  It consumes the already selected C004 slot, the
+M004 birth instruction, and the separately closed C016/C017 record/live
+projections.  It introduces no new response law and does not re-prove any
+upstream invariant.
+
+\paragraph*{Assembly contract.}
+For a response-capable state $X_n$, a proof-bearing canonical next slot
+$s_{n+1}$, coherent current channels, and an M004 instruction $B_n$, C009
+constructs
+\[
+  D_{n+1}=\bigl(\mathcal S_n,\,B_n^{\mathrm{born}}\mathbin{\|}[s_{n+1}],\,
+    R_{n+1},\,L_{n+1}\bigr),
+\]
+with
+\[
+  R_{n+1}=\mathrm{C016}(R_n,B_n),\qquad
+  L_{n+1}=\mathrm{C017}(L_n,B_n).
+\]
+The schedule is inherited literally, the born non-root list is extended by
+exactly the selected child, and the record/live components are exactly the
+already-verified C016/C017 projections.  The C005--C017 handoff additionally
+requires that the pre-step live channel represents the ordered current C005
+conductance list.
+
+\begin{cnnaInfoBox}{Assembly is not recurrent closure}
+C009 proves existence and uniqueness of the raw codomain data for one fixed
+admissible input.  It deliberately does not prove that this raw object again
+satisfies every C005 \texttt{ResponseCapableState} invariant.  That statement is
+T002.  If T002 needs a missing fact whose semantics belongs to C004, C005,
+M004, C016 or C017, that fact must be closed at its point of origin rather than
+hidden in T002 or retrofitted into C009.
+\end{cnnaInfoBox}
+
+\paragraph*{Canonicity and representative independence.}
+For every fixed proof-bearing input, the raw codomain assembly exists and is
+unique.  Replacing exact-fraction representatives by C006-\texttt{SameValue}
+equivalent representatives changes neither schedule nor born prefix and yields
+\texttt{SameValue}-equivalent record/live outputs.
+
+\paragraph*{Kernel-verified result.}
+The 2026-08-08 Lean 4.31.0 run builds the C009 Core and proof modules and audits
+eight public/high-level declarations.  Two facade structures are axiom-free,
+four declarations have transitive profile
+$[\texttt{propext},\texttt{Quot.sound}]$, and two executable facade theorems
+also inherit \texttt{Classical.choice}.  No project-local axiom or
+\texttt{sorryAx} is introduced; the complete package-boundary audit passes.
+
+\paragraph*{Handoff.}
+C009 supplies the canonical one-step codomain to T002.  T002 is now kernel-
+verified and proves re-entry into the full C005 state schema together with
+post-step C005--C017 live coherence.  The next active node is T003; C010 is
+also dependency-ready but remains later in canonical derivation order.

@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "096",
+  "canonical_node_label": "096 \u00b7 C054",
+  "stable_node_directory_name": "096_C054__algebraic_radical_triviality_and_infinite_rank",
+  "id": "C054",
+  "section_path": "5.2.3",
+  "derivation_order": 96,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

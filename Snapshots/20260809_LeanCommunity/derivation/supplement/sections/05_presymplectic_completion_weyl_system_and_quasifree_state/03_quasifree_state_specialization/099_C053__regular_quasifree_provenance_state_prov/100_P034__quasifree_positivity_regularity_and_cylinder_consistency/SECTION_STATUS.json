@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "100",
+  "canonical_node_label": "100 \u00b7 P034",
+  "stable_node_directory_name": "100_P034__quasifree_positivity_regularity_and_cylinder_consistency",
+  "id": "P034",
+  "section_path": "5.3.1.1",
+  "derivation_order": 100,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

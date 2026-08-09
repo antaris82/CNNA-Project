@@ -1,0 +1,259 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "C013",
+  "paper_section": "1.2.4",
+  "contract": {
+    "statement": "Exceptional first non-root birth: v1 has address (0), root parent, and symmetric directed conductances (1,1); L=0 admits no such birth.",
+    "ownership_boundary": [
+      "consumes C004A, A001 and N001",
+      "does not prove seed-neutrality T001 or unit-independence M005"
+    ]
+  },
+  "cross_layer": {
+    "equivalence": "Python constructs the first birth and Lean encodes the same newborn, parent, cutoff and unit-conductance facts; the seed is not retained in either generated state.",
+    "semantic_mismatch_known": false
+  },
+  "evidence": {
+    "audit_tier": "A",
+    "python": {
+      "status": "PASS_REPRODUCED",
+      "node_tests": 2
+    },
+    "lean": {
+      "status": "PASS_EXACT_LOCAL_BUILD",
+      "source_sha256": "0265380bc0a02d4942466e55900c362c7c89005355f2cfad94f635a4b862a69f",
+      "toolchain": "Lean 4.31.0 (project pin)",
+      "policy_scan_matches": 0,
+      "exact_hash_built": true,
+      "verification_origin": "user_local_build_of_delivered_current_artifact"
+    }
+  },
+  "artifacts": {
+    "python_source": "c4be132595323e02bb5dfb4e262e67b2985981178df8030b1bd73f46d50b4f9c",
+    "python_test": "d99c18504cca14cf9cea5e1e1d6be3cebcfe50bffa60118a9548bcb0d9a44785",
+    "lean_source": "0265380bc0a02d4942466e55900c362c7c89005355f2cfad94f635a4b862a69f",
+    "math_prose": "7cd909fd7596d98da1242f7a5192aeadfa55011794f09d44de16969149a587f5",
+    "supplement_documentation": "d85bcd327145a2008220880b462ebfc33b7486d5a3d44659449ea7d5845d07fd"
+  },
+  "workflow": {
+    "node_semantics": "CLOSED_BOOTSTRAP_CONSTRUCTION",
+    "documentation": "COMPLETE_V2",
+    "freeze_state": "FROZEN_VERIFIED",
+    "frozen_under_gate_version": "cnna-per-node-freeze-v5",
+    "documentation_v2": "COMPLETE_V2"
+  },
+  "node_number": "011",
+  "derivation_rank": 7,
+  "derivation_order": 11,
+  "section_hierarchy": {
+    "section_path": "1.2.4",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Bootstrap of the first provenance relation",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/011_C013__first_non_root_provenance_birth_v",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/011_C013__first_non_root_provenance_birth_v",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/011_C013__first_non_root_provenance_birth_v/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/011_C013__first_non_root_provenance_birth_v/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after A001, C004A, N001; registered hard handoff(s): supplies_information_free_bootstrap_token, supplies_first_provenance_slot, sets_first_relation_conductance."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D1",
+    "tier_name": "Structural construction",
+    "tier_assignment_rule": "STRUCTURAL_CONSTRUCTION_ROLE",
+    "main_paper_depth": "STRUCTURAL_EXPLANATION",
+    "supplement_depth": "DETAILED_CONSTRUCTION_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "mathematical_contract",
+      "introduction_reason",
+      "explicit_construction",
+      "invariants",
+      "canonicity_or_uniqueness",
+      "boundary_cases",
+      "python_lean_cross_layer",
+      "countercheck",
+      "result",
+      "downstream_handoff",
+      "code_anchors"
+    ],
+    "countercheck_requirement": "INVARIANT_EDGE_CASE_AND_CROSS_LAYER_CHECK",
+    "countercheck_status": "PASS",
+    "v2_state": "COMPLETE_V2",
+    "python_anchor_status": "RESOLVED",
+    "lean_anchor_status": "RESOLVED",
+    "code_anchors": [
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s02_bootstrap_of_the_first_relation/s04_c013__first_non_root_provenance_birth_v1.py",
+        "symbol": "FirstNonRootBirth",
+        "declaration_kind": "CLASS",
+        "start_line": 23,
+        "end_line": 43,
+        "source_sha256": "02d01363b5e7746aff7358f21d65aa44c8128795f9f6e4be0ac0d4315249251f",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s02_bootstrap_of_the_first_relation/s04_c013__first_non_root_provenance_birth_v1.py",
+        "symbol": "build_first_non_root_birth",
+        "declaration_kind": "FUNCTION",
+        "start_line": 46,
+        "end_line": 63,
+        "source_sha256": "02d01363b5e7746aff7358f21d65aa44c8128795f9f6e4be0ac0d4315249251f",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s02_bootstrap_of_the_first_relation/test_s04_c013__first_non_root_provenance_birth_v1.py",
+        "symbol": "slot_at_depth",
+        "declaration_kind": "FUNCTION",
+        "start_line": 17,
+        "end_line": 19,
+        "source_sha256": "1a22046c8bae87bc8424c4ccc0f5d2ac2cd975e658788a2e7330ec043ded4b84",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s02_bootstrap_of_the_first_relation/test_s04_c013__first_non_root_provenance_birth_v1.py",
+        "symbol": "TestFirstNonRootBirth",
+        "declaration_kind": "CLASS",
+        "start_line": 22,
+        "end_line": 33,
+        "source_sha256": "1a22046c8bae87bc8424c4ccc0f5d2ac2cd975e658788a2e7330ec043ded4b84",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S04_C013_FirstNonRootProvenanceBirthV1.lean",
+        "symbol": "FirstNonRootBirth",
+        "declaration_kind": "STRUCTURE",
+        "start_line": 22,
+        "end_line": 29,
+        "source_sha256": "327bb483c673c175bba16bd30964f4b869a3a4d8f41d696d7f8a02fa06c9f78a",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S04_C013_FirstNonRootProvenanceBirthV1.lean",
+        "symbol": "build",
+        "declaration_kind": "DEF",
+        "start_line": 30,
+        "end_line": 39,
+        "source_sha256": "327bb483c673c175bba16bd30964f4b869a3a4d8f41d696d7f8a02fa06c9f78a",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S04_C013_FirstNonRootProvenanceBirthV1.lean",
+        "symbol": "rootAddress",
+        "declaration_kind": "DEF",
+        "start_line": 40,
+        "end_line": 43,
+        "source_sha256": "327bb483c673c175bba16bd30964f4b869a3a4d8f41d696d7f8a02fa06c9f78a",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S04_C013_FirstNonRootProvenanceBirthV1.lean",
+        "symbol": "newbornAddress",
+        "declaration_kind": "DEF",
+        "start_line": 44,
+        "end_line": 47,
+        "source_sha256": "327bb483c673c175bba16bd30964f4b869a3a4d8f41d696d7f8a02fa06c9f78a",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S04_C013_FirstNonRootProvenanceBirthV1.lean",
+        "symbol": "directedRelations",
+        "declaration_kind": "DEF",
+        "start_line": 48,
+        "end_line": 53,
+        "source_sha256": "327bb483c673c175bba16bd30964f4b869a3a4d8f41d696d7f8a02fa06c9f78a",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S04_C013_FirstNonRootProvenanceBirthV1.lean",
+        "symbol": "directedConductances",
+        "declaration_kind": "DEF",
+        "start_line": 54,
+        "end_line": 57,
+        "source_sha256": "327bb483c673c175bba16bd30964f4b869a3a4d8f41d696d7f8a02fa06c9f78a",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S04_C013_FirstNonRootProvenanceBirthV1.lean",
+        "symbol": "newborn_eq_first_slot",
+        "declaration_kind": "THEOREM",
+        "start_line": 58,
+        "end_line": 62,
+        "source_sha256": "327bb483c673c175bba16bd30964f4b869a3a4d8f41d696d7f8a02fa06c9f78a",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S04_C013_FirstNonRootProvenanceBirthV1.lean",
+        "symbol": "newborn_parent_root",
+        "declaration_kind": "THEOREM",
+        "start_line": 63,
+        "end_line": 69,
+        "source_sha256": "327bb483c673c175bba16bd30964f4b869a3a4d8f41d696d7f8a02fa06c9f78a",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S04_C013_FirstNonRootProvenanceBirthV1.lean",
+        "symbol": "directedConductances_eq_unit_pair",
+        "declaration_kind": "THEOREM",
+        "start_line": 70,
+        "end_line": 77,
+        "source_sha256": "327bb483c673c175bba16bd30964f4b869a3a4d8f41d696d7f8a02fa06c9f78a",
+        "resolution": "RESOLVED"
+      }
+    ],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false,
+    "completion_evidence": {
+      "main_artifact": "derivation/paper/main/sections/01_primitive_response_coupled_finite_provenance/02_bootstrap_of_the_first_relation/011_C013__first_non_root_provenance_birth_v/SECTION.tex",
+      "supplement_artifact": "derivation/supplement/sections/01_primitive_response_coupled_finite_provenance/02_bootstrap_of_the_first_relation/011_C013__first_non_root_provenance_birth_v/DOCUMENTATION.md",
+      "main_sha256": "7cd909fd7596d98da1242f7a5192aeadfa55011794f09d44de16969149a587f5",
+      "supplement_sha256": "d85bcd327145a2008220880b462ebfc33b7486d5a3d44659449ea7d5845d07fd",
+      "code_anchor_count": 13,
+      "source_code_changed": false,
+      "documentation_complete": true,
+      "required_sections_present": true,
+      "countercheck_present": true,
+      "code_anchors_resolved": true,
+      "completed_on": "2026-08-04"
+    }
+  },
+  "canonical_identity": {
+    "node_number": "011",
+    "semantic_id": "C013",
+    "canonical_node_label": "011 · C013",
+    "stable_node_directory_name": "011_C013__first_non_root_provenance_birth_v",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "cnna_architecture_context": {
+    "concept_id": "CNNA-00",
+    "name": "ComplemeNt Net Architecture",
+    "role": "First nontrivial complement net: the selected open slot becomes a newborn linked to the root by the first directed weighted relation.",
+    "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+    "claim_guard": "Interpretive and organizational context only; mathematical force remains exactly the registered node contract and evidence status."
+  }
+}

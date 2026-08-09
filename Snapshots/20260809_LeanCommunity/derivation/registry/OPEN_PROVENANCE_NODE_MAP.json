@@ -1,0 +1,747 @@
+{
+  "schema": "cnna.open-provenance-node-map.v1",
+  "framework": "Generalized Open Provenance Systems",
+  "project_architecture": "ComplemeNt Net Architecture",
+  "entries": [
+    {
+      "concept_id": "CNNA-00",
+      "concept_title": "ComplemeNt Net Architecture throughline",
+      "node_id": "C001",
+      "paper_section": "1.1.3",
+      "node_role": "Null baseline: no realized node or relation is hidden before complement-sensitive growth begins.",
+      "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+      "specialization": "CNNA_IDENTITY",
+      "non_claim": "Architectural interpretation only; no promotion beyond the node implementation or evidence status."
+    },
+    {
+      "concept_id": "CNNA-00",
+      "concept_title": "ComplemeNt Net Architecture throughline",
+      "node_id": "C002",
+      "paper_section": "1.1.4",
+      "node_role": "First realization: root genesis creates the first born carrier; the continuation complement is introduced only by later grammar.",
+      "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+      "specialization": "CNNA_IDENTITY",
+      "non_claim": "Architectural interpretation only; no promotion beyond the node implementation or evidence status."
+    },
+    {
+      "concept_id": "CNNA-00",
+      "concept_title": "ComplemeNt Net Architecture throughline",
+      "node_id": "C003",
+      "paper_section": "1.1.5",
+      "node_role": "Complement-address grammar: realized prefixes and admissible but unrealized continuations inhabit one bounded b-ary provenance carrier.",
+      "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+      "specialization": "CNNA_IDENTITY",
+      "non_claim": "Architectural interpretation only; no promotion beyond the node implementation or evidence status."
+    },
+    {
+      "concept_id": "CNNA-00",
+      "concept_title": "ComplemeNt Net Architecture throughline",
+      "node_id": "C018",
+      "paper_section": "1.1.6",
+      "node_role": "Complement-resolution order: the schedule canonically orders which open continuation can become realized next.",
+      "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+      "specialization": "CNNA_IDENTITY",
+      "non_claim": "Architectural interpretation only; no promotion beyond the node implementation or evidence status."
+    },
+    {
+      "concept_id": "CNNA-00",
+      "concept_title": "ComplemeNt Net Architecture throughline",
+      "node_id": "C004A",
+      "paper_section": "1.2.1",
+      "node_role": "First selected complement slot: the least unrealized child position is selected without yet creating a node or relation.",
+      "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+      "specialization": "CNNA_IDENTITY",
+      "non_claim": "Architectural interpretation only; no promotion beyond the node implementation or evidence status."
+    },
+    {
+      "concept_id": "CNNA-00",
+      "concept_title": "ComplemeNt Net Architecture throughline",
+      "node_id": "C013",
+      "paper_section": "1.2.4",
+      "node_role": "First nontrivial complement net: the selected open slot becomes a newborn linked to the root by the first directed weighted relation.",
+      "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+      "specialization": "CNNA_IDENTITY",
+      "non_claim": "Architectural interpretation only; no promotion beyond the node implementation or evidence status."
+    },
+    {
+      "concept_id": "CNNA-00",
+      "concept_title": "ComplemeNt Net Architecture throughline",
+      "node_id": "C014",
+      "paper_section": "1.2.7",
+      "node_role": "First response-capable complement net: the first weighted two-node provenance network is packaged as the recurrent base state.",
+      "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+      "specialization": "CNNA_IDENTITY",
+      "non_claim": "Architectural interpretation only; no promotion beyond the node implementation or evidence status."
+    },
+    {
+      "concept_id": "CNNA-00",
+      "concept_title": "ComplemeNt Net Architecture throughline",
+      "node_id": "C005",
+      "paper_section": "1.3.1",
+      "node_role": "Current realized net: stores the born carrier and response-bearing state against the remaining unresolved continuation.",
+      "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+      "specialization": "CNNA_IDENTITY",
+      "non_claim": "Architectural interpretation only; no promotion beyond the node implementation or evidence status."
+    },
+    {
+      "concept_id": "CNNA-00",
+      "concept_title": "ComplemeNt Net Architecture throughline",
+      "node_id": "C004",
+      "paper_section": "1.3.2",
+      "node_role": "Next complement resolution: selects the extensional least open provenance slot of the current born prefix.",
+      "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+      "specialization": "CNNA_IDENTITY",
+      "non_claim": "Architectural interpretation only; no promotion beyond the node implementation or evidence status."
+    },
+    {
+      "concept_id": "CNNA-00",
+      "concept_title": "ComplemeNt Net Architecture throughline",
+      "node_id": "M001",
+      "paper_section": "1.3.4",
+      "node_role": "Explicit cut architecture: one net is partitioned into retained boundary roles and a complementary interior.",
+      "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+      "specialization": "CNNA_IDENTITY",
+      "non_claim": "Architectural interpretation only; no promotion beyond the node implementation or evidence status."
+    },
+    {
+      "concept_id": "CNNA-00",
+      "concept_title": "ComplemeNt Net Architecture throughline",
+      "node_id": "C006",
+      "paper_section": "1.3.3",
+      "node_role": "Complement elimination: the interior is eliminated by an exact unique solve while its effect remains in the boundary response.",
+      "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+      "specialization": "CNNA_IDENTITY",
+      "non_claim": "Architectural interpretation only; no promotion beyond the node implementation or evidence status."
+    },
+    {
+      "concept_id": "CNNA-00",
+      "concept_title": "ComplemeNt Net Architecture throughline",
+      "node_id": "P001",
+      "paper_section": "1.3.9.1",
+      "node_role": "Closure of complement elimination: proves well-posedness, response independence, directed structure and strict distinguished positivity.",
+      "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+      "specialization": "CNNA_IDENTITY",
+      "non_claim": "Architectural interpretation only; no promotion beyond the node implementation or evidence status."
+    },
+    {
+      "concept_id": "CNNA-00",
+      "concept_title": "ComplemeNt Net Architecture throughline",
+      "node_id": "C007",
+      "paper_section": "1.3.6",
+      "node_role": "Effective complement response: exposes the directed boundary response produced after interior elimination.",
+      "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+      "specialization": "CNNA_IDENTITY",
+      "non_claim": "Architectural interpretation only; no promotion beyond the node implementation or evidence status."
+    },
+    {
+      "concept_id": "CNNA-00",
+      "concept_title": "ComplemeNt Net Architecture throughline",
+      "node_id": "M003",
+      "paper_section": "1.3.9",
+      "node_role": "Response evaluation: extracts the positive steering value through which the current complement context controls further growth.",
+      "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+      "specialization": "CNNA_IDENTITY",
+      "non_claim": "Architectural interpretation only; no promotion beyond the node implementation or evidence status."
+    },
+    {
+      "concept_id": "CNNA-00",
+      "concept_title": "ComplemeNt Net Architecture throughline",
+      "node_id": "M004",
+      "paper_section": "1.3.10",
+      "node_role": "Complement-coupled birth instruction: converts the present effective response into the next provenance relation.",
+      "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+      "specialization": "CNNA_IDENTITY",
+      "non_claim": "Architectural interpretation only; no promotion beyond the node implementation or evidence status."
+    },
+    {
+      "concept_id": "CNNA-00",
+      "concept_title": "ComplemeNt Net Architecture throughline",
+      "node_id": "C008",
+      "paper_section": "1.4.1",
+      "node_role": "Architecture update: writes the birth record and updates the live net without erasing their distinction.",
+      "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+      "specialization": "CNNA_IDENTITY",
+      "non_claim": "Architectural interpretation only; no promotion beyond the node implementation or evidence status."
+    },
+    {
+      "concept_id": "CNNA-00",
+      "concept_title": "ComplemeNt Net Architecture throughline",
+      "node_id": "C016",
+      "paper_section": "1.4.2",
+      "node_role": "Immutable complement history: preserves birth-time records as the fixed provenance channel.",
+      "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+      "specialization": "CNNA_IDENTITY",
+      "non_claim": "Architectural interpretation only; no promotion beyond the node implementation or evidence status."
+    },
+    {
+      "concept_id": "CNNA-00",
+      "concept_title": "ComplemeNt Net Architecture throughline",
+      "node_id": "C017",
+      "paper_section": "1.4.3",
+      "node_role": "Mutable complement context: carries the current effectiveness after later growth and environmental change.",
+      "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+      "specialization": "CNNA_IDENTITY",
+      "non_claim": "Architectural interpretation only; no promotion beyond the node implementation or evidence status."
+    },
+    {
+      "concept_id": "CNNA-00",
+      "concept_title": "ComplemeNt Net Architecture throughline",
+      "node_id": "C024",
+      "paper_section": "2.2.2",
+      "node_role": "Backreaction observable: compares record and live response to expose the effect of later complementary growth.",
+      "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+      "specialization": "CNNA_IDENTITY",
+      "non_claim": "Architectural interpretation only; no promotion beyond the node implementation or evidence status."
+    },
+    {
+      "concept_id": "CNNA-00",
+      "concept_title": "ComplemeNt Net Architecture throughline",
+      "node_id": "C044",
+      "paper_section": "4.3.1",
+      "node_role": "Nested complement projections: organizes finite-prefix reductions between different retained regions.",
+      "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+      "specialization": "CNNA_IDENTITY",
+      "non_claim": "Architectural interpretation only; no promotion beyond the node implementation or evidence status."
+    },
+    {
+      "concept_id": "CNNA-00",
+      "concept_title": "ComplemeNt Net Architecture throughline",
+      "node_id": "C045",
+      "paper_section": "4.3.2",
+      "node_role": "Common ambient carrier: places multiple retained/complement decompositions inside one provenance net.",
+      "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+      "specialization": "CNNA_IDENTITY",
+      "non_claim": "Architectural interpretation only; no promotion beyond the node implementation or evidence status."
+    },
+    {
+      "concept_id": "CNNA-00",
+      "concept_title": "ComplemeNt Net Architecture throughline",
+      "node_id": "C047",
+      "paper_section": "4.3.3",
+      "node_role": "Refinement channel: transfers effective descriptions between nested cuts.",
+      "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+      "specialization": "CNNA_IDENTITY",
+      "non_claim": "Architectural interpretation only; no promotion beyond the node implementation or evidence status."
+    },
+    {
+      "concept_id": "CNNA-00",
+      "concept_title": "ComplemeNt Net Architecture throughline",
+      "node_id": "C046",
+      "paper_section": "4.3.4",
+      "node_role": "Cocycle law: records coherence or controlled defect under composed complement reductions.",
+      "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+      "specialization": "CNNA_IDENTITY",
+      "non_claim": "Architectural interpretation only; no promotion beyond the node implementation or evidence status."
+    },
+    {
+      "concept_id": "CNNA-00",
+      "concept_title": "ComplemeNt Net Architecture throughline",
+      "node_id": "C043",
+      "paper_section": "4.4.1",
+      "node_role": "Live reconstruction: combines record and refinement/cocycle data across nested complements.",
+      "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+      "specialization": "CNNA_IDENTITY",
+      "non_claim": "Architectural interpretation only; no promotion beyond the node implementation or evidence status."
+    },
+    {
+      "concept_id": "CNNA-00",
+      "concept_title": "ComplemeNt Net Architecture throughline",
+      "node_id": "C053",
+      "paper_section": "5.3.1",
+      "node_role": "Reduced observation specialization: positive state and measurement structures are later compressions of the response net.",
+      "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+      "specialization": "CNNA_IDENTITY",
+      "non_claim": "Architectural interpretation only; no promotion beyond the node implementation or evidence status."
+    },
+    {
+      "concept_id": "CNNA-00",
+      "concept_title": "ComplemeNt Net Architecture throughline",
+      "node_id": "C060",
+      "paper_section": "6.2.2",
+      "node_role": "Open-quantum specialization: system/environment becomes a Hilbert-space realization of the earlier cut-relative complement role.",
+      "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+      "specialization": "CNNA_IDENTITY",
+      "non_claim": "Architectural interpretation only; no promotion beyond the node implementation or evidence status."
+    },
+    {
+      "concept_id": "CNNA-00",
+      "concept_title": "ComplemeNt Net Architecture throughline",
+      "node_id": "M080",
+      "paper_section": "8.1.1",
+      "node_role": "Modular/AQFT specialization: late operator-algebraic structures remain downstream realizations of the same relative-complement architecture.",
+      "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+      "specialization": "CNNA_IDENTITY",
+      "non_claim": "Architectural interpretation only; no promotion beyond the node implementation or evidence status."
+    },
+    {
+      "concept_id": "OPS-01",
+      "concept_title": "Provenance-complete event state",
+      "node_id": "C003",
+      "paper_section": "1.1.5",
+      "node_role": "The finite node contributes to the event carrier, event order, or sufficient current provenance state.",
+      "integration_status": "CURRENT_FINITE_SPECIALIZATION",
+      "specialization": "CNNA_FINITE",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-01",
+      "concept_title": "Provenance-complete event state",
+      "node_id": "C018",
+      "paper_section": "1.1.6",
+      "node_role": "The finite node contributes to the event carrier, event order, or sufficient current provenance state.",
+      "integration_status": "CURRENT_FINITE_SPECIALIZATION",
+      "specialization": "CNNA_FINITE",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-01",
+      "concept_title": "Provenance-complete event state",
+      "node_id": "C005",
+      "paper_section": "1.3.1",
+      "node_role": "The finite node contributes to the event carrier, event order, or sufficient current provenance state.",
+      "integration_status": "CURRENT_FINITE_SPECIALIZATION",
+      "specialization": "CNNA_FINITE",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-01",
+      "concept_title": "Provenance-complete event state",
+      "node_id": "C004",
+      "paper_section": "1.3.2",
+      "node_role": "The finite node contributes to the event carrier, event order, or sufficient current provenance state.",
+      "integration_status": "CURRENT_FINITE_SPECIALIZATION",
+      "specialization": "CNNA_FINITE",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-02",
+      "concept_title": "Cut-relative complement",
+      "node_id": "M001",
+      "paper_section": "1.3.4",
+      "node_role": "System and environment are roles induced by a retained region and its complement.",
+      "integration_status": "NODEWISE_CURRENT_OR_PLANNED",
+      "specialization": "CNNA_FINITE",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-02",
+      "concept_title": "Cut-relative complement",
+      "node_id": "C020",
+      "paper_section": "2.1.1",
+      "node_role": "System and environment are roles induced by a retained region and its complement.",
+      "integration_status": "NODEWISE_CURRENT_OR_PLANNED",
+      "specialization": "CNNA_FINITE",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-02",
+      "concept_title": "Cut-relative complement",
+      "node_id": "C022",
+      "paper_section": "2.1.3",
+      "node_role": "System and environment are roles induced by a retained region and its complement.",
+      "integration_status": "NODEWISE_CURRENT_OR_PLANNED",
+      "specialization": "CNNA_FINITE",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-02",
+      "concept_title": "Cut-relative complement",
+      "node_id": "C060",
+      "paper_section": "6.2.2",
+      "node_role": "System and environment are roles induced by a retained region and its complement.",
+      "integration_status": "NODEWISE_CURRENT_OR_PLANNED",
+      "specialization": "CNNA_FINITE",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-QM-02",
+      "concept_title": "Open-quantum-process specialization",
+      "node_id": "C060",
+      "paper_section": "6.2.2",
+      "node_role": "Assignment maps, instruments and multi-time process objects are later quantum specializations.",
+      "integration_status": "LATER_QUANTUM_SPECIALIZATION_NOT_UNIVERSAL_CLAIM",
+      "specialization": "OPEN_QUANTUM_SYSTEMS",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-AQFT-01",
+      "concept_title": "Weyl/GNS/modular-AQFT specialization",
+      "node_id": "C060",
+      "paper_section": "6.2.2",
+      "node_role": "Operator-algebraic and AQFT structures occur only after the provenance/response layers.",
+      "integration_status": "LATE_OPERATOR_ALGEBRAIC_SPECIALIZATION_NODEWISE_STATUS",
+      "specialization": "MODULAR_AQFT",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-03",
+      "concept_title": "Effective complement elimination",
+      "node_id": "C006",
+      "paper_section": "1.3.3",
+      "node_role": "The node realizes or certifies an exact effective response after eliminating unresolved coordinates.",
+      "integration_status": "NODEWISE_CURRENT_OR_PLANNED",
+      "specialization": "CNNA_FINITE",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-03",
+      "concept_title": "Effective complement elimination",
+      "node_id": "P001",
+      "paper_section": "1.3.9.1",
+      "node_role": "The node realizes or certifies an exact effective response after eliminating unresolved coordinates.",
+      "integration_status": "NODEWISE_CURRENT_OR_PLANNED",
+      "specialization": "CNNA_FINITE",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-03",
+      "concept_title": "Effective complement elimination",
+      "node_id": "C007",
+      "paper_section": "1.3.6",
+      "node_role": "The node realizes or certifies an exact effective response after eliminating unresolved coordinates.",
+      "integration_status": "NODEWISE_CURRENT_OR_PLANNED",
+      "specialization": "CNNA_FINITE",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-03",
+      "concept_title": "Effective complement elimination",
+      "node_id": "C021",
+      "paper_section": "2.1.2",
+      "node_role": "The node realizes or certifies an exact effective response after eliminating unresolved coordinates.",
+      "integration_status": "NODEWISE_CURRENT_OR_PLANNED",
+      "specialization": "CNNA_FINITE",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-03",
+      "concept_title": "Effective complement elimination",
+      "node_id": "C025",
+      "paper_section": "2.3.1",
+      "node_role": "The node realizes or certifies an exact effective response after eliminating unresolved coordinates.",
+      "integration_status": "NODEWISE_CURRENT_OR_PLANNED",
+      "specialization": "CNNA_FINITE",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-QM-01",
+      "concept_title": "Finite provenance-derived POVM migration",
+      "node_id": "C025",
+      "paper_section": "2.3.1",
+      "node_role": "Legacy supplies a finite frame-POVM specification; current derived-only proof nodes are still required.",
+      "integration_status": "LEGACY_MIGRATION_TARGET_NOT_CURRENT_THEOREM",
+      "specialization": "FINITE_POVM_MIGRATION",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-04",
+      "concept_title": "Response-coupled event generation",
+      "node_id": "M003",
+      "paper_section": "1.3.9",
+      "node_role": "The present effective response controls the next provenance event.",
+      "integration_status": "M003_M004_VERIFIED_C008_DOWNSTREAM",
+      "specialization": "CNNA_FINITE",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-04",
+      "concept_title": "Response-coupled event generation",
+      "node_id": "M004",
+      "paper_section": "1.3.10",
+      "node_role": "The present effective response controls the next provenance event.",
+      "integration_status": "M003_M004_VERIFIED_C008_DOWNSTREAM",
+      "specialization": "CNNA_FINITE",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-04",
+      "concept_title": "Response-coupled event generation",
+      "node_id": "C008",
+      "paper_section": "1.4.1",
+      "node_role": "The present effective response controls the next provenance event.",
+      "integration_status": "M003_M004_VERIFIED_C008_DOWNSTREAM",
+      "specialization": "CNNA_FINITE",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-05",
+      "concept_title": "Immutable record, live state and backreaction",
+      "node_id": "C008",
+      "paper_section": "1.4.1",
+      "node_role": "Birth data remain fixed while later events modify current effectiveness.",
+      "integration_status": "DOWNSTREAM_CONSTRUCTION",
+      "specialization": "CNNA_FINITE",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-05",
+      "concept_title": "Immutable record, live state and backreaction",
+      "node_id": "C016",
+      "paper_section": "1.4.2",
+      "node_role": "Birth data remain fixed while later events modify current effectiveness.",
+      "integration_status": "DOWNSTREAM_CONSTRUCTION",
+      "specialization": "CNNA_FINITE",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-05",
+      "concept_title": "Immutable record, live state and backreaction",
+      "node_id": "C017",
+      "paper_section": "1.4.3",
+      "node_role": "Birth data remain fixed while later events modify current effectiveness.",
+      "integration_status": "DOWNSTREAM_CONSTRUCTION",
+      "specialization": "CNNA_FINITE",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-05",
+      "concept_title": "Immutable record, live state and backreaction",
+      "node_id": "C024",
+      "paper_section": "2.2.2",
+      "node_role": "Birth data remain fixed while later events modify current effectiveness.",
+      "integration_status": "DOWNSTREAM_CONSTRUCTION",
+      "specialization": "CNNA_FINITE",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-05",
+      "concept_title": "Immutable record, live state and backreaction",
+      "node_id": "C043",
+      "paper_section": "4.4.1",
+      "node_role": "Birth data remain fixed while later events modify current effectiveness.",
+      "integration_status": "DOWNSTREAM_CONSTRUCTION",
+      "specialization": "CNNA_FINITE",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-06",
+      "concept_title": "Nested cuts, refinement and cocycle",
+      "node_id": "C043",
+      "paper_section": "4.4.1",
+      "node_role": "Effective descriptions at different cuts must compose coherently.",
+      "integration_status": "DOWNSTREAM_COHERENCE_PROGRAM",
+      "specialization": "CNNA_FINITE",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-QM-02",
+      "concept_title": "Open-quantum-process specialization",
+      "node_id": "C043",
+      "paper_section": "4.4.1",
+      "node_role": "Assignment maps, instruments and multi-time process objects are later quantum specializations.",
+      "integration_status": "LATER_QUANTUM_SPECIALIZATION_NOT_UNIVERSAL_CLAIM",
+      "specialization": "OPEN_QUANTUM_SYSTEMS",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-06",
+      "concept_title": "Nested cuts, refinement and cocycle",
+      "node_id": "C044",
+      "paper_section": "4.3.1",
+      "node_role": "Effective descriptions at different cuts must compose coherently.",
+      "integration_status": "DOWNSTREAM_COHERENCE_PROGRAM",
+      "specialization": "CNNA_FINITE",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-QM-01",
+      "concept_title": "Finite provenance-derived POVM migration",
+      "node_id": "C044",
+      "paper_section": "4.3.1",
+      "node_role": "Legacy supplies a finite frame-POVM specification; current derived-only proof nodes are still required.",
+      "integration_status": "LEGACY_MIGRATION_TARGET_NOT_CURRENT_THEOREM",
+      "specialization": "FINITE_POVM_MIGRATION",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-06",
+      "concept_title": "Nested cuts, refinement and cocycle",
+      "node_id": "C045",
+      "paper_section": "4.3.2",
+      "node_role": "Effective descriptions at different cuts must compose coherently.",
+      "integration_status": "DOWNSTREAM_COHERENCE_PROGRAM",
+      "specialization": "CNNA_FINITE",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-06",
+      "concept_title": "Nested cuts, refinement and cocycle",
+      "node_id": "C047",
+      "paper_section": "4.3.3",
+      "node_role": "Effective descriptions at different cuts must compose coherently.",
+      "integration_status": "DOWNSTREAM_COHERENCE_PROGRAM",
+      "specialization": "CNNA_FINITE",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-QM-01",
+      "concept_title": "Finite provenance-derived POVM migration",
+      "node_id": "C047",
+      "paper_section": "4.3.3",
+      "node_role": "Legacy supplies a finite frame-POVM specification; current derived-only proof nodes are still required.",
+      "integration_status": "LEGACY_MIGRATION_TARGET_NOT_CURRENT_THEOREM",
+      "specialization": "FINITE_POVM_MIGRATION",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-06",
+      "concept_title": "Nested cuts, refinement and cocycle",
+      "node_id": "C046",
+      "paper_section": "4.3.4",
+      "node_role": "Effective descriptions at different cuts must compose coherently.",
+      "integration_status": "DOWNSTREAM_COHERENCE_PROGRAM",
+      "specialization": "CNNA_FINITE",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-QM-01",
+      "concept_title": "Finite provenance-derived POVM migration",
+      "node_id": "M030",
+      "paper_section": "3.1.1",
+      "node_role": "Legacy supplies a finite frame-POVM specification; current derived-only proof nodes are still required.",
+      "integration_status": "LEGACY_MIGRATION_TARGET_NOT_CURRENT_THEOREM",
+      "specialization": "FINITE_POVM_MIGRATION",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-QM-01",
+      "concept_title": "Finite provenance-derived POVM migration",
+      "node_id": "C032",
+      "paper_section": "3.2.1",
+      "node_role": "Legacy supplies a finite frame-POVM specification; current derived-only proof nodes are still required.",
+      "integration_status": "LEGACY_MIGRATION_TARGET_NOT_CURRENT_THEOREM",
+      "specialization": "FINITE_POVM_MIGRATION",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-QM-01",
+      "concept_title": "Finite provenance-derived POVM migration",
+      "node_id": "C033",
+      "paper_section": "3.3.1",
+      "node_role": "Legacy supplies a finite frame-POVM specification; current derived-only proof nodes are still required.",
+      "integration_status": "LEGACY_MIGRATION_TARGET_NOT_CURRENT_THEOREM",
+      "specialization": "FINITE_POVM_MIGRATION",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-QM-01",
+      "concept_title": "Finite provenance-derived POVM migration",
+      "node_id": "C053",
+      "paper_section": "5.3.1",
+      "node_role": "Legacy supplies a finite frame-POVM specification; current derived-only proof nodes are still required.",
+      "integration_status": "LEGACY_MIGRATION_TARGET_NOT_CURRENT_THEOREM",
+      "specialization": "FINITE_POVM_MIGRATION",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-QM-02",
+      "concept_title": "Open-quantum-process specialization",
+      "node_id": "C053",
+      "paper_section": "5.3.1",
+      "node_role": "Assignment maps, instruments and multi-time process objects are later quantum specializations.",
+      "integration_status": "LATER_QUANTUM_SPECIALIZATION_NOT_UNIVERSAL_CLAIM",
+      "specialization": "OPEN_QUANTUM_SYSTEMS",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-AQFT-01",
+      "concept_title": "Weyl/GNS/modular-AQFT specialization",
+      "node_id": "C053",
+      "paper_section": "5.3.1",
+      "node_role": "Operator-algebraic and AQFT structures occur only after the provenance/response layers.",
+      "integration_status": "LATE_OPERATOR_ALGEBRAIC_SPECIALIZATION_NODEWISE_STATUS",
+      "specialization": "MODULAR_AQFT",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-QM-02",
+      "concept_title": "Open-quantum-process specialization",
+      "node_id": "C057",
+      "paper_section": "6.1.1",
+      "node_role": "Assignment maps, instruments and multi-time process objects are later quantum specializations.",
+      "integration_status": "LATER_QUANTUM_SPECIALIZATION_NOT_UNIVERSAL_CLAIM",
+      "specialization": "OPEN_QUANTUM_SYSTEMS",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-AQFT-01",
+      "concept_title": "Weyl/GNS/modular-AQFT specialization",
+      "node_id": "C057",
+      "paper_section": "6.1.1",
+      "node_role": "Operator-algebraic and AQFT structures occur only after the provenance/response layers.",
+      "integration_status": "LATE_OPERATOR_ALGEBRAIC_SPECIALIZATION_NODEWISE_STATUS",
+      "specialization": "MODULAR_AQFT",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-AQFT-01",
+      "concept_title": "Weyl/GNS/modular-AQFT specialization",
+      "node_id": "C058",
+      "paper_section": "6.1.2",
+      "node_role": "Operator-algebraic and AQFT structures occur only after the provenance/response layers.",
+      "integration_status": "LATE_OPERATOR_ALGEBRAIC_SPECIALIZATION_NODEWISE_STATUS",
+      "specialization": "MODULAR_AQFT",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-AQFT-01",
+      "concept_title": "Weyl/GNS/modular-AQFT specialization",
+      "node_id": "C059",
+      "paper_section": "6.2.1",
+      "node_role": "Operator-algebraic and AQFT structures occur only after the provenance/response layers.",
+      "integration_status": "LATE_OPERATOR_ALGEBRAIC_SPECIALIZATION_NODEWISE_STATUS",
+      "specialization": "MODULAR_AQFT",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-AQFT-01",
+      "concept_title": "Weyl/GNS/modular-AQFT specialization",
+      "node_id": "C061",
+      "paper_section": "6.2.3",
+      "node_role": "Operator-algebraic and AQFT structures occur only after the provenance/response layers.",
+      "integration_status": "LATE_OPERATOR_ALGEBRAIC_SPECIALIZATION_NODEWISE_STATUS",
+      "specialization": "MODULAR_AQFT",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-AQFT-01",
+      "concept_title": "Weyl/GNS/modular-AQFT specialization",
+      "node_id": "M080",
+      "paper_section": "8.1.1",
+      "node_role": "Operator-algebraic and AQFT structures occur only after the provenance/response layers.",
+      "integration_status": "LATE_OPERATOR_ALGEBRAIC_SPECIALIZATION_NODEWISE_STATUS",
+      "specialization": "MODULAR_AQFT",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-AQFT-01",
+      "concept_title": "Weyl/GNS/modular-AQFT specialization",
+      "node_id": "M082",
+      "paper_section": "8.1.2",
+      "node_role": "Operator-algebraic and AQFT structures occur only after the provenance/response layers.",
+      "integration_status": "LATE_OPERATOR_ALGEBRAIC_SPECIALIZATION_NODEWISE_STATUS",
+      "specialization": "MODULAR_AQFT",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-AQFT-01",
+      "concept_title": "Weyl/GNS/modular-AQFT specialization",
+      "node_id": "M086",
+      "paper_section": "8.1.5",
+      "node_role": "Operator-algebraic and AQFT structures occur only after the provenance/response layers.",
+      "integration_status": "LATE_OPERATOR_ALGEBRAIC_SPECIALIZATION_NODEWISE_STATUS",
+      "specialization": "MODULAR_AQFT",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    },
+    {
+      "concept_id": "OPS-AQFT-01",
+      "concept_title": "Weyl/GNS/modular-AQFT specialization",
+      "node_id": "M083",
+      "paper_section": "8.2.1",
+      "node_role": "Operator-algebraic and AQFT structures occur only after the provenance/response layers.",
+      "integration_status": "LATE_OPERATOR_ALGEBRAIC_SPECIALIZATION_NODEWISE_STATUS",
+      "specialization": "MODULAR_AQFT",
+      "non_claim": "No universal empirical completeness theorem and no promotion beyond the node implementation status."
+    }
+  ]
+}

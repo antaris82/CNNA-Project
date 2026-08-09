@@ -1,0 +1,71 @@
+% Canonical node 020 · M002; current section path 1.3.5.
+% Canonical owner: M002
+\cnnaNodeHeading{020}{M002}{Birth-cut interior-domain theorem}
+\cnnaNodePlacement{1.3.5}{D2}
+Let $X_n$ be a recurrent C005 state, let $s_{n+1}$ be its C004 successor, and
+let
+\[
+ \mathcal C_n(s_{n+1})=(B_n,I_n)
+\]
+be the canonical ordered M001 cut.  M001 fixes the coordinate sets and their
+order, but it does not assign numerical entries to the four C006 blocks.
+Consequently the cut alone cannot determine whether an interior matrix is
+invertible or, equivalently for the C006 square interior system, whether
+\[
+ K_{II}X=K_{IB}
+\]
+has a unique exact fraction-value solution.
+
+M002 therefore closes the second branch of its obligation: it states the exact
+domain rather than inserting an unproved global invertibility hypothesis.
+
+% CNNA-CONTEXT-BEGIN CTX-M002-PARTIAL-DOMAIN
+This partiality is standard linear-algebraic hygiene: a Schur complement is not made total merely by notation.  Replacing the unique-solve domain with a pseudoinverse or regularization would define a different response operator and therefore a different model.
+
+% CNNA-EXTREF-BEGIN EXT-USE-M002-PARTIAL-DIRECT
+\cite[Basic Properties, pp.~17--46]{Zhang2005SchurComplement}.
+% CNNA-EXTREF-END EXT-USE-M002-PARTIAL-DIRECT
+% CNNA-CONTEXT-END CTX-M002-PARTIAL-DOMAIN
+  For
+explicit C006 block data $K$ whose dimensions agree with the M001 cut, define
+\[
+ \boxed{
+ \mathcal D_{\mathrm{M002}}
+ =\left\{(X_n,s_{n+1},K):
+ \dim K=(|B_n|,|I_n|)\ \text{and}\
+ K\in\operatorname{Dom}(\mathrm{C006})\right\}.}
+\]
+Here $K\in\operatorname{Dom}(\mathrm{C006})$ means exactly that the interior
+system has one and only one encoded solve under the C006 fraction-value equation.  No floating tolerance,
+condition-number threshold, pseudoinverse, regularization, positivity surrogate,
+or matrix convention is substituted for this predicate.
+
+The nonempty M001 boundary required by C006 is itself derived: the provenance
+root is always on the M001 causal predecessor chain, hence $|B_n|>0$.
+If $I_n=\varnothing$, C006 already gives a unique empty solve, so every block
+assignment of the matching zero-interior shape belongs to the M002 domain.
+
+For $|I_n|>0$, M001 alone cannot imply membership in the domain.  Indeed, for
+the same fixed M001 dimensions choose all non-interior blocks zero and
+$K_{IB}=0$.  With $K_{II}=I$ the unique solve is $X=0$; with $K_{II}=0$ every
+matrix $X$ solves the homogeneous system, and because both $|B_n|$ and $|I_n|$
+are positive there are at least two such solves.  Thus one and the same
+combinatorial cut admits both an admissible and a non-admissible numerical block
+assignment.  This obstruction is precisely why C007, not M001 or M002, must
+construct the actual directed operator from the C005 conductances.
+
+Python checks the exact M001 block dimensions and delegates acceptance exactly
+to the C006 fraction-value admissibility predicate.  Lean enforces the same dimensions
+in the type of \texttt{BirthCutBlocks}, proves the M001 boundary nonempty,
+defines \texttt{InExactDomain} to be exactly C006 admissibility, proves the
+zero-interior case, and transports domain membership to existence and uniqueness of the exact C006 response value modulo raw-fraction normalization.  The two languages therefore agree on the same exact
+partial domain; the Python contrast witness is additional executable evidence
+for the cut-only obstruction, not a different definition.
+
+\paragraph*{Verified closure and limits.}
+The theorem fixes the exact handoff rather than claiming universal
+invertibility.  Boundary nonemptiness follows from the root port; zero
+interior is unconditionally admissible; nonempty interiors require the stated
+C006 unique-solve predicate.  The Python contrast witness demonstrates that
+identical M001 dimensions can support both admissible and inadmissible block
+entries.

@@ -1,0 +1,160 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "A001",
+  "paper_section": "1.2.2",
+  "contract": {
+    "statement": "Genesis seed ★ is a singleton technical bootstrap token with no payload and no free information.",
+    "ownership_boundary": [
+      "supplies only an explicit bootstrap token to C013",
+      "does not assert seed-neutrality; T001 owns that theorem"
+    ]
+  },
+  "cross_layer": {
+    "equivalence": "Python zero-payload GenesisSeed and Lean one-constructor GenesisSeed encode the same singleton token.",
+    "semantic_mismatch_known": false
+  },
+  "evidence": {
+    "audit_tier": "A",
+    "python": {
+      "status": "PASS_REPRODUCED",
+      "node_tests": 2
+    },
+    "lean": {
+      "status": "PASS_EXACT_LOCAL_BUILD",
+      "source_sha256": "ae9479e9e13569e1ce408cdf99cfad2590c231dc4de14db18e96d8a3d6593614",
+      "toolchain": "Lean 4.31.0 (project pin)",
+      "policy_scan_matches": 0,
+      "exact_hash_built": true,
+      "verification_origin": "user_local_build_of_delivered_current_artifact"
+    }
+  },
+  "artifacts": {
+    "python_source": "97dcd5fe4cad561702688d43d4de58e87cb870ce99245c13f9a96a10609c6d79",
+    "python_test": "c21e0e5db3730756bec06ba0cf9500362d016d724d8a041a5dd1eab998c1d22f",
+    "lean_source": "ae9479e9e13569e1ce408cdf99cfad2590c231dc4de14db18e96d8a3d6593614",
+    "math_prose": "fc998fa13589da9c55b3cdf97bda4bef9b7eff4d9447a832457ddb35408e0cf6",
+    "supplement_documentation": "566e88e0335f7083e99e7c60784af5d25e717f10ca01127b988ee6ab8fd5f884"
+  },
+  "workflow": {
+    "node_semantics": "CLOSED_AUXILIARY_SINGLETON",
+    "documentation": "COMPLETE_V2",
+    "freeze_state": "FROZEN_VERIFIED",
+    "frozen_under_gate_version": "cnna-per-node-freeze-v5",
+    "documentation_v2": "COMPLETE_V2"
+  },
+  "node_number": "009",
+  "derivation_rank": 5,
+  "derivation_order": 9,
+  "section_hierarchy": {
+    "section_path": "1.2.2",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Bootstrap of the first provenance relation",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/009_A001__genesis_seed",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/009_A001__genesis_seed",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/009_A001__genesis_seed/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/009_A001__genesis_seed/DOCUMENTATION.md",
+    "introduction_reason": "Payload-free singleton token introduced only at bootstrap section 1.2.2."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D0",
+    "tier_name": "Atomic input or definitional node",
+    "tier_assignment_rule": "EXPLICIT_ATOMIC_OR_DEFINITIONAL_OVERRIDE",
+    "main_paper_depth": "COMPACT_DEFINITION",
+    "supplement_depth": "TRACEABLE_DEFINITION",
+    "required_sections": [
+      "position_in_derivation",
+      "definition_or_statement",
+      "introduction_reason",
+      "construction_or_encoding",
+      "boundary_case_or_countercheck",
+      "result",
+      "downstream_handoff",
+      "code_anchors"
+    ],
+    "countercheck_requirement": "ONE_DEFINITIONAL_BOUNDARY_OR_TYPE_REJECTION",
+    "countercheck_status": "PASS",
+    "v2_state": "COMPLETE_V2",
+    "python_anchor_status": "RESOLVED",
+    "lean_anchor_status": "RESOLVED",
+    "code_anchors": [
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s02_bootstrap_of_the_first_relation/s02_a001__genesis_seed_star.py",
+        "symbol": "GenesisSeed",
+        "declaration_kind": "CLASS",
+        "start_line": 14,
+        "end_line": 15,
+        "source_sha256": "3cdeb86555d9ed8468a0b1a0d27d0922fe4a6694458648312c0bd20934614f5f",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s02_bootstrap_of_the_first_relation/test_s02_a001__genesis_seed_star.py",
+        "symbol": "TestGenesisSeed",
+        "declaration_kind": "CLASS",
+        "start_line": 13,
+        "end_line": 24,
+        "source_sha256": "7f36399821677bd576ae63796e554cdfc987b846c49dd48a496feed940eca7e9",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S02_A001_GenesisSeedStar.lean",
+        "symbol": "GenesisSeed",
+        "declaration_kind": "INDUCTIVE",
+        "start_line": 12,
+        "end_line": 17,
+        "source_sha256": "955dc9eafbdeea80ad1eabf998a0dcf576bfa632d2ae5e7a9e77ccb467cfb0d0",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S02_A001_GenesisSeedStar.lean",
+        "symbol": "canonical",
+        "declaration_kind": "DEF",
+        "start_line": 18,
+        "end_line": 20,
+        "source_sha256": "955dc9eafbdeea80ad1eabf998a0dcf576bfa632d2ae5e7a9e77ccb467cfb0d0",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S02_A001_GenesisSeedStar.lean",
+        "symbol": "eqCanonical",
+        "declaration_kind": "THEOREM",
+        "start_line": 21,
+        "end_line": 27,
+        "source_sha256": "955dc9eafbdeea80ad1eabf998a0dcf576bfa632d2ae5e7a9e77ccb467cfb0d0",
+        "resolution": "RESOLVED"
+      }
+    ],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false,
+    "completion_evidence": {
+      "main_artifact": "derivation/paper/main/sections/01_primitive_response_coupled_finite_provenance/02_bootstrap_of_the_first_relation/009_A001__genesis_seed/SECTION.tex",
+      "supplement_artifact": "derivation/supplement/sections/01_primitive_response_coupled_finite_provenance/02_bootstrap_of_the_first_relation/009_A001__genesis_seed/DOCUMENTATION.md",
+      "main_sha256": "fc998fa13589da9c55b3cdf97bda4bef9b7eff4d9447a832457ddb35408e0cf6",
+      "supplement_sha256": "566e88e0335f7083e99e7c60784af5d25e717f10ca01127b988ee6ab8fd5f884",
+      "code_anchor_count": 5,
+      "source_code_changed": false,
+      "documentation_complete": true,
+      "required_sections_present": true,
+      "countercheck_present": true,
+      "code_anchors_resolved": true,
+      "completed_on": "2026-08-04"
+    }
+  },
+  "canonical_identity": {
+    "node_number": "009",
+    "semantic_id": "A001",
+    "canonical_node_label": "009 · A001",
+    "stable_node_directory_name": "009_A001__genesis_seed",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  }
+}

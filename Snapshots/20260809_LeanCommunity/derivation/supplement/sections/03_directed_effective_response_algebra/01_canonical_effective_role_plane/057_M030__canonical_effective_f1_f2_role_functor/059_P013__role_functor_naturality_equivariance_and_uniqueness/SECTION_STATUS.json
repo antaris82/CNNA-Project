@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "059",
+  "canonical_node_label": "059 \u00b7 P013",
+  "stable_node_directory_name": "059_P013__role_functor_naturality_equivariance_and_uniqueness",
+  "id": "P013",
+  "section_path": "3.1.1.2",
+  "derivation_order": 59,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

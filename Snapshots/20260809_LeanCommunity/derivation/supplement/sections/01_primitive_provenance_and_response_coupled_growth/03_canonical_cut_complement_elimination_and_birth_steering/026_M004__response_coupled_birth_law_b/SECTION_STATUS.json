@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "026",
+  "canonical_node_label": "026 \u00b7 M004",
+  "stable_node_directory_name": "026_M004__response_coupled_birth_law_b",
+  "id": "M004",
+  "section_path": "1.3.10",
+  "derivation_order": 26,
+  "main_documentation": "DOCUMENTED",
+  "supplement_documentation": "DOCUMENTED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "139",
+  "canonical_node_label": "139 \u00b7 P055",
+  "stable_node_directory_name": "139_P055__covariance_automorphism_group",
+  "id": "P055",
+  "section_path": "8.2.1.1",
+  "derivation_order": 139,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

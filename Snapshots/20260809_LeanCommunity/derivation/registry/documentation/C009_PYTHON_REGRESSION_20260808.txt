@@ -1,0 +1,19 @@
+CNNA C009 PYTHON REGRESSION EVIDENCE — 2026-08-08
+
+Command:
+  PYTHONDONTWRITEBYTECODE=1 pytest -q -p no:cacheprovider
+
+Result:
+  117 passed, 1086 subtests passed in 8.10s
+
+C009 scope exercised:
+- deterministic raw codomain assembly
+- inherited canonical schedule
+- bornNonRoot append of the canonical selected child
+- C016 record projection
+- C017 live projection
+- rejection of incoherent pre-step live/state channels
+- finite small-instance realization countercheck only
+
+TRUST GUARD:
+FINITE_REGRESSION_EVIDENCE_ONLY. This file is not a universal proof that the C009 output satisfies the full C005 ResponseCapableState schema. That closure is owned by T002. If T002 exposes a missing C004/C005/M004/C016/C017 closure, it must be repaired at its semantic origin, not hidden in C009.

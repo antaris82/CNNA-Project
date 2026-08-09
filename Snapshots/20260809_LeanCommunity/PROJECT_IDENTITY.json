@@ -1,0 +1,25 @@
+{
+  "schema": "cnna.project-identity.v1",
+  "project_name": "CNNA (ComplemeNt Net Architecture) — From Primitive Provenance to Mathematical Structure",
+  "paper_title": "From Primitive Provenance to Mathematical Structure: A Response-Coupled Derivation on a Growing b-ary Tree",
+  "main_title": "From Primitive Provenance to Mathematical Structure",
+  "subtitle": "A Response-Coupled Derivation on a Growing b-ary Tree",
+  "framework": "Generalized Open Provenance Systems",
+  "current_formal_specialization": "Deterministic finite response-coupled provenance growth on a bounded b-ary address grammar",
+  "specialization_order": [
+    "finite directed Schur/DtN response",
+    "record/live open dynamics",
+    "projective nested channels",
+    "finite provenance-derived POVM migration",
+    "open quantum systems specialization",
+    "Weyl/GNS/Araki–Woods specialization",
+    "modular/AQFT specialization"
+  ],
+  "namespace_stability": "The Lean and Python namespaces remain CNNA; this is a scientific-title and conceptual-scope update, not an API rename.",
+  "status_guard": "The universal open-provenance statement is a research hypothesis. Only nodewise claims carrying their existing evidence status are asserted as proved.",
+  "acronym": "CNNA",
+  "acronym_expansion": "ComplemeNt Net Architecture",
+  "architectural_identity": "CNNA is the throughgoing architecture in which one historically grown provenance net is repeatedly resolved into a realized or retained part, a cut- or stage-relative complement, and an interface through which effective response and the next birth are determined.",
+  "origin_of_architecture": "The architecture begins with the transition from the empty carrier to the first realized node, becomes structurally explicit when the b-ary grammar distinguishes the born prefix from open continuation slots, and becomes a nontrivial response-capable net with the first non-root birth and its directed relation.",
+  "complement_guard": "Complement is relational and cut-, scale-, or projection-relative; it is not an intrinsic permanent partner assigned to each node."
+}

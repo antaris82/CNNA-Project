@@ -1,0 +1,59 @@
+{
+  "schema": "cnna.c008-kernel-build-evidence.v1",
+  "status": "PASS",
+  "date": "2026-08-08",
+  "origin": "USER_LOCAL_LEAN_BUILD",
+  "build_command": "./audit/run_package_boundary_audit.sh --build",
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "mathlib": "v4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "transcript": "derivation/code/lean/audit/evidence/USER_LOCAL_C008_FULL_BUILD_20260808.txt",
+  "transcript_sha256": "f709a754198efd33915c9953e6efba6b09e17b3defabe3260c2f3c78fb63e3fa",
+  "core_build_jobs": 27,
+  "default_proof_build_jobs": 8599,
+  "c008_module_build_jobs": 8597,
+  "proof_modules": 19,
+  "c008_audited_declarations": 7,
+  "total_audited_declarations": 166,
+  "source_warnings": 0,
+  "c008_current_proof_axiom_audit": "PASS",
+  "full_package_boundary_audit": "PASS",
+  "c008_axiom_profile_counts": {
+    "choice_propext_quot": 4,
+    "propext_quot_only": 3,
+    "axiom_free": 0
+  },
+  "transitive_axioms_observed": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "direct_project_axioms": 0,
+  "sorry_count": 0,
+  "verified_source_sha256": {
+    "core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S01_C008_RecordLiveResponseCoupledUpdate.lean": "d83db1f0ede5c71c8114442775aed96731a8e883b2770e54d0e322edf09faebc",
+    "proofs/src/CNNAProofs/C008.lean": "a3b50281fcd43e1174ef95caa45d1b11239af9a310e70201c6b554b743d19ea8",
+    "proofs/src/CNNAProofs/C008/S01_CanonicalRecordLiveUpdateClosure.lean": "7a54570bb683a183d2c49cf70c8c9e2eb79a21dfb9c9e75e17c850a5aa63fc31",
+    "audit/C008_CurrentProofAxiomAudit.lean": "d2938a49587099e28451ee843fae24106072d39e29d6c937db9fa31ad284a161"
+  },
+  "verified_artifacts": {
+    "core_olean": true,
+    "proofs_olean": true,
+    "proof_manifest": true,
+    "c008_record_live_update_olean": true
+  },
+  "retained_verified_p001_source_hash_match": true,
+  "retained_verified_m003_m004_source_hash_match": true,
+  "retained_verified_p002_source_hash_match": true,
+  "public_declarations": [
+    "CNNA.Derivation.S01_PrimitiveResponseCoupledFiniteProvenance.S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure.RecordLiveResponseCoupledUpdate.applyInstruction_respects_sameValue",
+    "CNNA.Derivation.S01_PrimitiveResponseCoupledFiniteProvenance.S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure.RecordLiveResponseCoupledUpdate.RecordLiveResponseCoupledUpdateContract",
+    "CNNA.Derivation.S01_PrimitiveResponseCoupledFiniteProvenance.S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure.RecordLiveResponseCoupledUpdate.recordLiveResponseCoupledUpdateContract",
+    "CNNAProofs.C008.CanonicalRecordLiveUpdateClosure",
+    "CNNAProofs.C008.canonicalRecordLiveUpdateClosure",
+    "CNNAProofs.C008.CanonicalRecordLiveUpdateContract",
+    "CNNAProofs.C008.canonicalRecordLiveUpdateContract"
+  ],
+  "proof_source": "proofs/src/CNNAProofs/C008/S01_CanonicalRecordLiveUpdateClosure.lean",
+  "core_source": "core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S01_C008_RecordLiveResponseCoupledUpdate.lean"
+}

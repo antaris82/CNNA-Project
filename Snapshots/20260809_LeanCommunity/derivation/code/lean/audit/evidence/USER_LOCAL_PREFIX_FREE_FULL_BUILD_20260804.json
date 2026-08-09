@@ -1,0 +1,13 @@
+{
+  "schema": "cnna.external-user-build-evidence.v1",
+  "date": "2026-08-04",
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "core_build_jobs": 26,
+  "proof_build_jobs": 8587,
+  "p001_declarations_audited": 63,
+  "p001_axiom_audit": "PASS",
+  "full_package_boundary_audit": "PASS",
+  "transcript": "derivation/code/lean/audit/evidence/USER_LOCAL_PREFIX_FREE_FULL_BUILD_20260804.txt",
+  "transcript_sha256": "61991521527cca32b3ebe78e4fe80ae07651f8c961250c5b123bb1b1544e9c70",
+  "interpretation": "The initial pre-build audit in the transcript correctly reported no current build evidence and retained_verified_s08_source_hash_match=false. The later build and final audit in the same transcript establish the prefix-free source build. The package's promoted PACKAGE_BOUNDARY_AUDIT.json is authoritative for the post-promotion exact-source match."
+}

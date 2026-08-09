@@ -1,0 +1,209 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "M005",
+  "paper_section": "1.2.6",
+  "contract": {
+    "statement": "N001's fixed Cstar=1 is the canonical representative of a positive rational unit-equivalence class; every common positive rational rescaling preserves normalized response, so the conductance unit is not a third model input.",
+    "ownership_boundary": [
+      "certifies N001 as a normalization choice",
+      "does not define the downstream response-steering functional M003"
+    ]
+  },
+  "cross_layer": {
+    "equivalence": "Python uses exact Fraction arithmetic over positive rational scales; Lean uses Core Rat over the same scalar domain and proves the equivalent cross-product invariant plus the explicit N001-canonical-representative theorem.",
+    "semantic_mismatch_known": false
+  },
+  "evidence": {
+    "audit_tier": "A",
+    "python": {
+      "status": "PASS_REPRODUCED",
+      "node_tests": 1
+    },
+    "lean": {
+      "status": "PASS_EXACT_LOCAL_BUILD",
+      "source_sha256": "d2cf7472069e4ab591152db8b37c9c5c731bcb7a6d22881c6a9eb116bbda1896",
+      "toolchain": "Lean 4.31.0 (project pin)",
+      "policy_scan_matches": 0,
+      "exact_hash_built": true,
+      "verification_origin": "user_local_build_of_delivered_current_artifact"
+    }
+  },
+  "artifacts": {
+    "python_source": "cb6046b36d2d768f5d338d9b19c17fbc5e524e52bd8ce0f43ad8e9b4c7045c3f",
+    "python_test": "805b03446eff1d922ad5c36b590fda0dbc246fb70721c64e942acd3a65edbf7e",
+    "lean_source": "d2cf7472069e4ab591152db8b37c9c5c731bcb7a6d22881c6a9eb116bbda1896",
+    "math_prose": "d2882d9b9058715d076f246fc307f848f4ec1fc56794efcd6e36923e2db7ae0e",
+    "supplement_documentation": "0ea14fc1d0698c69dae16e4f1d06e8733ef2bd97a3c3ac829c7a5ec25cf54798"
+  },
+  "workflow": {
+    "node_semantics": "CLOSED_CONDUCTANCE_UNIT_NORMALIZATION_INDEPENDENCE",
+    "documentation": "COMPLETE_V2",
+    "freeze_state": "FROZEN_VERIFIED",
+    "frozen_under_gate_version": "cnna-per-node-freeze-v5",
+    "documentation_v2": "COMPLETE_V2"
+  },
+  "node_number": "013",
+  "derivation_rank": 8,
+  "derivation_order": 13,
+  "section_hierarchy": {
+    "section_path": "1.2.6",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Bootstrap of the first provenance relation",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/013_M005__conductance_unit_normalization_independence",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/013_M005__conductance_unit_normalization_independence",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/013_M005__conductance_unit_normalization_independence/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/013_M005__conductance_unit_normalization_independence/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after N001; registered hard handoff(s): requires_unit_independence."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D2",
+    "tier_name": "Load-bearing theorem, proof owner, obstruction, or quarantine gate",
+    "tier_assignment_rule": "PROOF_THEOREM_OWNER_OBSTRUCTION_OR_QUARANTINE_ROLE",
+    "main_paper_depth": "THEOREM_AND_PROOF_OVERVIEW",
+    "supplement_depth": "FULL_PROOF_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "formal_statement",
+      "hypotheses",
+      "introduction_reason",
+      "proof_strategy",
+      "lemma_chain",
+      "formal_realization",
+      "counterexamples_or_necessity_checks",
+      "axiom_profile",
+      "result",
+      "remaining_limits",
+      "downstream_handoff",
+      "code_line_register"
+    ],
+    "countercheck_requirement": "NEGATIVE_CONTROL_COUNTEREXAMPLE_OR_HYPOTHESIS_NECESSITY",
+    "countercheck_status": "PASS",
+    "v2_state": "COMPLETE_V2",
+    "python_anchor_status": "RESOLVED",
+    "lean_anchor_status": "RESOLVED",
+    "code_anchors": [
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s02_bootstrap_of_the_first_relation/s06_m005__conductance_unit_normalization_independence.py",
+        "symbol": "normalized_response",
+        "declaration_kind": "FUNCTION",
+        "start_line": 19,
+        "end_line": 24,
+        "source_sha256": "ba2e0d83204355d034d00d155442d024a8d700a91eebe92a6d55d8761bea73ba",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s02_bootstrap_of_the_first_relation/s06_m005__conductance_unit_normalization_independence.py",
+        "symbol": "n001_normalized_response",
+        "declaration_kind": "FUNCTION",
+        "start_line": 27,
+        "end_line": 32,
+        "source_sha256": "ba2e0d83204355d034d00d155442d024a8d700a91eebe92a6d55d8761bea73ba",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s02_bootstrap_of_the_first_relation/s06_m005__conductance_unit_normalization_independence.py",
+        "symbol": "common_positive_rescaling_preserves_normalized_response",
+        "declaration_kind": "FUNCTION",
+        "start_line": 35,
+        "end_line": 46,
+        "source_sha256": "ba2e0d83204355d034d00d155442d024a8d700a91eebe92a6d55d8761bea73ba",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s02_bootstrap_of_the_first_relation/test_s06_m005__conductance_unit_normalization_independence.py",
+        "symbol": "TestConductanceUnitNormalizationIndependence",
+        "declaration_kind": "CLASS",
+        "start_line": 14,
+        "end_line": 25,
+        "source_sha256": "b0da8ba116abef2a971d43861c476f0fa31d7e84bf7eaac238adf6202cc8d0aa",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S06_M005_ConductanceUnitNormalizationIndependence.lean",
+        "symbol": "SameNormalizedResponse",
+        "declaration_kind": "DEF",
+        "start_line": 19,
+        "end_line": 23,
+        "source_sha256": "fbb6b498f04c04acf21ab84c55f1ac32093bac845a08a6daae69d20f5820e221",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S06_M005_ConductanceUnitNormalizationIndependence.lean",
+        "symbol": "n001ConductanceUnit",
+        "declaration_kind": "DEF",
+        "start_line": 24,
+        "end_line": 27,
+        "source_sha256": "fbb6b498f04c04acf21ab84c55f1ac32093bac845a08a6daae69d20f5820e221",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S06_M005_ConductanceUnitNormalizationIndependence.lean",
+        "symbol": "n001ConductanceUnit_eq_one",
+        "declaration_kind": "THEOREM",
+        "start_line": 28,
+        "end_line": 38,
+        "source_sha256": "fbb6b498f04c04acf21ab84c55f1ac32093bac845a08a6daae69d20f5820e221",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S06_M005_ConductanceUnitNormalizationIndependence.lean",
+        "symbol": "commonPositiveRescalingPreservesNormalizedResponse",
+        "declaration_kind": "THEOREM",
+        "start_line": 39,
+        "end_line": 55,
+        "source_sha256": "fbb6b498f04c04acf21ab84c55f1ac32093bac845a08a6daae69d20f5820e221",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S06_M005_ConductanceUnitNormalizationIndependence.lean",
+        "symbol": "n001CanonicalRepresentativeForPositiveUnit",
+        "declaration_kind": "THEOREM",
+        "start_line": 56,
+        "end_line": 73,
+        "source_sha256": "fbb6b498f04c04acf21ab84c55f1ac32093bac845a08a6daae69d20f5820e221",
+        "resolution": "RESOLVED"
+      }
+    ],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false,
+    "completion_evidence": {
+      "main_artifact": "derivation/paper/main/sections/01_primitive_response_coupled_finite_provenance/02_bootstrap_of_the_first_relation/013_M005__conductance_unit_normalization_independence/SECTION.tex",
+      "supplement_artifact": "derivation/supplement/sections/01_primitive_response_coupled_finite_provenance/02_bootstrap_of_the_first_relation/013_M005__conductance_unit_normalization_independence/DOCUMENTATION.md",
+      "main_sha256": "d2882d9b9058715d076f246fc307f848f4ec1fc56794efcd6e36923e2db7ae0e",
+      "supplement_sha256": "0ea14fc1d0698c69dae16e4f1d06e8733ef2bd97a3c3ac829c7a5ec25cf54798",
+      "code_anchor_count": 9,
+      "source_code_changed": false,
+      "documentation_complete": true,
+      "required_sections_present": true,
+      "countercheck_present": true,
+      "code_anchors_resolved": true,
+      "completed_on": "2026-08-04"
+    }
+  },
+  "canonical_identity": {
+    "node_number": "013",
+    "semantic_id": "M005",
+    "canonical_node_label": "013 · M005",
+    "stable_node_directory_name": "013_M005__conductance_unit_normalization_independence",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  }
+}

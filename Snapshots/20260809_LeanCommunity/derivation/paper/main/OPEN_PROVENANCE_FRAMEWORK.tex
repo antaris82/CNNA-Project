@@ -1,0 +1,57 @@
+% Current conceptual scope; the status distinctions in this section are normative.
+\section*{Conceptual scope: generalized open provenance systems}
+\addcontentsline{toc}{section}{Conceptual scope: generalized open provenance systems}
+
+The project is organized around the following research hypothesis.  An empirically open system may admit a \emph{provenance-complete} extension in which its dynamically relevant history is represented as part of the real state, the observed subsystem is selected by a cut, and its effective response is obtained by eliminating or compressing the complementary degrees of freedom.  In schematic form,
+\[
+  \mathfrak P_n=(\Gamma_n,\mathsf{Rec}_n,\mathsf{Live}_n,\mathcal K_n,\mathcal C_n,\mathcal O_n),
+\]
+where $\Gamma_n$ is an event-provenance DAG, $\mathsf{Rec}_n$ is immutable birth data, $\mathsf{Live}_n$ is the current response-bearing state, $\mathcal C_n$ is a cut, and $\mathcal O_n$ is an observation or coarse-graining channel.  This is a \emph{programmatic hypothesis}, not a theorem that every empirical open system possesses such a completion.
+
+\begin{cnnaInfoBox}{Formal status of the generalization}
+The current DAG proves only its registered finite CNNA specialization.  The weak generalized hypothesis permits intrinsically stochastic provenance-complete dynamics.  The stronger deterministic hypothesis claims that all apparent stochasticity is produced by partial observation, unresolved provenance, a cut-relative complement, coarse graining, or uncontrolled intervention.  The stronger statement is not established by the present DAG.
+\end{cnnaInfoBox}
+
+For a retained region $B_n\subseteq V_n$, the complement $I_{B_n}=V_n\setminus B_n$ is interpreted as the environment relative to that cut.  In the present finite directed-linear specialization, complement elimination is the exact unique-solve Schur/DtN operation
+\[
+  \Lambda_{B_n}=K_{BB}-K_{BI}X,\qquad K_{II}X=K_{IB}.
+\]
+This response reduction must not be identified with a quantum partial trace, a conditional expectation, or a stochastic marginalization.  Those are mathematically different reductions that may instantiate the same abstract open-provenance role only after their own hypotheses are supplied.
+
+The response-coupled CNNA update has the derived order
+\[
+\begin{aligned}
+  \text{provenance state}&\longrightarrow\text{canonical cut}
+  \longrightarrow\text{effective response}\\
+  &\longrightarrow\text{steering}
+  \longrightarrow\text{birth instruction}
+  \longrightarrow\text{record/live update}.
+\end{aligned}
+\]
+Later sections test the coherence of nested cuts, projective carriers, refinement maps, and cocycles.  A finite response-derived POVM exists in the retained Legacy construction, but its migration into the derived-only DAG remains an explicit future proof chain: \[
+\begin{aligned}
+  \text{positive compressed response state}
+  &\longrightarrow \text{frame effects}
+  \longrightarrow \text{POVM completeness}\\
+  &\longrightarrow \text{Born evaluation}
+  \longrightarrow \text{projective coarse graining}.
+\end{aligned}
+\]  No current node is relabelled as having proved a quantum instrument or an open-system limit.
+
+Initial system--environment correlations show why a reduced state alone need not determine a universal completely positive reduced map.
+% CNNA-EXTREF-BEGIN EXT-USE-OPS-PECHUKAS-MAIN
+\cite[principal result]{Pechukas1994ReducedDynamics}.
+% CNNA-EXTREF-END EXT-USE-OPS-PECHUKAS-MAIN
+Operational multi-time memory is naturally represented by a process object rather than by isolated one-step channels.
+% CNNA-EXTREF-BEGIN EXT-USE-OPS-POLLOCK-MAIN
+\cite[Abstract and process-tensor construction]{Pollock2018NonMarkovianProcesses}.
+% CNNA-EXTREF-END EXT-USE-OPS-POLLOCK-MAIN
+Quantum instruments separate outcome probabilities from outcome-conditioned state updates,
+% CNNA-EXTREF-BEGIN EXT-USE-OPS-DAVIESLEWIS-MAIN
+\cite[operational instrument framework]{DaviesLewis1970OperationalQuantumProbability}.
+% CNNA-EXTREF-END EXT-USE-OPS-DAVIESLEWIS-MAIN
+while quantum networks and combs provide a later specialization of causally composable multi-step processes.
+% CNNA-EXTREF-BEGIN EXT-USE-OPS-CHIRIBELLA-MAIN
+\cite[quantum-network and comb framework]{Chiribella2009QuantumNetworks}.
+% CNNA-EXTREF-END EXT-USE-OPS-CHIRIBELLA-MAIN
+These sources motivate the specialization map; none is imported as an axiom of the finite CNNA proofs.

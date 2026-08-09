@@ -1,0 +1,70 @@
+% Canonical node 013 · M005; current section path 1.2.6.
+% Canonical owner: M005
+\cnnaNodeHeading{013}{M005}{Conductance-unit normalization independence}
+\cnnaNodePlacement{1.2.6}{D2}
+
+\paragraph*{Formal statement.}
+N001 chooses $C_\star=1$ as the canonical bootstrap unit.  M005 defines equality
+of normalized scalar responses without division by
+\begin{equation}
+  (R,C)\sim(R',C')
+  \quad\Longleftrightarrow\quad
+  RC'=R'C.
+  \label{eq:m005-cross-product}
+\end{equation}
+For every rational scale $\lambda>0$,
+\begin{equation}
+  (R,C)\sim(\lambda R,\lambda C),
+  \label{eq:m005-rescaling}
+\end{equation}
+and for every positive rational unit $u$ and normalized value $x$,
+\begin{equation}
+  (x,1)\sim(ux,u).
+  \label{eq:m005-canonical-representative}
+\end{equation}
+
+\paragraph*{Proof strategy and interpretation.}
+Equation~\eqref{eq:m005-rescaling} is the associativity and commutativity identity
+$R(\lambda C)=(\lambda R)C$.  Positivity is not needed for that algebraic
+identity; it identifies the rescaling as an admissible change of a positive
+conductance unit.
+% CNNA-EXTREF-BEGIN EXT-USE-M005-SCALING-DIRECT
+\cite[Electrical network preliminaries]{DoyleSnell1984ElectricNetworks}.
+% CNNA-EXTREF-END EXT-USE-M005-SCALING-DIRECT
+Python evaluates the corresponding quotient exactly with
+\texttt{Fraction} and rejects nonpositive units and scales.  Lean uses
+\texttt{Rat} and the cross-product relation, avoiding division and all
+regularization.
+
+\paragraph*{Necessity checks.}
+Scaling only $R$ or only $C$ generally changes the normalized value.  A zero
+scale satisfies the bare cross-product identity but cannot represent a unit,
+and a negative scale violates the positive-conductance convention even though
+it preserves an algebraic ratio.  These distinctions prevent the theorem from
+being misread as an unrestricted gauge symmetry.
+
+% CNNA-INFOBOX-BEGIN INFO-M005-SCALE-ORBIT
+\begin{cnnaInfoBox}{Positive scaling classes, not a gauge field}
+The positive pairs $(R,C)$ and $(\lambda R,\lambda C)$ lie on one orbit of the
+multiplicative action of $\mathbb Q_{>0}$, and $R/C$ is constant on that orbit.
+Choosing $C_\star=1$ selects a convenient representative.
+% CNNA-EXTREF-BEGIN EXT-USE-M005-SCALE-INFOBOX
+\cite[Sec.~I, current-balance and reduced conductance equations]{DoerflerBullo2013KronReduction}.
+% CNNA-EXTREF-END EXT-USE-M005-SCALE-INFOBOX
+No local gauge
+group, gauge connection, edge-dependent rescaling symmetry or dynamical gauge
+field is introduced at this node.
+\end{cnnaInfoBox}
+% CNNA-INFOBOX-END INFO-M005-SCALE-ORBIT
+
+\paragraph*{Result, limits and handoff.}
+M005 proves that the fixed N001 numeral is a unit representative rather than a
+third physical input.  The theorem is scalar and rational and makes no claim of
+homogeneity for the full Schur/DtN map.  Verified edge \texttt{E013} certifies
+C014.  Verified edge \texttt{E068} supplies the fixed representative
+$C_\star=1$ consumed by M003 after the C015 identity transform.
+
+\noindent\textbf{Primary code anchors.}
+Python exact quotient and rescaling checks: lines 19--46; test: lines 14--25.
+Lean cross-product relation, N001 rational lift and two rescaling theorems:
+lines 19--73.  The Supplement lists all nine anchors and exact hashes.

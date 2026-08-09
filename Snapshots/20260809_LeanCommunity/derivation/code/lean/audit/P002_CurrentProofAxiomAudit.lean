@@ -1,0 +1,8 @@
+import CNNAProofsP002
+
+#print axioms CNNAProofs.P002.CanonicalScheduleStrictTotalOrderClosure
+#print axioms CNNAProofs.P002.canonicalScheduleStrictTotalOrderClosure
+#print axioms CNNAProofs.P002.IsMinimalSelectedChild
+#print axioms CNNAProofs.P002.minimalSelectedChild_unique
+#print axioms CNNAProofs.P002.CanonicalScheduleStrictTotalOrderContract
+#print axioms CNNAProofs.P002.canonicalScheduleStrictTotalOrderContract

@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "086",
+  "canonical_node_label": "086 \u00b7 C050",
+  "stable_node_directory_name": "086_C050__finite_support_raw_presymplectic_carrier_v_fin_raw",
+  "id": "C050",
+  "section_path": "5.1.1",
+  "derivation_order": 86,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

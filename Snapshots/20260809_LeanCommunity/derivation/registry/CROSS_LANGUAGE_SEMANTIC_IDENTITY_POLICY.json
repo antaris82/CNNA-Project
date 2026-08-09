@@ -1,0 +1,28 @@
+{
+  "schema": "cnna.cross_language_semantic_identity.v1",
+  "scope": "all not-yet-frozen SOLL nodes; prospective for future nodes",
+  "core_rule": "Python and Lean may be asymmetric/complementary implementations but must identify the same mathematical object.",
+  "required_locks": [
+    "domain",
+    "object",
+    "boundary_cases",
+    "ordering_or_basis",
+    "canonicity_or_equivalence",
+    "exactness",
+    "partiality",
+    "limit_or_completion_when_applicable",
+    "theorem_claim_when_applicable",
+    "obstruction_boundary_when_applicable",
+    "control_isolation_when_applicable"
+  ],
+  "forbid_language_specific_scientific_nodes": true,
+  "allow_language_specific_helpers_inside_owner_node": true,
+  "audit_table": "derivation/registry/derived/CROSS_LANGUAGE_SEMANTIC_AUDIT.tsv",
+  "ledger_is_persistent": true,
+  "freeze_required_cross_layer_fields": {
+    "semantic_identity_verified": true,
+    "identity_kind": "nonempty",
+    "identity_evidence": "nonempty",
+    "semantic_mismatch_known": false
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "C033",
+  "paper_section": "3.3.1",
+  "contract": {
+    "statement": "Construct the finite response-generated algebra and its exact closure criterion from admitted response/support generators; numerical tolerance is evidence machinery, not the mathematical definition."
+  },
+  "workflow": {
+    "node_semantics": "CORE_BLOCKED",
+    "documentation": "NOT_STARTED",
+    "freeze_state": "NOT_STARTED",
+    "frozen_under_gate_version": null,
+    "documentation_v2": "NOT_STARTED"
+  },
+  "dependencies": [
+    "C032",
+    "C025"
+  ],
+  "node_number": "062",
+  "derivation_rank": 34,
+  "derivation_order": 62,
+  "section_hierarchy": {
+    "section_path": "3.3.1",
+    "root_title": "Directed effective response algebra",
+    "group_title": "Response-generated algebraic closure",
+    "main_directory": "derivation/paper/main/sections/03_directed_effective_response_algebra/03_response_generated_algebraic_closure/062_C033__response_generated_finite_algebraic_closure",
+    "supplement_directory": "derivation/supplement/sections/03_directed_effective_response_algebra/03_response_generated_algebraic_closure/062_C033__response_generated_finite_algebraic_closure",
+    "main_artifact": "derivation/paper/main/sections/03_directed_effective_response_algebra/03_response_generated_algebraic_closure/062_C033__response_generated_finite_algebraic_closure/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/03_directed_effective_response_algebra/03_response_generated_algebraic_closure/062_C033__response_generated_finite_algebraic_closure/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C032, C025; registered hard handoff(s): supplies_operator_generators_and_support, supplies_response_generators."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D2",
+    "tier_name": "Load-bearing theorem, proof owner, obstruction, or quarantine gate",
+    "tier_assignment_rule": "PROOF_THEOREM_OWNER_OBSTRUCTION_OR_QUARANTINE_ROLE",
+    "main_paper_depth": "THEOREM_AND_PROOF_OVERVIEW",
+    "supplement_depth": "FULL_PROOF_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "formal_statement",
+      "hypotheses",
+      "introduction_reason",
+      "proof_strategy",
+      "lemma_chain",
+      "formal_realization",
+      "counterexamples_or_necessity_checks",
+      "axiom_profile",
+      "result",
+      "remaining_limits",
+      "downstream_handoff",
+      "code_line_register"
+    ],
+    "countercheck_requirement": "NEGATIVE_CONTROL_COUNTEREXAMPLE_OR_HYPOTHESIS_NECESSITY",
+    "countercheck_status": "NOT_STARTED",
+    "v2_state": "NOT_STARTED",
+    "python_anchor_status": "PLANNED",
+    "lean_anchor_status": "PLANNED",
+    "code_anchors": [],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false
+  },
+  "canonical_identity": {
+    "node_number": "062",
+    "semantic_id": "C033",
+    "canonical_node_label": "062 · C033",
+    "stable_node_directory_name": "062_C033__response_generated_finite_algebraic_closure",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "open_provenance_context": {
+    "framework": "GENERALIZED_OPEN_PROVENANCE_SYSTEMS",
+    "concept_ids": [
+      "OPS-QM-01"
+    ],
+    "roles": [
+      "Finite provenance-derived POVM migration"
+    ],
+    "integration_status": [
+      "LEGACY_MIGRATION_TARGET_NOT_CURRENT_THEOREM"
+    ],
+    "claim_guard": "Interpretive specialization map only. Mathematical force is exactly the node contract and its registered evidence; no universal open-system theorem is inferred."
+  }
+}

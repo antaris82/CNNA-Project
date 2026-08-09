@@ -1,0 +1,95 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "P012",
+  "paper_section": "3.1.1.1",
+  "proof_owner": "M030",
+  "contract": {
+    "statement": "Prove that the selected F1/F2 role carrier has the claimed rank and is nondegenerate on its admitted domain.",
+    "reuse_scope": "Reusable two-role carrier theorem.",
+    "granularity_rule": "One separately falsifiable and reusable closure gate; routine lemmas remain internal to the proof module."
+  },
+  "cross_layer": {
+    "semantic_identity_required": true,
+    "python_path_planned": "derivation/code/python/src/cnna/derivation/s03_directed_effective_response_algebra/s01_canonical_effective_role_plane/proofs/s01_p012__effective_role_plane_rank_nondegeneracy.py",
+    "lean_path_planned": "derivation/code/lean/proofs/src/CNNAProofs/Derivation/S03_DirectedEffectiveResponseAlgebra/S01_CanonicalEffectiveRolePlane/S01_M030_CanonicalEffectiveF1F2RoleFunctor/Proofs/S01_P012_EffectiveRolePlaneRankNondegeneracy.lean",
+    "documentation_path_planned": "derivation/paper/main/sections/03_directed_effective_response_algebra/01_canonical_effective_role_plane/proofs/01_P012__effective_role_plane_rank_nondegeneracy.tex"
+  },
+  "evidence": {
+    "audit_tier": "B",
+    "python": {
+      "status": "NOT_STARTED"
+    },
+    "lean": {
+      "status": "NOT_STARTED",
+      "mathlib_policy": "ALLOWED_ONLY_FOR_GENERIC_PROOF_INFRASTRUCTURE"
+    }
+  },
+  "workflow": {
+    "node_semantics": "PLANNED_EXPLICIT_PROOF_GATE",
+    "documentation": "STRUCTURAL_REGISTRY_ONLY",
+    "freeze_state": "NOT_STARTED",
+    "frozen_under_gate_version": null,
+    "documentation_v2": "NOT_STARTED"
+  },
+  "dependencies": [
+    "C021",
+    "P009"
+  ],
+  "owner_import_direction": "P012 -> M030",
+  "node_number": "058",
+  "derivation_rank": 30,
+  "derivation_order": 58,
+  "section_hierarchy": {
+    "section_path": "3.1.1.1",
+    "root_title": "Directed effective response algebra",
+    "group_title": "Canonical effective role plane",
+    "main_directory": "derivation/paper/main/sections/03_directed_effective_response_algebra/01_canonical_effective_role_plane/057_M030__canonical_effective_f1_f2_role_functor/058_P012__effective_role_plane_rank_and_nondegeneracy",
+    "supplement_directory": "derivation/supplement/sections/03_directed_effective_response_algebra/01_canonical_effective_role_plane/057_M030__canonical_effective_f1_f2_role_functor/058_P012__effective_role_plane_rank_and_nondegeneracy",
+    "main_artifact": "derivation/paper/main/sections/03_directed_effective_response_algebra/01_canonical_effective_role_plane/057_M030__canonical_effective_f1_f2_role_functor/058_P012__effective_role_plane_rank_and_nondegeneracy/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/03_directed_effective_response_algebra/01_canonical_effective_role_plane/057_M030__canonical_effective_f1_f2_role_functor/058_P012__effective_role_plane_rank_and_nondegeneracy/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C021, P009; registered hard handoff(s): supports_p012, supports_p012."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D2",
+    "tier_name": "Load-bearing theorem, proof owner, obstruction, or quarantine gate",
+    "tier_assignment_rule": "PROOF_THEOREM_OWNER_OBSTRUCTION_OR_QUARANTINE_ROLE",
+    "main_paper_depth": "THEOREM_AND_PROOF_OVERVIEW",
+    "supplement_depth": "FULL_PROOF_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "formal_statement",
+      "hypotheses",
+      "introduction_reason",
+      "proof_strategy",
+      "lemma_chain",
+      "formal_realization",
+      "counterexamples_or_necessity_checks",
+      "axiom_profile",
+      "result",
+      "remaining_limits",
+      "downstream_handoff",
+      "code_line_register"
+    ],
+    "countercheck_requirement": "NEGATIVE_CONTROL_COUNTEREXAMPLE_OR_HYPOTHESIS_NECESSITY",
+    "countercheck_status": "NOT_STARTED",
+    "v2_state": "NOT_STARTED",
+    "python_anchor_status": "NOT_REQUIRED_PROOF_NODE",
+    "lean_anchor_status": "PLANNED",
+    "code_anchors": [],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false
+  },
+  "canonical_identity": {
+    "node_number": "058",
+    "semantic_id": "P012",
+    "canonical_node_label": "058 · P012",
+    "stable_node_directory_name": "058_P012__effective_role_plane_rank_and_nondegeneracy",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "implementation_status": {
+    "status": "NOT_STARTED",
+    "source": "workflow.freeze_state",
+    "node_semantics": "PLANNED_EXPLICIT_PROOF_GATE"
+  }
+}

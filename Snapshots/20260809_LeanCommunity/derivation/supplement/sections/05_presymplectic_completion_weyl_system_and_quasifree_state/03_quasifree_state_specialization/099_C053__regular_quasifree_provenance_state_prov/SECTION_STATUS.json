@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "099",
+  "canonical_node_label": "099 \u00b7 C053",
+  "stable_node_directory_name": "099_C053__regular_quasifree_provenance_state_prov",
+  "id": "C053",
+  "section_path": "5.3.1",
+  "derivation_order": 99,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "013",
+  "canonical_node_label": "013 \u00b7 M005",
+  "stable_node_directory_name": "013_M005__conductance_unit_normalization_independence",
+  "id": "M005",
+  "section_path": "1.2.6",
+  "derivation_order": 13,
+  "main_documentation": "DOCUMENTED",
+  "supplement_documentation": "DOCUMENTED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

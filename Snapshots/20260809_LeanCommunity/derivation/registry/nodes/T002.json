@@ -1,0 +1,254 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "T002",
+  "paper_section": "1.4.5",
+  "contract": {
+    "statement": "For every admissible recurrent configuration consisting of a C005 state Xₙ, its canonical C004 next slot, and the derived C016/C017 record/live context whose live channel is coherent with Xₙ, C007 supplies the canonical state-directed realization and the response-coupled M004 law produces a unique Xₙ₊₁ in the complete C005 schema while re-establishing C005↔C017 live coherence."
+  },
+  "workflow": {
+    "node_semantics": "RECURRENT_STATE_CLOSURE_KERNEL_VERIFIED",
+    "documentation": "COMPLETE_V2",
+    "freeze_state": "FROZEN_VERIFIED",
+    "frozen_under_gate_version": "D14R20",
+    "documentation_v2": "COMPLETE_V2",
+    "active_since": "2026-08-08",
+    "activation_reason": "C009 raw codomain assembly is kernel-verified; C005 and M004 were already closed, so all explicit T002 predecessors are available. T002 precedes dependency-ready C010 in canonical derivation order.",
+    "closed_on": "2026-08-09"
+  },
+  "dependencies": [
+    "C005",
+    "C009",
+    "M004"
+  ],
+  "node_number": "031",
+  "derivation_rank": 20,
+  "derivation_order": 31,
+  "section_hierarchy": {
+    "section_path": "1.4.5",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Record/live update, backreaction channels and finite closure",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/04_record_live_update_backreaction_channels_and_finite_closure/031_T002__recurrent_state_closure_theorem",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/04_record_live_update_backreaction_channels_and_finite_closure/031_T002__recurrent_state_closure_theorem",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/04_record_live_update_backreaction_channels_and_finite_closure/031_T002__recurrent_state_closure_theorem/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/04_record_live_update_backreaction_channels_and_finite_closure/031_T002__recurrent_state_closure_theorem/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C005, C009, M004; registered hard handoff(s): supplies_state_schema, supplies_step_codomain, supplies_recurrent_map."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D2",
+    "tier_name": "Load-bearing theorem, proof owner, obstruction, or quarantine gate",
+    "tier_assignment_rule": "PROOF_THEOREM_OWNER_OBSTRUCTION_OR_QUARANTINE_ROLE",
+    "main_paper_depth": "THEOREM_AND_PROOF_OVERVIEW",
+    "supplement_depth": "FULL_PROOF_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "formal_statement",
+      "hypotheses",
+      "introduction_reason",
+      "proof_strategy",
+      "lemma_chain",
+      "formal_realization",
+      "counterexamples_or_necessity_checks",
+      "axiom_profile",
+      "result",
+      "remaining_limits",
+      "downstream_handoff",
+      "code_line_register"
+    ],
+    "countercheck_requirement": "NEGATIVE_CONTROL_COUNTEREXAMPLE_OR_HYPOTHESIS_NECESSITY",
+    "countercheck_status": "PASS",
+    "v2_state": "COMPLETE_V2",
+    "python_anchor_status": "NOT_REQUIRED_PROOF_NODE",
+    "lean_anchor_status": "RESOLVED_KERNEL_VERIFIED",
+    "code_anchors": [
+      {
+        "layer": "lean_core",
+        "role": "ORIGIN_CLOSURE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S02A_C004_SuccessorBornPrefixClosure.lean",
+        "symbol": "successorBornPrefixClosure",
+        "start_line": "127",
+        "end_line": "138",
+        "source_sha256": "0c010fe1d3579ec32344d73842b3cbfd4af6414f36e97c3ebd9fa146fde0a2e4",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "ORIGIN_CLOSURE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S03A_C006_ExactFractionRatRealizationClosure.lean",
+        "symbol": "toRat_eq_of_sameValue",
+        "start_line": "22",
+        "end_line": "30",
+        "source_sha256": "8297c461221215d55d178915f12306b968b6f461284b597171b330a34bead932",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "ORIGIN_CLOSURE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S06A_C007_StateDirectedBlockRealizationClosure.lean",
+        "symbol": "canonicalStateDirectedBlockRealization",
+        "start_line": "49",
+        "end_line": "55",
+        "source_sha256": "6bb58988c5ce16b9177cfd6a7571e72fc3ff684562cf473d69c3da605133c31a",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "ORIGIN_CLOSURE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10A_M004_LiveUpdateSupportClosure.lean",
+        "symbol": "LiveRelationDeltaClosure",
+        "start_line": "570",
+        "end_line": "588",
+        "source_sha256": "1a062e387a001ff852c76c9e785c9284d2aa9259a7a54ce64a4c26a9a8986c15",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "PROOF",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S05_T002_RecurrentStateClosureTheorem.lean",
+        "symbol": "successorConductances_pairwise",
+        "start_line": "340",
+        "end_line": "350",
+        "source_sha256": "be2f9f72e57187a9abc0ff3d9a9eeaee7af90b29f8742ab1ffcb295ff03bcb93",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "PROOF",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S05_T002_RecurrentStateClosureTheorem.lean",
+        "symbol": "successor_parentBackbone",
+        "start_line": "368",
+        "end_line": "393",
+        "source_sha256": "be2f9f72e57187a9abc0ff3d9a9eeaee7af90b29f8742ab1ffcb295ff03bcb93",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "PROOF",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S05_T002_RecurrentStateClosureTheorem.lean",
+        "symbol": "successor_live_coherent",
+        "start_line": "464",
+        "end_line": "478",
+        "source_sha256": "be2f9f72e57187a9abc0ff3d9a9eeaee7af90b29f8742ab1ffcb295ff03bcb93",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "PROOF",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S05_T002_RecurrentStateClosureTheorem.lean",
+        "symbol": "recurrentSuccessor_existsUnique",
+        "start_line": "493",
+        "end_line": "504",
+        "source_sha256": "be2f9f72e57187a9abc0ff3d9a9eeaee7af90b29f8742ab1ffcb295ff03bcb93",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "CONTRACT",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S05_T002_RecurrentStateClosureTheorem.lean",
+        "symbol": "RecurrentStateClosure",
+        "start_line": "505",
+        "end_line": "524",
+        "source_sha256": "be2f9f72e57187a9abc0ff3d9a9eeaee7af90b29f8742ab1ffcb295ff03bcb93",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "CONTRACT",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S05_T002_RecurrentStateClosureTheorem.lean",
+        "symbol": "recurrentStateClosureContract",
+        "start_line": "539",
+        "end_line": "545",
+        "source_sha256": "be2f9f72e57187a9abc0ff3d9a9eeaee7af90b29f8742ab1ffcb295ff03bcb93",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_proof",
+        "role": "PROOF_FACADE",
+        "path": "derivation/code/lean/proofs/src/CNNAProofs/T002/S01_CanonicalRecurrentStateClosure.lean",
+        "symbol": "canonicalRecurrentStepInput_exists",
+        "start_line": "34",
+        "end_line": "60",
+        "source_sha256": "ef998608f1e78ca19b5712ad2d7514efb5b0df431ff047e98bb361c5ee5a51bf",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_proof",
+        "role": "PROOF_FACADE",
+        "path": "derivation/code/lean/proofs/src/CNNAProofs/T002/S01_CanonicalRecurrentStateClosure.lean",
+        "symbol": "CanonicalRecurrentStateClosure",
+        "start_line": "80",
+        "end_line": "98",
+        "source_sha256": "ef998608f1e78ca19b5712ad2d7514efb5b0df431ff047e98bb361c5ee5a51bf",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_proof",
+        "role": "CONTRACT",
+        "path": "derivation/code/lean/proofs/src/CNNAProofs/T002/S01_CanonicalRecurrentStateClosure.lean",
+        "symbol": "canonicalRecurrentStateClosureContract",
+        "start_line": "124",
+        "end_line": "129",
+        "source_sha256": "ef998608f1e78ca19b5712ad2d7514efb5b0df431ff047e98bb361c5ee5a51bf",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      }
+    ],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": true,
+    "completion_evidence": {
+      "required_sections_present": true,
+      "code_anchors_resolved": true,
+      "kernel_build_evidence_bound": true,
+      "python_countercheck": "PASS_120_TESTS_1086_SUBTESTS_FINITE_EVIDENCE_ONLY"
+    }
+  },
+  "canonical_identity": {
+    "node_number": "031",
+    "semantic_id": "T002",
+    "canonical_node_label": "031 · T002",
+    "stable_node_directory_name": "031_T002__recurrent_state_closure_theorem",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "implementation_status": {
+    "status": "KERNEL_VERIFIED_EXACT_SOURCE_EVIDENCE",
+    "source": "C004/C005/C006/C007/M001/M004 origin closures + S05_T002_RecurrentStateClosureTheorem + CNNAProofs.T002",
+    "node_semantics": "FULL_C005_REENTRY_AND_POSTSTEP_C005_C017_LIVE_COHERENCE_KERNEL_VERIFIED",
+    "audited_declarations_planned": 26,
+    "kernel_verified_declarations": 26,
+    "origin_closure_policy": "MISSING_CLOSURES_ARE_PROVED_AT_THEIR_SEMANTIC_ORIGIN",
+    "origin_closures": {
+      "C004": "successor born-prefix cutoff/nonroot/order/initial closure",
+      "C005": "generic conductance append/preservation closure",
+      "C006": "ExactFraction-to-Rat realization and positivity transport",
+      "M001": "port support uniqueness and separation",
+      "M004": "live-delta support, pairwise distinction, endpoint/birth and positive-numerator closure",
+      "C007": "canonical rational StateDirectedBlockRealization existence from the exact C005 matrix"
+    },
+    "t002_owned_closure": "merge old/new conductances, construct full successor ResponseCapableState, prove post-step C005↔C017 live coherence, fixed-input successor uniqueness",
+    "python_regression": "PASS_120_TESTS_1086_SUBTESTS_FINITE_EVIDENCE_ONLY",
+    "source_hash_manifest": "derivation/code/lean/audit/T002_CURRENT_SOURCE_SHA256.txt",
+    "origin_extension_core_modules": 6,
+    "public_free_inputs": "C005 state + C004 NextOpenSlot + derived RecordLiveChannels with StateChannelCoherent; C007 realization and M003/M004 response witnesses are derived internally",
+    "audited_declarations": 26,
+    "source_supplied_unverified_declarations": 0,
+    "next_active_node": "T003"
+  },
+  "evidence": {
+    "status": "KERNEL_VERIFIED_EXACT_SOURCE_EVIDENCE",
+    "build_evidence": "derivation/code/lean/audit/evidence/USER_LOCAL_T002_FULL_BUILD_20260809.json",
+    "build_transcript": "derivation/code/lean/audit/evidence/USER_LOCAL_T002_FULL_BUILD_20260809.txt",
+    "build_transcript_sha256": "5f86f1acc7011823925154d261f9cf10f6f93755c27675f82e69c402532f4249",
+    "kernel_verified_declarations": 26,
+    "axiom_profile_counts": {
+      "choice_propext_quot": 19,
+      "propext_quot_only": 7,
+      "axiom_free": 0
+    },
+    "direct_project_axioms": 0,
+    "sorry_count": 0,
+    "full_package_boundary_audit": "PASS"
+  },
+  "artifacts": {
+    "math_prose": "0b7823080cc4bd9dd81ad644fe17d95d5c01b390bdd945872d505c5bebca9a12",
+    "supplement_documentation": "059d499d0d31bfb809863d46b03d3e2991fd68d0a8e9f21e54e13fa00984a55a"
+  }
+}

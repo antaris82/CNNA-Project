@@ -1,0 +1,34 @@
+% Canonical node 019 · P003; current section path 1.3.4.1.
+% Proof owner: M001
+\cnnaProofNodeHeading{019}{P003}{Birth-cut canonicity and partition well-formedness}
+\cnnaNodePlacement{1.3.4.1}{D2}
+Let $X_n$ be a C005 state, let $s_{n+1}$ be its C004 successor, and let
+$\mathcal C_n(s_{n+1})=(B_n,I_n)$ be the M001 cut.  P003 certifies that this
+construction is a genuine ordered partition of the already-born carrier:
+\[
+ B_n\cap I_n=\varnothing,
+ \qquad
+ B_n\cup I_n=V_n,
+ \qquad
+ c_{n+1}\notin B_n\cup I_n.
+\]
+Every entry of both lists is born.  The two lists preserve C005/C018 order
+because M001 defines them by filtering the canonical carrier rather than by a
+new sorting operation.  The predicate \emph{IsCanonicalCut} identifies exactly
+the two filtered lists, so any two canonical witnesses are equal.
+
+The certificate is implemented as internal theorems of the M001 owner module,
+not as a second mathematical construction or a parallel proof DAG.  The
+relevant theorem chain is
+\[
+\texttt{boundary\_node\_born},\ 
+\texttt{interior\_node\_born},\ 
+\texttt{boundary\_interior\_disjoint},\ 
+\texttt{carrier\_covered},\ 
+\texttt{child\_not\_in\_boundary},\ 
+\texttt{child\_not\_in\_interior},\ 
+\texttt{unique}.
+\]
+C004 directly supplies the verified least-open successor, while C018 supplies
+the order needed by M001.  P003 therefore closes the M001 owner gate without a
+P002 dependency.

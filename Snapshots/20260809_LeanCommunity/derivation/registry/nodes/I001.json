@@ -1,0 +1,165 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "I001",
+  "paper_section": "1.1.1",
+  "contract": {
+    "statement": "Free structural input b ∈ ℕ with b ≥ 2; no default value is derived.",
+    "ownership_boundary": [
+      "introduces branching multiplicity only"
+    ]
+  },
+  "cross_layer": {
+    "equivalence": "Math, Python BranchingParameter, and Lean BranchingParameter encode exactly b ≥ 2.",
+    "semantic_mismatch_known": false
+  },
+  "evidence": {
+    "audit_tier": "A",
+    "python": {
+      "status": "PASS_REPRODUCED",
+      "node_tests": 4
+    },
+    "lean": {
+      "status": "PASS_INDEPENDENTLY_VERIFIED",
+      "source_sha256": "3ec13e8e5ae4ec85028da2392d0fc4da6db7e4220f72ad9fa293f858afa5dbf3",
+      "toolchain": "Lean 4.31.0 / 68218e876d2a38b1985b8590fff244a83c321783",
+      "policy_scan_matches": 0,
+      "exact_hash_built": true,
+      "verification_origin": "external_independent_audit_supplied_by_user"
+    }
+  },
+  "artifacts": {
+    "python_source": "6305e01a14e3394ca06da4aabeb2231f7c93b6baf6c2d641e203a5ce12fa9549",
+    "python_test": "02f234d9858ec4300fde7c03685e7dbd5d908a0c9839f56a85b7a69c7f5aa388",
+    "lean_source": "3ec13e8e5ae4ec85028da2392d0fc4da6db7e4220f72ad9fa293f858afa5dbf3",
+    "math_prose": "ed5a15e2b7039833eaa96722c5e7079d4dbabd815c13537ded1c97ac3d78b132",
+    "supplement_documentation": "6a45775434be536661ffda0d8e5c0367e4a76e476d2bb64554099c54d1dc54d2"
+  },
+  "workflow": {
+    "node_semantics": "CLOSED_AS_DECLARED_FREE_INPUT",
+    "documentation": "COMPLETE_V2",
+    "freeze_state": "FROZEN_VERIFIED",
+    "frozen_under_gate_version": "cnna-per-node-freeze-v5",
+    "documentation_v2": "COMPLETE_V2"
+  },
+  "node_number": "001",
+  "derivation_rank": 0,
+  "derivation_order": 1,
+  "section_hierarchy": {
+    "section_path": "1.1.1",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Primitive inputs, provenance grammar and event order",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/01_primitive_inputs_provenance_grammar_and_event_order/001_I001__branching_parameter_b",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/01_primitive_inputs_provenance_grammar_and_event_order/001_I001__branching_parameter_b",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/01_primitive_inputs_provenance_grammar_and_event_order/001_I001__branching_parameter_b/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/01_primitive_inputs_provenance_grammar_and_event_order/001_I001__branching_parameter_b/DOCUMENTATION.md",
+    "introduction_reason": "Free branching input; visible at the origin."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D0",
+    "tier_name": "Atomic input or definitional node",
+    "tier_assignment_rule": "EXPLICIT_ATOMIC_OR_DEFINITIONAL_OVERRIDE",
+    "main_paper_depth": "COMPACT_DEFINITION",
+    "supplement_depth": "TRACEABLE_DEFINITION",
+    "required_sections": [
+      "position_in_derivation",
+      "definition_or_statement",
+      "introduction_reason",
+      "construction_or_encoding",
+      "boundary_case_or_countercheck",
+      "result",
+      "downstream_handoff",
+      "code_anchors"
+    ],
+    "countercheck_requirement": "ONE_DEFINITIONAL_BOUNDARY_OR_TYPE_REJECTION",
+    "countercheck_status": "PASS",
+    "v2_state": "COMPLETE_V2",
+    "python_anchor_status": "RESOLVED",
+    "lean_anchor_status": "RESOLVED",
+    "code_anchors": [
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s01_primitive_inputs_grammar_and_event_order/s01_i001__branching_parameter_b.py",
+        "symbol": "BranchingParameter",
+        "declaration_kind": "CLASS",
+        "start_line": 20,
+        "end_line": 46,
+        "source_sha256": "504e678397db5f6f969a5c69a6da9a2a36f34308201b0629b558331b453c1f69",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s01_primitive_inputs_grammar_and_event_order/test_s01_i001__branching_parameter_b.py",
+        "symbol": "TestBranchingParameter",
+        "declaration_kind": "CLASS",
+        "start_line": 12,
+        "end_line": 33,
+        "source_sha256": "189ec3b317faa474ece1d2105eaeb347fee053f210fe0bd24c5e8d10106c7d9c",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S01_I001_BranchingParameterB.lean",
+        "symbol": "BranchingParameter",
+        "declaration_kind": "STRUCTURE",
+        "start_line": 17,
+        "end_line": 23,
+        "source_sha256": "b826f2eca8aa535447d1c5c0090989d838ea30fac381e4c3c925b98c2bd96c96",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S01_I001_BranchingParameterB.lean",
+        "symbol": "lowerBound",
+        "declaration_kind": "THEOREM",
+        "start_line": 24,
+        "end_line": 27,
+        "source_sha256": "b826f2eca8aa535447d1c5c0090989d838ea30fac381e4c3c925b98c2bd96c96",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S01_I001_BranchingParameterB.lean",
+        "symbol": "mk_value",
+        "declaration_kind": "THEOREM",
+        "start_line": 28,
+        "end_line": 34,
+        "source_sha256": "b826f2eca8aa535447d1c5c0090989d838ea30fac381e4c3c925b98c2bd96c96",
+        "resolution": "RESOLVED"
+      }
+    ],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false,
+    "completion_evidence": {
+      "main_artifact": "derivation/paper/main/sections/01_primitive_response_coupled_finite_provenance/01_primitive_inputs_grammar_and_event_order/001_I001__branching_parameter_b/SECTION.tex",
+      "main_sha256": "ed5a15e2b7039833eaa96722c5e7079d4dbabd815c13537ded1c97ac3d78b132",
+      "supplement_artifact": "derivation/supplement/sections/01_primitive_response_coupled_finite_provenance/01_primitive_inputs_grammar_and_event_order/001_I001__branching_parameter_b/DOCUMENTATION.md",
+      "supplement_sha256": "6a45775434be536661ffda0d8e5c0367e4a76e476d2bb64554099c54d1dc54d2",
+      "required_sections_present": true,
+      "countercheck_present": true,
+      "code_anchors_resolved": true,
+      "source_code_modified": false,
+      "completed_on": "2026-08-04"
+    }
+  },
+  "canonical_identity": {
+    "node_number": "001",
+    "semantic_id": "I001",
+    "canonical_node_label": "001 · I001",
+    "stable_node_directory_name": "001_I001__branching_parameter_b",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "documentation_evidence": {
+    "schema": "cnna.node-documentation-completion.v1",
+    "state": "COMPLETE_V2",
+    "canonical_order_block": "001-003",
+    "scientific_scope": "origin inputs and primitive empty carrier",
+    "main_sha256": "ed5a15e2b7039833eaa96722c5e7079d4dbabd815c13537ded1c97ac3d78b132",
+    "supplement_sha256": "6a45775434be536661ffda0d8e5c0367e4a76e476d2bb64554099c54d1dc54d2"
+  }
+}

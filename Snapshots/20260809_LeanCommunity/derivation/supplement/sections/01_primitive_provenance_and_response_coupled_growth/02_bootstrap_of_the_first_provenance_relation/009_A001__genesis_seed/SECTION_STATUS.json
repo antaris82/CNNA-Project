@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "009",
+  "canonical_node_label": "009 \u00b7 A001",
+  "stable_node_directory_name": "009_A001__genesis_seed",
+  "id": "A001",
+  "section_path": "1.2.2",
+  "derivation_order": 9,
+  "main_documentation": "DOCUMENTED",
+  "supplement_documentation": "DOCUMENTED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

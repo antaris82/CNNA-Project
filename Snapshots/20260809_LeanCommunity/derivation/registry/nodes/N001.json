@@ -1,0 +1,182 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "N001",
+  "paper_section": "1.2.3",
+  "contract": {
+    "statement": "Fixed bootstrap conductance normalization C★=1; directed storage begins as (1,1).",
+    "ownership_boundary": [
+      "supplies only the fixed normalization to C013",
+      "does not create the relation or prove M005 unit-independence"
+    ]
+  },
+  "cross_layer": {
+    "equivalence": "Python value/directed_values and Lean value/directedValues encode the same fixed C★=1 normalization.",
+    "semantic_mismatch_known": false
+  },
+  "evidence": {
+    "audit_tier": "A",
+    "python": {
+      "status": "PASS_REPRODUCED",
+      "node_tests": 2
+    },
+    "lean": {
+      "status": "PASS_EXACT_LOCAL_BUILD",
+      "source_sha256": "251da4a73d6334302784702c8842ab607e35e619dec3071c1295540febfd3b89",
+      "toolchain": "Lean 4.31.0 (project pin)",
+      "policy_scan_matches": 0,
+      "exact_hash_built": true,
+      "verification_origin": "user_local_build_of_delivered_current_artifact"
+    }
+  },
+  "artifacts": {
+    "python_source": "a07946fabe1e67408dd25f59f5d56ddeb62e714371a806a799da0a4e68180891",
+    "python_test": "e485ccef6d2f05c86230ae49fa5f4d1444848460bc7620918c2ed019db1e9e0f",
+    "lean_source": "251da4a73d6334302784702c8842ab607e35e619dec3071c1295540febfd3b89",
+    "math_prose": "1ec628d4fa2528893c061a5562dae21408e464133ae33522554933b87d7aed3a",
+    "supplement_documentation": "150d0470b42c33ee2da95e9427845df7fae149c2327f7b1d8015ed65e4db567e"
+  },
+  "workflow": {
+    "node_semantics": "CLOSED_FIXED_NORMALIZATION",
+    "documentation": "COMPLETE_V2",
+    "freeze_state": "FROZEN_VERIFIED",
+    "frozen_under_gate_version": "cnna-per-node-freeze-v5",
+    "documentation_v2": "COMPLETE_V2"
+  },
+  "node_number": "010",
+  "derivation_rank": 6,
+  "derivation_order": 10,
+  "section_hierarchy": {
+    "section_path": "1.2.3",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Bootstrap of the first provenance relation",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/010_N001__initial_conductance_normalization_c_1",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/010_N001__initial_conductance_normalization_c_1",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/010_N001__initial_conductance_normalization_c_1/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/010_N001__initial_conductance_normalization_c_1/DOCUMENTATION.md",
+    "introduction_reason": "Fixed conductance normalization introduced only after the first slot exists."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D0",
+    "tier_name": "Atomic input or definitional node",
+    "tier_assignment_rule": "EXPLICIT_ATOMIC_OR_DEFINITIONAL_OVERRIDE",
+    "main_paper_depth": "COMPACT_DEFINITION",
+    "supplement_depth": "TRACEABLE_DEFINITION",
+    "required_sections": [
+      "position_in_derivation",
+      "definition_or_statement",
+      "introduction_reason",
+      "construction_or_encoding",
+      "boundary_case_or_countercheck",
+      "result",
+      "downstream_handoff",
+      "code_anchors"
+    ],
+    "countercheck_requirement": "ONE_DEFINITIONAL_BOUNDARY_OR_TYPE_REJECTION",
+    "countercheck_status": "PASS",
+    "v2_state": "COMPLETE_V2",
+    "python_anchor_status": "RESOLVED",
+    "lean_anchor_status": "RESOLVED",
+    "code_anchors": [
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s02_bootstrap_of_the_first_relation/s03_n001__initial_conductance_normalization_c_star_1.py",
+        "symbol": "InitialConductanceNormalization",
+        "declaration_kind": "CLASS",
+        "start_line": 23,
+        "end_line": 34,
+        "source_sha256": "d41e916f59a9b6c8b6fbec95f10f171a2f95714838f3948ac7f75112c7c8eab0",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s02_bootstrap_of_the_first_relation/test_s03_n001__initial_conductance_normalization_c_star_1.py",
+        "symbol": "TestInitialConductanceNormalization",
+        "declaration_kind": "CLASS",
+        "start_line": 14,
+        "end_line": 29,
+        "source_sha256": "fde5d880a23f305aed54815862fc8133bd7b209cc769a1d79048e9aa09a25327",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S03_N001_InitialConductanceNormalizationCStar1.lean",
+        "symbol": "InitialConductanceNormalization",
+        "declaration_kind": "INDUCTIVE",
+        "start_line": 15,
+        "end_line": 20,
+        "source_sha256": "fec821addfc248edd0352e4977b46f92693b14bcac09de7080afe6a779c22c17",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S03_N001_InitialConductanceNormalizationCStar1.lean",
+        "symbol": "canonical",
+        "declaration_kind": "DEF",
+        "start_line": 21,
+        "end_line": 23,
+        "source_sha256": "fec821addfc248edd0352e4977b46f92693b14bcac09de7080afe6a779c22c17",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S03_N001_InitialConductanceNormalizationCStar1.lean",
+        "symbol": "value",
+        "declaration_kind": "DEF",
+        "start_line": 24,
+        "end_line": 26,
+        "source_sha256": "fec821addfc248edd0352e4977b46f92693b14bcac09de7080afe6a779c22c17",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S03_N001_InitialConductanceNormalizationCStar1.lean",
+        "symbol": "directedValues",
+        "declaration_kind": "DEF",
+        "start_line": 27,
+        "end_line": 30,
+        "source_sha256": "fec821addfc248edd0352e4977b46f92693b14bcac09de7080afe6a779c22c17",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S03_N001_InitialConductanceNormalizationCStar1.lean",
+        "symbol": "directedValues_eq_unit_pair",
+        "declaration_kind": "THEOREM",
+        "start_line": 31,
+        "end_line": 37,
+        "source_sha256": "fec821addfc248edd0352e4977b46f92693b14bcac09de7080afe6a779c22c17",
+        "resolution": "RESOLVED"
+      }
+    ],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false,
+    "completion_evidence": {
+      "main_artifact": "derivation/paper/main/sections/01_primitive_response_coupled_finite_provenance/02_bootstrap_of_the_first_relation/010_N001__initial_conductance_normalization_c_1/SECTION.tex",
+      "supplement_artifact": "derivation/supplement/sections/01_primitive_response_coupled_finite_provenance/02_bootstrap_of_the_first_relation/010_N001__initial_conductance_normalization_c_1/DOCUMENTATION.md",
+      "main_sha256": "1ec628d4fa2528893c061a5562dae21408e464133ae33522554933b87d7aed3a",
+      "supplement_sha256": "150d0470b42c33ee2da95e9427845df7fae149c2327f7b1d8015ed65e4db567e",
+      "code_anchor_count": 7,
+      "source_code_changed": false,
+      "documentation_complete": true,
+      "required_sections_present": true,
+      "countercheck_present": true,
+      "code_anchors_resolved": true,
+      "completed_on": "2026-08-04"
+    }
+  },
+  "canonical_identity": {
+    "node_number": "010",
+    "semantic_id": "N001",
+    "canonical_node_label": "010 · N001",
+    "stable_node_directory_name": "010_N001__initial_conductance_normalization_c_1",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  }
+}

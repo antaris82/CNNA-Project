@@ -1,0 +1,404 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "C005",
+  "paper_section": "1.3.1",
+  "contract": {
+    "statement": "X_n, n>=1, is a finite current weighted provenance state whose born non-root vertices are the initial C018 schedule prefix and whose positive directed conductances are supported on the born carrier with a bidirectional provenance-parent backbone.",
+    "ownership_boundary": [
+      "C014 supplies the exact base case X1",
+      "C005 does not select the next slot or birth-local cut",
+      "C005 does not compute Schur/DtN response or apply a birth/update law",
+      "additional positive directed edges between already-born vertices are allowed"
+    ]
+  },
+  "cross_layer": {
+    "equivalence": "Python converts C014/C013 stored conductance values to exact Fraction entries; Lean now converts the same two stored values to Rat in the base-case constructors themselves, while retaining the same recurrent prefix, endpoint, positivity, uniqueness and parent-backbone invariants.",
+    "semantic_mismatch_known": false,
+    "semantic_identity_verified": true,
+    "identity_kind": "TERM_LEVEL_C014_TO_C005_DIRECTED_CONDUCTANCE_TRANSPORT",
+    "identity_evidence": [
+      "Python C005 constructs Fraction(value,1) from state.directed_conductances",
+      "Lean bootstrapForwardConductance.value is the Rat cast of C014/C013 directedConductances .1",
+      "Lean bootstrapBackwardConductance.value is the Rat cast of C014/C013 directedConductances .2",
+      "Lean transport theorems are definitional rfl consequences of the constructors",
+      "Exact corrective Lean 4.31.0 project build passed locally on the delivered artifact; full project build 18 jobs green"
+    ]
+  },
+  "evidence": {
+    "audit_tier": "A",
+    "python": {
+      "status": "PASS_REPRODUCED",
+      "node_tests": 2
+    },
+    "lean": {
+      "status": "PASS_EXACT_LOCAL_BUILD",
+      "source_sha256": "ef5669d82932e943b89865d8cc15f6e277538a25255cdc4ba24c03414fa51dd7",
+      "toolchain": "Lean 4.31.0 (project pin)",
+      "policy_scan_matches": 0,
+      "exact_hash_built": true,
+      "verification_origin": "user_local_build_of_exact_delivered_artifact"
+    }
+  },
+  "artifacts": {
+    "python_source": "96b9867f44f4a5021cd017033e796f41e0fcc9195c09505796129bdbd469f240",
+    "python_test": "76c931c265f48c2abaac94e149d867f8c7c6871798465855b52a3baf9e070579",
+    "lean_source": "732f5cf1227d57955c144b99043f0c58bb6535ae3a3d2bf3ac584385df0cb6cc",
+    "math_prose": "cde748455bed889fd3bfcd52e3402328b0b6d7af7a1f396c31e100bfe91fb774",
+    "supplement_documentation": "a480bc3cf27ae681c2a9dc9c00b9383abdeb25b80f1b8424ba3e26e2615003ad"
+  },
+  "workflow": {
+    "node_semantics": "CLOSED_RESPONSE_CAPABLE_STATE_SCHEMA",
+    "documentation": "COMPLETE",
+    "freeze_state": "FROZEN_VERIFIED",
+    "frozen_under_gate_version": "cnna-per-node-freeze-v5",
+    "documentation_v2": "COMPLETE_V2"
+  },
+  "node_number": "015",
+  "derivation_rank": 10,
+  "derivation_order": 15,
+  "section_hierarchy": {
+    "section_path": "1.3.1",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Canonical cut, complement elimination and birth steering",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/015_C005__response_capable_state_schema_x_n_1",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/015_C005__response_capable_state_schema_x_n_1",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/015_C005__response_capable_state_schema_x_n_1/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/015_C005__response_capable_state_schema_x_n_1/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C014; registered hard handoff(s): provides_recurrent_base_case."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D1",
+    "tier_name": "Structural construction",
+    "tier_assignment_rule": "STRUCTURAL_CONSTRUCTION_ROLE",
+    "main_paper_depth": "STRUCTURAL_EXPLANATION",
+    "supplement_depth": "DETAILED_CONSTRUCTION_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "mathematical_contract",
+      "introduction_reason",
+      "explicit_construction",
+      "invariants",
+      "canonicity_or_uniqueness",
+      "boundary_cases",
+      "python_lean_cross_layer",
+      "countercheck",
+      "result",
+      "downstream_handoff",
+      "code_anchors"
+    ],
+    "countercheck_requirement": "INVARIANT_EDGE_CASE_AND_CROSS_LAYER_CHECK",
+    "countercheck_status": "PASS",
+    "v2_state": "COMPLETE_V2",
+    "python_anchor_status": "RESOLVED",
+    "lean_anchor_status": "RESOLVED",
+    "code_anchors": [
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s01_c005__response_capable_state_schema_xn_n_ge_1.py",
+        "symbol": "DirectedConductance",
+        "declaration_kind": "CLASS",
+        "start_line": 24,
+        "end_line": 37,
+        "source_sha256": "96b9867f44f4a5021cd017033e796f41e0fcc9195c09505796129bdbd469f240",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s01_c005__response_capable_state_schema_xn_n_ge_1.py",
+        "symbol": "ResponseCapableState",
+        "declaration_kind": "CLASS",
+        "start_line": 41,
+        "end_line": 104,
+        "source_sha256": "96b9867f44f4a5021cd017033e796f41e0fcc9195c09505796129bdbd469f240",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s01_c005__response_capable_state_schema_xn_n_ge_1.py",
+        "symbol": "response_capable_state_from_bootstrap",
+        "declaration_kind": "FUNCTION",
+        "start_line": 107,
+        "end_line": 124,
+        "source_sha256": "96b9867f44f4a5021cd017033e796f41e0fcc9195c09505796129bdbd469f240",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/test_s01_c005__response_capable_state_schema_xn_n_ge_1.py",
+        "symbol": "_x1",
+        "declaration_kind": "FUNCTION",
+        "start_line": 19,
+        "end_line": 25,
+        "source_sha256": "76c931c265f48c2abaac94e149d867f8c7c6871798465855b52a3baf9e070579",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/test_s01_c005__response_capable_state_schema_xn_n_ge_1.py",
+        "symbol": "TestResponseCapableStateSchema",
+        "declaration_kind": "CLASS",
+        "start_line": 28,
+        "end_line": 59,
+        "source_sha256": "76c931c265f48c2abaac94e149d867f8c7c6871798465855b52a3baf9e070579",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S01_C005_ResponseCapableStateSchemaXnNGe1.lean",
+        "symbol": "DirectedConductance",
+        "declaration_kind": "STRUCTURE",
+        "start_line": 26,
+        "end_line": 33,
+        "source_sha256": "732f5cf1227d57955c144b99043f0c58bb6535ae3a3d2bf3ac584385df0cb6cc",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S01_C005_ResponseCapableStateSchemaXnNGe1.lean",
+        "symbol": "NodeBorn",
+        "declaration_kind": "DEF",
+        "start_line": 34,
+        "end_line": 39,
+        "source_sha256": "732f5cf1227d57955c144b99043f0c58bb6535ae3a3d2bf3ac584385df0cb6cc",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S01_C005_ResponseCapableStateSchemaXnNGe1.lean",
+        "symbol": "HasConductance",
+        "declaration_kind": "DEF",
+        "start_line": 40,
+        "end_line": 45,
+        "source_sha256": "732f5cf1227d57955c144b99043f0c58bb6535ae3a3d2bf3ac584385df0cb6cc",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S01_C005_ResponseCapableStateSchemaXnNGe1.lean",
+        "symbol": "DistinctConductancePair",
+        "declaration_kind": "DEF",
+        "start_line": 46,
+        "end_line": 50,
+        "source_sha256": "732f5cf1227d57955c144b99043f0c58bb6535ae3a3d2bf3ac584385df0cb6cc",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S01_C005_ResponseCapableStateSchemaXnNGe1.lean",
+        "symbol": "ResponseCapableState",
+        "declaration_kind": "STRUCTURE",
+        "start_line": 51,
+        "end_line": 81,
+        "source_sha256": "732f5cf1227d57955c144b99043f0c58bb6535ae3a3d2bf3ac584385df0cb6cc",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S01_C005_ResponseCapableStateSchemaXnNGe1.lean",
+        "symbol": "n",
+        "declaration_kind": "DEF",
+        "start_line": 82,
+        "end_line": 85,
+        "source_sha256": "732f5cf1227d57955c144b99043f0c58bb6535ae3a3d2bf3ac584385df0cb6cc",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S01_C005_ResponseCapableStateSchemaXnNGe1.lean",
+        "symbol": "one_le_n",
+        "declaration_kind": "THEOREM",
+        "start_line": 86,
+        "end_line": 95,
+        "source_sha256": "732f5cf1227d57955c144b99043f0c58bb6535ae3a3d2bf3ac584385df0cb6cc",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S01_C005_ResponseCapableStateSchemaXnNGe1.lean",
+        "symbol": "rootAddress",
+        "declaration_kind": "DEF",
+        "start_line": 96,
+        "end_line": 99,
+        "source_sha256": "732f5cf1227d57955c144b99043f0c58bb6535ae3a3d2bf3ac584385df0cb6cc",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S01_C005_ResponseCapableStateSchemaXnNGe1.lean",
+        "symbol": "rootBorn",
+        "declaration_kind": "THEOREM",
+        "start_line": 100,
+        "end_line": 104,
+        "source_sha256": "732f5cf1227d57955c144b99043f0c58bb6535ae3a3d2bf3ac584385df0cb6cc",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S01_C005_ResponseCapableStateSchemaXnNGe1.lean",
+        "symbol": "bootstrap_root_ne_newborn",
+        "declaration_kind": "THEOREM",
+        "start_line": 105,
+        "end_line": 116,
+        "source_sha256": "732f5cf1227d57955c144b99043f0c58bb6535ae3a3d2bf3ac584385df0cb6cc",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S01_C005_ResponseCapableStateSchemaXnNGe1.lean",
+        "symbol": "bootstrapForwardConductance",
+        "declaration_kind": "DEF",
+        "start_line": 117,
+        "end_line": 127,
+        "source_sha256": "732f5cf1227d57955c144b99043f0c58bb6535ae3a3d2bf3ac584385df0cb6cc",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S01_C005_ResponseCapableStateSchemaXnNGe1.lean",
+        "symbol": "bootstrapBackwardConductance",
+        "declaration_kind": "DEF",
+        "start_line": 128,
+        "end_line": 138,
+        "source_sha256": "732f5cf1227d57955c144b99043f0c58bb6535ae3a3d2bf3ac584385df0cb6cc",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S01_C005_ResponseCapableStateSchemaXnNGe1.lean",
+        "symbol": "base_case_transports_c014_forward_value",
+        "declaration_kind": "THEOREM",
+        "start_line": 139,
+        "end_line": 144,
+        "source_sha256": "732f5cf1227d57955c144b99043f0c58bb6535ae3a3d2bf3ac584385df0cb6cc",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S01_C005_ResponseCapableStateSchemaXnNGe1.lean",
+        "symbol": "base_case_transports_c014_backward_value",
+        "declaration_kind": "THEOREM",
+        "start_line": 145,
+        "end_line": 150,
+        "source_sha256": "732f5cf1227d57955c144b99043f0c58bb6535ae3a3d2bf3ac584385df0cb6cc",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S01_C005_ResponseCapableStateSchemaXnNGe1.lean",
+        "symbol": "bootstrap_bornOrdered",
+        "declaration_kind": "THEOREM",
+        "start_line": 151,
+        "end_line": 158,
+        "source_sha256": "732f5cf1227d57955c144b99043f0c58bb6535ae3a3d2bf3ac584385df0cb6cc",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S01_C005_ResponseCapableStateSchemaXnNGe1.lean",
+        "symbol": "bootstrap_bornInitial",
+        "declaration_kind": "THEOREM",
+        "start_line": 159,
+        "end_line": 178,
+        "source_sha256": "732f5cf1227d57955c144b99043f0c58bb6535ae3a3d2bf3ac584385df0cb6cc",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S01_C005_ResponseCapableStateSchemaXnNGe1.lean",
+        "symbol": "bootstrap_conductancePairsUnique",
+        "declaration_kind": "THEOREM",
+        "start_line": 179,
+        "end_line": 194,
+        "source_sha256": "732f5cf1227d57955c144b99043f0c58bb6535ae3a3d2bf3ac584385df0cb6cc",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S01_C005_ResponseCapableStateSchemaXnNGe1.lean",
+        "symbol": "fromBootstrap",
+        "declaration_kind": "DEF",
+        "start_line": 195,
+        "end_line": 245,
+        "source_sha256": "732f5cf1227d57955c144b99043f0c58bb6535ae3a3d2bf3ac584385df0cb6cc",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S01_C005_ResponseCapableStateSchemaXnNGe1.lean",
+        "symbol": "fromBootstrap_n",
+        "declaration_kind": "THEOREM",
+        "start_line": 246,
+        "end_line": 251,
+        "source_sha256": "732f5cf1227d57955c144b99043f0c58bb6535ae3a3d2bf3ac584385df0cb6cc",
+        "resolution": "RESOLVED"
+      }
+    ],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false,
+    "completion_evidence": {
+      "main_artifact": "derivation/paper/main/sections/01_primitive_response_coupled_finite_provenance/03_recurrent_pre_birth_measurement_and_steering/015_C005__response_capable_state_schema_x_n_1/SECTION.tex",
+      "supplement_artifact": "derivation/supplement/sections/01_primitive_response_coupled_finite_provenance/03_recurrent_pre_birth_measurement_and_steering/015_C005__response_capable_state_schema_x_n_1/DOCUMENTATION.md",
+      "main_sha256": "cde748455bed889fd3bfcd52e3402328b0b6d7af7a1f396c31e100bfe91fb774",
+      "supplement_sha256": "a480bc3cf27ae681c2a9dc9c00b9383abdeb25b80f1b8424ba3e26e2615003ad",
+      "code_anchor_count": 24,
+      "source_code_changed": false,
+      "documentation_complete": true,
+      "required_sections_present": true,
+      "countercheck_present": true,
+      "code_anchors_resolved": true,
+      "completed_on": "2026-08-04"
+    }
+  },
+  "canonical_identity": {
+    "node_number": "015",
+    "semantic_id": "C005",
+    "canonical_node_label": "015 · C005",
+    "stable_node_directory_name": "015_C005__response_capable_state_schema_x_n_1",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "open_provenance_context": {
+    "framework": "GENERALIZED_OPEN_PROVENANCE_SYSTEMS",
+    "concept_ids": [
+      "OPS-01"
+    ],
+    "roles": [
+      "Provenance-complete event state"
+    ],
+    "integration_status": [
+      "CURRENT_FINITE_SPECIALIZATION"
+    ],
+    "claim_guard": "Interpretive specialization map only. Mathematical force is exactly the node contract and its registered evidence; no universal open-system theorem is inferred."
+  },
+  "cnna_architecture_context": {
+    "concept_id": "CNNA-00",
+    "name": "ComplemeNt Net Architecture",
+    "role": "Current realized net: stores the born carrier and response-bearing state against the remaining unresolved continuation.",
+    "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+    "claim_guard": "Interpretive and organizational context only; mathematical force remains exactly the registered node contract and evidence status."
+  }
+}

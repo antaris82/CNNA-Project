@@ -1,0 +1,22 @@
+\documentclass[11pt]{article}
+\input{derivation/paper/layout/CNNA_DOCUMENT_METADATA.tex}
+\input{derivation/paper/layout/CNNA_DOCUMENT_SETUP.tex}
+\setcounter{secnumdepth}{-1}
+\setcounter{tocdepth}{3}
+\input{derivation/paper/infoboxes/CNNA_INFOBOX_SETUP.tex}
+\input{derivation/supplement/MAIN_PAPER_SHA256.tex}
+\title{\CNNAMainTitle\\\large \CNNASupplementSubtitle}
+\author{Editor: \CNNAEditor}
+\date{Current draft: \CNNADocumentDate}
+\begin{document}
+\maketitle
+\begin{cnnaInfoBox}{Cryptographic binding to the current main paper}
+This supplementary document applies to the exact PDF file
+\texttt{derivation/paper/main/paper.pdf}. Its SHA-256 digest is
+\par\smallskip
+{\ttfamily\small\seqsplit{\CNNAMainPaperSHA}}.
+\par\smallskip
+Any change to the main-paper PDF requires regeneration of this supplementary PDF and this digest.
+\end{cnnaInfoBox}
+\input{derivation/supplement/supplementary_body.tex}
+\end{document}

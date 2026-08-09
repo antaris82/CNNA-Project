@@ -1,0 +1,109 @@
+hierarchy_level	from_section	to_section	from_last_node	to_first_node	transition_kind	supporting_edge_ids	transition_statement	result
+2	1.1.1	1.1.2	I001	I002	EXPLICIT_INTRODUCTION_POINT		Free finite-depth input; visible at the origin.	PASS
+2	1.1.2	1.1.3	I002	C001	EXPLICIT_INTRODUCTION_POINT		Primitive empty carrier; visible at the origin.	PASS
+2	1.1.3	1.1.4	C001	C002	DIRECT_HARD_HANDOFF	E003	C001 hands its result directly to C002 through root_genesis.	PASS
+2	1.1.4	1.1.5	C002	C003	DIRECT_HARD_HANDOFF	E004	C002 hands its result directly to C003 through anchors_provenance_grammar.	PASS
+2	1.1.5	1.1.6	C003	C018	DIRECT_HARD_HANDOFF	E063	C003 hands its result directly to C018 through defines_canonical_birth_schedule.	PASS
+2	1.3.1	1.3.2	C005	C004	DIRECT_HARD_HANDOFF	E015	C005 hands its result directly to C004 through exposes_next_open_slot.	PASS
+2	1.3.2	1.3.3	C004	C006	EXPLICIT_INTRODUCTION_POINT		Generic Schur/DtN operator introduced at its first use in section 1.3.3.	PASS
+2	1.3.3	1.3.4	C006	M001	EXPLICIT_INTRODUCTION_POINT		Introduced after C005, C004; registered hard handoff(s): supplies_existing_network_to_birth_cut, localizes_cut_by_provenance_slot.	PASS
+2	1.3.4	1.3.5	P003	M002	CROSS_SECTION_HARD_HANDOFF	E018	The next section receives hard mathematical inputs through 1 registered DAG edge(s).	PASS
+2	1.3.5	1.3.6	M002	C007	DIRECT_HARD_HANDOFF	E021	M002 hands its result directly to C007 through certifies_response_domain.	PASS
+2	1.3.6	1.3.7	C007	O001	EXPLICIT_INTRODUCTION_POINT		Legacy-bias obstruction introduced at the affected birth-law gate.	PASS
+2	1.3.7	1.3.8	O001	C015	EXPLICIT_INTRODUCTION_POINT		Identity steering convention introduced after response construction in section 1.3.8.	PASS
+2	1.3.8	1.3.9	C015	M003	DIRECT_HARD_HANDOFF	E023	C015 hands its result directly to M003 through fixes_linear_active_transform.	PASS
+2	1.3.9	1.3.10	P001	M004	CROSS_SECTION_HARD_HANDOFF	E025	The next section receives hard mathematical inputs through 1 registered DAG edge(s).	PASS
+2	1.6.1	1.6.2	O002	CTRL001	DIRECT_HARD_HANDOFF	E040	O002 hands its result directly to CTRL001 through must_be_replaced_by_growth_level_nulling.	PASS
+2	1.6.2	1.6.3	CTRL001	CTRL002	DIRECT_HARD_HANDOFF	E036	CTRL001 hands its result directly to CTRL002 through checks_null_indistinguishability.	PASS
+2	1.6.3	1.6.4	CTRL002	CTRL003	EXPLICIT_INTRODUCTION_POINT		Introduced after C007; registered hard handoff(s): log_robustness_transform.	PASS
+2	1.6.4	1.6.5	CTRL003	CTRL004	EXPLICIT_INTRODUCTION_POINT		Introduced after C007; registered hard handoff(s): saturating_robustness_transform.	PASS
+3	5.2.1.1	5.2.1.2	P028	P029	DIRECT_HARD_HANDOFF	E264	P028 hands its result directly to P029 through supports_p029.	PASS
+3	6.1.2.1	6.1.2.2	P040	P041	DIRECT_HARD_HANDOFF	E315	P040 hands its result directly to P041 through supports_p041.	PASS
+3	6.1.2.2	6.1.2.3	P041	P042	DIRECT_HARD_HANDOFF	E320	P041 hands its result directly to P042 through supports_p042.	PASS
+3	6.2.2.1	6.2.2.2	P044	P045	DIRECT_HARD_HANDOFF	E333	P044 hands its result directly to P045 through supports_p045.	PASS
+3	8.1.2.1	8.1.2.2	P051	P052	DIRECT_HARD_HANDOFF	E359	P051 hands its result directly to P052 through supports_p052.	PASS
+2	4.1.1	4.1.2	P018	C041	CROSS_SECTION_HARD_HANDOFF	E396	The next section receives hard mathematical inputs through 1 registered DAG edge(s).	PASS
+2	6.2.1	6.2.2	P043	C060	CROSS_SECTION_HARD_HANDOFF	E052,E328,E330	The next section receives hard mathematical inputs through 3 registered DAG edge(s).	PASS
+2	6.2.2	6.2.3	P045	C061	CROSS_SECTION_HARD_HANDOFF	E053,E335,E336	The next section receives hard mathematical inputs through 3 registered DAG edge(s).	PASS
+3	8.1.1.1	8.1.1.2	P049	P050	DIRECT_HARD_HANDOFF	E353	P049 hands its result directly to P050 through supports_p050.	PASS
+2	4.2.1	4.2.2	C042	CTRL005	DIRECT_HARD_HANDOFF	E133	C042 hands its result directly to CTRL005 through supplies_canonical_schedule_reference_for_control.	PASS
+1	2.1	2.2	C022	C023	CROSS_SECTION_HARD_HANDOFF	E390,E085	The next section receives hard mathematical inputs through 2 registered DAG edge(s).	PASS
+1	2.2	2.3	C024	C025	CROSS_SECTION_HARD_HANDOFF	E109,E184	The next section receives hard mathematical inputs through 2 registered DAG edge(s).	PASS
+1	4.1	4.2	C041	C042	DIRECT_HARD_HANDOFF	E398	C041 hands its result directly to C042 through rank_closure.	PASS
+1	4.2	4.3	CTRL005	C044	CROSS_SECTION_HARD_HANDOFF	E122,E230	The next section receives hard mathematical inputs through 2 registered DAG edge(s).	PASS
+1	4.3	4.4	P022	C043	CROSS_SECTION_HARD_HANDOFF	E124,E125,E235,E236,E237,E238,E240,E241,E246,E247	The next section receives hard mathematical inputs through 10 registered DAG edge(s).	PASS
+1	4.4	4.5	P025	O049	CROSS_SECTION_HARD_HANDOFF	E126	The next section receives hard mathematical inputs through 1 registered DAG edge(s).	PASS
+2	1.2.1	1.2.2	C004A	A001	EXPLICIT_INTRODUCTION_POINT		Payload-free singleton token introduced only at bootstrap section 1.2.2.	PASS
+2	1.2.2	1.2.3	A001	N001	EXPLICIT_INTRODUCTION_POINT		Fixed conductance normalization introduced only after the first slot exists.	PASS
+2	1.2.3	1.2.4	N001	C013	DIRECT_HARD_HANDOFF	E008	N001 hands its result directly to C013 through sets_first_relation_conductance.	PASS
+2	1.2.4	1.2.5	C013	T001	DIRECT_HARD_HANDOFF	E009	C013 hands its result directly to T001 through requires_seed_neutrality.	PASS
+2	1.2.5	1.2.6	T001	M005	EXPLICIT_INTRODUCTION_POINT		Introduced after N001; registered hard handoff(s): requires_unit_independence.	PASS
+2	1.2.6	1.2.7	M005	C014	DIRECT_HARD_HANDOFF	E013	M005 hands its result directly to C014 through certifies_no_third_input.	PASS
+0	1	2	CTRL004	C020	CROSS_SECTION_HARD_HANDOFF	E386,E387,E084,E086,E087,E139,E163,E164,E165,E166,E168,E170,E173,E178	The next section receives hard mathematical inputs through 14 registered DAG edge(s).	PASS
+0	2	3	P011	M030	CROSS_SECTION_HARD_HANDOFF	E392,E393,E110,E113,E187,E188,E190,E191,E194,E196,E199,E203	The next section receives hard mathematical inputs through 12 registered DAG edge(s).	PASS
+0	3	4	O048	C040	EXPLICIT_INTRODUCTION_POINT		Introduced after C008, C019; registered hard handoff(s): induces_ancestor_kernel, supplies_finite_ancestor_domain.	PASS
+0	4	5	O049	C050	CROSS_SECTION_HARD_HANDOFF	E254,E255,E261,E262	The next section receives hard mathematical inputs through 4 registered DAG edge(s).	PASS
+0	5	6	P037	C057	CROSS_SECTION_HARD_HANDOFF	E046,E047,E050,E096,E097,E128,E296,E297,E298,E299,E300,E301,E302,E304,E305,E308,E310,E326	The next section receives hard mathematical inputs through 18 registered DAG edge(s).	PASS
+0	6	7	O091	O071	CROSS_SECTION_HARD_HANDOFF	E100,E134,E340,E342	The next section receives hard mathematical inputs through 4 registered DAG edge(s).	PASS
+0	7	8	B071	M080	EXPLICIT_INTRODUCTION_POINT		Introduced after C058, C057; registered hard handoff(s): requires_local_standardness, supplies_selected_gns_vector.	PASS
+2	4.3.1	4.3.2	P019	C045	CROSS_SECTION_HARD_HANDOFF	E118,E220,E222	The next section receives hard mathematical inputs through 3 registered DAG edge(s).	PASS
+2	4.3.2	4.3.3	P020	C047	CROSS_SECTION_HARD_HANDOFF	E121,E226,E228	The next section receives hard mathematical inputs through 3 registered DAG edge(s).	PASS
+2	4.3.3	4.3.4	P021	C046	CROSS_SECTION_HARD_HANDOFF	E123,E231,E232	The next section receives hard mathematical inputs through 3 registered DAG edge(s).	PASS
+2	1.5.1	1.5.2	C010	N002	EXPLICIT_INTRODUCTION_POINT		Response-time origin introduced only after event and lapse notions exist.	PASS
+2	1.5.2	1.5.3	N002	C011	EXPLICIT_INTRODUCTION_POINT		Introduced after M004; registered hard handoff(s): produces_response_lapse.	PASS
+2	1.5.3	1.5.4	C011	C012	DIRECT_HARD_HANDOFF	E033	C011 hands its result directly to C012 through accumulates_response_time.	PASS
+2	1.5.4	1.5.5	C012	C019	DIRECT_HARD_HANDOFF	E083	C012 hands its result directly to C019 through labels_completed_response_time_history.	PASS
+3	8.3.2.1	8.3.2.2	P058	P059	DIRECT_HARD_HANDOFF	E384	P058 hands its result directly to P059 through supports_p059.	PASS
+3	4.4.1.1	4.4.1.2	P023	P024	DIRECT_HARD_HANDOFF	E242	P023 hands its result directly to P024 through supports_p024.	PASS
+3	4.4.1.2	4.4.1.3	P024	P025	DIRECT_HARD_HANDOFF	E249	P024 hands its result directly to P025 through supports_p025.	PASS
+1	7.1	7.2	P048	B071	CROSS_SECTION_HARD_HANDOFF	E055	The next section receives hard mathematical inputs through 1 registered DAG edge(s).	PASS
+2	1.4.1	1.4.2	C008	C016	DIRECT_HARD_HANDOFF	E028	C008 hands its result directly to C016 through creates_record_channel.	PASS
+2	1.4.2	1.4.3	C016	C017	EXPLICIT_INTRODUCTION_POINT		Introduced after C008; registered hard handoff(s): updates_live_channel.	PASS
+2	1.4.3	1.4.4	C017	C009	DIRECT_HARD_HANDOFF	E031	C017 hands its result directly to C009 through part_of_next_state.	PASS
+2	1.4.4	1.4.5	C009	T002	DIRECT_HARD_HANDOFF	E071	C009 hands its result directly to T002 through supplies_step_codomain.	PASS
+2	1.4.5	1.4.6	T002	T003	EXPLICIT_INTRODUCTION_POINT		Introduced after C018, M003, M004, C008; registered hard handoff(s): supplies_label_order_contract, supplies_response_only_steering, supplies_no_hardcoded_rank_bias_birth_law, supplies_update_equivariance.	PASS
+3	4.1.1.1	4.1.1.2	P017	P018	DIRECT_HARD_HANDOFF	E213	P017 hands its result directly to P018 through supports_p018.	PASS
+1	1.1	1.2	P002	C004A	CROSS_SECTION_HARD_HANDOFF	E005,E064	The next section receives hard mathematical inputs through 2 registered DAG edge(s).	PASS
+1	1.2	1.3	C014	C005	DIRECT_HARD_HANDOFF	E014	C014 hands its result directly to C005 through provides_recurrent_base_case.	PASS
+1	1.3	1.4	M004	C008	DIRECT_HARD_HANDOFF	E027	M004 hands its result directly to C008 through applies_response_coupled_update.	PASS
+1	1.4	1.5	T003	C010	CROSS_SECTION_HARD_HANDOFF	E034,E078,E079,E154,E155	The next section receives hard mathematical inputs through 5 registered DAG edge(s).	PASS
+1	1.5	1.6	P006	O002	EXPLICIT_INTRODUCTION_POINT		Post-hoc control obstruction introduced in the control section.	PASS
+2	2.1.1	2.1.2	P007	C021	CROSS_SECTION_HARD_HANDOFF	E388,E169,E171,E174,E177	The next section receives hard mathematical inputs through 5 registered DAG edge(s).	PASS
+2	2.1.2	2.1.3	P010	C022	CROSS_SECTION_HARD_HANDOFF	E389	The next section receives hard mathematical inputs through 1 registered DAG edge(s).	PASS
+3	6.1.1.1	6.1.1.2	P038	P039	DIRECT_HARD_HANDOFF	E306	P038 hands its result directly to P039 through supports_p039.	PASS
+2	8.1.1	8.1.2	P050	M082	CROSS_SECTION_HARD_HANDOFF	E058,E355,E356,E357	The next section receives hard mathematical inputs through 4 registered DAG edge(s).	PASS
+2	8.1.2	8.1.3	P052	O081	EXPLICIT_INTRODUCTION_POINT		Introduced after C057; registered hard handoff(s): modular_shadow_audit.	PASS
+2	8.1.3	8.1.4	O081	O092	EXPLICIT_INTRODUCTION_POINT		Introduced after C052; registered hard handoff(s): supplies_completed_skew_operator_for_polarization_gate.	PASS
+2	8.1.4	8.1.5	O092	M086	DIRECT_HARD_HANDOFF	E132	O092 hands its result directly to M086 through exposes_polarization_uniqueness_obstruction.	PASS
+1	5.1	5.2	P027	M050	CROSS_SECTION_HARD_HANDOFF	E403,E043,E266,E268,E273,E274,E276,E277	The next section receives hard mathematical inputs through 8 registered DAG edge(s).	PASS
+1	5.2	5.3	P033	C053	CROSS_SECTION_HARD_HANDOFF	E042,E092,E279,E280,E281,E282	The next section receives hard mathematical inputs through 6 registered DAG edge(s).	PASS
+1	5.3	5.4	P034	C055	CROSS_SECTION_HARD_HANDOFF	E044,E285,E287	The next section receives hard mathematical inputs through 3 registered DAG edge(s).	PASS
+1	8.1	8.2	P054	M083	CROSS_SECTION_HARD_HANDOFF	E060,E104,E369,E370,E372,E373	The next section receives hard mathematical inputs through 6 registered DAG edge(s).	PASS
+1	8.2	8.3	P057	O084	EXPLICIT_INTRODUCTION_POINT		Introduced after C053; registered hard handoff(s): mixed_state_result.	PASS
+1	3.1	3.2	P013	C032	CROSS_SECTION_HARD_HANDOFF	E111,E195,E197	The next section receives hard mathematical inputs through 3 registered DAG edge(s).	PASS
+1	3.2	3.3	P014	C033	CROSS_SECTION_HARD_HANDOFF	E112,E200,E201	The next section receives hard mathematical inputs through 3 registered DAG edge(s).	PASS
+1	3.3	3.4	P015	M031	CROSS_SECTION_HARD_HANDOFF	E114,E204,E207	The next section receives hard mathematical inputs through 3 registered DAG edge(s).	PASS
+1	3.4	3.5	P016	O048	EXPLICIT_INTRODUCTION_POINT		Introduced after C032; registered hard handoff(s): supplies_finite_algebra_dimension_domain.	PASS
+3	5.4.2.1	5.4.2.2	P036	P037	DIRECT_HARD_HANDOFF	E294	P036 hands its result directly to P037 through supports_p037.	PASS
+2	6.1.1	6.1.2	P039	C058	CROSS_SECTION_HARD_HANDOFF	E048,E309,E311,E313,E314,E317,E318	The next section receives hard mathematical inputs through 7 registered DAG edge(s).	PASS
+2	5.4.1	5.4.2	P035	C056	CROSS_SECTION_HARD_HANDOFF	E045,E290,E292	The next section receives hard mathematical inputs through 3 registered DAG edge(s).	PASS
+3	3.1.1.1	3.1.1.2	P012	P013	DIRECT_HARD_HANDOFF	E192	P012 hands its result directly to P013 through supports_p013.	PASS
+2	5.2.1	5.2.2	P029	C052	CROSS_SECTION_HARD_HANDOFF	E041,E267,E269	The next section receives hard mathematical inputs through 3 registered DAG edge(s).	PASS
+2	5.2.2	5.2.3	P031	C054	EXPLICIT_INTRODUCTION_POINT		Introduced after C050; registered hard handoff(s): algebraic_nondegeneracy.	PASS
+2	8.3.1	8.3.2	O084	M085	DIRECT_HARD_HANDOFF	E062	O084 hands its result directly to M085 through requires_new_pure_branch.	PASS
+2	6.3.1	6.3.2	O090	O091	EXPLICIT_INTRODUCTION_POINT		Introduced after C051, C060; registered hard handoff(s): supplies_algebraic_weyl_system_for_limit_boundary, supplies_local_split_context_for_limit_boundary.	PASS
+2	7.1.1	7.1.2	O071	M070	DIRECT_HARD_HANDOFF	E130	O071 hands its result directly to M070 through must_be_resolved_before_canonical_geometry_selector.	PASS
+3	1.5.5.1	1.5.5.2	P004	P005	DIRECT_HARD_HANDOFF	E156	P004 hands its result directly to P005 through supports_p005.	PASS
+3	1.5.5.2	1.5.5.3	P005	P006	DIRECT_HARD_HANDOFF	E161	P005 hands its result directly to P006 through supports_p006.	PASS
+3	5.2.2.1	5.2.2.2	P030	P031	DIRECT_HARD_HANDOFF	E271	P030 hands its result directly to P031 through supports_p031.	PASS
+3	5.2.3.1	5.2.3.2	P032	P033	EXPLICIT_INTRODUCTION_POINT		Introduced after C050, P026; registered hard handoff(s): supports_p033, supports_p033.	PASS
+3	8.2.1.1	8.2.1.2	P055	P056	DIRECT_HARD_HANDOFF	E375	P055 hands its result directly to P056 through supports_p056.	PASS
+3	8.2.1.2	8.2.1.3	P056	P057	DIRECT_HARD_HANDOFF	E378	P056 hands its result directly to P057 through supports_p057.	PASS
+2	5.1.1	5.1.2	P026	C051	CROSS_SECTION_HARD_HANDOFF	E401,E257,E258	The next section receives hard mathematical inputs through 3 registered DAG edge(s).	PASS
+2	2.2.1	2.2.2	C023	C024	DIRECT_HARD_HANDOFF	E391	C023 hands its result directly to C024 through record_live_difference.	PASS
+1	6.1	6.2	P042	C059	CROSS_SECTION_HARD_HANDOFF	E051,E327,E329,E332	The next section receives hard mathematical inputs through 4 registered DAG edge(s).	PASS
+1	6.2	6.3	P046	O090	CROSS_SECTION_HARD_HANDOFF	E129	The next section receives hard mathematical inputs through 1 registered DAG edge(s).	PASS
+3	7.1.2.1	7.1.2.2	P047	P048	DIRECT_HARD_HANDOFF	E345	P047 hands its result directly to P048 through supports_p048.	PASS
+3	2.1.2.1	2.1.2.2	P008	P009	DIRECT_HARD_HANDOFF	E175	P008 hands its result directly to P009 through supports_p009.	PASS
+3	2.1.2.2	2.1.2.3	P009	P010	DIRECT_HARD_HANDOFF	E180	P009 hands its result directly to P010 through supports_p010.	PASS
+3	8.1.5.1	8.1.5.2	P053	P054	DIRECT_HARD_HANDOFF	E366	P053 hands its result directly to P054 through supports_p054.	PASS

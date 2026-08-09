@@ -1,0 +1,93 @@
+% Shared layout for the main paper and supplementary material.
+% Compile with XeLaTeX.
+\usepackage{fontspec}
+\setmainfont{DejaVu Serif}
+\setsansfont{DejaVu Sans}
+\setmonofont{DejaVu Sans Mono}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage[a4paper,left=14mm,right=14mm,top=16mm,bottom=18mm,headheight=15pt,headsep=4mm,footskip=9mm]{geometry}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{xurl}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{draftwatermark}
+\usepackage{titling}
+\usepackage{titlesec}
+\usepackage{seqsplit}
+\usepackage{booktabs,longtable,array}
+\usepackage{fvextra}
+\usepackage{enumitem}
+\usepackage{newunicodechar}
+\setlist{nosep}
+\newunicodechar{∅}{\ensuremath{\varnothing}}
+\newunicodechar{★}{\ensuremath{\star}}
+\titleformat{\section}{\large\bfseries\raggedright}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalsize\bfseries\raggedright}{\thesubsection.}{0.5em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\raggedright}{\thesubsubsection.}{0.5em}{}
+\titleformat{\paragraph}[runin]{\normalsize\bfseries}{\theparagraph.}{0.5em}{}[.]
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!45!black,
+  citecolor=blue!45!black,
+  urlcolor=blue!55!black,
+  pdfcreator={XeLaTeX},
+  pdfkeywords={CNNA, draft, finite provenance, Schur complement, Dirichlet-to-Neumann}
+}
+\setlength{\emergencystretch}{4em}
+\SetWatermarkText{DRAFT}
+\SetWatermarkScale{4.7}
+\SetWatermarkAngle{55}
+\SetWatermarkColor{red!5}
+\newcommand{\CNNADraftBanner}{%
+  \fcolorbox{red!60!black}{red!3}{\parbox{0.42\textwidth}{\centering\Large\bfseries\color{red!60!black}DRAFT}}%
+}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\bfseries\color{red!70!black}DRAFT}
+\fancyhead[C]{\small CNNA current working document}
+\fancyhead[R]{\small \CNNADocumentDate}
+\fancyfoot[L]{\small Editor: \CNNAEditor}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{\small \CNNADocumentStatus}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyhead[L]{\small\bfseries\color{red!70!black}DRAFT}
+  \fancyhead[C]{\small CNNA current working document}
+  \fancyhead[R]{\small \CNNADocumentDate}
+  \fancyfoot[L]{\small Editor: \CNNAEditor}
+  \fancyfoot[C]{\thepage}
+  \fancyfoot[R]{\small \CNNADocumentStatus}
+  \renewcommand{\headrulewidth}{0.4pt}
+  \renewcommand{\footrulewidth}{0.4pt}
+}
+\pretitle{\begin{center}\vspace*{-1.5em}\CNNADraftBanner\par\vspace{1.0em}\LARGE\bfseries}
+\posttitle{\par\end{center}\vspace{0.2em}}
+\preauthor{\begin{center}\normalsize}
+\postauthor{\par\end{center}}
+\predate{\begin{center}\normalsize}
+\postdate{\par\end{center}\vspace{0.8em}}
+\RecustomVerbatimEnvironment{verbatim}{Verbatim}{breaklines=true,breakanywhere=true,fontsize=\small}
+
+% Stable node headings: canonical node number and semantic ID are independent
+% of the mutable document section path.
+\newcommand{\cnnaNodeHeading}[3]{%
+  \phantomsection
+  \subsubsection*{#1\;\textperiodcentered\;\texttt{#2}\;---\;#3}%
+  \addcontentsline{toc}{subsubsection}{#1 \textperiodcentered\ #2 --- #3}%
+  \label{node:#2}%
+}
+\newcommand{\cnnaProofNodeHeading}[3]{%
+  \phantomsection
+  \paragraph*{#1\;\textperiodcentered\;\texttt{#2}\;---\;#3}%
+  \addcontentsline{toc}{paragraph}{#1 \textperiodcentered\ #2 --- #3}%
+  \label{node:#2}%
+}
+\newcommand{\cnnaNodePlacement}[2]{%
+  \noindent{\small\itshape Current section path: \texttt{#1}; documentation tier: \texttt{#2}.}\par\smallskip
+}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}

@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "141",
+  "canonical_node_label": "141 \u00b7 P057",
+  "stable_node_directory_name": "141_P057__spectrum_condition",
+  "id": "P057",
+  "section_path": "8.2.1.3",
+  "derivation_order": 141,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "069",
+  "canonical_node_label": "069 \u00b7 P018",
+  "stable_node_directory_name": "069_P018__cauchy_determinant_nondegeneracy_and_rank",
+  "id": "P018",
+  "section_path": "4.1.1.2",
+  "derivation_order": 69,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

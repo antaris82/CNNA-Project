@@ -1,0 +1,83 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "C020",
+  "paper_section": "2.1.1",
+  "contract": {
+    "statement": "Mathematical cut class generalizing the birth-local cut without test-only max_regions/max_boundary/max_frontier choices."
+  },
+  "workflow": {
+    "node_semantics": "CORE_REQUIRED_MISSING",
+    "documentation": "NOT_STARTED",
+    "freeze_state": "NOT_STARTED",
+    "frozen_under_gate_version": null,
+    "documentation_v2": "NOT_STARTED"
+  },
+  "dependencies": [
+    "M001",
+    "C019"
+  ],
+  "node_number": "046",
+  "derivation_rank": 26,
+  "derivation_order": 46,
+  "section_hierarchy": {
+    "section_path": "2.1.1",
+    "root_title": "Cut-relative complement elimination and effective response",
+    "group_title": "General cuts, complement elimination and naturality",
+    "main_directory": "derivation/paper/main/sections/02_cut_relative_complement_elimination_and_effective_response/01_general_cuts_complement_elimination_and_naturality/046_C020__general_admissible_boundary_interior_cut_family",
+    "supplement_directory": "derivation/supplement/sections/02_cut_relative_complement_elimination_and_effective_response/01_general_cuts_complement_elimination_and_naturality/046_C020__general_admissible_boundary_interior_cut_family",
+    "main_artifact": "derivation/paper/main/sections/02_cut_relative_complement_elimination_and_effective_response/01_general_cuts_complement_elimination_and_naturality/046_C020__general_admissible_boundary_interior_cut_family/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/02_cut_relative_complement_elimination_and_effective_response/01_general_cuts_complement_elimination_and_naturality/046_C020__general_admissible_boundary_interior_cut_family/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after M001, C019; registered hard handoff(s): generalizes_birth_cut, supplies_completed_finite_carrier."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D2",
+    "tier_name": "Load-bearing theorem, proof owner, obstruction, or quarantine gate",
+    "tier_assignment_rule": "PROOF_THEOREM_OWNER_OBSTRUCTION_OR_QUARANTINE_ROLE",
+    "main_paper_depth": "THEOREM_AND_PROOF_OVERVIEW",
+    "supplement_depth": "FULL_PROOF_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "formal_statement",
+      "hypotheses",
+      "introduction_reason",
+      "proof_strategy",
+      "lemma_chain",
+      "formal_realization",
+      "counterexamples_or_necessity_checks",
+      "axiom_profile",
+      "result",
+      "remaining_limits",
+      "downstream_handoff",
+      "code_line_register"
+    ],
+    "countercheck_requirement": "NEGATIVE_CONTROL_COUNTEREXAMPLE_OR_HYPOTHESIS_NECESSITY",
+    "countercheck_status": "NOT_STARTED",
+    "v2_state": "NOT_STARTED",
+    "python_anchor_status": "PLANNED",
+    "lean_anchor_status": "PLANNED",
+    "code_anchors": [],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false
+  },
+  "canonical_identity": {
+    "node_number": "046",
+    "semantic_id": "C020",
+    "canonical_node_label": "046 · C020",
+    "stable_node_directory_name": "046_C020__general_admissible_boundary_interior_cut_family",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "open_provenance_context": {
+    "framework": "GENERALIZED_OPEN_PROVENANCE_SYSTEMS",
+    "concept_ids": [
+      "OPS-02"
+    ],
+    "roles": [
+      "Cut-relative complement"
+    ],
+    "integration_status": [
+      "NODEWISE_CURRENT_OR_PLANNED"
+    ],
+    "claim_guard": "Interpretive specialization map only. Mathematical force is exactly the node contract and its registered evidence; no universal open-system theorem is inferred."
+  }
+}

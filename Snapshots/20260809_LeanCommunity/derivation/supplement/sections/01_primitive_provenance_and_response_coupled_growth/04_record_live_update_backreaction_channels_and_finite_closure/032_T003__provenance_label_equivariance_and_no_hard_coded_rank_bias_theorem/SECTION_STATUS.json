@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "032",
+  "canonical_node_label": "032 \u00b7 T003",
+  "stable_node_directory_name": "032_T003__provenance_label_equivariance_and_no_hard_coded_rank_bias_theorem",
+  "id": "T003",
+  "section_path": "1.4.6",
+  "derivation_order": 32,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

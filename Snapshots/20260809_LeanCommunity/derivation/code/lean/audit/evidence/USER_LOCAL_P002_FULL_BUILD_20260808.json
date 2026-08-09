@@ -1,0 +1,49 @@
+{
+  "schema": "cnna.p002-kernel-build-evidence.v1",
+  "status": "PASS",
+  "date": "2026-08-08",
+  "origin": "USER_LOCAL_LEAN_BUILD",
+  "build_command": "./audit/run_package_boundary_audit.sh --build",
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "mathlib": "v4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "transcript": "derivation/code/lean/audit/evidence/USER_LOCAL_P002_FULL_BUILD_20260808.txt",
+  "transcript_sha256": "f4e55408d79041f2068fded77ca791196828e478b6a12b4f13decec2729131b1",
+  "core_build_jobs": 26,
+  "proof_build_jobs": 8599,
+  "proof_modules": 17,
+  "p002_proof_declarations": 6,
+  "total_audited_declarations": 159,
+  "source_warnings": 0,
+  "p002_current_proof_axiom_audit": "PASS",
+  "full_package_boundary_audit": "PASS",
+  "p002_axiom_profile_counts": {
+    "choice_propext_quot": 0,
+    "propext_quot_only": 0,
+    "axiom_free": 6
+  },
+  "transitive_axioms_observed": [],
+  "verified_source_sha256": {
+    "proofs/lakefile.toml": "1d3b9fc1fedd5ae5df817c16ca70121d46de9004bbbe186d9fabdc37fb977a7f",
+    "proofs/src/CNNAProofsP002.lean": "fbc849a85da17d59d4b757437f75ce553723eabbf55e2df95bea56c490592140",
+    "proofs/src/CNNAProofs/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S06_C018_CanonicalBfsLexicographicProvenanceBirthSchedule/Proofs/S01_P002_CanonicalScheduleStrictTotalOrderClosure.lean": "3775ef08dceb432273a7e72f5839990e0ac40909ab68a42b8ed4d4c7bbaefef7",
+    "audit/P002_CurrentProofAxiomAudit.lean": "1fed639841e4675ed274be7a2ef191b21a946eb7cd578619b9a9e2b15d59a782"
+  },
+  "verified_artifacts": {
+    "core_olean": true,
+    "proofs_olean": true,
+    "proof_manifest": true,
+    "p002_static_order_closure_olean": true
+  },
+  "retained_verified_p001_source_hash_match": true,
+  "retained_verified_m003_m004_source_hash_match": true,
+  "public_declarations": [
+    "CNNAProofs.P002.CanonicalScheduleStrictTotalOrderClosure",
+    "CNNAProofs.P002.canonicalScheduleStrictTotalOrderClosure",
+    "CNNAProofs.P002.IsMinimalSelectedChild",
+    "CNNAProofs.P002.minimalSelectedChild_unique",
+    "CNNAProofs.P002.CanonicalScheduleStrictTotalOrderContract",
+    "CNNAProofs.P002.canonicalScheduleStrictTotalOrderContract"
+  ],
+  "proof_source": "proofs/src/CNNAProofs/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S06_C018_CanonicalBfsLexicographicProvenanceBirthSchedule/Proofs/S01_P002_CanonicalScheduleStrictTotalOrderClosure.lean"
+}

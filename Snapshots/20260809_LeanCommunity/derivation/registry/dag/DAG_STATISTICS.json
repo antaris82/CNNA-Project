@@ -1,0 +1,51 @@
+{
+  "schema": "cnna.canonical-dag-statistics.g0.v1",
+  "nodes": 145,
+  "edges": 401,
+  "graph_roots": [
+    "I001",
+    "I002",
+    "C001",
+    "A001",
+    "N001",
+    "C006",
+    "O001",
+    "C015",
+    "N002",
+    "O002"
+  ],
+  "top_visible_roots": [
+    "I001",
+    "I002",
+    "C001"
+  ],
+  "sinks": [
+    "CTRL002",
+    "CTRL003",
+    "CTRL004",
+    "C024",
+    "M031",
+    "O048",
+    "CTRL005",
+    "O049",
+    "O090",
+    "O091",
+    "B071",
+    "M083",
+    "M085"
+  ],
+  "weak_components": 1,
+  "hard_edges": 342,
+  "proof_certification_edges": 59,
+  "node_role_counts": {
+    "CONSTRUCTION": 24,
+    "CONTROL": 4,
+    "INPUT": 2,
+    "PROOF": 78,
+    "PROOF_OWNER": 36,
+    "QUARANTINE": 1
+  },
+  "max_derivation_rank": 96,
+  "canonical_id_format": "PREFIX_FREE",
+  "node_label_format": "NNN \u00b7 ID"
+}

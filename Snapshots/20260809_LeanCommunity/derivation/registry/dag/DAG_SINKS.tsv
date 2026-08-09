@@ -1,0 +1,14 @@
+node_number	id	paper_section	label
+043	CTRL002	1.6.3	Null-control edge-indistinguishability theorem/test
+044	CTRL003	1.6.4	Log response-mode robustness control
+045	CTRL004	1.6.5	Saturating response-mode robustness control
+054	C024	2.2.2	Backreaction current B=A_live−A_record
+064	M031	3.4.1	Intrinsic directed response algebra
+066	O048	3.5.1	Finite cyclicity dimension/rank obstruction
+072	CTRL005	4.2.2	Layer-batch schedule robustness control
+085	O049	4.5.1	Projection/completion naturality obstruction
+120	O090	6.3.1	Counting-terminal Fock identification obstruction
+121	O091	6.3.2	Ontic corner/Schur inductive-limit obstruction
+126	B071	7.2.1	Hodge / geometric-locality / HK geometry branch
+138	M083	8.2.1	Covariance group and spectrum condition
+143	M085	8.3.2	Canonical purification / pure global state branch

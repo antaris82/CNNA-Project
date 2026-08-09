@@ -1,0 +1,366 @@
+{
+  "schema": "cnna.current-state.v1",
+  "date": "2026-08-09",
+  "editor": "Jan Seeck",
+  "document_status": "DRAFT",
+  "core_source": "mathlib-free CNNA Core through kernel-verified T002 recurrent C005 re-entry and post-step C005↔C017 live coherence; T003 active",
+  "dag": {
+    "nodes": 145,
+    "edges": 401,
+    "non_proof_nodes": 86,
+    "proof_nodes": 59,
+    "current_node": "T003",
+    "display_status_counts": {
+      "green": 31,
+      "red": 113,
+      "orange": 1,
+      "yellow": 0
+    },
+    "canonical_id_format": "PREFIX_FREE",
+    "node_label_format": "NNN · ID",
+    "normative_tables": [
+      "derivation/registry/dag/NODES.tsv",
+      "derivation/registry/dag/EDGES.tsv"
+    ],
+    "yed_graphml": "derivation/registry/dag/DAG_yEd.graphml",
+    "layout_authority": "USER_SUPPLIED_YED_LIVE_GRAPHML",
+    "layout_preservation_policy": "PRESERVE_GEOMETRY_HIERARCHY_BENDS_STYLES_AND_LABEL_PLACEMENT",
+    "g0_status": "PASS",
+    "g1_status": "PASS",
+    "g2_status": "PASS_USER_YED_LIVE_CANONICAL_LAYOUT",
+    "yed_graphml_sha256": "51b160a5ec0717a200c178c3327e9dea3d2a66d6a821889352c37f0a3259160f"
+  },
+  "p001": {
+    "status": "KERNEL_VERIFIED",
+    "package": "CNNAProofs",
+    "mathlib": "v4.31.0",
+    "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+    "external_regularization": false,
+    "public_contract": "PublicContract",
+    "proof_declarations": 142,
+    "kernel_verified_declarations": 142,
+    "source_warnings": 0,
+    "axiom_audit": "PASS",
+    "full_package_boundary_audit": "PASS",
+    "axiom_profile_counts": {
+      "choice_propext_quot": 117,
+      "propext_quot_only": 23,
+      "axiom_free": 2
+    },
+    "allowed_transitive_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "direct_project_axioms": 0,
+    "sorry_count": 0,
+    "verified_components": [
+      "ExactSemanticBridge",
+      "DirectedMaximumPrinciple",
+      "InteriorKernelTrivial",
+      "FiniteLinearWellPosedness",
+      "ResponseWellDefinedness",
+      "DirectedLaplacianResponseStructure",
+      "DistinguishedPortStrictPositivity",
+      "ReusableDirectedClosureContract",
+      "CanonicalParentCoordinateAndM003Handoff",
+      "ExactCanonicalC007MatrixStructure",
+      "CanonicalBackboneReachabilityAndDerivedClosure",
+      "M003M004SupportingTheorems",
+      "IndependentBidirectedChainCutReuse"
+    ],
+    "build_evidence": "derivation/code/lean/audit/evidence/USER_LOCAL_P001_FULL_BUILD_20260806.json",
+    "build_transcript": "derivation/code/lean/audit/evidence/USER_LOCAL_P001_FULL_BUILD_20260806.txt",
+    "build_transcript_sha256": "3329291658b2d7a5f46acc6c1bf48b8a60f6bade5d010aa96d7978be3943170a",
+    "verified_source_sha256": {
+      "proofs/src/CNNAProofs/P001/DirectedSchurDtnKronChannelClosure.lean": "19fce24b2000c8ff64690c0b78e4dacc9115bdf34b713bf6054f95f37886db43",
+      "proofs/src/CNNAProofs/P001/S01_ExactSemanticBridge.lean": "7139f45922bc14d7f8de4180075f7fe4ac687bd9d54b893dcb0e21a092b723d1",
+      "proofs/src/CNNAProofs/P001/S02_DirectedMaximumPrinciple.lean": "9cc036efcd855b49df4a8c0abe5d58a0ef793b0bc2c302e8f312a654ab561aa4",
+      "proofs/src/CNNAProofs/P001/S03_FiniteLinearWellPosedness.lean": "b0ef0574fd41c4f11e6dd43b81e73634030776a8d9265021d07e8ea4f302f317",
+      "proofs/src/CNNAProofs/P001/S04_ResponseWellDefinedness.lean": "c80d1dc00f55cd84420beb3d747d8b3ec33c0137a41a2a97627f23c94f7ffa07",
+      "proofs/src/CNNAProofs/P001/S05_ResponseDirectedLaplacian.lean": "7cfb905f5c409e8daa737037527f364ccc6fb6a23a49b1d851a0c6cf941270dc",
+      "proofs/src/CNNAProofs/P001/S06_DistinguishedPortStrictPositivity.lean": "4a4c4a94cd888638f483bdefa345798337acd39bbe0d5734524599ad1aa761c5",
+      "proofs/src/CNNAProofs/P001/S07_CanonicalBirthCutInstantiation.lean": "b2ebfafbb319bc64049eacec675f34fb4b7473280b73e03ba6d5d31a31217146",
+      "proofs/src/CNNAProofs/P001/S08_CanonicalDirectedMatrixStructure.lean": "0975bb3958c81032d07f27d1d0c58c5057942d70b884d4ad5bc69aeea99475f5",
+      "proofs/src/CNNAProofs/P001/S09_CanonicalBackboneReachability.lean": "49110c72b52c07384f0f67a37945f53b88565940464a5c5e62c9dcbaa60074a1",
+      "proofs/src/CNNAProofs/P001/S10_M003M004ProofFacades.lean": "1b0432d2df791fb24dc4d70937b078bea8f89fe42824b9aeb41113977088c53e",
+      "proofs/src/CNNAProofs/P001/S11_IndependentBidirectedChainCutReuse.lean": "1bf9b8cb1a7793c1a2c15f07b1d09fe3f959588f8f7eabcd4591bf1c9f85f470"
+    },
+    "full_robustness_limit": "Transitive propext, Classical.choice, and Quot.sound remain in the pinned Lean/mathlib trust base; their elimination is not claimed."
+  },
+  "documentation": {
+    "status": "CURRENT_COMPLETE",
+    "complete_v2_nodes": 31,
+    "not_started_nodes": 114,
+    "main_paper_pdf": "derivation/paper/main/paper.pdf",
+    "main_paper_pdf_sha256": "7a3092931f081ebd2e15c222a84f5a7497eec9814e507a4675a8356013595ee9",
+    "main_paper_pages": 36,
+    "supplementary_pdf": "derivation/supplement/supplementary.pdf",
+    "supplementary_pdf_sha256": "3ef7464ec22aa6f043f01871dbbdedf5b51f7f7d15e016691cafbd9be29208bd",
+    "supplementary_pages": 115,
+    "supplement_to_main_hash_binding": "PASS",
+    "reference_registry": {
+      "references": 32,
+      "usage_rows": 61,
+      "assertions": 19,
+      "p001_usage_rows": 26,
+      "status": "TRACEABLE_UNIQUE_TARGET_ANCHORS",
+      "audit": "derivation/registry/references/EXTERNAL_REFERENCE_AUDIT.json"
+    },
+    "p001_documentation_audit": "derivation/registry/documentation/P001_CURRENT_AUDIT.json",
+    "p001_visual_inspection": "derivation/registry/documentation/P001_VISUAL_INSPECTION.md"
+  },
+  "lean_packages": {
+    "toolchain": "leanprover/lean4:v4.31.0",
+    "core": "cnna_core (35 modules, no dependencies)",
+    "proofs": "cnna_proofs (25 current source modules; all 25 covered by retained exact-source kernel evidence through T002)",
+    "allowed_import_direction": "CNNAProofs -> CNNA",
+    "static_boundary_audit": "PASS",
+    "kernel_build": "P001_M003_M004_P002_C008_C016_C017_C009_T002_KERNEL_VERIFIED",
+    "source_hash_scopes": {
+      "p001": "derivation/code/lean/audit/P001_CURRENT_SOURCE_SHA256.txt",
+      "m003_m004": "derivation/code/lean/audit/M003M004_CURRENT_SOURCE_SHA256.txt",
+      "audit_infrastructure": "derivation/code/lean/audit/AUDIT_INFRASTRUCTURE_CURRENT_SOURCE_SHA256.txt",
+      "disjoint": "PASS_NINE_SCOPES",
+      "p002": "derivation/code/lean/audit/P002_CURRENT_SOURCE_SHA256.txt",
+      "c008": "derivation/code/lean/audit/C008_CURRENT_SOURCE_SHA256.txt",
+      "c016_c017": "derivation/code/lean/audit/C016C017_CURRENT_SOURCE_SHA256.txt",
+      "c009": "derivation/code/lean/audit/C009_CURRENT_SOURCE_SHA256.txt",
+      "t002": "derivation/code/lean/audit/T002_CURRENT_SOURCE_SHA256.txt"
+    },
+    "libraries": [
+      "CNNAProofs",
+      "CNNAProofsP002"
+    ],
+    "module_count_semantics": {
+      "current_source_modules": 25,
+      "latest_kernel_verified_source_modules": 25,
+      "latest_verified_default_proof_jobs": 8599,
+      "c008_explicit_module_jobs": 8597,
+      "latest_verified_core_jobs": 37,
+      "c016_c017_explicit_module_jobs": 30,
+      "c009_explicit_module_jobs": 33,
+      "pending_t002_source_modules": 0,
+      "t002_explicit_module_jobs": 8611
+    }
+  },
+  "package_status": "P001_M003_M004_P002_C008_C016_C017_C009_T002_KERNEL_VERIFIED_T003_ACTIVE",
+  "m003_m004": {
+    "status": "KERNEL_VERIFIED",
+    "proof_modules": 2,
+    "proof_declarations": 11,
+    "kernel_verified_declarations": 11,
+    "m003_contract": "CanonicalM003Closure",
+    "m004_contract": "CanonicalM004ClosureContract",
+    "downstream_handoff": "IsCanonicalBirthInstructionHandoff",
+    "axiom_profile_counts": {
+      "choice_propext_quot": 6,
+      "propext_quot_only": 5,
+      "axiom_free": 0
+    },
+    "build_evidence": "derivation/code/lean/audit/evidence/USER_LOCAL_M003_M004_FULL_BUILD_20260806.json",
+    "build_evidence_sha256": "cd6c95a56c5dc3a21337b9006449b69a2d5a51b5a9c89b4180667279229287ad",
+    "build_transcript": "derivation/code/lean/audit/evidence/USER_LOCAL_M003_M004_FULL_BUILD_20260806.txt",
+    "build_transcript_sha256": "d15167488dbe74c9b6d1bf7cb4629b34e83a1111ad63a548ee041cc9dc69bf24",
+    "exact_source_evidence": "MATCH",
+    "full_package_boundary_audit": "PASS"
+  },
+  "p002": {
+    "status": "KERNEL_VERIFIED_AXIOM_FREE",
+    "proof_owner": "C018",
+    "library": "CNNAProofsP002",
+    "proof_modules": 2,
+    "public_declarations": 6,
+    "kernel_verified_declarations": 6,
+    "unverified_declarations": 0,
+    "public_contract": "CanonicalScheduleStrictTotalOrderContract",
+    "python": "NOT_REQUIRED_STATIC_PROOF",
+    "dynamic_least_open_owner": "C004",
+    "axiom_audit": "PASS_AXIOM_FREE_6_OF_6",
+    "source_audit": "derivation/registry/dag/P002_KERNEL_VERIFIED_AUDIT.json",
+    "source_hash_manifest": "derivation/code/lean/audit/P002_CURRENT_SOURCE_SHA256.txt",
+    "build_evidence": "derivation/code/lean/audit/evidence/USER_LOCAL_P002_FULL_BUILD_20260808.json",
+    "build_evidence_sha256": "c0e659fb610fb8d020ac5382e2ebdf290400eb788843b8ce9243ad4e1145dc93",
+    "build_transcript": "derivation/code/lean/audit/evidence/USER_LOCAL_P002_FULL_BUILD_20260808.txt",
+    "build_transcript_sha256": "f4e55408d79041f2068fded77ca791196828e478b6a12b4f13decec2729131b1"
+  },
+  "project": {
+    "project_name": "CNNA (ComplemeNt Net Architecture) — From Primitive Provenance to Mathematical Structure",
+    "paper_title": "From Primitive Provenance to Mathematical Structure: A Response-Coupled Derivation on a Growing b-ary Tree",
+    "framework": "Generalized Open Provenance Systems",
+    "current_formal_specialization": "Deterministic finite response-coupled provenance growth on a bounded b-ary address grammar",
+    "universal_completion_status": "RESEARCH_HYPOTHESIS_NOT_PROVED",
+    "namespace_stability": "CNNA and CNNAProofs retained",
+    "acronym_expansion": "ComplemeNt Net Architecture",
+    "architectural_identity": "Relative complement architecture begins with first realization and continues through growth, effective response, record/live dynamics, nested cuts, and later specializations."
+  },
+  "open_provenance": {
+    "status": "INTEGRATED_AS_CONCEPTUAL_AND_TRACEABILITY_LAYER",
+    "node_map": "derivation/registry/OPEN_PROVENANCE_NODE_MAP.tsv",
+    "mapped_nodes": 41,
+    "map_entries": 74,
+    "current_finite_specialization": "CNNA_FINITE_RESPONSE_COUPLED",
+    "legacy_povm": "MIGRATION_TARGET_NOT_CURRENT_DAG_THEOREM",
+    "oqs_specialization": "LATER_SPECIALIZATION_NOT_UNIVERSAL_CLAIM",
+    "aqft_specialization": "SECTIONS_5_TO_8_NODEWISE_GATED",
+    "non_identifications": [
+      "Schur/DtN response reduction != partial trace",
+      "POVM != instrument",
+      "process tensor/comb != provenance definition"
+    ],
+    "audit": "PASS"
+  },
+  "cnna_architecture": {
+    "status": "INTEGRATED_FROM_ORIGIN_THROUGH_LATE_SPECIALIZATIONS",
+    "name": "ComplemeNt Net Architecture",
+    "map_concept_id": "CNNA-00",
+    "throughline_entries": 27,
+    "early_explicit_nodes": [
+      "C001",
+      "C002",
+      "C003",
+      "C004A",
+      "C013",
+      "C014"
+    ],
+    "main_paper_definition": "derivation/paper/main/CNNA_ARCHITECTURE_CONCEPT.tex",
+    "registry_definition": "derivation/registry/documentation/CNNA_ARCHITECTURE_CONCEPT.md",
+    "audit": "PASS",
+    "claim_guard": "Architectural interpretation only; no node proof status is promoted."
+  },
+  "c008": {
+    "status": "KERNEL_VERIFIED_EXACT_SOURCE_EVIDENCE",
+    "proof_owner": "C008",
+    "library": "CNNAProofs",
+    "core_module": "S01_C008_RecordLiveResponseCoupledUpdate",
+    "proof_module": "CNNAProofs.C008",
+    "public_declarations": 7,
+    "kernel_verified_declarations": 7,
+    "unverified_declarations": 0,
+    "public_contract": "CanonicalRecordLiveUpdateContract",
+    "python": "PASS_106_TESTS_1086_SUBTESTS",
+    "finite_c008_sweep_cases": 99,
+    "axiom_audit": "PASS_7_OF_7",
+    "axiom_profile_counts": {
+      "choice_propext_quot": 4,
+      "propext_quot_only": 3,
+      "axiom_free": 0
+    },
+    "allowed_transitive_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "direct_project_axioms": 0,
+    "sorry_count": 0,
+    "source_audit": "derivation/registry/dag/C008_KERNEL_VERIFIED_AUDIT.json",
+    "source_hash_manifest": "derivation/code/lean/audit/C008_CURRENT_SOURCE_SHA256.txt",
+    "build_evidence": "derivation/code/lean/audit/evidence/USER_LOCAL_C008_FULL_BUILD_20260808.json",
+    "build_evidence_sha256": "54da99e4dd5287ed4e036bcb0d7868975761ff3e4d4bc525fe747c5a12c6ed0e",
+    "build_transcript": "derivation/code/lean/audit/evidence/USER_LOCAL_C008_FULL_BUILD_20260808.txt",
+    "build_transcript_sha256": "f709a754198efd33915c9953e6efba6b09e17b3defabe3260c2f3c78fb63e3fa",
+    "record_semantics": "append parent/newborn birth updates only",
+    "live_semantics": "append parent/newborn + ancestor + sibling updates",
+    "same_value_boundary": "C006 exact-fraction SameValue",
+    "next_active_node": "C009",
+    "legacy_role": "qualitative hypothesis/regression source only; no free Legacy update law imported"
+  },
+  "c016_c017": {
+    "status": "KERNEL_VERIFIED_EXACT_SOURCE_EVIDENCE",
+    "proof_owners": [
+      "C016",
+      "C017"
+    ],
+    "library": "CNNAProofs",
+    "core_modules": [
+      "S02_C016_ImmutableRecordChannel",
+      "S03_C017_CurrentLiveChannel"
+    ],
+    "proof_module": "CNNAProofs.C016C017",
+    "audited_declarations": 12,
+    "kernel_verified_declarations": 12,
+    "unverified_declarations": 0,
+    "python": "PASS_114_TESTS_1086_SUBTESTS",
+    "axiom_audit": "PASS_12_OF_12",
+    "axiom_profile_counts": {
+      "choice_propext_quot": 10,
+      "propext_quot_only": 2,
+      "axiom_free": 0
+    },
+    "allowed_transitive_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "direct_project_axioms": 0,
+    "sorry_count": 0,
+    "source_hash_manifest": "derivation/code/lean/audit/C016C017_CURRENT_SOURCE_SHA256.txt",
+    "build_evidence": "derivation/code/lean/audit/evidence/USER_LOCAL_C016_C017_FULL_BUILD_20260808.json",
+    "build_evidence_sha256": "b4cc78a8656f273e9a326714790064ff365ea643d15d32f420b78d1c54fcd7cf",
+    "build_transcript": "derivation/code/lean/audit/evidence/USER_LOCAL_C016_C017_FULL_BUILD_20260808.txt",
+    "build_transcript_sha256": "2a4b7655de227e1e2ebdc5e5f4ea57e550a5ce1032b7df7aba0aaff7c677ee2a",
+    "c016_semantics": "project C008 record channel; preserve previous record as literal left prefix; append only canonical M004 parent/child birth updates; respect C006 SameValue",
+    "c017_semantics": "project C008 live channel; preserve previous live as literal left prefix; append complete canonical M004 parent/child + ancestor + sibling relation delta; respect C006 SameValue",
+    "global_recurrence_limit": "arbitrary-many future invariance is not claimed here; recurrent closure belongs downstream",
+    "c024_boundary": "live-minus-record backreaction current remains owned by C024",
+    "next_active_node": "C009",
+    "python_evidence": "derivation/registry/documentation/C016_C017_PYTHON_REGRESSION_20260808.txt"
+  },
+  "c009": {
+    "status": "KERNEL_VERIFIED_EXACT_SOURCE_EVIDENCE",
+    "proof_owner": "C009",
+    "library": "CNNAProofs",
+    "core_module": "S04_C009_CodomainStateX",
+    "proof_module": "CNNAProofs.C009",
+    "audited_declarations": 8,
+    "kernel_verified_declarations": 8,
+    "unverified_declarations": 0,
+    "public_contract": "CanonicalCodomainStateAssemblyContract",
+    "python": "PASS_117_TESTS_1086_SUBTESTS",
+    "assembly_semantics": "inherit schedule; append canonical selected child to bornNonRoot; C016 record projection; C017 live projection",
+    "coherence_boundary": "C005 current conductances must be represented by the pre-step C017 live channel",
+    "same_value_boundary": "C006 exact-fraction SameValue",
+    "schema_closure_owner": "T002",
+    "origin_backpropagation_policy": "missing upstream closure is repaired at its semantic owner, never hidden in C009 or T002",
+    "axiom_audit": "PASS_8_OF_8",
+    "axiom_profile_counts": {
+      "choice_propext_quot": 2,
+      "propext_quot_only": 4,
+      "axiom_free": 2
+    },
+    "allowed_transitive_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "direct_project_axioms": 0,
+    "sorry_count": 0,
+    "source_audit": "derivation/registry/dag/C009_KERNEL_VERIFIED_AUDIT.json",
+    "source_hash_manifest": "derivation/code/lean/audit/C009_CURRENT_SOURCE_SHA256.txt",
+    "build_evidence": "derivation/code/lean/audit/evidence/USER_LOCAL_C009_FULL_BUILD_20260808.json",
+    "build_evidence_sha256": "b7c0b32bf94f9bcad568631f463124c366a003f9a261e4ad575a3f4bc4789f7c",
+    "build_transcript": "derivation/code/lean/audit/evidence/USER_LOCAL_C009_FULL_BUILD_20260808.txt",
+    "build_transcript_sha256": "d5d4a0734f9c58d78d905e4ee0532e81ea3940015d77107b1301ca96240b3267",
+    "next_active_node": "T003",
+    "finite_evidence_guard": "Python finite realization is regression evidence only; T002 owns universal re-entry into the C005 schema."
+  },
+  "t002": {
+    "status": "KERNEL_VERIFIED_EXACT_SOURCE_EVIDENCE",
+    "proof_modules": 2,
+    "audited_declarations": 26,
+    "kernel_verified_declarations": 26,
+    "unverified_declarations": 0,
+    "public_contract": "CanonicalRecurrentStateClosureContract",
+    "axiom_audit": "PASS_26_OF_26",
+    "axiom_profile_counts": {
+      "choice_propext_quot": 19,
+      "propext_quot_only": 7,
+      "axiom_free": 0
+    },
+    "build_evidence": "derivation/code/lean/audit/evidence/USER_LOCAL_T002_FULL_BUILD_20260809.json",
+    "build_transcript": "derivation/code/lean/audit/evidence/USER_LOCAL_T002_FULL_BUILD_20260809.txt",
+    "build_transcript_sha256": "5f86f1acc7011823925154d261f9cf10f6f93755c27675f82e69c402532f4249",
+    "python_regression": "PASS_120_TESTS_1086_SUBTESTS_FINITE_EVIDENCE_ONLY",
+    "next_active_node": "T003"
+  }
+}

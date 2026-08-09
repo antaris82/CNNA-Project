@@ -1,0 +1,98 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "P016",
+  "paper_section": "3.4.1.1",
+  "proof_owner": "M031",
+  "contract": {
+    "statement": "Prove that the intrinsic algebra is independent of auxiliary positional generators and canonically agrees across admitted response presentations.",
+    "reuse_scope": "Final canonicity gate for the directed response algebra.",
+    "granularity_rule": "One separately falsifiable and reusable closure gate; routine lemmas remain internal to the proof module."
+  },
+  "cross_layer": {
+    "semantic_identity_required": true,
+    "python_path_planned": "derivation/code/python/src/cnna/derivation/s03_directed_effective_response_algebra/s04_intrinsic_directed_response_algebra/proofs/s01_p016__intrinsic_generator_independence_canonical_algebra_equivalence.py",
+    "lean_path_planned": "derivation/code/lean/proofs/src/CNNAProofs/Derivation/S03_DirectedEffectiveResponseAlgebra/S04_IntrinsicDirectedResponseAlgebra/S01_M031_IntrinsicDirectedResponseAlgebra/Proofs/S01_P016_IntrinsicGeneratorIndependenceCanonicalAlgebraEquivalence.lean",
+    "documentation_path_planned": "derivation/paper/main/sections/03_directed_effective_response_algebra/04_intrinsic_directed_response_algebra/proofs/01_P016__intrinsic_generator_independence_canonical_algebra_equivalence.tex"
+  },
+  "evidence": {
+    "audit_tier": "B",
+    "python": {
+      "status": "NOT_STARTED"
+    },
+    "lean": {
+      "status": "NOT_STARTED",
+      "mathlib_policy": "ALLOWED_ONLY_FOR_GENERIC_PROOF_INFRASTRUCTURE"
+    }
+  },
+  "workflow": {
+    "node_semantics": "PLANNED_EXPLICIT_PROOF_GATE",
+    "documentation": "STRUCTURAL_REGISTRY_ONLY",
+    "freeze_state": "NOT_STARTED",
+    "frozen_under_gate_version": null,
+    "documentation_v2": "NOT_STARTED"
+  },
+  "dependencies": [
+    "C023",
+    "C033",
+    "M030",
+    "P013",
+    "P015"
+  ],
+  "owner_import_direction": "P016 -> M031",
+  "node_number": "065",
+  "derivation_rank": 38,
+  "derivation_order": 65,
+  "section_hierarchy": {
+    "section_path": "3.4.1.1",
+    "root_title": "Directed effective response algebra",
+    "group_title": "Intrinsic directed response algebra",
+    "main_directory": "derivation/paper/main/sections/03_directed_effective_response_algebra/04_intrinsic_directed_response_algebra/064_M031__intrinsic_directed_response_algebra/065_P016__intrinsic_generator_independence_and_canonical_algebra_equivalence",
+    "supplement_directory": "derivation/supplement/sections/03_directed_effective_response_algebra/04_intrinsic_directed_response_algebra/064_M031__intrinsic_directed_response_algebra/065_P016__intrinsic_generator_independence_and_canonical_algebra_equivalence",
+    "main_artifact": "derivation/paper/main/sections/03_directed_effective_response_algebra/04_intrinsic_directed_response_algebra/064_M031__intrinsic_directed_response_algebra/065_P016__intrinsic_generator_independence_and_canonical_algebra_equivalence/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/03_directed_effective_response_algebra/04_intrinsic_directed_response_algebra/064_M031__intrinsic_directed_response_algebra/065_P016__intrinsic_generator_independence_and_canonical_algebra_equivalence/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C023, C033, M030, P013, P015; registered hard handoff(s): supports_p016, supports_p016, supports_p016, supports_p016, supports_p016."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D2",
+    "tier_name": "Load-bearing theorem, proof owner, obstruction, or quarantine gate",
+    "tier_assignment_rule": "PROOF_THEOREM_OWNER_OBSTRUCTION_OR_QUARANTINE_ROLE",
+    "main_paper_depth": "THEOREM_AND_PROOF_OVERVIEW",
+    "supplement_depth": "FULL_PROOF_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "formal_statement",
+      "hypotheses",
+      "introduction_reason",
+      "proof_strategy",
+      "lemma_chain",
+      "formal_realization",
+      "counterexamples_or_necessity_checks",
+      "axiom_profile",
+      "result",
+      "remaining_limits",
+      "downstream_handoff",
+      "code_line_register"
+    ],
+    "countercheck_requirement": "NEGATIVE_CONTROL_COUNTEREXAMPLE_OR_HYPOTHESIS_NECESSITY",
+    "countercheck_status": "NOT_STARTED",
+    "v2_state": "NOT_STARTED",
+    "python_anchor_status": "NOT_REQUIRED_PROOF_NODE",
+    "lean_anchor_status": "PLANNED",
+    "code_anchors": [],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false
+  },
+  "canonical_identity": {
+    "node_number": "065",
+    "semantic_id": "P016",
+    "canonical_node_label": "065 · P016",
+    "stable_node_directory_name": "065_P016__intrinsic_generator_independence_and_canonical_algebra_equivalence",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "implementation_status": {
+    "status": "NOT_STARTED",
+    "source": "workflow.freeze_state",
+    "node_semantics": "PLANNED_EXPLICIT_PROOF_GATE"
+  }
+}

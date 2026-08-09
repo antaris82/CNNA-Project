@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "076",
+  "canonical_node_label": "076 \u00b7 P020",
+  "stable_node_directory_name": "076_P020__common_ambient_embedding_and_transport_identities",
+  "id": "P020",
+  "section_path": "4.3.2.1",
+  "derivation_order": 76,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

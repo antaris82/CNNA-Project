@@ -1,0 +1,18 @@
+% Canonical node 023 · C015; current section path 1.3.8.
+% Canonical owner: C015
+\cnnaNodeHeading{023}{C015}{Active linear steering convention $\phi(x)=x$}
+\cnnaNodePlacement{1.3.8}{D0}
+C015 fixes one active-path convention,
+\[
+  \phi_A:S\to S,\qquad \phi_A(x)=x,
+\]
+for the exact scalar type supplied by M003.  It is not a selectable mode family
+and introduces no slope, coefficient, coercion, normalization, clipping,
+logarithm, saturation, sign change, or fallback branch.  Python returns the
+same object without conversion; Lean proves both pointwise identity and
+equality with the identity endomorphism by definitional reduction.
+
+The boundary check is deliberately structural: the public API has one
+positional argument and exports no mode or scale object.  Null, logarithmic,
+and saturated transforms remain separately named controls and are not hidden
+alternatives inside C015.  The sole handoff is the unchanged scalar to M003.

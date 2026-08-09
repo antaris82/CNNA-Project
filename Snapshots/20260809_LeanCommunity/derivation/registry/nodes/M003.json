@@ -1,0 +1,572 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "M003",
+  "paper_section": "1.3.9",
+  "contract": {
+    "statement": "For the exact C007 response in M001 boundary order, M003 selects the diagonal at the C004 slot parent, uses C★=1 and C015 φ(x)=x, and yields the unique exact steering scalar. P001 proves that every canonical response-steering pair lies in the strict positive domain required by M004.",
+    "formula": "Sigma_b[R_n,s] = phi(sum_i [B_i=p(s)] R_n(s)[i,i] / C★) = sum_i [B_i=p(s)] R_n(s)[i,i], with C★=1 and phi=id; active domain requires Sigma_b[R_n,s]>0.",
+    "ownership_boundary": [
+      "owns the unique exact scalar extracted from the actual C007 response at the distinguished M001 parent port",
+      "owns the explicit PositiveSteering predicate and consumes the kernel-verified canonical directed-Kron positivity through CanonicalM003Closure",
+      "does not claim that M002 unique solvability alone proves strict positivity",
+      "is invariant under C006 MatrixSameValue replacement",
+      "does not add a baseline, clipping fallback, rank/bias/load/mode coefficient, birth event, conductance update, or successor state"
+    ]
+  },
+  "cross_layer": {
+    "equivalence": "Python and Lean compute the same address-selected parent-port diagonal aggregate, preserve exact-fraction value equivalence, and distinguish the scalar definition from its proved strict-positive canonical domain.",
+    "semantic_mismatch_known": false,
+    "semantic_identity_verified": true,
+    "identity_kind": "KERNEL_VERIFIED_EXACT_SOURCE_EVIDENCE",
+    "identity_evidence": [
+      "Core and Python semantics remain unchanged and their registered tests/evidence remain current.",
+      "P001 remains kernel-verified with exact source evidence.",
+      "The canonical M003 closure is kernel-compiled and axiom-audited under Lean 4.31.0; exact current-source evidence matches."
+    ]
+  },
+  "evidence": {
+    "audit_tier": "B",
+    "python": {
+      "status": "PASS_ASSISTANT_EXECUTED",
+      "node_tests": 7,
+      "full_suite_tests": 100,
+      "full_suite_subtests": 1078,
+      "substantive_probe": "Unique parent occurrence, exact parent diagonal, representative invariance, positive recurrent samples, and explicit zero as a negative active-domain control."
+    },
+    "lean": {
+      "status": "KERNEL_VERIFIED_EXACT_SOURCE_EVIDENCE",
+      "core_source_sha256": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+      "closure_source": "derivation/code/lean/proofs/src/CNNAProofs/M003M004/S01_CanonicalM003Closure.lean",
+      "closure_source_sha256": "d96d928f48f0780e3b728b3777d2b58e99349ef901743113f172b1a5c0e7ce9c",
+      "toolchain": "leanprover/lean4:v4.31.0",
+      "kernel_build": "PASS",
+      "mathlib": "v4.31.0",
+      "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+      "build_evidence": "derivation/code/lean/audit/evidence/USER_LOCAL_M003_M004_FULL_BUILD_20260806.json",
+      "build_evidence_sha256": "cd6c95a56c5dc3a21337b9006449b69a2d5a51b5a9c89b4180667279229287ad",
+      "build_transcript": "derivation/code/lean/audit/evidence/USER_LOCAL_M003_M004_FULL_BUILD_20260806.txt",
+      "build_transcript_sha256": "d15167488dbe74c9b6d1bf7cb4629b34e83a1111ad63a548ee041cc9dc69bf24",
+      "axiom_audit": "PASS",
+      "package_boundary_audit": "PASS",
+      "exact_source_evidence": "MATCH",
+      "allowed_transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "proof_declarations": 4,
+      "axiom_profile_counts": {
+        "choice_propext_quot": 2,
+        "propext_quot_only": 2,
+        "axiom_free": 0
+      }
+    }
+  },
+  "artifacts": {
+    "python_source": "50a9daf700243ccc5c374fa452cc714bcbabe57e8d6dca4b49d8f8663312e390",
+    "python_test": "b92ac283a6ab21efcecad7488ce5ce72a6b979c8de163a98e018cd0dc774524e",
+    "lean_source": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+    "math_prose": "520296b4ba44cf8aa0d4939ac19ebd7deab5c5821c41983b354d5689020a389f",
+    "supplement_documentation": "ddb9016bb49e83778763ee85953d8be97c12002338e862bbc2ca31bc783f0631",
+    "lean_closure_source": "d96d928f48f0780e3b728b3777d2b58e99349ef901743113f172b1a5c0e7ce9c"
+  },
+  "workflow": {
+    "node_semantics": "CLOSED_CANONICAL_RESPONSE_STEERING_FUNCTIONAL",
+    "documentation": "COMPLETE_V2",
+    "freeze_state": "FROZEN_VERIFIED",
+    "frozen_under_gate_version": "M003_M004_KERNEL_VERIFIED_CURRENT_STATE",
+    "documentation_v2": "COMPLETE_V2"
+  },
+  "node_number": "024",
+  "derivation_rank": 15,
+  "derivation_order": 24,
+  "section_hierarchy": {
+    "section_path": "1.3.9",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Canonical cut, complement elimination and birth steering",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/024_M003__canonical_response_steering_functional_b_r_s",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/024_M003__canonical_response_steering_functional_b_r_s",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/024_M003__canonical_response_steering_functional_b_r_s/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/024_M003__canonical_response_steering_functional_b_r_s/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C015, C007, M005; registered hard handoff(s): fixes_linear_active_transform, feeds_response_steering, enforces_unit_normalized_steering."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D2",
+    "tier_name": "Load-bearing theorem, proof owner, obstruction, or quarantine gate",
+    "tier_assignment_rule": "PROOF_THEOREM_OWNER_OBSTRUCTION_OR_QUARANTINE_ROLE",
+    "main_paper_depth": "THEOREM_AND_PROOF_OVERVIEW",
+    "supplement_depth": "FULL_PROOF_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "formal_statement",
+      "hypotheses",
+      "introduction_reason",
+      "proof_strategy",
+      "lemma_chain",
+      "formal_realization",
+      "counterexamples_or_necessity_checks",
+      "axiom_profile",
+      "result",
+      "remaining_limits",
+      "downstream_handoff",
+      "code_line_register"
+    ],
+    "countercheck_requirement": "NEGATIVE_CONTROL_COUNTEREXAMPLE_OR_HYPOTHESIS_NECESSITY",
+    "countercheck_status": "PASS",
+    "v2_state": "COMPLETE_V2",
+    "python_anchor_status": "RESOLVED",
+    "lean_anchor_status": "RESOLVED",
+    "code_anchors": [
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s09_m003__canonical_response_steering_functional_sigma_b_rn_s.py",
+        "symbol": "CanonicalResponseSteering",
+        "declaration_kind": "CLASS",
+        "start_line": 47,
+        "end_line": 72,
+        "source_sha256": "bee99c2edb4d1de28d4366dea75f1d587eb0c25146f104f98862cc85120a1009",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s09_m003__canonical_response_steering_functional_sigma_b_rn_s.py",
+        "symbol": "is_positive_response_steering",
+        "declaration_kind": "FUNCTION",
+        "start_line": 75,
+        "end_line": 82,
+        "source_sha256": "bee99c2edb4d1de28d4366dea75f1d587eb0c25146f104f98862cc85120a1009",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s09_m003__canonical_response_steering_functional_sigma_b_rn_s.py",
+        "symbol": "parent_port_self_response",
+        "declaration_kind": "FUNCTION",
+        "start_line": 85,
+        "end_line": 99,
+        "source_sha256": "bee99c2edb4d1de28d4366dea75f1d587eb0c25146f104f98862cc85120a1009",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s09_m003__canonical_response_steering_functional_sigma_b_rn_s.py",
+        "symbol": "canonical_response_steering_functional",
+        "declaration_kind": "FUNCTION",
+        "start_line": 102,
+        "end_line": 120,
+        "source_sha256": "bee99c2edb4d1de28d4366dea75f1d587eb0c25146f104f98862cc85120a1009",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/test_s09_m003__canonical_response_steering_functional_sigma_b_rn_s.py",
+        "symbol": "_bootstrap_state",
+        "declaration_kind": "FUNCTION",
+        "start_line": 33,
+        "end_line": 39,
+        "source_sha256": "911102ca3ae3fe8a4a822b1569f4d8b52e9cf040635971dc3812baa324a8a067",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/test_s09_m003__canonical_response_steering_functional_sigma_b_rn_s.py",
+        "symbol": "_state",
+        "declaration_kind": "FUNCTION",
+        "start_line": 42,
+        "end_line": 53,
+        "source_sha256": "911102ca3ae3fe8a4a822b1569f4d8b52e9cf040635971dc3812baa324a8a067",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/test_s09_m003__canonical_response_steering_functional_sigma_b_rn_s.py",
+        "symbol": "TestCanonicalResponseSteeringFunctional",
+        "declaration_kind": "CLASS",
+        "start_line": 56,
+        "end_line": 148,
+        "source_sha256": "911102ca3ae3fe8a4a822b1569f4d8b52e9cf040635971dc3812baa324a8a067",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S09_M003_CanonicalResponseSteeringFunctionalSigmaBRnS.lean",
+        "symbol": "terminal_mem_prefixChainAux",
+        "declaration_kind": "THEOREM",
+        "start_line": 38,
+        "end_line": 60,
+        "source_sha256": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S09_M003_CanonicalResponseSteeringFunctionalSigmaBRnS.lean",
+        "symbol": "parent_mem_causalPredecessorPorts",
+        "declaration_kind": "THEOREM",
+        "start_line": 61,
+        "end_line": 71,
+        "source_sha256": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S09_M003_CanonicalResponseSteeringFunctionalSigmaBRnS.lean",
+        "symbol": "parent_mem_boundary",
+        "declaration_kind": "THEOREM",
+        "start_line": 72,
+        "end_line": 79,
+        "source_sha256": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S09_M003_CanonicalResponseSteeringFunctionalSigmaBRnS.lean",
+        "symbol": "parentDiagonalTerm",
+        "declaration_kind": "DEF",
+        "start_line": 80,
+        "end_line": 90,
+        "source_sha256": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S09_M003_CanonicalResponseSteeringFunctionalSigmaBRnS.lean",
+        "symbol": "parentSelfResponse",
+        "declaration_kind": "DEF",
+        "start_line": 91,
+        "end_line": 101,
+        "source_sha256": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S09_M003_CanonicalResponseSteeringFunctionalSigmaBRnS.lean",
+        "symbol": "unitNormalizedParentResponse",
+        "declaration_kind": "DEF",
+        "start_line": 102,
+        "end_line": 108,
+        "source_sha256": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S09_M003_CanonicalResponseSteeringFunctionalSigmaBRnS.lean",
+        "symbol": "selected_conductance_unit_eq_one",
+        "declaration_kind": "THEOREM",
+        "start_line": 109,
+        "end_line": 114,
+        "source_sha256": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S09_M003_CanonicalResponseSteeringFunctionalSigmaBRnS.lean",
+        "symbol": "sigma",
+        "declaration_kind": "DEF",
+        "start_line": 115,
+        "end_line": 121,
+        "source_sha256": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S09_M003_CanonicalResponseSteeringFunctionalSigmaBRnS.lean",
+        "symbol": "IsCanonicalResponseSteering",
+        "declaration_kind": "DEF",
+        "start_line": 122,
+        "end_line": 128,
+        "source_sha256": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S09_M003_CanonicalResponseSteeringFunctionalSigmaBRnS.lean",
+        "symbol": "sigma_eq_unitNormalizedParentResponse",
+        "declaration_kind": "THEOREM",
+        "start_line": 129,
+        "end_line": 136,
+        "source_sha256": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S09_M003_CanonicalResponseSteeringFunctionalSigmaBRnS.lean",
+        "symbol": "sigma_eq_parentSelfResponse",
+        "declaration_kind": "THEOREM",
+        "start_line": 137,
+        "end_line": 145,
+        "source_sha256": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S09_M003_CanonicalResponseSteeringFunctionalSigmaBRnS.lean",
+        "symbol": "PositiveSteering",
+        "declaration_kind": "DEF",
+        "start_line": 146,
+        "end_line": 150,
+        "source_sha256": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S09_M003_CanonicalResponseSteeringFunctionalSigmaBRnS.lean",
+        "symbol": "parentDiagonalTerm_respects_matrixSameValue",
+        "declaration_kind": "THEOREM",
+        "start_line": 151,
+        "end_line": 168,
+        "source_sha256": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S09_M003_CanonicalResponseSteeringFunctionalSigmaBRnS.lean",
+        "symbol": "parentSelfResponse_respects_matrixSameValue",
+        "declaration_kind": "THEOREM",
+        "start_line": 169,
+        "end_line": 184,
+        "source_sha256": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S09_M003_CanonicalResponseSteeringFunctionalSigmaBRnS.lean",
+        "symbol": "sigma_respects_matrixSameValue",
+        "declaration_kind": "THEOREM",
+        "start_line": 185,
+        "end_line": 197,
+        "source_sha256": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S09_M003_CanonicalResponseSteeringFunctionalSigmaBRnS.lean",
+        "symbol": "steering_exists",
+        "declaration_kind": "THEOREM",
+        "start_line": 198,
+        "end_line": 206,
+        "source_sha256": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S09_M003_CanonicalResponseSteeringFunctionalSigmaBRnS.lean",
+        "symbol": "steering_unique",
+        "declaration_kind": "THEOREM",
+        "start_line": 207,
+        "end_line": 218,
+        "source_sha256": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S09_M003_CanonicalResponseSteeringFunctionalSigmaBRnS.lean",
+        "symbol": "response_representatives_give_same_steering",
+        "declaration_kind": "THEOREM",
+        "start_line": 219,
+        "end_line": 231,
+        "source_sha256": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S09_M003_CanonicalResponseSteeringFunctionalSigmaBRnS.lean",
+        "symbol": "IsResponseSteeringPair",
+        "declaration_kind": "DEF",
+        "start_line": 232,
+        "end_line": 241,
+        "source_sha256": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S09_M003_CanonicalResponseSteeringFunctionalSigmaBRnS.lean",
+        "symbol": "IsPositiveResponseSteeringPair",
+        "declaration_kind": "DEF",
+        "start_line": 242,
+        "end_line": 252,
+        "source_sha256": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S09_M003_CanonicalResponseSteeringFunctionalSigmaBRnS.lean",
+        "symbol": "DirectedKronParentPositivityAt",
+        "declaration_kind": "DEF",
+        "start_line": 253,
+        "end_line": 262,
+        "source_sha256": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S09_M003_CanonicalResponseSteeringFunctionalSigmaBRnS.lean",
+        "symbol": "InPositiveSteeringDomain",
+        "declaration_kind": "DEF",
+        "start_line": 263,
+        "end_line": 268,
+        "source_sha256": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S09_M003_CanonicalResponseSteeringFunctionalSigmaBRnS.lean",
+        "symbol": "inPositiveSteeringDomain_iff",
+        "declaration_kind": "THEOREM",
+        "start_line": 269,
+        "end_line": 276,
+        "source_sha256": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S09_M003_CanonicalResponseSteeringFunctionalSigmaBRnS.lean",
+        "symbol": "responseSteeringPair_exists",
+        "declaration_kind": "THEOREM",
+        "start_line": 277,
+        "end_line": 289,
+        "source_sha256": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S09_M003_CanonicalResponseSteeringFunctionalSigmaBRnS.lean",
+        "symbol": "responseSteeringPair_value_unique",
+        "declaration_kind": "THEOREM",
+        "start_line": 290,
+        "end_line": 311,
+        "source_sha256": "1ecd0f0d2afe74458cae30490db430306c0ee9e79550eada2b2f80b66f398c8e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_proof",
+        "role": "PROOF",
+        "path": "derivation/code/lean/proofs/src/CNNAProofs/M003M004/S01_CanonicalM003Closure.lean",
+        "symbol": "CanonicalM003Closure",
+        "declaration_kind": "STRUCTURE",
+        "start_line": 28,
+        "end_line": 44,
+        "source_sha256": "d96d928f48f0780e3b728b3777d2b58e99349ef901743113f172b1a5c0e7ce9c",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_proof",
+        "role": "PROOF",
+        "path": "derivation/code/lean/proofs/src/CNNAProofs/M003M004/S01_CanonicalM003Closure.lean",
+        "symbol": "canonicalM003Closure",
+        "declaration_kind": "THEOREM",
+        "start_line": 45,
+        "end_line": 65,
+        "source_sha256": "d96d928f48f0780e3b728b3777d2b58e99349ef901743113f172b1a5c0e7ce9c",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_proof",
+        "role": "PROOF",
+        "path": "derivation/code/lean/proofs/src/CNNAProofs/M003M004/S01_CanonicalM003Closure.lean",
+        "symbol": "CanonicalM003ClosureContract",
+        "declaration_kind": "DEF",
+        "start_line": 66,
+        "end_line": 72,
+        "source_sha256": "d96d928f48f0780e3b728b3777d2b58e99349ef901743113f172b1a5c0e7ce9c",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_proof",
+        "role": "PROOF",
+        "path": "derivation/code/lean/proofs/src/CNNAProofs/M003M004/S01_CanonicalM003Closure.lean",
+        "symbol": "canonicalM003ClosureContract",
+        "declaration_kind": "THEOREM",
+        "start_line": 73,
+        "end_line": 76,
+        "source_sha256": "d96d928f48f0780e3b728b3777d2b58e99349ef901743113f172b1a5c0e7ce9c",
+        "resolution": "RESOLVED"
+      }
+    ],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false,
+    "completion_evidence": {
+      "status": "KERNEL_VERIFIED_CURRENT_STATE",
+      "main_artifact": "derivation/paper/main/sections/01_primitive_response_coupled_finite_provenance/03_recurrent_pre_birth_measurement_and_steering/024_M003__canonical_response_steering_functional_b_r_s/SECTION.tex",
+      "supplement_artifact": "derivation/supplement/sections/01_primitive_response_coupled_finite_provenance/03_recurrent_pre_birth_measurement_and_steering/024_M003__canonical_response_steering_functional_b_r_s/DOCUMENTATION.md",
+      "main_sha256": "520296b4ba44cf8aa0d4939ac19ebd7deab5c5821c41983b354d5689020a389f",
+      "supplement_sha256": "ddb9016bb49e83778763ee85953d8be97c12002338e862bbc2ca31bc783f0631",
+      "code_anchor_count": 36,
+      "source_code_changed": true,
+      "documentation_complete": true,
+      "required_sections_present": true,
+      "countercheck_present": true,
+      "code_anchors_resolved": true,
+      "completed_on": "2026-08-06",
+      "kernel_build": "PASS",
+      "kernel_build_evidence": "derivation/code/lean/audit/evidence/USER_LOCAL_M003_M004_FULL_BUILD_20260806.json",
+      "kernel_build_evidence_sha256": "cd6c95a56c5dc3a21337b9006449b69a2d5a51b5a9c89b4180667279229287ad",
+      "kernel_build_transcript": "derivation/code/lean/audit/evidence/USER_LOCAL_M003_M004_FULL_BUILD_20260806.txt",
+      "kernel_build_transcript_sha256": "d15167488dbe74c9b6d1bf7cb4629b34e83a1111ad63a548ee041cc9dc69bf24"
+    }
+  },
+  "canonical_identity": {
+    "node_number": "024",
+    "semantic_id": "M003",
+    "canonical_node_label": "024 · M003",
+    "stable_node_directory_name": "024_M003__canonical_response_steering_functional_b_r_s",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "implementation_status": {
+    "status": "KERNEL_VERIFIED",
+    "source": "Core plus CNNAProofs.M003M004",
+    "node_semantics": "CANONICAL_CLOSURE_KERNEL_COMPILED_AXIOM_AUDITED_FULL_BOUNDARY_PASS"
+  },
+  "open_provenance_context": {
+    "framework": "GENERALIZED_OPEN_PROVENANCE_SYSTEMS",
+    "concept_ids": [
+      "OPS-04"
+    ],
+    "roles": [
+      "Response-coupled event generation"
+    ],
+    "integration_status": [
+      "M003_M004_VERIFIED_C008_DOWNSTREAM"
+    ],
+    "claim_guard": "Interpretive specialization map only. Mathematical force is exactly the node contract and its registered evidence; no universal open-system theorem is inferred."
+  },
+  "cnna_architecture_context": {
+    "concept_id": "CNNA-00",
+    "name": "ComplemeNt Net Architecture",
+    "role": "Response evaluation: extracts the positive steering value through which the current complement context controls further growth.",
+    "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+    "claim_guard": "Interpretive and organizational context only; mathematical force remains exactly the registered node contract and evidence status."
+  }
+}

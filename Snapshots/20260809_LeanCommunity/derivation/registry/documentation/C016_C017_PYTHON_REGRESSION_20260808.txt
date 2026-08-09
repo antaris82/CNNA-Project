@@ -1,0 +1,10 @@
+CNNA C016/C017 Python regression evidence
+date: 2026-08-08
+status: FINITE_REGRESSION_EVIDENCE_ONLY
+command: PYTHONPATH=src pytest -q
+guard: This finite executable regression does not replace the universal Lean proof.
+
+........................................ [ 35%]
+..................................................... [ 81%]
+.....................                         [100%]
+114 passed, 1086 subtests passed in 8.47s

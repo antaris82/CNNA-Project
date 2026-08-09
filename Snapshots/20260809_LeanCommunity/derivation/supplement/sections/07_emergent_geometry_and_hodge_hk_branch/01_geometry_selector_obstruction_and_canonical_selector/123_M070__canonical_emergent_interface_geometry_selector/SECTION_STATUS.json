@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "123",
+  "canonical_node_label": "123 \u00b7 M070",
+  "stable_node_directory_name": "123_M070__canonical_emergent_interface_geometry_selector",
+  "id": "M070",
+  "section_path": "7.1.2",
+  "derivation_order": 123,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

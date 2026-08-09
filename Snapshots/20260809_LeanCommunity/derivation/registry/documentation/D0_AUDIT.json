@@ -1,0 +1,21 @@
+{
+  "schema": "cnna.d0-documentation-schema-audit.v2",
+  "status": "PASS",
+  "nodes": 145,
+  "tier_counts": {
+    "D0": 14,
+    "D1": 16,
+    "D2": 115
+  },
+  "documentation_states": {
+    "V1_CONTENT_PRESENT_MIGRATION_REQUIRED": 0,
+    "NOT_STARTED": 114,
+    "COMPLETE_V2": 31,
+    "DRAFT_V2": 0
+  },
+  "node_records": 145,
+  "code_anchors": 815,
+  "resolved_python_nodes": 27,
+  "resolved_lean_nodes": 21,
+  "errors": []
+}

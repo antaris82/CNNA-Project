@@ -1,0 +1,97 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "P020",
+  "paper_section": "4.3.2.1",
+  "proof_owner": "C045",
+  "contract": {
+    "statement": "Prove that nested finite response objects embed into the declared common ambient carrier and satisfy the exact restriction/transport identities.",
+    "reuse_scope": "Common-ambient theorem reused by every nested channel comparison.",
+    "granularity_rule": "One separately falsifiable and reusable closure gate; routine lemmas remain internal to the proof module."
+  },
+  "cross_layer": {
+    "semantic_identity_required": true,
+    "python_path_planned": "derivation/code/python/src/cnna/derivation/s04_exact_finite_closure_and_ancestor_return_structure/s03_projective_and_nested_channel_structure/proofs/s01_p020__common_ambient_embedding_transport_identities.py",
+    "lean_path_planned": "derivation/code/lean/proofs/src/CNNAProofs/Derivation/S04_ExactFiniteClosureAndAncestorReturnStructure/S03_ProjectiveAndNestedChannelStructure/S02_C045_NestedCommonAmbientMultiscaleTransport/Proofs/S01_P020_CommonAmbientEmbeddingTransportIdentities.lean",
+    "documentation_path_planned": "derivation/paper/main/sections/04_exact_finite_closure_and_ancestor_return_structure/03_projective_and_nested_channel_structure/proofs/01_P020__common_ambient_embedding_transport_identities.tex"
+  },
+  "evidence": {
+    "audit_tier": "B",
+    "python": {
+      "status": "NOT_STARTED"
+    },
+    "lean": {
+      "status": "NOT_STARTED",
+      "mathlib_policy": "ALLOWED_ONLY_FOR_GENERIC_PROOF_INFRASTRUCTURE"
+    }
+  },
+  "workflow": {
+    "node_semantics": "PLANNED_EXPLICIT_PROOF_GATE",
+    "documentation": "STRUCTURAL_REGISTRY_ONLY",
+    "freeze_state": "NOT_STARTED",
+    "frozen_under_gate_version": null,
+    "documentation_v2": "NOT_STARTED"
+  },
+  "dependencies": [
+    "C021",
+    "C044",
+    "P009",
+    "P019"
+  ],
+  "owner_import_direction": "P020 -> C045",
+  "node_number": "076",
+  "derivation_rank": 51,
+  "derivation_order": 76,
+  "section_hierarchy": {
+    "section_path": "4.3.2.1",
+    "root_title": "Projective refinement and nested open channels",
+    "group_title": "Projective carriers and nested open channels",
+    "main_directory": "derivation/paper/main/sections/04_projective_refinement_and_nested_open_channels/03_projective_carriers_and_nested_open_channels/075_C045__nested_common_ambient_multiscale_transport/076_P020__common_ambient_embedding_and_transport_identities",
+    "supplement_directory": "derivation/supplement/sections/04_projective_refinement_and_nested_open_channels/03_projective_carriers_and_nested_open_channels/075_C045__nested_common_ambient_multiscale_transport/076_P020__common_ambient_embedding_and_transport_identities",
+    "main_artifact": "derivation/paper/main/sections/04_projective_refinement_and_nested_open_channels/03_projective_carriers_and_nested_open_channels/075_C045__nested_common_ambient_multiscale_transport/076_P020__common_ambient_embedding_and_transport_identities/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/04_projective_refinement_and_nested_open_channels/03_projective_carriers_and_nested_open_channels/075_C045__nested_common_ambient_multiscale_transport/076_P020__common_ambient_embedding_and_transport_identities/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C021, C044, P009, P019; registered hard handoff(s): supports_p020, supports_p020, supports_p020, supports_p020."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D2",
+    "tier_name": "Load-bearing theorem, proof owner, obstruction, or quarantine gate",
+    "tier_assignment_rule": "PROOF_THEOREM_OWNER_OBSTRUCTION_OR_QUARANTINE_ROLE",
+    "main_paper_depth": "THEOREM_AND_PROOF_OVERVIEW",
+    "supplement_depth": "FULL_PROOF_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "formal_statement",
+      "hypotheses",
+      "introduction_reason",
+      "proof_strategy",
+      "lemma_chain",
+      "formal_realization",
+      "counterexamples_or_necessity_checks",
+      "axiom_profile",
+      "result",
+      "remaining_limits",
+      "downstream_handoff",
+      "code_line_register"
+    ],
+    "countercheck_requirement": "NEGATIVE_CONTROL_COUNTEREXAMPLE_OR_HYPOTHESIS_NECESSITY",
+    "countercheck_status": "NOT_STARTED",
+    "v2_state": "NOT_STARTED",
+    "python_anchor_status": "NOT_REQUIRED_PROOF_NODE",
+    "lean_anchor_status": "PLANNED",
+    "code_anchors": [],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false
+  },
+  "canonical_identity": {
+    "node_number": "076",
+    "semantic_id": "P020",
+    "canonical_node_label": "076 · P020",
+    "stable_node_directory_name": "076_P020__common_ambient_embedding_and_transport_identities",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "implementation_status": {
+    "status": "NOT_STARTED",
+    "source": "workflow.freeze_state",
+    "node_semantics": "PLANNED_EXPLICIT_PROOF_GATE"
+  }
+}

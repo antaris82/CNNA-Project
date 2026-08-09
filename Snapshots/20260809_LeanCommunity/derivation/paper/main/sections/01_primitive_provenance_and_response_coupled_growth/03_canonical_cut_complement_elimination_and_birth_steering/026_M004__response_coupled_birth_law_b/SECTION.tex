@@ -1,0 +1,32 @@
+% Canonical node 026 · M004; current section path 1.3.10.
+% Canonical owner: M004
+\cnnaNodeHeading{026}{M004}{Response-coupled birth law $\mathfrak B_b$}
+\cnnaNodePlacement{1.3.10}{D1}
+For the canonical pre-birth realization, M004 consumes the closed M003
+interface and transports the exact steering scalar $\sigma$ unchanged to the
+provenance-determined instruction:
+\[
+\begin{aligned}
+ c(p,x)&=c(x,p)=\sigma,\\
+ c(x,a)&=\sigma &&(a\text{ a strict ancestor of }p),\\
+ c(q,x)&=c(x,q)=\sigma &&(q\text{ an older sibling}),\\
+ \ell_{n+1}&=\sigma.
+\end{aligned}
+\]
+The Core retains a zero-inclusive algebraic lift and a strictly positive active
+constructor.  The proof layer no longer asks a caller for positivity or a
+parent coordinate: \texttt{canonicalM004Closure} uses
+\texttt{CanonicalM003Closure} directly to construct an active instruction,
+prove uniqueness for each exact response-steering pair, and prove
+representative independence.  It exposes
+\texttt{IsCanonicalBirthInstructionHandoff} as the immutable output boundary
+for C008.  C008 alone owns record/live state mutation.
+
+No second birth-law constructor, regularization, clipping, bias, load, rank, or
+extra scalar is introduced.  The seven public M004 closure and handoff declarations were compiled with Lean~4.31.0 and passed the registered axiom audit.
+
+% CNNA-OPEN-PROVENANCE-BEGIN M004
+\begin{cnnaInfoBox}{Open-provenance role: Birth instruction before record/live mutation}
+M004 turns the positive response scalar into a representative-independent provenance instruction.  C008 remains responsible for applying that instruction to the immutable record and mutable live channels.
+\end{cnnaInfoBox}
+% CNNA-OPEN-PROVENANCE-END M004

@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "142",
+  "canonical_node_label": "142 \u00b7 O084",
+  "stable_node_directory_name": "142_O084__prov_purity_obstruction",
+  "id": "O084",
+  "section_path": "8.3.1",
+  "derivation_order": 142,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

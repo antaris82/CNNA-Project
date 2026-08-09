@@ -1,0 +1,281 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "C016",
+  "paper_section": "1.4.2",
+  "contract": {
+    "statement": "The C008 record projection preserves every pre-existing birth-time relation entry as a literal left prefix and appends only the canonical M004 parent/child birth pair; the projection respects C006 exact-fraction SameValue.",
+    "ownership_boundary": [
+      "does not construct an arbitrary-many-birth recurrence before C009/P005",
+      "does not admit ancestor or sibling backreaction into record",
+      "does not identify record with live after bootstrap",
+      "does not introduce Legacy update coefficients"
+    ]
+  },
+  "workflow": {
+    "node_semantics": "CLOSED_IMMUTABLE_RECORD_CHANNEL",
+    "documentation": "COMPLETE_V2",
+    "freeze_state": "FROZEN_VERIFIED",
+    "frozen_under_gate_version": "C016_KERNEL_VERIFIED_EXACT_SOURCE_20260808",
+    "documentation_v2": "COMPLETE_V2"
+  },
+  "dependencies": [
+    "C008"
+  ],
+  "node_number": "028",
+  "derivation_rank": 18,
+  "derivation_order": 28,
+  "section_hierarchy": {
+    "section_path": "1.4.2",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Record/live update, backreaction channels and finite closure",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/04_record_live_update_backreaction_channels_and_finite_closure/028_C016__immutable_record_channel",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/04_record_live_update_backreaction_channels_and_finite_closure/028_C016__immutable_record_channel",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/04_record_live_update_backreaction_channels_and_finite_closure/028_C016__immutable_record_channel/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/04_record_live_update_backreaction_channels_and_finite_closure/028_C016__immutable_record_channel/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C008; registered hard handoff(s): creates_record_channel."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D1",
+    "tier_name": "Structural construction",
+    "tier_assignment_rule": "STRUCTURAL_CONSTRUCTION_ROLE",
+    "main_paper_depth": "STRUCTURAL_EXPLANATION",
+    "supplement_depth": "DETAILED_CONSTRUCTION_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "mathematical_contract",
+      "introduction_reason",
+      "explicit_construction",
+      "invariants",
+      "canonicity_or_uniqueness",
+      "boundary_cases",
+      "python_lean_cross_layer",
+      "countercheck",
+      "result",
+      "downstream_handoff",
+      "code_anchors"
+    ],
+    "countercheck_requirement": "INVARIANT_EDGE_CASE_AND_CROSS_LAYER_CHECK",
+    "countercheck_status": "PASS",
+    "v2_state": "COMPLETE_V2",
+    "python_anchor_status": "RESOLVED",
+    "lean_anchor_status": "RESOLVED_KERNEL_VERIFIED",
+    "code_anchors": [
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s04_record_live_update_backreaction_channels_and_finite_closure/s02_c016__immutable_record_channel.py",
+        "symbol": "immutable_record_channel",
+        "declaration_kind": "FUNCTION",
+        "start_line": 20,
+        "end_line": 26,
+        "source_sha256": "d25f481426cea2733e317757cd2b987ecec88d7ee9d660a552e42cf2ba4ebd38",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s04_record_live_update_backreaction_channels_and_finite_closure/s02_c016__immutable_record_channel.py",
+        "symbol": "record_channel_after_instruction",
+        "declaration_kind": "FUNCTION",
+        "start_line": 29,
+        "end_line": 38,
+        "source_sha256": "d25f481426cea2733e317757cd2b987ecec88d7ee9d660a552e42cf2ba4ebd38",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "COUNTERCHECK",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s04_record_live_update_backreaction_channels_and_finite_closure/test_s02_c016__immutable_record_channel.py",
+        "symbol": "test_c016_preserves_old_record_and_appends_only_birth_pair",
+        "declaration_kind": "TEST",
+        "start_line": 41,
+        "end_line": 51,
+        "source_sha256": "88df027397c3711b6b191d0512e15c8dc0b72426ffcdda9b11a76d148b9865ca",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "COUNTERCHECK",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s04_record_live_update_backreaction_channels_and_finite_closure/test_s02_c016__immutable_record_channel.py",
+        "symbol": "test_c016_does_not_mutate_input_tuple",
+        "declaration_kind": "TEST",
+        "start_line": 54,
+        "end_line": 61,
+        "source_sha256": "88df027397c3711b6b191d0512e15c8dc0b72426ffcdda9b11a76d148b9865ca",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S02_C016_ImmutableRecordChannel.lean",
+        "symbol": "recordChannel",
+        "declaration_kind": "DEF",
+        "start_line": 30,
+        "end_line": 32,
+        "source_sha256": "88de4a80e2b2b05f9764af56a72c0e5e3cad8aba7d5c28669df94a24a0d66b74",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S02_C016_ImmutableRecordChannel.lean",
+        "symbol": "afterInstruction_eq_append",
+        "declaration_kind": "THEOREM",
+        "start_line": 49,
+        "end_line": 55,
+        "source_sha256": "88de4a80e2b2b05f9764af56a72c0e5e3cad8aba7d5c28669df94a24a0d66b74",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S02_C016_ImmutableRecordChannel.lean",
+        "symbol": "previousRecord_isLeftPrefix",
+        "declaration_kind": "THEOREM",
+        "start_line": 60,
+        "end_line": 67,
+        "source_sha256": "88de4a80e2b2b05f9764af56a72c0e5e3cad8aba7d5c28669df94a24a0d66b74",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S02_C016_ImmutableRecordChannel.lean",
+        "symbol": "afterInstruction_respects_sameValue",
+        "declaration_kind": "THEOREM",
+        "start_line": 70,
+        "end_line": 80,
+        "source_sha256": "88de4a80e2b2b05f9764af56a72c0e5e3cad8aba7d5c28669df94a24a0d66b74",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S02_C016_ImmutableRecordChannel.lean",
+        "symbol": "ImmutableRecordChannelContract",
+        "declaration_kind": "DEF",
+        "start_line": 85,
+        "end_line": 102,
+        "source_sha256": "88de4a80e2b2b05f9764af56a72c0e5e3cad8aba7d5c28669df94a24a0d66b74",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S02_C016_ImmutableRecordChannel.lean",
+        "symbol": "immutableRecordChannelContract",
+        "declaration_kind": "THEOREM",
+        "start_line": 105,
+        "end_line": 115,
+        "source_sha256": "88de4a80e2b2b05f9764af56a72c0e5e3cad8aba7d5c28669df94a24a0d66b74",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_proof",
+        "role": "PROOF_FACADE",
+        "path": "derivation/code/lean/proofs/src/CNNAProofs/C016C017/S01_CanonicalRecordLiveChannelProjectionClosure.lean",
+        "symbol": "CanonicalImmutableRecordChannelClosure",
+        "declaration_kind": "STRUCTURE",
+        "start_line": 20,
+        "end_line": 21,
+        "source_sha256": "dec8b9f1b24ad8f3631324c8944ba68a7bd7381e197f75b78aabac0dbb299c27",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_proof",
+        "role": "PROOF_FACADE",
+        "path": "derivation/code/lean/proofs/src/CNNAProofs/C016C017/S01_CanonicalRecordLiveChannelProjectionClosure.lean",
+        "symbol": "canonicalImmutableRecordChannelClosure",
+        "declaration_kind": "THEOREM",
+        "start_line": 24,
+        "end_line": 26,
+        "source_sha256": "dec8b9f1b24ad8f3631324c8944ba68a7bd7381e197f75b78aabac0dbb299c27",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      }
+    ],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false,
+    "completion_evidence": {
+      "required_sections_present": true,
+      "code_anchors_resolved": true,
+      "countercheck_passed": true,
+      "kernel_evidence_bound": true
+    }
+  },
+  "canonical_identity": {
+    "node_number": "028",
+    "semantic_id": "C016",
+    "canonical_node_label": "028 · C016",
+    "stable_node_directory_name": "028_C016__immutable_record_channel",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "open_provenance_context": {
+    "framework": "GENERALIZED_OPEN_PROVENANCE_SYSTEMS",
+    "concept_ids": [
+      "OPS-05"
+    ],
+    "roles": [
+      "Immutable record, live state and backreaction"
+    ],
+    "integration_status": [
+      "DOWNSTREAM_CONSTRUCTION"
+    ],
+    "claim_guard": "Interpretive specialization map only. Mathematical force is exactly the node contract and its registered evidence; no universal open-system theorem is inferred."
+  },
+  "cnna_architecture_context": {
+    "concept_id": "CNNA-00",
+    "name": "ComplemeNt Net Architecture",
+    "role": "Immutable complement history: preserves birth-time records as the fixed provenance channel.",
+    "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+    "claim_guard": "Interpretive and organizational context only; mathematical force remains exactly the registered node contract and evidence status."
+  },
+  "implementation_status": {
+    "status": "KERNEL_VERIFIED_EXACT_SOURCE_EVIDENCE",
+    "source": "S02_C016_ImmutableRecordChannel + S01_CanonicalRecordLiveChannelProjectionClosure",
+    "node_semantics": "LOCAL_PREFIX_IMMUTABILITY_AND_SAMEVALUE_KERNEL_VERIFIED"
+  },
+  "cross_layer": {
+    "equivalence": "Python projects C008 tuple-record; Lean projects the same C008 list-record and proves exact left-prefix preservation plus SameValue compatibility.",
+    "semantic_mismatch_known": false
+  },
+  "evidence": {
+    "status": "KERNEL_VERIFIED_EXACT_SOURCE_EVIDENCE",
+    "date": "2026-08-08",
+    "origin": "USER_LOCAL_LEAN_BUILD",
+    "toolchain": "leanprover/lean4:v4.31.0",
+    "mathlib": "v4.31.0",
+    "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+    "shared_kernel_verified_declarations": 12,
+    "axiom_audit": "PASS",
+    "full_package_boundary_audit": "PASS",
+    "axiom_profile_counts": {
+      "choice_propext_quot": 10,
+      "propext_quot_only": 2,
+      "axiom_free": 0
+    },
+    "allowed_transitive_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "direct_project_axioms": 0,
+    "sorry_count": 0,
+    "build_evidence": "derivation/code/lean/audit/evidence/USER_LOCAL_C016_C017_FULL_BUILD_20260808.json",
+    "build_evidence_sha256": "b4cc78a8656f273e9a326714790064ff365ea643d15d32f420b78d1c54fcd7cf",
+    "build_transcript": "derivation/code/lean/audit/evidence/USER_LOCAL_C016_C017_FULL_BUILD_20260808.txt",
+    "build_transcript_sha256": "2a4b7655de227e1e2ebdc5e5f4ea57e550a5ce1032b7df7aba0aaff7c677ee2a",
+    "source_hash_manifest": "derivation/code/lean/audit/C016C017_CURRENT_SOURCE_SHA256.txt",
+    "python_regression": "derivation/registry/documentation/C016_C017_PYTHON_REGRESSION_20260808.txt",
+    "python_regression_result": "114 tests + 1086 subtests PASS",
+    "finite_evidence_guard": "Python regression is finite evidence only; universal local projection closure is supplied by Lean."
+  },
+  "artifacts": {
+    "python_source": "d25f481426cea2733e317757cd2b987ecec88d7ee9d660a552e42cf2ba4ebd38",
+    "python_test": "88df027397c3711b6b191d0512e15c8dc0b72426ffcdda9b11a76d148b9865ca",
+    "lean_core": "88de4a80e2b2b05f9764af56a72c0e5e3cad8aba7d5c28669df94a24a0d66b74",
+    "lean_proof": "dec8b9f1b24ad8f3631324c8944ba68a7bd7381e197f75b78aabac0dbb299c27",
+    "math_prose": "68cb6c9f70c8cf3337a2f7a56cdf66c76d44a8efc913c9f4779f62d08ac161ed",
+    "supplement_documentation": "919de5c422368150080a7c5ddbceb8abb087d6d9d156915547835f5d0e2cb6b6"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "089",
+  "canonical_node_label": "089 \u00b7 P027",
+  "stable_node_directory_name": "089_P027__algebraic_weyl_direct_system_coherence",
+  "id": "P027",
+  "section_path": "5.1.2.1",
+  "derivation_order": 89,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

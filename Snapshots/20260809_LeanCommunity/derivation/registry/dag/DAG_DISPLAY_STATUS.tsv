@@ -1,0 +1,146 @@
+node_number	id	paper_section	derivation_rank	derivation_order	display_status	color	rationale
+001	I001	1.1.1	0	1	FINISHED	#70C779	Frozen and verified in the current implementation registry.
+002	I002	1.1.2	0	2	FINISHED	#70C779	Frozen and verified in the current implementation registry.
+003	C001	1.1.3	0	3	FINISHED	#70C779	Frozen and verified in the current implementation registry.
+004	C002	1.1.4	1	4	FINISHED	#70C779	Frozen and verified in the current implementation registry.
+005	C003	1.1.5	2	5	FINISHED	#70C779	Frozen and verified in the current implementation registry.
+006	C018	1.1.6	3	6	FINISHED	#70C779	C018 implementation is verified and its dedicated P002 static strict-total-order proof gate is kernel-verified.
+007	P002	1.1.6.1	3	7	FINISHED	#70C779	All six public P002 declarations kernel-build under Lean 4.31.0 with empty axiom profiles; full package boundary audit passes.
+008	C004A	1.2.1	4	8	FINISHED	#70C779	Frozen and verified in the current implementation registry.
+009	A001	1.2.2	5	9	FINISHED	#70C779	Frozen and verified in the current implementation registry.
+010	N001	1.2.3	6	10	FINISHED	#70C779	Frozen and verified in the current implementation registry.
+011	C013	1.2.4	7	11	FINISHED	#70C779	Frozen and verified in the current implementation registry.
+012	T001	1.2.5	8	12	FINISHED	#70C779	Frozen and verified in the current implementation registry.
+013	M005	1.2.6	8	13	FINISHED	#70C779	Frozen and verified in the current implementation registry.
+014	C014	1.2.7	9	14	FINISHED	#70C779	Frozen and verified in the current implementation registry.
+015	C005	1.3.1	10	15	FINISHED	#70C779	Frozen and verified in the current implementation registry.
+016	C004	1.3.2	11	16	FINISHED	#70C779	Frozen and verified in the current implementation registry.
+017	C006	1.3.3	11	17	FINISHED	#70C779	Frozen and verified in the current implementation registry.
+018	M001	1.3.4	12	18	FINISHED	#70C779	Verified current implementation and complete documentation; P003 is certified by internal M001 owner theorems.
+019	P003	1.3.4.1	12	19	FINISHED	#70C779	Verified current implementation and complete documentation; P003 is certified by internal M001 owner theorems.
+020	M002	1.3.5	13	20	FINISHED	#70C779	Frozen and verified in the current implementation registry.
+021	C007	1.3.6	14	21	FINISHED	#70C779	Frozen and verified in the current implementation registry.
+022	O001	1.3.7	14	22	FINISHED	#70C779	Eight-channel implementation obstruction is documented, tested, and included in the successful prefix-free Core build.
+023	C015	1.3.8	14	23	FINISHED	#70C779	Identity steering convention remains frozen and verified.
+024	M003	1.3.9	15	24	FINISHED	#70C779	Canonical M003 closure is kernel-compiled and axiom-audited with exact current-source evidence.
+025	P001	1.3.9.1	15	25	FINISHED	#9BCB8D	Reusable directed Schur/DtN/Kron closure is kernel-verified on the canonical cut and an independent bidirected-chain cut family.
+026	M004	1.3.10	16	26	FINISHED	#70C779	Canonical M004 closure and representative-independent C008 handoff are kernel-compiled and axiom-audited.
+027	C008	1.4.1	17	27	FINISHED	#70C779	C008 record/live update and M004 handoff kernel-verified; exact source evidence retained from the 2026-08-08 Lean 4.31.0 build.
+028	C016	1.4.2	18	28	FINISHED	#70C779	C016 immutable-record projection is kernel-verified with exact-source evidence; local left-prefix immutability and SameValue closure pass.
+029	C017	1.4.3	18	29	FINISHED	#70C779	C017 current-live projection is kernel-verified with exact-source evidence; full M004-delta append and SameValue closure pass.
+030	C009	1.4.4	19	30	FINISHED	#70C779	C009 raw codomain assembly is kernel-verified with exact-source evidence (8/8 declarations; full boundary PASS).
+031	T002	1.4.5	20	31	FINISHED	#70C779	Kernel-verified recurrent C005 re-entry with post-step C005↔C017 live coherence; exact-source evidence retained.
+032	T003	1.4.6	20	32	ACTIVE	#F4A340	Next theorem in canonical derivation order: prove provenance-label equivariance and absence of an independent hard-coded sibling-rank bias.
+033	C010	1.5.1	20	33	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+034	N002	1.5.2	20	34	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+035	C011	1.5.3	20	35	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+036	C012	1.5.4	21	36	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+037	C019	1.5.5	22	37	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+038	P004	1.5.5.1	22	38	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+039	P005	1.5.5.2	23	39	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+040	P006	1.5.5.3	24	40	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+041	O002	1.6.1	24	41	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+042	CTRL001	1.6.2	25	42	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+043	CTRL002	1.6.3	26	43	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+044	CTRL003	1.6.4	26	44	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+045	CTRL004	1.6.5	26	45	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+046	C020	2.1.1	26	46	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+047	P007	2.1.1.1	26	47	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+048	C021	2.1.2	27	48	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+049	P008	2.1.2.1	27	49	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+050	P009	2.1.2.2	28	50	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+051	P010	2.1.2.3	29	51	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+052	C022	2.1.3	29	52	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+053	C023	2.2.1	29	53	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+054	C024	2.2.2	30	54	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+055	C025	2.3.1	30	55	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+056	P011	2.3.1.1	30	56	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+057	M030	3.1.1	30	57	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+058	P012	3.1.1.1	30	58	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+059	P013	3.1.1.2	31	59	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+060	C032	3.2.1	31	60	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+061	P014	3.2.1.1	32	61	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+062	C033	3.3.1	34	62	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+063	P015	3.3.1.1	35	63	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+064	M031	3.4.1	37	64	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+065	P016	3.4.1.1	38	65	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+066	O048	3.5.1	40	66	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+067	C040	4.1.1	43	67	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+068	P017	4.1.1.1	44	68	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+069	P018	4.1.1.2	45	69	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+070	C041	4.1.2	45	70	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+071	C042	4.2.1	46	71	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+072	CTRL005	4.2.2	47	72	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+073	C044	4.3.1	49	73	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+074	P019	4.3.1.1	50	74	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+075	C045	4.3.2	50	75	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+076	P020	4.3.2.1	51	76	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+077	C047	4.3.3	51	77	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+078	P021	4.3.3.1	52	78	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+079	C046	4.3.4	52	79	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+080	P022	4.3.4.1	53	80	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+081	C043	4.4.1	53	81	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+082	P023	4.4.1.1	54	82	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+083	P024	4.4.1.2	55	83	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+084	P025	4.4.1.3	56	84	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+085	O049	4.5.1	56	85	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+086	C050	5.1.1	58	86	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+087	P026	5.1.1.1	59	87	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+088	C051	5.1.2	59	88	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+089	P027	5.1.2.1	60	89	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+090	M050	5.2.1	61	90	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+091	P028	5.2.1.1	62	91	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+092	P029	5.2.1.2	63	92	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+093	C052	5.2.2	63	93	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+094	P030	5.2.2.1	64	94	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+095	P031	5.2.2.2	65	95	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+096	C054	5.2.3	65	96	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+097	P032	5.2.3.1	65	97	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+098	P033	5.2.3.2	65	98	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+099	C053	5.3.1	65	99	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+100	P034	5.3.1.1	65	100	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+101	C055	5.4.1	67	101	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+102	P035	5.4.1.1	68	102	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+103	C056	5.4.2	68	103	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+104	P036	5.4.2.1	69	104	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+105	P037	5.4.2.2	70	105	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+106	C057	6.1.1	70	106	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+107	P038	6.1.1.1	71	107	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+108	P039	6.1.1.2	72	108	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+109	C058	6.1.2	72	109	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+110	P040	6.1.2.1	73	110	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+111	P041	6.1.2.2	74	111	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+112	P042	6.1.2.3	75	112	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+113	C059	6.2.1	75	113	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+114	P043	6.2.1.1	75	114	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+115	C060	6.2.2	76	115	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+116	P044	6.2.2.1	76	116	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+117	P045	6.2.2.2	77	117	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+118	C061	6.2.3	77	118	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+119	P046	6.2.3.1	78	119	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+120	O090	6.3.1	78	120	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+121	O091	6.3.2	78	121	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+122	O071	7.1.1	79	122	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+123	M070	7.1.2	80	123	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+124	P047	7.1.2.1	81	124	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+125	P048	7.1.2.2	82	125	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+126	B071	7.2.1	82	126	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+127	M080	8.1.1	85	127	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+128	P049	8.1.1.1	86	128	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+129	P050	8.1.1.2	87	129	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+130	M082	8.1.2	87	130	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+131	P051	8.1.2.1	88	131	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+132	P052	8.1.2.2	89	132	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+133	O081	8.1.3	89	133	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+134	O092	8.1.4	89	134	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+135	M086	8.1.5	90	135	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+136	P053	8.1.5.1	90	136	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+137	P054	8.1.5.2	91	137	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+138	M083	8.2.1	91	138	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+139	P055	8.2.1.1	92	139	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+140	P056	8.2.1.2	93	140	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+141	P057	8.2.1.3	94	141	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+142	O084	8.3.1	94	142	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+143	M085	8.3.2	95	143	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+144	P058	8.3.2.1	95	144	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.
+145	P059	8.3.2.2	96	145	UNFINISHED	#E66B6B	Not frozen/verified in the current implementation registry.

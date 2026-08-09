@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "111",
+  "canonical_node_label": "111 \u00b7 P041",
+  "stable_node_directory_name": "111_P041__local_hyperfiniteness",
+  "id": "P041",
+  "section_path": "6.1.2.2",
+  "derivation_order": 111,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

@@ -1,0 +1,23 @@
+CNNA T002 PYTHON REGRESSION EVIDENCE — 2026-08-08
+
+Command:
+  PYTHONDONTWRITEBYTECODE=1 pytest -q -p no:cacheprovider
+
+Result:
+  120 passed, 1086 subtests passed in 8.21s
+
+T002 scope exercised:
+- one-step recurrent re-entry from an admissible C005 state
+- canonical C004 next slot + C007/M003/M004 response-coupled birth data
+- C009 raw codomain assembly
+- C006 ExactFraction-to-rational conductance realization
+- full successor C005 schema on finite executable cases
+- post-step C005↔C017 live-channel coherence
+- complete small canonical iteration for b=2, L=2
+- rejection of incoherent pre-step live/state channels
+
+ORIGIN OWNERSHIP GUARD:
+Missing closure lemmas are proved at their semantic origin (C004/C005/C006/M001/M004), not hidden in T002.
+
+TRUST GUARD:
+FINITE_REGRESSION_EVIDENCE_ONLY. This file remains executable regression evidence; the universal T002 closure is supplied separately by the retained kernel-verified Lean proof and axiom audit.

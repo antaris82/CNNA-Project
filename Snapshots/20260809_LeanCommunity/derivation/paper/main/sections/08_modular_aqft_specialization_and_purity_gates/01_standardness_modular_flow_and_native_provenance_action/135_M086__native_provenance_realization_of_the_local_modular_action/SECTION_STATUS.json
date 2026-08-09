@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "135",
+  "canonical_node_label": "135 \u00b7 M086",
+  "stable_node_directory_name": "135_M086__native_provenance_realization_of_the_local_modular_action",
+  "id": "M086",
+  "section_path": "8.1.5",
+  "derivation_order": 135,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

@@ -1,0 +1,87 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "C024",
+  "paper_section": "2.2.2",
+  "contract": {
+    "statement": "Exact difference between live and birth-record skew response on a common cut/basis."
+  },
+  "workflow": {
+    "node_semantics": "CORE_DEFINED",
+    "documentation": "NOT_STARTED",
+    "freeze_state": "NOT_STARTED",
+    "frozen_under_gate_version": null,
+    "documentation_v2": "NOT_STARTED"
+  },
+  "dependencies": [
+    "C023",
+    "C022",
+    "C016",
+    "C017"
+  ],
+  "node_number": "054",
+  "derivation_rank": 30,
+  "derivation_order": 54,
+  "section_hierarchy": {
+    "section_path": "2.2.2",
+    "root_title": "Cut-relative complement elimination and effective response",
+    "group_title": "Record/live response split and backreaction",
+    "main_directory": "derivation/paper/main/sections/02_cut_relative_complement_elimination_and_effective_response/02_record_live_response_split_and_backreaction/054_C024__backreaction_current_b_a_live_a_record",
+    "supplement_directory": "derivation/supplement/sections/02_cut_relative_complement_elimination_and_effective_response/02_record_live_response_split_and_backreaction/054_C024__backreaction_current_b_a_live_a_record",
+    "main_artifact": "derivation/paper/main/sections/02_cut_relative_complement_elimination_and_effective_response/02_record_live_response_split_and_backreaction/054_C024__backreaction_current_b_a_live_a_record/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/02_cut_relative_complement_elimination_and_effective_response/02_record_live_response_split_and_backreaction/054_C024__backreaction_current_b_a_live_a_record/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C023, C022, C016, C017; registered hard handoff(s): record_live_difference, supplies_common_ambient_basis, supplies_record_channel, supplies_live_channel."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D0",
+    "tier_name": "Atomic input or definitional node",
+    "tier_assignment_rule": "EXPLICIT_ATOMIC_OR_DEFINITIONAL_OVERRIDE",
+    "main_paper_depth": "COMPACT_DEFINITION",
+    "supplement_depth": "TRACEABLE_DEFINITION",
+    "required_sections": [
+      "position_in_derivation",
+      "definition_or_statement",
+      "introduction_reason",
+      "construction_or_encoding",
+      "boundary_case_or_countercheck",
+      "result",
+      "downstream_handoff",
+      "code_anchors"
+    ],
+    "countercheck_requirement": "ONE_DEFINITIONAL_BOUNDARY_OR_TYPE_REJECTION",
+    "countercheck_status": "NOT_STARTED",
+    "v2_state": "NOT_STARTED",
+    "python_anchor_status": "PLANNED",
+    "lean_anchor_status": "PLANNED",
+    "code_anchors": [],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false
+  },
+  "canonical_identity": {
+    "node_number": "054",
+    "semantic_id": "C024",
+    "canonical_node_label": "054 · C024",
+    "stable_node_directory_name": "054_C024__backreaction_current_b_a_live_a_record",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "open_provenance_context": {
+    "framework": "GENERALIZED_OPEN_PROVENANCE_SYSTEMS",
+    "concept_ids": [
+      "OPS-05"
+    ],
+    "roles": [
+      "Immutable record, live state and backreaction"
+    ],
+    "integration_status": [
+      "DOWNSTREAM_CONSTRUCTION"
+    ],
+    "claim_guard": "Interpretive specialization map only. Mathematical force is exactly the node contract and its registered evidence; no universal open-system theorem is inferred."
+  },
+  "cnna_architecture_context": {
+    "concept_id": "CNNA-00",
+    "name": "ComplemeNt Net Architecture",
+    "role": "Backreaction observable: compares record and live response to expose the effect of later complementary growth.",
+    "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+    "claim_guard": "Interpretive and organizational context only; mathematical force remains exactly the registered node contract and evidence status."
+  }
+}

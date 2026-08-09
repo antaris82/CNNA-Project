@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "065",
+  "canonical_node_label": "065 \u00b7 P016",
+  "stable_node_directory_name": "065_P016__intrinsic_generator_independence_and_canonical_algebra_equivalence",
+  "id": "P016",
+  "section_path": "3.4.1.1",
+  "derivation_order": 65,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

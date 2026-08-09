@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "120",
+  "canonical_node_label": "120 \u00b7 O090",
+  "stable_node_directory_name": "120_O090__counting_terminal_fock_identification_obstruction",
+  "id": "O090",
+  "section_path": "6.3.1",
+  "derivation_order": 120,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "094",
+  "canonical_node_label": "094 \u00b7 P030",
+  "stable_node_directory_name": "094_P030__normalized_skew_operator_boundedness_and_skew_adjointness",
+  "id": "P030",
+  "section_path": "5.2.2.1",
+  "derivation_order": 94,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "119",
+  "canonical_node_label": "119 \u00b7 P046",
+  "stable_node_directory_name": "119_P046__exterior_antitony_and_commutant_reversal_isotony",
+  "id": "P046",
+  "section_path": "6.2.3.1",
+  "derivation_order": 119,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

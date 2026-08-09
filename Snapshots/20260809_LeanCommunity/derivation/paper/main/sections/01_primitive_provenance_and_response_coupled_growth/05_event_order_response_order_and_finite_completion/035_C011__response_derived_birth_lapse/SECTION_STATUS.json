@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "035",
+  "canonical_node_label": "035 \u00b7 C011",
+  "stable_node_directory_name": "035_C011__response_derived_birth_lapse",
+  "id": "C011",
+  "section_path": "1.5.3",
+  "derivation_order": 35,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

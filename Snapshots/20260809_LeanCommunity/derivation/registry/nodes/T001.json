@@ -1,0 +1,154 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "T001",
+  "paper_section": "1.2.5",
+  "contract": {
+    "statement": "For any admissible genesis seeds η,η′, the C013 first weighted provenance state is identical and retains the unit conductance pair (1,1).",
+    "ownership_boundary": [
+      "proves seed-erasure only",
+      "does not prove M005 conductance-unit independence"
+    ]
+  },
+  "cross_layer": {
+    "equivalence": "Python compares C013 states generated from distinct seed instances; Lean proves the same seed-indexed states equal for arbitrary seeds and records the inherited (1,1) conductance pair.",
+    "semantic_mismatch_known": false
+  },
+  "evidence": {
+    "audit_tier": "A",
+    "python": {
+      "status": "PASS_REPRODUCED",
+      "node_tests": 1
+    },
+    "lean": {
+      "status": "PASS_EXACT_LOCAL_BUILD",
+      "source_sha256": "6a1e9d090f8a4c3cd733002e03c60bd895fc084af087bc31a8c56f75ae63e090",
+      "toolchain": "Lean 4.31.0 (project pin)",
+      "policy_scan_matches": 0,
+      "exact_hash_built": true,
+      "verification_origin": "user_local_build_of_delivered_current_artifact"
+    }
+  },
+  "artifacts": {
+    "python_source": "3174a7d2eda9c9249bbd76924d86eed33da2c460e4470f65c23ce3ff04e76e85",
+    "python_test": "5f1520cbacb58b081c6acdc3e4d75bcb2c2be8b4cc073c2a0087882de4758567",
+    "lean_source": "6a1e9d090f8a4c3cd733002e03c60bd895fc084af087bc31a8c56f75ae63e090",
+    "math_prose": "b1af2543eab230fe4899955c1ba87b4114839cb7cb9e9a1adb06a9d192d0b36a",
+    "supplement_documentation": "dd2bce396588145fa88fe0e24083dd24da544781c77a697e04cda1d1b8c71776"
+  },
+  "workflow": {
+    "node_semantics": "CLOSED_SEED_NEUTRALITY_THEOREM",
+    "documentation": "COMPLETE_V2",
+    "freeze_state": "FROZEN_VERIFIED",
+    "frozen_under_gate_version": "cnna-per-node-freeze-v5",
+    "documentation_v2": "COMPLETE_V2"
+  },
+  "node_number": "012",
+  "derivation_rank": 8,
+  "derivation_order": 12,
+  "section_hierarchy": {
+    "section_path": "1.2.5",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Bootstrap of the first provenance relation",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/012_T001__seed_neutrality_theorem_for_first_birth",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/012_T001__seed_neutrality_theorem_for_first_birth",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/012_T001__seed_neutrality_theorem_for_first_birth/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/012_T001__seed_neutrality_theorem_for_first_birth/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C013; registered hard handoff(s): requires_seed_neutrality."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D2",
+    "tier_name": "Load-bearing theorem, proof owner, obstruction, or quarantine gate",
+    "tier_assignment_rule": "PROOF_THEOREM_OWNER_OBSTRUCTION_OR_QUARANTINE_ROLE",
+    "main_paper_depth": "THEOREM_AND_PROOF_OVERVIEW",
+    "supplement_depth": "FULL_PROOF_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "formal_statement",
+      "hypotheses",
+      "introduction_reason",
+      "proof_strategy",
+      "lemma_chain",
+      "formal_realization",
+      "counterexamples_or_necessity_checks",
+      "axiom_profile",
+      "result",
+      "remaining_limits",
+      "downstream_handoff",
+      "code_line_register"
+    ],
+    "countercheck_requirement": "NEGATIVE_CONTROL_COUNTEREXAMPLE_OR_HYPOTHESIS_NECESSITY",
+    "countercheck_status": "PASS",
+    "v2_state": "COMPLETE_V2",
+    "python_anchor_status": "RESOLVED",
+    "lean_anchor_status": "RESOLVED",
+    "code_anchors": [
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s02_bootstrap_of_the_first_relation/s05_t001__seed_neutrality_theorem_for_first_birth.py",
+        "symbol": "first_weighted_state_from_seed",
+        "declaration_kind": "FUNCTION",
+        "start_line": 15,
+        "end_line": 21,
+        "source_sha256": "0fd2df73db6f59d70b83d22c58fa8089b418061e7ecfe4c8d4f1c167cd3beed4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s02_bootstrap_of_the_first_relation/test_s05_t001__seed_neutrality_theorem_for_first_birth.py",
+        "symbol": "TestSeedNeutralityFirstBirth",
+        "declaration_kind": "CLASS",
+        "start_line": 16,
+        "end_line": 27,
+        "source_sha256": "24a74c3e5fc36b2d4cae7e8d1c517598e6d78556c9ed0e5645512254f82863da",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S05_T001_SeedNeutralityTheoremForFirstBirth.lean",
+        "symbol": "firstWeightedStateFromSeed",
+        "declaration_kind": "DEF",
+        "start_line": 15,
+        "end_line": 26,
+        "source_sha256": "e2da5d1e066d13c176bc9e05a0c3c892ee60c8169c7ddb3d050428f4e675b705",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S05_T001_SeedNeutralityTheoremForFirstBirth.lean",
+        "symbol": "seedNeutralityFirstBirth",
+        "declaration_kind": "THEOREM",
+        "start_line": 27,
+        "end_line": 41,
+        "source_sha256": "e2da5d1e066d13c176bc9e05a0c3c892ee60c8169c7ddb3d050428f4e675b705",
+        "resolution": "RESOLVED"
+      }
+    ],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false,
+    "completion_evidence": {
+      "main_artifact": "derivation/paper/main/sections/01_primitive_response_coupled_finite_provenance/02_bootstrap_of_the_first_relation/012_T001__seed_neutrality_theorem_for_first_birth/SECTION.tex",
+      "supplement_artifact": "derivation/supplement/sections/01_primitive_response_coupled_finite_provenance/02_bootstrap_of_the_first_relation/012_T001__seed_neutrality_theorem_for_first_birth/DOCUMENTATION.md",
+      "main_sha256": "b1af2543eab230fe4899955c1ba87b4114839cb7cb9e9a1adb06a9d192d0b36a",
+      "supplement_sha256": "dd2bce396588145fa88fe0e24083dd24da544781c77a697e04cda1d1b8c71776",
+      "code_anchor_count": 4,
+      "source_code_changed": false,
+      "documentation_complete": true,
+      "required_sections_present": true,
+      "countercheck_present": true,
+      "code_anchors_resolved": true,
+      "completed_on": "2026-08-04"
+    }
+  },
+  "canonical_identity": {
+    "node_number": "012",
+    "semantic_id": "T001",
+    "canonical_node_label": "012 · T001",
+    "stable_node_directory_name": "012_T001__seed_neutrality_theorem_for_first_birth",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  }
+}

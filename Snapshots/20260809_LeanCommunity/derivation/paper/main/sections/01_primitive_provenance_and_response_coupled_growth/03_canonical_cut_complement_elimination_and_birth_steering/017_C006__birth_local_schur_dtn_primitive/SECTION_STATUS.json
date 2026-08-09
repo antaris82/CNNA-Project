@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "017",
+  "canonical_node_label": "017 \u00b7 C006",
+  "stable_node_directory_name": "017_C006__birth_local_schur_dtn_primitive",
+  "id": "C006",
+  "section_path": "1.3.3",
+  "derivation_order": 17,
+  "main_documentation": "DOCUMENTED",
+  "supplement_documentation": "DOCUMENTED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

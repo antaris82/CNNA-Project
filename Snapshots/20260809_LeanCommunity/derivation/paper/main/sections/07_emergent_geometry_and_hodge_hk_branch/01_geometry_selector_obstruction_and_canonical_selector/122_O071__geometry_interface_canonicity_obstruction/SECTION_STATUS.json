@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "122",
+  "canonical_node_label": "122 \u00b7 O071",
+  "stable_node_directory_name": "122_O071__geometry_interface_canonicity_obstruction",
+  "id": "O071",
+  "section_path": "7.1.1",
+  "derivation_order": 122,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

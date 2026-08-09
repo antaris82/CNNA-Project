@@ -1,0 +1,23 @@
+\documentclass[11pt]{article}
+\input{derivation/paper/layout/CNNA_DOCUMENT_METADATA.tex}
+\input{derivation/paper/layout/CNNA_DOCUMENT_SETUP.tex}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+\makeatletter
+\renewcommand{\@seccntformat}[1]{\csname the#1\endcsname.\hspace{0.5em}}
+\makeatother
+\input{derivation/paper/infoboxes/CNNA_INFOBOX_SETUP.tex}
+\input{derivation/paper/bibliography/BIBLATEX_SETUP.tex}
+\title{\CNNAMainTitle\\\large \CNNASubtitle}
+\author{Editor: \CNNAEditor}
+\date{Current draft: \CNNADocumentDate}
+\begin{document}
+\maketitle
+\input{derivation/paper/main/CNNA_ARCHITECTURE_CONCEPT.tex}
+\input{derivation/paper/main/OPEN_PROVENANCE_FRAMEWORK.tex}
+\input{derivation/paper/main/TRACEABILITY_AND_READING_GUIDE.tex}
+\tableofcontents
+\clearpage
+\input{derivation/paper/main/GENERATED_SECTION_STRUCTURE.tex}
+\printbibliography
+\end{document}

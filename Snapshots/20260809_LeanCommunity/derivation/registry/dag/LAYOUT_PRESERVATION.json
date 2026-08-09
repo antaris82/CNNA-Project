@@ -1,0 +1,9 @@
+{
+  "schema": "cnna.yed-layout-preservation.v1",
+  "status": "PASS",
+  "layout_authority": "USER_SUPPLIED_YED_LIVE_GRAPHML",
+  "current_geometry_digest": "15daf67a59b7f78d6664e980f10c0f72f0b74ad4004966c8655312a5061803a1",
+  "nodes": 145,
+  "edges": 401,
+  "policy": "PRESERVE_GEOMETRY_HIERARCHY_BENDS_STYLES_AND_LABEL_PLACEMENT; SEMANTIC_EDGE_REMOVAL_AND_STATUS_TEXT/FILL_ONLY"
+}

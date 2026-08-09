@@ -1,0 +1,87 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "C025",
+  "paper_section": "2.3.1",
+  "contract": {
+    "statement": "Restrict/compress the admitted directed Schur/DtN response to a canonically specified region without introducing a new fitted response law."
+  },
+  "workflow": {
+    "node_semantics": "CORE_REQUIRES_PROOF",
+    "documentation": "NOT_STARTED",
+    "freeze_state": "NOT_STARTED",
+    "frozen_under_gate_version": null,
+    "documentation_v2": "NOT_STARTED"
+  },
+  "dependencies": [
+    "C021",
+    "C022",
+    "C023"
+  ],
+  "node_number": "055",
+  "derivation_rank": 30,
+  "derivation_order": 55,
+  "section_hierarchy": {
+    "section_path": "2.3.1",
+    "root_title": "Cut-relative complement elimination and effective response",
+    "group_title": "Regional effective-response carrier",
+    "main_directory": "derivation/paper/main/sections/02_cut_relative_complement_elimination_and_effective_response/03_regional_effective_response_carrier/055_C025__canonical_regional_response_carrier",
+    "supplement_directory": "derivation/supplement/sections/02_cut_relative_complement_elimination_and_effective_response/03_regional_effective_response_carrier/055_C025__canonical_regional_response_carrier",
+    "main_artifact": "derivation/paper/main/sections/02_cut_relative_complement_elimination_and_effective_response/03_regional_effective_response_carrier/055_C025__canonical_regional_response_carrier/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/02_cut_relative_complement_elimination_and_effective_response/03_regional_effective_response_carrier/055_C025__canonical_regional_response_carrier/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C021, C022, C023; registered hard handoff(s): supplies_directed_effective_response, supplies_common_ambient_regional_typing, supplies_symmetric_skew_regional_split."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D2",
+    "tier_name": "Load-bearing theorem, proof owner, obstruction, or quarantine gate",
+    "tier_assignment_rule": "PROOF_THEOREM_OWNER_OBSTRUCTION_OR_QUARANTINE_ROLE",
+    "main_paper_depth": "THEOREM_AND_PROOF_OVERVIEW",
+    "supplement_depth": "FULL_PROOF_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "formal_statement",
+      "hypotheses",
+      "introduction_reason",
+      "proof_strategy",
+      "lemma_chain",
+      "formal_realization",
+      "counterexamples_or_necessity_checks",
+      "axiom_profile",
+      "result",
+      "remaining_limits",
+      "downstream_handoff",
+      "code_line_register"
+    ],
+    "countercheck_requirement": "NEGATIVE_CONTROL_COUNTEREXAMPLE_OR_HYPOTHESIS_NECESSITY",
+    "countercheck_status": "NOT_STARTED",
+    "v2_state": "NOT_STARTED",
+    "python_anchor_status": "PLANNED",
+    "lean_anchor_status": "PLANNED",
+    "code_anchors": [],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false
+  },
+  "canonical_identity": {
+    "node_number": "055",
+    "semantic_id": "C025",
+    "canonical_node_label": "055 · C025",
+    "stable_node_directory_name": "055_C025__canonical_regional_response_carrier",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "open_provenance_context": {
+    "framework": "GENERALIZED_OPEN_PROVENANCE_SYSTEMS",
+    "concept_ids": [
+      "OPS-03",
+      "OPS-QM-01"
+    ],
+    "roles": [
+      "Effective complement elimination",
+      "Finite provenance-derived POVM migration"
+    ],
+    "integration_status": [
+      "NODEWISE_CURRENT_OR_PLANNED",
+      "LEGACY_MIGRATION_TARGET_NOT_CURRENT_THEOREM"
+    ],
+    "claim_guard": "Interpretive specialization map only. Mathematical force is exactly the node contract and its registered evidence; no universal open-system theorem is inferred."
+  }
+}

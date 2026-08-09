@@ -1,0 +1,104 @@
+% Canonical node 021 · C007; current section path 1.3.6.
+% Canonical owner: C007
+\cnnaNodeHeading{021}{C007}{Inter-birth directed response $R_n(s_{n+1})$}
+\cnnaNodePlacement{1.3.6}{D1}
+Let $X_n$ be a recurrent C005 state with $n\geq 1$, let $s_{n+1}$ be its
+unique C004 next open provenance slot, and let
+\[
+  \mathcal C_n(s_{n+1})=(B_n,I_n)
+\]
+be the canonical ordered M001 cut.  The C005 current carrier is partitioned
+exhaustively by $B_n\sqcup I_n$, while the unborn child of $s_{n+1}$ belongs to
+neither block.
+
+For each stored directed conductance $c_n(u,v)>0$, C007 fixes the
+source/out-degree matrix convention
+\[
+  K_n(u,u)=\sum_{v}c_n(u,v),
+  \qquad
+  K_n(u,v)=-c_n(u,v)\quad (u\neq v).
+\]
+The row coordinate is therefore the conductance source and the column
+coordinate its target.  This is not a tunable sign convention: it is the direct
+matrix realization of the ordered pair $(u,v)$ already stored by C005.  No
+transpose, in-degree alternative, symmetrization, geometric factor, external
+port, or response-independent bias is inserted.
+
+% CNNA-CONTEXT-BEGIN CTX-C007-LAPLACIAN
+The resulting matrix is a standard nonsymmetric directed Laplacian: off-diagonal entries are nonpositive and every row sums to zero.  The scientific choice that matters here is not the existence of such a Laplacian, but the fixed source/out-degree orientation inherited from the stored conductance pairs.
+
+% CNNA-EXTREF-BEGIN EXT-USE-C007-LAPLACIAN-DIRECT
+\cite[Abstract and Sec.~1]{AgaevChebotarev2005NonsymmetricLaplacian}.
+% CNNA-EXTREF-END EXT-USE-C007-LAPLACIAN-DIRECT
+% CNNA-CONTEXT-END CTX-C007-LAPLACIAN
+
+
+Order the complete born carrier as $B_n$ followed by $I_n$ and write
+\[
+  K_n=
+  \begin{pmatrix}
+    K_{BB}^{(n)} & K_{BI}^{(n)}\\
+    K_{IB}^{(n)} & K_{II}^{(n)}
+  \end{pmatrix}.
+\]
+Because this order is inherited from M001, C007 introduces no new coordinate
+permutation.  On the exact M002 domain, equivalently when
+\[
+  K_{II}^{(n)}X=K_{IB}^{(n)}
+\]
+has a unique exact fraction-value solution, the inter-birth directed response is
+\[
+  \boxed{
+  R_n(s_{n+1})
+  =K_{BB}^{(n)}-K_{BI}^{(n)}X
+  }.
+\]
+This is precisely the C006 Schur/DtN response of the C005 state-dependent block
+realization.
+
+% CNNA-INFOBOX-BEGIN INFO-C007-MARKOV-GENERATOR
+\begin{cnnaInfoBox}{The directed Laplacian is minus a Markov generator}
+\label{box:c007-markov-generator-infobox}
+Define $Q_n:=-K_n$.  Then for $u\ne v$, $Q_n(u,v)=c_n(u,v)\ge0$, while $Q_n(u,u)=-\sum_v c_n(u,v)$ and every row sums to zero.
+
+% CNNA-EXTREF-BEGIN EXT-USE-C007-MARKOV-INFOBOX
+\cite[Ch.~2, continuous-time Markov chains]{Norris1997MarkovChains}.
+% CNNA-EXTREF-END EXT-USE-C007-MARKOV-INFOBOX
+
+This is exactly the sign pattern of a continuous-time Markov-chain generator.  The same directed weights can therefore be read either as conductances in $K_n$ or transition rates in $Q_n$.
+
+The comparison is deliberately one-way: CNNA does not thereby introduce probabilities, waiting-time distributions, or a stochastic clock.  It exposes a reusable algebraic bridge for later analysis.
+
+\textbf{Status.} Exact Sign Duality Without Stochastic Postulate. The sign duality is exact under the C007 row/source convention; any stochastic interpretation would require additional normalized state semantics.
+\end{cnnaInfoBox}
+% CNNA-INFOBOX-END INFO-C007-MARKOV-GENERATOR
+
+
+The temporal statement is literal: $R_n(s_{n+1})$ is measured after the first
+$n$ non-root births and before birth $n+1$.  The next child is not a coordinate
+of $K_n$ or $R_n$.  C007 does not yet convert this matrix into a scalar steering
+functional and does not execute a growth update; those operations belong to
+M003 and M004.
+
+The construction remains partial exactly on the M002 domain.  C007 neither
+replaces exact unique solvability by a condition-number threshold nor asserts a
+stronger invertibility theorem without proof.  For the finite C005 fixtures
+covered by the executable audit, including asymmetric conductances and extra
+born--born directed edges, all 99 tested reachable pre-birth states lie in that
+exact domain.
+
+% CNNA-OPEN-PROVENANCE-BEGIN C007
+\begin{cnnaInfoBox}{Open-provenance role: Effective response after complement elimination}
+C007 is the retained-port response of the pre-birth live state.  It is the finite directed-linear effective dynamics associated with the M001 cut, before scalar steering or event creation.
+\end{cnnaInfoBox}
+% CNNA-OPEN-PROVENANCE-END C007
+
+\paragraph*{Exact-value output semantics.}
+The displayed matrix is an elementwise exact fraction value. A Lean raw fraction matrix is identified internally by cross multiplication. Python returns normalized \texttt{Fraction} representatives; their agreement with Lean is an explicit executable cross-language verification, not a theorem about core \texttt{Rat} arithmetic.  Response uniqueness is therefore value uniqueness, not structural equality of a particular numerator--denominator encoding.
+
+\paragraph*{Verified closure and limits.}
+The implementation proves response existence and value-level uniqueness on
+exact M002 domain membership and excludes the unborn child from both block
+coordinate sets.  C007 fixes only the pre-birth matrix response.  Scalar
+steering, robustness transforms, directed birth bias, and the transition to
+$X_{n+1}$ remain downstream.

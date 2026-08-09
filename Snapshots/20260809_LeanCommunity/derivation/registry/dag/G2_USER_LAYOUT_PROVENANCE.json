@@ -1,0 +1,14 @@
+{
+  "schema": "cnna.user-yed-layout-provenance.v1",
+  "source_file": "DAG_yEd(5)(1).graphml",
+  "source_sha256": "d710acc8fa9c924fd101b25533a401e14749784faad6ae807956a8e2460c693b",
+  "current_file": "derivation/registry/dag/DAG_yEd.graphml",
+  "current_sha256": "51b160a5ec0717a200c178c3327e9dea3d2a66d6a821889352c37f0a3259160f",
+  "nodes": 145,
+  "edges": 401,
+  "geometry_and_labels_preserved": true,
+  "edge_endpoints_preserved": true,
+  "permitted_d0_change": "Node descriptions extended with documentation-tier metadata only.",
+  "layout_policy": "The user-supplied yEd Live geometry, hierarchy, bends, styles, and centred label placement are canonical and must not be regenerated without explicit instruction.",
+  "permitted_current_change": "Status-only promotion of T002 after exact-source kernel verification and activation of T003; node geometry, hierarchy, bends, edge endpoints, and label placement preserved; no relayout."
+}
