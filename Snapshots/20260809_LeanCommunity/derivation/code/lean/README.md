@@ -2,24 +2,28 @@
 
 The Lean tree contains two Lake packages:
 
-- `core/`: `cnna_core` / `CNNA`, Lean 4.31.0, 24 modules, no package dependencies and no mathlib imports;
-- `proofs/`: `cnna_proofs`, Lean 4.31.0, pinned mathlib `v4.31.0`, local dependency `../core`, and two library targets: `CNNAProofs` and `CNNAProofsP002`.
+- `core/`: `cnna_core` / `CNNA`, Lean 4.31.0, **35 modules**, no package dependencies and **no mathlib imports**;
+- `proofs/`: `cnna_proofs`, Lean 4.31.0, pinned mathlib `v4.31.0`, local dependency `../core`, and the proof library targets used by the current verified chain.
 
-The current proof tree contains 17 source modules. Retained exact-source kernel evidence covers all 17: the 15 modules of `CNNAProofs` plus the two-module independent `CNNAProofsP002` target. All six public P002 declarations have empty axiom profiles.
+The current proof tree contains **25 source modules**. Retained exact-source kernel evidence covers all 25 through the T002 recurrent-state closure. P002 remains independently axiom-free for all six audited public declarations. T002 contributes 26 audited declarations: 19 with the accepted transitive profile `[propext, Classical.choice, Quot.sound]` and 7 with `[propext, Quot.sound]`; there are no project-local axioms and no `sorry` in the accepted T002 path.
 
-The only permitted import direction is from the proof package to the Core. P002 imports its C018 owner module; the Core never imports a proof library.
+The only permitted import direction is from the proof package to the Core:
 
-Four disjoint exact-hash scopes are checked before a build begins:
+```text
+CNNAProofs  --->  CNNA Core
+                 ^
+                 |
+             no mathlib
+```
 
-1. immutable P001 proof and axiom-audit sources;
-2. verified M003/M004 integration and aggregation sources;
-3. P002 library configuration, root, proof module, and axiom audit;
-4. audit-runner infrastructure.
+The current boundary audit checks retained exact-source manifests for P001, M003/M004, P002, C008, C016/C017, C009, T002, and the audit infrastructure itself. It also checks that the Core remains dependency-free and mathlib-free and that the permitted package direction is not reversed.
 
 ```bash
 python3 audit/check_package_boundary.py
 ./audit/run_package_boundary_audit.sh --build
 ```
+
+Current formal frontier for this snapshot: **T002 kernel verified; T003 active**.
 
 ## Toolchain provenance
 
