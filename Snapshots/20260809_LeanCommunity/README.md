@@ -50,7 +50,7 @@ In particular, feedback is requested on:
 7. whether the repository organization is reviewable without relying on an LLM;
 8. where standard Lean/mathlib abstractions should replace local infrastructure without violating the provenance discipline.
 
-See [community/COMMUNITY_OVERVIEW.md](community/COMMUNITY_OVERVIEW.md) for the short review note and [community/COMMUNITY_THREAD_DRAFT.md](community/COMMUNITY_THREAD_DRAFT.md) for a proposed Lean-community introduction.
+See [community/COMMUNITY_OVERVIEW.md](community/COMMUNITY_OVERVIEW.md) or the rendered [community/COMMUNITY_OVERVIEW.pdf](community/COMMUNITY_OVERVIEW.pdf) for the short review note, and [community/COMMUNITY_THREAD_DRAFT.md](community/COMMUNITY_THREAD_DRAFT.md) for a proposed Lean-community introduction.
 
 ## Reproduce the formal boundary audit
 
@@ -104,6 +104,6 @@ The older snapshot shows where the search has been. This snapshot states what is
 
 ## Papers
 
-The main paper and supplementary material remain explicitly marked **DRAFT**. Their complete LaTeX/Markdown sources and shared DRAFT metadata are included in this unpacked review snapshot. Generated PDFs are deliberately omitted from the Git review tree to keep the review snapshot source-oriented; they can be rebuilt with `derivation/paper/tools/build_documents.py`.
+The main paper and supplementary material remain explicitly marked **DRAFT**. Their complete LaTeX/Markdown sources and shared DRAFT metadata are included in this unpacked review snapshot. The generated **main-paper and supplementary PDFs** are deliberately omitted from the Git review tree to keep those large documents source-oriented; they can be rebuilt with `derivation/paper/tools/build_documents.py`. The short community overview is included in both Markdown and rendered PDF form.
 
 For the original project-oriented top-level README from the frozen D14R20 package, see [PROJECT_README.md](PROJECT_README.md).
