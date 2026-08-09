@@ -1,0 +1,64 @@
+name: Assemble Lean community snapshot
+
+on:
+  push:
+    branches:
+      - agent/lean-community-snapshot-20260809
+
+permissions:
+  contents: write
+
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/lean-community-snapshot-20260809
+          fetch-depth: 0
+
+      - name: Assemble snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [ ! -f .snapshot_transport/20260809/patch.b64.00 ]; then
+            echo "Transport already consumed; nothing to do."
+            exit 0
+          fi
+
+          if ! command -v zstd >/dev/null 2>&1; then
+            sudo apt-get update
+            sudo apt-get install -y zstd
+          fi
+
+          OLD_ZIP="Snapshots/20260806/cnna_master_registry_20260806_D14R8_M003_M004_KERNEL_VERIFIED_CURRENT_STATE.zip"
+          rm -rf old_extract old_norm.tar patch.zst new_review_norm.tar
+          mkdir -p old_extract
+          unzip -q "$OLD_ZIP" -d old_extract
+          OLD_ROOT="$(find old_extract -mindepth 1 -maxdepth 1 -type d | head -n 1)"
+          echo "Old root: $OLD_ROOT"
+
+          (cd "$OLD_ROOT" && tar --sort=name --mtime='UTC 2026-08-09' --owner=0 --group=0 --numeric-owner -cf "$GITHUB_WORKSPACE/old_norm.tar" .)
+
+          cat .snapshot_transport/20260809/patch.b64.* | tr -d '\n' | base64 -d > patch.zst
+          echo "910884ee0318059eb755a4f2a0161930be1fc44ddf1ba077eaedf04540a8b5de  patch.zst" | sha256sum -c -
+
+          zstd -d --patch-from=old_norm.tar patch.zst -o new_review_norm.tar
+
+          TARGET="Snapshots/20260809_LeanCommunity"
+          rm -rf "$TARGET"
+          mkdir -p "$TARGET"
+          tar -xf new_review_norm.tar -C "$TARGET"
+
+          rm -rf .snapshot_transport/20260809 old_extract old_norm.tar patch.zst new_review_norm.tar
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Add 20260809 Lean-community review snapshot"
+            git push
+          fi
