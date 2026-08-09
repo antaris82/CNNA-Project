@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "006",
+  "canonical_node_label": "006 \u00b7 C018",
+  "stable_node_directory_name": "006_C018__canonical_bfs_lexicographic_provenance_birth_schedule",
+  "id": "C018",
+  "section_path": "1.1.6",
+  "derivation_order": 6,
+  "main_documentation": "DOCUMENTED",
+  "supplement_documentation": "DOCUMENTED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

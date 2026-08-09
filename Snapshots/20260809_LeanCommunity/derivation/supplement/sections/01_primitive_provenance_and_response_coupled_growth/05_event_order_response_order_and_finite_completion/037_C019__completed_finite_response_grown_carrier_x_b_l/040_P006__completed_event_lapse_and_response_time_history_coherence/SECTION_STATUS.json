@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "040",
+  "canonical_node_label": "040 \u00b7 P006",
+  "stable_node_directory_name": "040_P006__completed_event_lapse_and_response_time_history_coherence",
+  "id": "P006",
+  "section_path": "1.5.5.3",
+  "derivation_order": 40,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

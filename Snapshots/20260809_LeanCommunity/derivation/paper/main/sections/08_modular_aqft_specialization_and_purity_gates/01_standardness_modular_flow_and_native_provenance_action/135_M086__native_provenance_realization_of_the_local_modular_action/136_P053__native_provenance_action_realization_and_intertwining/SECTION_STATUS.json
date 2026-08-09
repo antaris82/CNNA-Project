@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "136",
+  "canonical_node_label": "136 \u00b7 P053",
+  "stable_node_directory_name": "136_P053__native_provenance_action_realization_and_intertwining",
+  "id": "P053",
+  "section_path": "8.1.5.1",
+  "derivation_order": 136,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

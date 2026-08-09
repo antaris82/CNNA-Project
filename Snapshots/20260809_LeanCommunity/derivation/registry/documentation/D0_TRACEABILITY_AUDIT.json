@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.d0-stable-node-label-traceability-audit.v1",
+  "status": "PASS",
+  "nodes": 145,
+  "traceability_rows": 145,
+  "code_anchors": 815,
+  "stable_node_labels": 145,
+  "section_independent_node_headings": true,
+  "stable_node_directory_names": true,
+  "one_dag_only": true,
+  "errors": []
+}

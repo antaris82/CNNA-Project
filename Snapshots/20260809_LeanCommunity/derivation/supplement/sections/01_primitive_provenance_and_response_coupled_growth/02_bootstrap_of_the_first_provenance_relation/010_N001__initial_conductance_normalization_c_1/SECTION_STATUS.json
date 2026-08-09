@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "010",
+  "canonical_node_label": "010 \u00b7 N001",
+  "stable_node_directory_name": "010_N001__initial_conductance_normalization_c_1",
+  "id": "N001",
+  "section_path": "1.2.3",
+  "derivation_order": 10,
+  "main_documentation": "DOCUMENTED",
+  "supplement_documentation": "DOCUMENTED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "072",
+  "canonical_node_label": "072 \u00b7 CTRL005",
+  "stable_node_directory_name": "072_CTRL005__layer_batch_schedule_robustness_control",
+  "id": "CTRL005",
+  "section_path": "4.2.2",
+  "derivation_order": 72,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

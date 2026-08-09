@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "031",
+  "canonical_node_label": "031 \u00b7 T002",
+  "stable_node_directory_name": "031_T002__recurrent_state_closure_theorem",
+  "id": "T002",
+  "section_path": "1.4.5",
+  "derivation_order": 31,
+  "main_documentation": "DOCUMENTED",
+  "supplement_documentation": "DOCUMENTED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

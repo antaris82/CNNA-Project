@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "038",
+  "canonical_node_label": "038 \u00b7 P004",
+  "stable_node_directory_name": "038_P004__finite_schedule_exhaustivity_and_termination",
+  "id": "P004",
+  "section_path": "1.5.5.1",
+  "derivation_order": 38,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

@@ -1,0 +1,91 @@
+% Canonical node 004 · C002; current section path 1.1.4.
+% Canonical owner: C002
+\cnnaNodeHeading{004}{C002}{Root genesis $r$}
+\cnnaNodePlacement{1.1.4}{D1}
+
+\paragraph*{Position and scientific role.}
+\texttt{C002} is the first nonempty carrier construction.  It consumes the
+unique empty carrier of \texttt{C001} and creates the unique root token.  It
+is deliberately prior to address grammar, event order, relation birth,
+geometry and response data; consequently none of those later structures may
+be used in the definition of genesis.
+
+% CNNA-ARCHITECTURE-BEGIN C002
+\begin{cnnaInfoBox}{CNNA begins with the first realization}
+C002 is the first growth step of ComplemeNt Net Architecture: the empty carrier is replaced by the first realized provenance node.  The root has no intrinsic permanent opposite.  Its complementary continuation becomes meaningful only after C003 and C018 expose the admissible but not-yet-realized provenance slots.
+\end{cnnaInfoBox}
+% CNNA-ARCHITECTURE-END C002
+
+\paragraph*{Mathematical contract.}
+Let $X_{\varnothing}$ be the C001 carrier.  Root genesis is the map
+\begin{equation}
+  \Gamma_r:X_{\varnothing}\longmapsto X_r
+  \label{eq:c002-genesis-map}
+\end{equation}
+with
+\begin{equation}
+  V(X_r)=\{r\},
+  \qquad R(X_r)=\varnothing.
+  \label{eq:c002-rooted-carrier}
+\end{equation}
+The root has no provenance parent and, at this derivation node, no geometric
+position.  Equation~\eqref{eq:c002-rooted-carrier} is stronger than merely
+asserting that a root exists: it fixes the entire local node and relation
+content immediately after genesis.
+
+\paragraph*{Explicit construction and invariants.}
+The construction introduces two singleton-valued objects: the zero-payload
+root token $r$ and the canonical rooted carrier $X_r$.  Node membership is
+therefore exactly the predicate $v=r$, whereas relation membership, parenthood
+of $r$, and geometric-position membership are false predicates.  The
+construction preserves the following invariants:
+\begin{equation}
+  |V(X_r)|=1,
+  \qquad |R(X_r)|=0,
+  \qquad \nexists p\;\operatorname{parent}(r)=p.
+  \label{eq:c002-invariants}
+\end{equation}
+No address, numerical node identifier, sibling rank, birth index,
+conductance, load, response, or coordinate is introduced.
+
+\paragraph*{Canonicity.}
+Both the root type and the post-genesis carrier type have one constructor and
+no payload.  Lean proves that every root value equals the canonical root and
+every rooted-carrier value equals the canonical carrier.  Since C001 is also
+unique, \texttt{rootGenesis} is source-independent on its mathematical
+domain: there is no hidden root choice and no hidden initialization datum.
+
+\paragraph*{Boundary and counterchecks.}
+The executable checks separate genesis from several nearby but invalid
+interpretations.  The result contains no self-relation $(r,r)$; the root has
+no parent; both runtime carriers have zero stored fields; and a value outside
+the exact C001 carrier type is rejected rather than coerced.  Reflection tests
+also exclude downstream metadata such as addresses, event indices,
+conductances and coordinates.  These checks are not substitutes for the Lean
+uniqueness theorems; they test the Python boundary against accidental state
+smuggling.
+
+\paragraph*{Cross-layer realization.}
+Python uses frozen, slotted zero-field dataclasses \texttt{Root} and
+\texttt{RootedCarrier}; \texttt{root\_genesis} checks its source type and
+returns the canonical carrier.  Lean uses singleton inductive types,
+definitional false predicates for forbidden relations, parents and positions,
+and explicit uniqueness theorems.  The mechanisms differ, but their
+observable contract is identical: one canonical node and no relation.
+
+\paragraph*{Result and handoff.}
+The hard edge \texttt{E003} realizes the unique transition
+$\texttt{C001}\to\texttt{C002}$.  Edge \texttt{E004} then hands the already
+born root carrier to \texttt{C003}, where the root is anchored to the empty
+address word.  Thus root existence is proved before root addressing; the
+latter is not retroactively part of genesis.
+
+\noindent\textbf{Primary code anchors.}
+Python: \path{derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s01_primitive_inputs_grammar_and_event_order/s04_c002__root_genesis_r.py},
+\texttt{Root}, lines 21--26; \texttt{RootedCarrier}, lines 29--53;
+\texttt{root\_genesis}, lines 56--65.  Lean:
+\path{derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S04_C002_RootGenesisR.lean},
+\texttt{Root}, lines 21--34; \texttt{RootedCarrier.ContainsNode}, lines
+48--50; exclusion predicates, lines 52--65; uniqueness and genesis theorems,
+lines 67--113.  Exact source hashes and test anchors are listed in the
+Supplement.

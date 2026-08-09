@@ -1,0 +1,10 @@
+{
+  "schema": "cnna.p002-kernel-verified-audit.v1",
+  "status": "PASS",
+  "public_declarations": 6,
+  "kernel_verified_declarations": 6,
+  "axiom_free_declarations": 6,
+  "dynamic_scope_owner": "C004",
+  "downstream_c008_status": "FINISHED",
+  "errors": []
+}

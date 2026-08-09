@@ -1,0 +1,203 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "C015",
+  "paper_section": "1.3.8",
+  "contract": {
+    "statement": "C015 fixes the active-path identity convention phi(x)=x. It formalizes no mode family or selector; no slope, coefficient, coercion, normalization, clipping, logarithm, saturation, or sign change is admitted.",
+    "ownership_boundary": [
+      "owns only the one-argument identity transform on the scalar domain later instantiated by M003",
+      "makes explicit that the historical label active linear mode is a convention, not a formal selection from represented alternatives",
+      "contains no mode type, active-mode token, runtime selector, scale, or slope parameter in Python or Lean",
+      "does not derive the steering scalar from the C007 matrix response",
+      "does not define the M003 response-steering functional or M004 birth instruction",
+      "does not implement null, logarithmic, or saturating supplementary controls"
+    ]
+  },
+  "cross_layer": {
+    "equivalence": "Python and Lean define the same one-argument polymorphic identity endomorphism and no mode-selection object. Python returns the exact input object; Lean defines phi x := x and proves phi_eq_input and phi_eq_identity by definitional equality.",
+    "semantic_mismatch_known": false,
+    "semantic_identity_verified": true,
+    "identity_kind": "FROZEN_ACTIVE_PATH_IDENTITY_CONVENTION_NO_MODE_OBJECT",
+    "identity_evidence": [
+      "The Tier-C review identified the previous singleton-mode encoding as non-falsifiable and its freeze was withdrawn.",
+      "Python and Lean now contain only the same one-argument identity transform and no mode token or selector.",
+      "User-local lake build completed successfully with 26 jobs for exact corrected source hash 541d2d142f5cab680b05e523c2436a2fb9bfad1d5d70a8daa25748b400357b8d.",
+      "validate_lean_build_coverage.py --node C015 passed for the exact hash, canonical module/.olean, named declarations, and forbidden-axiom gate."
+    ]
+  },
+  "evidence": {
+    "audit_tier": "A",
+    "python": {
+      "status": "PASS_INDEPENDENTLY_VERIFIED",
+      "node_tests": 5,
+      "full_suite_tests": 100,
+      "substantive_probe": "Exact Fraction identity including zero and negative values, same-object preservation, one positional-only argument, no exported mode object, and no control transform.",
+      "verification_origin": "assistant_full_python_suite_plus_user_local_exact_build_closure"
+    },
+    "lean": {
+      "status": "PASS_USER_LOCAL_PREFIX_FREE_ROOT_BUILD",
+      "source_sha256": "34378ada95397d5c421585f94834e6fc5e019613bc87a873771e0b32a1630013",
+      "toolchain": "Lean 4.31.0 (project pin)",
+      "policy_scan_matches": 0,
+      "exact_hash_built": true,
+      "verification_origin": "user_local_prefix_free_26_job_core_build_20260804_plus_static_source_audit",
+      "proof_audit": {
+        "status": "PASS",
+        "nontrivial_theorems": [
+          "ActiveLinearSteeringModePhiXX.phi_eq_input",
+          "ActiveLinearSteeringModePhiXX.phi_eq_identity"
+        ],
+        "axiom_diagnostic_declarations": [
+          "ActiveLinearSteeringModePhiXX.phi",
+          "ActiveLinearSteeringModePhiXX.phi_eq_input",
+          "ActiveLinearSteeringModePhiXX.phi_eq_identity"
+        ],
+        "verification_origin": "user_local_validate_lean_build_coverage_output",
+        "forbidden_axioms": {
+          "Classical.choice": 0,
+          "sorryAx": 0
+        },
+        "declarations_resolved": 2
+      },
+      "build_coverage_verified": true,
+      "build_evidence": {
+        "source_sha256": "34378ada95397d5c421585f94834e6fc5e019613bc87a873771e0b32a1630013",
+        "root_build_reported_green": true,
+        "root_build_jobs": 26,
+        "core_modules": 24,
+        "build_transcript": "derivation/code/lean/audit/evidence/USER_LOCAL_PREFIX_FREE_FULL_BUILD_20260804.txt",
+        "build_transcript_sha256": "61991521527cca32b3ebe78e4fe80ae07651f8c961250c5b123bb1b1544e9c70",
+        "source_hash_stable_across_documentation_phase": true
+      }
+    }
+  },
+  "artifacts": {
+    "python_source": "9a727902ddcdb62691b603119d472589fe923eaf73621492d9a7dd1c84a12290",
+    "python_test": "3792285cb90dee351484271ca3660b4522a1e186da15226a6431b5efeaa72e22",
+    "lean_source": "541d2d142f5cab680b05e523c2436a2fb9bfad1d5d70a8daa25748b400357b8d",
+    "math_prose": "6357cc2070851bad100d113fa42f203a9bfa8503e9af0d873d528637bbbd483e",
+    "supplement_documentation": "0df2a11eaca8e2597c1cf10cdae1f5c16533f185b0a1a16bd66753812ed7e4e8"
+  },
+  "workflow": {
+    "node_semantics": "CLOSED_ACTIVE_PATH_IDENTITY_CONVENTION_NO_MODE_OBJECT",
+    "documentation": "COMPLETE_V2",
+    "freeze_state": "FROZEN_VERIFIED",
+    "frozen_under_gate_version": "cnna-per-node-freeze-v6",
+    "documentation_v2": "COMPLETE_V2"
+  },
+  "node_number": "023",
+  "derivation_rank": 14,
+  "derivation_order": 23,
+  "section_hierarchy": {
+    "section_path": "1.3.8",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Canonical cut, complement elimination and birth steering",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/023_C015__active_linear_steering_mode_x_x",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/023_C015__active_linear_steering_mode_x_x",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/023_C015__active_linear_steering_mode_x_x/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/023_C015__active_linear_steering_mode_x_x/DOCUMENTATION.md",
+    "introduction_reason": "Identity steering convention introduced after response construction in section 1.3.8."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D0",
+    "tier_name": "Atomic input or definitional node",
+    "tier_assignment_rule": "EXPLICIT_ATOMIC_OR_DEFINITIONAL_OVERRIDE",
+    "main_paper_depth": "COMPACT_DEFINITION",
+    "supplement_depth": "TRACEABLE_DEFINITION",
+    "required_sections": [
+      "position_in_derivation",
+      "definition_or_statement",
+      "introduction_reason",
+      "construction_or_encoding",
+      "boundary_case_or_countercheck",
+      "result",
+      "downstream_handoff",
+      "code_anchors"
+    ],
+    "countercheck_requirement": "ONE_DEFINITIONAL_BOUNDARY_OR_TYPE_REJECTION",
+    "countercheck_status": "PASS",
+    "v2_state": "COMPLETE_V2",
+    "python_anchor_status": "RESOLVED",
+    "lean_anchor_status": "RESOLVED",
+    "code_anchors": [
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s08_c015__active_linear_steering_mode_phi_x_x.py",
+        "symbol": "active_linear_steering",
+        "declaration_kind": "FUNCTION",
+        "start_line": 20,
+        "end_line": 22,
+        "source_sha256": "92458bb05b2008b7458fa2a5d72fac8676796c696769993b989374a7b574c129",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/test_s08_c015__active_linear_steering_mode_phi_x_x.py",
+        "symbol": "TestActivePathIdentityTransform",
+        "declaration_kind": "CLASS",
+        "start_line": 14,
+        "end_line": 50,
+        "source_sha256": "97b94a48f62c0a1bd840bc13310a490f42ffded93f6bf433ff37f2edb8d9f394",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S08_C015_ActiveLinearSteeringModePhiXX.lean",
+        "symbol": "phi",
+        "declaration_kind": "DEF",
+        "start_line": 23,
+        "end_line": 25,
+        "source_sha256": "34378ada95397d5c421585f94834e6fc5e019613bc87a873771e0b32a1630013",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S08_C015_ActiveLinearSteeringModePhiXX.lean",
+        "symbol": "phi_eq_input",
+        "declaration_kind": "THEOREM",
+        "start_line": 26,
+        "end_line": 28,
+        "source_sha256": "34378ada95397d5c421585f94834e6fc5e019613bc87a873771e0b32a1630013",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S08_C015_ActiveLinearSteeringModePhiXX.lean",
+        "symbol": "phi_eq_identity",
+        "declaration_kind": "THEOREM",
+        "start_line": 29,
+        "end_line": 34,
+        "source_sha256": "34378ada95397d5c421585f94834e6fc5e019613bc87a873771e0b32a1630013",
+        "resolution": "RESOLVED"
+      }
+    ],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false,
+    "completion_evidence": {
+      "main_artifact": "derivation/paper/main/sections/01_primitive_response_coupled_finite_provenance/03_recurrent_pre_birth_measurement_and_steering/023_C015__active_linear_steering_mode_x_x/SECTION.tex",
+      "supplement_artifact": "derivation/supplement/sections/01_primitive_response_coupled_finite_provenance/03_recurrent_pre_birth_measurement_and_steering/023_C015__active_linear_steering_mode_x_x/DOCUMENTATION.md",
+      "main_sha256": "6357cc2070851bad100d113fa42f203a9bfa8503e9af0d873d528637bbbd483e",
+      "supplement_sha256": "0df2a11eaca8e2597c1cf10cdae1f5c16533f185b0a1a16bd66753812ed7e4e8",
+      "code_anchor_count": 5,
+      "source_code_changed": false,
+      "documentation_complete": true,
+      "required_sections_present": true,
+      "countercheck_present": true,
+      "code_anchors_resolved": true,
+      "completed_on": "2026-08-04"
+    }
+  },
+  "canonical_identity": {
+    "node_number": "023",
+    "semantic_id": "C015",
+    "canonical_node_label": "023 · C015",
+    "stable_node_directory_name": "023_C015__active_linear_steering_mode_x_x",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  }
+}

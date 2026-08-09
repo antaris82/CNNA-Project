@@ -1,0 +1,398 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "C008",
+  "paper_section": "1.4.1",
+  "contract": {
+    "statement": "For existing record/live channels and a canonical M004 instruction B, append only B.parentChildBirthUpdates to record and append parent/child, ancestor, and sibling updates to live; the application respects C006 exact-fraction SameValue.",
+    "ownership_boundary": [
+      "does not select the M003/M004 steering or birth instruction",
+      "does not construct the full C009 successor state",
+      "does not assign the C011 response-derived lapse",
+      "does not import Legacy free update coefficients"
+    ]
+  },
+  "workflow": {
+    "node_semantics": "CLOSED_RECORD_LIVE_RESPONSE_COUPLED_UPDATE",
+    "documentation": "COMPLETE_V2",
+    "freeze_state": "FROZEN_VERIFIED",
+    "frozen_under_gate_version": "C008_KERNEL_VERIFIED_EXACT_SOURCE_20260808",
+    "documentation_v2": "COMPLETE_V2"
+  },
+  "dependencies": [
+    "M004"
+  ],
+  "node_number": "027",
+  "derivation_rank": 17,
+  "derivation_order": 27,
+  "section_hierarchy": {
+    "section_path": "1.4.1",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Record/live update, backreaction channels and finite closure",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/04_record_live_update_backreaction_channels_and_finite_closure/027_C008__record_live_response_coupled_update",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/04_record_live_update_backreaction_channels_and_finite_closure/027_C008__record_live_response_coupled_update",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/04_record_live_update_backreaction_channels_and_finite_closure/027_C008__record_live_response_coupled_update/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/04_record_live_update_backreaction_channels_and_finite_closure/027_C008__record_live_response_coupled_update/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after M004; registered hard handoff(s): applies_response_coupled_update."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D1",
+    "tier_name": "Structural construction",
+    "tier_assignment_rule": "STRUCTURAL_CONSTRUCTION_ROLE",
+    "main_paper_depth": "STRUCTURAL_EXPLANATION",
+    "supplement_depth": "DETAILED_CONSTRUCTION_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "mathematical_contract",
+      "introduction_reason",
+      "explicit_construction",
+      "invariants",
+      "canonicity_or_uniqueness",
+      "boundary_cases",
+      "python_lean_cross_layer",
+      "countercheck",
+      "result",
+      "downstream_handoff",
+      "code_anchors"
+    ],
+    "countercheck_requirement": "INVARIANT_EDGE_CASE_AND_CROSS_LAYER_CHECK",
+    "countercheck_status": "PASS",
+    "v2_state": "COMPLETE_V2",
+    "python_anchor_status": "RESOLVED",
+    "lean_anchor_status": "RESOLVED_KERNEL_VERIFIED",
+    "code_anchors": [
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s04_record_live_update_backreaction_channels_and_finite_closure/s01_c008__record_live_response_coupled_update.py",
+        "symbol": "RecordLiveChannels",
+        "declaration_kind": "CLASS",
+        "start_line": 29,
+        "end_line": 42,
+        "source_sha256": "d1d0c544a5ca53a22b75c933dd073ff76c28235f6e0e55bfd4e8ebf422ce19e9",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s04_record_live_update_backreaction_channels_and_finite_closure/s01_c008__record_live_response_coupled_update.py",
+        "symbol": "bootstrap_record_live_channels",
+        "declaration_kind": "FUNCTION",
+        "start_line": 52,
+        "end_line": 63,
+        "source_sha256": "d1d0c544a5ca53a22b75c933dd073ff76c28235f6e0e55bfd4e8ebf422ce19e9",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s04_record_live_update_backreaction_channels_and_finite_closure/s01_c008__record_live_response_coupled_update.py",
+        "symbol": "record_instruction_updates",
+        "declaration_kind": "FUNCTION",
+        "start_line": 66,
+        "end_line": 72,
+        "source_sha256": "d1d0c544a5ca53a22b75c933dd073ff76c28235f6e0e55bfd4e8ebf422ce19e9",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s04_record_live_update_backreaction_channels_and_finite_closure/s01_c008__record_live_response_coupled_update.py",
+        "symbol": "live_instruction_updates",
+        "declaration_kind": "FUNCTION",
+        "start_line": 75,
+        "end_line": 85,
+        "source_sha256": "d1d0c544a5ca53a22b75c933dd073ff76c28235f6e0e55bfd4e8ebf422ce19e9",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s04_record_live_update_backreaction_channels_and_finite_closure/s01_c008__record_live_response_coupled_update.py",
+        "symbol": "apply_response_coupled_update",
+        "declaration_kind": "FUNCTION",
+        "start_line": 88,
+        "end_line": 100,
+        "source_sha256": "d1d0c544a5ca53a22b75c933dd073ff76c28235f6e0e55bfd4e8ebf422ce19e9",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "COUNTERCHECK",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s04_record_live_update_backreaction_channels_and_finite_closure/test_s01_c008__record_live_response_coupled_update.py",
+        "symbol": "test_record_gets_only_new_birth_pair_while_live_gets_backreaction",
+        "declaration_kind": "TEST",
+        "start_line": 73,
+        "end_line": 83,
+        "source_sha256": "846d610e5602852ec8b8ae1b64ea21d0b9fb6e7004fd5af1b18526d479cbfbe2",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "COUNTERCHECK",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s04_record_live_update_backreaction_channels_and_finite_closure/test_s01_c008__record_live_response_coupled_update.py",
+        "symbol": "test_strict_ancestor_backreaction_is_live_only",
+        "declaration_kind": "TEST",
+        "start_line": 86,
+        "end_line": 98,
+        "source_sha256": "846d610e5602852ec8b8ae1b64ea21d0b9fb6e7004fd5af1b18526d479cbfbe2",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "COUNTERCHECK",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s04_record_live_update_backreaction_channels_and_finite_closure/test_s01_c008__record_live_response_coupled_update.py",
+        "symbol": "test_c008_has_no_legacy_free_update_controls",
+        "declaration_kind": "TEST",
+        "start_line": 115,
+        "end_line": 123,
+        "source_sha256": "846d610e5602852ec8b8ae1b64ea21d0b9fb6e7004fd5af1b18526d479cbfbe2",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "COUNTERCHECK",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s04_record_live_update_backreaction_channels_and_finite_closure/test_s01_c008__record_live_response_coupled_update.py",
+        "symbol": "test_small_finite_sweep_matches_m004_channel_partition_exactly",
+        "declaration_kind": "TEST",
+        "start_line": 126,
+        "end_line": 141,
+        "source_sha256": "846d610e5602852ec8b8ae1b64ea21d0b9fb6e7004fd5af1b18526d479cbfbe2",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S01_C008_RecordLiveResponseCoupledUpdate.lean",
+        "symbol": "RecordLiveChannels",
+        "declaration_kind": "STRUCTURE",
+        "start_line": 39,
+        "end_line": 41,
+        "source_sha256": "d83db1f0ede5c71c8114442775aed96731a8e883b2770e54d0e322edf09faebc",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S01_C008_RecordLiveResponseCoupledUpdate.lean",
+        "symbol": "recordInstructionUpdates",
+        "declaration_kind": "DEF",
+        "start_line": 66,
+        "end_line": 70,
+        "source_sha256": "d83db1f0ede5c71c8114442775aed96731a8e883b2770e54d0e322edf09faebc",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S01_C008_RecordLiveResponseCoupledUpdate.lean",
+        "symbol": "liveInstructionUpdates",
+        "declaration_kind": "DEF",
+        "start_line": 74,
+        "end_line": 80,
+        "source_sha256": "d83db1f0ede5c71c8114442775aed96731a8e883b2770e54d0e322edf09faebc",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S01_C008_RecordLiveResponseCoupledUpdate.lean",
+        "symbol": "applyInstruction",
+        "declaration_kind": "DEF",
+        "start_line": 83,
+        "end_line": 89,
+        "source_sha256": "d83db1f0ede5c71c8114442775aed96731a8e883b2770e54d0e322edf09faebc",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S01_C008_RecordLiveResponseCoupledUpdate.lean",
+        "symbol": "applyInstruction_record_eq",
+        "declaration_kind": "THEOREM",
+        "start_line": 99,
+        "end_line": 105,
+        "source_sha256": "d83db1f0ede5c71c8114442775aed96731a8e883b2770e54d0e322edf09faebc",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S01_C008_RecordLiveResponseCoupledUpdate.lean",
+        "symbol": "applyInstruction_live_eq",
+        "declaration_kind": "THEOREM",
+        "start_line": 109,
+        "end_line": 118,
+        "source_sha256": "d83db1f0ede5c71c8114442775aed96731a8e883b2770e54d0e322edf09faebc",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S01_C008_RecordLiveResponseCoupledUpdate.lean",
+        "symbol": "applyInstruction_respects_sameValue",
+        "declaration_kind": "THEOREM",
+        "start_line": 184,
+        "end_line": 198,
+        "source_sha256": "d83db1f0ede5c71c8114442775aed96731a8e883b2770e54d0e322edf09faebc",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S01_C008_RecordLiveResponseCoupledUpdate.lean",
+        "symbol": "RecordLiveResponseCoupledUpdateContract",
+        "declaration_kind": "STRUCTURE",
+        "start_line": 203,
+        "end_line": 224,
+        "source_sha256": "d83db1f0ede5c71c8114442775aed96731a8e883b2770e54d0e322edf09faebc",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S01_C008_RecordLiveResponseCoupledUpdate.lean",
+        "symbol": "recordLiveResponseCoupledUpdateContract",
+        "declaration_kind": "THEOREM",
+        "start_line": 227,
+        "end_line": 238,
+        "source_sha256": "d83db1f0ede5c71c8114442775aed96731a8e883b2770e54d0e322edf09faebc",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_proof",
+        "role": "PROOF",
+        "path": "derivation/code/lean/proofs/src/CNNAProofs/C008/S01_CanonicalRecordLiveUpdateClosure.lean",
+        "symbol": "CanonicalRecordLiveUpdateClosure",
+        "declaration_kind": "STRUCTURE",
+        "start_line": 25,
+        "end_line": 41,
+        "source_sha256": "7a54570bb683a183d2c49cf70c8c9e2eb79a21dfb9c9e75e17c850a5aa63fc31",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_proof",
+        "role": "PROOF",
+        "path": "derivation/code/lean/proofs/src/CNNAProofs/C008/S01_CanonicalRecordLiveUpdateClosure.lean",
+        "symbol": "canonicalRecordLiveUpdateClosure",
+        "declaration_kind": "THEOREM",
+        "start_line": 45,
+        "end_line": 62,
+        "source_sha256": "7a54570bb683a183d2c49cf70c8c9e2eb79a21dfb9c9e75e17c850a5aa63fc31",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_proof",
+        "role": "PROOF",
+        "path": "derivation/code/lean/proofs/src/CNNAProofs/C008/S01_CanonicalRecordLiveUpdateClosure.lean",
+        "symbol": "CanonicalRecordLiveUpdateContract",
+        "declaration_kind": "DEF",
+        "start_line": 67,
+        "end_line": 72,
+        "source_sha256": "7a54570bb683a183d2c49cf70c8c9e2eb79a21dfb9c9e75e17c850a5aa63fc31",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_proof",
+        "role": "PROOF",
+        "path": "derivation/code/lean/proofs/src/CNNAProofs/C008/S01_CanonicalRecordLiveUpdateClosure.lean",
+        "symbol": "canonicalRecordLiveUpdateContract",
+        "declaration_kind": "THEOREM",
+        "start_line": 75,
+        "end_line": 78,
+        "source_sha256": "7a54570bb683a183d2c49cf70c8c9e2eb79a21dfb9c9e75e17c850a5aa63fc31",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      }
+    ],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false,
+    "completion_evidence": {
+      "required_sections_present": true,
+      "code_anchors_resolved": true,
+      "main_sha256": "f333ac38feed4227306076c792696f6661370606ba9aa8979eff898c12974917",
+      "supplement_sha256": "5d956a58791c6a8025aece1f7e7a9631417618ba2465477a475a6db0a2cb336a",
+      "source_complete": true,
+      "owned_anchor_count": 22,
+      "kernel_verified_declarations": 7,
+      "python_regression": "PASS_106_TESTS_1086_SUBTESTS",
+      "legacy_role": "QUALITATIVE_HYPOTHESIS_AND_REGRESSION_SOURCE_ONLY"
+    }
+  },
+  "canonical_identity": {
+    "node_number": "027",
+    "semantic_id": "C008",
+    "canonical_node_label": "027 · C008",
+    "stable_node_directory_name": "027_C008__record_live_response_coupled_update",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "open_provenance_context": {
+    "framework": "GENERALIZED_OPEN_PROVENANCE_SYSTEMS",
+    "concept_ids": [
+      "OPS-04",
+      "OPS-05"
+    ],
+    "roles": [
+      "Response-coupled event generation",
+      "Immutable record, live state and backreaction"
+    ],
+    "integration_status": [
+      "M004_C008_KERNEL_VERIFIED_RECORD_LIVE_SEPARATION"
+    ],
+    "claim_guard": "Interpretive specialization map only. Mathematical force is exactly the node contract and its registered evidence; no universal open-system theorem is inferred."
+  },
+  "cnna_architecture_context": {
+    "concept_id": "CNNA-00",
+    "name": "ComplemeNt Net Architecture",
+    "role": "Architecture update: writes the birth record and updates the live net without erasing their distinction.",
+    "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+    "claim_guard": "Interpretive and organizational context only; mathematical force remains exactly the registered node contract and evidence status."
+  },
+  "cross_layer": {
+    "equivalence": "Python tuple append and Lean list append implement the same record/live channel partition; Python normalization is regression support, while Lean proves the universal structural and SameValue closure.",
+    "semantic_mismatch_known": false
+  },
+  "implementation_status": {
+    "status": "KERNEL_VERIFIED_EXACT_SOURCE_EVIDENCE",
+    "source": "S01_C008_RecordLiveResponseCoupledUpdate + S01_CanonicalRecordLiveUpdateClosure",
+    "node_semantics": "7_DECLARATIONS_KERNEL_AXIOM_VERIFIED_FULL_BOUNDARY_PASS"
+  },
+  "evidence": {
+    "status": "KERNEL_VERIFIED_EXACT_SOURCE_EVIDENCE",
+    "date": "2026-08-08",
+    "origin": "USER_LOCAL_LEAN_BUILD",
+    "toolchain": "leanprover/lean4:v4.31.0",
+    "mathlib": "v4.31.0",
+    "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+    "kernel_verified_declarations": 7,
+    "axiom_audit": "PASS",
+    "full_package_boundary_audit": "PASS",
+    "axiom_profile_counts": {
+      "choice_propext_quot": 4,
+      "propext_quot_only": 3,
+      "axiom_free": 0
+    },
+    "allowed_transitive_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "direct_project_axioms": 0,
+    "sorry_count": 0,
+    "build_evidence": "derivation/code/lean/audit/evidence/USER_LOCAL_C008_FULL_BUILD_20260808.json",
+    "build_evidence_sha256": "54da99e4dd5287ed4e036bcb0d7868975761ff3e4d4bc525fe747c5a12c6ed0e",
+    "build_transcript": "derivation/code/lean/audit/evidence/USER_LOCAL_C008_FULL_BUILD_20260808.txt",
+    "build_transcript_sha256": "f709a754198efd33915c9953e6efba6b09e17b3defabe3260c2f3c78fb63e3fa",
+    "source_hash_manifest": "derivation/code/lean/audit/C008_CURRENT_SOURCE_SHA256.txt",
+    "python_regression": "derivation/registry/documentation/C008_PYTHON_REGRESSION_20260808.txt",
+    "python_regression_result": "106 tests + 1086 subtests PASS; includes 99-case finite C008 sweep",
+    "finite_evidence_guard": "Python sweep is regression evidence only; universal closure is supplied by Lean."
+  },
+  "artifacts": {
+    "python_source": "d1d0c544a5ca53a22b75c933dd073ff76c28235f6e0e55bfd4e8ebf422ce19e9",
+    "python_test": "846d610e5602852ec8b8ae1b64ea21d0b9fb6e7004fd5af1b18526d479cbfbe2",
+    "lean_core": "d83db1f0ede5c71c8114442775aed96731a8e883b2770e54d0e322edf09faebc",
+    "lean_proof": "7a54570bb683a183d2c49cf70c8c9e2eb79a21dfb9c9e75e17c850a5aa63fc31",
+    "math_prose": "f333ac38feed4227306076c792696f6661370606ba9aa8979eff898c12974917",
+    "supplement_documentation": "5d956a58791c6a8025aece1f7e7a9631417618ba2465477a475a6db0a2cb336a"
+  }
+}

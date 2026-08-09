@@ -1,0 +1,34 @@
+{
+  "schema": "cnna.documentation-traceability-policy.v1",
+  "identity_coordinates": {
+    "node_number": {
+      "format": "NNN",
+      "example": "001",
+      "meaning": "stable global presentation and derivation-order label",
+      "independent_of": ["section_path", "section_title", "directory_parent"]
+    },
+    "semantic_id": {
+      "format": "class prefix plus sequence number",
+      "example": "I001",
+      "meaning": "stable scientific ownership identifier"
+    },
+    "section_path": {
+      "format": "hierarchical decimal path",
+      "example": "1.1.1",
+      "meaning": "current document placement only",
+      "stability": "mutable when sections are inserted or reorganized"
+    }
+  },
+  "canonical_visible_node_label": "NNN · ID",
+  "tex_heading_rule": "Node headings are unnumbered and begin with NNN · ID; numbered section paths are displayed only as placement metadata.",
+  "stable_node_directory_rule": "The final node-directory component is NNN_ID__slug and does not depend on the current section number.",
+  "authoritative_crosswalks": [
+    "derivation/registry/dag/NODES.tsv",
+    "derivation/registry/nodes/<ID>.json",
+    "derivation/registry/documentation/NODE_TRACEABILITY_INDEX.tsv",
+    "derivation/registry/documentation/CODE_ANCHORS.tsv"
+  ],
+  "code_lookup_rule": "The semantic ID is the join key. Local Sxx prefixes in Python and Lean are module-order coordinates, not canonical node numbers.",
+  "line_reference_rule": "A code citation is identified by path, symbol, declaration kind, line interval, and exact source SHA-256; line numbers alone are not authoritative.",
+  "parallel_dag_forbidden": true
+}

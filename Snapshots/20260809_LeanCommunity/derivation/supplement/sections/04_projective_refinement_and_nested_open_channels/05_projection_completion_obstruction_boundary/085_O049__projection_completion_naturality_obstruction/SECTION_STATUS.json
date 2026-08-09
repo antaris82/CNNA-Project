@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "085",
+  "canonical_node_label": "085 \u00b7 O049",
+  "stable_node_directory_name": "085_O049__projection_completion_naturality_obstruction",
+  "id": "O049",
+  "section_path": "4.5.1",
+  "derivation_order": 85,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

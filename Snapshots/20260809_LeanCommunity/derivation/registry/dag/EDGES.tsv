@@ -1,0 +1,402 @@
+id	source	target	relation	edge_class	hard_dependency	layout_constraint	status	section	requirement	note
+E001	I001	C003	parameterizes_branching	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		
+E002	I002	C003	bounds_finite_approximant	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		
+E003	C001	C002	root_genesis	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		Only node birth before any relation exists.
+E004	C002	C003	anchors_provenance_grammar	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		
+E005	C003	C004A	defines_first_provenance_slot	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		
+E006	A001	C013	supplies_information_free_bootstrap_token	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01	Implement seed as singleton token only.	
+E007	C004A	C013	supplies_first_provenance_slot	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01	First slot is provenance only; no spatial coordinate.	
+E008	N001	C013	sets_first_relation_conductance	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01	Create root–v₁ relation with symmetric C★=1.	
+E009	C013	T001	requires_seed_neutrality	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01	Prove generated first weighted state is seed-independent.	
+E010	N001	M005	requires_unit_independence	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01	Prove C★ is a normalization/unit rather than a third free physical parameter.	
+E011	C013	C014	produces_bootstrap_state	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		
+E012	T001	C014	certifies_seed_neutrality	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		
+E013	M005	C014	certifies_no_third_input	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		
+E014	C014	C005	provides_recurrent_base_case	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		
+E015	C005	C004	exposes_next_open_slot	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		
+E016	C005	M001	supplies_existing_network_to_birth_cut	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01	Define unique birth-local cut from Xₙ and sₙ₊₁.	
+E017	C004	M001	localizes_cut_by_provenance_slot	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		
+E018	M001	M002	requires_birth_cut_domain	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		
+E019	C006	C007	computes_interbirth_response	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		
+E020	M001	C007	supplies_birth_cut	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		
+E021	M002	C007	certifies_response_domain	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		
+E022	C005	C007	response_of_existing_network	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		
+E023	C015	M003	fixes_linear_active_transform	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		C015 identity transform is directly imported and used by M003.
+E024	C007	M003	feeds_response_steering	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		C007 exact response is directly consumed by M003.
+E025	M003	M004	determines_birth_data	DERIVATION	true	true	ACTIVE_CURRENT	SEC-01	All physical directed distinguishability/backreaction must be response-derived.	M004 consumes the closed CanonicalM003Closure interface: response existence, universal steering positivity, and the exact positive-domain witness are supplied internally; no external parent index or positivity premise remains in the public proof contract.
+E026	C004	M004	supplies_provenance_slot_only	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01	Slot/order may label provenance but may not inject independent geometry or rank-force asymmetry.	M004 support is determined by the canonical C004 slot.
+E027	M004	C008	applies_response_coupled_update	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01	C008_MUST_CONSUME_CANONICAL_HANDOFF_AND_RESPECT_BIRTH_INSTRUCTION_SAME_VALUE	M004 supplies an existing immutable IsCanonicalBirthInstructionHandoff and proves any two such handoffs BirthInstructionSameValue. C008 remains the separate owner of record/live mutation and must respect this semantic equivalence.
+E028	C008	C016	creates_record_channel	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		
+E029	C008	C017	updates_live_channel	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		
+E030	C016	C009	part_of_next_state	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		
+E031	C017	C009	part_of_next_state	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		
+E032	M004	C011	produces_response_lapse	DERIVATION	true	true	PLANNED_BLOCKED	SEC-01		
+E033	C011	C012	accumulates_response_time	DERIVATION	true	true	PLANNED_BLOCKED	SEC-01		
+E034	C009	C010	records_event_index	DERIVATION	true	true	PLANNED_BLOCKED	SEC-01		
+E035	C007	CTRL001	nulls_steering_during_growth	CONTROL	true	true	PLANNED_BLOCKED	SUPP		
+E036	CTRL001	CTRL002	checks_null_indistinguishability	CONTROL	true	true	PLANNED_BLOCKED	SUPP		
+E037	C007	CTRL003	log_robustness_transform	CONTROL	true	true	READY_FUTURE	SUPP		
+E038	C007	CTRL004	saturating_robustness_transform	CONTROL	true	true	READY_FUTURE	SUPP		
+E039	O001	M004	must_be_removed_before_core_birth_law	OBSTRUCTION_GATE	true	true	ACTIVE_VERIFIED	SEC-01		M004 candidate inputs explicitly use the all-false O001 presence record and pass the gate.
+E040	O002	CTRL001	must_be_replaced_by_growth_level_nulling	OBSTRUCTION_GATE	true	true	PLANNED_BLOCKED	SEC-01		
+E386	M001	C020	generalizes_birth_cut	DERIVATION	true	true	PLANNED_BLOCKED	SEC-02	General cut family must contain the birth-local cut as its primitive special case.	
+E387	C006	C021	generalizes_schur_response	DERIVATION	true	true	PLANNED_BLOCKED	SEC-02	State the exact domain and directed response theorem.	
+E388	C020	C021	defines_response_domain	DERIVATION	true	true	PLANNED_BLOCKED	SEC-02		
+E389	C021	C022	schur_naturality	DERIVATION	true	true	PLANNED_BLOCKED	SEC-02	Prove nested elimination/common-ambient compatibility.	
+E390	C021	C023	decomposes_response	DERIVATION	true	true	PLANNED_BLOCKED	SEC-02		
+E391	C023	C024	record_live_difference	DERIVATION	true	true	PLANNED_BLOCKED	SEC-02	Use the same cut and basis for live and record.	
+E392	C021	M030	selects_effective_role_plane	DERIVATION	true	true	PLANNED_BLOCKED	SEC-03	Derive one canonical F1/F2 role functor; legacy alternatives are not admitted.	
+E393	C023	M031	generates_intrinsic_response_algebra	DERIVATION	true	true	PLANNED_BLOCKED	SEC-03	Define algebra intrinsically from admitted response objects.	
+E394	M030	M031	provides_role_generators	DERIVATION	true	true	PLANNED_BLOCKED	SEC-03		
+E395	C008	C040	induces_ancestor_kernel	DERIVATION	true	true	PLANNED_BLOCKED	SEC-04	Exact Cauchy carrier must be rechecked after response-coupled growth refactor.	
+E396	C040	C041	cauchy_factorization	DERIVATION	true	true	PLANNED_BLOCKED	SEC-04		
+E397	C021	C041	post_schur_factorization	DERIVATION	true	true	PLANNED_BLOCKED	SEC-04		
+E398	C041	C042	rank_closure	DERIVATION	true	true	PLANNED_BLOCKED	SEC-04		
+E399	C042	C043	refinement_reconstruction	DERIVATION	true	true	PLANNED_BLOCKED	SEC-04		
+E400	C008	C050	stabilizes_raw_skew	DERIVATION	true	true	PLANNED_BLOCKED	SEC-05	Revalidate future-invariant old-old blocks after the primitive growth law is corrected.	
+E401	C050	C051	weyl_direct_system	DERIVATION	true	true	PLANNED_BLOCKED	SEC-05		
+E402	C003	M050	selects_provenance_metric	DERIVATION	true	true	PLANNED_BLOCKED	SEC-05	Derive the metric-selection principles from primitive provenance, not as extra state postulates.	
+E403	C050	C052	normalizes_raw_skew	DERIVATION	true	true	PLANNED_BLOCKED	SEC-05	Global HS edge taxonomy/tail proof.	
+E041	M050	C052	defines_hilbert_normalization	DERIVATION	true	true	PLANNED_BLOCKED	SEC-05		
+E042	C052	C053	quasifree_positivity	DERIVATION	true	true	PLANNED_BLOCKED	SEC-05	Mathematically direct once G and bounded K are admitted.	
+E043	C050	C054	algebraic_nondegeneracy	DERIVATION	true	true	PLANNED_BLOCKED	SEC-05		
+E044	C053	C055	restricts_to_local_cones	DERIVATION	true	true	PLANNED_BLOCKED	SEC-05		
+E045	C055	C056	completed_injectivity	DERIVATION	true	true	PLANNED_BLOCKED	SEC-05		
+E046	C054	C057	spectral_handoff	DERIVATION	true	true	PLANNED_BLOCKED	SEC-06		
+E047	C056	C058	closes_local_factor_nondegeneracy	DERIVATION	true	true	PLANNED_BLOCKED	SEC-06		
+E048	C057	C058	type_classification	DERIVATION	true	true	PLANNED_BLOCKED	SEC-06		
+E049	C008	C059	finite_cone_interface_taxonomy	DERIVATION	true	true	PLANNED_BLOCKED	SEC-06	Recheck exact formula under response-coupled growth.	
+E050	C053	C060	state_factorization	DERIVATION	true	true	PLANNED_BLOCKED	SEC-06		
+E051	C058	C060	type_split_chain	DERIVATION	true	true	PLANNED_BLOCKED	SEC-06		
+E052	C059	C060	separator_split	DERIVATION	true	true	PLANNED_BLOCKED	SEC-06		
+E053	C060	C061	dual_envelope_isotony	DERIVATION	true	true	PLANNED_BLOCKED	SEC-06		
+E054	C021	M070	selects_emergent_geometry	DERIVATION	true	true	PLANNED_BLOCKED	SEC-07	Canonical response/provenance interface selector.	
+E055	M070	B071	unblocks_geometry_hodge_hk	DERIVATION	true	true	PLANNED_BLOCKED	SEC-07		
+E056	C058	M080	requires_local_standardness	DERIVATION	true	true	PLANNED_BLOCKED	SEC-08	Factor type does not imply that the selected Ω is cyclic/separating.	
+E057	C057	O081	modular_shadow_audit	DERIVATION	true	true	PLANNED_BLOCKED	SEC-08		
+E058	M080	M082	tomita_takesaki_flow	DERIVATION	true	true	PLANNED_BLOCKED	SEC-08	Local standard pair required first.	
+E060	M082	M083	covariance_spectrum	DERIVATION	true	true	PLANNED_BLOCKED	SEC-08	Modular flow is not automatically physical covariance; derive an automorphism group and positive generator.	
+E061	C053	O084	mixed_state_result	DERIVATION	true	true	PLANNED_BLOCKED	SEC-08		
+E062	O084	M085	requires_new_pure_branch	DERIVATION	true	true	PLANNED_BLOCKED	SEC-08	Only if global purity remains a target; current ω_prov cannot satisfy it.	
+E063	C003	C018	defines_canonical_birth_schedule	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		
+E064	C018	C004A	selects_first_slot	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		
+E065	C018	C004	orders_next_open_slot	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		
+E066	C018	C010	assigns_event_index	DERIVATION	true	true	PLANNED_BLOCKED	SEC-01		
+E067	N002	C012	fixes_additive_time_origin	DERIVATION	true	true	PLANNED_BLOCKED	SEC-01		
+E068	M005	M003	enforces_unit_normalized_steering	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01	Steering must use normalized response variables so C★ fixes units only.	M003 uses the fixed N001/M005 unit representative C_star=1.
+E069	C005	C009	constrains_codomain_state_schema	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		
+E070	C005	T002	supplies_state_schema	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		
+E071	C009	T002	supplies_step_codomain	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		
+E072	M004	T002	supplies_recurrent_map	DERIVATION	true	true	ACTIVE_VERIFIED	SEC-01		
+E073	C018	T003	supplies_label_order_contract	DERIVATION	true	true	ACTIVE_CURRENT	SEC-01		
+E074	M003	T003	supplies_response_only_steering	DERIVATION	true	true	ACTIVE_CURRENT	SEC-01		
+E075	M004	T003	supplies_no_hardcoded_rank_bias_birth_law	DERIVATION	true	true	ACTIVE_CURRENT	SEC-01		
+E076	C008	T003	supplies_update_equivariance	DERIVATION	true	true	ACTIVE_CURRENT	SEC-01		
+E077	C014	C019	supplies_finite_iteration_base_case	DERIVATION	true	true	PLANNED_BLOCKED	SEC-01		
+E078	T002	C019	certifies_iterability	DERIVATION	true	true	PLANNED_BLOCKED	SEC-01		
+E079	T003	C019	certifies_no_hardcoded_label_bias	DERIVATION	true	true	PLANNED_BLOCKED	SEC-01		
+E080	C018	C019	orders_finite_iteration	DERIVATION	true	true	PLANNED_BLOCKED	SEC-01		
+E081	I002	C019	sets_completion_depth	DERIVATION	true	true	PLANNED_BLOCKED	SEC-01		
+E082	C010	C019	labels_completed_event_history	DERIVATION	true	true	PLANNED_BLOCKED	SEC-01		
+E083	C012	C019	labels_completed_response_time_history	DERIVATION	true	true	PLANNED_BLOCKED	SEC-01		
+E084	C019	C020	supplies_completed_finite_carrier	DERIVATION	true	true	PLANNED_BLOCKED	SEC-02		
+E085	C022	C024	supplies_common_ambient_basis	DERIVATION	true	true	PLANNED_BLOCKED	SEC-02		
+E086	C016	C024	supplies_record_channel	DERIVATION	true	true	PLANNED_BLOCKED	SEC-02		
+E087	C017	C024	supplies_live_channel	DERIVATION	true	true	PLANNED_BLOCKED	SEC-02		
+E088	C019	C040	supplies_finite_ancestor_domain	DERIVATION	true	true	PLANNED_BLOCKED	SEC-04		
+E089	C018	C042	fixes_active_schedule_scope	DERIVATION	true	true	PLANNED_BLOCKED	SEC-04		
+E090	C023	C050	supplies_raw_skew_response	DERIVATION	true	true	PLANNED_BLOCKED	SEC-05		
+E091	C019	C050	supplies_common_finite_support_carrier	DERIVATION	true	true	PLANNED_BLOCKED	SEC-05		
+E092	M050	C053	supplies_quasifree_covariance_metric	DERIVATION	true	true	PLANNED_BLOCKED	SEC-05		
+E093	M050	C055	supplies_local_hilbert_metric	DERIVATION	true	true	PLANNED_BLOCKED	SEC-05		
+E094	C019	C055	supplies_descendant_cone_domain	DERIVATION	true	true	PLANNED_BLOCKED	SEC-05		
+E095	C052	C056	supplies_normalized_skew_operator	DERIVATION	true	true	PLANNED_BLOCKED	SEC-05		
+E096	C053	C057	supplies_selected_quasifree_state	DERIVATION	true	true	PLANNED_BLOCKED	SEC-06		
+E097	C051	C057	supplies_weyl_algebraic_system	DERIVATION	true	true	PLANNED_BLOCKED	SEC-06		
+E098	C019	C059	supplies_finite_cone_carrier	DERIVATION	true	true	PLANNED_BLOCKED	SEC-06		
+E099	C019	M070	supplies_provenance_multilevel_domain	DERIVATION	true	true	PLANNED_BLOCKED	SEC-07		
+E100	C059	M070	supplies_finite_interface_taxonomy	DERIVATION	true	true	PLANNED_BLOCKED	SEC-07		
+E101	C057	M080	supplies_selected_gns_vector	DERIVATION	true	true	PLANNED_BLOCKED	SEC-08		
+E102	M082	M086	supplies_abstract_local_modular_action	DERIVATION	true	true	PLANNED_BLOCKED	SEC-08		
+E103	O081	M086	exposes_native_lift_obstruction	OBSTRUCTION_GATE	true	true	PLANNED_BLOCKED	SEC-08		
+E104	M086	M083	supplies_native_net_action	DERIVATION	true	true	PLANNED_BLOCKED	SEC-08		
+E105	C061	M083	supplies_local_net_for_covariance	DERIVATION	true	true	PLANNED_BLOCKED	SEC-08		
+E106	C018	CTRL005	defines_schedule_control_reference	CONTROL	true	true	PLANNED_BLOCKED	SUPP		
+E107	C021	C025	supplies_directed_effective_response	DERIVATION	true	true	PLANNED_BLOCKED	SEC-02		
+E108	C022	C025	supplies_common_ambient_regional_typing	DERIVATION	true	true	PLANNED_BLOCKED	SEC-02		
+E109	C023	C025	supplies_symmetric_skew_regional_split	DERIVATION	true	true	PLANNED_BLOCKED	SEC-02		
+E110	C025	C032	supplies_regional_operator_support	DERIVATION	true	true	PLANNED_BLOCKED	SEC-03		
+E111	M030	C032	supplies_canonical_role_functor	DERIVATION	true	true	PLANNED_BLOCKED	SEC-03		
+E112	C032	C033	supplies_operator_generators_and_support	DERIVATION	true	true	PLANNED_BLOCKED	SEC-03		
+E113	C025	C033	supplies_response_generators	DERIVATION	true	true	PLANNED_BLOCKED	SEC-03		
+E114	C033	M031	supplies_exact_algebraic_closure	DERIVATION	true	true	PLANNED_BLOCKED	SEC-03		
+E115	C032	O048	supplies_finite_algebra_dimension_domain	DERIVATION	true	true	PLANNED_BLOCKED	SEC-03		
+E116	C019	C044	supplies_finite_carrier_for_prefix_maps	DERIVATION	true	true	PLANNED_BLOCKED	SEC-04		
+E117	C021	C045	supplies_response_objects_for_multiscale_transport	DERIVATION	true	true	PLANNED_BLOCKED	SEC-04		
+E118	C044	C045	supplies_projective_carrier_maps	DERIVATION	true	true	PLANNED_BLOCKED	SEC-04		
+E119	C040	C047	supplies_ancestor_carrier	DERIVATION	true	true	PLANNED_BLOCKED	SEC-04		
+E120	C041	C047	supplies_exact_factorization	DERIVATION	true	true	PLANNED_BLOCKED	SEC-04		
+E121	C045	C047	supplies_common_ambient_transport	DERIVATION	true	true	PLANNED_BLOCKED	SEC-04		
+E122	C042	C046	supplies_rank_closure	DERIVATION	true	true	PLANNED_BLOCKED	SEC-04		
+E123	C047	C046	supplies_nested_refinement	DERIVATION	true	true	PLANNED_BLOCKED	SEC-04		
+E124	C046	C043	supplies_forward_channel_structure	DERIVATION	true	true	PLANNED_BLOCKED	SEC-04		
+E125	C047	C043	supplies_nested_channel_refinement	DERIVATION	true	true	PLANNED_BLOCKED	SEC-04		
+E126	C043	O049	exposes_projection_completion_naturality_boundary	DERIVATION	true	true	PLANNED_BLOCKED	SEC-04		
+E127	C057	O090	supplies_provenance_gns_carrier_for_identification_gate	DERIVATION	true	true	PLANNED_BLOCKED	SEC-06		
+E128	C051	O091	supplies_algebraic_weyl_system_for_limit_boundary	DERIVATION	true	true	PLANNED_BLOCKED	SEC-06		
+E129	C060	O091	supplies_local_split_context_for_limit_boundary	DERIVATION	true	true	PLANNED_BLOCKED	SEC-06		
+E130	O071	M070	must_be_resolved_before_canonical_geometry_selector	OBSTRUCTION_GATE	true	true	PLANNED_BLOCKED	SEC-07		
+E131	C052	O092	supplies_completed_skew_operator_for_polarization_gate	DERIVATION	true	true	PLANNED_BLOCKED	SEC-08		
+E132	O092	M086	exposes_polarization_uniqueness_obstruction	OBSTRUCTION_GATE	true	true	PLANNED_BLOCKED	SEC-08		
+E133	C042	CTRL005	supplies_canonical_schedule_reference_for_control	CONTROL	true	true	PLANNED_BLOCKED	SUPP		
+E134	C059	O071	supplies_finite_interface_domain_for_canonicity_obstruction	OBSTRUCTION_GATE	true	true	PLANNED_BLOCKED	SEC-07		
+E135	C006	P001	supplies_native_schur_dtn_interface	DERIVATION	true	true	ACTIVE_CURRENT	SEC-01		Supplies the exact positive-denominator C006 fraction semantics and native solve/response relations. P001 kernel-verifies their exact rational meaning and uses the same unmodified blocks for the maximum-principle and interior-kernel argument.
+E136	M002	P001	supplies_exact_interior_domain	DERIVATION	true	true	ACTIVE_CURRENT	SEC-01		Supplies the canonical birth-cut dimensions and interior-domain target. P001 proves the generic zero-boundary kernel theorem under first-hit reachability; the exact M001/M002 cut certificate remains a later instantiation obligation.
+E137	C007	P001	supplies_directed_block_operator	DERIVATION	true	true	ACTIVE_CURRENT	SEC-01		Supplies the unmodified source/out-degree directed block realization. P001 uses off-diagonal nonpositivity, row conservation, and positive-arc reachability without symmetrization or regularization.
+E138	P001	M003	certifies_directed_response_channel	PROOF_CERTIFICATION	false	false	ACTIVE_CURRENT	SEC-01	LEAN_4_31_BUILD;AXIOM_GATE;POLICY_SCAN;HASH_BINDING;CANONICAL_CONSUMPTION	P001 supplies the kernel-verified reusable directed Schur/DtN/Kron closure. CNNAProofs.M003M004.S01 consumes it to derive the canonical M003 positivity-domain, response-existence, and universal steering-positivity interface without an externally supplied parent index.
+E139	P001	C021	provides_reusable_cut_solve_response_proof_architecture	DERIVATION	true	true	ACTIVE_CURRENT	SEC-02		P001 exports the kernel-verified generic closure and both canonical and independent-cut instantiations for later root, bulk, and frontier cuts. Each later cut must discharge its own structural hypotheses.
+E140	C003	P002	supports_p002	PROOF_SUPPORT	true	true	ACTIVE_SOURCE_IMPLEMENTED	SEC-01	Prove that the C018 breadth-first/lexicographic relation is a strict total order on provenance addresses and induces a strict total order on open-slot selected children modulo extensional equality of the selected child address.	C003 supplies the address grammar consumed by the C018 owner theorem chain.
+E141	P002	C018	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	KERNEL_VERIFIED_AXIOM_FREE_6_OF_6	SEC-01	Prove that the C018 breadth-first/lexicographic relation is a strict total order on provenance addresses and induces a strict total order on open-slot selected children modulo extensional equality of the selected child address.	P002 packages the already-defined C018 order as a dedicated public proof contract; Lean imports the owner module in the permitted proof-to-core direction.
+E142	C004	P003	supports_p003	PROOF_SUPPORT	true	true	ACTIVE_VERIFIED	SEC-01	Prove that the M001 boundary/interior lists are born-only, disjoint, exhaustive, order-preserving, exclude the unborn child, and are uniquely determined by the frozen provenance selector.	Explicit dependency of proof gate P003.
+E143	C005	P003	supports_p003	PROOF_SUPPORT	true	true	ACTIVE_VERIFIED	SEC-01	Prove that the M001 boundary/interior lists are born-only, disjoint, exhaustive, order-preserving, exclude the unborn child, and are uniquely determined by the frozen provenance selector.	Explicit dependency of proof gate P003.
+E144	C018	P003	supports_p003	PROOF_SUPPORT	true	true	ACTIVE_VERIFIED	SEC-01	Prove that the M001 boundary/interior lists are born-only, disjoint, exhaustive, order-preserving, exclude the unborn child, and are uniquely determined by the frozen provenance selector.	Explicit dependency of proof gate P003.
+E146	P003	M001	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	ACTIVE_VERIFIED	SEC-01	Prove that the M001 boundary/interior lists are born-only, disjoint, exhaustive, order-preserving, exclude the unborn child, and are uniquely determined by the frozen provenance selector.	M001 imports/cites this explicit proof gate.
+E147	I001	P004	supports_p004	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-01	Prove that the bounded canonical schedule enumerates every address of depth at most L exactly once and terminates after the finite carrier cardinality.	Explicit dependency of proof gate P004.
+E148	I002	P004	supports_p004	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-01	Prove that the bounded canonical schedule enumerates every address of depth at most L exactly once and terminates after the finite carrier cardinality.	Explicit dependency of proof gate P004.
+E149	C003	P004	supports_p004	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-01	Prove that the bounded canonical schedule enumerates every address of depth at most L exactly once and terminates after the finite carrier cardinality.	Explicit dependency of proof gate P004.
+E150	C018	P004	supports_p004	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-01	Prove that the bounded canonical schedule enumerates every address of depth at most L exactly once and terminates after the finite carrier cardinality.	Explicit dependency of proof gate P004.
+E151	P002	P004	supports_p004	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-01	Prove that the C018 breadth-first/lexicographic relation is a strict total order on provenance addresses and induces a strict total order on open-slot selected children modulo extensional equality of the selected child address.	P004 may consume the stable P002 order facade for finite schedule exhaustivity and termination.
+E152	P004	C019	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-01	Prove that the bounded canonical schedule enumerates every address of depth at most L exactly once and terminates after the finite carrier cardinality.	C019 imports/cites this explicit proof gate.
+E153	C014	P005	supports_p005	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-01	Lift the one-step recurrent closure to existence and uniqueness of the entire finite response-grown iteration along the canonical schedule.	Explicit dependency of proof gate P005.
+E154	T002	P005	supports_p005	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-01	Lift the one-step recurrent closure to existence and uniqueness of the entire finite response-grown iteration along the canonical schedule.	Explicit dependency of proof gate P005.
+E155	T003	P005	supports_p005	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-01	Lift the one-step recurrent closure to existence and uniqueness of the entire finite response-grown iteration along the canonical schedule.	Explicit dependency of proof gate P005.
+E156	P004	P005	supports_p005	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-01	Lift the one-step recurrent closure to existence and uniqueness of the entire finite response-grown iteration along the canonical schedule.	Explicit dependency of proof gate P005.
+E157	P005	C019	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-01	Lift the one-step recurrent closure to existence and uniqueness of the entire finite response-grown iteration along the canonical schedule.	C019 imports/cites this explicit proof gate.
+E158	C010	P006	supports_p006	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-01	Prove that the completed carrier carries one coherent event-index history and one coherent cumulative response-time history aligned with the same births.	Explicit dependency of proof gate P006.
+E159	C011	P006	supports_p006	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-01	Prove that the completed carrier carries one coherent event-index history and one coherent cumulative response-time history aligned with the same births.	Explicit dependency of proof gate P006.
+E160	C012	P006	supports_p006	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-01	Prove that the completed carrier carries one coherent event-index history and one coherent cumulative response-time history aligned with the same births.	Explicit dependency of proof gate P006.
+E161	P005	P006	supports_p006	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-01	Prove that the completed carrier carries one coherent event-index history and one coherent cumulative response-time history aligned with the same births.	Explicit dependency of proof gate P006.
+E162	P006	C019	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-01	Prove that the completed carrier carries one coherent event-index history and one coherent cumulative response-time history aligned with the same births.	C019 imports/cites this explicit proof gate.
+E163	C019	P007	supports_p007	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-02	Prove exact boundary/interior partition, ordering, finiteness, and selector canonicity for the general cut family without sampling caps.	Explicit dependency of proof gate P007.
+E164	M001	P007	supports_p007	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-02	Prove exact boundary/interior partition, ordering, finiteness, and selector canonicity for the general cut family without sampling caps.	Explicit dependency of proof gate P007.
+E165	P003	P007	supports_p007	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-02	Prove exact boundary/interior partition, ordering, finiteness, and selector canonicity for the general cut family without sampling caps.	Explicit dependency of proof gate P007.
+E166	P005	P007	supports_p007	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-02	Prove exact boundary/interior partition, ordering, finiteness, and selector canonicity for the general cut family without sampling caps.	Explicit dependency of proof gate P007.
+E167	P007	C020	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-02	Prove exact boundary/interior partition, ordering, finiteness, and selector canonicity for the general cut family without sampling caps.	C020 imports/cites this explicit proof gate.
+E168	C006	P008	supports_p008	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-02	Prove the exact solve domain and constructive existence/uniqueness of the admitted interior problem for every general directed cut.	Explicit dependency of proof gate P008.
+E169	C020	P008	supports_p008	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-02	Prove the exact solve domain and constructive existence/uniqueness of the admitted interior problem for every general directed cut.	Explicit dependency of proof gate P008.
+E170	P001	P008	supports_p008	PROOF_SUPPORT	true	true	ACTIVE_CURRENT	SEC-02	Prove the exact solve domain and constructive existence/uniqueness of the admitted interior problem for every general directed cut.	P008 may reuse P001 semantic and kernel-triviality infrastructure. It must still establish the general C020 cut hypotheses and the finite-dimensional solve existence/uniqueness layer.
+E171	P007	P008	supports_p008	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-02	Prove the exact solve domain and constructive existence/uniqueness of the admitted interior problem for every general directed cut.	Explicit dependency of proof gate P008.
+E172	P008	C021	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-02	Prove the exact solve domain and constructive existence/uniqueness of the admitted interior problem for every general directed cut.	C021 imports/cites this explicit proof gate.
+E173	C006	P009	supports_p009	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-02	Prove representative, coordinate, basis-order, and solve-witness independence of the effective boundary response.	Explicit dependency of proof gate P009.
+E174	C020	P009	supports_p009	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-02	Prove representative, coordinate, basis-order, and solve-witness independence of the effective boundary response.	Explicit dependency of proof gate P009.
+E175	P008	P009	supports_p009	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-02	Prove representative, coordinate, basis-order, and solve-witness independence of the effective boundary response.	Explicit dependency of proof gate P009.
+E176	P009	C021	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-02	Prove representative, coordinate, basis-order, and solve-witness independence of the effective boundary response.	C021 imports/cites this explicit proof gate.
+E177	C020	P010	supports_p010	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-02	Prove preservation of the admitted loopless directed-Laplacian structure and the required strict distinguished-port positivity under general elimination.	Explicit dependency of proof gate P010.
+E178	P001	P010	supports_p010	PROOF_SUPPORT	true	true	ACTIVE_CURRENT	SEC-02	Prove preservation of the admitted loopless directed-Laplacian structure and the required strict distinguished-port positivity under general elimination.	P010 may reuse the kernel-verified P001 maximum-propagation and distinguished-port-positivity theorems, but must establish its own cut hypotheses and elimination-preservation conditions.
+E179	P008	P010	supports_p010	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-02	Prove preservation of the admitted loopless directed-Laplacian structure and the required strict distinguished-port positivity under general elimination.	Explicit dependency of proof gate P010.
+E180	P009	P010	supports_p010	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-02	Prove preservation of the admitted loopless directed-Laplacian structure and the required strict distinguished-port positivity under general elimination.	Explicit dependency of proof gate P010.
+E181	P010	C021	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-02	Prove preservation of the admitted loopless directed-Laplacian structure and the required strict distinguished-port positivity under general elimination.	C021 imports/cites this explicit proof gate.
+E182	C021	P011	supports_p011	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-02	Prove that regional restriction/compression is canonically typed, introduces no fitted law, and commutes with admitted common-ambient transport.	Explicit dependency of proof gate P011.
+E183	C022	P011	supports_p011	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-02	Prove that regional restriction/compression is canonically typed, introduces no fitted law, and commutes with admitted common-ambient transport.	Explicit dependency of proof gate P011.
+E184	C023	P011	supports_p011	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-02	Prove that regional restriction/compression is canonically typed, introduces no fitted law, and commutes with admitted common-ambient transport.	Explicit dependency of proof gate P011.
+E185	P009	P011	supports_p011	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-02	Prove that regional restriction/compression is canonically typed, introduces no fitted law, and commutes with admitted common-ambient transport.	Explicit dependency of proof gate P011.
+E186	P011	C025	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-02	Prove that regional restriction/compression is canonically typed, introduces no fitted law, and commutes with admitted common-ambient transport.	C025 imports/cites this explicit proof gate.
+E187	C021	P012	supports_p012	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-03	Prove that the selected F1/F2 role carrier has the claimed rank and is nondegenerate on its admitted domain.	Explicit dependency of proof gate P012.
+E188	P009	P012	supports_p012	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-03	Prove that the selected F1/F2 role carrier has the claimed rank and is nondegenerate on its admitted domain.	Explicit dependency of proof gate P012.
+E189	P012	M030	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-03	Prove that the selected F1/F2 role carrier has the claimed rank and is nondegenerate on its admitted domain.	M030 imports/cites this explicit proof gate.
+E190	C021	P013	supports_p013	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-03	Prove provenance-label equivariance, common-ambient naturality, and uniqueness of the effective role functor under the declared axioms.	Explicit dependency of proof gate P013.
+E191	C022	P013	supports_p013	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-03	Prove provenance-label equivariance, common-ambient naturality, and uniqueness of the effective role functor under the declared axioms.	Explicit dependency of proof gate P013.
+E192	P012	P013	supports_p013	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-03	Prove provenance-label equivariance, common-ambient naturality, and uniqueness of the effective role functor under the declared axioms.	Explicit dependency of proof gate P013.
+E193	P013	M030	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-03	Prove provenance-label equivariance, common-ambient naturality, and uniqueness of the effective role functor under the declared axioms.	M030 imports/cites this explicit proof gate.
+E194	C025	P014	supports_p014	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-03	Prove exact support, projector/restriction typing, idempotence where claimed, and compatibility with regional response and the canonical role functor.	Explicit dependency of proof gate P014.
+E195	M030	P014	supports_p014	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-03	Prove exact support, projector/restriction typing, idempotence where claimed, and compatibility with regional response and the canonical role functor.	Explicit dependency of proof gate P014.
+E196	P011	P014	supports_p014	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-03	Prove exact support, projector/restriction typing, idempotence where claimed, and compatibility with regional response and the canonical role functor.	Explicit dependency of proof gate P014.
+E197	P013	P014	supports_p014	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-03	Prove exact support, projector/restriction typing, idempotence where claimed, and compatibility with regional response and the canonical role functor.	Explicit dependency of proof gate P014.
+E198	P014	C032	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-03	Prove exact support, projector/restriction typing, idempotence where claimed, and compatibility with regional response and the canonical role functor.	C032 imports/cites this explicit proof gate.
+E199	C025	P015	supports_p015	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-03	Prove closure under the declared algebraic operations, finite stabilization, and the exact non-tolerance closure criterion.	Explicit dependency of proof gate P015.
+E200	C032	P015	supports_p015	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-03	Prove closure under the declared algebraic operations, finite stabilization, and the exact non-tolerance closure criterion.	Explicit dependency of proof gate P015.
+E201	P014	P015	supports_p015	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-03	Prove closure under the declared algebraic operations, finite stabilization, and the exact non-tolerance closure criterion.	Explicit dependency of proof gate P015.
+E202	P015	C033	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-03	Prove closure under the declared algebraic operations, finite stabilization, and the exact non-tolerance closure criterion.	C033 imports/cites this explicit proof gate.
+E203	C023	P016	supports_p016	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-03	Prove that the intrinsic algebra is independent of auxiliary positional generators and canonically agrees across admitted response presentations.	Explicit dependency of proof gate P016.
+E204	C033	P016	supports_p016	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-03	Prove that the intrinsic algebra is independent of auxiliary positional generators and canonically agrees across admitted response presentations.	Explicit dependency of proof gate P016.
+E205	M030	P016	supports_p016	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-03	Prove that the intrinsic algebra is independent of auxiliary positional generators and canonically agrees across admitted response presentations.	Explicit dependency of proof gate P016.
+E206	P013	P016	supports_p016	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-03	Prove that the intrinsic algebra is independent of auxiliary positional generators and canonically agrees across admitted response presentations.	Explicit dependency of proof gate P016.
+E207	P015	P016	supports_p016	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-03	Prove that the intrinsic algebra is independent of auxiliary positional generators and canonically agrees across admitted response presentations.	Explicit dependency of proof gate P016.
+E208	P016	M031	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-03	Prove that the intrinsic algebra is independent of auxiliary positional generators and canonically agrees across admitted response presentations.	M031 imports/cites this explicit proof gate.
+E209	C008	P017	supports_p017	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Derive the exact ancestor-return carrier entries H_{rj}=1/(r+j+1) from the response-grown construction under the active law.	Explicit dependency of proof gate P017.
+E210	C019	P017	supports_p017	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Derive the exact ancestor-return carrier entries H_{rj}=1/(r+j+1) from the response-grown construction under the active law.	Explicit dependency of proof gate P017.
+E211	P005	P017	supports_p017	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Derive the exact ancestor-return carrier entries H_{rj}=1/(r+j+1) from the response-grown construction under the active law.	Explicit dependency of proof gate P017.
+E212	P017	C040	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-04	Derive the exact ancestor-return carrier entries H_{rj}=1/(r+j+1) from the response-grown construction under the active law.	C040 imports/cites this explicit proof gate.
+E213	P017	P018	supports_p018	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove the exact determinant formula, nonvanishing, and finite rank consequences for the admitted Cauchy/Hilbert blocks.	Explicit dependency of proof gate P018.
+E214	P018	C040	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-04	Prove the exact determinant formula, nonvanishing, and finite rank consequences for the admitted Cauchy/Hilbert blocks.	C040 imports/cites this explicit proof gate.
+E215	C019	P019	supports_p019	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove exact typing, identity, composition, and cutoff coherence of the finite address-prefix carrier maps.	Explicit dependency of proof gate P019.
+E216	P004	P019	supports_p019	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove exact typing, identity, composition, and cutoff coherence of the finite address-prefix carrier maps.	Explicit dependency of proof gate P019.
+E217	P005	P019	supports_p019	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove exact typing, identity, composition, and cutoff coherence of the finite address-prefix carrier maps.	Explicit dependency of proof gate P019.
+E218	P019	C044	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-04	Prove exact typing, identity, composition, and cutoff coherence of the finite address-prefix carrier maps.	C044 imports/cites this explicit proof gate.
+E219	C021	P020	supports_p020	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove that nested finite response objects embed into the declared common ambient carrier and satisfy the exact restriction/transport identities.	Explicit dependency of proof gate P020.
+E220	C044	P020	supports_p020	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove that nested finite response objects embed into the declared common ambient carrier and satisfy the exact restriction/transport identities.	Explicit dependency of proof gate P020.
+E221	P009	P020	supports_p020	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove that nested finite response objects embed into the declared common ambient carrier and satisfy the exact restriction/transport identities.	Explicit dependency of proof gate P020.
+E222	P019	P020	supports_p020	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove that nested finite response objects embed into the declared common ambient carrier and satisfy the exact restriction/transport identities.	Explicit dependency of proof gate P020.
+E223	P020	C045	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-04	Prove that nested finite response objects embed into the declared common ambient carrier and satisfy the exact restriction/transport identities.	C045 imports/cites this explicit proof gate.
+E224	C040	P021	supports_p021	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove exact typing and compatibility of nested channel refinement maps with the common-ambient transport.	Explicit dependency of proof gate P021.
+E225	C041	P021	supports_p021	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove exact typing and compatibility of nested channel refinement maps with the common-ambient transport.	Explicit dependency of proof gate P021.
+E226	C045	P021	supports_p021	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove exact typing and compatibility of nested channel refinement maps with the common-ambient transport.	Explicit dependency of proof gate P021.
+E227	P018	P021	supports_p021	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove exact typing and compatibility of nested channel refinement maps with the common-ambient transport.	Explicit dependency of proof gate P021.
+E228	P020	P021	supports_p021	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove exact typing and compatibility of nested channel refinement maps with the common-ambient transport.	Explicit dependency of proof gate P021.
+E229	P021	C047	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-04	Prove exact typing and compatibility of nested channel refinement maps with the common-ambient transport.	C047 imports/cites this explicit proof gate.
+E230	C042	P022	supports_p022	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove that the induced forward channel is well-defined and satisfies the declared finite structural identities.	Explicit dependency of proof gate P022.
+E231	C047	P022	supports_p022	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove that the induced forward channel is well-defined and satisfies the declared finite structural identities.	Explicit dependency of proof gate P022.
+E232	P021	P022	supports_p022	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove that the induced forward channel is well-defined and satisfies the declared finite structural identities.	Explicit dependency of proof gate P022.
+E233	P022	C046	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-04	Prove that the induced forward channel is well-defined and satisfies the declared finite structural identities.	C046 imports/cites this explicit proof gate.
+E234	C042	P023	supports_p023	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove identity and composition/cocycle laws for the admitted refinement and forward-channel maps.	Explicit dependency of proof gate P023.
+E235	C046	P023	supports_p023	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove identity and composition/cocycle laws for the admitted refinement and forward-channel maps.	Explicit dependency of proof gate P023.
+E236	C047	P023	supports_p023	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove identity and composition/cocycle laws for the admitted refinement and forward-channel maps.	Explicit dependency of proof gate P023.
+E237	P021	P023	supports_p023	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove identity and composition/cocycle laws for the admitted refinement and forward-channel maps.	Explicit dependency of proof gate P023.
+E238	P022	P023	supports_p023	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove identity and composition/cocycle laws for the admitted refinement and forward-channel maps.	Explicit dependency of proof gate P023.
+E239	P023	C043	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-04	Prove identity and composition/cocycle laws for the admitted refinement and forward-channel maps.	C043 imports/cites this explicit proof gate.
+E240	C046	P024	supports_p024	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove exact invariance of previously formed blocks under later admissible births/refinements on the declared common carrier.	Explicit dependency of proof gate P024.
+E241	C047	P024	supports_p024	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove exact invariance of previously formed blocks under later admissible births/refinements on the declared common carrier.	Explicit dependency of proof gate P024.
+E242	P023	P024	supports_p024	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove exact invariance of previously formed blocks under later admissible births/refinements on the declared common carrier.	Explicit dependency of proof gate P024.
+E243	P024	C043	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-04	Prove exact invariance of previously formed blocks under later admissible births/refinements on the declared common carrier.	C043 imports/cites this explicit proof gate.
+E244	C016	P025	supports_p025	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove exact reconstruction of the live directed object from immutable records plus the admitted refinement/cocycle data.	Explicit dependency of proof gate P025.
+E245	C017	P025	supports_p025	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove exact reconstruction of the live directed object from immutable records plus the admitted refinement/cocycle data.	Explicit dependency of proof gate P025.
+E246	C046	P025	supports_p025	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove exact reconstruction of the live directed object from immutable records plus the admitted refinement/cocycle data.	Explicit dependency of proof gate P025.
+E247	C047	P025	supports_p025	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove exact reconstruction of the live directed object from immutable records plus the admitted refinement/cocycle data.	Explicit dependency of proof gate P025.
+E248	P023	P025	supports_p025	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove exact reconstruction of the live directed object from immutable records plus the admitted refinement/cocycle data.	Explicit dependency of proof gate P025.
+E249	P024	P025	supports_p025	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-04	Prove exact reconstruction of the live directed object from immutable records plus the admitted refinement/cocycle data.	Explicit dependency of proof gate P025.
+E250	P025	C043	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-04	Prove exact reconstruction of the live directed object from immutable records plus the admitted refinement/cocycle data.	C043 imports/cites this explicit proof gate.
+E251	C008	P026	supports_p026	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Prove bilinearity, antisymmetry, finite-support well-definedness, and future invariance of the single raw skew carrier.	Explicit dependency of proof gate P026.
+E252	C019	P026	supports_p026	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Prove bilinearity, antisymmetry, finite-support well-definedness, and future invariance of the single raw skew carrier.	Explicit dependency of proof gate P026.
+E253	C023	P026	supports_p026	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Prove bilinearity, antisymmetry, finite-support well-definedness, and future invariance of the single raw skew carrier.	Explicit dependency of proof gate P026.
+E254	C043	P026	supports_p026	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Prove bilinearity, antisymmetry, finite-support well-definedness, and future invariance of the single raw skew carrier.	Explicit dependency of proof gate P026.
+E255	P024	P026	supports_p026	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Prove bilinearity, antisymmetry, finite-support well-definedness, and future invariance of the single raw skew carrier.	Explicit dependency of proof gate P026.
+E256	P026	C050	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-05	Prove bilinearity, antisymmetry, finite-support well-definedness, and future invariance of the single raw skew carrier.	C050 imports/cites this explicit proof gate.
+E257	C050	P027	supports_p027	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Prove CCR compatibility, inclusion-map coherence, and independence from separately quotienting local radicals.	Explicit dependency of proof gate P027.
+E258	P026	P027	supports_p027	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Prove CCR compatibility, inclusion-map coherence, and independence from separately quotienting local radicals.	Explicit dependency of proof gate P027.
+E259	P027	C051	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-05	Prove CCR compatibility, inclusion-map coherence, and independence from separately quotienting local radicals.	C051 imports/cites this explicit proof gate.
+E260	C003	P028	supports_p028	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Derive an endpoint-neutral node-local metric family and prove cylinder/interlevel consistency.	Explicit dependency of proof gate P028.
+E261	C044	P028	supports_p028	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Derive an endpoint-neutral node-local metric family and prove cylinder/interlevel consistency.	Explicit dependency of proof gate P028.
+E262	P019	P028	supports_p028	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Derive an endpoint-neutral node-local metric family and prove cylinder/interlevel consistency.	Explicit dependency of proof gate P028.
+E263	P028	M050	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-05	Derive an endpoint-neutral node-local metric family and prove cylinder/interlevel consistency.	M050 imports/cites this explicit proof gate.
+E264	P028	P029	supports_p029	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Prove positive definiteness and uniqueness of the admitted metric under the declared locality, consistency, and normalization conditions.	Explicit dependency of proof gate P029.
+E265	P029	M050	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-05	Prove positive definiteness and uniqueness of the admitted metric under the declared locality, consistency, and normalization conditions.	M050 imports/cites this explicit proof gate.
+E266	C050	P030	supports_p030	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Prove that K=G^{-1/2}σG^{-1/2} is well-defined, bounded on the admitted carrier, and skew-adjoint/antisymmetric in the selected metric.	Explicit dependency of proof gate P030.
+E267	M050	P030	supports_p030	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Prove that K=G^{-1/2}σG^{-1/2} is well-defined, bounded on the admitted carrier, and skew-adjoint/antisymmetric in the selected metric.	Explicit dependency of proof gate P030.
+E268	P026	P030	supports_p030	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Prove that K=G^{-1/2}σG^{-1/2} is well-defined, bounded on the admitted carrier, and skew-adjoint/antisymmetric in the selected metric.	Explicit dependency of proof gate P030.
+E269	P029	P030	supports_p030	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Prove that K=G^{-1/2}σG^{-1/2} is well-defined, bounded on the admitted carrier, and skew-adjoint/antisymmetric in the selected metric.	Explicit dependency of proof gate P030.
+E270	P030	C052	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-05	Prove that K=G^{-1/2}σG^{-1/2} is well-defined, bounded on the admitted carrier, and skew-adjoint/antisymmetric in the selected metric.	C052 imports/cites this explicit proof gate.
+E271	P030	P031	supports_p031	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Prove the exhaustive edge taxonomy, square-summable majorant, and complete Hilbert-Schmidt tail estimate.	Explicit dependency of proof gate P031.
+E272	P031	C052	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-05	Prove the exhaustive edge taxonomy, square-summable majorant, and complete Hilbert-Schmidt tail estimate.	C052 imports/cites this explicit proof gate.
+E273	C050	P032	supports_p032	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Prove that the raw finite-support presymplectic radical is trivial on the admitted algebraic carrier.	Explicit dependency of proof gate P032.
+E274	P026	P032	supports_p032	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Prove that the raw finite-support presymplectic radical is trivial on the admitted algebraic carrier.	Explicit dependency of proof gate P032.
+E275	P032	C054	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-05	Prove that the raw finite-support presymplectic radical is trivial on the admitted algebraic carrier.	C054 imports/cites this explicit proof gate.
+E276	C050	P033	supports_p033	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Prove infinite rank using the exact shell/rational-function argument independently of completed injectivity.	Explicit dependency of proof gate P033.
+E277	P026	P033	supports_p033	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Prove infinite rank using the exact shell/rational-function argument independently of completed injectivity.	Explicit dependency of proof gate P033.
+E278	P033	C054	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-05	Prove infinite rank using the exact shell/rational-function argument independently of completed injectivity.	C054 imports/cites this explicit proof gate.
+E279	C052	P034	supports_p034	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Prove that μ=(||K||/2)G satisfies the quasifree positivity bound, regularity, and interlevel consistency.	Explicit dependency of proof gate P034.
+E280	M050	P034	supports_p034	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Prove that μ=(||K||/2)G satisfies the quasifree positivity bound, regularity, and interlevel consistency.	Explicit dependency of proof gate P034.
+E281	P029	P034	supports_p034	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Prove that μ=(||K||/2)G satisfies the quasifree positivity bound, regularity, and interlevel consistency.	Explicit dependency of proof gate P034.
+E282	P030	P034	supports_p034	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Prove that μ=(||K||/2)G satisfies the quasifree positivity bound, regularity, and interlevel consistency.	Explicit dependency of proof gate P034.
+E283	P034	C053	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-05	Prove that μ=(||K||/2)G satisfies the quasifree positivity bound, regularity, and interlevel consistency.	C053 imports/cites this explicit proof gate.
+E284	C019	P035	supports_p035	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Prove that descendant-cone restriction and completion are canonical and compatible with global metric/state embeddings.	Explicit dependency of proof gate P035.
+E285	C053	P035	supports_p035	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Prove that descendant-cone restriction and completion are canonical and compatible with global metric/state embeddings.	Explicit dependency of proof gate P035.
+E286	M050	P035	supports_p035	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Prove that descendant-cone restriction and completion are canonical and compatible with global metric/state embeddings.	Explicit dependency of proof gate P035.
+E287	P034	P035	supports_p035	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Prove that descendant-cone restriction and completion are canonical and compatible with global metric/state embeddings.	Explicit dependency of proof gate P035.
+E288	P035	C055	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-05	Prove that descendant-cone restriction and completion are canonical and compatible with global metric/state embeddings.	C055 imports/cites this explicit proof gate.
+E289	C052	P036	supports_p036	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Formalize the ray reduction, generating function, and logarithmic-singularity argument giving local kernel triviality on a dense algebraic domain.	Explicit dependency of proof gate P036.
+E290	C055	P036	supports_p036	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Formalize the ray reduction, generating function, and logarithmic-singularity argument giving local kernel triviality on a dense algebraic domain.	Explicit dependency of proof gate P036.
+E291	P030	P036	supports_p036	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Formalize the ray reduction, generating function, and logarithmic-singularity argument giving local kernel triviality on a dense algebraic domain.	Explicit dependency of proof gate P036.
+E292	P035	P036	supports_p036	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Formalize the ray reduction, generating function, and logarithmic-singularity argument giving local kernel triviality on a dense algebraic domain.	Explicit dependency of proof gate P036.
+E293	P036	C056	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-05	Formalize the ray reduction, generating function, and logarithmic-singularity argument giving local kernel triviality on a dense algebraic domain.	C056 imports/cites this explicit proof gate.
+E294	P036	P037	supports_p037	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-05	Prove the full remainder estimate and transfer algebraic injectivity to the completed local Hilbert carrier.	Explicit dependency of proof gate P037.
+E295	P037	C056	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-05	Prove the full remainder estimate and transfer algebraic injectivity to the completed local Hilbert carrier.	C056 imports/cites this explicit proof gate.
+E296	C051	P038	supports_p038	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Verify the quasifree-state hypotheses and construct the exact GNS representation used downstream.	Explicit dependency of proof gate P038.
+E297	C053	P038	supports_p038	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Verify the quasifree-state hypotheses and construct the exact GNS representation used downstream.	Explicit dependency of proof gate P038.
+E298	C054	P038	supports_p038	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Verify the quasifree-state hypotheses and construct the exact GNS representation used downstream.	Explicit dependency of proof gate P038.
+E299	P027	P038	supports_p038	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Verify the quasifree-state hypotheses and construct the exact GNS representation used downstream.	Explicit dependency of proof gate P038.
+E300	P032	P038	supports_p038	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Verify the quasifree-state hypotheses and construct the exact GNS representation used downstream.	Explicit dependency of proof gate P038.
+E301	P033	P038	supports_p038	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Verify the quasifree-state hypotheses and construct the exact GNS representation used downstream.	Explicit dependency of proof gate P038.
+E302	P034	P038	supports_p038	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Verify the quasifree-state hypotheses and construct the exact GNS representation used downstream.	Explicit dependency of proof gate P038.
+E303	P038	C057	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-06	Verify the quasifree-state hypotheses and construct the exact GNS representation used downstream.	C057 imports/cites this explicit proof gate.
+E304	C052	P039	supports_p039	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Prove/verify the Araki-Woods realization and identify the one-particle spectral data used by the local factor classification.	Explicit dependency of proof gate P039.
+E305	P031	P039	supports_p039	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Prove/verify the Araki-Woods realization and identify the one-particle spectral data used by the local factor classification.	Explicit dependency of proof gate P039.
+E306	P038	P039	supports_p039	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Prove/verify the Araki-Woods realization and identify the one-particle spectral data used by the local factor classification.	Explicit dependency of proof gate P039.
+E307	P039	C057	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-06	Prove/verify the Araki-Woods realization and identify the one-particle spectral data used by the local factor classification.	C057 imports/cites this explicit proof gate.
+E308	C056	P040	supports_p040	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Prove that each admitted local von Neumann algebra has trivial center under the selected representation.	Explicit dependency of proof gate P040.
+E309	C057	P040	supports_p040	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Prove that each admitted local von Neumann algebra has trivial center under the selected representation.	Explicit dependency of proof gate P040.
+E310	P037	P040	supports_p040	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Prove that each admitted local von Neumann algebra has trivial center under the selected representation.	Explicit dependency of proof gate P040.
+E311	P039	P040	supports_p040	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Prove that each admitted local von Neumann algebra has trivial center under the selected representation.	Explicit dependency of proof gate P040.
+E312	P040	C058	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-06	Prove that each admitted local von Neumann algebra has trivial center under the selected representation.	C058 imports/cites this explicit proof gate.
+E313	C057	P041	supports_p041	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Prove hyperfiniteness/AFD of the admitted local factors from the finite approximation system.	Explicit dependency of proof gate P041.
+E314	P038	P041	supports_p041	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Prove hyperfiniteness/AFD of the admitted local factors from the finite approximation system.	Explicit dependency of proof gate P041.
+E315	P040	P041	supports_p041	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Prove hyperfiniteness/AFD of the admitted local factors from the finite approximation system.	Explicit dependency of proof gate P041.
+E316	P041	C058	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-06	Prove hyperfiniteness/AFD of the admitted local factors from the finite approximation system.	C058 imports/cites this explicit proof gate.
+E317	C057	P042	supports_p042	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Verify the ITPFI/Araki-Woods ratio-set or equivalent classification hypotheses and prove type III1.	Explicit dependency of proof gate P042.
+E318	P039	P042	supports_p042	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Verify the ITPFI/Araki-Woods ratio-set or equivalent classification hypotheses and prove type III1.	Explicit dependency of proof gate P042.
+E319	P040	P042	supports_p042	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Verify the ITPFI/Araki-Woods ratio-set or equivalent classification hypotheses and prove type III1.	Explicit dependency of proof gate P042.
+E320	P041	P042	supports_p042	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Verify the ITPFI/Araki-Woods ratio-set or equivalent classification hypotheses and prove type III1.	Explicit dependency of proof gate P042.
+E321	P042	C058	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-06	Verify the ITPFI/Araki-Woods ratio-set or equivalent classification hypotheses and prove type III1.	C058 imports/cites this explicit proof gate.
+E322	C008	P043	supports_p043	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Prove that the rule-level interface cases are finite, exhaustive, mutually well-typed, and distinct from any emergent geometry selector.	Explicit dependency of proof gate P043.
+E323	C019	P043	supports_p043	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Prove that the rule-level interface cases are finite, exhaustive, mutually well-typed, and distinct from any emergent geometry selector.	Explicit dependency of proof gate P043.
+E324	P005	P043	supports_p043	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Prove that the rule-level interface cases are finite, exhaustive, mutually well-typed, and distinct from any emergent geometry selector.	Explicit dependency of proof gate P043.
+E325	P043	C059	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-06	Prove that the rule-level interface cases are finite, exhaustive, mutually well-typed, and distinct from any emergent geometry selector.	C059 imports/cites this explicit proof gate.
+E326	C053	P044	supports_p044	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Prove the exact one-particle decomposition and induced Araki-Woods tensor factorization across the finite active interface.	Explicit dependency of proof gate P044.
+E327	C058	P044	supports_p044	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Prove the exact one-particle decomposition and induced Araki-Woods tensor factorization across the finite active interface.	Explicit dependency of proof gate P044.
+E328	C059	P044	supports_p044	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Prove the exact one-particle decomposition and induced Araki-Woods tensor factorization across the finite active interface.	Explicit dependency of proof gate P044.
+E329	P042	P044	supports_p044	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Prove the exact one-particle decomposition and induced Araki-Woods tensor factorization across the finite active interface.	Explicit dependency of proof gate P044.
+E330	P043	P044	supports_p044	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Prove the exact one-particle decomposition and induced Araki-Woods tensor factorization across the finite active interface.	Explicit dependency of proof gate P044.
+E331	P044	C060	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-06	Prove the exact one-particle decomposition and induced Araki-Woods tensor factorization across the finite active interface.	C060 imports/cites this explicit proof gate.
+E332	C058	P045	supports_p045	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Construct/identify the type-I interpolating factor and prove the exact local inclusion chain.	Explicit dependency of proof gate P045.
+E333	P044	P045	supports_p045	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Construct/identify the type-I interpolating factor and prove the exact local inclusion chain.	Explicit dependency of proof gate P045.
+E334	P045	C060	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-06	Construct/identify the type-I interpolating factor and prove the exact local inclusion chain.	C060 imports/cites this explicit proof gate.
+E335	C060	P046	supports_p046	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Prove exterior antitony and derive dual-envelope isotony by commutant reversal, without claiming Haag duality.	Explicit dependency of proof gate P046.
+E336	P045	P046	supports_p046	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-06	Prove exterior antitony and derive dual-envelope isotony by commutant reversal, without claiming Haag duality.	Explicit dependency of proof gate P046.
+E337	P046	C061	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-06	Prove exterior antitony and derive dual-envelope isotony by commutant reversal, without claiming Haag duality.	C061 imports/cites this explicit proof gate.
+E338	C019	P047	supports_p047	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-07	Construct an admitted selector from the resolved finite interface and response data without naming geometry by analogy.	Explicit dependency of proof gate P047.
+E339	C021	P047	supports_p047	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-07	Construct an admitted selector from the resolved finite interface and response data without naming geometry by analogy.	Explicit dependency of proof gate P047.
+E340	C059	P047	supports_p047	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-07	Construct an admitted selector from the resolved finite interface and response data without naming geometry by analogy.	Explicit dependency of proof gate P047.
+E341	O071	P047	supports_p047	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-07	Construct an admitted selector from the resolved finite interface and response data without naming geometry by analogy.	Explicit dependency of proof gate P047.
+E342	P043	P047	supports_p047	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-07	Construct an admitted selector from the resolved finite interface and response data without naming geometry by analogy.	Explicit dependency of proof gate P047.
+E343	P047	M070	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-07	Construct an admitted selector from the resolved finite interface and response data without naming geometry by analogy.	M070 imports/cites this explicit proof gate.
+E344	C022	P048	supports_p048	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-07	Prove uniqueness/canonicity, provenance equivariance, and refinement naturality of the selected interface/geometry object.	Explicit dependency of proof gate P048.
+E345	P047	P048	supports_p048	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-07	Prove uniqueness/canonicity, provenance equivariance, and refinement naturality of the selected interface/geometry object.	Explicit dependency of proof gate P048.
+E346	P048	M070	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-07	Prove uniqueness/canonicity, provenance equivariance, and refinement naturality of the selected interface/geometry object.	M070 imports/cites this explicit proof gate.
+E347	C057	P049	supports_p049	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Prove that the selected GNS vector is cyclic for every admitted local algebra.	Explicit dependency of proof gate P049.
+E348	C058	P049	supports_p049	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Prove that the selected GNS vector is cyclic for every admitted local algebra.	Explicit dependency of proof gate P049.
+E349	P042	P049	supports_p049	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Prove that the selected GNS vector is cyclic for every admitted local algebra.	Explicit dependency of proof gate P049.
+E350	P049	M080	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-08	Prove that the selected GNS vector is cyclic for every admitted local algebra.	M080 imports/cites this explicit proof gate.
+E351	C057	P050	supports_p050	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Prove that the selected GNS vector is separating for every admitted local algebra.	Explicit dependency of proof gate P050.
+E352	C058	P050	supports_p050	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Prove that the selected GNS vector is separating for every admitted local algebra.	Explicit dependency of proof gate P050.
+E353	P049	P050	supports_p050	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Prove that the selected GNS vector is separating for every admitted local algebra.	Explicit dependency of proof gate P050.
+E354	P050	M080	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-08	Prove that the selected GNS vector is separating for every admitted local algebra.	M080 imports/cites this explicit proof gate.
+E355	M080	P051	supports_p051	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Construct the local Tomita operator on the standard core, prove closability, and obtain the modular operator/conjugation polar decomposition.	Explicit dependency of proof gate P051.
+E356	P049	P051	supports_p051	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Construct the local Tomita operator on the standard core, prove closability, and obtain the modular operator/conjugation polar decomposition.	Explicit dependency of proof gate P051.
+E357	P050	P051	supports_p051	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Construct the local Tomita operator on the standard core, prove closability, and obtain the modular operator/conjugation polar decomposition.	Explicit dependency of proof gate P051.
+E358	P051	M082	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-08	Construct the local Tomita operator on the standard core, prove closability, and obtain the modular operator/conjugation polar decomposition.	M082 imports/cites this explicit proof gate.
+E359	P051	P052	supports_p052	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Prove the one-parameter automorphism-group law and its admitted locality/net compatibility.	Explicit dependency of proof gate P052.
+E360	P052	M082	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-08	Prove the one-parameter automorphism-group law and its admitted locality/net compatibility.	M082 imports/cites this explicit proof gate.
+E361	M082	P053	supports_p053	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Realize the abstract local modular action on admitted provenance/response observables and prove the representation intertwining relation.	Explicit dependency of proof gate P053.
+E362	O081	P053	supports_p053	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Realize the abstract local modular action on admitted provenance/response observables and prove the representation intertwining relation.	Explicit dependency of proof gate P053.
+E363	O092	P053	supports_p053	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Realize the abstract local modular action on admitted provenance/response observables and prove the representation intertwining relation.	Explicit dependency of proof gate P053.
+E364	P052	P053	supports_p053	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Realize the abstract local modular action on admitted provenance/response observables and prove the representation intertwining relation.	Explicit dependency of proof gate P053.
+E365	P053	M086	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-08	Realize the abstract local modular action on admitted provenance/response observables and prove the representation intertwining relation.	M086 imports/cites this explicit proof gate.
+E366	P053	P054	supports_p054	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Prove independence from local representatives/polarization auxiliaries and the required canonical compatibility on overlaps.	Explicit dependency of proof gate P054.
+E367	P054	M086	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-08	Prove independence from local representatives/polarization auxiliaries and the required canonical compatibility on overlaps.	M086 imports/cites this explicit proof gate.
+E368	C061	P055	supports_p055	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Construct and prove the group action/covariance identities on the admitted local net.	Explicit dependency of proof gate P055.
+E369	M082	P055	supports_p055	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Construct and prove the group action/covariance identities on the admitted local net.	Explicit dependency of proof gate P055.
+E370	M086	P055	supports_p055	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Construct and prove the group action/covariance identities on the admitted local net.	Explicit dependency of proof gate P055.
+E371	P046	P055	supports_p055	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Construct and prove the group action/covariance identities on the admitted local net.	Explicit dependency of proof gate P055.
+E372	P052	P055	supports_p055	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Construct and prove the group action/covariance identities on the admitted local net.	Explicit dependency of proof gate P055.
+E373	P054	P055	supports_p055	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Construct and prove the group action/covariance identities on the admitted local net.	Explicit dependency of proof gate P055.
+E374	P055	M083	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-08	Construct and prove the group action/covariance identities on the admitted local net.	M083 imports/cites this explicit proof gate.
+E375	P055	P056	supports_p056	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Prove existence of the self-adjoint generator and the required positivity statement.	Explicit dependency of proof gate P056.
+E376	P056	M083	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-08	Prove existence of the self-adjoint generator and the required positivity statement.	M083 imports/cites this explicit proof gate.
+E377	P055	P057	supports_p057	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Prove the declared spectrum condition for the derived covariance representation.	Explicit dependency of proof gate P057.
+E378	P056	P057	supports_p057	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Prove the declared spectrum condition for the derived covariance representation.	Explicit dependency of proof gate P057.
+E379	P057	M083	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-08	Prove the declared spectrum condition for the derived covariance representation.	M083 imports/cites this explicit proof gate.
+E380	C053	P058	supports_p058	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Construct a pure global state/purification branch compatible with the admitted quasifree/local data.	Explicit dependency of proof gate P058.
+E381	O084	P058	supports_p058	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Construct a pure global state/purification branch compatible with the admitted quasifree/local data.	Explicit dependency of proof gate P058.
+E382	P034	P058	supports_p058	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Construct a pure global state/purification branch compatible with the admitted quasifree/local data.	Explicit dependency of proof gate P058.
+E383	P058	M085	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-08	Construct a pure global state/purification branch compatible with the admitted quasifree/local data.	M085 imports/cites this explicit proof gate.
+E384	P058	P059	supports_p059	PROOF_SUPPORT	true	true	PLANNED_BLOCKED	SEC-08	Prove that the selected purification is canonical under the declared data and introduces no free non-derived choice.	Explicit dependency of proof gate P059.
+E385	P059	M085	certifies_owner_closure_gate	PROOF_CERTIFICATION	false	false	PLANNED_BLOCKED	SEC-08	Prove that the selected purification is canonical under the declared data and introduces no free non-derived choice.	M085 imports/cites this explicit proof gate.

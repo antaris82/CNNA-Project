@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "075",
+  "canonical_node_label": "075 \u00b7 C045",
+  "stable_node_directory_name": "075_C045__nested_common_ambient_multiscale_transport",
+  "id": "C045",
+  "section_path": "4.3.2",
+  "derivation_order": 75,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

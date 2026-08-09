@@ -1,0 +1,127 @@
+% Canonical node 017 · C006; current section path 1.3.3.
+% Canonical owner: C006
+\cnnaNodeHeading{017}{C006}{Birth-local Schur/DtN primitive}
+\cnnaNodePlacement{1.3.3}{D1}
+Let an explicitly supplied finite operator be written in an already fixed
+ordered boundary/interior basis as
+\[
+ K=
+ \begin{pmatrix}
+  K_{BB} & K_{BI}\\
+  K_{IB} & K_{II}
+ \end{pmatrix},
+\]
+where the boundary block is nonempty.  C006 owns only the algebraic
+elimination primitive.  It neither selects the cut nor constructs $K$ from the
+current CNNA conductances.
+
+An interior solve is an encoded matrix $X$ satisfying the exact fraction-value
+equation
+\[
+ K_{II}X=K_{IB}.
+\]
+The C006 admissibility domain is unique solvability of this equation.  On that
+domain the Schur/DtN response is
+\[
+ \Lambda = K_{BB}-K_{BI}X.
+\]
+
+% CNNA-CONTEXT-BEGIN CTX-C006-SCHUR-DTN
+This is the standard Schur-complement elimination pattern.  In network language, the same boundary operator is called a Dirichlet-to-Neumann response, and elimination of interior network nodes is called Kron reduction.  C006 contributes the exact partial-value formulation and the strict ownership boundary, not the underlying block identity.
+
+% CNNA-EXTREF-BEGIN EXT-USE-C006-SCHUR-DIRECT
+\cite[Horn--Zhang, Basic Properties, pp.~17--46]{Zhang2005SchurComplement}.
+% CNNA-EXTREF-END EXT-USE-C006-SCHUR-DIRECT
+
+% CNNA-EXTREF-BEGIN EXT-USE-C006-KRON-DIRECT
+\cite[Sec.~I, Eqs.~(1)--(2), pp.~150--151]{DoerflerBullo2013KronReduction}.
+% CNNA-EXTREF-END EXT-USE-C006-KRON-DIRECT
+
+% CNNA-EXTREF-BEGIN EXT-USE-C006-RESPONSE-DIRECT
+\cite[Abstract and Sec.~1, p.~115]{CurtisIngermanMorrow1998Response}.
+% CNNA-EXTREF-END EXT-USE-C006-RESPONSE-DIRECT
+% CNNA-CONTEXT-END CTX-C006-SCHUR-DTN
+
+The definition is row-by-column and uses the supplied coordinate order without
+permutation or implicit transpose.  No symmetrization, floating tolerance,
+condition-number threshold, pseudoinverse, or regularization belongs to C006.
+For empty interior the unique solve is the empty matrix and the formula reduces
+to $\Lambda=K_{BB}$.
+
+% CNNA-INFOBOX-BEGIN INFO-C006-FOUR-NAMES
+\begin{cnnaInfoBox}{One block operation, four disciplinary names}
+\label{box:c006-four-names-infobox}
+The matrix $K_{BB}-K_{BI}K_{II}^{-1}K_{IB}$ is called a Schur complement in matrix analysis and appears as the result of Gaussian elimination of the interior variables.
+
+% CNNA-EXTREF-BEGIN EXT-USE-C006-FOURNAMES-INFOBOX
+\cite[Sec.~I, pp.~150--151]{DoerflerBullo2013KronReduction}.
+% CNNA-EXTREF-END EXT-USE-C006-FOURNAMES-INFOBOX
+
+For a conductance network it is the boundary voltage-to-current or Dirichlet-to-Neumann response; eliminating interior network nodes is commonly called Kron reduction.
+
+These are not four separate mechanisms.  They are four semantic views of the same block elimination.  CNNA's distinctive step is to make the boundary/interior split birth-local and provenance-derived before applying the standard operator.
+
+\textbf{Status.} Exact Algebraic Common Core Different Semantics. The common algebraic core is exact; application-specific assumptions remain distinct and are tracked separately.
+\end{cnnaInfoBox}
+% CNNA-INFOBOX-END INFO-C006-FOUR-NAMES
+
+
+Lean carries the finite arithmetic on positive-denominator pairs $(z,d)$ and
+identifies two pairs by cross multiplication,
+\[
+ (z,d)\sim(z',d')\quad\Longleftrightarrow\quad zd'=z'd.
+\]
+Reflexivity, symmetry, and transitivity of this relation are proved, as are the
+congruence of addition, multiplication, subtraction, finite folded sums,
+matrix multiplication, matrix subtraction, and response replacement.  Hence
+C006 is internally well defined on exact fraction values rather than on one
+particular numerator--denominator representation.  Core \texttt{Rat} is used
+only as a canonical positive-denominator encoding of supplied entries and solve
+witnesses; C006 does not claim a theorem equating its operations with
+\texttt{Rat.add}, \texttt{Rat.mul}, or \texttt{Rat.sub}.
+
+Python uses normalized \texttt{Fraction} values and exact Gauss--Jordan
+elimination.  Agreement between the Python implementation and the Lean
+fraction-value algebra is therefore an explicit cross-language verification
+obligation, supported by exhaustive operand tests, matrix-product checks, and
+independent state-level rational calculations; it is not disguised as a Lean
+theorem about core rational arithmetic.  The response relation itself is
+normalization invariant: admissibility yields existence and uniqueness modulo
+entrywise fraction-value equivalence.
+
+% CNNA-INFOBOX-BEGIN INFO-C006-EXACT-ELIMINATION
+\begin{cnnaInfoBox}{Exact elimination before floating-point linear algebra}
+\label{box:c006-exact-elimination-infobox}
+Exact linear elimination predates modern arbitrary-precision libraries.  Bareiss's integer-preserving elimination is a classical example: algebraic identities are organized so intermediate divisions remain exact.
+
+% CNNA-EXTREF-BEGIN EXT-USE-C006-EXACT-INFOBOX
+\cite[pp.~565--578]{Bareiss1968ExactElimination}.
+% CNNA-EXTREF-END EXT-USE-C006-EXACT-INFOBOX
+
+C006 uses a different construction---positive-denominator fraction values modulo cross multiplication and an exact unique-solve relation---but shares the same methodological refusal to replace algebraic equality by a floating tolerance.
+
+This matters scientifically because a condition-number threshold or pseudoinverse would not merely accelerate the calculation; it would change the domain and therefore the mathematical object being derived.
+
+\textbf{Status.} Methodological Lineage Not Algorithm Identity. The comparison is methodological; C006 correctness rests entirely on its own exact-value proofs.
+\end{cnnaInfoBox}
+% CNNA-INFOBOX-END INFO-C006-EXACT-ELIMINATION
+
+
+The canonical birth-local instantiation is deliberately deferred.  M001
+supplies the ordered cut, M002 states its exact domain, and C007
+constructs the current directed operator from C005 and applies this C006
+primitive to obtain the pre-birth response.
+
+% CNNA-OPEN-PROVENANCE-BEGIN C006
+\begin{cnnaInfoBox}{Open-provenance role: Exact complement elimination}
+C006 realizes one specific open-provenance reduction: exact directed Schur/DtN elimination by a unique interior solve.  It is not a partial trace, marginalization, or quantum instrument.
+\end{cnnaInfoBox}
+% CNNA-OPEN-PROVENANCE-END C006
+
+\paragraph*{Verified closure and limits.}
+The core module proves that exact admissibility yields response existence and
+value-level uniqueness, and that the zero-interior case is always admissible.
+Its internal positive-denominator fraction algebra identifies raw encodings by
+cross multiplication.  The later P001 package proves the semantic bridge to
+ordinary rational matrix arithmetic; C006 itself does not import that later
+proof or make the partial operator total.

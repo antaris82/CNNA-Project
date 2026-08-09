@@ -1,0 +1,8 @@
+name = "cnna_core"
+version = "0.1.0"
+defaultTargets = ["CNNA"]
+fixedToolchain = true
+
+[[lean_lib]]
+name = "CNNA"
+srcDir = "src"

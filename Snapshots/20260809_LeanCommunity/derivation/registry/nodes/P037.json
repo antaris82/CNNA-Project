@@ -1,0 +1,94 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "P037",
+  "paper_section": "5.4.2.2",
+  "proof_owner": "C056",
+  "contract": {
+    "statement": "Prove the full remainder estimate and transfer algebraic injectivity to the completed local Hilbert carrier.",
+    "reuse_scope": "Closes the completion gap in Ker K_p={0}.",
+    "granularity_rule": "One separately falsifiable and reusable closure gate; routine lemmas remain internal to the proof module."
+  },
+  "cross_layer": {
+    "semantic_identity_required": true,
+    "python_path_planned": "derivation/code/python/src/cnna/derivation/s05_raw_presymplectic_completion_and_quasifree_state/s04_local_cone_completion_and_injectivity/proofs/s02_p037__complete_remainder_estimate_completion_transfer.py",
+    "lean_path_planned": "derivation/code/lean/proofs/src/CNNAProofs/Derivation/S05_RawPresymplecticCompletionAndQuasifreeState/S04_LocalConeCompletionAndInjectivity/S02_C056_CompletedLocalInjectivityKerKP0/Proofs/S02_P037_CompleteRemainderEstimateCompletionTransfer.lean",
+    "documentation_path_planned": "derivation/paper/main/sections/05_raw_presymplectic_completion_and_quasifree_state/04_local_cone_completion_and_injectivity/proofs/02_P037__complete_remainder_estimate_completion_transfer.tex"
+  },
+  "evidence": {
+    "audit_tier": "B",
+    "python": {
+      "status": "NOT_STARTED"
+    },
+    "lean": {
+      "status": "NOT_STARTED",
+      "mathlib_policy": "ALLOWED_ONLY_FOR_GENERIC_PROOF_INFRASTRUCTURE"
+    }
+  },
+  "workflow": {
+    "node_semantics": "PLANNED_EXPLICIT_PROOF_GATE",
+    "documentation": "STRUCTURAL_REGISTRY_ONLY",
+    "freeze_state": "NOT_STARTED",
+    "frozen_under_gate_version": null,
+    "documentation_v2": "NOT_STARTED"
+  },
+  "dependencies": [
+    "P036"
+  ],
+  "owner_import_direction": "P037 -> C056",
+  "node_number": "105",
+  "derivation_rank": 70,
+  "derivation_order": 105,
+  "section_hierarchy": {
+    "section_path": "5.4.2.2",
+    "root_title": "Presymplectic completion, Weyl system and quasifree state",
+    "group_title": "Local cone completion and injectivity",
+    "main_directory": "derivation/paper/main/sections/05_presymplectic_completion_weyl_system_and_quasifree_state/04_local_cone_completion_and_injectivity/103_C056__completed_local_injectivity_ker_k_p_0/105_P037__complete_remainder_estimate_and_completion_transfer",
+    "supplement_directory": "derivation/supplement/sections/05_presymplectic_completion_weyl_system_and_quasifree_state/04_local_cone_completion_and_injectivity/103_C056__completed_local_injectivity_ker_k_p_0/105_P037__complete_remainder_estimate_and_completion_transfer",
+    "main_artifact": "derivation/paper/main/sections/05_presymplectic_completion_weyl_system_and_quasifree_state/04_local_cone_completion_and_injectivity/103_C056__completed_local_injectivity_ker_k_p_0/105_P037__complete_remainder_estimate_and_completion_transfer/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/05_presymplectic_completion_weyl_system_and_quasifree_state/04_local_cone_completion_and_injectivity/103_C056__completed_local_injectivity_ker_k_p_0/105_P037__complete_remainder_estimate_and_completion_transfer/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after P036; registered hard handoff(s): supports_p037."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D2",
+    "tier_name": "Load-bearing theorem, proof owner, obstruction, or quarantine gate",
+    "tier_assignment_rule": "PROOF_THEOREM_OWNER_OBSTRUCTION_OR_QUARANTINE_ROLE",
+    "main_paper_depth": "THEOREM_AND_PROOF_OVERVIEW",
+    "supplement_depth": "FULL_PROOF_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "formal_statement",
+      "hypotheses",
+      "introduction_reason",
+      "proof_strategy",
+      "lemma_chain",
+      "formal_realization",
+      "counterexamples_or_necessity_checks",
+      "axiom_profile",
+      "result",
+      "remaining_limits",
+      "downstream_handoff",
+      "code_line_register"
+    ],
+    "countercheck_requirement": "NEGATIVE_CONTROL_COUNTEREXAMPLE_OR_HYPOTHESIS_NECESSITY",
+    "countercheck_status": "NOT_STARTED",
+    "v2_state": "NOT_STARTED",
+    "python_anchor_status": "NOT_REQUIRED_PROOF_NODE",
+    "lean_anchor_status": "PLANNED",
+    "code_anchors": [],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false
+  },
+  "canonical_identity": {
+    "node_number": "105",
+    "semantic_id": "P037",
+    "canonical_node_label": "105 · P037",
+    "stable_node_directory_name": "105_P037__complete_remainder_estimate_and_completion_transfer",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "implementation_status": {
+    "status": "NOT_STARTED",
+    "source": "workflow.freeze_state",
+    "node_semantics": "PLANNED_EXPLICIT_PROOF_GATE"
+  }
+}

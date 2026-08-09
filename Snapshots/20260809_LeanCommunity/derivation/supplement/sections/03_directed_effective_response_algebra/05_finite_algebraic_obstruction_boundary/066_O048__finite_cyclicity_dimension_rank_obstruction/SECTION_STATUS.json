@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "066",
+  "canonical_node_label": "066 \u00b7 O048",
+  "stable_node_directory_name": "066_O048__finite_cyclicity_dimension_rank_obstruction",
+  "id": "O048",
+  "section_path": "3.5.1",
+  "derivation_order": 66,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

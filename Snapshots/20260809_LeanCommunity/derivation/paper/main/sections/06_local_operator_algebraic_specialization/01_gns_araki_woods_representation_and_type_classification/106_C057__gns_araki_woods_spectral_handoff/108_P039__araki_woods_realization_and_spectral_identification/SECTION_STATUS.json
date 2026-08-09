@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "108",
+  "canonical_node_label": "108 \u00b7 P039",
+  "stable_node_directory_name": "108_P039__araki_woods_realization_and_spectral_identification",
+  "id": "P039",
+  "section_path": "6.1.1.2",
+  "derivation_order": 108,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "014",
+  "canonical_node_label": "014 \u00b7 C014",
+  "stable_node_directory_name": "014_C014__bootstrap_state_x_r_v_c_r_v_1",
+  "id": "C014",
+  "section_path": "1.2.7",
+  "derivation_order": 14,
+  "main_documentation": "DOCUMENTED",
+  "supplement_documentation": "DOCUMENTED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

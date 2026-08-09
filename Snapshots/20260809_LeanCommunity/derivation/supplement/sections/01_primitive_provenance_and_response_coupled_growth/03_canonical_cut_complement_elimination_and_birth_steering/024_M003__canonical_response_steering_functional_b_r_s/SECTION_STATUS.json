@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "024",
+  "canonical_node_label": "024 \u00b7 M003",
+  "stable_node_directory_name": "024_M003__canonical_response_steering_functional_b_r_s",
+  "id": "M003",
+  "section_path": "1.3.9",
+  "derivation_order": 24,
+  "main_documentation": "DOCUMENTED",
+  "supplement_documentation": "DOCUMENTED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

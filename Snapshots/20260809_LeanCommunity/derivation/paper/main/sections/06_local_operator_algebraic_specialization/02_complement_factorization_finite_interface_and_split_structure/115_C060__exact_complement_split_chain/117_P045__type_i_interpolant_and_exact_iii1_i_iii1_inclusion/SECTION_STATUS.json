@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "117",
+  "canonical_node_label": "117 \u00b7 P045",
+  "stable_node_directory_name": "117_P045__type_i_interpolant_and_exact_iii1_i_iii1_inclusion",
+  "id": "P045",
+  "section_path": "6.2.2.2",
+  "derivation_order": 117,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

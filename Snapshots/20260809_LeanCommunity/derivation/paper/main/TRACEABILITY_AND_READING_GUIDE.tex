@@ -1,0 +1,47 @@
+\section*{Traceability and reading convention}
+\addcontentsline{toc}{section}{Traceability and reading convention}
+\label{sec:traceability-convention}
+
+\subsection*{Three coordinates, one scientific object}
+Every scientific node carries three distinct coordinates:
+\begin{enumerate}
+  \item the canonical node number \texttt{NNN}, such as \texttt{001}, which is the stable global presentation label in derivation order;
+  \item the semantic node identifier, such as \texttt{I001} or \texttt{C001}, which identifies scientific ownership; and
+  \item the current section path, such as \texttt{1.1.1}, which records only the present editorial location.
+\end{enumerate}
+The visible node label is therefore
+\[
+  \texttt{NNN}\;\textperiodcentered\;\texttt{ID},
+\]
+for example \texttt{001}~\textperiodcentered~\texttt{I001}.  The section path is deliberately excluded from this identity.  A later insertion or reorganization of sections may change the path without renaming the DAG node, its semantic owner, or its node directory.
+
+\subsection*{Canonical graph and generated projections}
+The files \texttt{derivation/registry/dag/NODES.tsv} and \texttt{EDGES.tsv} define the single semantic DAG.  The editor-supplied yEd Live GraphML is the canonical visual layout of that same graph.  The main-paper sequence, supplementary sequence, directory indices, and code-anchor tables are generated projections and are not parallel graphs.
+
+For every node, \texttt{derivation/registry/nodes/<ID>.json} records the canonical number, semantic ID, current section path, documentation tier, document artifacts, dependencies, and code anchors.
+
+\subsection*{Directory and code correspondence}
+The final node-directory component has the stable form
+\begin{center}
+\texttt{NNN\_ID\_\_descriptive\_slug}.
+\end{center}
+Its parent directories encode the current section hierarchy.  Main-paper and supplementary artifacts mirror one another:
+\begin{align*}
+&\texttt{derivation/paper/main/sections/<parents>/NNN\_ID\_\_slug/SECTION.tex},\\
+&\texttt{derivation/supplement/sections/<parents>/NNN\_ID\_\_slug/DOCUMENTATION.md}.
+\end{align*}
+
+Python modules have the form \texttt{sKK\_id\_\_slug.py}; Lean modules use \texttt{SKK\_ID\_Name.lean}.  The prefix \texttt{KK} is a local module-order coordinate, not the canonical node number.  The semantic ID is the authoritative join key.
+
+The exact cross-layer mapping is stored in \texttt{CODE\_ANCHORS.tsv}.  A code citation consists of source path, symbol, declaration kind, line interval, and exact source SHA-256.  Line numbers are reading aids; symbol plus hash is the stable identity.
+
+
+\subsection*{Documentation tiers and completion state}
+A node's tier \texttt{D0}, \texttt{D1}, or \texttt{D2} specifies the required depth: atomic definition, structural construction, or full proof dossier.
+
+A node is marked \texttt{COMPLETE\_V2} only when its main-paper text, supplementary dossier, countercheck, code anchors, artifact hashes, and validation gates agree. Nodes are read in canonical order.
+
+\subsection*{Reproducible lookup}
+To move from a DAG node to prose and code, read \texttt{NNN}~\textperiodcentered~\texttt{ID}, locate the ID in \texttt{NODES.tsv} or \texttt{NODE\_TRACEABILITY\_INDEX.tsv}, open the registered document artifact, and filter \texttt{CODE\_ANCHORS.tsv} by the same ID.  To move from code back to the DAG, confirm the source path and declaration symbol in the anchor table and follow its ID to the canonical node record.
+
+This separation of identity, editorial placement, and implementation order is mandatory for all documentation tiers D0--D2.

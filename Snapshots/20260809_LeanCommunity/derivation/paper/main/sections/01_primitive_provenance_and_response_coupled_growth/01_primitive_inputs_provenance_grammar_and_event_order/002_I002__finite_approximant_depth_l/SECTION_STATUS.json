@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "002",
+  "canonical_node_label": "002 \u00b7 I002",
+  "stable_node_directory_name": "002_I002__finite_approximant_depth_l",
+  "id": "I002",
+  "section_path": "1.1.2",
+  "derivation_order": 2,
+  "main_documentation": "DOCUMENTED",
+  "supplement_documentation": "DOCUMENTED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

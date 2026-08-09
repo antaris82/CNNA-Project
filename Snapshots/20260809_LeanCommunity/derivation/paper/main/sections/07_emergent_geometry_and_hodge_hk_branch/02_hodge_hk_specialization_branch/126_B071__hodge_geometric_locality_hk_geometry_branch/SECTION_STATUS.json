@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "126",
+  "canonical_node_label": "126 \u00b7 B071",
+  "stable_node_directory_name": "126_B071__hodge_geometric_locality_hk_geometry_branch",
+  "id": "B071",
+  "section_path": "7.2.1",
+  "derivation_order": 126,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "080",
+  "canonical_node_label": "080 \u00b7 P022",
+  "stable_node_directory_name": "080_P022__forward_channel_well_definedness_and_structural_identities",
+  "id": "P022",
+  "section_path": "4.3.4.1",
+  "derivation_order": 80,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

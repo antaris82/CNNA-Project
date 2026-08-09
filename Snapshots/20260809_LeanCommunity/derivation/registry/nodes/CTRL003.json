@@ -1,0 +1,64 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "CTRL003",
+  "paper_section": "1.6.4",
+  "contract": {
+    "statement": "Parallel robustness control on the same response input; never part of main derivation."
+  },
+  "workflow": {
+    "node_semantics": "CONTROL_ONLY",
+    "documentation": "NOT_STARTED",
+    "freeze_state": "NOT_STARTED",
+    "frozen_under_gate_version": null,
+    "documentation_v2": "NOT_STARTED"
+  },
+  "dependencies": [
+    "C007"
+  ],
+  "node_number": "044",
+  "derivation_rank": 26,
+  "derivation_order": 44,
+  "section_hierarchy": {
+    "section_path": "1.6.4",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Controls and excluded non-derived mechanisms",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/06_controls_and_excluded_non_derived_mechanisms/044_CTRL003__log_response_mode_robustness_control",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/06_controls_and_excluded_non_derived_mechanisms/044_CTRL003__log_response_mode_robustness_control",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/06_controls_and_excluded_non_derived_mechanisms/044_CTRL003__log_response_mode_robustness_control/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/06_controls_and_excluded_non_derived_mechanisms/044_CTRL003__log_response_mode_robustness_control/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C007; registered hard handoff(s): log_robustness_transform."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D0",
+    "tier_name": "Atomic input or definitional node",
+    "tier_assignment_rule": "EXPLICIT_ATOMIC_OR_DEFINITIONAL_OVERRIDE",
+    "main_paper_depth": "COMPACT_DEFINITION",
+    "supplement_depth": "TRACEABLE_DEFINITION",
+    "required_sections": [
+      "position_in_derivation",
+      "definition_or_statement",
+      "introduction_reason",
+      "construction_or_encoding",
+      "boundary_case_or_countercheck",
+      "result",
+      "downstream_handoff",
+      "code_anchors"
+    ],
+    "countercheck_requirement": "ONE_DEFINITIONAL_BOUNDARY_OR_TYPE_REJECTION",
+    "countercheck_status": "NOT_STARTED",
+    "v2_state": "NOT_STARTED",
+    "python_anchor_status": "PLANNED",
+    "lean_anchor_status": "PLANNED",
+    "code_anchors": [],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false
+  },
+  "canonical_identity": {
+    "node_number": "044",
+    "semantic_id": "CTRL003",
+    "canonical_node_label": "044 · CTRL003",
+    "stable_node_directory_name": "044_CTRL003__log_response_mode_robustness_control",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  }
+}

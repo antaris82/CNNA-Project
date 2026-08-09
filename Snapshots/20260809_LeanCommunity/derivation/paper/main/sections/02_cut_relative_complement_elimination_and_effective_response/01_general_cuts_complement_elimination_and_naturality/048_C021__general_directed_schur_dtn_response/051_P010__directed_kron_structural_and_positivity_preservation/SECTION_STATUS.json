@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "051",
+  "canonical_node_label": "051 \u00b7 P010",
+  "stable_node_directory_name": "051_P010__directed_kron_structural_and_positivity_preservation",
+  "id": "P010",
+  "section_path": "2.1.2.3",
+  "derivation_order": 51,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

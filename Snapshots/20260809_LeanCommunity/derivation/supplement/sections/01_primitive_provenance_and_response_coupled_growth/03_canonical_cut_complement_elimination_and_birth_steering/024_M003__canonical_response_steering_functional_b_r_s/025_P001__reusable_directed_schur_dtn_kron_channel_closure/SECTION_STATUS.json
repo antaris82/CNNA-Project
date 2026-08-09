@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "025",
+  "canonical_node_label": "025 \u00b7 P001",
+  "stable_node_directory_name": "025_P001__reusable_directed_schur_dtn_kron_channel_closure",
+  "id": "P001",
+  "section_path": "1.3.9.1",
+  "derivation_order": 25,
+  "main_documentation": "DOCUMENTED",
+  "supplement_documentation": "DOCUMENTED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

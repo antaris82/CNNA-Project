@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "138",
+  "canonical_node_label": "138 \u00b7 M083",
+  "stable_node_directory_name": "138_M083__covariance_group_and_spectrum_condition",
+  "id": "M083",
+  "section_path": "8.2.1",
+  "derivation_order": 138,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CNNA node documentation profile v2",
+  "type": "object",
+  "required": [
+    "schema",
+    "tier",
+    "tier_name",
+    "tier_assignment_rule",
+    "main_paper_depth",
+    "supplement_depth",
+    "required_sections",
+    "countercheck_requirement",
+    "countercheck_status",
+    "v2_state",
+    "python_anchor_status",
+    "lean_anchor_status",
+    "code_anchors",
+    "authority"
+  ],
+  "properties": {
+    "schema": {
+      "const": "cnna.node-documentation-profile.v2"
+    },
+    "tier": {
+      "enum": [
+        "D0",
+        "D1",
+        "D2"
+      ]
+    },
+    "tier_name": {
+      "type": "string"
+    },
+    "tier_assignment_rule": {
+      "type": "string"
+    },
+    "main_paper_depth": {
+      "type": "string"
+    },
+    "supplement_depth": {
+      "type": "string"
+    },
+    "required_sections": {
+      "type": "array",
+      "minItems": 8,
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "countercheck_requirement": {
+      "type": "string"
+    },
+    "countercheck_status": {
+      "type": "string"
+    },
+    "v2_state": {
+      "enum": [
+        "NOT_STARTED",
+        "V1_CONTENT_PRESENT_MIGRATION_REQUIRED",
+        "DRAFT_V2",
+        "COMPLETE_V2"
+      ]
+    },
+    "python_anchor_status": {
+      "enum": [
+        "RESOLVED",
+        "PLANNED",
+        "NOT_REQUIRED_PROOF_NODE",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "lean_anchor_status": {
+      "enum": [
+        "RESOLVED",
+        "PLANNED",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "code_anchors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "layer",
+          "role",
+          "path",
+          "symbol",
+          "declaration_kind",
+          "start_line",
+          "end_line",
+          "source_sha256",
+          "resolution"
+        ]
+      }
+    },
+    "authority": {
+      "type": "string"
+    },
+    "freeze_revalidation_required": {
+      "type": "boolean"
+    }
+  }
+}

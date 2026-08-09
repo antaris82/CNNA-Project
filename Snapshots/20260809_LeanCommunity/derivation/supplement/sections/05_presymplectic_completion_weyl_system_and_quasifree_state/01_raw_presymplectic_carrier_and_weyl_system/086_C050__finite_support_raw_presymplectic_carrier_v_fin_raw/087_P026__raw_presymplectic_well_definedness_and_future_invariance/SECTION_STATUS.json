@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "087",
+  "canonical_node_label": "087 \u00b7 P026",
+  "stable_node_directory_name": "087_P026__raw_presymplectic_well_definedness_and_future_invariance",
+  "id": "P026",
+  "section_path": "5.1.1.1",
+  "derivation_order": 87,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

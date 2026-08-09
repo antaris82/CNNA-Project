@@ -1,0 +1,68 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "C011",
+  "paper_section": "1.5.3",
+  "contract": {
+    "statement": "Physical birth interval/weight determined by the response of the existing network."
+  },
+  "workflow": {
+    "node_semantics": "CORE_BLOCKED",
+    "documentation": "NOT_STARTED",
+    "freeze_state": "NOT_STARTED",
+    "frozen_under_gate_version": null,
+    "documentation_v2": "NOT_STARTED"
+  },
+  "dependencies": [
+    "M004"
+  ],
+  "node_number": "035",
+  "derivation_rank": 20,
+  "derivation_order": 35,
+  "section_hierarchy": {
+    "section_path": "1.5.3",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Event order, response order and finite completion",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/05_event_order_response_order_and_finite_completion/035_C011__response_derived_birth_lapse",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/05_event_order_response_order_and_finite_completion/035_C011__response_derived_birth_lapse",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/05_event_order_response_order_and_finite_completion/035_C011__response_derived_birth_lapse/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/05_event_order_response_order_and_finite_completion/035_C011__response_derived_birth_lapse/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after M004; registered hard handoff(s): produces_response_lapse."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D1",
+    "tier_name": "Structural construction",
+    "tier_assignment_rule": "STRUCTURAL_CONSTRUCTION_ROLE",
+    "main_paper_depth": "STRUCTURAL_EXPLANATION",
+    "supplement_depth": "DETAILED_CONSTRUCTION_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "mathematical_contract",
+      "introduction_reason",
+      "explicit_construction",
+      "invariants",
+      "canonicity_or_uniqueness",
+      "boundary_cases",
+      "python_lean_cross_layer",
+      "countercheck",
+      "result",
+      "downstream_handoff",
+      "code_anchors"
+    ],
+    "countercheck_requirement": "INVARIANT_EDGE_CASE_AND_CROSS_LAYER_CHECK",
+    "countercheck_status": "NOT_STARTED",
+    "v2_state": "NOT_STARTED",
+    "python_anchor_status": "PLANNED",
+    "lean_anchor_status": "PLANNED",
+    "code_anchors": [],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false
+  },
+  "canonical_identity": {
+    "node_number": "035",
+    "semantic_id": "C011",
+    "canonical_node_label": "035 · C011",
+    "stable_node_directory_name": "035_C011__response_derived_birth_lapse",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  }
+}

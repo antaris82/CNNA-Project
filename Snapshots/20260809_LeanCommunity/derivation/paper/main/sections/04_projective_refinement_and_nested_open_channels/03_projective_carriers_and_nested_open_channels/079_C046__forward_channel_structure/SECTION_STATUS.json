@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "079",
+  "canonical_node_label": "079 \u00b7 C046",
+  "stable_node_directory_name": "079_C046__forward_channel_structure",
+  "id": "C046",
+  "section_path": "4.3.4",
+  "derivation_order": 79,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "082",
+  "canonical_node_label": "082 \u00b7 P023",
+  "stable_node_directory_name": "082_P023__refinement_cocycle_law",
+  "id": "P023",
+  "section_path": "4.4.1.1",
+  "derivation_order": 82,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "116",
+  "canonical_node_label": "116 \u00b7 P044",
+  "stable_node_directory_name": "116_P044__one_particle_complement_tensor_factorization",
+  "id": "P044",
+  "section_path": "6.2.2.1",
+  "derivation_order": 116,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

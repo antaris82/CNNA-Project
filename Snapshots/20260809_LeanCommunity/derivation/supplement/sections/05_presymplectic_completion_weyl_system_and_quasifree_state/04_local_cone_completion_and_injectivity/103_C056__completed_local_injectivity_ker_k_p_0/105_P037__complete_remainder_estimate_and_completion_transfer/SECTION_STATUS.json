@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "105",
+  "canonical_node_label": "105 \u00b7 P037",
+  "stable_node_directory_name": "105_P037__complete_remainder_estimate_and_completion_transfer",
+  "id": "P037",
+  "section_path": "5.4.2.2",
+  "derivation_order": 105,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

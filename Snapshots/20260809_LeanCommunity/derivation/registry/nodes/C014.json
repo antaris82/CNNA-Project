@@ -1,0 +1,258 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "C014",
+  "paper_section": "1.2.7",
+  "contract": {
+    "statement": "X1 is the final exceptional initialization state: root (), first newborn (0,), both directed orientations of their relation, and unit conductances (1,1).",
+    "ownership_boundary": [
+      "consumes C013 as the concrete first weighted birth",
+      "uses T001 and M005 only as certificates",
+      "does not compute response, event time, geometry, or recurrent growth"
+    ]
+  },
+  "cross_layer": {
+    "equivalence": "Python packages C013's stored directed conductances directly; Lean now lifts those same stored values to Rat and applies M005 common positive rescaling to the actual X1 pair. No variable-unit state is introduced; both layers identify the same canonical X1 and the same external unit-equivalence class.",
+    "semantic_mismatch_known": false,
+    "semantic_identity_verified": true,
+    "identity_kind": "ACTUAL_BOOTSTRAP_CONDUCTANCE_PAIR_AND_UNIT_EQUIVALENCE",
+    "identity_evidence": [
+      "Lean directedConductancesRat is the Rat lift of FirstNonRootBirth.directedConductances X.birth in both orientations",
+      "Lean directedConductancesRat_eq_n001_pair binds that actual pair to the N001 representative",
+      "Lean conductanceUnit_isRepresentativeOnly applies common positive rescaling to the actual X1 pair and N001 unit together",
+      "Python C014 exposes the same C013 stored directed_conductances without an alternate-unit state payload",
+      "Exact corrective Lean 4.31.0 project build passed locally on the delivered artifact; full project build 18 jobs green"
+    ]
+  },
+  "evidence": {
+    "audit_tier": "A",
+    "python": {
+      "status": "PASS_REPRODUCED",
+      "node_tests": 1
+    },
+    "lean": {
+      "status": "PASS_EXACT_LOCAL_BUILD",
+      "source_sha256": "aa6eee3bffd80413ebe5e565c06e48037155483ce7473867be7aea1008079755",
+      "toolchain": "Lean 4.31.0 (project pin)",
+      "policy_scan_matches": 0,
+      "exact_hash_built": true,
+      "verification_origin": "user_local_build_of_exact_delivered_artifact"
+    }
+  },
+  "artifacts": {
+    "python_source": "2d5ca68bc6b28d45daed5dd71b7d4ce488073cd09b897c26526a5e09fd492137",
+    "python_test": "5c8a408c6bab486231b817bf7e4e688e589d08e85100b96b02a3a0b92c9ac528",
+    "lean_source": "aa6eee3bffd80413ebe5e565c06e48037155483ce7473867be7aea1008079755",
+    "math_prose": "f857f2f7a3cb9e5141292eedd13c0d4b55914819a96a2190f1bac2940b7185d1",
+    "supplement_documentation": "85323d4223a08b3db223062e4f41b9980e1feb2de0e2540739c581a10a6448ae"
+  },
+  "workflow": {
+    "node_semantics": "CLOSED_BOOTSTRAP_STATE",
+    "documentation": "COMPLETE_V2",
+    "freeze_state": "FROZEN_VERIFIED",
+    "frozen_under_gate_version": "cnna-per-node-freeze-v5",
+    "documentation_v2": "COMPLETE_V2"
+  },
+  "node_number": "014",
+  "derivation_rank": 9,
+  "derivation_order": 14,
+  "section_hierarchy": {
+    "section_path": "1.2.7",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Bootstrap of the first provenance relation",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/014_C014__bootstrap_state_x_r_v_c_r_v_1",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/014_C014__bootstrap_state_x_r_v_c_r_v_1",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/014_C014__bootstrap_state_x_r_v_c_r_v_1/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/014_C014__bootstrap_state_x_r_v_c_r_v_1/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C013, T001, M005; registered hard handoff(s): produces_bootstrap_state, certifies_seed_neutrality, certifies_no_third_input."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D1",
+    "tier_name": "Structural construction",
+    "tier_assignment_rule": "STRUCTURAL_CONSTRUCTION_ROLE",
+    "main_paper_depth": "STRUCTURAL_EXPLANATION",
+    "supplement_depth": "DETAILED_CONSTRUCTION_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "mathematical_contract",
+      "introduction_reason",
+      "explicit_construction",
+      "invariants",
+      "canonicity_or_uniqueness",
+      "boundary_cases",
+      "python_lean_cross_layer",
+      "countercheck",
+      "result",
+      "downstream_handoff",
+      "code_anchors"
+    ],
+    "countercheck_requirement": "INVARIANT_EDGE_CASE_AND_CROSS_LAYER_CHECK",
+    "countercheck_status": "PASS",
+    "v2_state": "COMPLETE_V2",
+    "python_anchor_status": "RESOLVED",
+    "lean_anchor_status": "RESOLVED",
+    "code_anchors": [
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s02_bootstrap_of_the_first_relation/s07_c014__bootstrap_state_x1_r_v1_c_r_v1_1.py",
+        "symbol": "BootstrapState",
+        "declaration_kind": "CLASS",
+        "start_line": 23,
+        "end_line": 46,
+        "source_sha256": "3b2115e677362fae2c1205e74b37f020a93f2a069e31a560484d899dd38d6f28",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s02_bootstrap_of_the_first_relation/s07_c014__bootstrap_state_x1_r_v1_c_r_v1_1.py",
+        "symbol": "build_bootstrap_state",
+        "declaration_kind": "FUNCTION",
+        "start_line": 49,
+        "end_line": 51,
+        "source_sha256": "3b2115e677362fae2c1205e74b37f020a93f2a069e31a560484d899dd38d6f28",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s02_bootstrap_of_the_first_relation/test_s07_c014__bootstrap_state_x1_r_v1_c_r_v1_1.py",
+        "symbol": "TestBootstrapState",
+        "declaration_kind": "CLASS",
+        "start_line": 18,
+        "end_line": 30,
+        "source_sha256": "efa56d83c92ded843c844b52f9271816a58bf9f333a8942c109d1103334b8355",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S07_C014_BootstrapStateX1RV1CRV11.lean",
+        "symbol": "BootstrapState",
+        "declaration_kind": "STRUCTURE",
+        "start_line": 23,
+        "end_line": 28,
+        "source_sha256": "6894fdaf9854f4d7251d828bf756a54aa2730d94fe84f733acb9d829c57e65f5",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S07_C014_BootstrapStateX1RV1CRV11.lean",
+        "symbol": "build",
+        "declaration_kind": "DEF",
+        "start_line": 29,
+        "end_line": 32,
+        "source_sha256": "6894fdaf9854f4d7251d828bf756a54aa2730d94fe84f733acb9d829c57e65f5",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S07_C014_BootstrapStateX1RV1CRV11.lean",
+        "symbol": "rootAddress",
+        "declaration_kind": "DEF",
+        "start_line": 33,
+        "end_line": 36,
+        "source_sha256": "6894fdaf9854f4d7251d828bf756a54aa2730d94fe84f733acb9d829c57e65f5",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S07_C014_BootstrapStateX1RV1CRV11.lean",
+        "symbol": "newbornAddress",
+        "declaration_kind": "DEF",
+        "start_line": 37,
+        "end_line": 40,
+        "source_sha256": "6894fdaf9854f4d7251d828bf756a54aa2730d94fe84f733acb9d829c57e65f5",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S07_C014_BootstrapStateX1RV1CRV11.lean",
+        "symbol": "directedConductances_eq_unit_pair",
+        "declaration_kind": "THEOREM",
+        "start_line": 41,
+        "end_line": 45,
+        "source_sha256": "6894fdaf9854f4d7251d828bf756a54aa2730d94fe84f733acb9d829c57e65f5",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S07_C014_BootstrapStateX1RV1CRV11.lean",
+        "symbol": "fromSeed_seedNeutral",
+        "declaration_kind": "THEOREM",
+        "start_line": 46,
+        "end_line": 55,
+        "source_sha256": "6894fdaf9854f4d7251d828bf756a54aa2730d94fe84f733acb9d829c57e65f5",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S07_C014_BootstrapStateX1RV1CRV11.lean",
+        "symbol": "directedConductancesRat",
+        "declaration_kind": "DEF",
+        "start_line": 56,
+        "end_line": 60,
+        "source_sha256": "6894fdaf9854f4d7251d828bf756a54aa2730d94fe84f733acb9d829c57e65f5",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S07_C014_BootstrapStateX1RV1CRV11.lean",
+        "symbol": "directedConductancesRat_eq_n001_pair",
+        "declaration_kind": "THEOREM",
+        "start_line": 61,
+        "end_line": 74,
+        "source_sha256": "6894fdaf9854f4d7251d828bf756a54aa2730d94fe84f733acb9d829c57e65f5",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S07_C014_BootstrapStateX1RV1CRV11.lean",
+        "symbol": "conductanceUnit_isRepresentativeOnly",
+        "declaration_kind": "THEOREM",
+        "start_line": 75,
+        "end_line": 99,
+        "source_sha256": "6894fdaf9854f4d7251d828bf756a54aa2730d94fe84f733acb9d829c57e65f5",
+        "resolution": "RESOLVED"
+      }
+    ],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false,
+    "completion_evidence": {
+      "main_artifact": "derivation/paper/main/sections/01_primitive_response_coupled_finite_provenance/02_bootstrap_of_the_first_relation/014_C014__bootstrap_state_x_r_v_c_r_v_1/SECTION.tex",
+      "supplement_artifact": "derivation/supplement/sections/01_primitive_response_coupled_finite_provenance/02_bootstrap_of_the_first_relation/014_C014__bootstrap_state_x_r_v_c_r_v_1/DOCUMENTATION.md",
+      "main_sha256": "f857f2f7a3cb9e5141292eedd13c0d4b55914819a96a2190f1bac2940b7185d1",
+      "supplement_sha256": "85323d4223a08b3db223062e4f41b9980e1feb2de0e2540739c581a10a6448ae",
+      "code_anchor_count": 12,
+      "source_code_changed": false,
+      "documentation_complete": true,
+      "required_sections_present": true,
+      "countercheck_present": true,
+      "code_anchors_resolved": true,
+      "completed_on": "2026-08-04"
+    }
+  },
+  "canonical_identity": {
+    "node_number": "014",
+    "semantic_id": "C014",
+    "canonical_node_label": "014 · C014",
+    "stable_node_directory_name": "014_C014__bootstrap_state_x_r_v_c_r_v_1",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "cnna_architecture_context": {
+    "concept_id": "CNNA-00",
+    "name": "ComplemeNt Net Architecture",
+    "role": "First response-capable complement net: the first weighted two-node provenance network is packaged as the recurrent base state.",
+    "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+    "claim_guard": "Interpretive and organizational context only; mathematical force remains exactly the registered node contract and evidence status."
+  }
+}

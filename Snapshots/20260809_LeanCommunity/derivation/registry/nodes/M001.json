@@ -1,0 +1,587 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "M001",
+  "paper_section": "1.3.4",
+  "contract": {
+    "statement": "For recurrent C005 state X_n and its C004 successor slot s_{n+1}=(p,rho,c), M001 defines the unique ordered birth-local cut of the already-born carrier. The boundary is exactly the C005 carrier subsequence consisting of the root-to-parent provenance prefix chain of p together with already-born same-parent siblings of ranks < rho; the interior is the complementary carrier subsequence. The unborn child c is in neither block.",
+    "ownership_boundary": [
+      "consumes only C005 current born carrier and the C004 next open provenance slot",
+      "uses only primitive provenance prefix/parent/sibling-rank roles already fixed by C003/C018/C004",
+      "inherits boundary and interior order from the C005/C018 carrier order and introduces no new ordering convention",
+      "does not inspect conductance values or response data",
+      "does not introduce sampling caps, frontier radii, metric neighborhoods, environment ports or downstream geometry",
+      "does not perform Schur/DtN elimination, define the interior-domain theorem M002, compute R_n, create a birth or update X_n"
+    ]
+  },
+  "cross_layer": {
+    "equivalence": "Python and Lean define the same ordered partition of the same C005 born carrier by the same provenance predicate: root-to-parent prefix-chain membership or earlier same-parent sibling membership relative to the C004 slot. Python filters state.nodes; Lean filters canonicalCarrier X. Both exclude the unborn C004 child and preserve inherited carrier order.",
+    "semantic_mismatch_known": false,
+    "semantic_identity_verified": true,
+    "identity_kind": "ORDERED_BIRTH_LOCAL_PROVENANCE_CUT_IDENTITY",
+    "identity_evidence": [
+      "Exact canonical M001 Lean source SHA-256 1da607a4bb731d6bc4377b13ac5f9929f351f56fbc802748939419a3e472f515 was built in the root project after M001 was added to src/CNNA.lean; build reported 19 jobs for 16 modules and produced one M001 .olean.",
+      "Tier-B environment audit resolved all 28 M001 declarations; axiom profile was 26x {propext, Quot.sound}, 1x {propext}, 1x empty; Classical.choice and sorry were absent.",
+      "Exhaustive Python cross-layer probe over 99 reachable states on (b,L)={(2,2),(2,3),(3,2),(4,1),(2,4),(3,3)} found zero deviations for exact port membership, bornness, ordered partition, carrier coverage and unborn-child exclusion.",
+      "Lean proves BirthLocalPort bornness and boundary membership iff BirthLocalPort, closing the earlier filter-completeness gap."
+    ]
+  },
+  "evidence": {
+    "audit_tier": "B",
+    "python": {
+      "status": "PASS_INDEPENDENTLY_VERIFIED",
+      "node_tests": 3,
+      "full_suite_tests": 59,
+      "substantive_probe": "99 reachable recurrent states over (b,L)={(2,2),(2,3),(3,2),(4,1),(2,4),(3,3)}; 0 deviations for disjointness, multiset coverage, unborn-child exclusion, exact port set, port bornness, and inherited order",
+      "verification_origin": "user_local_full_suite_and_exhaustive_cross_layer_probe"
+    },
+    "lean": {
+      "status": "PASS_INDEPENDENTLY_VERIFIED",
+      "source_sha256": "1da607a4bb731d6bc4377b13ac5f9929f351f56fbc802748939419a3e472f515",
+      "toolchain": "Lean 4.31.0 (project pin)",
+      "policy_scan_matches": 0,
+      "exact_hash_built": true,
+      "verification_origin": "user_local_root_build_of_exact_hash_with_M001_imported_and_olean_observed",
+      "proof_audit": {
+        "status": "PASS",
+        "declarations_resolved": 28,
+        "axiom_profile": {
+          "{propext, Quot.sound}": 26,
+          "{propext}": 1,
+          "{}": 1,
+          "Classical.choice": 0,
+          "sorryAx": 0
+        },
+        "nontrivial_theorems": [
+          "CanonicalBirthLocalMeasurementCut.prefixChainAux_mem_prefix",
+          "CanonicalBirthLocalMeasurementCut.causalPredecessorPort_born",
+          "CanonicalBirthLocalMeasurementCut.olderSiblingPort_born",
+          "CanonicalBirthLocalMeasurementCut.birthLocalPort_born",
+          "CanonicalBirthLocalMeasurementCut.birthLocalPort_mem_boundary",
+          "CanonicalBirthLocalMeasurementCut.boundary_mem_iff_birthLocalPort",
+          "CanonicalBirthLocalMeasurementCut.unique",
+          "CanonicalBirthLocalMeasurementCut.boundary_interior_disjoint",
+          "CanonicalBirthLocalMeasurementCut.carrier_covered",
+          "CanonicalBirthLocalMeasurementCut.child_not_in_boundary",
+          "CanonicalBirthLocalMeasurementCut.child_not_in_interior"
+        ],
+        "verification_origin": "user_local_print_axioms_audit_over_all_28_declarations"
+      },
+      "build_coverage_verified": true,
+      "build_evidence": {
+        "root_build_jobs": 19,
+        "project_modules_on_disk": 16,
+        "project_modules_root_imported": 16,
+        "missing_root_imports": 0,
+        "stale_root_imports": 0,
+        "m001_olean_count": 1,
+        "source_sha256": "1da607a4bb731d6bc4377b13ac5f9929f351f56fbc802748939419a3e472f515"
+      }
+    }
+  },
+  "artifacts": {
+    "python_source": "5b840dcb3b47316e54241816804710479d193db236765717d10fb53a970b120a",
+    "python_test": "537c5f7f7d66d77c5c906f7dd59e05d640dbe7a7e0b84ee7ce141d08536766b7",
+    "lean_source": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+    "math_prose": "03d4dfc282028eee9a515e5e0b84297d8fbcbf51fe84af6a1f52db0b6d58c1b3",
+    "supplement_documentation": "587e065cfc7e33857da357e27439c756056ecc547a3eb3cbf6803fcdae828240"
+  },
+  "workflow": {
+    "node_semantics": "CLOSED_CANONICAL_BIRTH_LOCAL_MEASUREMENT_CUT",
+    "documentation": "COMPLETE",
+    "freeze_state": "FROZEN_VERIFIED",
+    "frozen_under_gate_version": "cnna-per-node-freeze-v6",
+    "documentation_v2": "COMPLETE_V2"
+  },
+  "node_number": "018",
+  "derivation_rank": 12,
+  "derivation_order": 18,
+  "section_hierarchy": {
+    "section_path": "1.3.4",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Canonical cut, complement elimination and birth steering",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/018_M001__canonical_birth_local_measurement_cut_c_s",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/018_M001__canonical_birth_local_measurement_cut_c_s",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/018_M001__canonical_birth_local_measurement_cut_c_s/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/018_M001__canonical_birth_local_measurement_cut_c_s/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C005, C004; registered hard handoff(s): supplies_existing_network_to_birth_cut, localizes_cut_by_provenance_slot."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D2",
+    "tier_name": "Load-bearing theorem, proof owner, obstruction, or quarantine gate",
+    "tier_assignment_rule": "PROOF_THEOREM_OWNER_OBSTRUCTION_OR_QUARANTINE_ROLE",
+    "main_paper_depth": "THEOREM_AND_PROOF_OVERVIEW",
+    "supplement_depth": "FULL_PROOF_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "formal_statement",
+      "hypotheses",
+      "introduction_reason",
+      "proof_strategy",
+      "lemma_chain",
+      "formal_realization",
+      "counterexamples_or_necessity_checks",
+      "axiom_profile",
+      "result",
+      "remaining_limits",
+      "downstream_handoff",
+      "code_line_register"
+    ],
+    "countercheck_requirement": "NEGATIVE_CONTROL_COUNTEREXAMPLE_OR_HYPOTHESIS_NECESSITY",
+    "countercheck_status": "PASS",
+    "v2_state": "COMPLETE_V2",
+    "python_anchor_status": "RESOLVED",
+    "lean_anchor_status": "RESOLVED",
+    "code_anchors": [
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s04_m001__canonical_birth_local_measurement_cut_cn_snplus1.py",
+        "symbol": "BirthLocalMeasurementCut",
+        "declaration_kind": "CLASS",
+        "start_line": 34,
+        "end_line": 53,
+        "source_sha256": "5b840dcb3b47316e54241816804710479d193db236765717d10fb53a970b120a",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s04_m001__canonical_birth_local_measurement_cut_cn_snplus1.py",
+        "symbol": "causal_predecessor_ports",
+        "declaration_kind": "FUNCTION",
+        "start_line": 56,
+        "end_line": 61,
+        "source_sha256": "5b840dcb3b47316e54241816804710479d193db236765717d10fb53a970b120a",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s04_m001__canonical_birth_local_measurement_cut_cn_snplus1.py",
+        "symbol": "older_sibling_ports",
+        "declaration_kind": "FUNCTION",
+        "start_line": 64,
+        "end_line": 68,
+        "source_sha256": "5b840dcb3b47316e54241816804710479d193db236765717d10fb53a970b120a",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s04_m001__canonical_birth_local_measurement_cut_cn_snplus1.py",
+        "symbol": "is_birth_local_port",
+        "declaration_kind": "FUNCTION",
+        "start_line": 71,
+        "end_line": 75,
+        "source_sha256": "5b840dcb3b47316e54241816804710479d193db236765717d10fb53a970b120a",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s04_m001__canonical_birth_local_measurement_cut_cn_snplus1.py",
+        "symbol": "is_canonical_birth_local_measurement_cut",
+        "declaration_kind": "FUNCTION",
+        "start_line": 78,
+        "end_line": 95,
+        "source_sha256": "5b840dcb3b47316e54241816804710479d193db236765717d10fb53a970b120a",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s04_m001__canonical_birth_local_measurement_cut_cn_snplus1.py",
+        "symbol": "canonical_birth_local_measurement_cut",
+        "declaration_kind": "FUNCTION",
+        "start_line": 98,
+        "end_line": 147,
+        "source_sha256": "5b840dcb3b47316e54241816804710479d193db236765717d10fb53a970b120a",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/test_s04_m001__canonical_birth_local_measurement_cut_cn_snplus1.py",
+        "symbol": "_state",
+        "declaration_kind": "FUNCTION",
+        "start_line": 23,
+        "end_line": 36,
+        "source_sha256": "537c5f7f7d66d77c5c906f7dd59e05d640dbe7a7e0b84ee7ce141d08536766b7",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/test_s04_m001__canonical_birth_local_measurement_cut_cn_snplus1.py",
+        "symbol": "TestCanonicalBirthLocalMeasurementCut",
+        "declaration_kind": "CLASS",
+        "start_line": 39,
+        "end_line": 96,
+        "source_sha256": "537c5f7f7d66d77c5c906f7dd59e05d640dbe7a7e0b84ee7ce141d08536766b7",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "canonicalCarrier",
+        "declaration_kind": "DEF",
+        "start_line": 40,
+        "end_line": 45,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "prefixChainAux",
+        "declaration_kind": "DEF",
+        "start_line": 46,
+        "end_line": 54,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "prefixChainAux_mem_prefix",
+        "declaration_kind": "THEOREM",
+        "start_line": 55,
+        "end_line": 80,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "causalPredecessorPorts",
+        "declaration_kind": "DEF",
+        "start_line": 81,
+        "end_line": 86,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "olderSiblingPorts",
+        "declaration_kind": "DEF",
+        "start_line": 87,
+        "end_line": 93,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "BirthLocalPort",
+        "declaration_kind": "DEF",
+        "start_line": 94,
+        "end_line": 100,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "causalPredecessorPort_born",
+        "declaration_kind": "THEOREM",
+        "start_line": 101,
+        "end_line": 141,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "olderSiblingPort_born",
+        "declaration_kind": "THEOREM",
+        "start_line": 142,
+        "end_line": 181,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "birthLocalPort_born",
+        "declaration_kind": "THEOREM",
+        "start_line": 182,
+        "end_line": 190,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "birthLocalPortDecidable",
+        "declaration_kind": "INSTANCE",
+        "start_line": 191,
+        "end_line": 197,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "portFlag",
+        "declaration_kind": "DEF",
+        "start_line": 198,
+        "end_line": 202,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "boundary",
+        "declaration_kind": "DEF",
+        "start_line": 203,
+        "end_line": 207,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "interior",
+        "declaration_kind": "DEF",
+        "start_line": 208,
+        "end_line": 212,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "BirthLocalMeasurementCut",
+        "declaration_kind": "STRUCTURE",
+        "start_line": 213,
+        "end_line": 217,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "canonicalCut",
+        "declaration_kind": "DEF",
+        "start_line": 218,
+        "end_line": 223,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "IsCanonicalCut",
+        "declaration_kind": "DEF",
+        "start_line": 224,
+        "end_line": 228,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "canonicalCut_isCanonical",
+        "declaration_kind": "THEOREM",
+        "start_line": 229,
+        "end_line": 233,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "unique",
+        "declaration_kind": "THEOREM",
+        "start_line": 234,
+        "end_line": 252,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "carrier_mem_implies_born",
+        "declaration_kind": "THEOREM",
+        "start_line": 253,
+        "end_line": 261,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "born_implies_carrier_mem",
+        "declaration_kind": "THEOREM",
+        "start_line": 262,
+        "end_line": 272,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "birthLocalPort_mem_boundary",
+        "declaration_kind": "THEOREM",
+        "start_line": 273,
+        "end_line": 285,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "boundary_mem_iff_birthLocalPort",
+        "declaration_kind": "THEOREM",
+        "start_line": 286,
+        "end_line": 299,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "boundary_node_born",
+        "declaration_kind": "THEOREM",
+        "start_line": 300,
+        "end_line": 306,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "interior_node_born",
+        "declaration_kind": "THEOREM",
+        "start_line": 307,
+        "end_line": 313,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "boundary_interior_disjoint",
+        "declaration_kind": "THEOREM",
+        "start_line": 314,
+        "end_line": 327,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "carrier_covered",
+        "declaration_kind": "THEOREM",
+        "start_line": 328,
+        "end_line": 349,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "child_not_in_carrier",
+        "declaration_kind": "THEOREM",
+        "start_line": 350,
+        "end_line": 363,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "child_not_in_boundary",
+        "declaration_kind": "THEOREM",
+        "start_line": 364,
+        "end_line": 369,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S04_M001_CanonicalBirthLocalMeasurementCutCnSnplus1.lean",
+        "symbol": "child_not_in_interior",
+        "declaration_kind": "THEOREM",
+        "start_line": 370,
+        "end_line": 378,
+        "source_sha256": "f8c7821fe45245ba62934d55daa5ab57323895df9ac11a55f14db3e491b5f3e4",
+        "resolution": "RESOLVED"
+      }
+    ],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false,
+    "completion_evidence": {
+      "main_artifact": "derivation/paper/main/sections/01_primitive_response_coupled_finite_provenance/03_recurrent_pre_birth_measurement_and_steering/018_M001__canonical_birth_local_measurement_cut_c_s/SECTION.tex",
+      "supplement_artifact": "derivation/supplement/sections/01_primitive_response_coupled_finite_provenance/03_recurrent_pre_birth_measurement_and_steering/018_M001__canonical_birth_local_measurement_cut_c_s/DOCUMENTATION.md",
+      "main_sha256": "03d4dfc282028eee9a515e5e0b84297d8fbcbf51fe84af6a1f52db0b6d58c1b3",
+      "supplement_sha256": "587e065cfc7e33857da357e27439c756056ecc547a3eb3cbf6803fcdae828240",
+      "code_anchor_count": 37,
+      "source_code_changed": false,
+      "documentation_complete": true,
+      "required_sections_present": true,
+      "countercheck_present": true,
+      "code_anchors_resolved": true,
+      "completed_on": "2026-08-04"
+    }
+  },
+  "canonical_identity": {
+    "node_number": "018",
+    "semantic_id": "M001",
+    "canonical_node_label": "018 · M001",
+    "stable_node_directory_name": "018_M001__canonical_birth_local_measurement_cut_c_s",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "open_provenance_context": {
+    "framework": "GENERALIZED_OPEN_PROVENANCE_SYSTEMS",
+    "concept_ids": [
+      "OPS-02"
+    ],
+    "roles": [
+      "Cut-relative complement"
+    ],
+    "integration_status": [
+      "NODEWISE_CURRENT_OR_PLANNED"
+    ],
+    "claim_guard": "Interpretive specialization map only. Mathematical force is exactly the node contract and its registered evidence; no universal open-system theorem is inferred."
+  },
+  "cnna_architecture_context": {
+    "concept_id": "CNNA-00",
+    "name": "ComplemeNt Net Architecture",
+    "role": "Explicit cut architecture: one net is partitioned into retained boundary roles and a complementary interior.",
+    "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+    "claim_guard": "Interpretive and organizational context only; mathematical force remains exactly the registered node contract and evidence status."
+  }
+}

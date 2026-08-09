@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "029",
+  "canonical_node_label": "029 \u00b7 C017",
+  "stable_node_directory_name": "029_C017__current_live_channel",
+  "id": "C017",
+  "section_path": "1.4.3",
+  "derivation_order": 29,
+  "main_documentation": "DOCUMENTED",
+  "supplement_documentation": "DOCUMENTED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

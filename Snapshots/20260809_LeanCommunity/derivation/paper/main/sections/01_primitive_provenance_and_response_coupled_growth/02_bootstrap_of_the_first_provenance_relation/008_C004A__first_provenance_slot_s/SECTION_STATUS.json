@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "008",
+  "canonical_node_label": "008 \u00b7 C004A",
+  "stable_node_directory_name": "008_C004A__first_provenance_slot_s",
+  "id": "C004A",
+  "section_path": "1.2.1",
+  "derivation_order": 8,
+  "main_documentation": "DOCUMENTED",
+  "supplement_documentation": "DOCUMENTED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

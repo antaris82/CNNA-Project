@@ -1,0 +1,39 @@
+% Canonical node 016 · C004; current section path 1.3.2.
+% Canonical owner: C004
+\cnnaNodeHeading{016}{C004}{Next open provenance slot $s_{n+1}$, $n\ge 1$}
+\cnnaNodePlacement{1.3.2}{D1}
+Let $X_n$ be a recurrent response-capable state from C005 and let
+$\mathcal S_{b,L}=(s_1,\ldots,s_N)$ denote the finite canonical provenance-slot
+order fixed by C018.  Since the born non-root carrier of $X_n$ is exactly
+the initial C018 prefix of length $n$, the next open provenance slot is, for
+$1\le n<N$,
+\[
+  s_{n+1}:=\mathcal S_{b,L}[n]
+\]
+with zero-based implementation indexing.  Equivalently, $s_{n+1}$ is the
+unique admissible open slot whose child has no admissible open C018 predecessor.
+Thus every admissible address strictly before its child is already born, while
+the child itself is not born.
+
+The child address determines its provenance parent and final sibling rank
+uniquely by the finite grammar of C003.  Hence the relational
+characterization by the least open child address and the explicit provenance
+slot $(\mathrm{parent},\mathrm{rank},\mathrm{child})$ identify the same
+mathematical object.
+
+If $n=N$, the finite approximant is saturated and no $s_{n+1}$ exists.  No
+sentinel, out-of-cutoff address, geometric birth location, event index, response
+quantity, conductance update, or birth law is introduced at this node.
+
+% CNNA-OPEN-PROVENANCE-BEGIN C004
+\begin{cnnaInfoBox}{Open-provenance role: Open slot as state-relative incompleteness}
+C004 makes openness relative to a current born prefix: the next slot is absent from the present state but admissible in the fixed provenance grammar.  This is the finite CNNA specialization of openness relative to an incomplete state description.
+\end{cnnaInfoBox}
+% CNNA-OPEN-PROVENANCE-END C004
+
+\paragraph*{Verified closure and limits.}
+Lean constructs the least open address by finite enumeration of the already
+fixed C003 carrier and proves existence under \emph{Unsaturated}, uniqueness,
+parent bornness, and nonexistence under \emph{Saturated}.  Python computes the
+same object by schedule indexing and checks it against an independent
+extensional least-open predicate.  No separate schedule is introduced.

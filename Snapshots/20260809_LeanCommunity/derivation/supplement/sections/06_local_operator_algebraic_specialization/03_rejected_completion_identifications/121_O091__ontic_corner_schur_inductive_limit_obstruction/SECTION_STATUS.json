@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "121",
+  "canonical_node_label": "121 \u00b7 O091",
+  "stable_node_directory_name": "121_O091__ontic_corner_schur_inductive_limit_obstruction",
+  "id": "O091",
+  "section_path": "6.3.2",
+  "derivation_order": 121,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

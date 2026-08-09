@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "067",
+  "canonical_node_label": "067 \u00b7 C040",
+  "stable_node_directory_name": "067_C040__inverse_depth_cauchy_hilbert_ancestor_carrier_h",
+  "id": "C040",
+  "section_path": "4.1.1",
+  "derivation_order": 67,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

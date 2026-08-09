@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "053",
+  "canonical_node_label": "053 \u00b7 C023",
+  "stable_node_directory_name": "053_C023__symmetric_skew_response_split_s_a",
+  "id": "C023",
+  "section_path": "2.2.1",
+  "derivation_order": 53,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

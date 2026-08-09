@@ -1,0 +1,62 @@
+{
+  "schema": "cnna.c009-kernel-build-evidence.v1",
+  "status": "PASS",
+  "date": "2026-08-08",
+  "origin": "USER_LOCAL_LEAN_BUILD",
+  "build_command": "./audit/run_package_boundary_audit.sh --build",
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "mathlib": "v4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "transcript": "derivation/code/lean/audit/evidence/USER_LOCAL_C009_FULL_BUILD_20260808.txt",
+  "transcript_sha256": "d5d4a0734f9c58d78d905e4ee0532e81ea3940015d77107b1301ca96240b3267",
+  "core_build_jobs": 30,
+  "default_proof_build_jobs": 8599,
+  "c009_module_build_jobs": 33,
+  "proof_modules": 23,
+  "c009_audited_declarations": 8,
+  "total_audited_declarations": 186,
+  "source_warnings": 0,
+  "c009_current_proof_axiom_audit": "PASS",
+  "full_package_boundary_audit": "PASS",
+  "c009_axiom_profile_counts": {
+    "choice_propext_quot": 2,
+    "propext_quot_only": 4,
+    "axiom_free": 2
+  },
+  "transitive_axioms_observed": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "direct_project_axioms": 0,
+  "sorry_count": 0,
+  "verified_source_sha256": {
+    "core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S04_C009_CodomainStateX.lean": "2685def84cf717e5b0bdc2928e5ad310d586a4970698f169314bda4050d434a5",
+    "proofs/src/CNNAProofs/C009.lean": "2ac0d2490e4baa414c2e2ec16242fbcf1ed39ec3975ee06b4748e427ddb8452f",
+    "proofs/src/CNNAProofs/C009/S01_CanonicalCodomainStateAssemblyClosure.lean": "1998f8212ee47fc783ac6ac2c1ba9264a50f88662299dba8a02f0eba835ba322",
+    "audit/C009_CurrentProofAxiomAudit.lean": "7847feb4f3f58bc50a8fbfab36479b8ec72d47bb193e4420a225a94a5317e779"
+  },
+  "verified_artifacts": {
+    "core_olean": true,
+    "proofs_olean": true,
+    "proof_manifest": true,
+    "c009_codomain_assembly_olean": true
+  },
+  "retained_verified_p001_source_hash_match": true,
+  "retained_verified_m003_m004_source_hash_match": true,
+  "retained_verified_p002_source_hash_match": true,
+  "retained_verified_c008_source_hash_match": true,
+  "retained_verified_c016_c017_source_hash_match": true,
+  "public_declarations": [
+    "CNNA.Derivation.S01_PrimitiveResponseCoupledFiniteProvenance.S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure.CodomainStateX.assemble_respects_sameValue",
+    "CNNA.Derivation.S01_PrimitiveResponseCoupledFiniteProvenance.S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure.CodomainStateX.codomainAssembly_existsUnique",
+    "CNNA.Derivation.S01_PrimitiveResponseCoupledFiniteProvenance.S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure.CodomainStateX.CodomainStateAssemblyContract",
+    "CNNA.Derivation.S01_PrimitiveResponseCoupledFiniteProvenance.S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure.CodomainStateX.codomainStateAssemblyContract",
+    "CNNAProofs.C009.CanonicalCodomainStateAssemblyClosure",
+    "CNNAProofs.C009.canonicalCodomainStateAssemblyClosure",
+    "CNNAProofs.C009.CanonicalCodomainStateAssemblyContract",
+    "CNNAProofs.C009.canonicalCodomainStateAssemblyContract"
+  ],
+  "proof_source": "proofs/src/CNNAProofs/C009/S01_CanonicalCodomainStateAssemblyClosure.lean",
+  "core_source": "core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S04_C009_CodomainStateX.lean"
+}

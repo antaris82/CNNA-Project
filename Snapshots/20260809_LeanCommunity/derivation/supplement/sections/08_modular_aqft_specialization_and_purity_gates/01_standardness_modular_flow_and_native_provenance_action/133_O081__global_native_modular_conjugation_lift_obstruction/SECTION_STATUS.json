@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "133",
+  "canonical_node_label": "133 \u00b7 O081",
+  "stable_node_directory_name": "133_O081__global_native_modular_conjugation_lift_obstruction",
+  "id": "O081",
+  "section_path": "8.1.3",
+  "derivation_order": 133,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

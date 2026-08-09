@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "071",
+  "canonical_node_label": "071 \u00b7 C042",
+  "stable_node_directory_name": "071_C042__canonical_schedule_ancestor_return_rank_closure",
+  "id": "C042",
+  "section_path": "4.2.1",
+  "derivation_order": 71,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

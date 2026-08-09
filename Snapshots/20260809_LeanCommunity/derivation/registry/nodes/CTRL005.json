@@ -1,0 +1,65 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "CTRL005",
+  "paper_section": "4.2.2",
+  "contract": {
+    "statement": "Run the same derived observables under layer_batch as a robustness control. It is not an active construction rule and not a free input."
+  },
+  "workflow": {
+    "node_semantics": "CONTROL_ONLY",
+    "documentation": "NOT_STARTED",
+    "freeze_state": "NOT_STARTED",
+    "frozen_under_gate_version": null,
+    "documentation_v2": "NOT_STARTED"
+  },
+  "dependencies": [
+    "C018",
+    "C042"
+  ],
+  "node_number": "072",
+  "derivation_rank": 47,
+  "derivation_order": 72,
+  "section_hierarchy": {
+    "section_path": "4.2.2",
+    "root_title": "Projective refinement and nested open channels",
+    "group_title": "Canonical-schedule rank closure",
+    "main_directory": "derivation/paper/main/sections/04_projective_refinement_and_nested_open_channels/02_canonical_schedule_rank_closure/072_CTRL005__layer_batch_schedule_robustness_control",
+    "supplement_directory": "derivation/supplement/sections/04_projective_refinement_and_nested_open_channels/02_canonical_schedule_rank_closure/072_CTRL005__layer_batch_schedule_robustness_control",
+    "main_artifact": "derivation/paper/main/sections/04_projective_refinement_and_nested_open_channels/02_canonical_schedule_rank_closure/072_CTRL005__layer_batch_schedule_robustness_control/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/04_projective_refinement_and_nested_open_channels/02_canonical_schedule_rank_closure/072_CTRL005__layer_batch_schedule_robustness_control/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C018, C042; registered hard handoff(s): defines_schedule_control_reference, supplies_canonical_schedule_reference_for_control."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D0",
+    "tier_name": "Atomic input or definitional node",
+    "tier_assignment_rule": "EXPLICIT_ATOMIC_OR_DEFINITIONAL_OVERRIDE",
+    "main_paper_depth": "COMPACT_DEFINITION",
+    "supplement_depth": "TRACEABLE_DEFINITION",
+    "required_sections": [
+      "position_in_derivation",
+      "definition_or_statement",
+      "introduction_reason",
+      "construction_or_encoding",
+      "boundary_case_or_countercheck",
+      "result",
+      "downstream_handoff",
+      "code_anchors"
+    ],
+    "countercheck_requirement": "ONE_DEFINITIONAL_BOUNDARY_OR_TYPE_REJECTION",
+    "countercheck_status": "NOT_STARTED",
+    "v2_state": "NOT_STARTED",
+    "python_anchor_status": "PLANNED",
+    "lean_anchor_status": "PLANNED",
+    "code_anchors": [],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false
+  },
+  "canonical_identity": {
+    "node_number": "072",
+    "semantic_id": "CTRL005",
+    "canonical_node_label": "072 · CTRL005",
+    "stable_node_directory_name": "072_CTRL005__layer_batch_schedule_robustness_control",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  }
+}

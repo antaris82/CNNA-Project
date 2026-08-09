@@ -1,0 +1,74 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "T003",
+  "paper_section": "1.4.6",
+  "contract": {
+    "statement": "At fixed transported event history, relabeling sibling slots gives an isomorphic result; numeric slot/rank labels inject no independent force or asymmetry. Sequential differences may arise only through the measured response history."
+  },
+  "workflow": {
+    "node_semantics": "CORE_REQUIRED_MISSING",
+    "documentation": "NOT_STARTED",
+    "freeze_state": "ACTIVE",
+    "frozen_under_gate_version": null,
+    "documentation_v2": "NOT_STARTED",
+    "active_since": "2026-08-09",
+    "activation_reason": "T002 recurrent state closure is kernel-verified; T003 is next in canonical derivation order and all four explicit predecessors C018, M003, M004, and C008 are verified."
+  },
+  "dependencies": [
+    "C018",
+    "M003",
+    "M004",
+    "C008"
+  ],
+  "node_number": "032",
+  "derivation_rank": 20,
+  "derivation_order": 32,
+  "section_hierarchy": {
+    "section_path": "1.4.6",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Record/live update, backreaction channels and finite closure",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/04_record_live_update_backreaction_channels_and_finite_closure/032_T003__provenance_label_equivariance_and_no_hard_coded_rank_bias_theorem",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/04_record_live_update_backreaction_channels_and_finite_closure/032_T003__provenance_label_equivariance_and_no_hard_coded_rank_bias_theorem",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/04_record_live_update_backreaction_channels_and_finite_closure/032_T003__provenance_label_equivariance_and_no_hard_coded_rank_bias_theorem/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/04_record_live_update_backreaction_channels_and_finite_closure/032_T003__provenance_label_equivariance_and_no_hard_coded_rank_bias_theorem/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C018, M003, M004, C008; registered hard handoff(s): supplies_label_order_contract, supplies_response_only_steering, supplies_no_hardcoded_rank_bias_birth_law, supplies_update_equivariance."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D2",
+    "tier_name": "Load-bearing theorem, proof owner, obstruction, or quarantine gate",
+    "tier_assignment_rule": "PROOF_THEOREM_OWNER_OBSTRUCTION_OR_QUARANTINE_ROLE",
+    "main_paper_depth": "THEOREM_AND_PROOF_OVERVIEW",
+    "supplement_depth": "FULL_PROOF_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "formal_statement",
+      "hypotheses",
+      "introduction_reason",
+      "proof_strategy",
+      "lemma_chain",
+      "formal_realization",
+      "counterexamples_or_necessity_checks",
+      "axiom_profile",
+      "result",
+      "remaining_limits",
+      "downstream_handoff",
+      "code_line_register"
+    ],
+    "countercheck_requirement": "NEGATIVE_CONTROL_COUNTEREXAMPLE_OR_HYPOTHESIS_NECESSITY",
+    "countercheck_status": "NOT_STARTED",
+    "v2_state": "NOT_STARTED",
+    "python_anchor_status": "NOT_REQUIRED_PROOF_NODE",
+    "lean_anchor_status": "PLANNED",
+    "code_anchors": [],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false
+  },
+  "canonical_identity": {
+    "node_number": "032",
+    "semantic_id": "T003",
+    "canonical_node_label": "032 · T003",
+    "stable_node_directory_name": "032_T003__provenance_label_equivariance_and_no_hard_coded_rank_bias_theorem",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  }
+}

@@ -1,0 +1,38 @@
+% Canonical node 029 · C017; current section path 1.4.3.
+\cnnaNodeHeading{029}{C017}{Current live channel}
+\cnnaNodePlacement{1.4.3}{D1}
+
+\paragraph*{Position and role.}
+C017 is the live projection of C008.  It exposes the relation channel that is
+current after the latest response-coupled birth, without yet interpreting that
+channel as a Schur/DtN response or as a live-minus-record current.
+
+\paragraph*{Current-live contract.}
+For an existing live channel $L$ and canonical M004 instruction $B$, C017 proves
+\[
+  L' = L\mathbin{\|}\bigl(P(B)\mathbin{\|}A(B)\mathbin{\|}S(B)\bigr),
+\]
+where $P$, $A$, and $S$ are respectively the direct birth, strict-ancestor, and
+earlier-sibling relation-update blocks already supplied by M004.  The old live
+channel is therefore a literal left prefix and the complete derived M004 delta
+is appended.  C017 also respects C006 exact-fraction \texttt{SameValue}.
+
+\begin{cnnaInfoBox}{Live channel is not yet backreaction current}
+C017 is one of the two primitive relation channels.  The later quantity
+$A_{\mathrm{live}}-A_{\mathrm{record}}$ requires a common effective-response
+representation and remains owned by C024.  Keeping this distinction prevents a
+later response observable from being smuggled into the primitive growth law.
+\end{cnnaInfoBox}
+
+\paragraph*{Kernel-verified result.}
+The shared 2026-08-08 Lean 4.31.0 C016/C017 audit covers twelve declarations:
+two representative-independence theorems have
+$[\texttt{propext},\texttt{Quot.sound}]$, while ten contract/facade declarations
+also inherit \texttt{Classical.choice}.  No project-local axiom or
+\texttt{sorryAx} occurs.  The C016/C017 axiom audit and the full package-boundary
+audit both pass.
+
+\paragraph*{Handoff.}
+With C016 and C017 closed, C009 can now assemble the record and live projections
+with the C005 response-capable state schema into the candidate successor
+$X_{n+1}$.  C017 itself does not perform that assembly.

@@ -1,0 +1,43 @@
+% Canonical node 009 · A001; current section path 1.2.2.
+% Canonical owner: A001
+\cnnaNodeHeading{009}{A001}{Genesis seed $\star$}
+\cnnaNodePlacement{1.2.2}{D0}
+
+\paragraph*{Position and role.}
+\texttt{A001} is an auxiliary root of the canonical DAG.  It is introduced at
+this point because the exceptional constructor \texttt{C013} is the first node
+that requires an explicit bootstrap argument.  A001 is not derived from
+\texttt{C004A}; the two objects meet only as independent inputs of C013.
+
+\paragraph*{Definition.}
+The genesis-seed carrier is the singleton
+\begin{equation}
+  \mathcal S_\star:=\{\star\}.
+  \label{eq:a001-singleton-seed}
+\end{equation}
+The token has no numerical, address, conductance, response, timing, geometric,
+or dynamical component.  It is therefore neither a third free model parameter
+nor an initial physical state.
+
+\paragraph*{Formal encoding and countercheck.}
+Python represents the carrier by an immutable zero-field dataclass.  Distinct
+runtime instances compare equal because they have the same empty payload.  Lean
+uses a one-constructor inductive type and proves
+\begin{equation}
+  \forall\eta:\mathcal S_\star,\qquad \eta=\star.
+\end{equation}
+The node-local test audits the empty field list and explicitly checks that the
+canonical token exposes none of the downstream result fields.  A payload-bearing
+seed would violate A001 even if it happened to be initialized with one value.
+
+\paragraph*{Result and handoff.}
+A001 closes only the existence of one explicit, information-free bootstrap
+token.  Verified edge \texttt{E006} hands that token to \texttt{C013}.  The
+claim that the first-birth result is independent of the supplied token belongs
+to \texttt{T001}, not to A001.
+
+\noindent\textbf{Primary code anchors.}
+Python source and test: class \texttt{GenesisSeed}, lines 14--15, and
+\texttt{TestGenesisSeed}, lines 13--24.  Lean: \texttt{GenesisSeed},
+\texttt{canonical}, and \texttt{eqCanonical}, lines 12--27.  The Supplement
+binds all five declaration-level anchors to their exact source hashes.

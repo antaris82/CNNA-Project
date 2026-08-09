@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "050",
+  "canonical_node_label": "050 \u00b7 P009",
+  "stable_node_directory_name": "050_P009__general_schur_dtn_response_well_definedness",
+  "id": "P009",
+  "section_path": "2.1.2.2",
+  "derivation_order": 50,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

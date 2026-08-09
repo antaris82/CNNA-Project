@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "041",
+  "canonical_node_label": "041 \u00b7 O002",
+  "stable_node_directory_name": "041_O002__ist_post_hoc_sym_control_obstruction",
+  "id": "O002",
+  "section_path": "1.6.1",
+  "derivation_order": 41,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

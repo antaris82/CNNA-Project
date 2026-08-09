@@ -1,0 +1,84 @@
+% Canonical node 027 · C008; current section path 1.4.1.
+% Canonical owner: C008
+\cnnaNodeHeading{027}{C008}{Record/live response-coupled update}
+\cnnaNodePlacement{1.4.1}{D1}
+
+\paragraph*{Position and scientific role.}
+C008 is the first state-transition boundary after the verified M003--M004
+response/birth chain.  It does not choose a new steering law.  Instead it
+applies the immutable M004 birth instruction to two already-existing relation
+channels: the historical \emph{record} channel and the current \emph{live}
+channel.  Both are derived state variables; neither is an additional input.
+
+\paragraph*{Mathematical contract.}
+Let $R_n$ and $L_n$ denote the current record and live lists, and let a canonical
+M004 instruction $B_n$ contain three relation-update blocks:
+\[
+\begin{aligned}
+  P(B_n) &:\ \text{parent/newborn birth pair},\\
+  A(B_n) &:\ \text{strict-ancestor backreaction},\\
+  S(B_n) &:\ \text{earlier-sibling backreaction}.
+\end{aligned}
+\]
+C008 defines the append-only update
+\[
+  \boxed{R_{n+1}=R_n\mathbin{\|}P(B_n)},
+  \qquad
+  \boxed{L_{n+1}=L_n\mathbin{\|}
+    \bigl(P(B_n)\mathbin{\|}A(B_n)\mathbin{\|}S(B_n)\bigr)}.
+\]
+Thus previously recorded birth data are never rewritten, while subsequent
+backreaction is represented only in the live channel.  At the exceptional
+bootstrap state $X_1$, both channels are initialized from the same already
+derived C014/C005 bidirected relation pair; this coincidence is not promoted to
+a later-time identity.
+
+\paragraph*{Representative-independent application.}
+M004 supplies a canonical instruction only modulo C006 exact-fraction value
+semantics.  Accordingly C008 does not demand literal equality of raw fraction
+representatives.  If two old channel pairs are equivalent entrywise and two
+M004 instructions are \texttt{BirthInstructionSameValue}, then the two C008
+outputs are again \texttt{RecordLiveChannelsSameValue}.  This is the exact
+abstraction boundary needed for the M004$\to$C008 handoff.
+
+\begin{cnnaInfoBox}{Record is not a snapshot of live}
+The record channel is an append-only provenance history.  A later live state may
+contain ancestor and sibling backreaction that was not present when an older
+relation was born.  Copying the current live network back into record would
+therefore erase the distinction C008 is designed to preserve.  In the formal
+update, ancestor and sibling lists do not occur in the record equation at all.
+\end{cnnaInfoBox}
+
+\paragraph*{Executable countercheck.}
+The Python implementation has exactly two update arguments---the existing
+channels and the M004 instruction---and contains no rank, rank-distance, depth,
+mode, attenuation, node-load, fitted coefficient, or independent bias input.
+The current regression suite reports 106 tests and 1086 subtests passing.  A
+99-case sweep over small $(b,L)$ fixtures checks that the record delta is exactly
+$P(B_n)$ and the live delta is exactly $P(B_n)\|A(B_n)\|S(B_n)$.  This is finite
+regression evidence only; universal closure is supplied by Lean.
+
+\paragraph*{Kernel-verified result.}
+The Lean Core remains mathlib-free.  The local C008 source uses no
+\texttt{sorry}, project-local \texttt{axiom}, \texttt{Classical},
+\texttt{native\_decide}, \texttt{simp}, or \texttt{simpa}.  The 2026-08-08
+Lean 4.31.0 run builds the 25-module Core in 27 jobs, builds the ordinary proof
+package in 8599 jobs, and explicitly builds \texttt{CNNAProofs.C008} in 8597
+jobs.  Seven C008 declarations are audited: three have the transitive profile
+$[\texttt{propext},\texttt{Quot.sound}]$ and four additionally inherit
+\texttt{Classical.choice}; no project-local axiom or \texttt{sorryAx} occurs.
+\texttt{C008\_CURRENT\_PROOF\_AXIOM\_AUDIT} and the full package-boundary audit
+both pass.
+
+\paragraph*{Result and handoff.}
+C008 closes the local record/live application boundary and the canonical
+M004$\to$C008 handoff.  It deliberately does not yet construct the full
+C005-shaped successor $X_{n+1}$, assign the response-derived birth lapse, or
+prove recurrent iteration.  The next explicit DAG constructions are C016
+(immutable record channel) and C017 (current live channel); C009 may only consume
+them after both have been closed.
+
+\paragraph*{Primary code anchors.}
+Python: \path{derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s04_record_live_update_backreaction_channels_and_finite_closure/s01_c008__record_live_response_coupled_update.py}, lines 29--100.  Lean Core:
+\path{derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S01_C008_RecordLiveResponseCoupledUpdate.lean}, lines 39--238.  Canonical proof facade:
+\path{derivation/code/lean/proofs/src/CNNAProofs/C008/S01_CanonicalRecordLiveUpdateClosure.lean}, lines 25--78.

@@ -1,0 +1,373 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "M002",
+  "paper_section": "1.3.5",
+  "contract": {
+    "statement": "For the canonical M001 cut of recurrent state X_n and next slot s_{n+1}, M002 fixes the exact C006 domain: supplied blocks have the M001 boundary/interior dimensions and their encoded interior system has a unique solve under the C006 fraction-value equation. M001 alone does not determine numerical entries, so no stronger nonempty-interior invertibility claim is made before C007.",
+    "ownership_boundary": [
+      "consumes the canonical M001 ordered cut and the already-defined C006 admissibility predicate",
+      "derives that the M001 boundary is nonempty because the provenance root is a birth-local port",
+      "states exact domain membership as C006 unique solvability at the M001 dimensions",
+      "records empty interior as unconditionally admissible through the C006 zero-interior theorem",
+      "does not construct K from C005 conductances, choose out-degree/in-degree convention, compute a response, regularize a singular block, or add a numerical threshold",
+      "does not claim universal nonzero-interior invertibility from M001 alone; C007 must supply actual matrix entries"
+    ]
+  },
+  "cross_layer": {
+    "equivalence": "Python and Lean identify the same M001-dimension-locked C006 domain. Python checks the canonical M001 boundary/interior sizes and accepts exactly the unique exact solve domain; Lean fixes the same sizes in BirthCutBlocks and defines InExactDomain exactly as C006 IsInteriorAdmissible. Both share the unconditional empty-interior case and value-level response uniqueness modulo MatrixSameValue.",
+    "semantic_mismatch_known": false,
+    "semantic_identity_verified": true,
+    "identity_kind": "PATH_B_EXACT_M001_DIMENSION_LOCKED_C006_DOMAIN_IDENTITY",
+    "identity_evidence": [
+      "Exact canonical M002 Lean source SHA-256 95d5ad0c3874f95d1a95bcd0282780edd6541827e24cdda583d1423648369c7e rebuilt successfully in the user local 22-job root build against C006 538a1a5e…4548f.",
+      "validate_lean_build_coverage.py --node M002 passed for the exact hash and current upstream C006, including the named Tier-B declarations and forbidden-axiom gate.",
+      "Python 77/77 passes the exact M001 dimension lock, zero-interior acceptance, dimension mismatch rejection, and same-cut admissible/singular contrast.",
+      "The theorem deliberately proves the exact partial domain rather than importing a non-derived universal interior invertibility assertion."
+    ]
+  },
+  "evidence": {
+    "audit_tier": "B",
+    "python": {
+      "status": "PASS_INDEPENDENTLY_VERIFIED",
+      "node_tests": 4,
+      "full_suite_tests": 77,
+      "substantive_probe": "Same canonical nonempty M001 cuts admit both identity-K_II admissible and zero-K_II singular assignments at identical dimensions; zero interior is unconditionally accepted; dimension mismatch is rejected before C006 domain evaluation.",
+      "verification_origin": "assistant_full_suite_plus_independent_semantic_review"
+    },
+    "lean": {
+      "status": "PASS_INDEPENDENTLY_VERIFIED",
+      "source_sha256": "95d5ad0c3874f95d1a95bcd0282780edd6541827e24cdda583d1423648369c7e",
+      "toolchain": "Lean 4.31.0 (project pin)",
+      "policy_scan_matches": 0,
+      "exact_hash_built": true,
+      "verification_origin": "user_local_root_build_plus_active_v6_exact_module_gate_against_current_path_b_c006",
+      "proof_audit": {
+        "status": "PASS",
+        "nontrivial_theorems": [
+          "BirthCutInteriorDomainTheorem.root_is_birthLocalPort",
+          "BirthCutInteriorDomainTheorem.canonicalBoundary_nonempty",
+          "BirthCutInteriorDomainTheorem.inExactDomain_iff_c006_admissible",
+          "BirthCutInteriorDomainTheorem.exactDomain_response_exists",
+          "BirthCutInteriorDomainTheorem.exactDomain_response_unique",
+          "BirthCutInteriorDomainTheorem.zeroInterior_inExactDomain"
+        ],
+        "verification_origin": "user_local_v6_exact_module_axiom_gate",
+        "forbidden_axioms": {
+          "Classical.choice": 0,
+          "sorryAx": 0
+        }
+      },
+      "build_coverage_verified": true,
+      "build_evidence": {
+        "source_sha256": "95d5ad0c3874f95d1a95bcd0282780edd6541827e24cdda583d1423648369c7e",
+        "root_build_reported_green": true,
+        "root_build_jobs": 22,
+        "project_modules_root_imported": 19,
+        "project_olean_count_reported": 20,
+        "active_exact_module_build_gate": "PASS",
+        "source_hash_stable_across_active_build": true,
+        "canonical_olean_required_and_observed_by_gate": true,
+        "root_import_coverage_required_by_gate": true
+      },
+      "negative_history": [
+        {
+          "source_sha256": "f448ca8e4a71a23d1f4e8602f977f97f03fa51f2d1aed1967b31299087683279",
+          "finding": "built and gate-clean for the previous structural-response API; reopened because upstream C006 value semantics changed"
+        }
+      ],
+      "current_dependency_revalidation": {
+        "upstream_node": "C006",
+        "upstream_source_sha256": "538a1a5e927abe54bf8802cd643c73638c2cf129405f21857b6d4ed66ee4548f",
+        "status": "PASS"
+      }
+    }
+  },
+  "artifacts": {
+    "python_source": "bf0b213349892ba660a958398cf6d808dca41f1f05bf0c7ac7a832c31bec041d",
+    "python_test": "5c58c474588d868b35de0066273e40d0edf26c7aa3fdfdb5f5a0ecfddbaedc26",
+    "lean_source": "171d52d05001dcffc60fd1a325e1b5ce4c0025bbce75a57cc172e10efdbae669",
+    "math_prose": "d8087cc261e820035a02de8d9aa435a36e9fe0ec7412e01f099ca0da55a67688",
+    "supplement_documentation": "44b1d4249ef14eebaf1f43cf661955333d65e64040e78b5461fd9c9a92fbe468"
+  },
+  "workflow": {
+    "node_semantics": "CLOSED_PATH_B_EXACT_BIRTH_CUT_INTERIOR_DOMAIN",
+    "documentation": "COMPLETE",
+    "freeze_state": "FROZEN_VERIFIED",
+    "frozen_under_gate_version": "cnna-per-node-freeze-v6",
+    "documentation_v2": "COMPLETE_V2"
+  },
+  "node_number": "020",
+  "derivation_rank": 13,
+  "derivation_order": 20,
+  "section_hierarchy": {
+    "section_path": "1.3.5",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Canonical cut, complement elimination and birth steering",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/020_M002__birth_cut_interior_domain_theorem",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/020_M002__birth_cut_interior_domain_theorem",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/020_M002__birth_cut_interior_domain_theorem/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/020_M002__birth_cut_interior_domain_theorem/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after M001; registered hard handoff(s): requires_birth_cut_domain."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D2",
+    "tier_name": "Load-bearing theorem, proof owner, obstruction, or quarantine gate",
+    "tier_assignment_rule": "PROOF_THEOREM_OWNER_OBSTRUCTION_OR_QUARANTINE_ROLE",
+    "main_paper_depth": "THEOREM_AND_PROOF_OVERVIEW",
+    "supplement_depth": "FULL_PROOF_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "formal_statement",
+      "hypotheses",
+      "introduction_reason",
+      "proof_strategy",
+      "lemma_chain",
+      "formal_realization",
+      "counterexamples_or_necessity_checks",
+      "axiom_profile",
+      "result",
+      "remaining_limits",
+      "downstream_handoff",
+      "code_line_register"
+    ],
+    "countercheck_requirement": "NEGATIVE_CONTROL_COUNTEREXAMPLE_OR_HYPOTHESIS_NECESSITY",
+    "countercheck_status": "PASS",
+    "v2_state": "COMPLETE_V2",
+    "python_anchor_status": "RESOLVED",
+    "lean_anchor_status": "RESOLVED",
+    "code_anchors": [
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s05_m002__birth_cut_interior_domain_theorem.py",
+        "symbol": "_zero_matrix",
+        "declaration_kind": "FUNCTION",
+        "start_line": 37,
+        "end_line": 38,
+        "source_sha256": "bf0b213349892ba660a958398cf6d808dca41f1f05bf0c7ac7a832c31bec041d",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s05_m002__birth_cut_interior_domain_theorem.py",
+        "symbol": "_identity_matrix",
+        "declaration_kind": "FUNCTION",
+        "start_line": 41,
+        "end_line": 45,
+        "source_sha256": "bf0b213349892ba660a958398cf6d808dca41f1f05bf0c7ac7a832c31bec041d",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s05_m002__birth_cut_interior_domain_theorem.py",
+        "symbol": "validate_birth_cut_block_dimensions",
+        "declaration_kind": "FUNCTION",
+        "start_line": 48,
+        "end_line": 60,
+        "source_sha256": "bf0b213349892ba660a958398cf6d808dca41f1f05bf0c7ac7a832c31bec041d",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s05_m002__birth_cut_interior_domain_theorem.py",
+        "symbol": "birth_cut_interior_is_admissible",
+        "declaration_kind": "FUNCTION",
+        "start_line": 63,
+        "end_line": 77,
+        "source_sha256": "bf0b213349892ba660a958398cf6d808dca41f1f05bf0c7ac7a832c31bec041d",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s05_m002__birth_cut_interior_domain_theorem.py",
+        "symbol": "DomainContrastWitness",
+        "declaration_kind": "CLASS",
+        "start_line": 81,
+        "end_line": 94,
+        "source_sha256": "bf0b213349892ba660a958398cf6d808dca41f1f05bf0c7ac7a832c31bec041d",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s05_m002__birth_cut_interior_domain_theorem.py",
+        "symbol": "domain_contrast_witness",
+        "declaration_kind": "FUNCTION",
+        "start_line": 97,
+        "end_line": 131,
+        "source_sha256": "bf0b213349892ba660a958398cf6d808dca41f1f05bf0c7ac7a832c31bec041d",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/test_s05_m002__birth_cut_interior_domain_theorem.py",
+        "symbol": "_state",
+        "declaration_kind": "FUNCTION",
+        "start_line": 22,
+        "end_line": 33,
+        "source_sha256": "5c58c474588d868b35de0066273e40d0edf26c7aa3fdfdb5f5a0ecfddbaedc26",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/test_s05_m002__birth_cut_interior_domain_theorem.py",
+        "symbol": "_zero",
+        "declaration_kind": "FUNCTION",
+        "start_line": 36,
+        "end_line": 37,
+        "source_sha256": "5c58c474588d868b35de0066273e40d0edf26c7aa3fdfdb5f5a0ecfddbaedc26",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/test_s05_m002__birth_cut_interior_domain_theorem.py",
+        "symbol": "TestBirthCutInteriorDomainTheorem",
+        "declaration_kind": "CLASS",
+        "start_line": 40,
+        "end_line": 91,
+        "source_sha256": "5c58c474588d868b35de0066273e40d0edf26c7aa3fdfdb5f5a0ecfddbaedc26",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S05_M002_BirthCutInteriorDomainTheorem.lean",
+        "symbol": "root_is_birthLocalPort",
+        "declaration_kind": "THEOREM",
+        "start_line": 36,
+        "end_line": 46,
+        "source_sha256": "171d52d05001dcffc60fd1a325e1b5ce4c0025bbce75a57cc172e10efdbae669",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S05_M002_BirthCutInteriorDomainTheorem.lean",
+        "symbol": "canonicalBoundary_nonempty",
+        "declaration_kind": "THEOREM",
+        "start_line": 47,
+        "end_line": 54,
+        "source_sha256": "171d52d05001dcffc60fd1a325e1b5ce4c0025bbce75a57cc172e10efdbae669",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S05_M002_BirthCutInteriorDomainTheorem.lean",
+        "symbol": "BirthCutBlocks",
+        "declaration_kind": "ABBREV",
+        "start_line": 55,
+        "end_line": 60,
+        "source_sha256": "171d52d05001dcffc60fd1a325e1b5ce4c0025bbce75a57cc172e10efdbae669",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S05_M002_BirthCutInteriorDomainTheorem.lean",
+        "symbol": "mkBirthCutBlocks",
+        "declaration_kind": "DEF",
+        "start_line": 61,
+        "end_line": 74,
+        "source_sha256": "171d52d05001dcffc60fd1a325e1b5ce4c0025bbce75a57cc172e10efdbae669",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S05_M002_BirthCutInteriorDomainTheorem.lean",
+        "symbol": "InExactDomain",
+        "declaration_kind": "DEF",
+        "start_line": 75,
+        "end_line": 80,
+        "source_sha256": "171d52d05001dcffc60fd1a325e1b5ce4c0025bbce75a57cc172e10efdbae669",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S05_M002_BirthCutInteriorDomainTheorem.lean",
+        "symbol": "inExactDomain_iff_c006_admissible",
+        "declaration_kind": "THEOREM",
+        "start_line": 81,
+        "end_line": 86,
+        "source_sha256": "171d52d05001dcffc60fd1a325e1b5ce4c0025bbce75a57cc172e10efdbae669",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S05_M002_BirthCutInteriorDomainTheorem.lean",
+        "symbol": "exactDomain_response_exists",
+        "declaration_kind": "THEOREM",
+        "start_line": 87,
+        "end_line": 95,
+        "source_sha256": "171d52d05001dcffc60fd1a325e1b5ce4c0025bbce75a57cc172e10efdbae669",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S05_M002_BirthCutInteriorDomainTheorem.lean",
+        "symbol": "exactDomain_response_unique",
+        "declaration_kind": "THEOREM",
+        "start_line": 96,
+        "end_line": 106,
+        "source_sha256": "171d52d05001dcffc60fd1a325e1b5ce4c0025bbce75a57cc172e10efdbae669",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S05_M002_BirthCutInteriorDomainTheorem.lean",
+        "symbol": "admissible_of_interiorSize_eq_zero",
+        "declaration_kind": "THEOREM",
+        "start_line": 107,
+        "end_line": 117,
+        "source_sha256": "171d52d05001dcffc60fd1a325e1b5ce4c0025bbce75a57cc172e10efdbae669",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S05_M002_BirthCutInteriorDomainTheorem.lean",
+        "symbol": "zeroInterior_inExactDomain",
+        "declaration_kind": "THEOREM",
+        "start_line": 118,
+        "end_line": 128,
+        "source_sha256": "171d52d05001dcffc60fd1a325e1b5ce4c0025bbce75a57cc172e10efdbae669",
+        "resolution": "RESOLVED"
+      }
+    ],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false,
+    "completion_evidence": {
+      "main_artifact": "derivation/paper/main/sections/01_primitive_response_coupled_finite_provenance/03_recurrent_pre_birth_measurement_and_steering/020_M002__birth_cut_interior_domain_theorem/SECTION.tex",
+      "supplement_artifact": "derivation/supplement/sections/01_primitive_response_coupled_finite_provenance/03_recurrent_pre_birth_measurement_and_steering/020_M002__birth_cut_interior_domain_theorem/DOCUMENTATION.md",
+      "main_sha256": "d8087cc261e820035a02de8d9aa435a36e9fe0ec7412e01f099ca0da55a67688",
+      "supplement_sha256": "44b1d4249ef14eebaf1f43cf661955333d65e64040e78b5461fd9c9a92fbe468",
+      "code_anchor_count": 19,
+      "source_code_changed": false,
+      "documentation_complete": true,
+      "required_sections_present": true,
+      "countercheck_present": true,
+      "code_anchors_resolved": true,
+      "completed_on": "2026-08-04"
+    }
+  },
+  "canonical_identity": {
+    "node_number": "020",
+    "semantic_id": "M002",
+    "canonical_node_label": "020 · M002",
+    "stable_node_directory_name": "020_M002__birth_cut_interior_domain_theorem",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  }
+}

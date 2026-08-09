@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "046",
+  "canonical_node_label": "046 \u00b7 C020",
+  "stable_node_directory_name": "046_C020__general_admissible_boundary_interior_cut_family",
+  "id": "C020",
+  "section_path": "2.1.1",
+  "derivation_order": 46,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

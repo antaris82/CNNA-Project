@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "012",
+  "canonical_node_label": "012 \u00b7 T001",
+  "stable_node_directory_name": "012_T001__seed_neutrality_theorem_for_first_birth",
+  "id": "T001",
+  "section_path": "1.2.5",
+  "derivation_order": 12,
+  "main_documentation": "DOCUMENTED",
+  "supplement_documentation": "DOCUMENTED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

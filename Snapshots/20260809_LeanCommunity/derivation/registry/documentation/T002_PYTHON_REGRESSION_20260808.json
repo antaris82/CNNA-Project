@@ -1,0 +1,15 @@
+{
+  "schema": "cnna.t002-python-regression.v1",
+  "status": "PASS",
+  "date": "2026-08-08",
+  "command": "PYTHONDONTWRITEBYTECODE=1 pytest -q -p no:cacheprovider",
+  "tests_passed": 120,
+  "subtests_passed": 1086,
+  "elapsed_seconds": 8.21,
+  "scope": "T002 recurrent C005 re-entry, post-step C005↔C017 coherence, and finite full-iteration countercheck",
+  "guard": "FINITE_REGRESSION_EVIDENCE_ONLY",
+  "origin_closure_policy": "MISSING_CLOSURES_ARE_PROVED_AT_THEIR_SEMANTIC_ORIGIN",
+  "kernel_status": "SOURCE_BUILD_REQUIRED",
+  "evidence_class": "FINITE_REGRESSION_EVIDENCE_ONLY",
+  "universal_proof_status": "KERNEL_VERIFIED_SEPARATELY_IN_T002_LEAN"
+}

@@ -1,0 +1,234 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "P002",
+  "paper_section": "1.1.6.1",
+  "proof_owner": "C018",
+  "contract": {
+    "statement": "Prove that the C018 breadth-first/lexicographic relation is a strict total order on provenance addresses and induces a strict total order on open-slot selected children modulo extensional equality of the selected child address.",
+    "reuse_scope": "Reusable static event-order contract for C018 descendants, especially finite schedule exhaustivity in P004.",
+    "granularity_rule": "One separately falsifiable static order gate; born-state, unsaturation, and least-open selection remain in C004.",
+    "excluded_dynamic_scope": {
+      "owner": "C004",
+      "statements": [
+        "least-open existence for unsaturated states",
+        "least-open uniqueness in a C005 born prefix",
+        "agreement with the executable positional selector",
+        "absence of a successor at saturation"
+      ]
+    }
+  },
+  "cross_layer": {
+    "semantic_identity_required": true,
+    "python_status": "NOT_REQUIRED_STATIC_PROOF",
+    "python_reason": "P002 packages a static theorem over the C018 Lean order and introduces no executable algorithm.",
+    "lean_path": "derivation/code/lean/proofs/src/CNNAProofs/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S06_C018_CanonicalBfsLexicographicProvenanceBirthSchedule/Proofs/S01_P002_CanonicalScheduleStrictTotalOrderClosure.lean",
+    "lean_module": "CNNAProofs.Derivation.S01_PrimitiveResponseCoupledFiniteProvenance.S01_PrimitiveInputsGrammarAndEventOrder.S06_C018_CanonicalBfsLexicographicProvenanceBirthSchedule.Proofs.S01_P002_CanonicalScheduleStrictTotalOrderClosure",
+    "library_target": "CNNAProofsP002"
+  },
+  "evidence": {
+    "audit_tier": "B",
+    "status": "KERNEL_VERIFIED_EXACT_SOURCE_EVIDENCE",
+    "owner_theorem_chain": [
+      "birthBefore_irrefl",
+      "birthBefore_trans",
+      "birthBefore_asymm",
+      "birthBefore_trichotomy",
+      "birthBefore_total_of_ne",
+      "openSlotBefore_irrefl",
+      "openSlotBefore_trans",
+      "openSlotBefore_asymm",
+      "openSlotBefore_total_of_distinct_children"
+    ],
+    "dedicated_p002_module": {
+      "lean": true,
+      "python": "NOT_REQUIRED"
+    },
+    "public_declarations": 6,
+    "kernel_verified_declarations": 6,
+    "axiom_audit": "PASS_AXIOM_FREE_6_OF_6",
+    "proof_gate_closed": true,
+    "lean": {
+      "status": "KERNEL_VERIFIED_EXACT_SOURCE_EVIDENCE",
+      "toolchain": "leanprover/lean4:v4.31.0",
+      "mathlib": "v4.31.0",
+      "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+      "proof_modules": 17,
+      "proof_declarations": 6,
+      "kernel_verified_declarations": 6,
+      "source_warnings": 0,
+      "axiom_profile_counts": {
+        "choice_propext_quot": 0,
+        "propext_quot_only": 0,
+        "axiom_free": 6
+      },
+      "transitive_axioms_observed": [],
+      "package_boundary_audit": "PASS",
+      "verified_source_sha256": {
+        "proofs/lakefile.toml": "1d3b9fc1fedd5ae5df817c16ca70121d46de9004bbbe186d9fabdc37fb977a7f",
+        "proofs/src/CNNAProofsP002.lean": "fbc849a85da17d59d4b757437f75ce553723eabbf55e2df95bea56c490592140",
+        "proofs/src/CNNAProofs/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S06_C018_CanonicalBfsLexicographicProvenanceBirthSchedule/Proofs/S01_P002_CanonicalScheduleStrictTotalOrderClosure.lean": "3775ef08dceb432273a7e72f5839990e0ac40909ab68a42b8ed4d4c7bbaefef7",
+        "audit/P002_CurrentProofAxiomAudit.lean": "1fed639841e4675ed274be7a2ef191b21a946eb7cd578619b9a9e2b15d59a782"
+      },
+      "build_evidence": "derivation/code/lean/audit/evidence/USER_LOCAL_P002_FULL_BUILD_20260808.json",
+      "build_evidence_sha256": "c0e659fb610fb8d020ac5382e2ebdf290400eb788843b8ce9243ad4e1145dc93",
+      "build_transcript": "derivation/code/lean/audit/evidence/USER_LOCAL_P002_FULL_BUILD_20260808.txt",
+      "build_transcript_sha256": "f4e55408d79041f2068fded77ca791196828e478b6a12b4f13decec2729131b1"
+    }
+  },
+  "workflow": {
+    "node_semantics": "CLOSED_STATIC_SCHEDULE_STRICT_TOTAL_ORDER",
+    "documentation": "COMPLETE_V2",
+    "freeze_state": "FROZEN_VERIFIED",
+    "frozen_under_gate_version": "P002_KERNEL_VERIFIED_CURRENT_STATE",
+    "documentation_v2": "COMPLETE_V2"
+  },
+  "dependencies": [
+    "C003"
+  ],
+  "owner_import_direction": "Lean proof import: CNNAProofsP002 -> CNNA.C018; DAG certification edge: P002 -> C018.",
+  "implementation_status": {
+    "status": "KERNEL_VERIFIED",
+    "source": "S01_P002_CanonicalScheduleStrictTotalOrderClosure",
+    "node_semantics": "6_DECLARATIONS_KERNEL_COMPILED_AXIOM_FREE_FULL_BOUNDARY_PASS"
+  },
+  "node_number": "007",
+  "derivation_rank": 3,
+  "derivation_order": 7,
+  "section_hierarchy": {
+    "section_path": "1.1.6.1",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Primitive inputs, provenance grammar and event order",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/01_primitive_inputs_provenance_grammar_and_event_order/006_C018__canonical_bfs_lexicographic_provenance_birth_schedule/007_P002__canonical_schedule_strict_total_order_closure",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/01_primitive_inputs_provenance_grammar_and_event_order/006_C018__canonical_bfs_lexicographic_provenance_birth_schedule/007_P002__canonical_schedule_strict_total_order_closure",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/01_primitive_inputs_provenance_grammar_and_event_order/006_C018__canonical_bfs_lexicographic_provenance_birth_schedule/007_P002__canonical_schedule_strict_total_order_closure/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/01_primitive_inputs_provenance_grammar_and_event_order/006_C018__canonical_bfs_lexicographic_provenance_birth_schedule/007_P002__canonical_schedule_strict_total_order_closure/DOCUMENTATION.md",
+    "introduction_reason": "Introduced as the static proof-certification closure owned by C018; state-dependent least-open selection remains owned by C004."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D2",
+    "tier_name": "Load-bearing theorem, proof owner, obstruction, or quarantine gate",
+    "tier_assignment_rule": "PROOF_THEOREM_OWNER_OBSTRUCTION_OR_QUARANTINE_ROLE",
+    "main_paper_depth": "THEOREM_AND_PROOF_OVERVIEW",
+    "supplement_depth": "FULL_PROOF_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "formal_statement",
+      "hypotheses",
+      "introduction_reason",
+      "proof_strategy",
+      "lemma_chain",
+      "formal_realization",
+      "counterexamples_or_necessity_checks",
+      "axiom_profile",
+      "result",
+      "remaining_limits",
+      "downstream_handoff",
+      "code_line_register"
+    ],
+    "countercheck_requirement": "NEGATIVE_CONTROL_COUNTEREXAMPLE_OR_HYPOTHESIS_NECESSITY",
+    "countercheck_status": "PASS",
+    "v2_state": "COMPLETE_V2",
+    "python_anchor_status": "NOT_APPLICABLE_STATIC_PROOF",
+    "lean_anchor_status": "RESOLVED_6_KERNEL_AXIOM_FREE_VERIFIED",
+    "code_anchors": [
+      {
+        "layer": "lean_proof",
+        "role": "OWNED_PROOF_SOURCE",
+        "path": "derivation/code/lean/proofs/src/CNNAProofs/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S06_C018_CanonicalBfsLexicographicProvenanceBirthSchedule/Proofs/S01_P002_CanonicalScheduleStrictTotalOrderClosure.lean",
+        "symbol": "CanonicalScheduleStrictTotalOrderClosure",
+        "declaration_kind": "STRUCTURE",
+        "start_line": "19",
+        "end_line": "65",
+        "source_sha256": "3775ef08dceb432273a7e72f5839990e0ac40909ab68a42b8ed4d4c7bbaefef7",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_proof",
+        "role": "OWNED_PROOF_SOURCE",
+        "path": "derivation/code/lean/proofs/src/CNNAProofs/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S06_C018_CanonicalBfsLexicographicProvenanceBirthSchedule/Proofs/S01_P002_CanonicalScheduleStrictTotalOrderClosure.lean",
+        "symbol": "canonicalScheduleStrictTotalOrderClosure",
+        "declaration_kind": "THEOREM",
+        "start_line": "69",
+        "end_line": "99",
+        "source_sha256": "3775ef08dceb432273a7e72f5839990e0ac40909ab68a42b8ed4d4c7bbaefef7",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_proof",
+        "role": "OWNED_PROOF_SOURCE",
+        "path": "derivation/code/lean/proofs/src/CNNAProofs/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S06_C018_CanonicalBfsLexicographicProvenanceBirthSchedule/Proofs/S01_P002_CanonicalScheduleStrictTotalOrderClosure.lean",
+        "symbol": "IsMinimalSelectedChild",
+        "declaration_kind": "DEF",
+        "start_line": "104",
+        "end_line": "109",
+        "source_sha256": "3775ef08dceb432273a7e72f5839990e0ac40909ab68a42b8ed4d4c7bbaefef7",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_proof",
+        "role": "OWNED_PROOF_SOURCE",
+        "path": "derivation/code/lean/proofs/src/CNNAProofs/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S06_C018_CanonicalBfsLexicographicProvenanceBirthSchedule/Proofs/S01_P002_CanonicalScheduleStrictTotalOrderClosure.lean",
+        "symbol": "minimalSelectedChild_unique",
+        "declaration_kind": "THEOREM",
+        "start_line": "115",
+        "end_line": "131",
+        "source_sha256": "3775ef08dceb432273a7e72f5839990e0ac40909ab68a42b8ed4d4c7bbaefef7",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_proof",
+        "role": "OWNED_PROOF_SOURCE",
+        "path": "derivation/code/lean/proofs/src/CNNAProofs/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S06_C018_CanonicalBfsLexicographicProvenanceBirthSchedule/Proofs/S01_P002_CanonicalScheduleStrictTotalOrderClosure.lean",
+        "symbol": "CanonicalScheduleStrictTotalOrderContract",
+        "declaration_kind": "DEF",
+        "start_line": "134",
+        "end_line": "135",
+        "source_sha256": "3775ef08dceb432273a7e72f5839990e0ac40909ab68a42b8ed4d4c7bbaefef7",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      },
+      {
+        "layer": "lean_proof",
+        "role": "OWNED_PROOF_SOURCE",
+        "path": "derivation/code/lean/proofs/src/CNNAProofs/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S06_C018_CanonicalBfsLexicographicProvenanceBirthSchedule/Proofs/S01_P002_CanonicalScheduleStrictTotalOrderClosure.lean",
+        "symbol": "canonicalScheduleStrictTotalOrderContract",
+        "declaration_kind": "THEOREM",
+        "start_line": "138",
+        "end_line": "140",
+        "source_sha256": "3775ef08dceb432273a7e72f5839990e0ac40909ab68a42b8ed4d4c7bbaefef7",
+        "resolution": "RESOLVED_KERNEL_VERIFIED"
+      }
+    ],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false,
+    "completion_evidence": {
+      "required_sections_present": true,
+      "code_anchors_resolved": true,
+      "main_sha256": "330bfe9c8e5e3e65af5e2772a4baa6511ca245c92f7d11fc46bd4ced12b2e48c",
+      "supplement_sha256": "629a236af915ca044367234e002c050a09abc49d278411ca7f42c2a310c544eb",
+      "documentation_complete_proof_open": true,
+      "main_artifact": "derivation/paper/main/sections/01_primitive_response_coupled_finite_provenance/01_primitive_inputs_grammar_and_event_order/006_C018__canonical_bfs_lexicographic_provenance_birth_schedule/007_P002__canonical_schedule_strict_total_order_closure/SECTION.tex",
+      "supplement_artifact": "derivation/supplement/sections/01_primitive_response_coupled_finite_provenance/01_primitive_inputs_grammar_and_event_order/006_C018__canonical_bfs_lexicographic_provenance_birth_schedule/007_P002__canonical_schedule_strict_total_order_closure/DOCUMENTATION.md",
+      "source_complete": true,
+      "owned_anchor_count": 6,
+      "supporting_anchor_count": 0,
+      "contract_scope": "STATIC_C018_ORDER_CLOSURE_ONLY",
+      "excluded_dynamic_scope_owner": "C004"
+    }
+  },
+  "canonical_identity": {
+    "node_number": "007",
+    "semantic_id": "P002",
+    "canonical_node_label": "007 · P002",
+    "stable_node_directory_name": "007_P002__canonical_schedule_strict_total_order_closure",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "artifacts": {
+    "math_prose": "ce1fa18d52359d25cbbacee1bda9194a4231338ee315ddef8e8c100e7144ed6b",
+    "supplement_documentation": "223518635894b6f20d32c6a447121f43a2df999dd6b0b8925e57538ad798d5ca",
+    "owned_python_source": null,
+    "owned_lean_source": "3775ef08dceb432273a7e72f5839990e0ac40909ab68a42b8ed4d4c7bbaefef7",
+    "kernel_build_evidence": "c0e659fb610fb8d020ac5382e2ebdf290400eb788843b8ce9243ad4e1145dc93",
+    "kernel_build_transcript": "f4e55408d79041f2068fded77ca791196828e478b6a12b4f13decec2729131b1"
+  }
+}

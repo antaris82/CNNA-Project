@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "134",
+  "canonical_node_label": "134 \u00b7 O092",
+  "stable_node_directory_name": "134_O092__k_selected_polarization_uniqueness_compatibility_obstruction",
+  "id": "O092",
+  "section_path": "8.1.4",
+  "derivation_order": 134,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

@@ -1,0 +1,90 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "C045",
+  "paper_section": "4.3.2",
+  "contract": {
+    "statement": "Embed nested finite response objects into a declared common ambient carrier and prove the required restriction/transport identities."
+  },
+  "workflow": {
+    "node_semantics": "CORE_REQUIRES_PROOF",
+    "documentation": "NOT_STARTED",
+    "freeze_state": "NOT_STARTED",
+    "frozen_under_gate_version": null,
+    "documentation_v2": "NOT_STARTED"
+  },
+  "dependencies": [
+    "C021",
+    "C044"
+  ],
+  "node_number": "075",
+  "derivation_rank": 50,
+  "derivation_order": 75,
+  "section_hierarchy": {
+    "section_path": "4.3.2",
+    "root_title": "Projective refinement and nested open channels",
+    "group_title": "Projective carriers and nested open channels",
+    "main_directory": "derivation/paper/main/sections/04_projective_refinement_and_nested_open_channels/03_projective_carriers_and_nested_open_channels/075_C045__nested_common_ambient_multiscale_transport",
+    "supplement_directory": "derivation/supplement/sections/04_projective_refinement_and_nested_open_channels/03_projective_carriers_and_nested_open_channels/075_C045__nested_common_ambient_multiscale_transport",
+    "main_artifact": "derivation/paper/main/sections/04_projective_refinement_and_nested_open_channels/03_projective_carriers_and_nested_open_channels/075_C045__nested_common_ambient_multiscale_transport/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/04_projective_refinement_and_nested_open_channels/03_projective_carriers_and_nested_open_channels/075_C045__nested_common_ambient_multiscale_transport/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C021, C044; registered hard handoff(s): supplies_response_objects_for_multiscale_transport, supplies_projective_carrier_maps."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D2",
+    "tier_name": "Load-bearing theorem, proof owner, obstruction, or quarantine gate",
+    "tier_assignment_rule": "PROOF_THEOREM_OWNER_OBSTRUCTION_OR_QUARANTINE_ROLE",
+    "main_paper_depth": "THEOREM_AND_PROOF_OVERVIEW",
+    "supplement_depth": "FULL_PROOF_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "formal_statement",
+      "hypotheses",
+      "introduction_reason",
+      "proof_strategy",
+      "lemma_chain",
+      "formal_realization",
+      "counterexamples_or_necessity_checks",
+      "axiom_profile",
+      "result",
+      "remaining_limits",
+      "downstream_handoff",
+      "code_line_register"
+    ],
+    "countercheck_requirement": "NEGATIVE_CONTROL_COUNTEREXAMPLE_OR_HYPOTHESIS_NECESSITY",
+    "countercheck_status": "NOT_STARTED",
+    "v2_state": "NOT_STARTED",
+    "python_anchor_status": "PLANNED",
+    "lean_anchor_status": "PLANNED",
+    "code_anchors": [],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false
+  },
+  "canonical_identity": {
+    "node_number": "075",
+    "semantic_id": "C045",
+    "canonical_node_label": "075 · C045",
+    "stable_node_directory_name": "075_C045__nested_common_ambient_multiscale_transport",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "open_provenance_context": {
+    "framework": "GENERALIZED_OPEN_PROVENANCE_SYSTEMS",
+    "concept_ids": [
+      "OPS-06"
+    ],
+    "roles": [
+      "Nested cuts, refinement and cocycle"
+    ],
+    "integration_status": [
+      "DOWNSTREAM_COHERENCE_PROGRAM"
+    ],
+    "claim_guard": "Interpretive specialization map only. Mathematical force is exactly the node contract and its registered evidence; no universal open-system theorem is inferred."
+  },
+  "cnna_architecture_context": {
+    "concept_id": "CNNA-00",
+    "name": "ComplemeNt Net Architecture",
+    "role": "Common ambient carrier: places multiple retained/complement decompositions inside one provenance net.",
+    "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+    "claim_guard": "Interpretive and organizational context only; mathematical force remains exactly the registered node contract and evidence status."
+  }
+}

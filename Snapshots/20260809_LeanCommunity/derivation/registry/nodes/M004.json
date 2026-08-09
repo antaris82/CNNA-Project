@@ -1,0 +1,685 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "M004",
+  "paper_section": "1.3.10",
+  "contract": {
+    "statement": "M004 defines the zero-inclusive algebraic direct lift and the strictly positive active recurrent law. Provenance fixes the parent/child, ancestor, sibling and lapse support; the exact M003 scalar is transported unchanged. CanonicalM004Closure consumes CanonicalM003Closure directly and supplies the immutable, representative-independent instruction handoff. C008 alone applies the instruction.",
+    "formula": "Pure lift Bbar_b(sigma), sigma>=0: same sigma on parent<->child, child->strict ancestors, child<->older siblings, and lapse. Active B_b additionally requires sigma>0. Sigma=0 is exact boundary data, not an admissible C005 birth.",
+    "ownership_boundary": [
+      "owns the immutable provenance-supported direct scalar lift",
+      "owns the distinction between zero-inclusive algebraic lift and strictly positive active C005 birth domain",
+      "consumes response existence, universal PositiveSteering, and the active response-domain witness exclusively through CanonicalM003Closure",
+      "keeps the zero-lapse theorem as boundary information without treating zero as a reachable active birth",
+      "makes explicit that C004/C018 select the slot while response controls weights and lapse only",
+      "introduces no rank, asymmetry, node-load scalar, nonlinear mode, backreaction coefficient, baseline, attenuation, clipping, fallback, or second newborn scalar",
+      "does not mutate record/live state; it supplies the immutable semantic handoff consumed by C008"
+    ]
+  },
+  "cross_layer": {
+    "equivalence": "Python and Lean use the same provenance support, exact scalar transport, zero-inclusive algebraic boundary and strictly positive active constructor. P001 supplies the canonical positivity witness without defining a second birth law.",
+    "semantic_mismatch_known": false,
+    "semantic_identity_verified": true,
+    "identity_kind": "KERNEL_VERIFIED_EXACT_SOURCE_EVIDENCE",
+    "identity_evidence": [
+      "Core and Python semantics remain unchanged and their registered tests/evidence remain current.",
+      "P001 remains kernel-verified with exact source evidence.",
+      "The canonical M004 closure is kernel-compiled and axiom-audited under Lean 4.31.0; exact current-source evidence matches."
+    ]
+  },
+  "evidence": {
+    "audit_tier": "C",
+    "python": {
+      "status": "PASS_ASSISTANT_EXECUTED",
+      "node_tests": 7,
+      "full_suite_tests": 100,
+      "full_suite_subtests": 1078,
+      "focused_subtests": 99,
+      "zero_boundary_cases": 1,
+      "substantive_probe": "Exact fieldwise transport, canonical support, homogeneous scaling, zero algebraic boundary, negative and noncanonical rejection, and absence of extra control parameters."
+    },
+    "lean": {
+      "status": "KERNEL_VERIFIED_EXACT_SOURCE_EVIDENCE",
+      "core_source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+      "closure_source": "derivation/code/lean/proofs/src/CNNAProofs/M003M004/S02_CanonicalM004ClosureAndHandoff.lean",
+      "closure_source_sha256": "2882f029f40a3b5742e987e3b201602ba5a5dd532121818418837747e825e93e",
+      "toolchain": "leanprover/lean4:v4.31.0",
+      "kernel_build": "PASS",
+      "mathlib": "v4.31.0",
+      "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+      "build_evidence": "derivation/code/lean/audit/evidence/USER_LOCAL_M003_M004_FULL_BUILD_20260806.json",
+      "build_evidence_sha256": "cd6c95a56c5dc3a21337b9006449b69a2d5a51b5a9c89b4180667279229287ad",
+      "build_transcript": "derivation/code/lean/audit/evidence/USER_LOCAL_M003_M004_FULL_BUILD_20260806.txt",
+      "build_transcript_sha256": "d15167488dbe74c9b6d1bf7cb4629b34e83a1111ad63a548ee041cc9dc69bf24",
+      "axiom_audit": "PASS",
+      "package_boundary_audit": "PASS",
+      "exact_source_evidence": "MATCH",
+      "allowed_transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "proof_declarations": 7,
+      "axiom_profile_counts": {
+        "choice_propext_quot": 4,
+        "propext_quot_only": 3,
+        "axiom_free": 0
+      }
+    }
+  },
+  "artifacts": {
+    "python_source": "7f062bc665c35bfdb1fe6d1a6bac88ec8e0ca17ccee7967b9832fa6bb7be7c0a",
+    "python_test": "0bcdebe6e75b9723c1b9e6c043f72925c1480497e15c409179bfa314c239f373",
+    "lean_source": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+    "math_prose": "a0d1724743ae8914295ff2df3fc04fbfb040cb798255ed900c4b4c07070a772e",
+    "supplement_documentation": "cd900ffc860ee853a191973c87827c7fe916d9a392c17d0033210414e90229e6",
+    "lean_closure_source": "2882f029f40a3b5742e987e3b201602ba5a5dd532121818418837747e825e93e"
+  },
+  "workflow": {
+    "node_semantics": "CLOSED_RESPONSE_COUPLED_BIRTH_LAW",
+    "documentation": "COMPLETE_V2",
+    "freeze_state": "FROZEN_VERIFIED",
+    "frozen_under_gate_version": "M003_M004_KERNEL_VERIFIED_CURRENT_STATE",
+    "documentation_v2": "COMPLETE_V2"
+  },
+  "node_number": "026",
+  "derivation_rank": 16,
+  "derivation_order": 26,
+  "section_hierarchy": {
+    "section_path": "1.3.10",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Canonical cut, complement elimination and birth steering",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/026_M004__response_coupled_birth_law_b",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/026_M004__response_coupled_birth_law_b",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/026_M004__response_coupled_birth_law_b/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/026_M004__response_coupled_birth_law_b/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after M003, C004, O001; registered hard handoff(s): determines_birth_data, supplies_provenance_slot_only, must_be_removed_before_core_birth_law."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D1",
+    "tier_name": "Structural construction",
+    "tier_assignment_rule": "STRUCTURAL_CONSTRUCTION_ROLE",
+    "main_paper_depth": "STRUCTURAL_EXPLANATION",
+    "supplement_depth": "DETAILED_CONSTRUCTION_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "mathematical_contract",
+      "introduction_reason",
+      "explicit_construction",
+      "invariants",
+      "canonicity_or_uniqueness",
+      "boundary_cases",
+      "python_lean_cross_layer",
+      "countercheck",
+      "result",
+      "downstream_handoff",
+      "code_anchors"
+    ],
+    "countercheck_requirement": "INVARIANT_EDGE_CASE_AND_CROSS_LAYER_CHECK",
+    "countercheck_status": "PASS",
+    "v2_state": "COMPLETE_V2",
+    "python_anchor_status": "RESOLVED",
+    "lean_anchor_status": "RESOLVED",
+    "code_anchors": [
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s10_m004__response_coupled_birth_law_birthlaw_b.py",
+        "symbol": "BirthLawDomainError",
+        "declaration_kind": "CLASS",
+        "start_line": 57,
+        "end_line": 58,
+        "source_sha256": "fb5ae77e13b3596f806136edb4e4854631e3ee3911e7a6baf788409d9b67691c",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s10_m004__response_coupled_birth_law_birthlaw_b.py",
+        "symbol": "DirectedRelationUpdate",
+        "declaration_kind": "CLASS",
+        "start_line": 62,
+        "end_line": 77,
+        "source_sha256": "fb5ae77e13b3596f806136edb4e4854631e3ee3911e7a6baf788409d9b67691c",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s10_m004__response_coupled_birth_law_birthlaw_b.py",
+        "symbol": "ResponseCoupledBirthInstruction",
+        "declaration_kind": "CLASS",
+        "start_line": 81,
+        "end_line": 136,
+        "source_sha256": "fb5ae77e13b3596f806136edb4e4854631e3ee3911e7a6baf788409d9b67691c",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s10_m004__response_coupled_birth_law_birthlaw_b.py",
+        "symbol": "direct_response_lift",
+        "declaration_kind": "FUNCTION",
+        "start_line": 139,
+        "end_line": 180,
+        "source_sha256": "fb5ae77e13b3596f806136edb4e4854631e3ee3911e7a6baf788409d9b67691c",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s10_m004__response_coupled_birth_law_birthlaw_b.py",
+        "symbol": "canonical_bias_free_birth_law_inputs",
+        "declaration_kind": "FUNCTION",
+        "start_line": 183,
+        "end_line": 221,
+        "source_sha256": "fb5ae77e13b3596f806136edb4e4854631e3ee3911e7a6baf788409d9b67691c",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s10_m004__response_coupled_birth_law_birthlaw_b.py",
+        "symbol": "response_coupled_birth_law",
+        "declaration_kind": "FUNCTION",
+        "start_line": 224,
+        "end_line": 243,
+        "source_sha256": "fb5ae77e13b3596f806136edb4e4854631e3ee3911e7a6baf788409d9b67691c",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/test_s10_m004__response_coupled_birth_law_birthlaw_b.py",
+        "symbol": "_bootstrap_state",
+        "declaration_kind": "FUNCTION",
+        "start_line": 35,
+        "end_line": 41,
+        "source_sha256": "364ae68fbcc74863b4756b271d38bf3c1444a02f2aa23db3eec4de54557f3dcf",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/test_s10_m004__response_coupled_birth_law_birthlaw_b.py",
+        "symbol": "_state",
+        "declaration_kind": "FUNCTION",
+        "start_line": 44,
+        "end_line": 55,
+        "source_sha256": "364ae68fbcc74863b4756b271d38bf3c1444a02f2aa23db3eec4de54557f3dcf",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/test_s10_m004__response_coupled_birth_law_birthlaw_b.py",
+        "symbol": "_instruction",
+        "declaration_kind": "FUNCTION",
+        "start_line": 58,
+        "end_line": 62,
+        "source_sha256": "364ae68fbcc74863b4756b271d38bf3c1444a02f2aa23db3eec4de54557f3dcf",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/test_s10_m004__response_coupled_birth_law_birthlaw_b.py",
+        "symbol": "TestResponseCoupledBirthLaw",
+        "declaration_kind": "CLASS",
+        "start_line": 65,
+        "end_line": 201,
+        "source_sha256": "364ae68fbcc74863b4756b271d38bf3c1444a02f2aa23db3eec4de54557f3dcf",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "NonnegativeLiftValue",
+        "declaration_kind": "DEF",
+        "start_line": 48,
+        "end_line": 51,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "DirectedRelationUpdate",
+        "declaration_kind": "STRUCTURE",
+        "start_line": 52,
+        "end_line": 57,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "ResponseCoupledBirthInstruction",
+        "declaration_kind": "STRUCTURE",
+        "start_line": 58,
+        "end_line": 67,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "strictAncestorPorts",
+        "declaration_kind": "DEF",
+        "start_line": 68,
+        "end_line": 72,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "directRelationUpdate",
+        "declaration_kind": "DEF",
+        "start_line": 73,
+        "end_line": 80,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "parentChildUpdates",
+        "declaration_kind": "DEF",
+        "start_line": 81,
+        "end_line": 87,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "ancestorBackreactionUpdates",
+        "declaration_kind": "DEF",
+        "start_line": 88,
+        "end_line": 94,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "siblingBackreactionAux",
+        "declaration_kind": "DEF",
+        "start_line": 95,
+        "end_line": 105,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "siblingBackreactionUpdates",
+        "declaration_kind": "DEF",
+        "start_line": 106,
+        "end_line": 111,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "directResponseLift",
+        "declaration_kind": "DEF",
+        "start_line": 112,
+        "end_line": 122,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "candidateInputs",
+        "declaration_kind": "DEF",
+        "start_line": 123,
+        "end_line": 135,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "candidateInputs_admissible",
+        "declaration_kind": "THEOREM",
+        "start_line": 136,
+        "end_line": 143,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "biasFreeInputs",
+        "declaration_kind": "DEF",
+        "start_line": 144,
+        "end_line": 156,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "birthLaw",
+        "declaration_kind": "DEF",
+        "start_line": 157,
+        "end_line": 166,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "IsCanonicalBirthLaw",
+        "declaration_kind": "DEF",
+        "start_line": 167,
+        "end_line": 176,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "DirectedRelationUpdateSameValue",
+        "declaration_kind": "STRUCTURE",
+        "start_line": 177,
+        "end_line": 185,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "DirectedRelationUpdatesSameValue",
+        "declaration_kind": "INDUCTIVE",
+        "start_line": 186,
+        "end_line": 197,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "BirthInstructionSameValue",
+        "declaration_kind": "STRUCTURE",
+        "start_line": 198,
+        "end_line": 210,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "directRelationUpdate_respects_sameValue",
+        "declaration_kind": "THEOREM",
+        "start_line": 211,
+        "end_line": 221,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "ancestorAux_respects_sameValue",
+        "declaration_kind": "THEOREM",
+        "start_line": 222,
+        "end_line": 236,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "siblingAux_respects_sameValue",
+        "declaration_kind": "THEOREM",
+        "start_line": 237,
+        "end_line": 253,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "directResponseLift_respects_sameValue",
+        "declaration_kind": "THEOREM",
+        "start_line": 254,
+        "end_line": 277,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "birthLaw_respects_sameValue",
+        "declaration_kind": "THEOREM",
+        "start_line": 278,
+        "end_line": 295,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "birthLaw_exists",
+        "declaration_kind": "THEOREM",
+        "start_line": 296,
+        "end_line": 307,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "birthLaw_unique",
+        "declaration_kind": "THEOREM",
+        "start_line": 308,
+        "end_line": 321,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "responseSteeringPairs_give_same_birthLaw",
+        "declaration_kind": "THEOREM",
+        "start_line": 322,
+        "end_line": 342,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "birthLaw_parentChild_eq_directLift",
+        "declaration_kind": "THEOREM",
+        "start_line": 343,
+        "end_line": 354,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "birthLaw_lapse_eq_steering",
+        "declaration_kind": "THEOREM",
+        "start_line": 355,
+        "end_line": 366,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S10_M004_ResponseCoupledBirthLawBirthlawB.lean",
+        "symbol": "directResponseLift_zero_lapse",
+        "declaration_kind": "THEOREM",
+        "start_line": 367,
+        "end_line": 371,
+        "source_sha256": "03d417a92f6591d4325ee62bda1d3d1f227456b58bfa91478b206251b721c382",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_proof",
+        "role": "PROOF",
+        "path": "derivation/code/lean/proofs/src/CNNAProofs/M003M004/S02_CanonicalM004ClosureAndHandoff.lean",
+        "symbol": "CanonicalM004Closure",
+        "declaration_kind": "STRUCTURE",
+        "start_line": 31,
+        "end_line": 67,
+        "source_sha256": "2882f029f40a3b5742e987e3b201602ba5a5dd532121818418837747e825e93e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_proof",
+        "role": "PROOF",
+        "path": "derivation/code/lean/proofs/src/CNNAProofs/M003M004/S02_CanonicalM004ClosureAndHandoff.lean",
+        "symbol": "canonicalM004Closure",
+        "declaration_kind": "THEOREM",
+        "start_line": 68,
+        "end_line": 108,
+        "source_sha256": "2882f029f40a3b5742e987e3b201602ba5a5dd532121818418837747e825e93e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_proof",
+        "role": "PROOF",
+        "path": "derivation/code/lean/proofs/src/CNNAProofs/M003M004/S02_CanonicalM004ClosureAndHandoff.lean",
+        "symbol": "IsCanonicalBirthInstructionHandoff",
+        "declaration_kind": "DEF",
+        "start_line": 109,
+        "end_line": 119,
+        "source_sha256": "2882f029f40a3b5742e987e3b201602ba5a5dd532121818418837747e825e93e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_proof",
+        "role": "PROOF",
+        "path": "derivation/code/lean/proofs/src/CNNAProofs/M003M004/S02_CanonicalM004ClosureAndHandoff.lean",
+        "symbol": "canonicalBirthInstructionHandoff_exists",
+        "declaration_kind": "THEOREM",
+        "start_line": 120,
+        "end_line": 131,
+        "source_sha256": "2882f029f40a3b5742e987e3b201602ba5a5dd532121818418837747e825e93e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_proof",
+        "role": "PROOF",
+        "path": "derivation/code/lean/proofs/src/CNNAProofs/M003M004/S02_CanonicalM004ClosureAndHandoff.lean",
+        "symbol": "canonicalBirthInstructionHandoff_sameValue",
+        "declaration_kind": "THEOREM",
+        "start_line": 132,
+        "end_line": 146,
+        "source_sha256": "2882f029f40a3b5742e987e3b201602ba5a5dd532121818418837747e825e93e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_proof",
+        "role": "PROOF",
+        "path": "derivation/code/lean/proofs/src/CNNAProofs/M003M004/S02_CanonicalM004ClosureAndHandoff.lean",
+        "symbol": "CanonicalM004ClosureContract",
+        "declaration_kind": "DEF",
+        "start_line": 147,
+        "end_line": 159,
+        "source_sha256": "2882f029f40a3b5742e987e3b201602ba5a5dd532121818418837747e825e93e",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_proof",
+        "role": "PROOF",
+        "path": "derivation/code/lean/proofs/src/CNNAProofs/M003M004/S02_CanonicalM004ClosureAndHandoff.lean",
+        "symbol": "canonicalM004ClosureContract",
+        "declaration_kind": "THEOREM",
+        "start_line": 160,
+        "end_line": 167,
+        "source_sha256": "2882f029f40a3b5742e987e3b201602ba5a5dd532121818418837747e825e93e",
+        "resolution": "RESOLVED"
+      }
+    ],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false,
+    "completion_evidence": {
+      "status": "KERNEL_VERIFIED_CURRENT_STATE",
+      "main_artifact": "derivation/paper/main/sections/01_primitive_response_coupled_finite_provenance/03_recurrent_pre_birth_measurement_and_steering/026_M004__response_coupled_birth_law_b/SECTION.tex",
+      "supplement_artifact": "derivation/supplement/sections/01_primitive_response_coupled_finite_provenance/03_recurrent_pre_birth_measurement_and_steering/026_M004__response_coupled_birth_law_b/DOCUMENTATION.md",
+      "main_sha256": "a0d1724743ae8914295ff2df3fc04fbfb040cb798255ed900c4b4c07070a772e",
+      "supplement_sha256": "cd900ffc860ee853a191973c87827c7fe916d9a392c17d0033210414e90229e6",
+      "code_anchor_count": 46,
+      "source_code_changed": true,
+      "documentation_complete": true,
+      "required_sections_present": true,
+      "countercheck_present": true,
+      "code_anchors_resolved": true,
+      "completed_on": "2026-08-06",
+      "kernel_build": "PASS",
+      "kernel_build_evidence": "derivation/code/lean/audit/evidence/USER_LOCAL_M003_M004_FULL_BUILD_20260806.json",
+      "kernel_build_evidence_sha256": "cd6c95a56c5dc3a21337b9006449b69a2d5a51b5a9c89b4180667279229287ad",
+      "kernel_build_transcript": "derivation/code/lean/audit/evidence/USER_LOCAL_M003_M004_FULL_BUILD_20260806.txt",
+      "kernel_build_transcript_sha256": "d15167488dbe74c9b6d1bf7cb4629b34e83a1111ad63a548ee041cc9dc69bf24"
+    }
+  },
+  "canonical_identity": {
+    "node_number": "026",
+    "semantic_id": "M004",
+    "canonical_node_label": "026 · M004",
+    "stable_node_directory_name": "026_M004__response_coupled_birth_law_b",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "implementation_status": {
+    "status": "KERNEL_VERIFIED",
+    "source": "Core plus CNNAProofs.M003M004",
+    "node_semantics": "CANONICAL_CLOSURE_KERNEL_COMPILED_AXIOM_AUDITED_FULL_BOUNDARY_PASS"
+  },
+  "open_provenance_context": {
+    "framework": "GENERALIZED_OPEN_PROVENANCE_SYSTEMS",
+    "concept_ids": [
+      "OPS-04"
+    ],
+    "roles": [
+      "Response-coupled event generation"
+    ],
+    "integration_status": [
+      "M003_M004_VERIFIED_C008_DOWNSTREAM"
+    ],
+    "claim_guard": "Interpretive specialization map only. Mathematical force is exactly the node contract and its registered evidence; no universal open-system theorem is inferred."
+  },
+  "cnna_architecture_context": {
+    "concept_id": "CNNA-00",
+    "name": "ComplemeNt Net Architecture",
+    "role": "Complement-coupled birth instruction: converts the present effective response into the next provenance relation.",
+    "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+    "claim_guard": "Interpretive and organizational context only; mathematical force remains exactly the registered node contract and evidence status."
+  }
+}

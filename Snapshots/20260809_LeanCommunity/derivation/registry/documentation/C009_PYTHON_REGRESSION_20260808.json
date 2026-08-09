@@ -1,0 +1,13 @@
+{
+  "schema": "cnna.c009-python-regression.v1",
+  "status": "PASS",
+  "date": "2026-08-08",
+  "command": "PYTHONDONTWRITEBYTECODE=1 pytest -q -p no:cacheprovider",
+  "tests_passed": 117,
+  "subtests_passed": 1086,
+  "elapsed_seconds": 8.1,
+  "scope": "C009 raw codomain assembly and finite realization countercheck",
+  "guard": "FINITE_REGRESSION_EVIDENCE_ONLY",
+  "schema_closure_owner": "T002",
+  "origin_backpropagation_policy": "missing upstream closures are repaired at their semantic owner"
+}

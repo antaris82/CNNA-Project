@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "093",
+  "canonical_node_label": "093 \u00b7 C052",
+  "stable_node_directory_name": "093_C052__hilbert_schmidt_normalized_skew_operator_k",
+  "id": "C052",
+  "section_path": "5.2.2",
+  "derivation_order": 93,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

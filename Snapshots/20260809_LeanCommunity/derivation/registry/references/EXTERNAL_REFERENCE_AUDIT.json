@@ -1,0 +1,9 @@
+{
+  "schema": "cnna.external-reference-audit.v1",
+  "status": "PASS",
+  "references": 32,
+  "uses": 61,
+  "assertions": 19,
+  "unique_target_anchor_pairs": 61,
+  "errors": []
+}

@@ -1,0 +1,69 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "B071",
+  "paper_section": "7.2.1",
+  "contract": {
+    "statement": "Not part of the active DAG until M070 is closed."
+  },
+  "workflow": {
+    "node_semantics": "QUARANTINED",
+    "documentation": "NOT_STARTED",
+    "freeze_state": "NOT_STARTED",
+    "frozen_under_gate_version": null,
+    "documentation_v2": "NOT_STARTED"
+  },
+  "dependencies": [
+    "M070"
+  ],
+  "node_number": "126",
+  "derivation_rank": 82,
+  "derivation_order": 126,
+  "section_hierarchy": {
+    "section_path": "7.2.1",
+    "root_title": "Emergent geometry and Hodge/HK branch",
+    "group_title": "Hodge/HK specialization branch",
+    "main_directory": "derivation/paper/main/sections/07_emergent_geometry_and_hodge_hk_branch/02_hodge_hk_specialization_branch/126_B071__hodge_geometric_locality_hk_geometry_branch",
+    "supplement_directory": "derivation/supplement/sections/07_emergent_geometry_and_hodge_hk_branch/02_hodge_hk_specialization_branch/126_B071__hodge_geometric_locality_hk_geometry_branch",
+    "main_artifact": "derivation/paper/main/sections/07_emergent_geometry_and_hodge_hk_branch/02_hodge_hk_specialization_branch/126_B071__hodge_geometric_locality_hk_geometry_branch/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/07_emergent_geometry_and_hodge_hk_branch/02_hodge_hk_specialization_branch/126_B071__hodge_geometric_locality_hk_geometry_branch/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after M070; registered hard handoff(s): unblocks_geometry_hodge_hk."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D2",
+    "tier_name": "Load-bearing theorem, proof owner, obstruction, or quarantine gate",
+    "tier_assignment_rule": "PROOF_THEOREM_OWNER_OBSTRUCTION_OR_QUARANTINE_ROLE",
+    "main_paper_depth": "THEOREM_AND_PROOF_OVERVIEW",
+    "supplement_depth": "FULL_PROOF_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "formal_statement",
+      "hypotheses",
+      "introduction_reason",
+      "proof_strategy",
+      "lemma_chain",
+      "formal_realization",
+      "counterexamples_or_necessity_checks",
+      "axiom_profile",
+      "result",
+      "remaining_limits",
+      "downstream_handoff",
+      "code_line_register"
+    ],
+    "countercheck_requirement": "NEGATIVE_CONTROL_COUNTEREXAMPLE_OR_HYPOTHESIS_NECESSITY",
+    "countercheck_status": "NOT_STARTED",
+    "v2_state": "NOT_STARTED",
+    "python_anchor_status": "PLANNED",
+    "lean_anchor_status": "PLANNED",
+    "code_anchors": [],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false
+  },
+  "canonical_identity": {
+    "node_number": "126",
+    "semantic_id": "B071",
+    "canonical_node_label": "126 · B071",
+    "stable_node_directory_name": "126_B071__hodge_geometric_locality_hk_geometry_branch",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  }
+}

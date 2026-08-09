@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "092",
+  "canonical_node_label": "092 \u00b7 P029",
+  "stable_node_directory_name": "092_P029__provenance_metric_positivity_and_uniqueness_up_to_normalization",
+  "id": "P029",
+  "section_path": "5.2.1.2",
+  "derivation_order": 92,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

@@ -1,0 +1,96 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "C053",
+  "paper_section": "5.3.1",
+  "contract": {
+    "statement": "Once G and bounded K are admitted, μ=(||K||/2)G gives a positive regular quasifree state."
+  },
+  "workflow": {
+    "node_semantics": "CORE_BLOCKED",
+    "documentation": "NOT_STARTED",
+    "freeze_state": "NOT_STARTED",
+    "frozen_under_gate_version": null,
+    "documentation_v2": "NOT_STARTED"
+  },
+  "dependencies": [
+    "C052",
+    "M050"
+  ],
+  "node_number": "099",
+  "derivation_rank": 65,
+  "derivation_order": 99,
+  "section_hierarchy": {
+    "section_path": "5.3.1",
+    "root_title": "Presymplectic completion, Weyl system and quasifree state",
+    "group_title": "Quasifree-state specialization",
+    "main_directory": "derivation/paper/main/sections/05_presymplectic_completion_weyl_system_and_quasifree_state/03_quasifree_state_specialization/099_C053__regular_quasifree_provenance_state_prov",
+    "supplement_directory": "derivation/supplement/sections/05_presymplectic_completion_weyl_system_and_quasifree_state/03_quasifree_state_specialization/099_C053__regular_quasifree_provenance_state_prov",
+    "main_artifact": "derivation/paper/main/sections/05_presymplectic_completion_weyl_system_and_quasifree_state/03_quasifree_state_specialization/099_C053__regular_quasifree_provenance_state_prov/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/05_presymplectic_completion_weyl_system_and_quasifree_state/03_quasifree_state_specialization/099_C053__regular_quasifree_provenance_state_prov/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C052, M050; registered hard handoff(s): quasifree_positivity, supplies_quasifree_covariance_metric."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D2",
+    "tier_name": "Load-bearing theorem, proof owner, obstruction, or quarantine gate",
+    "tier_assignment_rule": "PROOF_THEOREM_OWNER_OBSTRUCTION_OR_QUARANTINE_ROLE",
+    "main_paper_depth": "THEOREM_AND_PROOF_OVERVIEW",
+    "supplement_depth": "FULL_PROOF_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "formal_statement",
+      "hypotheses",
+      "introduction_reason",
+      "proof_strategy",
+      "lemma_chain",
+      "formal_realization",
+      "counterexamples_or_necessity_checks",
+      "axiom_profile",
+      "result",
+      "remaining_limits",
+      "downstream_handoff",
+      "code_line_register"
+    ],
+    "countercheck_requirement": "NEGATIVE_CONTROL_COUNTEREXAMPLE_OR_HYPOTHESIS_NECESSITY",
+    "countercheck_status": "NOT_STARTED",
+    "v2_state": "NOT_STARTED",
+    "python_anchor_status": "PLANNED",
+    "lean_anchor_status": "PLANNED",
+    "code_anchors": [],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false
+  },
+  "canonical_identity": {
+    "node_number": "099",
+    "semantic_id": "C053",
+    "canonical_node_label": "099 · C053",
+    "stable_node_directory_name": "099_C053__regular_quasifree_provenance_state_prov",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "open_provenance_context": {
+    "framework": "GENERALIZED_OPEN_PROVENANCE_SYSTEMS",
+    "concept_ids": [
+      "OPS-QM-01",
+      "OPS-QM-02",
+      "OPS-AQFT-01"
+    ],
+    "roles": [
+      "Finite provenance-derived POVM migration",
+      "Open-quantum-process specialization",
+      "Weyl/GNS/modular-AQFT specialization"
+    ],
+    "integration_status": [
+      "LEGACY_MIGRATION_TARGET_NOT_CURRENT_THEOREM",
+      "LATER_QUANTUM_SPECIALIZATION_NOT_UNIVERSAL_CLAIM",
+      "LATE_OPERATOR_ALGEBRAIC_SPECIALIZATION_NODEWISE_STATUS"
+    ],
+    "claim_guard": "Interpretive specialization map only. Mathematical force is exactly the node contract and its registered evidence; no universal open-system theorem is inferred."
+  },
+  "cnna_architecture_context": {
+    "concept_id": "CNNA-00",
+    "name": "ComplemeNt Net Architecture",
+    "role": "Reduced observation specialization: positive state and measurement structures are later compressions of the response net.",
+    "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+    "claim_guard": "Interpretive and organizational context only; mathematical force remains exactly the registered node contract and evidence status."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "143",
+  "canonical_node_label": "143 \u00b7 M085",
+  "stable_node_directory_name": "143_M085__canonical_purification_pure_global_state_branch",
+  "id": "M085",
+  "section_path": "8.3.2",
+  "derivation_order": 143,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

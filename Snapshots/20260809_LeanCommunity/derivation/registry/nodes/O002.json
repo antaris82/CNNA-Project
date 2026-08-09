@@ -1,0 +1,67 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "O002",
+  "paper_section": "1.6.1",
+  "contract": {
+    "statement": "Legacy symmetric-control code nulls the skew/current post hoc rather than implementing null steering at the growth law. It must be replaced by CTRL001; signed_current.py is diagnostic evidence only, not a normative basis."
+  },
+  "workflow": {
+    "node_semantics": "IST_REFACTOR_BLOCKER",
+    "documentation": "NOT_STARTED",
+    "freeze_state": "NOT_STARTED",
+    "frozen_under_gate_version": null,
+    "documentation_v2": "NOT_STARTED"
+  },
+  "dependencies": [],
+  "node_number": "041",
+  "derivation_rank": 24,
+  "derivation_order": 41,
+  "section_hierarchy": {
+    "section_path": "1.6.1",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Controls and excluded non-derived mechanisms",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/06_controls_and_excluded_non_derived_mechanisms/041_O002__ist_post_hoc_sym_control_obstruction",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/06_controls_and_excluded_non_derived_mechanisms/041_O002__ist_post_hoc_sym_control_obstruction",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/06_controls_and_excluded_non_derived_mechanisms/041_O002__ist_post_hoc_sym_control_obstruction/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/06_controls_and_excluded_non_derived_mechanisms/041_O002__ist_post_hoc_sym_control_obstruction/DOCUMENTATION.md",
+    "introduction_reason": "Post-hoc control obstruction introduced in the control section."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D2",
+    "tier_name": "Load-bearing theorem, proof owner, obstruction, or quarantine gate",
+    "tier_assignment_rule": "PROOF_THEOREM_OWNER_OBSTRUCTION_OR_QUARANTINE_ROLE",
+    "main_paper_depth": "THEOREM_AND_PROOF_OVERVIEW",
+    "supplement_depth": "FULL_PROOF_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "formal_statement",
+      "hypotheses",
+      "introduction_reason",
+      "proof_strategy",
+      "lemma_chain",
+      "formal_realization",
+      "counterexamples_or_necessity_checks",
+      "axiom_profile",
+      "result",
+      "remaining_limits",
+      "downstream_handoff",
+      "code_line_register"
+    ],
+    "countercheck_requirement": "NEGATIVE_CONTROL_COUNTEREXAMPLE_OR_HYPOTHESIS_NECESSITY",
+    "countercheck_status": "NOT_STARTED",
+    "v2_state": "NOT_STARTED",
+    "python_anchor_status": "NOT_REQUIRED_PROOF_NODE",
+    "lean_anchor_status": "PLANNED",
+    "code_anchors": [],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false
+  },
+  "canonical_identity": {
+    "node_number": "041",
+    "semantic_id": "O002",
+    "canonical_node_label": "041 · O002",
+    "stable_node_directory_name": "041_O002__ist_post_hoc_sym_control_obstruction",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  }
+}

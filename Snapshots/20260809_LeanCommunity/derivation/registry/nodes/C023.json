@@ -1,0 +1,64 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "C023",
+  "paper_section": "2.2.1",
+  "contract": {
+    "statement": "S=(Λ+Λᵀ)/2 and A=(Λ-Λᵀ)/2."
+  },
+  "workflow": {
+    "node_semantics": "CORE_DEFINED",
+    "documentation": "NOT_STARTED",
+    "freeze_state": "NOT_STARTED",
+    "frozen_under_gate_version": null,
+    "documentation_v2": "NOT_STARTED"
+  },
+  "dependencies": [
+    "C021"
+  ],
+  "node_number": "053",
+  "derivation_rank": 29,
+  "derivation_order": 53,
+  "section_hierarchy": {
+    "section_path": "2.2.1",
+    "root_title": "Cut-relative complement elimination and effective response",
+    "group_title": "Record/live response split and backreaction",
+    "main_directory": "derivation/paper/main/sections/02_cut_relative_complement_elimination_and_effective_response/02_record_live_response_split_and_backreaction/053_C023__symmetric_skew_response_split_s_a",
+    "supplement_directory": "derivation/supplement/sections/02_cut_relative_complement_elimination_and_effective_response/02_record_live_response_split_and_backreaction/053_C023__symmetric_skew_response_split_s_a",
+    "main_artifact": "derivation/paper/main/sections/02_cut_relative_complement_elimination_and_effective_response/02_record_live_response_split_and_backreaction/053_C023__symmetric_skew_response_split_s_a/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/02_cut_relative_complement_elimination_and_effective_response/02_record_live_response_split_and_backreaction/053_C023__symmetric_skew_response_split_s_a/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C021; registered hard handoff(s): decomposes_response."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D0",
+    "tier_name": "Atomic input or definitional node",
+    "tier_assignment_rule": "EXPLICIT_ATOMIC_OR_DEFINITIONAL_OVERRIDE",
+    "main_paper_depth": "COMPACT_DEFINITION",
+    "supplement_depth": "TRACEABLE_DEFINITION",
+    "required_sections": [
+      "position_in_derivation",
+      "definition_or_statement",
+      "introduction_reason",
+      "construction_or_encoding",
+      "boundary_case_or_countercheck",
+      "result",
+      "downstream_handoff",
+      "code_anchors"
+    ],
+    "countercheck_requirement": "ONE_DEFINITIONAL_BOUNDARY_OR_TYPE_REJECTION",
+    "countercheck_status": "NOT_STARTED",
+    "v2_state": "NOT_STARTED",
+    "python_anchor_status": "PLANNED",
+    "lean_anchor_status": "PLANNED",
+    "code_anchors": [],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false
+  },
+  "canonical_identity": {
+    "node_number": "053",
+    "semantic_id": "C023",
+    "canonical_node_label": "053 · C023",
+    "stable_node_directory_name": "053_C023__symmetric_skew_response_split_s_a",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  }
+}

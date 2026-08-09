@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "054",
+  "canonical_node_label": "054 \u00b7 C024",
+  "stable_node_directory_name": "054_C024__backreaction_current_b_a_live_a_record",
+  "id": "C024",
+  "section_path": "2.2.2",
+  "derivation_order": 54,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

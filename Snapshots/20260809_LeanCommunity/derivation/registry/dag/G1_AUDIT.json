@@ -1,0 +1,18 @@
+{
+  "schema": "cnna.g1-unified-section-hierarchy-audit.v1",
+  "status": "PASS",
+  "nodes": 145,
+  "node_sections": 145,
+  "hierarchy_rows": 184,
+  "section_transitions": 108,
+  "main_documented_nodes": 31,
+  "supplement_documented_nodes": 31,
+  "dag_order_equals_section_order": true,
+  "section_order_equals_directory_order": true,
+  "orphan_sections": 0,
+  "nodes_without_section": 0,
+  "hierarchy_generated_from": "derivation/registry/dag/NODES.tsv",
+  "paper_structure_generated": true,
+  "supplement_sequence_generated": true,
+  "errors": []
+}

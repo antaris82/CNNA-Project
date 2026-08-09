@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "140",
+  "canonical_node_label": "140 \u00b7 P056",
+  "stable_node_directory_name": "140_P056__positive_generator_of_the_covariance_group",
+  "id": "P056",
+  "section_path": "8.2.1.2",
+  "derivation_order": 140,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

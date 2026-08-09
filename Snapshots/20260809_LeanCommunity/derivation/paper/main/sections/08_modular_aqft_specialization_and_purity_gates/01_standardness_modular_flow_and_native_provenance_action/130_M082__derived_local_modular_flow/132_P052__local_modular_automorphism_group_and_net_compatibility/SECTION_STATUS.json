@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "132",
+  "canonical_node_label": "132 \u00b7 P052",
+  "stable_node_directory_name": "132_P052__local_modular_automorphism_group_and_net_compatibility",
+  "id": "P052",
+  "section_path": "8.1.2.2",
+  "derivation_order": 132,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

@@ -1,0 +1,97 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "P014",
+  "paper_section": "3.2.1.1",
+  "proof_owner": "C032",
+  "contract": {
+    "statement": "Prove exact support, projector/restriction typing, idempotence where claimed, and compatibility with regional response and the canonical role functor.",
+    "reuse_scope": "Reusable local-support gate for finite algebras and cyclicity obstructions.",
+    "granularity_rule": "One separately falsifiable and reusable closure gate; routine lemmas remain internal to the proof module."
+  },
+  "cross_layer": {
+    "semantic_identity_required": true,
+    "python_path_planned": "derivation/code/python/src/cnna/derivation/s03_directed_effective_response_algebra/s02_local_operator_support_carrier/proofs/s01_p014__local_support_carrier_projector_coherence.py",
+    "lean_path_planned": "derivation/code/lean/proofs/src/CNNAProofs/Derivation/S03_DirectedEffectiveResponseAlgebra/S02_LocalOperatorSupportCarrier/S01_C032_CanonicalLocalOperatorSupportCarrier/Proofs/S01_P014_LocalSupportCarrierProjectorCoherence.lean",
+    "documentation_path_planned": "derivation/paper/main/sections/03_directed_effective_response_algebra/02_local_operator_support_carrier/proofs/01_P014__local_support_carrier_projector_coherence.tex"
+  },
+  "evidence": {
+    "audit_tier": "B",
+    "python": {
+      "status": "NOT_STARTED"
+    },
+    "lean": {
+      "status": "NOT_STARTED",
+      "mathlib_policy": "ALLOWED_ONLY_FOR_GENERIC_PROOF_INFRASTRUCTURE"
+    }
+  },
+  "workflow": {
+    "node_semantics": "PLANNED_EXPLICIT_PROOF_GATE",
+    "documentation": "STRUCTURAL_REGISTRY_ONLY",
+    "freeze_state": "NOT_STARTED",
+    "frozen_under_gate_version": null,
+    "documentation_v2": "NOT_STARTED"
+  },
+  "dependencies": [
+    "C025",
+    "M030",
+    "P011",
+    "P013"
+  ],
+  "owner_import_direction": "P014 -> C032",
+  "node_number": "061",
+  "derivation_rank": 32,
+  "derivation_order": 61,
+  "section_hierarchy": {
+    "section_path": "3.2.1.1",
+    "root_title": "Directed effective response algebra",
+    "group_title": "Local operator and effect-support carrier",
+    "main_directory": "derivation/paper/main/sections/03_directed_effective_response_algebra/02_local_operator_and_effect_support_carrier/060_C032__canonical_local_operator_support_carrier/061_P014__local_support_carrier_and_projector_coherence",
+    "supplement_directory": "derivation/supplement/sections/03_directed_effective_response_algebra/02_local_operator_and_effect_support_carrier/060_C032__canonical_local_operator_support_carrier/061_P014__local_support_carrier_and_projector_coherence",
+    "main_artifact": "derivation/paper/main/sections/03_directed_effective_response_algebra/02_local_operator_and_effect_support_carrier/060_C032__canonical_local_operator_support_carrier/061_P014__local_support_carrier_and_projector_coherence/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/03_directed_effective_response_algebra/02_local_operator_and_effect_support_carrier/060_C032__canonical_local_operator_support_carrier/061_P014__local_support_carrier_and_projector_coherence/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C025, M030, P011, P013; registered hard handoff(s): supports_p014, supports_p014, supports_p014, supports_p014."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D2",
+    "tier_name": "Load-bearing theorem, proof owner, obstruction, or quarantine gate",
+    "tier_assignment_rule": "PROOF_THEOREM_OWNER_OBSTRUCTION_OR_QUARANTINE_ROLE",
+    "main_paper_depth": "THEOREM_AND_PROOF_OVERVIEW",
+    "supplement_depth": "FULL_PROOF_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "formal_statement",
+      "hypotheses",
+      "introduction_reason",
+      "proof_strategy",
+      "lemma_chain",
+      "formal_realization",
+      "counterexamples_or_necessity_checks",
+      "axiom_profile",
+      "result",
+      "remaining_limits",
+      "downstream_handoff",
+      "code_line_register"
+    ],
+    "countercheck_requirement": "NEGATIVE_CONTROL_COUNTEREXAMPLE_OR_HYPOTHESIS_NECESSITY",
+    "countercheck_status": "NOT_STARTED",
+    "v2_state": "NOT_STARTED",
+    "python_anchor_status": "NOT_REQUIRED_PROOF_NODE",
+    "lean_anchor_status": "PLANNED",
+    "code_anchors": [],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false
+  },
+  "canonical_identity": {
+    "node_number": "061",
+    "semantic_id": "P014",
+    "canonical_node_label": "061 · P014",
+    "stable_node_directory_name": "061_P014__local_support_carrier_and_projector_coherence",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "implementation_status": {
+    "status": "NOT_STARTED",
+    "source": "workflow.freeze_state",
+    "node_semantics": "PLANNED_EXPLICIT_PROOF_GATE"
+  }
+}

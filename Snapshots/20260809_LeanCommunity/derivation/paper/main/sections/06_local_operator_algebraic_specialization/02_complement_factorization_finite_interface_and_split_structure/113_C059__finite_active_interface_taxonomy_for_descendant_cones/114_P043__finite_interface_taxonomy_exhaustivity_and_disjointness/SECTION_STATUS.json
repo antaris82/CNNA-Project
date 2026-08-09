@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "114",
+  "canonical_node_label": "114 \u00b7 P043",
+  "stable_node_directory_name": "114_P043__finite_interface_taxonomy_exhaustivity_and_disjointness",
+  "id": "P043",
+  "section_path": "6.2.1.1",
+  "derivation_order": 114,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

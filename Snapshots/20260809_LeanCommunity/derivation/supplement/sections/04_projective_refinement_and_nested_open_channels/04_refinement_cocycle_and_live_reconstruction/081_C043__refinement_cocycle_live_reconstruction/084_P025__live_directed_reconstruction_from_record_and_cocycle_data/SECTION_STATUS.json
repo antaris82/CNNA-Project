@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "084",
+  "canonical_node_label": "084 \u00b7 P025",
+  "stable_node_directory_name": "084_P025__live_directed_reconstruction_from_record_and_cocycle_data",
+  "id": "P025",
+  "section_path": "4.4.1.3",
+  "derivation_order": 84,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

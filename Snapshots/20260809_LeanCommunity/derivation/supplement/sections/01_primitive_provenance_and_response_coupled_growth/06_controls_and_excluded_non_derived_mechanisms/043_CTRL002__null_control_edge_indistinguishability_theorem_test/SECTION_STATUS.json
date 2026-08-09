@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "043",
+  "canonical_node_label": "043 \u00b7 CTRL002",
+  "stable_node_directory_name": "043_CTRL002__null_control_edge_indistinguishability_theorem_test",
+  "id": "CTRL002",
+  "section_path": "1.6.3",
+  "derivation_order": 43,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

@@ -1,0 +1,75 @@
+% Canonical node 018 · M001; current section path 1.3.4.
+% Canonical owner: M001
+\cnnaNodeHeading{018}{M001}{Canonical birth-local measurement cut $\mathcal C_n(s_{n+1})$}
+\cnnaNodePlacement{1.3.4}{D2}
+Let $X_n$ be a recurrent state admitted by C005 and let
+$s_{n+1}=(p,\rho,c)$ be the unique next open provenance slot identified by
+C004.  Here $p$ is the already-born provenance parent, $\rho$ its local
+sibling rank, and $c=p\frown\rho$ the not-yet-born child address.
+
+M001 defines birth locality using only the finite provenance relations
+already present at this stage.  Write
+\[
+A(p)=\{\epsilon,\,p|_1,\ldots,p\}
+\]
+for the root-to-parent prefix chain, and
+\[
+S_{<}(s_{n+1})=\{p\frown j:0\le j<\rho\}
+\]
+for the earlier same-parent sibling slots.  These are the two provenance roles
+directly resolved by the next slot: its causal prefix chain and the already
+resolved local ranks preceding it.  No weights are used in their definition.
+
+Let
+\[
+V_n^{\mathrm{ord}}=(\epsilon,v_1,\ldots,v_n)
+\]
+denote the C005 carrier in its inherited C018 order.  Define the ordered
+boundary and interior by restriction of this already-fixed order,
+\[
+B_n(s_{n+1})
+ =\bigl.V_n^{\mathrm{ord}}\bigr|_{A(p)\cup S_{<}(s_{n+1})},
+\qquad
+I_n(s_{n+1})
+ =\bigl.V_n^{\mathrm{ord}}\bigr|_{V_n\setminus B_n(s_{n+1})},
+\]
+and set
+\[
+\boxed{\mathcal C_n(s_{n+1})=(B_n(s_{n+1}),I_n(s_{n+1}))}.
+\]
+Thus M001 does not introduce a second ordering convention: each block is an
+ordered subsequence of the C005 carrier.
+
+By the C005 initial-prefix property and the C004 least-open characterization,
+$p$ and every earlier sibling $p\frown j$ with $j<\rho$ are already born.  The
+prefix ancestry of $p$ is already born by provenance-parent closure.  Hence
+$B_n(s_{n+1})\subseteq V_n$.  The C004 child $c$ is absent from $V_n$, so it
+occurs in neither block.  Boundary and interior are disjoint and exhaust the
+entire born carrier.  Consequently the displayed rule determines a unique
+finite ordered cut from $(X_n,s_{n+1})$.
+
+The word ``canonical'' is relative to this frozen provenance selector: M001 is
+the minimal cut retaining exactly the causal-prefix and earlier-sibling roles
+of the next slot.  It does not claim that no other provenance-defined cut can
+be written down.  In particular, M001 introduces no sampling cap, geometric
+radius, terminal frontier, response-dependent selection, or downstream
+spacetime notion.
+
+The cut is still purely combinatorial.  C006 acts only after such an
+ordered boundary/interior pair has been supplied, and M002 owns the
+separate question whether the corresponding interior block lies in the exact
+Schur/DtN domain.
+
+% CNNA-OPEN-PROVENANCE-BEGIN M001
+\begin{cnnaInfoBox}{Open-provenance role: Cut-relative system and environment}
+M001 selects retained boundary ports and an eliminated interior.  The interior is the environment relative to this cut, not a second primitive substance; changing the cut changes the system/environment roles.
+\end{cnnaInfoBox}
+% CNNA-OPEN-PROVENANCE-END M001
+
+\paragraph*{Proof-owner closure.}
+The owner module contains the complete P003 certificate: both lists are
+born-only, disjoint, exhaustive on the born carrier, order-preserving because
+they are filters of the canonical carrier, uniquely determined by the frozen
+selector, and exclude the unborn child.  Thus the earlier extension marker is
+retired for M001 itself; later general-cut node P007 remains a separate future
+generalization.

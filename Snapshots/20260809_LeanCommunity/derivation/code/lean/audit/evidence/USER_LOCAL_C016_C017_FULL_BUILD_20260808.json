@@ -1,0 +1,70 @@
+{
+  "schema": "cnna.c016-c017-kernel-build-evidence.v1",
+  "status": "PASS",
+  "date": "2026-08-08",
+  "origin": "USER_LOCAL_LEAN_BUILD",
+  "build_command": "./audit/run_package_boundary_audit.sh --build",
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "mathlib": "v4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "transcript": "derivation/code/lean/audit/evidence/USER_LOCAL_C016_C017_FULL_BUILD_20260808.txt",
+  "transcript_sha256": "2a4b7655de227e1e2ebdc5e5f4ea57e550a5ce1032b7df7aba0aaff7c677ee2a",
+  "core_build_jobs": 29,
+  "default_proof_build_jobs": 8599,
+  "c008_module_build_jobs": 8597,
+  "c016_c017_module_build_jobs": 30,
+  "proof_modules": 21,
+  "c016_c017_audited_declarations": 12,
+  "total_audited_declarations": 178,
+  "source_warnings": 0,
+  "c016_c017_current_proof_axiom_audit": "PASS",
+  "full_package_boundary_audit": "PASS",
+  "c016_c017_axiom_profile_counts": {
+    "choice_propext_quot": 10,
+    "propext_quot_only": 2,
+    "axiom_free": 0
+  },
+  "transitive_axioms_observed": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "direct_project_axioms": 0,
+  "sorry_count": 0,
+  "verified_source_sha256": {
+    "core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S02_C016_ImmutableRecordChannel.lean": "88de4a80e2b2b05f9764af56a72c0e5e3cad8aba7d5c28669df94a24a0d66b74",
+    "core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S03_C017_CurrentLiveChannel.lean": "b9b9acafe1f9304a7ad7721843bc9a267ffda7014164ca92665a404643a95674",
+    "proofs/src/CNNAProofs/C016C017.lean": "aa9a678ac76e1b21079a2ab99a41f19428ff8763ce6786b15633ce41dcf8c463",
+    "proofs/src/CNNAProofs/C016C017/S01_CanonicalRecordLiveChannelProjectionClosure.lean": "dec8b9f1b24ad8f3631324c8944ba68a7bd7381e197f75b78aabac0dbb299c27",
+    "audit/C016C017_CurrentProofAxiomAudit.lean": "0df92dbed84f311831b55bc220235c802506b0913fd345fc226685126f518753"
+  },
+  "verified_artifacts": {
+    "core_olean": true,
+    "proofs_olean": true,
+    "proof_manifest": true,
+    "c016_c017_projection_closure_olean": true
+  },
+  "retained_verified_p001_source_hash_match": true,
+  "retained_verified_m003_m004_source_hash_match": true,
+  "retained_verified_p002_source_hash_match": true,
+  "retained_verified_c008_source_hash_match": true,
+  "public_declarations": [
+    "CNNA.Derivation.S01_PrimitiveResponseCoupledFiniteProvenance.S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure.ImmutableRecordChannel.afterInstruction_respects_sameValue",
+    "CNNA.Derivation.S01_PrimitiveResponseCoupledFiniteProvenance.S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure.ImmutableRecordChannel.ImmutableRecordChannelContract",
+    "CNNA.Derivation.S01_PrimitiveResponseCoupledFiniteProvenance.S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure.ImmutableRecordChannel.immutableRecordChannelContract",
+    "CNNA.Derivation.S01_PrimitiveResponseCoupledFiniteProvenance.S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure.CurrentLiveChannel.afterInstruction_respects_sameValue",
+    "CNNA.Derivation.S01_PrimitiveResponseCoupledFiniteProvenance.S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure.CurrentLiveChannel.CurrentLiveChannelContract",
+    "CNNA.Derivation.S01_PrimitiveResponseCoupledFiniteProvenance.S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure.CurrentLiveChannel.currentLiveChannelContract",
+    "CNNAProofs.C016C017.CanonicalImmutableRecordChannelClosure",
+    "CNNAProofs.C016C017.canonicalImmutableRecordChannelClosure",
+    "CNNAProofs.C016C017.CanonicalCurrentLiveChannelClosure",
+    "CNNAProofs.C016C017.canonicalCurrentLiveChannelClosure",
+    "CNNAProofs.C016C017.CanonicalRecordLiveChannelProjectionContract",
+    "CNNAProofs.C016C017.canonicalRecordLiveChannelProjectionContract"
+  ],
+  "proof_source": "proofs/src/CNNAProofs/C016C017/S01_CanonicalRecordLiveChannelProjectionClosure.lean",
+  "core_sources": [
+    "core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S02_C016_ImmutableRecordChannel.lean",
+    "core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S04_RecordLiveUpdateBackreactionChannelsAndFiniteClosure/S03_C017_CurrentLiveChannel.lean"
+  ]
+}

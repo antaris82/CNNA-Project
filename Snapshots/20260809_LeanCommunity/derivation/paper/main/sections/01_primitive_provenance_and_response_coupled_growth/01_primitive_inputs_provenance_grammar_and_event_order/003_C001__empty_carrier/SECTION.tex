@@ -1,0 +1,71 @@
+% Canonical node 003 · C001; current section path 1.1.3.
+% Canonical owner: C001
+\cnnaNodeHeading{003}{C001}{Empty carrier $\varnothing$}
+\cnnaNodePlacement{1.1.3}{D0}
+
+\paragraph*{Scientific role.}
+\texttt{C001} supplies the primitive pre-root state.  Unlike \texttt{I001} and
+\texttt{I002}, it is not a selectable numerical parameter: it is the unique
+carrier with no provenance content.
+
+% CNNA-ARCHITECTURE-BEGIN C001
+\begin{cnnaInfoBox}{CNNA origin: the null baseline}
+ComplemeNt Net Architecture begins by making the pre-growth state explicit.  C001 contains neither a realized node nor a hidden relation.  This prevents the later retained/complement distinction from being smuggled into the initial condition: the first realized side of the architecture is created only by C002.
+\end{cnnaInfoBox}
+% CNNA-ARCHITECTURE-END C001
+
+\paragraph*{Formal contract.}
+Let $V$ denote the set of present provenance nodes and $R\subseteq V\times V$
+the present directed relations.  The C001 carrier is
+\begin{equation}
+  X_{\varnothing}=(V_{\varnothing},R_{\varnothing}),
+  \qquad V_{\varnothing}=\varnothing,
+  \qquad R_{\varnothing}=\varnothing.
+  \label{eq:c001-empty-carrier}
+\end{equation}
+The contract asserts both existence of a pre-root carrier value and absence of
+nodes and relations.  It introduces no root, address, event order, geometry,
+conductance, or response datum.
+
+\paragraph*{Executable and formal encoding.}
+Python represents $X_{\varnothing}$ by a frozen zero-field dataclass and the
+canonical value \texttt{EMPTY\_CARRIER}; every node or relation query returns
+false.  Lean uses an inhabited one-constructor inductive type, defines node and
+relation membership as \texttt{False}, and proves
+\texttt{eqCanonical}: every inhabitant equals the canonical value.  The
+one-inhabitant program type represents uniqueness of the empty carrier; it is
+not an additional provenance node.
+
+% CNNA-INFOBOX-BEGIN INFO-C001-INITIAL-UNIT
+\begin{cnnaInfoBox}{Empty mathematical content versus one canonical representation}
+In \textbf{Set}, the empty set is initial: for every set $A$ there is exactly
+one map $\varnothing\to A$.
+% CNNA-EXTREF-BEGIN EXT-USE-C001-CATEGORY-INFOBOX
+\cite[Chs.~I and III, categories and universal constructions]{MacLane1998Categories}.
+% CNNA-EXTREF-END EXT-USE-C001-CATEGORY-INFOBOX
+The formal encoding here uses a singleton representation because the
+\emph{state value} must exist and is unique, while its node and relation
+collections remain empty.  A constructorless datatype would instead encode
+that no pre-root state exists at all, which is not the C001 contract.
+\end{cnnaInfoBox}
+% CNNA-INFOBOX-END INFO-C001-INITIAL-UNIT
+
+\paragraph*{Boundary countercheck.}
+The Python tests verify zero stored fields, empty node and relation tuples,
+vacuous membership predicates, and rejection of a hidden constructor payload.
+The Lean theorems \texttt{noNode}, \texttt{noRelation}, and
+\texttt{eqCanonical} separately establish emptiness and uniqueness.  Thus the
+encoding cannot silently smuggle a root or initialization datum into C001.
+
+\paragraph*{Result and handoff.}
+The result is exactly one payload-free pre-root carrier.  The sole outgoing
+hard edge \texttt{E003} hands it to \texttt{C002}.  Root existence and all
+root properties are therefore conclusions of the next construction, not
+assumptions embedded in the empty state.
+
+\noindent\textbf{Primary code anchors.}
+Python: \path{derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s01_primitive_inputs_grammar_and_event_order/s03_c001__empty_carrier_empty.py},
+\texttt{EmptyCarrier}, lines 23--52.  Lean:
+\path{derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S03_C001_EmptyCarrierEmpty.lean},
+\texttt{EmptyCarrier}, lines 21--26; \texttt{noNode}, lines 40--44;
+\texttt{noRelation}, lines 45--49; \texttt{eqCanonical}, lines 50--56.

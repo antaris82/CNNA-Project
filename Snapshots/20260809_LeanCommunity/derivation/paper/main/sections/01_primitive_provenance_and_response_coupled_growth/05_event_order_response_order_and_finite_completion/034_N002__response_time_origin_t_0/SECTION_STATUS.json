@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "034",
+  "canonical_node_label": "034 \u00b7 N002",
+  "stable_node_directory_name": "034_N002__response_time_origin_t_0",
+  "id": "N002",
+  "section_path": "1.5.2",
+  "derivation_order": 34,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

@@ -1,0 +1,49 @@
+% Canonical node 012 · T001; current section path 1.2.5.
+% Canonical owner: T001
+\cnnaNodeHeading{012}{T001}{Seed-neutrality theorem for the first birth}
+\cnnaNodePlacement{1.2.5}{D2}
+
+\paragraph*{Formal statement.}
+For a fixed admissible first slot $s_1$, fixed N001 normalization $N$, and any
+two seed values $\eta,\eta'\in\mathcal S_\star$, let
+$B(s_1,\eta,N)$ denote the C013 constructor.  T001 proves
+\begin{equation}
+  B(s_1,\eta,N)=B(s_1,\eta',N)
+  \quad\land\quad
+  \mathcal C\bigl(B(s_1,\eta,N)\bigr)=(1,1).
+  \label{eq:t001-seed-neutrality}
+\end{equation}
+
+\paragraph*{Proof mechanism.}
+The result is stronger than a post-hoc comparison of the unique A001 value:
+the C013 constructor does not use its seed argument when assembling the output.
+Consequently the state equality is definitional (\texttt{rfl}).  The second
+conjunct is inherited from C013's unit-conductance theorem.  No quotient,
+choice principle or extensional reconstruction is needed.
+
+\paragraph*{Executable and formal evidence.}
+Python creates two distinct runtime instances of the zero-field seed class,
+passes them through the same constructor and checks equality of the resulting
+birth records and their conductances.  Lean quantifies over arbitrary
+\texttt{GenesisSeed} values and proves the conjunction directly.  Thus the
+Python test exercises object-level erasure, while Lean supplies the universal
+state-equality theorem.
+
+\paragraph*{Necessity checks and scope.}
+If C013 stored the seed, used it to select an address, or used it to modify a
+conductance, the definitional equality proof would fail.  Merely knowing that
+A001 is a singleton would then require a separate rewrite by seed uniqueness;
+the current proof does not need such a rewrite.  T001 concerns only the
+exceptional first birth.  It does not establish conductance-unit independence,
+recurrent seed-neutrality, or any later response property.
+
+\paragraph*{Axiom profile, result and handoff.}
+The theorem is in the mathlib-free core and is proved by \texttt{rfl} plus the
+already-built C013 theorem; the current source contains no project axiom,
+\texttt{sorry}, \texttt{admit} or opaque proof declaration.  Verified edge
+\texttt{E012} certifies the seed-neutrality component of \texttt{C014}.
+
+\noindent\textbf{Primary code anchors.}
+Python wrapper and test: lines 15--21 and 16--27.  Lean seed-indexed constructor
+and theorem: lines 15--41.  The Supplement gives the four exact anchors and
+their hashes.

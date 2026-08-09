@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "091",
+  "canonical_node_label": "091 \u00b7 P028",
+  "stable_node_directory_name": "091_P028__provenance_metric_existence_and_cylinder_consistency",
+  "id": "P028",
+  "section_path": "5.2.1.1",
+  "derivation_order": 91,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

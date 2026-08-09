@@ -1,0 +1,94 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "P031",
+  "paper_section": "5.2.2.2",
+  "proof_owner": "C052",
+  "contract": {
+    "statement": "Prove the exhaustive edge taxonomy, square-summable majorant, and complete Hilbert-Schmidt tail estimate.",
+    "reuse_scope": "Reusable compactness/HS theorem.",
+    "granularity_rule": "One separately falsifiable and reusable closure gate; routine lemmas remain internal to the proof module."
+  },
+  "cross_layer": {
+    "semantic_identity_required": true,
+    "python_path_planned": "derivation/code/python/src/cnna/derivation/s05_raw_presymplectic_completion_and_quasifree_state/s02_provenance_hilbert_metric_and_normalized_skew/proofs/s02_p031__hilbert_schmidt_edge_majorant_tail.py",
+    "lean_path_planned": "derivation/code/lean/proofs/src/CNNAProofs/Derivation/S05_RawPresymplecticCompletionAndQuasifreeState/S02_ProvenanceHilbertMetricAndNormalizedSkew/S02_C052_HilbertSchmidtNormalizedSkewOperatorK/Proofs/S02_P031_HilbertSchmidtEdgeMajorantTail.lean",
+    "documentation_path_planned": "derivation/paper/main/sections/05_raw_presymplectic_completion_and_quasifree_state/02_provenance_hilbert_metric_and_normalized_skew/proofs/02_P031__hilbert_schmidt_edge_majorant_tail.tex"
+  },
+  "evidence": {
+    "audit_tier": "B",
+    "python": {
+      "status": "NOT_STARTED"
+    },
+    "lean": {
+      "status": "NOT_STARTED",
+      "mathlib_policy": "ALLOWED_ONLY_FOR_GENERIC_PROOF_INFRASTRUCTURE"
+    }
+  },
+  "workflow": {
+    "node_semantics": "PLANNED_EXPLICIT_PROOF_GATE",
+    "documentation": "STRUCTURAL_REGISTRY_ONLY",
+    "freeze_state": "NOT_STARTED",
+    "frozen_under_gate_version": null,
+    "documentation_v2": "NOT_STARTED"
+  },
+  "dependencies": [
+    "P030"
+  ],
+  "owner_import_direction": "P031 -> C052",
+  "node_number": "095",
+  "derivation_rank": 65,
+  "derivation_order": 95,
+  "section_hierarchy": {
+    "section_path": "5.2.2.2",
+    "root_title": "Presymplectic completion, Weyl system and quasifree state",
+    "group_title": "Provenance Hilbert metric and normalized skew",
+    "main_directory": "derivation/paper/main/sections/05_presymplectic_completion_weyl_system_and_quasifree_state/02_provenance_hilbert_metric_and_normalized_skew/093_C052__hilbert_schmidt_normalized_skew_operator_k/095_P031__hilbert_schmidt_edge_majorant_and_tail",
+    "supplement_directory": "derivation/supplement/sections/05_presymplectic_completion_weyl_system_and_quasifree_state/02_provenance_hilbert_metric_and_normalized_skew/093_C052__hilbert_schmidt_normalized_skew_operator_k/095_P031__hilbert_schmidt_edge_majorant_and_tail",
+    "main_artifact": "derivation/paper/main/sections/05_presymplectic_completion_weyl_system_and_quasifree_state/02_provenance_hilbert_metric_and_normalized_skew/093_C052__hilbert_schmidt_normalized_skew_operator_k/095_P031__hilbert_schmidt_edge_majorant_and_tail/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/05_presymplectic_completion_weyl_system_and_quasifree_state/02_provenance_hilbert_metric_and_normalized_skew/093_C052__hilbert_schmidt_normalized_skew_operator_k/095_P031__hilbert_schmidt_edge_majorant_and_tail/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after P030; registered hard handoff(s): supports_p031."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D2",
+    "tier_name": "Load-bearing theorem, proof owner, obstruction, or quarantine gate",
+    "tier_assignment_rule": "PROOF_THEOREM_OWNER_OBSTRUCTION_OR_QUARANTINE_ROLE",
+    "main_paper_depth": "THEOREM_AND_PROOF_OVERVIEW",
+    "supplement_depth": "FULL_PROOF_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "formal_statement",
+      "hypotheses",
+      "introduction_reason",
+      "proof_strategy",
+      "lemma_chain",
+      "formal_realization",
+      "counterexamples_or_necessity_checks",
+      "axiom_profile",
+      "result",
+      "remaining_limits",
+      "downstream_handoff",
+      "code_line_register"
+    ],
+    "countercheck_requirement": "NEGATIVE_CONTROL_COUNTEREXAMPLE_OR_HYPOTHESIS_NECESSITY",
+    "countercheck_status": "NOT_STARTED",
+    "v2_state": "NOT_STARTED",
+    "python_anchor_status": "NOT_REQUIRED_PROOF_NODE",
+    "lean_anchor_status": "PLANNED",
+    "code_anchors": [],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false
+  },
+  "canonical_identity": {
+    "node_number": "095",
+    "semantic_id": "P031",
+    "canonical_node_label": "095 · P031",
+    "stable_node_directory_name": "095_P031__hilbert_schmidt_edge_majorant_and_tail",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "implementation_status": {
+    "status": "NOT_STARTED",
+    "source": "workflow.freeze_state",
+    "node_semantics": "PLANNED_EXPLICIT_PROOF_GATE"
+  }
+}

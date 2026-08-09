@@ -1,0 +1,29 @@
+% Canonical node 024 · M003; current section path 1.3.9.
+% Canonical owner: M003
+\cnnaNodeHeading{024}{M003}{Canonical response-steering functional $\Sigma_b[R_n,s]$}
+\cnnaNodePlacement{1.3.9}{D2}
+Let $s=s_{n+1}$ be the canonical C004 slot and $p=p(s)$ its parent.  In the
+M001 boundary order, M003 extracts the exact parent-port diagonal aggregate
+\[
+ R_p(\Lambda,s)=\sum_{i:\,\partial_i=p}\Lambda_{ii}.
+\]
+The boundary is duplicate-free, so the address-extensional sum selects one
+port without a free coordinate.  With $C_\star=1$ and $\phi_A=\mathrm{id}$,
+\[
+ \boxed{\Sigma_b[\Lambda,s]=R_p(\Lambda,s).}
+\]
+The Core proves exact existence, value uniqueness, and invariance under C006
+representative replacement.  P001 supplies the reusable directed
+Schur--DtN/Kron theorem and canonical-cut positivity.  The closed proof
+interface \texttt{CanonicalM003Closure} obtains the parent coordinate
+internally and proves, for every canonical realization, response-domain
+inhabitance, existence of a response-steering pair, and strict positivity of
+every such pair.  No caller supplies a parent index or positivity hypothesis.
+
+This is the kernel-verified M003 handoff consumed by M004.  The four public closure declarations were compiled with Lean~4.31.0 and passed the registered axiom audit.
+
+% CNNA-OPEN-PROVENANCE-BEGIN M003
+\begin{cnnaInfoBox}{Open-provenance role: Response-to-event specialization}
+M003 converts the effective boundary response into the unique positive scalar used by the next event.  This is the response-coupling step of the current deterministic specialization, not a universal law for all open systems.
+\end{cnnaInfoBox}
+% CNNA-OPEN-PROVENANCE-END M003

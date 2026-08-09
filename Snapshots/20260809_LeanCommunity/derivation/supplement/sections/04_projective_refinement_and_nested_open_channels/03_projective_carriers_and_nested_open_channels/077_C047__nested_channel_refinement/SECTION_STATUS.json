@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "077",
+  "canonical_node_label": "077 \u00b7 C047",
+  "stable_node_directory_name": "077_C047__nested_channel_refinement",
+  "id": "C047",
+  "section_path": "4.3.3",
+  "derivation_order": 77,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "049",
+  "canonical_node_label": "049 \u00b7 P008",
+  "stable_node_directory_name": "049_P008__general_interior_solve_existence_and_uniqueness",
+  "id": "P008",
+  "section_path": "2.1.2.1",
+  "derivation_order": 49,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

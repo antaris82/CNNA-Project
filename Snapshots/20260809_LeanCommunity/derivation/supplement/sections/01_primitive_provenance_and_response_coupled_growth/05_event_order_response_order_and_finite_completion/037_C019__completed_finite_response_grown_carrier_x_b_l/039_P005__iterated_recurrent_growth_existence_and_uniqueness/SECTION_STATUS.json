@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "039",
+  "canonical_node_label": "039 \u00b7 P005",
+  "stable_node_directory_name": "039_P005__iterated_recurrent_growth_existence_and_uniqueness",
+  "id": "P005",
+  "section_path": "1.5.5.2",
+  "derivation_order": 39,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

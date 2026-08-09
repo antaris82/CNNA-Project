@@ -1,0 +1,69 @@
+% Canonical node 011 · C013; current section path 1.2.4.
+% Canonical owner: C013
+\cnnaNodeHeading{011}{C013}{First non-root provenance birth $v_1$}
+\cnnaNodePlacement{1.2.4}{D1}
+
+\paragraph*{Position and scientific role.}
+\texttt{C013} joins three independent bootstrap inputs: the structural first
+slot \texttt{C004A}, the singleton token \texttt{A001}, and the fixed unit
+normalization \texttt{N001}.  It is exceptional because before this step there
+is no nontrivial weighted relation and hence no Schur/DtN response from which a
+response-coupled birth could be computed.
+
+% CNNA-ARCHITECTURE-BEGIN C013
+\begin{cnnaInfoBox}{First nontrivial ComplemeNt Net}
+C013 realizes the first selected open slot and joins the newborn to the existing root by the first weighted directed relation.  This is the first nontrivial \emph{net} in CNNA.  Complementarity is relational and stage-dependent: root and newborn are not declared permanent opposites, but jointly form the first realized response context from which later relative cuts can be taken.
+\end{cnnaInfoBox}
+% CNNA-ARCHITECTURE-END C013
+
+\paragraph*{Mathematical contract and construction.}
+Let
+\begin{equation}
+  s_1=(\varepsilon,0,(0))
+\end{equation}
+be the C004A slot and assume its address lies in the finite cutoff.  C013
+constructs
+\begin{equation}
+  v_1=(0),\qquad \operatorname{parent}(v_1)=r=\varepsilon,
+\end{equation}
+with the two stored directed relations and conductances
+\begin{equation}
+  \mathcal R_1=
+  \bigl((r,v_1),(v_1,r)\bigr),
+  \qquad
+  \mathcal C_1=(1,1).
+  \label{eq:c013-first-birth}
+\end{equation}
+The output stores the slot, the normalization and, in Lean, the proof of cutoff
+admission.  The A001 token is consumed as a constructor argument but is not a
+field of the resulting state.
+
+\paragraph*{Invariants and boundary.}
+The newborn address is definitionally the C004A address, its syntactic parent
+is the root, and both conductances are inherited from N001.  No event index,
+birth time, geometry, response, steering value or later live-state update is
+created.  Since $|(0)|=1$, the construction exists for $L\ge1$ and is rejected
+at $L=0$.  The structural word $(0)$ continues to exist at $L=0$; only its
+promotion to a born carrier element fails.
+
+\paragraph*{Cross-layer realization and counterchecks.}
+Python checks exact predecessor types and executes the cutoff guard before
+constructing an immutable two-field birth object.  Lean moves the cutoff guard
+into the input proposition and stores its proof in the structure.  Both layers
+derive the endpoints, relation orientations and unit pair from the same
+predecessors.  The Python tests check the complete first relation, the $L=0$
+rejection and the absence of a retained seed field.  These checks exclude both
+an illicit response-driven bootstrap and hidden information transfer from A001.
+
+\paragraph*{Canonicity boundary, result and handoff.}
+For the fixed C004A slot and N001 normalization, the endpoint and conductance
+data are canonical.  C013 does not itself state the equality of outputs under
+two explicit seed arguments; \texttt{T001} owns that theorem.  Verified edge
+\texttt{E009} sends the construction to T001 and verified edge \texttt{E011}
+sends the completed birth to \texttt{C014}.
+
+\noindent\textbf{Primary code anchors.}
+Python construction: lines 23--63; focused tests: lines 17--33.  Lean structure,
+constructor, derived endpoints, relation pair, conductance pair and three
+invariant theorems: lines 22--77.  The Supplement records all 13 anchors and
+source hashes.

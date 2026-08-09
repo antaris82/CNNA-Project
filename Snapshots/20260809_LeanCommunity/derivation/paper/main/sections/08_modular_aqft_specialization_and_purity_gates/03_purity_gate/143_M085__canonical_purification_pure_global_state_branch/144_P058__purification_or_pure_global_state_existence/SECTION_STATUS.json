@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "144",
+  "canonical_node_label": "144 \u00b7 P058",
+  "stable_node_directory_name": "144_P058__purification_or_pure_global_state_existence",
+  "id": "P058",
+  "section_path": "8.3.2.1",
+  "derivation_order": 144,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

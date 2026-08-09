@@ -1,0 +1,391 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "C004A",
+  "paper_section": "1.2.1",
+  "contract": {
+    "statement": "First provenance slot s₁ is the root child of internal rank 0, address (0), and the minimum non-root address under C018; for L=0 the label exists but is outside the cutoff.",
+    "ownership_boundary": [
+      "selects the structural first slot only",
+      "does not perform the first birth C013"
+    ]
+  },
+  "cross_layer": {
+    "equivalence": "Python first root slot/rank 0 and Lean firstRank/address encode the same C018-minimal structural slot.",
+    "semantic_mismatch_known": false
+  },
+  "evidence": {
+    "audit_tier": "B",
+    "python": {
+      "status": "PASS_REPRODUCED",
+      "node_tests": 8,
+      "current_source_sha256": "b25b3e8a8c9f22c2611efe064c002af3690874c16a1a8ab51e68f6238dc70de8",
+      "current_test_sha256": "2958ae8e902dea945ed5032ffff08806f43005c64b04f642e341c44a37db2c11"
+    },
+    "lean": {
+      "status": "PASS_INDEPENDENTLY_VERIFIED",
+      "source_sha256": "06825bf222f6b92224aaafc06032e02897bf27f7ecc11d6c856fca7bd7066843",
+      "toolchain": "Lean 4.31.0 / 68218e876d2a38b1985b8590fff244a83c321783",
+      "policy_scan_matches": 0,
+      "exact_hash_built": true,
+      "verification_origin": "external_independent_audit_supplied_by_user",
+      "proof_audit": {
+        "status": "PASS",
+        "nontrivial_theorems": [
+          "FirstProvenanceSlot.address_before_distinct_root_sibling",
+          "FirstProvenanceSlot.address_eq_or_before_nonroot",
+          "FirstProvenanceSlot.address_before_distinct_nonroot"
+        ]
+      },
+      "current_prefix_free_source_sha256": "5e3fffc01b8d380d477130872955ba9348ae8c0af813e18d07801438ca8b9947"
+    }
+  },
+  "artifacts": {
+    "python_source": "72cfcf5c9d2ac11466cd9a73f6965c4673f132090de0a4e6c6eb2d3de37b7b62",
+    "python_test": "a75afc251b578b51fb9da24701ed24353f10cb5d5610f1757136054ea1e356ba",
+    "lean_source": "06825bf222f6b92224aaafc06032e02897bf27f7ecc11d6c856fca7bd7066843",
+    "math_prose": "f045b0b31749d1f292851b6cd03df22cdab767931cc2ed547c4823a8404e94ff",
+    "supplement_documentation": "f1a24f423ca4db5725e5a240725a6136024da27127b2e4ae18d72440b43b7393"
+  },
+  "workflow": {
+    "node_semantics": "CLOSED_CORE_DEFINED",
+    "documentation": "COMPLETE",
+    "freeze_state": "FROZEN_VERIFIED",
+    "frozen_under_gate_version": "cnna-per-node-freeze-v5",
+    "documentation_v2": "COMPLETE_V2"
+  },
+  "node_number": "008",
+  "derivation_rank": 4,
+  "derivation_order": 8,
+  "section_hierarchy": {
+    "section_path": "1.2.1",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Bootstrap of the first provenance relation",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/008_C004A__first_provenance_slot_s",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/008_C004A__first_provenance_slot_s",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/008_C004A__first_provenance_slot_s/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/02_bootstrap_of_the_first_provenance_relation/008_C004A__first_provenance_slot_s/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C003, C018; registered hard handoff(s): defines_first_provenance_slot, selects_first_slot."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D1",
+    "tier_name": "Structural construction",
+    "tier_assignment_rule": "STRUCTURAL_CONSTRUCTION_ROLE",
+    "main_paper_depth": "STRUCTURAL_EXPLANATION",
+    "supplement_depth": "DETAILED_CONSTRUCTION_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "mathematical_contract",
+      "introduction_reason",
+      "explicit_construction",
+      "invariants",
+      "canonicity_or_uniqueness",
+      "boundary_cases",
+      "python_lean_cross_layer",
+      "countercheck",
+      "result",
+      "downstream_handoff",
+      "code_anchors"
+    ],
+    "countercheck_requirement": "INVARIANT_EDGE_CASE_AND_CROSS_LAYER_CHECK",
+    "countercheck_status": "PASS",
+    "v2_state": "COMPLETE_V2",
+    "python_anchor_status": "RESOLVED",
+    "lean_anchor_status": "RESOLVED",
+    "code_anchors": [
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s02_bootstrap_of_the_first_relation/s01_c004a__first_provenance_slot_s1.py",
+        "symbol": "FirstProvenanceSlot",
+        "declaration_kind": "CLASS",
+        "start_line": 36,
+        "end_line": 82,
+        "source_sha256": "b25b3e8a8c9f22c2611efe064c002af3690874c16a1a8ab51e68f6238dc70de8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s02_bootstrap_of_the_first_relation/s01_c004a__first_provenance_slot_s1.py",
+        "symbol": "build_first_provenance_slot",
+        "declaration_kind": "FUNCTION",
+        "start_line": 85,
+        "end_line": 90,
+        "source_sha256": "b25b3e8a8c9f22c2611efe064c002af3690874c16a1a8ab51e68f6238dc70de8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s02_bootstrap_of_the_first_relation/s01_c004a__first_provenance_slot_s1.py",
+        "symbol": "build_canonical_first_provenance_slot",
+        "declaration_kind": "FUNCTION",
+        "start_line": 93,
+        "end_line": 99,
+        "source_sha256": "b25b3e8a8c9f22c2611efe064c002af3690874c16a1a8ab51e68f6238dc70de8",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s02_bootstrap_of_the_first_relation/test_s01_c004a__first_provenance_slot_s1.py",
+        "symbol": "TestFirstProvenanceSlot",
+        "declaration_kind": "CLASS",
+        "start_line": 19,
+        "end_line": 100,
+        "source_sha256": "2958ae8e902dea945ed5032ffff08806f43005c64b04f642e341c44a37db2c11",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S01_C004A_FirstProvenanceSlotS1.lean",
+        "symbol": "FirstProvenanceSlot",
+        "declaration_kind": "STRUCTURE",
+        "start_line": 23,
+        "end_line": 30,
+        "source_sha256": "5e3fffc01b8d380d477130872955ba9348ae8c0af813e18d07801438ca8b9947",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S01_C004A_FirstProvenanceSlotS1.lean",
+        "symbol": "fromPredecessors",
+        "declaration_kind": "DEF",
+        "start_line": 31,
+        "end_line": 39,
+        "source_sha256": "5e3fffc01b8d380d477130872955ba9348ae8c0af813e18d07801438ca8b9947",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S01_C004A_FirstProvenanceSlotS1.lean",
+        "symbol": "build",
+        "declaration_kind": "DEF",
+        "start_line": 40,
+        "end_line": 45,
+        "source_sha256": "5e3fffc01b8d380d477130872955ba9348ae8c0af813e18d07801438ca8b9947",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S01_C004A_FirstProvenanceSlotS1.lean",
+        "symbol": "firstRank",
+        "declaration_kind": "DEF",
+        "start_line": 46,
+        "end_line": 49,
+        "source_sha256": "5e3fffc01b8d380d477130872955ba9348ae8c0af813e18d07801438ca8b9947",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S01_C004A_FirstProvenanceSlotS1.lean",
+        "symbol": "parentAddress",
+        "declaration_kind": "DEF",
+        "start_line": 50,
+        "end_line": 53,
+        "source_sha256": "5e3fffc01b8d380d477130872955ba9348ae8c0af813e18d07801438ca8b9947",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S01_C004A_FirstProvenanceSlotS1.lean",
+        "symbol": "address",
+        "declaration_kind": "DEF",
+        "start_line": 54,
+        "end_line": 57,
+        "source_sha256": "5e3fffc01b8d380d477130872955ba9348ae8c0af813e18d07801438ca8b9947",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S01_C004A_FirstProvenanceSlotS1.lean",
+        "symbol": "firstRank_val",
+        "declaration_kind": "THEOREM",
+        "start_line": 58,
+        "end_line": 61,
+        "source_sha256": "5e3fffc01b8d380d477130872955ba9348ae8c0af813e18d07801438ca8b9947",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S01_C004A_FirstProvenanceSlotS1.lean",
+        "symbol": "parentAddress_root",
+        "declaration_kind": "THEOREM",
+        "start_line": 62,
+        "end_line": 66,
+        "source_sha256": "5e3fffc01b8d380d477130872955ba9348ae8c0af813e18d07801438ca8b9947",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S01_C004A_FirstProvenanceSlotS1.lean",
+        "symbol": "address_eq_snoc",
+        "declaration_kind": "THEOREM",
+        "start_line": 67,
+        "end_line": 71,
+        "source_sha256": "5e3fffc01b8d380d477130872955ba9348ae8c0af813e18d07801438ca8b9947",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S01_C004A_FirstProvenanceSlotS1.lean",
+        "symbol": "address_depth",
+        "declaration_kind": "THEOREM",
+        "start_line": 72,
+        "end_line": 76,
+        "source_sha256": "5e3fffc01b8d380d477130872955ba9348ae8c0af813e18d07801438ca8b9947",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S01_C004A_FirstProvenanceSlotS1.lean",
+        "symbol": "address_parent",
+        "declaration_kind": "THEOREM",
+        "start_line": 77,
+        "end_line": 88,
+        "source_sha256": "5e3fffc01b8d380d477130872955ba9348ae8c0af813e18d07801438ca8b9947",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S01_C004A_FirstProvenanceSlotS1.lean",
+        "symbol": "address_finalSlot",
+        "declaration_kind": "THEOREM",
+        "start_line": 89,
+        "end_line": 100,
+        "source_sha256": "5e3fffc01b8d380d477130872955ba9348ae8c0af813e18d07801438ca8b9947",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S01_C004A_FirstProvenanceSlotS1.lean",
+        "symbol": "firstRank_eq_or_before",
+        "declaration_kind": "THEOREM",
+        "start_line": 101,
+        "end_line": 112,
+        "source_sha256": "5e3fffc01b8d380d477130872955ba9348ae8c0af813e18d07801438ca8b9947",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S01_C004A_FirstProvenanceSlotS1.lean",
+        "symbol": "address_before_distinct_root_sibling",
+        "declaration_kind": "THEOREM",
+        "start_line": 113,
+        "end_line": 127,
+        "source_sha256": "5e3fffc01b8d380d477130872955ba9348ae8c0af813e18d07801438ca8b9947",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S01_C004A_FirstProvenanceSlotS1.lean",
+        "symbol": "address_eq_or_before_nonroot",
+        "declaration_kind": "THEOREM",
+        "start_line": 128,
+        "end_line": 156,
+        "source_sha256": "5e3fffc01b8d380d477130872955ba9348ae8c0af813e18d07801438ca8b9947",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S01_C004A_FirstProvenanceSlotS1.lean",
+        "symbol": "address_before_distinct_nonroot",
+        "declaration_kind": "THEOREM",
+        "start_line": 157,
+        "end_line": 168,
+        "source_sha256": "5e3fffc01b8d380d477130872955ba9348ae8c0af813e18d07801438ca8b9947",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S01_C004A_FirstProvenanceSlotS1.lean",
+        "symbol": "WithinCutoff",
+        "declaration_kind": "DEF",
+        "start_line": 169,
+        "end_line": 172,
+        "source_sha256": "5e3fffc01b8d380d477130872955ba9348ae8c0af813e18d07801438ca8b9947",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S01_C004A_FirstProvenanceSlotS1.lean",
+        "symbol": "withinCutoff_of_one_le",
+        "declaration_kind": "THEOREM",
+        "start_line": 173,
+        "end_line": 179,
+        "source_sha256": "5e3fffc01b8d380d477130872955ba9348ae8c0af813e18d07801438ca8b9947",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S02_BootstrapOfTheFirstRelation/S01_C004A_FirstProvenanceSlotS1.lean",
+        "symbol": "notWithinCutoff_at_zero",
+        "declaration_kind": "THEOREM",
+        "start_line": 180,
+        "end_line": 189,
+        "source_sha256": "5e3fffc01b8d380d477130872955ba9348ae8c0af813e18d07801438ca8b9947",
+        "resolution": "RESOLVED"
+      }
+    ],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false,
+    "completion_evidence": {
+      "main_artifact": "derivation/paper/main/sections/01_primitive_response_coupled_finite_provenance/02_bootstrap_of_the_first_relation/008_C004A__first_provenance_slot_s/SECTION.tex",
+      "supplement_artifact": "derivation/supplement/sections/01_primitive_response_coupled_finite_provenance/02_bootstrap_of_the_first_relation/008_C004A__first_provenance_slot_s/DOCUMENTATION.md",
+      "main_sha256": "f045b0b31749d1f292851b6cd03df22cdab767931cc2ed547c4823a8404e94ff",
+      "supplement_sha256": "f1a24f423ca4db5725e5a240725a6136024da27127b2e4ae18d72440b43b7393",
+      "code_anchor_count": 23,
+      "source_code_changed": false,
+      "documentation_complete": true,
+      "required_sections_present": true,
+      "countercheck_present": true,
+      "code_anchors_resolved": true,
+      "completed_on": "2026-08-04"
+    }
+  },
+  "canonical_identity": {
+    "node_number": "008",
+    "semantic_id": "C004A",
+    "canonical_node_label": "008 · C004A",
+    "stable_node_directory_name": "008_C004A__first_provenance_slot_s",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "documentation_audit": {
+    "status": "PASS",
+    "verified_scope": [
+      "coherent C003/C018 predecessor join",
+      "root parent, zero rank and address (0)",
+      "minimum non-root address under C018",
+      "exact L=0 versus L>=1 cutoff boundary",
+      "no birth or physical payload"
+    ],
+    "source_code_modified": false
+  },
+  "cnna_architecture_context": {
+    "concept_id": "CNNA-00",
+    "name": "ComplemeNt Net Architecture",
+    "role": "First selected complement slot: the least unrealized child position is selected without yet creating a node or relation.",
+    "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+    "claim_guard": "Interpretive and organizational context only; mathematical force remains exactly the registered node contract and evidence status."
+  }
+}

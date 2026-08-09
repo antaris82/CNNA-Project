@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "115",
+  "canonical_node_label": "115 \u00b7 C060",
+  "stable_node_directory_name": "115_C060__exact_complement_split_chain",
+  "id": "C060",
+  "section_path": "6.2.2",
+  "derivation_order": 115,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "125",
+  "canonical_node_label": "125 \u00b7 P048",
+  "stable_node_directory_name": "125_P048__geometry_selector_uniqueness_equivariance_and_naturality",
+  "id": "P048",
+  "section_path": "7.1.2.2",
+  "derivation_order": 125,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

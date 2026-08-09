@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "110",
+  "canonical_node_label": "110 \u00b7 P040",
+  "stable_node_directory_name": "110_P040__local_factoriality_and_center_triviality",
+  "id": "P040",
+  "section_path": "6.1.2.1",
+  "derivation_order": 110,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "088",
+  "canonical_node_label": "088 \u00b7 C051",
+  "stable_node_directory_name": "088_C051__algebraic_weyl_direct_system",
+  "id": "C051",
+  "section_path": "5.1.2",
+  "derivation_order": 88,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

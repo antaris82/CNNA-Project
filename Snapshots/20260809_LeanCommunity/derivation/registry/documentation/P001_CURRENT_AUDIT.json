@@ -1,0 +1,18 @@
+{
+  "schema": "cnna.p001-current-audit.v1",
+  "status": "PASS",
+  "date": "2026-08-06",
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "proof_modules": 13,
+  "kernel_verified_declarations": 142,
+  "axiom_profile_counts": {
+    "choice_propext_quot": 117,
+    "propext_quot_only": 23,
+    "axiom_free": 2
+  },
+  "code_anchors": 179,
+  "reference_usage_rows": 26,
+  "independent_cut_reuse": "KERNEL_VERIFIED",
+  "exact_source_evidence": "MATCH",
+  "errors": []
+}

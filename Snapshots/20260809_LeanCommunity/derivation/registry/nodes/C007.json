@@ -1,0 +1,532 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "C007",
+  "paper_section": "1.3.6",
+  "contract": {
+    "statement": "For a recurrent C005 state X_n and its unique C004 next slot s_{n+1}, C007 orders the complete born carrier by the canonical M001 boundary followed by interior, realizes every stored directed conductance as the fixed source/out-degree matrix K[u,u]=sum_v c(u,v), K[u,v]=-c(u,v), and on the exact M002 domain defines R_n(s_{n+1}) as the unique C006 Schur/DtN response.",
+    "ownership_boundary": [
+      "consumes the current C005 directed conductance list without symmetrization or averaging",
+      "uses the C004 next slot and exactly the canonical M001 boundary/interior coordinate order",
+      "fixes row=source and column=target, with outgoing conductance on the diagonal and negative ordered-pair conductance off diagonal",
+      "uses the entire already-born carrier, so no external port, grounded load, sampling cap, or geometric radius is introduced",
+      "requires exactly M002 domain membership and delegates elimination and response uniqueness to C006",
+      "excludes the unborn next child from boundary, interior, state matrix, and response coordinates",
+      "does not choose a steering functional, response transform, directed birth bias, or state update; those belong to M003/C015/M004",
+      "does not replace exact unique solvability by tolerance, conditioning, regularization, or pseudoinverse"
+    ]
+  },
+  "cross_layer": {
+    "equivalence": "Python assembles normalized Fraction blocks from every C005 directed conductance in the canonical M001 boundary-first/interior-second order and computes C006 after the exact M002 domain check. Lean defines the same source/out-degree entries as Path-B exact fraction values, realizes the same ordered blocks, uses the same M002 domain, and identifies response outputs modulo MatrixSameValue. The C004 slot, conductance direction, matrix order, partiality, and pre-birth child exclusion are identical.",
+    "semantic_mismatch_known": false,
+    "semantic_identity_verified": true,
+    "identity_kind": "PATH_B_EXACT_C005_SOURCE_OUTDEGREE_M001_ORDERED_M002_DOMAIN_RESPONSE_IDENTITY",
+    "identity_evidence": [
+      "Exact canonical C007 Lean source SHA-256 d10bf7c1b0bd1568d336262e0cab8159221b36030fbbb5f45bc92419ac80ffe6 rebuilt successfully in the user local 22-job root build against the exact Path-B C006 source.",
+      "validate_lean_build_coverage.py --node C007 passed for the exact hash, canonical module/.olean, named Tier-B declarations, and forbidden-axiom gate.",
+      "Python 77/77 passes, including the exact C014→C005 unit bootstrap and 99 reachable pre-birth prefixes with identical M001 order, directed entries, domain behavior, row-sum invariant, scaling, and unborn-child exclusion.",
+      "An independent exact rational Gaussian-elimination implementation compared 140 states and found 140 identical response values with zero deviations.",
+      "Response uniqueness and output normalization are term-level value statements via MatrixSameValue; structural equality of raw numerator/denominator encodings is not required."
+    ]
+  },
+  "evidence": {
+    "audit_tier": "B",
+    "python": {
+      "status": "PASS_INDEPENDENTLY_VERIFIED",
+      "node_tests": 5,
+      "full_suite_tests": 77,
+      "substantive_probe": "Exact C014→C005 unit bootstrap plus 99 reachable prefixes over (b,L) in {(2,2),(2,3),(3,2),(4,1),(2,4),(3,3)}: exact current-carrier coverage and M001 order, child absent pre-birth, state blocks M002-admissible, directed response rows sum to zero, asymmetric entries preserved, and full conductance scaling exact; zero deviations.",
+      "verification_origin": "assistant_full_suite_plus_independent_claude_140_state_exact_rational_crosscheck"
+    },
+    "lean": {
+      "status": "PASS_INDEPENDENTLY_VERIFIED",
+      "source_sha256": "d10bf7c1b0bd1568d336262e0cab8159221b36030fbbb5f45bc92419ac80ffe6",
+      "toolchain": "Lean 4.31.0 (project pin)",
+      "policy_scan_matches": 0,
+      "exact_hash_built": true,
+      "verification_origin": "user_local_root_build_plus_active_v6_exact_module_gate_and_independent_claude_semantic_audit",
+      "proof_audit": {
+        "status": "PASS",
+        "nontrivial_theorems": [
+          "InterBirthDirectedResponse.directedMatrixEntry_self",
+          "InterBirthDirectedResponse.directedMatrixEntry_of_ne",
+          "InterBirthDirectedResponse.inResponseDomain_iff_m002",
+          "InterBirthDirectedResponse.response_exists",
+          "InterBirthDirectedResponse.response_unique",
+          "InterBirthDirectedResponse.response_of_sameValue",
+          "InterBirthDirectedResponse.unborn_child_not_in_boundary",
+          "InterBirthDirectedResponse.unborn_child_not_in_interior"
+        ],
+        "axiom_diagnostic_declarations": [
+          "InterBirthDirectedResponse.outgoingSum",
+          "InterBirthDirectedResponse.orderedPairSum",
+          "InterBirthDirectedResponse.directedMatrixEntry",
+          "InterBirthDirectedResponse.rawKBB",
+          "InterBirthDirectedResponse.rawKBI",
+          "InterBirthDirectedResponse.rawKIB",
+          "InterBirthDirectedResponse.rawKII",
+          "InterBirthDirectedResponse.RealizesStateDirectedBlocks",
+          "InterBirthDirectedResponse.IsInterBirthDirectedResponse",
+          "InterBirthDirectedResponse.InResponseDomain",
+          "InterBirthDirectedResponse.response_unique",
+          "InterBirthDirectedResponse.response_of_sameValue"
+        ],
+        "verification_origin": "user_local_v6_exact_module_axiom_gate_plus_independent_semantic_review",
+        "forbidden_axioms": {
+          "Classical.choice": 0,
+          "sorryAx": 0
+        }
+      },
+      "build_coverage_verified": true,
+      "build_evidence": {
+        "source_sha256": "d10bf7c1b0bd1568d336262e0cab8159221b36030fbbb5f45bc92419ac80ffe6",
+        "root_build_reported_green": true,
+        "root_build_jobs": 22,
+        "project_modules_root_imported": 19,
+        "project_olean_count_reported": 20,
+        "active_exact_module_build_gate": "PASS",
+        "source_hash_stable_across_active_build": true,
+        "canonical_olean_required_and_observed_by_gate": true,
+        "root_import_coverage_required_by_gate": true
+      },
+      "negative_history": [
+        {
+          "source_sha256": "8e688c0036efede3f1dc3d7ac1060b6e223df61d48d78136accc81695bdeccf1",
+          "finding": "built and gate-clean for previous API; independent audit found output normalization bridge present only in prose and upstream arithmetic bridge incomplete"
+        }
+      ],
+      "current_dependency_revalidation": {
+        "upstream_node": "C006",
+        "upstream_source_sha256": "538a1a5e927abe54bf8802cd643c73638c2cf129405f21857b6d4ed66ee4548f",
+        "status": "PASS"
+      }
+    }
+  },
+  "artifacts": {
+    "python_source": "9975a54c59b3385a416b6bb2f3df08135dd1f8caa0433ba809c65b1ba8462e0c",
+    "python_test": "ddf93cee71f4da4c82ea4b17776e55ba63fb83b35c3ce9c8b3be68c5434f5426",
+    "lean_source": "18ef5818a50460d6866847274cd196f581f7b7d15c8da940287e43b95a49eaaf",
+    "math_prose": "33568a3e8aa0228550e849fede8215ddd4d38eacfb15fa6b886e510cc6f45303",
+    "supplement_documentation": "fa79f783562ed85d0ba4692c5ba72c7458516abaca32321b384d9f9b510dc6cd"
+  },
+  "workflow": {
+    "node_semantics": "CLOSED_PATH_B_EXACT_STATE_DIRECTED_PREBIRTH_RESPONSE",
+    "documentation": "COMPLETE",
+    "freeze_state": "FROZEN_VERIFIED",
+    "frozen_under_gate_version": "cnna-per-node-freeze-v6",
+    "documentation_v2": "COMPLETE_V2"
+  },
+  "node_number": "021",
+  "derivation_rank": 14,
+  "derivation_order": 21,
+  "section_hierarchy": {
+    "section_path": "1.3.6",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Canonical cut, complement elimination and birth steering",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/021_C007__inter_birth_directed_response_r_s",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/021_C007__inter_birth_directed_response_r_s",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/021_C007__inter_birth_directed_response_r_s/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/03_canonical_cut_complement_elimination_and_birth_steering/021_C007__inter_birth_directed_response_r_s/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C006, M001, M002, C005; registered hard handoff(s): computes_interbirth_response, supplies_birth_cut, certifies_response_domain, response_of_existing_network."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D1",
+    "tier_name": "Structural construction",
+    "tier_assignment_rule": "STRUCTURAL_CONSTRUCTION_ROLE",
+    "main_paper_depth": "STRUCTURAL_EXPLANATION",
+    "supplement_depth": "DETAILED_CONSTRUCTION_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "mathematical_contract",
+      "introduction_reason",
+      "explicit_construction",
+      "invariants",
+      "canonicity_or_uniqueness",
+      "boundary_cases",
+      "python_lean_cross_layer",
+      "countercheck",
+      "result",
+      "downstream_handoff",
+      "code_anchors"
+    ],
+    "countercheck_requirement": "INVARIANT_EDGE_CASE_AND_CROSS_LAYER_CHECK",
+    "countercheck_status": "PASS",
+    "v2_state": "COMPLETE_V2",
+    "python_anchor_status": "RESOLVED",
+    "lean_anchor_status": "RESOLVED",
+    "code_anchors": [
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s06_c007__inter_birth_directed_response_rn_snplus1.py",
+        "symbol": "_zero_matrix",
+        "declaration_kind": "FUNCTION",
+        "start_line": 52,
+        "end_line": 53,
+        "source_sha256": "9975a54c59b3385a416b6bb2f3df08135dd1f8caa0433ba809c65b1ba8462e0c",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s06_c007__inter_birth_directed_response_rn_snplus1.py",
+        "symbol": "_freeze_block",
+        "declaration_kind": "FUNCTION",
+        "start_line": 56,
+        "end_line": 66,
+        "source_sha256": "9975a54c59b3385a416b6bb2f3df08135dd1f8caa0433ba809c65b1ba8462e0c",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s06_c007__inter_birth_directed_response_rn_snplus1.py",
+        "symbol": "StateDirectedSchurRealization",
+        "declaration_kind": "CLASS",
+        "start_line": 70,
+        "end_line": 96,
+        "source_sha256": "9975a54c59b3385a416b6bb2f3df08135dd1f8caa0433ba809c65b1ba8462e0c",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s06_c007__inter_birth_directed_response_rn_snplus1.py",
+        "symbol": "InterBirthDirectedResponse",
+        "declaration_kind": "CLASS",
+        "start_line": 100,
+        "end_line": 122,
+        "source_sha256": "9975a54c59b3385a416b6bb2f3df08135dd1f8caa0433ba809c65b1ba8462e0c",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s06_c007__inter_birth_directed_response_rn_snplus1.py",
+        "symbol": "state_directed_schur_realization",
+        "declaration_kind": "FUNCTION",
+        "start_line": 125,
+        "end_line": 166,
+        "source_sha256": "9975a54c59b3385a416b6bb2f3df08135dd1f8caa0433ba809c65b1ba8462e0c",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/s06_c007__inter_birth_directed_response_rn_snplus1.py",
+        "symbol": "inter_birth_directed_response",
+        "declaration_kind": "FUNCTION",
+        "start_line": 169,
+        "end_line": 190,
+        "source_sha256": "9975a54c59b3385a416b6bb2f3df08135dd1f8caa0433ba809c65b1ba8462e0c",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/test_s06_c007__inter_birth_directed_response_rn_snplus1.py",
+        "symbol": "_bootstrap_state",
+        "declaration_kind": "FUNCTION",
+        "start_line": 31,
+        "end_line": 37,
+        "source_sha256": "ddf93cee71f4da4c82ea4b17776e55ba63fb83b35c3ce9c8b3be68c5434f5426",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/test_s06_c007__inter_birth_directed_response_rn_snplus1.py",
+        "symbol": "_state",
+        "declaration_kind": "FUNCTION",
+        "start_line": 40,
+        "end_line": 55,
+        "source_sha256": "ddf93cee71f4da4c82ea4b17776e55ba63fb83b35c3ce9c8b3be68c5434f5426",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s03_recurrent_pre_birth_measurement_and_steering/test_s06_c007__inter_birth_directed_response_rn_snplus1.py",
+        "symbol": "TestInterBirthDirectedResponse",
+        "declaration_kind": "CLASS",
+        "start_line": 58,
+        "end_line": 134,
+        "source_sha256": "ddf93cee71f4da4c82ea4b17776e55ba63fb83b35c3ce9c8b3be68c5434f5426",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S06_C007_InterBirthDirectedResponseRnSnplus1.lean",
+        "symbol": "outgoingSum",
+        "declaration_kind": "DEF",
+        "start_line": 40,
+        "end_line": 52,
+        "source_sha256": "18ef5818a50460d6866847274cd196f581f7b7d15c8da940287e43b95a49eaaf",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S06_C007_InterBirthDirectedResponseRnSnplus1.lean",
+        "symbol": "orderedPairSum",
+        "declaration_kind": "DEF",
+        "start_line": 53,
+        "end_line": 65,
+        "source_sha256": "18ef5818a50460d6866847274cd196f581f7b7d15c8da940287e43b95a49eaaf",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S06_C007_InterBirthDirectedResponseRnSnplus1.lean",
+        "symbol": "directedMatrixEntry",
+        "declaration_kind": "DEF",
+        "start_line": 66,
+        "end_line": 74,
+        "source_sha256": "18ef5818a50460d6866847274cd196f581f7b7d15c8da940287e43b95a49eaaf",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S06_C007_InterBirthDirectedResponseRnSnplus1.lean",
+        "symbol": "directedMatrixEntry_self",
+        "declaration_kind": "THEOREM",
+        "start_line": 75,
+        "end_line": 82,
+        "source_sha256": "18ef5818a50460d6866847274cd196f581f7b7d15c8da940287e43b95a49eaaf",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S06_C007_InterBirthDirectedResponseRnSnplus1.lean",
+        "symbol": "directedMatrixEntry_of_ne",
+        "declaration_kind": "THEOREM",
+        "start_line": 83,
+        "end_line": 93,
+        "source_sha256": "18ef5818a50460d6866847274cd196f581f7b7d15c8da940287e43b95a49eaaf",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S06_C007_InterBirthDirectedResponseRnSnplus1.lean",
+        "symbol": "boundaryAddress",
+        "declaration_kind": "DEF",
+        "start_line": 94,
+        "end_line": 98,
+        "source_sha256": "18ef5818a50460d6866847274cd196f581f7b7d15c8da940287e43b95a49eaaf",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S06_C007_InterBirthDirectedResponseRnSnplus1.lean",
+        "symbol": "interiorAddress",
+        "declaration_kind": "DEF",
+        "start_line": 99,
+        "end_line": 103,
+        "source_sha256": "18ef5818a50460d6866847274cd196f581f7b7d15c8da940287e43b95a49eaaf",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S06_C007_InterBirthDirectedResponseRnSnplus1.lean",
+        "symbol": "rawKBB",
+        "declaration_kind": "DEF",
+        "start_line": 104,
+        "end_line": 110,
+        "source_sha256": "18ef5818a50460d6866847274cd196f581f7b7d15c8da940287e43b95a49eaaf",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S06_C007_InterBirthDirectedResponseRnSnplus1.lean",
+        "symbol": "rawKBI",
+        "declaration_kind": "DEF",
+        "start_line": 111,
+        "end_line": 117,
+        "source_sha256": "18ef5818a50460d6866847274cd196f581f7b7d15c8da940287e43b95a49eaaf",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S06_C007_InterBirthDirectedResponseRnSnplus1.lean",
+        "symbol": "rawKIB",
+        "declaration_kind": "DEF",
+        "start_line": 118,
+        "end_line": 124,
+        "source_sha256": "18ef5818a50460d6866847274cd196f581f7b7d15c8da940287e43b95a49eaaf",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S06_C007_InterBirthDirectedResponseRnSnplus1.lean",
+        "symbol": "rawKII",
+        "declaration_kind": "DEF",
+        "start_line": 125,
+        "end_line": 132,
+        "source_sha256": "18ef5818a50460d6866847274cd196f581f7b7d15c8da940287e43b95a49eaaf",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S06_C007_InterBirthDirectedResponseRnSnplus1.lean",
+        "symbol": "RealizesStateDirectedBlocks",
+        "declaration_kind": "DEF",
+        "start_line": 133,
+        "end_line": 142,
+        "source_sha256": "18ef5818a50460d6866847274cd196f581f7b7d15c8da940287e43b95a49eaaf",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S06_C007_InterBirthDirectedResponseRnSnplus1.lean",
+        "symbol": "StateDirectedBlockRealization",
+        "declaration_kind": "STRUCTURE",
+        "start_line": 143,
+        "end_line": 148,
+        "source_sha256": "18ef5818a50460d6866847274cd196f581f7b7d15c8da940287e43b95a49eaaf",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S06_C007_InterBirthDirectedResponseRnSnplus1.lean",
+        "symbol": "IsInterBirthDirectedResponse",
+        "declaration_kind": "DEF",
+        "start_line": 149,
+        "end_line": 155,
+        "source_sha256": "18ef5818a50460d6866847274cd196f581f7b7d15c8da940287e43b95a49eaaf",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S06_C007_InterBirthDirectedResponseRnSnplus1.lean",
+        "symbol": "InResponseDomain",
+        "declaration_kind": "DEF",
+        "start_line": 156,
+        "end_line": 162,
+        "source_sha256": "18ef5818a50460d6866847274cd196f581f7b7d15c8da940287e43b95a49eaaf",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S06_C007_InterBirthDirectedResponseRnSnplus1.lean",
+        "symbol": "inResponseDomain_iff_m002",
+        "declaration_kind": "THEOREM",
+        "start_line": 163,
+        "end_line": 170,
+        "source_sha256": "18ef5818a50460d6866847274cd196f581f7b7d15c8da940287e43b95a49eaaf",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S06_C007_InterBirthDirectedResponseRnSnplus1.lean",
+        "symbol": "response_exists",
+        "declaration_kind": "THEOREM",
+        "start_line": 171,
+        "end_line": 182,
+        "source_sha256": "18ef5818a50460d6866847274cd196f581f7b7d15c8da940287e43b95a49eaaf",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S06_C007_InterBirthDirectedResponseRnSnplus1.lean",
+        "symbol": "response_unique",
+        "declaration_kind": "THEOREM",
+        "start_line": 183,
+        "end_line": 196,
+        "source_sha256": "18ef5818a50460d6866847274cd196f581f7b7d15c8da940287e43b95a49eaaf",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S06_C007_InterBirthDirectedResponseRnSnplus1.lean",
+        "symbol": "response_of_sameValue",
+        "declaration_kind": "THEOREM",
+        "start_line": 197,
+        "end_line": 208,
+        "source_sha256": "18ef5818a50460d6866847274cd196f581f7b7d15c8da940287e43b95a49eaaf",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S06_C007_InterBirthDirectedResponseRnSnplus1.lean",
+        "symbol": "unborn_child_not_in_boundary",
+        "declaration_kind": "THEOREM",
+        "start_line": 209,
+        "end_line": 213,
+        "source_sha256": "18ef5818a50460d6866847274cd196f581f7b7d15c8da940287e43b95a49eaaf",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S03_RecurrentPreBirthMeasurementAndSteering/S06_C007_InterBirthDirectedResponseRnSnplus1.lean",
+        "symbol": "unborn_child_not_in_interior",
+        "declaration_kind": "THEOREM",
+        "start_line": 214,
+        "end_line": 220,
+        "source_sha256": "18ef5818a50460d6866847274cd196f581f7b7d15c8da940287e43b95a49eaaf",
+        "resolution": "RESOLVED"
+      }
+    ],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false,
+    "completion_evidence": {
+      "main_artifact": "derivation/paper/main/sections/01_primitive_response_coupled_finite_provenance/03_recurrent_pre_birth_measurement_and_steering/021_C007__inter_birth_directed_response_r_s/SECTION.tex",
+      "supplement_artifact": "derivation/supplement/sections/01_primitive_response_coupled_finite_provenance/03_recurrent_pre_birth_measurement_and_steering/021_C007__inter_birth_directed_response_r_s/DOCUMENTATION.md",
+      "main_sha256": "33568a3e8aa0228550e849fede8215ddd4d38eacfb15fa6b886e510cc6f45303",
+      "supplement_sha256": "fa79f783562ed85d0ba4692c5ba72c7458516abaca32321b384d9f9b510dc6cd",
+      "code_anchor_count": 30,
+      "source_code_changed": false,
+      "documentation_complete": true,
+      "required_sections_present": true,
+      "countercheck_present": true,
+      "code_anchors_resolved": true,
+      "completed_on": "2026-08-04"
+    }
+  },
+  "canonical_identity": {
+    "node_number": "021",
+    "semantic_id": "C007",
+    "canonical_node_label": "021 · C007",
+    "stable_node_directory_name": "021_C007__inter_birth_directed_response_r_s",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "open_provenance_context": {
+    "framework": "GENERALIZED_OPEN_PROVENANCE_SYSTEMS",
+    "concept_ids": [
+      "OPS-03"
+    ],
+    "roles": [
+      "Effective complement elimination"
+    ],
+    "integration_status": [
+      "NODEWISE_CURRENT_OR_PLANNED"
+    ],
+    "claim_guard": "Interpretive specialization map only. Mathematical force is exactly the node contract and its registered evidence; no universal open-system theorem is inferred."
+  },
+  "cnna_architecture_context": {
+    "concept_id": "CNNA-00",
+    "name": "ComplemeNt Net Architecture",
+    "role": "Effective complement response: exposes the directed boundary response produced after interior elimination.",
+    "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+    "claim_guard": "Interpretive and organizational context only; mathematical force remains exactly the registered node contract and evidence status."
+  }
+}

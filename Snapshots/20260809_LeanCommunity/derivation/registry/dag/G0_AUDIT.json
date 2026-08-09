@@ -1,0 +1,29 @@
+{
+  "schema": "cnna.g0-canonical-dag-audit.v1",
+  "status": "PASS",
+  "nodes": 145,
+  "edges": 401,
+  "hard_edges": 342,
+  "proof_certification_edges": 59,
+  "graph_roots": [
+    "I001",
+    "I002",
+    "C001",
+    "A001",
+    "N001",
+    "C006",
+    "O001",
+    "C015",
+    "N002",
+    "O002"
+  ],
+  "top_visible_roots": [
+    "I001",
+    "I002",
+    "C001"
+  ],
+  "weak_components": 1,
+  "canonical_id_format": "PREFIX_FREE",
+  "node_label_format": "NNN · ID",
+  "errors": []
+}

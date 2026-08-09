@@ -1,0 +1,94 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "C047",
+  "paper_section": "4.3.3",
+  "contract": {
+    "statement": "Construct nested refinement maps between admitted channel objects and prove their compatibility with the common-ambient transport."
+  },
+  "workflow": {
+    "node_semantics": "CORE_REQUIRES_PROOF",
+    "documentation": "NOT_STARTED",
+    "freeze_state": "NOT_STARTED",
+    "frozen_under_gate_version": null,
+    "documentation_v2": "NOT_STARTED"
+  },
+  "dependencies": [
+    "C040",
+    "C041",
+    "C045"
+  ],
+  "node_number": "077",
+  "derivation_rank": 51,
+  "derivation_order": 77,
+  "section_hierarchy": {
+    "section_path": "4.3.3",
+    "root_title": "Projective refinement and nested open channels",
+    "group_title": "Projective carriers and nested open channels",
+    "main_directory": "derivation/paper/main/sections/04_projective_refinement_and_nested_open_channels/03_projective_carriers_and_nested_open_channels/077_C047__nested_channel_refinement",
+    "supplement_directory": "derivation/supplement/sections/04_projective_refinement_and_nested_open_channels/03_projective_carriers_and_nested_open_channels/077_C047__nested_channel_refinement",
+    "main_artifact": "derivation/paper/main/sections/04_projective_refinement_and_nested_open_channels/03_projective_carriers_and_nested_open_channels/077_C047__nested_channel_refinement/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/04_projective_refinement_and_nested_open_channels/03_projective_carriers_and_nested_open_channels/077_C047__nested_channel_refinement/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C040, C041, C045; registered hard handoff(s): supplies_ancestor_carrier, supplies_exact_factorization, supplies_common_ambient_transport."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D2",
+    "tier_name": "Load-bearing theorem, proof owner, obstruction, or quarantine gate",
+    "tier_assignment_rule": "PROOF_THEOREM_OWNER_OBSTRUCTION_OR_QUARANTINE_ROLE",
+    "main_paper_depth": "THEOREM_AND_PROOF_OVERVIEW",
+    "supplement_depth": "FULL_PROOF_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "formal_statement",
+      "hypotheses",
+      "introduction_reason",
+      "proof_strategy",
+      "lemma_chain",
+      "formal_realization",
+      "counterexamples_or_necessity_checks",
+      "axiom_profile",
+      "result",
+      "remaining_limits",
+      "downstream_handoff",
+      "code_line_register"
+    ],
+    "countercheck_requirement": "NEGATIVE_CONTROL_COUNTEREXAMPLE_OR_HYPOTHESIS_NECESSITY",
+    "countercheck_status": "NOT_STARTED",
+    "v2_state": "NOT_STARTED",
+    "python_anchor_status": "PLANNED",
+    "lean_anchor_status": "PLANNED",
+    "code_anchors": [],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false
+  },
+  "canonical_identity": {
+    "node_number": "077",
+    "semantic_id": "C047",
+    "canonical_node_label": "077 · C047",
+    "stable_node_directory_name": "077_C047__nested_channel_refinement",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "open_provenance_context": {
+    "framework": "GENERALIZED_OPEN_PROVENANCE_SYSTEMS",
+    "concept_ids": [
+      "OPS-06",
+      "OPS-QM-01"
+    ],
+    "roles": [
+      "Nested cuts, refinement and cocycle",
+      "Finite provenance-derived POVM migration"
+    ],
+    "integration_status": [
+      "DOWNSTREAM_COHERENCE_PROGRAM",
+      "LEGACY_MIGRATION_TARGET_NOT_CURRENT_THEOREM"
+    ],
+    "claim_guard": "Interpretive specialization map only. Mathematical force is exactly the node contract and its registered evidence; no universal open-system theorem is inferred."
+  },
+  "cnna_architecture_context": {
+    "concept_id": "CNNA-00",
+    "name": "ComplemeNt Net Architecture",
+    "role": "Refinement channel: transfers effective descriptions between nested cuts.",
+    "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+    "claim_guard": "Interpretive and organizational context only; mathematical force remains exactly the registered node contract and evidence status."
+  }
+}

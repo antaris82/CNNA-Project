@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "052",
+  "canonical_node_label": "052 \u00b7 C022",
+  "stable_node_directory_name": "052_C022__schur_nesting_common_ambient_naturality",
+  "id": "C022",
+  "section_path": "2.1.3",
+  "derivation_order": 52,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

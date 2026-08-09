@@ -1,0 +1,17 @@
+% Include this file in the eventual paper preamble.
+\usepackage[most]{tcolorbox}
+\newtcolorbox{cnnaInfoBox}[2][]{%
+  enhanced,
+  breakable,
+  colback=black!2,
+  colframe=black!55,
+  boxrule=0.55pt,
+  arc=1mm,
+  left=1.5mm,
+  right=1.5mm,
+  top=1mm,
+  bottom=1mm,
+  fonttitle=\bfseries,
+  title={#2},
+  #1
+}

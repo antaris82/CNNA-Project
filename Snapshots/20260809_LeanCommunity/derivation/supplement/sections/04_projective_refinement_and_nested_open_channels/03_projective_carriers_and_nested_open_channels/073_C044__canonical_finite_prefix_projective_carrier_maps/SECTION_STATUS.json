@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "073",
+  "canonical_node_label": "073 \u00b7 C044",
+  "stable_node_directory_name": "073_C044__canonical_finite_prefix_projective_carrier_maps",
+  "id": "C044",
+  "section_path": "4.3.1",
+  "derivation_order": 73,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "062",
+  "canonical_node_label": "062 \u00b7 C033",
+  "stable_node_directory_name": "062_C033__response_generated_finite_algebraic_closure",
+  "id": "C033",
+  "section_path": "3.3.1",
+  "derivation_order": 62,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

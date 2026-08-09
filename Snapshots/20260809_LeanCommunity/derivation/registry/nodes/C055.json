@@ -1,0 +1,71 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "C055",
+  "paper_section": "5.4.1",
+  "contract": {
+    "statement": "Canonical local restriction/completion once G and the cone class are admitted."
+  },
+  "workflow": {
+    "node_semantics": "CORE_BLOCKED",
+    "documentation": "NOT_STARTED",
+    "freeze_state": "NOT_STARTED",
+    "frozen_under_gate_version": null,
+    "documentation_v2": "NOT_STARTED"
+  },
+  "dependencies": [
+    "C053",
+    "M050",
+    "C019"
+  ],
+  "node_number": "101",
+  "derivation_rank": 67,
+  "derivation_order": 101,
+  "section_hierarchy": {
+    "section_path": "5.4.1",
+    "root_title": "Presymplectic completion, Weyl system and quasifree state",
+    "group_title": "Local cone completion and injectivity",
+    "main_directory": "derivation/paper/main/sections/05_presymplectic_completion_weyl_system_and_quasifree_state/04_local_cone_completion_and_injectivity/101_C055__local_descendant_cone_hilbert_completion",
+    "supplement_directory": "derivation/supplement/sections/05_presymplectic_completion_weyl_system_and_quasifree_state/04_local_cone_completion_and_injectivity/101_C055__local_descendant_cone_hilbert_completion",
+    "main_artifact": "derivation/paper/main/sections/05_presymplectic_completion_weyl_system_and_quasifree_state/04_local_cone_completion_and_injectivity/101_C055__local_descendant_cone_hilbert_completion/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/05_presymplectic_completion_weyl_system_and_quasifree_state/04_local_cone_completion_and_injectivity/101_C055__local_descendant_cone_hilbert_completion/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after C053, M050, C019; registered hard handoff(s): restricts_to_local_cones, supplies_local_hilbert_metric, supplies_descendant_cone_domain."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D2",
+    "tier_name": "Load-bearing theorem, proof owner, obstruction, or quarantine gate",
+    "tier_assignment_rule": "PROOF_THEOREM_OWNER_OBSTRUCTION_OR_QUARANTINE_ROLE",
+    "main_paper_depth": "THEOREM_AND_PROOF_OVERVIEW",
+    "supplement_depth": "FULL_PROOF_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "formal_statement",
+      "hypotheses",
+      "introduction_reason",
+      "proof_strategy",
+      "lemma_chain",
+      "formal_realization",
+      "counterexamples_or_necessity_checks",
+      "axiom_profile",
+      "result",
+      "remaining_limits",
+      "downstream_handoff",
+      "code_line_register"
+    ],
+    "countercheck_requirement": "NEGATIVE_CONTROL_COUNTEREXAMPLE_OR_HYPOTHESIS_NECESSITY",
+    "countercheck_status": "NOT_STARTED",
+    "v2_state": "NOT_STARTED",
+    "python_anchor_status": "PLANNED",
+    "lean_anchor_status": "PLANNED",
+    "code_anchors": [],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false
+  },
+  "canonical_identity": {
+    "node_number": "101",
+    "semantic_id": "C055",
+    "canonical_node_label": "101 · C055",
+    "stable_node_directory_name": "101_C055__local_descendant_cone_hilbert_completion",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  }
+}

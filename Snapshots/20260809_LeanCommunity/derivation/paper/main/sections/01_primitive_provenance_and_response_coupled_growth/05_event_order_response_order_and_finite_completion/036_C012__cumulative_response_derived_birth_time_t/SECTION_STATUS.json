@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "036",
+  "canonical_node_label": "036 \u00b7 C012",
+  "stable_node_directory_name": "036_C012__cumulative_response_derived_birth_time_t",
+  "id": "C012",
+  "section_path": "1.5.4",
+  "derivation_order": 36,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

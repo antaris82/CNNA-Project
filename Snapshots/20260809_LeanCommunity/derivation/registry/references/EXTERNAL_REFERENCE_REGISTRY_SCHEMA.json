@@ -1,0 +1,57 @@
+{
+  "schema": "cnna.external_reference_registry.v1",
+  "scope": "active_derivation_excluding_legacy_archive",
+  "authoritative_tables": {
+    "sources": "EXTERNAL_REFERENCES.tsv",
+    "usages": "EXTERNAL_REFERENCE_USAGE.tsv",
+    "assertions": "EXTERNAL_REFERENCE_ASSERTIONS.tsv"
+  },
+  "generated_outputs": {
+    "human_register": "EXTERNAL_REFERENCES.md",
+    "biblatex": "../../paper/bibliography/cnna_external_references.bib",
+    "anchored_citations": "target_file + usage_id marker pair"
+  },
+  "source_required_fields": [
+    "reference_id",
+    "bibtex_key",
+    "reference_type",
+    "title",
+    "authors",
+    "year",
+    "publisher",
+    "doi_status",
+    "canonical_url",
+    "accessed_date",
+    "verification_status",
+    "metadata_verified_against",
+    "primary_source"
+  ],
+  "doi_status_values": [
+    "ASSIGNED_VERIFIED",
+    "NOT_ASSIGNED_OFFICIAL_DOCUMENTATION",
+    "NOT_ASSIGNED_SOFTWARE_RELEASE",
+    "NOT_ASSIGNED_SOFTWARE_SOURCE",
+    "NOT_ASSIGNED_HISTORICAL_ARTICLE"
+  ],
+  "load_bearing_usage_required_fields": [
+    "id",
+    "paper_section",
+    "target_file",
+    "anchor_id",
+    "citation_locator",
+    "claim_paraphrase",
+    "hypothesis_mapping",
+    "formalization_status"
+  ],
+  "load_bearing_rules": {
+    "primary_source": true,
+    "persistent_identifier_required": true,
+    "assertion_mapping_required": true,
+    "lean_axiom_import_forbidden": true
+  },
+  "legacy_policy": "A Legacy source is not active until verified and normalized into all required active tables.",
+  "infobox_integration": {
+    "registry": "../infoboxes/INFOBOXES.json",
+    "rule": "Every source-backed infobox must reference one or more registered usage_id values; citations remain generated from the external-reference registry."
+  }
+}

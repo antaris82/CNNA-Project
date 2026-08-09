@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "098",
+  "canonical_node_label": "098 \u00b7 P033",
+  "stable_node_directory_name": "098_P033__infinite_rank_of_the_raw_skew_operator",
+  "id": "P033",
+  "section_path": "5.2.3.2",
+  "derivation_order": 98,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

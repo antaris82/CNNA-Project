@@ -1,0 +1,117 @@
+% Canonical node 025 · P001; current section path 1.3.9.1.
+% Canonical owner: P001
+\cnnaProofNodeHeading{025}{P001}{Reusable directed Schur/DtN/Kron channel closure}
+\cnnaNodePlacement{1.3.9.1}{D2}
+P001 is the unique proof owner behind the C006--C007--M003--M004 channel.
+The mathlib-free Core supplies exact finite directed states, cuts, responses,
+steering values, and the birth-law relation.  The separate pinned
+\texttt{CNNAProofs} package proves the analytic and finite-combinatorial
+closure without introducing a Core-to-proof import.
+
+\paragraph*{Formal contract.}
+For an ordered boundary/interior block family, P001 assumes only
+nonpositive off-diagonal entries, exact row conservation, positive
+interior-to-boundary reachability, and a positive path from the distinguished
+boundary port to a different boundary port.  It proves exact Core-to-rational
+semantic agreement, existence and uniqueness of the interior solve, response
+existence and witness independence, the directed-Laplacian sign and
+conservation laws, nonnegative response diagonal, and strict positivity of the
+distinguished diagonal.  No symmetry, inverse, pseudoinverse, regularization,
+extra grounding vertex, or independent connectivity axiom is added.
+
+\paragraph*{Proof architecture.}
+The proof sequence is explicit.  S01 identifies the Core exact-fraction and
+matrix operations with rational values.  S02 proves the directed maximum
+principle and triviality of the zero-boundary interior kernel.  S03 uses the
+finite-dimensional injectivity--surjectivity bridge to obtain the unique
+interior solve.  S04 proves response existence and representative
+independence.  S05 proves nonpositive off-diagonal response entries, row
+conservation, and diagonal nonnegativity.  S06 derives strict distinguished
+positivity by propagation along a positive path to a second boundary port.
+S07--S09 derive the canonical parent coordinate, exact C007 matrix laws, and
+provenance-backbone reachability directly from C005, M001, M002, and C007.
+S10 exposes the P001-to-M003/M004 supporting theorems without changing either Core
+constructor.  The public closure modules above P001 consume these theorems.  S11 independently instantiates the same generic closure on a
+two-boundary/one-interior bidirected-chain family.
+
+For the independent family with strictly positive rational weights $g_L,g_R$,
+\[
+K_{BB}=\operatorname{diag}(g_L,g_R),\qquad
+K_{BI}=\begin{pmatrix}-g_L\\-g_R\end{pmatrix},\qquad
+K_{IB}=\begin{pmatrix}-g_L&-g_R\end{pmatrix},\qquad
+K_{II}=(g_L+g_R).
+\]
+Its sign, row-sum, and path hypotheses are proved directly.  The closure theorem
+then invokes only \texttt{directedSchurDtnClosure}.  The reuse therefore does
+not depend on \texttt{ResponseCapableState}, the next slot, provenance
+addresses, M001, or a C007 realization.
+
+\paragraph*{Kernel evidence and trust boundary.}
+The user-local Lean~4.31.0 run built 26 Core jobs and 8595 proof jobs across 13
+proof modules.  All 142 registered P001 declarations passed
+\texttt{P001\_CURRENT\_PROOF\_AXIOM\_AUDIT}, and the final
+\texttt{FULL\_PACKAGE\_BOUNDARY\_AUDIT} passed with zero P001 source
+warnings.  The exact transcript SHA-256 is
+\texttt{\seqsplit{3329291658b2d7a5f46acc6c1bf48b8a60f6bade5d010aa96d7978be3943170a}}.  The axiom-profile partition is 117
+declarations with \texttt{propext}, \texttt{Classical.choice}, and
+\texttt{Quot.sound}; 23 with \texttt{propext} and \texttt{Quot.sound};
+and two axiom-free declarations.  No project-local axiom or \texttt{sorry}
+occurs.  Elimination of the three transitive Lean/mathlib axioms is not claimed.
+
+% CNNA-EXTREF-BEGIN EXT-USE-P001-LEAN-SUBSINGLETON-MAIN
+\cite[Subsingleton.elim declaration; Lean 4.31.0 Init.Core]{LeanInitCore431}.
+% CNNA-EXTREF-END EXT-USE-P001-LEAN-SUBSINGLETON-MAIN
+
+% CNNA-EXTREF-BEGIN EXT-USE-P001-MATHLIB-RAT-MAIN
+\cite[rational constructor and arithmetic lemmas]{LeanRatLemmas431}.
+% CNNA-EXTREF-END EXT-USE-P001-MATHLIB-RAT-MAIN
+
+% CNNA-EXTREF-BEGIN EXT-USE-P001-MATHLIB-FINFOLD-MAIN
+\cite[finite-fold recursion equations]{LeanFinFold431}.
+% CNNA-EXTREF-END EXT-USE-P001-MATHLIB-FINFOLD-MAIN
+
+% CNNA-EXTREF-BEGIN EXT-USE-P001-MATHLIB-FINSUM-MAIN
+\cite[finite-sum recursion equations]{MathlibBigOperatorsFinFabf563a}.
+% CNNA-EXTREF-END EXT-USE-P001-MATHLIB-FINSUM-MAIN
+
+% CNNA-EXTREF-BEGIN EXT-USE-P001-MATHLIB-MATRIX-MUL-MAIN
+\cite[rectangular row-by-column multiplication definition]{MathlibMatrixMulFabf563a}.
+% CNNA-EXTREF-END EXT-USE-P001-MATHLIB-MATRIX-MUL-MAIN
+
+% CNNA-EXTREF-BEGIN EXT-USE-P001-MATHLIB-ORDERED-SUM-MAIN
+\cite[\texttt{Finset.sum\_eq\_zero\_iff\_of\_nonneg}]{MathlibOrderedFinsetSumsFabf563a}.
+% CNNA-EXTREF-END EXT-USE-P001-MATHLIB-ORDERED-SUM-MAIN
+
+% CNNA-EXTREF-BEGIN EXT-USE-P001-MATHLIB-FINSET-MAX-MAIN
+\cite[\texttt{Finset.exists\_max\_image}]{MathlibFinsetMaxFabf563a}.
+% CNNA-EXTREF-END EXT-USE-P001-MATHLIB-FINSET-MAX-MAIN
+
+% CNNA-EXTREF-BEGIN EXT-USE-P001-MATHLIB-SUM-TYPE-MAIN
+\cite[\texttt{Fintype.sum\_sum\_type}; \texttt{Fintype.sum\_eq\_single}; \texttt{Fintype.sum\_eq\_zero}]{MathlibFintypeBigOperatorsFabf563a}.
+% CNNA-EXTREF-END EXT-USE-P001-MATHLIB-SUM-TYPE-MAIN
+
+% CNNA-EXTREF-BEGIN EXT-USE-P001-MATHLIB-MULVECLIN-MAIN
+\cite[\texttt{Matrix.mulVecLin}; \texttt{Matrix.mulVecLin\_apply}]{MathlibMatrixToLinFabf563a}.
+% CNNA-EXTREF-END EXT-USE-P001-MATHLIB-MULVECLIN-MAIN
+
+% CNNA-EXTREF-BEGIN EXT-USE-P001-MATHLIB-FD-MAIN
+\cite[finite-dimensional injectivity--surjectivity equivalence]{MathlibFiniteDimensionalFabf563a}.
+% CNNA-EXTREF-END EXT-USE-P001-MATHLIB-FD-MAIN
+
+% CNNA-EXTREF-BEGIN EXT-USE-P001-MATHLIB-POSDEF-MAIN
+\cite[module header; Matrix.PosSemidef and Matrix.PosDef definitions]{MathlibMatrixPosDefFabf563a}.
+% CNNA-EXTREF-END EXT-USE-P001-MATHLIB-POSDEF-MAIN
+
+% CNNA-EXTREF-BEGIN EXT-USE-P001-MATHLIB-SCHUR-MAIN
+\cite[module header and main results]{MathlibSchurComplementFabf563a}.
+% CNNA-EXTREF-END EXT-USE-P001-MATHLIB-SCHUR-MAIN
+
+% CNNA-EXTREF-BEGIN EXT-USE-P001-DKP-MAIN
+\cite[Definition~3.2; Lemmas~3.3--3.4; Theorem~3.9]{SugiyamaSato2023DirectedKron}.
+% CNNA-EXTREF-END EXT-USE-P001-DKP-MAIN
+
+% CNNA-OPEN-PROVENANCE-BEGIN P001
+\begin{cnnaInfoBox}{Open-provenance role: Reusable elimination theorem}
+P001 certifies the directed Schur/DtN/Kron specialization independently of the canonical birth cut.  Its generality is mathematical reuse across admissible finite cuts; it does not identify Schur reduction with other open-system reductions.
+\end{cnnaInfoBox}
+% CNNA-OPEN-PROVENANCE-END P001

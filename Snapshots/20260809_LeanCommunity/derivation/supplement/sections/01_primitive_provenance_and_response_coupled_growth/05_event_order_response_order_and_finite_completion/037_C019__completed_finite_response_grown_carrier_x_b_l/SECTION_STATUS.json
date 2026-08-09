@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "037",
+  "canonical_node_label": "037 \u00b7 C019",
+  "stable_node_directory_name": "037_C019__completed_finite_response_grown_carrier_x_b_l",
+  "id": "C019",
+  "section_path": "1.5.5",
+  "derivation_order": 37,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

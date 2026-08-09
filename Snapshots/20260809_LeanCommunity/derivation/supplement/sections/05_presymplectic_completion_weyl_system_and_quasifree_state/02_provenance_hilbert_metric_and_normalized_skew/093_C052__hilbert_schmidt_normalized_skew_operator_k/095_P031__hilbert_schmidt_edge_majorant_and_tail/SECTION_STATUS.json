@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "095",
+  "canonical_node_label": "095 \u00b7 P031",
+  "stable_node_directory_name": "095_P031__hilbert_schmidt_edge_majorant_and_tail",
+  "id": "P031",
+  "section_path": "5.2.2.2",
+  "derivation_order": 95,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "064",
+  "canonical_node_label": "064 \u00b7 M031",
+  "stable_node_directory_name": "064_M031__intrinsic_directed_response_algebra",
+  "id": "M031",
+  "section_path": "3.4.1",
+  "derivation_order": 64,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

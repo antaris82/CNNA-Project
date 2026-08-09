@@ -1,0 +1,632 @@
+{
+  "schema": "cnna.node.v3",
+  "id": "C003",
+  "paper_section": "1.1.5",
+  "contract": {
+    "statement": "Finite b-ary provenance grammar: slot alphabet {0,…,b−1}, root ε, child by right-extension, unique parent/final rank, and admitted addresses of depth ≤ L.",
+    "ownership_boundary": [
+      "provenance grammar and cutoff only",
+      "no node IDs, event times, metric, conductance or response"
+    ]
+  },
+  "cross_layer": {
+    "equivalence": "Python tuples and Lean List (Fin b) encode the same finite word grammar and cutoff.",
+    "semantic_mismatch_known": false
+  },
+  "evidence": {
+    "audit_tier": "B",
+    "python": {
+      "status": "PASS_REPRODUCED",
+      "node_tests": 8
+    },
+    "lean": {
+      "status": "PASS_INDEPENDENTLY_VERIFIED",
+      "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+      "toolchain": "Lean 4.31.0 / 68218e876d2a38b1985b8590fff244a83c321783",
+      "policy_scan_matches": 0,
+      "exact_hash_built": true,
+      "verification_origin": "external_independent_audit_supplied_by_user",
+      "proof_audit": {
+        "status": "PASS",
+        "nontrivial_theorems": [
+          "ProvenanceAddress.depth_snoc",
+          "ProvenanceAddress.unsnoc?_snoc",
+          "ProvenanceAddress.snoc_parent_unique",
+          "ProvenanceAddress.snoc_slot_unique",
+          "BoundedProvenanceAddress.child_depth"
+        ]
+      }
+    }
+  },
+  "artifacts": {
+    "python_source": "fa2ad5221cd2131508b98d54673a4cb8324e673d50b339a8aab857b69fe435cb",
+    "python_test": "1d6630ef73e34981eacecbb02cd8100d8ae12f6aa5f28905ede76084fd02b581",
+    "lean_source": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+    "math_prose": "f33fde98f6ce33b43dde19956796a7bdc94340792f44993dcf494ad059ee05e5",
+    "supplement_documentation": "cb119bc2017f0d940fac83a8653cd9798fde04422775e8991c58d55bb33605f2"
+  },
+  "workflow": {
+    "node_semantics": "CLOSED_CORE_DEFINED",
+    "documentation": "COMPLETE",
+    "freeze_state": "FROZEN_VERIFIED",
+    "frozen_under_gate_version": "cnna-per-node-freeze-v5",
+    "documentation_v2": "COMPLETE_V2"
+  },
+  "node_number": "005",
+  "derivation_rank": 2,
+  "derivation_order": 5,
+  "section_hierarchy": {
+    "section_path": "1.1.5",
+    "root_title": "Primitive provenance and response-coupled growth",
+    "group_title": "Primitive inputs, provenance grammar and event order",
+    "main_directory": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/01_primitive_inputs_provenance_grammar_and_event_order/005_C003__finite_b_ary_provenance_grammar",
+    "supplement_directory": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/01_primitive_inputs_provenance_grammar_and_event_order/005_C003__finite_b_ary_provenance_grammar",
+    "main_artifact": "derivation/paper/main/sections/01_primitive_provenance_and_response_coupled_growth/01_primitive_inputs_provenance_grammar_and_event_order/005_C003__finite_b_ary_provenance_grammar/SECTION.tex",
+    "supplement_artifact": "derivation/supplement/sections/01_primitive_provenance_and_response_coupled_growth/01_primitive_inputs_provenance_grammar_and_event_order/005_C003__finite_b_ary_provenance_grammar/DOCUMENTATION.md",
+    "introduction_reason": "Introduced after I001, I002, C002; registered hard handoff(s): parameterizes_branching, bounds_finite_approximant, anchors_provenance_grammar."
+  },
+  "documentation_profile": {
+    "schema": "cnna.node-documentation-profile.v2",
+    "tier": "D1",
+    "tier_name": "Structural construction",
+    "tier_assignment_rule": "STRUCTURAL_CONSTRUCTION_ROLE",
+    "main_paper_depth": "STRUCTURAL_EXPLANATION",
+    "supplement_depth": "DETAILED_CONSTRUCTION_DOSSIER",
+    "required_sections": [
+      "position_in_derivation",
+      "mathematical_contract",
+      "introduction_reason",
+      "explicit_construction",
+      "invariants",
+      "canonicity_or_uniqueness",
+      "boundary_cases",
+      "python_lean_cross_layer",
+      "countercheck",
+      "result",
+      "downstream_handoff",
+      "code_anchors"
+    ],
+    "countercheck_requirement": "INVARIANT_EDGE_CASE_AND_CROSS_LAYER_CHECK",
+    "countercheck_status": "PASS",
+    "v2_state": "COMPLETE_V2",
+    "python_anchor_status": "RESOLVED",
+    "lean_anchor_status": "RESOLVED",
+    "code_anchors": [
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s01_primitive_inputs_grammar_and_event_order/s05_c003__finite_b_ary_provenance_grammar.py",
+        "symbol": "slot_alphabet",
+        "declaration_kind": "FUNCTION",
+        "start_line": 35,
+        "end_line": 39,
+        "source_sha256": "fa2ad5221cd2131508b98d54673a4cb8324e673d50b339a8aab857b69fe435cb",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s01_primitive_inputs_grammar_and_event_order/s05_c003__finite_b_ary_provenance_grammar.py",
+        "symbol": "validate_unbounded_address",
+        "declaration_kind": "FUNCTION",
+        "start_line": 42,
+        "end_line": 53,
+        "source_sha256": "fa2ad5221cd2131508b98d54673a4cb8324e673d50b339a8aab857b69fe435cb",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s01_primitive_inputs_grammar_and_event_order/s05_c003__finite_b_ary_provenance_grammar.py",
+        "symbol": "root_address",
+        "declaration_kind": "FUNCTION",
+        "start_line": 56,
+        "end_line": 58,
+        "source_sha256": "fa2ad5221cd2131508b98d54673a4cb8324e673d50b339a8aab857b69fe435cb",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s01_primitive_inputs_grammar_and_event_order/s05_c003__finite_b_ary_provenance_grammar.py",
+        "symbol": "child_address",
+        "declaration_kind": "FUNCTION",
+        "start_line": 61,
+        "end_line": 68,
+        "source_sha256": "fa2ad5221cd2131508b98d54673a4cb8324e673d50b339a8aab857b69fe435cb",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s01_primitive_inputs_grammar_and_event_order/s05_c003__finite_b_ary_provenance_grammar.py",
+        "symbol": "address_parent",
+        "declaration_kind": "FUNCTION",
+        "start_line": 71,
+        "end_line": 76,
+        "source_sha256": "fa2ad5221cd2131508b98d54673a4cb8324e673d50b339a8aab857b69fe435cb",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s01_primitive_inputs_grammar_and_event_order/s05_c003__finite_b_ary_provenance_grammar.py",
+        "symbol": "final_slot",
+        "declaration_kind": "FUNCTION",
+        "start_line": 79,
+        "end_line": 84,
+        "source_sha256": "fa2ad5221cd2131508b98d54673a4cb8324e673d50b339a8aab857b69fe435cb",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s01_primitive_inputs_grammar_and_event_order/s05_c003__finite_b_ary_provenance_grammar.py",
+        "symbol": "address_depth",
+        "declaration_kind": "FUNCTION",
+        "start_line": 87,
+        "end_line": 89,
+        "source_sha256": "fa2ad5221cd2131508b98d54673a4cb8324e673d50b339a8aab857b69fe435cb",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s01_primitive_inputs_grammar_and_event_order/s05_c003__finite_b_ary_provenance_grammar.py",
+        "symbol": "is_parent_of",
+        "declaration_kind": "FUNCTION",
+        "start_line": 92,
+        "end_line": 96,
+        "source_sha256": "fa2ad5221cd2131508b98d54673a4cb8324e673d50b339a8aab857b69fe435cb",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s01_primitive_inputs_grammar_and_event_order/s05_c003__finite_b_ary_provenance_grammar.py",
+        "symbol": "FiniteBAryProvenanceGrammar",
+        "declaration_kind": "CLASS",
+        "start_line": 100,
+        "end_line": 164,
+        "source_sha256": "fa2ad5221cd2131508b98d54673a4cb8324e673d50b339a8aab857b69fe435cb",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python",
+        "role": "SOURCE",
+        "path": "derivation/code/python/src/cnna/derivation/s01_primitive_response_coupled_finite_provenance/s01_primitive_inputs_grammar_and_event_order/s05_c003__finite_b_ary_provenance_grammar.py",
+        "symbol": "build_finite_b_ary_provenance_grammar",
+        "declaration_kind": "FUNCTION",
+        "start_line": 167,
+        "end_line": 173,
+        "source_sha256": "fa2ad5221cd2131508b98d54673a4cb8324e673d50b339a8aab857b69fe435cb",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "python_test",
+        "role": "TEST",
+        "path": "derivation/code/python/tests/derivation/s01_primitive_response_coupled_finite_provenance/s01_primitive_inputs_grammar_and_event_order/test_s05_c003__finite_b_ary_provenance_grammar.py",
+        "symbol": "TestFiniteBAryProvenanceGrammar",
+        "declaration_kind": "CLASS",
+        "start_line": 25,
+        "end_line": 122,
+        "source_sha256": "1d6630ef73e34981eacecbb02cd8100d8ae12f6aa5f28905ede76084fd02b581",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "ProvenanceSlot",
+        "declaration_kind": "ABBREV",
+        "start_line": 26,
+        "end_line": 28,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "ProvenanceAddress",
+        "declaration_kind": "ABBREV",
+        "start_line": 29,
+        "end_line": 33,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "root",
+        "declaration_kind": "DEF",
+        "start_line": 34,
+        "end_line": 37,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "snoc",
+        "declaration_kind": "DEF",
+        "start_line": 38,
+        "end_line": 42,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "depth",
+        "declaration_kind": "DEF",
+        "start_line": 43,
+        "end_line": 46,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "depth_root",
+        "declaration_kind": "THEOREM",
+        "start_line": 47,
+        "end_line": 50,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "depth_snoc",
+        "declaration_kind": "THEOREM",
+        "start_line": 51,
+        "end_line": 60,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "unsnoc",
+        "declaration_kind": "DEF",
+        "start_line": 61,
+        "end_line": 69,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "unsnoc",
+        "declaration_kind": "THEOREM",
+        "start_line": 70,
+        "end_line": 82,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "parent",
+        "declaration_kind": "DEF",
+        "start_line": 83,
+        "end_line": 88,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "finalSlot",
+        "declaration_kind": "DEF",
+        "start_line": 89,
+        "end_line": 94,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "Parent",
+        "declaration_kind": "DEF",
+        "start_line": 95,
+        "end_line": 98,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "parent",
+        "declaration_kind": "THEOREM",
+        "start_line": 99,
+        "end_line": 102,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "finalSlot",
+        "declaration_kind": "THEOREM",
+        "start_line": 103,
+        "end_line": 106,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "parent",
+        "declaration_kind": "THEOREM",
+        "start_line": 107,
+        "end_line": 112,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "finalSlot",
+        "declaration_kind": "THEOREM",
+        "start_line": 113,
+        "end_line": 118,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "parent_snoc",
+        "declaration_kind": "THEOREM",
+        "start_line": 119,
+        "end_line": 123,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "snoc_parent_unique",
+        "declaration_kind": "THEOREM",
+        "start_line": 124,
+        "end_line": 132,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "snoc_slot_unique",
+        "declaration_kind": "THEOREM",
+        "start_line": 133,
+        "end_line": 143,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "BoundedProvenanceAddress",
+        "declaration_kind": "STRUCTURE",
+        "start_line": 144,
+        "end_line": 151,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "root",
+        "declaration_kind": "DEF",
+        "start_line": 152,
+        "end_line": 157,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "child",
+        "declaration_kind": "DEF",
+        "start_line": 158,
+        "end_line": 168,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "root_address",
+        "declaration_kind": "THEOREM",
+        "start_line": 169,
+        "end_line": 173,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "child_address",
+        "declaration_kind": "THEOREM",
+        "start_line": 174,
+        "end_line": 181,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "child_depth",
+        "declaration_kind": "THEOREM",
+        "start_line": 182,
+        "end_line": 192,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "FiniteBAryProvenanceGrammar",
+        "declaration_kind": "STRUCTURE",
+        "start_line": 193,
+        "end_line": 200,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "build",
+        "declaration_kind": "DEF",
+        "start_line": 201,
+        "end_line": 207,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "rootPresent",
+        "declaration_kind": "THEOREM",
+        "start_line": 208,
+        "end_line": 212,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "rootAddress",
+        "declaration_kind": "DEF",
+        "start_line": 213,
+        "end_line": 217,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "rootAddress_canonical",
+        "declaration_kind": "THEOREM",
+        "start_line": 218,
+        "end_line": 222,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "rootAddress_unique",
+        "declaration_kind": "THEOREM",
+        "start_line": 223,
+        "end_line": 227,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "build_rootedCarrier",
+        "declaration_kind": "THEOREM",
+        "start_line": 228,
+        "end_line": 232,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "build_branching",
+        "declaration_kind": "THEOREM",
+        "start_line": 233,
+        "end_line": 237,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      },
+      {
+        "layer": "lean_core",
+        "role": "SOURCE",
+        "path": "derivation/code/lean/core/src/CNNA/Derivation/S01_PrimitiveResponseCoupledFiniteProvenance/S01_PrimitiveInputsGrammarAndEventOrder/S05_C003_FiniteBAryProvenanceGrammar.lean",
+        "symbol": "build_cutoff",
+        "declaration_kind": "THEOREM",
+        "start_line": 238,
+        "end_line": 244,
+        "source_sha256": "81563345b44177915f32a03d6c42df7adfa1ca4176ab27d6569584105ad25866",
+        "resolution": "RESOLVED"
+      }
+    ],
+    "authority": "Embedded in this canonical node record; CODE_ANCHORS.tsv and DOCUMENTATION_TIERS.tsv are generated projections only.",
+    "freeze_revalidation_required": false,
+    "completion_evidence": {
+      "main_artifact": "derivation/paper/main/sections/01_primitive_response_coupled_finite_provenance/01_primitive_inputs_grammar_and_event_order/005_C003__finite_b_ary_provenance_grammar/SECTION.tex",
+      "main_sha256": "f33fde98f6ce33b43dde19956796a7bdc94340792f44993dcf494ad059ee05e5",
+      "supplement_artifact": "derivation/supplement/sections/01_primitive_response_coupled_finite_provenance/01_primitive_inputs_grammar_and_event_order/005_C003__finite_b_ary_provenance_grammar/DOCUMENTATION.md",
+      "supplement_sha256": "cb119bc2017f0d940fac83a8653cd9798fde04422775e8991c58d55bb33605f2",
+      "required_sections_present": true,
+      "countercheck_present": true,
+      "code_anchors_resolved": true,
+      "source_code_modified": false,
+      "completed_on": "2026-08-04"
+    }
+  },
+  "canonical_identity": {
+    "node_number": "005",
+    "semantic_id": "C003",
+    "canonical_node_label": "005 · C003",
+    "stable_node_directory_name": "005_C003__finite_b_ary_provenance_grammar",
+    "identity_rule": "node number and semantic ID are independent of the mutable section path"
+  },
+  "open_provenance_context": {
+    "framework": "GENERALIZED_OPEN_PROVENANCE_SYSTEMS",
+    "concept_ids": [
+      "OPS-01"
+    ],
+    "roles": [
+      "Provenance-complete event state"
+    ],
+    "integration_status": [
+      "CURRENT_FINITE_SPECIALIZATION"
+    ],
+    "claim_guard": "Interpretive specialization map only. Mathematical force is exactly the node contract and its registered evidence; no universal open-system theorem is inferred."
+  },
+  "cnna_architecture_context": {
+    "concept_id": "CNNA-00",
+    "name": "ComplemeNt Net Architecture",
+    "role": "Complement-address grammar: realized prefixes and admissible but unrealized continuations inhabit one bounded b-ary provenance carrier.",
+    "integration_status": "PROJECT_WIDE_ARCHITECTURAL_THROUGHLINK",
+    "claim_guard": "Interpretive and organizational context only; mathematical force remains exactly the registered node contract and evidence status."
+  }
+}

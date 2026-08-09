@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "107",
+  "canonical_node_label": "107 \u00b7 P038",
+  "stable_node_directory_name": "107_P038__gns_existence_and_representation_handoff",
+  "id": "P038",
+  "section_path": "6.1.1.1",
+  "derivation_order": 107,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

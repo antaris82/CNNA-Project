@@ -1,0 +1,53 @@
+% Canonical node 031 · T002; current section path 1.4.5.
+\cnnaNodeHeading{031}{T002}{Recurrent state-closure theorem}
+\cnnaNodePlacement{1.4.5}{D2}
+
+\paragraph*{Formal statement.}
+Let $X_n$ be a C005 response-capable state, let $s_{n+1}$ be its canonical
+C004 next open slot, and let the derived record/live context have a live
+channel coherent with the ordered C005 conductances.  Then C007 supplies the
+canonical state-directed realization, the already-closed M003/M004 chain
+supplies the positive response-coupled instruction, and there exists a unique
+successor $X_{n+1}$ in the complete C005 schema.  The updated C017 live channel
+again represents the conductances of $X_{n+1}$.
+
+\paragraph*{Proof architecture.}
+The theorem deliberately separates origin-local facts from the merge theorem.
+C004 closes the born-prefix step; C005 closes generic conductance append;
+C006 realizes exact fractions as rationals and transports positivity; M001
+closes port-support separation; C007 constructs the canonical rational block
+realization; and M004 closes support, endpoint, uniqueness and positive-value
+properties of the complete live delta.  T002 itself only realizes that delta,
+proves old/new pair separation, assembles the successor conductances and
+parent backbone, constructs the full C005 successor, and proves the post-step
+C005--C017 coherence relation.
+
+\begin{cnnaInfoBox}{No hidden free realization}
+The C007 \texttt{StateDirectedBlockRealization} is not a public T002 input.
+T002 consumes \texttt{canonicalStateDirectedBlockRealization next} internally.
+Likewise the M003 response/steering witnesses are derived by the proof facade.
+The explicit recurrent context consists of the C005 state, its C004 slot, and
+the record/live history with the required live-channel coherence.
+\end{cnnaInfoBox}
+
+\paragraph*{Uniqueness and iterability.}
+For a fixed proof-bearing recurrent input, \texttt{recurrentSuccessor\_existsUnique}
+identifies the unique successor with the constructed \texttt{successorState}.
+The theorem \texttt{successor\_live\_coherent} re-establishes the same channel
+interface required by the next C009/T002 step; hence the one-step closure is
+formally iterable rather than merely existential.
+
+\paragraph*{Kernel-verified result.}
+The user-local Lean 4.31.0 build of 2026-08-09 builds the 35-module mathlib-free
+Core, the 25-module proof source tree, the T002 facade and its axiom audit.  All
+26 audited T002/origin-closure declarations pass: 7 have transitive profile
+$[\texttt{propext},\texttt{Quot.sound}]$ and 19 additionally inherit
+\texttt{Classical.choice}.  No project-local axiom or \texttt{sorryAx} occurs,
+\texttt{t002\_recurrent\_state\_closure\_olean} is true, and the full package
+boundary audit passes.
+
+\paragraph*{Handoff.}
+T002 closes the load-bearing recurrent C005 re-entry and certifies one-step
+iterability for C019.  The next active node in canonical derivation order is
+T003, which must prove provenance-label equivariance and absence of an
+independent hard-coded sibling-rank bias.

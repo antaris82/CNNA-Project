@@ -1,0 +1,16 @@
+{
+  "schema": "cnna.c009-kernel-verified-audit.v1",
+  "status": "PASS",
+  "date": "2026-08-08",
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "kernel_verified_declarations": 8,
+  "axiom_profile_counts": {
+    "choice_propext_quot": 2,
+    "propext_quot_only": 4,
+    "axiom_free": 2
+  },
+  "python_regression": "PASS_117_TESTS_1086_SUBTESTS",
+  "schema_closure_owner": "T002",
+  "next_active_node": "T003",
+  "errors": []
+}

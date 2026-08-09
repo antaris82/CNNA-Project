@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "081",
+  "canonical_node_label": "081 \u00b7 C043",
+  "stable_node_directory_name": "081_C043__refinement_cocycle_live_reconstruction",
+  "id": "C043",
+  "section_path": "4.4.1",
+  "derivation_order": 81,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

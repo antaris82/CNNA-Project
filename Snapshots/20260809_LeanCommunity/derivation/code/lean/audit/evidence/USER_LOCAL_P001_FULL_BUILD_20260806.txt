@@ -1,0 +1,414 @@
+antaris@Brotmaschine:~/Workspace/Lean/cnna/derivation/code/lean$ ./audit/run_package_boundary_audit.sh --build
+{
+  "schema": "cnna.lean-package-boundary-audit.v1",
+  "status": "PASS",
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "core": {
+    "package": "cnna_core",
+    "library": "CNNA",
+    "manifest_dependencies": 0,
+    "lean_modules": 24,
+    "mathlib_imports": 0
+  },
+  "proofs": {
+    "package": "cnna_proofs",
+    "library": "CNNAProofs",
+    "direct_dependencies": [
+      "mathlib@v4.31.0",
+      "cnna_core@../core"
+    ],
+    "lean_modules": 13,
+    "p001": "R7_KERNEL_VERIFIED_RETAINED_EXACT_SOURCE_EVIDENCE_R8_INDEPENDENT_BIDIRECTED_CHAIN_REUSE_SOURCE_BUILD_PENDING"
+  },
+  "allowed_direction": "CNNAProofs -> CNNA",
+  "build_evidence": {
+    "required": false,
+    "core_olean": true,
+    "proofs_olean": true,
+    "proof_manifest": true,
+    "p001_semantic_olean": false,
+    "p001_maximum_principle_olean": false,
+    "p001_finite_linear_olean": false,
+    "p001_response_well_definedness_olean": false,
+    "p001_directed_laplacian_olean": false,
+    "p001_distinguished_positivity_olean": false,
+    "p001_canonical_instantiation_olean": false,
+    "p001_canonical_matrix_structure_olean": false,
+    "p001_canonical_backbone_reachability_olean": false,
+    "p001_m003_m004_facades_olean": false,
+    "p001_second_cut_reuse_olean": false,
+    "retained_verified_r6a_source_hash_match": true,
+    "retained_verified_r6b_source_hash_match": true,
+    "retained_verified_r7_source_hash_match": true
+  },
+  "warnings": [],
+  "errors": []
+}
+info: toolchain not updated; already up-to-date
+Build completed successfully (26 jobs).
+info: toolchain not updated; already up-to-date
+info: mathlib: running post-update hooks
+Current branch: HEAD
+Using cache (Azure) from origin: (some leanprover-community/mathlib4)
+No files to download
+Already decompressed 8542 file(s)
+Current branch: HEAD
+Using cache (Azure) from origin: (some leanprover-community/mathlib4)
+No files to download
+Already decompressed 8542 file(s)
+✔ [8593/8595] Built CNNAProofs.P001.S11_IndependentBidirectedChainCutReuse (9.9s)
+✔ [8594/8595] Built CNNAProofs (6.5s)
+Build completed successfully (8595 jobs).
+'CNNAProofs.P001.exactFractionValue_ofRat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.sameValue_iff_exactFractionValue_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.represents_iff_exactFractionValue_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.exactFractionValue_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.exactFractionValue_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.exactFractionValue_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.exactFractionValue_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.exactFractionValue_finFoldl_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.finFoldl_add_eq_initial_add_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.finFoldl_add_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.exactFractionValue_matrixMul_entry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.exactMatrixValue_matrixMul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.exactMatrixValue_matrixSub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.matrixRepresents_iff_exactMatrixValue_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.rationalMatrixMul_neg_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.interiorSolveAgreement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.harmonicSignAgreement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.responseValueAgreement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.exactSemanticBridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.zeroBoundaryExtension_vanishesOnBoundary' depends on axioms: [propext, Quot.sound]
+'CNNAProofs.P001.laplacianAction_zeroBoundaryExtension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.zeroBoundaryExtension_isInteriorHarmonic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.laplacianAction_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.maximumDefectSum_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.maximumDefectTerm_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.maximum_propagates_across_positive_arc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.maximum_propagates_to_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.interior_le_zero_of_harmonic_zero_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.interior_nonnegative_of_harmonic_zero_boundary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CNNAProofs.P001.interior_eq_zero_of_harmonic_zero_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.interiorKernelTrivial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.interiorLinearMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.interiorLinearMap_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.interiorLinearMap_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.interiorLinearMap_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.interiorRightHandSideSolveExists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.interiorSolveExists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.interiorSolveUnique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.interiorWellPosed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.exactMatrixValue_eq_of_matrixSameValue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.c006InteriorAdmissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.responseExists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.responseRepresentativeAgreement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.responseWitnessIndependent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.responseWellDefined' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.boundaryBasis' depends on axioms: [propext, Quot.sound]
+'CNNAProofs.P001.boundaryBasis_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.boundaryBasis_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.harmonicBasisPotential' depends on axioms: [propext, Quot.sound]
+'CNNAProofs.P001.interiorSolve_columnEquation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.harmonicBasisPotential_isInteriorHarmonic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.interior_le_of_harmonic_boundary_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.interior_ge_of_harmonic_boundary_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.harmonicBasisPotential_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.harmonicBasisPotential_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.mathlibResponse_entry_eq_laplacianAction_harmonicBasis' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CNNAProofs.P001.responseOffDiagonalNonpositive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.interiorSolve_rowSum_eq_neg_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.mathlibResponse_rowConservative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.responseRowConservative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.responseDiagonalNonnegative_of_offDiagonal_rowConservative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CNNAProofs.P001.responseDiagonalNonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.directedLaplacianClosure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.maximum_propagates_from_distinguished_boundary_across_positive_arc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CNNAProofs.P001.harmonicBasis_one_propagates_across_positive_arc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CNNAProofs.P001.harmonicBasis_one_propagates_along_positive_path' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CNNAProofs.P001.harmonicBasis_distinguished_action_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.distinguishedResponseDiagonal_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.distinguishedPortStrictlyPositive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.directedSchurDtnClosure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.reusableDirectedClosureContract' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.bornNonRoot_nodup' depends on axioms: [propext, Quot.sound]
+'CNNAProofs.P001.root_not_mem_bornNonRoot' depends on axioms: [propext, Quot.sound]
+'CNNAProofs.P001.canonicalCarrier_nodup' depends on axioms: [propext, Quot.sound]
+'CNNAProofs.P001.boundary_nodup' depends on axioms: [propext, Quot.sound]
+'CNNAProofs.P001.interior_nodup' depends on axioms: [propext, Quot.sound]
+'CNNAProofs.P001.distinguishedParentIndex_exists' depends on axioms: [propext, Quot.sound]
+'CNNAProofs.P001.positiveSteering_of_exactFractionValue_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.parentSelfResponse_value_eq_parentDiagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.m003ParentPositivity_of_genericClosure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.canonicalBirthCutClosure_of_hypotheses' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.canonicalBirthCutClosureContract' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.canonicalCutAddress' depends on axioms: [propext, Quot.sound]
+'CNNAProofs.P001.canonicalCutAddress_injective' depends on axioms: [propext, Quot.sound]
+'CNNAProofs.P001.canonicalCutCoordinate_exists' depends on axioms: [propext, Quot.sound]
+'CNNAProofs.P001.conductanceSourceCoordinate_exists' depends on axioms: [propext, Quot.sound]
+'CNNAProofs.P001.conductanceTargetCoordinate_exists' depends on axioms: [propext, Quot.sound]
+'CNNAProofs.P001.ratOutgoingSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.ratOrderedPairSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.exactFractionValue_outgoingFold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.exactFractionValue_orderedPairFold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.exactFractionValue_outgoingSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.exactFractionValue_orderedPairSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.ratDirectedMatrixEntry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.exactFractionValue_directedMatrixEntry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.ratOrderedPairSum_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.ratOrderedPairSum_pos_of_hasConductance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.ratOrderedPairSum_self_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.sum_single_edge_target_indicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.sum_ratOrderedPairSum_eq_ratOutgoingSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.ratDirectedMatrixEntry_eq_indicator_sub_pair' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CNNAProofs.P001.ratDirectedMatrixEntry_row_sum_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.blockEntry_eq_ratDirectedMatrixEntry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.canonicalBlocks_offDiagonalNonpositive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.canonicalBlocks_rowConservative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.canonicalPositiveArc_of_hasConductance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.eq_snoc_of_parent?_eq_some' does not depend on any axioms
+'CNNAProofs.P001.depth_parent_lt_of_parent?_eq_some' does not depend on any axioms
+'CNNAProofs.P001.immediateParent_mem_causalPredecessorPorts' depends on axioms: [propext, Quot.sound]
+'CNNAProofs.P001.hasConductance_endpoints_distinct' depends on axioms: [propext, Quot.sound]
+'CNNAProofs.P001.firstProvenanceSlotOfState' depends on axioms: [propext, Quot.sound]
+'CNNAProofs.P001.firstProvenanceAddress_born' depends on axioms: [propext, Quot.sound]
+'CNNAProofs.P001.firstProvenanceAddress_mem_olderSiblingPorts_of_parent_root' depends on axioms: [propext, Quot.sound]
+'CNNAProofs.P001.canonicalInteriorPathToBoundary_aux' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.canonicalEveryInteriorReachesBoundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.canonicalDistinguishedReachesOtherBoundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.canonicalDirectedCutHypotheses' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.canonicalBirthCutClosure_derived' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.DerivedCanonicalBirthCutClosureContract' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.derivedCanonicalBirthCutClosureContract' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.DerivedPublicContract' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.derivedPublicContract' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.canonicalInPositiveSteeringDomain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.canonicalResponseSteeringPair_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.IsDerivedCanonicalBirthLaw' depends on axioms: [propext, Quot.sound]
+'CNNAProofs.P001.derivedCanonicalBirthLaw_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.derivedCanonicalBirthLaw_unique' depends on axioms: [propext, Quot.sound]
+'CNNAProofs.P001.derivedCanonicalBirthLaw_existsUnique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.canonicalActiveBirthInstruction_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.derivedCanonicalBirthLaws_sameValue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.M003M004ProofFacadeContract' depends on axioms: [propext, Quot.sound]
+'CNNAProofs.P001.m003M004ProofFacadeContract' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.independentChainBoundaryWeight' depends on axioms: [propext, Quot.sound]
+'CNNAProofs.P001.independentBidirectedChainBlocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.independentBidirectedChainOffDiagonalNonpositive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CNNAProofs.P001.independentBidirectedChainRowConservative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.independentBidirectedChainInteriorReachesBoundary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CNNAProofs.P001.independentBidirectedChainDistinguishedReachesOtherBoundary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CNNAProofs.P001.independentBidirectedChainHypotheses' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.independentBidirectedChainClosure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.SecondCutReuseContract' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CNNAProofs.P001.secondCutReuseContract' depends on axioms: [propext, Classical.choice, Quot.sound]
+p001_current_proof_axiom_profiles BEGIN
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.exactFractionValue_ofRat: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.sameValue_iff_exactFractionValue_eq: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.represents_iff_exactFractionValue_eq: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.exactFractionValue_zero: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.exactFractionValue_add: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.exactFractionValue_mul: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.exactFractionValue_sub: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.exactFractionValue_finFoldl_add: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.finFoldl_add_eq_initial_add_sum: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.finFoldl_add_eq_sum: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.exactFractionValue_matrixMul_entry: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.exactMatrixValue_matrixMul: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.exactMatrixValue_matrixSub: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.matrixRepresents_iff_exactMatrixValue_eq: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.rationalMatrixMul_neg_right: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.interiorSolveAgreement: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.harmonicSignAgreement: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.responseValueAgreement: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.exactSemanticBridge: ['Classical.choice', 'Quot.sound', 'propext']
+  ACCEPTED CNNAProofs.P001.zeroBoundaryExtension_vanishesOnBoundary: ['Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.laplacianAction_zeroBoundaryExtension: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.zeroBoundaryExtension_isInteriorHarmonic: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.laplacianAction_neg: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.maximumDefectSum_eq_zero: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.maximumDefectTerm_nonnegative: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.maximum_propagates_across_positive_arc: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.maximum_propagates_to_boundary: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.interior_le_zero_of_harmonic_zero_boundary: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.interior_nonnegative_of_harmonic_zero_boundary: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.interior_eq_zero_of_harmonic_zero_boundary: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.interiorKernelTrivial: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.interiorLinearMap: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.interiorLinearMap_apply: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.interiorLinearMap_injective: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.interiorLinearMap_surjective: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.interiorRightHandSideSolveExists: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.interiorSolveExists: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.interiorSolveUnique: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.interiorWellPosed: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.exactMatrixValue_eq_of_matrixSameValue: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.c006InteriorAdmissible: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.responseExists: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.responseRepresentativeAgreement: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.responseWitnessIndependent: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.responseWellDefined: ['Classical.choice', 'Quot.sound', 'propext']
+  ACCEPTED CNNAProofs.P001.boundaryBasis: ['Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.boundaryBasis_nonnegative: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.boundaryBasis_le_one: ['Classical.choice', 'Quot.sound', 'propext']
+  ACCEPTED CNNAProofs.P001.harmonicBasisPotential: ['Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.interiorSolve_columnEquation: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.harmonicBasisPotential_isInteriorHarmonic: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.interior_le_of_harmonic_boundary_le: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.interior_ge_of_harmonic_boundary_ge: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.harmonicBasisPotential_nonnegative: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.harmonicBasisPotential_le_one: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.mathlibResponse_entry_eq_laplacianAction_harmonicBasis: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.responseOffDiagonalNonpositive: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.interiorSolve_rowSum_eq_neg_one: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.mathlibResponse_rowConservative: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.responseRowConservative: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.responseDiagonalNonnegative_of_offDiagonal_rowConservative: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.responseDiagonalNonnegative: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.directedLaplacianClosure: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.maximum_propagates_from_distinguished_boundary_across_positive_arc: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.harmonicBasis_one_propagates_across_positive_arc: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.harmonicBasis_one_propagates_along_positive_path: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.harmonicBasis_distinguished_action_ne_zero: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.distinguishedResponseDiagonal_ne_zero: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.distinguishedPortStrictlyPositive: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.directedSchurDtnClosure: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.reusableDirectedClosureContract: ['Classical.choice', 'Quot.sound', 'propext']
+  ACCEPTED CNNAProofs.P001.bornNonRoot_nodup: ['Quot.sound', 'propext']
+  ACCEPTED CNNAProofs.P001.root_not_mem_bornNonRoot: ['Quot.sound', 'propext']
+  ACCEPTED CNNAProofs.P001.canonicalCarrier_nodup: ['Quot.sound', 'propext']
+  ACCEPTED CNNAProofs.P001.boundary_nodup: ['Quot.sound', 'propext']
+  ACCEPTED CNNAProofs.P001.interior_nodup: ['Quot.sound', 'propext']
+  ACCEPTED CNNAProofs.P001.distinguishedParentIndex_exists: ['Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.positiveSteering_of_exactFractionValue_pos: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.parentSelfResponse_value_eq_parentDiagonal: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.m003ParentPositivity_of_genericClosure: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.canonicalBirthCutClosure_of_hypotheses: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.canonicalBirthCutClosureContract: ['Classical.choice', 'Quot.sound', 'propext']
+  ACCEPTED CNNAProofs.P001.canonicalCutAddress: ['Quot.sound', 'propext']
+  ACCEPTED CNNAProofs.P001.canonicalCutAddress_injective: ['Quot.sound', 'propext']
+  ACCEPTED CNNAProofs.P001.canonicalCutCoordinate_exists: ['Quot.sound', 'propext']
+  ACCEPTED CNNAProofs.P001.conductanceSourceCoordinate_exists: ['Quot.sound', 'propext']
+  ACCEPTED CNNAProofs.P001.conductanceTargetCoordinate_exists: ['Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.ratOutgoingSum: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.ratOrderedPairSum: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.exactFractionValue_outgoingFold: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.exactFractionValue_orderedPairFold: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.exactFractionValue_outgoingSum: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.exactFractionValue_orderedPairSum: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.ratDirectedMatrixEntry: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.exactFractionValue_directedMatrixEntry: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.ratOrderedPairSum_nonnegative: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.ratOrderedPairSum_pos_of_hasConductance: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.ratOrderedPairSum_self_zero: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.sum_single_edge_target_indicator: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.sum_ratOrderedPairSum_eq_ratOutgoingSum: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.ratDirectedMatrixEntry_eq_indicator_sub_pair: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.ratDirectedMatrixEntry_row_sum_zero: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.blockEntry_eq_ratDirectedMatrixEntry: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.canonicalBlocks_offDiagonalNonpositive: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.canonicalBlocks_rowConservative: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.canonicalPositiveArc_of_hasConductance: ['Classical.choice', 'Quot.sound', 'propext']
+  ACCEPTED CNNAProofs.P001.eq_snoc_of_parent?_eq_some: []
+  ACCEPTED CNNAProofs.P001.depth_parent_lt_of_parent?_eq_some: []
+  ACCEPTED CNNAProofs.P001.immediateParent_mem_causalPredecessorPorts: ['Quot.sound', 'propext']
+  ACCEPTED CNNAProofs.P001.hasConductance_endpoints_distinct: ['Quot.sound', 'propext']
+  ACCEPTED CNNAProofs.P001.firstProvenanceSlotOfState: ['Quot.sound', 'propext']
+  ACCEPTED CNNAProofs.P001.firstProvenanceAddress_born: ['Quot.sound', 'propext']
+  ACCEPTED CNNAProofs.P001.firstProvenanceAddress_mem_olderSiblingPorts_of_parent_root: ['Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.canonicalInteriorPathToBoundary_aux: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.canonicalEveryInteriorReachesBoundary: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.canonicalDistinguishedReachesOtherBoundary: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.canonicalDirectedCutHypotheses: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.canonicalBirthCutClosure_derived: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.DerivedCanonicalBirthCutClosureContract: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.derivedCanonicalBirthCutClosureContract: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.DerivedPublicContract: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.derivedPublicContract: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.canonicalInPositiveSteeringDomain: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.canonicalResponseSteeringPair_positive: ['Classical.choice', 'Quot.sound', 'propext']
+  ACCEPTED CNNAProofs.P001.IsDerivedCanonicalBirthLaw: ['Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.derivedCanonicalBirthLaw_exists: ['Classical.choice', 'Quot.sound', 'propext']
+  ACCEPTED CNNAProofs.P001.derivedCanonicalBirthLaw_unique: ['Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.derivedCanonicalBirthLaw_existsUnique: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.canonicalActiveBirthInstruction_exists: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.derivedCanonicalBirthLaws_sameValue: ['Classical.choice', 'Quot.sound', 'propext']
+  ACCEPTED CNNAProofs.P001.M003M004ProofFacadeContract: ['Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.m003M004ProofFacadeContract: ['Classical.choice', 'Quot.sound', 'propext']
+  ACCEPTED CNNAProofs.P001.independentChainBoundaryWeight: ['Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.independentBidirectedChainBlocks: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.independentBidirectedChainOffDiagonalNonpositive: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.independentBidirectedChainRowConservative: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.independentBidirectedChainInteriorReachesBoundary: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.independentBidirectedChainDistinguishedReachesOtherBoundary: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.independentBidirectedChainHypotheses: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.independentBidirectedChainClosure: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.SecondCutReuseContract: ['Classical.choice', 'Quot.sound', 'propext']
+  TRUSTED_TRANSITIVE_CHOICE CNNAProofs.P001.secondCutReuseContract: ['Classical.choice', 'Quot.sound', 'propext']
+p001_current_proof_axiom_profiles END
+P001_CURRENT_PROOF_AXIOM_AUDIT PASS
+{
+  "schema": "cnna.lean-package-boundary-audit.v1",
+  "status": "PASS",
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "core": {
+    "package": "cnna_core",
+    "library": "CNNA",
+    "manifest_dependencies": 0,
+    "lean_modules": 24,
+    "mathlib_imports": 0
+  },
+  "proofs": {
+    "package": "cnna_proofs",
+    "library": "CNNAProofs",
+    "direct_dependencies": [
+      "mathlib@v4.31.0",
+      "cnna_core@../core"
+    ],
+    "lean_modules": 13,
+    "p001": "R8_INDEPENDENT_BIDIRECTED_CHAIN_REUSE_KERNEL_VERIFIED"
+  },
+  "allowed_direction": "CNNAProofs -> CNNA",
+  "build_evidence": {
+    "required": true,
+    "core_olean": true,
+    "proofs_olean": true,
+    "proof_manifest": true,
+    "p001_semantic_olean": true,
+    "p001_maximum_principle_olean": true,
+    "p001_finite_linear_olean": true,
+    "p001_response_well_definedness_olean": true,
+    "p001_directed_laplacian_olean": true,
+    "p001_distinguished_positivity_olean": true,
+    "p001_canonical_instantiation_olean": true,
+    "p001_canonical_matrix_structure_olean": true,
+    "p001_canonical_backbone_reachability_olean": true,
+    "p001_m003_m004_facades_olean": true,
+    "p001_second_cut_reuse_olean": true,
+    "retained_verified_r6a_source_hash_match": true,
+    "retained_verified_r6b_source_hash_match": true,
+    "retained_verified_r7_source_hash_match": true
+  },
+  "warnings": [],
+  "errors": []
+}
+FULL_PACKAGE_BOUNDARY_AUDIT PASS

@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "090",
+  "canonical_node_label": "090 \u00b7 M050",
+  "stable_node_directory_name": "090_M050__derived_provenance_hilbert_metric_g",
+  "id": "M050",
+  "section_path": "5.2.1",
+  "derivation_order": 90,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

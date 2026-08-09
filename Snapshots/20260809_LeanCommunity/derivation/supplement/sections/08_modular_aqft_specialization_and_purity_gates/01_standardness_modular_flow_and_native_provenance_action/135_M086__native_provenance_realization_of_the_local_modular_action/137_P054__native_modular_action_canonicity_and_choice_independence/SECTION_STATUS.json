@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "137",
+  "canonical_node_label": "137 \u00b7 P054",
+  "stable_node_directory_name": "137_P054__native_modular_action_canonicity_and_choice_independence",
+  "id": "P054",
+  "section_path": "8.1.5.2",
+  "derivation_order": 137,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

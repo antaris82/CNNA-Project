@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "083",
+  "canonical_node_label": "083 \u00b7 P024",
+  "stable_node_directory_name": "083_P024__future_invariance_of_retained_finite_blocks",
+  "id": "P024",
+  "section_path": "4.4.1.2",
+  "derivation_order": 83,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

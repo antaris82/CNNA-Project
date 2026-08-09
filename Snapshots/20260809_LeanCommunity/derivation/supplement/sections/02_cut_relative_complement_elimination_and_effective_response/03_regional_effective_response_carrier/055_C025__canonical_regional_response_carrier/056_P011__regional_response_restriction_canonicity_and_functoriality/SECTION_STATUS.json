@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "056",
+  "canonical_node_label": "056 \u00b7 P011",
+  "stable_node_directory_name": "056_P011__regional_response_restriction_canonicity_and_functoriality",
+  "id": "P011",
+  "section_path": "2.3.1.1",
+  "derivation_order": 56,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

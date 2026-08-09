@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "045",
+  "canonical_node_label": "045 \u00b7 CTRL004",
+  "stable_node_directory_name": "045_CTRL004__saturating_response_mode_robustness_control",
+  "id": "CTRL004",
+  "section_path": "1.6.5",
+  "derivation_order": 45,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

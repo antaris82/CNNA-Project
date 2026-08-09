@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "020",
+  "canonical_node_label": "020 \u00b7 M002",
+  "stable_node_directory_name": "020_M002__birth_cut_interior_domain_theorem",
+  "id": "M002",
+  "section_path": "1.3.5",
+  "derivation_order": 20,
+  "main_documentation": "DOCUMENTED",
+  "supplement_documentation": "DOCUMENTED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

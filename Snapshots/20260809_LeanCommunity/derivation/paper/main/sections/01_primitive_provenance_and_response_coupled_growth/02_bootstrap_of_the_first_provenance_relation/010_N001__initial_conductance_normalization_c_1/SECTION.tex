@@ -1,0 +1,44 @@
+% Canonical node 010 · N001; current section path 1.2.3.
+% Canonical owner: N001
+\cnnaNodeHeading{010}{N001}{Initial conductance normalization $C_\star=1$}
+\cnnaNodePlacement{1.2.3}{D0}
+
+\paragraph*{Position and role.}
+\texttt{N001} is a fixed-normalization root of the DAG, introduced immediately
+before the first relation is constructed.  It is independent of A001 and C004A
+and supplies only the numerical representative used by \texttt{C013}.
+
+\paragraph*{Definition.}
+The bootstrap conductance unit is fixed by
+\begin{equation}
+  C_\star:=1,
+  \qquad
+  \bigl(C_{r\to v_1},C_{v_1\to r}\bigr):=(1,1).
+  \label{eq:n001-unit-pair}
+\end{equation}
+The equality of the two orientations is an initialization convention for the
+first relation.  N001 does not create either endpoint or the relation itself.
+The local natural-number carrier of the numeral $1$ is only the representation
+used at this node; it does not prescribe the scalar carrier of all later
+conductances and responses.
+
+\paragraph*{Formal encoding and countercheck.}
+Both Python and Lean encode the normalization as a singleton-valued,
+zero-payload object.  Python rejects an attempted constructor argument such as
+``2''; Lean's one-constructor type has no field through which an alternative
+value could enter.  The functions \texttt{value} and \texttt{directedValues}
+then return $1$ and $(1,1)$ definitionally.  This establishes fixedness but not
+unit-independence: the latter requires comparison with alternative positive
+representatives and is proved only in \texttt{M005}.
+
+\paragraph*{Result and handoff.}
+Verified edge \texttt{E008} supplies the pair $(1,1)$ to \texttt{C013};
+verified edge \texttt{E010} supplies the canonical representative to
+\texttt{M005}.  N001 contributes no free model input and no birth-state
+payload.
+
+\noindent\textbf{Primary code anchors.}
+Python: \texttt{InitialConductanceNormalization}, lines 23--34, and its test,
+lines 14--29.  Lean: singleton type, canonical value, scalar value, directed
+pair and the unit-pair theorem, lines 15--37.  The Supplement lists all seven
+anchors with exact hashes.

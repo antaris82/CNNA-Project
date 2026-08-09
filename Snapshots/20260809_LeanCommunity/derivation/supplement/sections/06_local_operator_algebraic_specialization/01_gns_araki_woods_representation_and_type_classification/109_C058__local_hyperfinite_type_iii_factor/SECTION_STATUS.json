@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "109",
+  "canonical_node_label": "109 \u00b7 C058",
+  "stable_node_directory_name": "109_C058__local_hyperfinite_type_iii_factor",
+  "id": "C058",
+  "section_path": "6.1.2",
+  "derivation_order": 109,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

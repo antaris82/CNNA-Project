@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "078",
+  "canonical_node_label": "078 \u00b7 P021",
+  "stable_node_directory_name": "078_P021__nested_refinement_map_well_definedness_and_compatibility",
+  "id": "P021",
+  "section_path": "4.3.3.1",
+  "derivation_order": 78,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}

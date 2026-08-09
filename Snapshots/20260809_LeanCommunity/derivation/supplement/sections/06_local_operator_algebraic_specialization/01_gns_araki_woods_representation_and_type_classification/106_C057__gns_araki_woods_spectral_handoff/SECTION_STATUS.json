@@ -1,0 +1,12 @@
+{
+  "schema": "cnna.section-directory-status.v2",
+  "node_number": "106",
+  "canonical_node_label": "106 \u00b7 C057",
+  "stable_node_directory_name": "106_C057__gns_araki_woods_spectral_handoff",
+  "id": "C057",
+  "section_path": "6.1.1",
+  "derivation_order": 106,
+  "main_documentation": "PLANNED",
+  "supplement_documentation": "PLANNED",
+  "generated_from": "derivation/registry/dag/NODES.tsv"
+}
