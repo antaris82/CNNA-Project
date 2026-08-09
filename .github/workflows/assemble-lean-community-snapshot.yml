@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - agent/lean-community-snapshot-20260809
+  pull_request:
+    branches:
+      - main
 
 permissions:
   contents: write
