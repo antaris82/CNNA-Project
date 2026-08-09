@@ -38,18 +38,23 @@ jobs:
           OLD_ZIP="Snapshots/20260806/cnna_master_registry_20260806_D14R8_M003_M004_KERNEL_VERIFIED_CURRENT_STATE.zip"
           rm -rf old_extract old_norm.tar patch.zst new_review_norm.tar
           mkdir -p old_extract
-          sha256sum "$OLD_ZIP"
+          echo "73fedb91bda0f5c906ce22f06d46c0d84aa462aeb84ea97566e5a2769ddb6ab6  $OLD_ZIP" | sha256sum -c -
           unzip -q "$OLD_ZIP" -d old_extract
           OLD_ROOT="$(find old_extract -mindepth 1 -maxdepth 1 -type d | head -n 1)"
           echo "Old root: $OLD_ROOT"
 
+          # The local validated patch base was unpacked on the shared /mnt/data
+          # filesystem, where directories inherit setgid. Reproduce those tar
+          # metadata exactly; file contents and executable bits are unchanged.
+          find "$OLD_ROOT" -type d -exec chmod g+s {} +
           (cd "$OLD_ROOT" && tar --sort=name --mtime='UTC 2026-08-09' --owner=0 --group=0 --numeric-owner -cf "$GITHUB_WORKSPACE/old_norm.tar" .)
-          sha256sum old_norm.tar
+          echo "5291d18a0302d72f55f4f998864e2e0556dcd2664928c469a73d872d74af2e16  old_norm.tar" | sha256sum -c -
 
           cat .snapshot_transport/20260809/patch.b64.* | tr -d '\n' | base64 -d > patch.zst
           echo "910884ee0318059eb755a4f2a0161930be1fc44ddf1ba077eaedf04540a8b5de  patch.zst" | sha256sum -c -
 
           zstd -d --patch-from=old_norm.tar patch.zst -o new_review_norm.tar
+          echo "e858b3a1795ca21e3b1e129a0d705b984bff7e285a29275eac67706919418758  new_review_norm.tar" | sha256sum -c -
 
           TARGET="Snapshots/20260809_LeanCommunity"
           rm -rf "$TARGET"
