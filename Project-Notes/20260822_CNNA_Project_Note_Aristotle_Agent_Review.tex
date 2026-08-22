@@ -1,0 +1,787 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[a4paper,margin=2.4cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,longtable,array}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{csquotes}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!60!black,
+  urlcolor=blue!60!black,
+  citecolor=blue!60!black,
+  pdftitle={CNNA Project Note --- Aristotle Agent Review},
+  pdfauthor={Editor: Jan Seeck}
+}
+
+\lstset{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  columns=fullflexible,
+  frame=single,
+  xleftmargin=0.3em,
+  xrightmargin=0.3em
+}
+
+\setlist[itemize]{leftmargin=1.6em}
+\setlist[enumerate]{leftmargin=1.8em}
+\renewcommand{\arraystretch}{1.18}
+
+\newcommand{\CNNA}{\textsc{CNNA}}
+\newcommand{\Lean}{\textsc{Lean}}
+\newcommand{\Aristotle}{\textsc{Aristotle Agent}}
+\newcommand{\ChatGPT}{\textsc{ChatGPT}}
+
+\title{\textbf{CNNA Project Note}\\[0.5em]
+External Review with Aristotle Agent, O094 Calibration Reassessment,\\
+and Consequences for the Verification and Research Programme}
+\author{Editor: Jan Seeck}
+\date{22 August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+On 22 August 2026, a current \CNNA{} project ZIP archive was uploaded to \Aristotle{} and the agent was explicitly asked to review the project rather than merely comment on isolated theorem statements. The review was unusually valuable because it did not stop at prose-level plausibility checking: it inspected the formal package, examined the O094/C063 layer and surrounding nodes, and---according to the review session---exercised the project toolchain and build/audit structure. The central substantive finding was not that O094 was formally false. The \Lean{} proof remained correct. The finding was that the scientific interpretation attached to O094 was stronger than the theorem actually justified. In particular, the existing O094 theorem proved a conditional one-port row-conservation collapse, while the project language had promoted it toward an inhabited CNNA-specific ``information-loss obstruction''. This note records the review, the ensuing discussion between the editor, \ChatGPT{}, and \Aristotle{}, the accepted and rejected criticisms, and a precise remediation plan. It also records broader consequences for the treatment of representation invariance, naturality, the skew sector, the possible derivation of a complex structure $J$, the finite-rational to analytic transition, and the semantics of the build and retained-evidence infrastructure.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Purpose and provenance of this note}
+
+This document is a project note, not a theorem dossier and not a replacement for the append-only engineering evidence stored in the master registry. Its purpose is to preserve the scientific and methodological meaning of an external adversarial review while the details are still fresh.
+
+The triggering event was straightforward:
+
+\begin{quote}
+A current \CNNA{} project ZIP archive was uploaded to \Aristotle{} and the agent was asked to inspect and assess the project.
+\end{quote}
+
+The corresponding Aristotle request is available at:
+
+\begin{center}
+\url{https://aristotle.harmonic.fun/dashboard/requests/211695e1-f2c9-4058-8001-2a68ed85d27d}
+\end{center}
+
+The exact ZIP revision uploaded to Aristotle is not independently identified in the chat transcript reproduced here and therefore is deliberately not invented in this note. The review clearly concerned the contemporary package state containing the C063/O094 layer and the current build/audit infrastructure. Once the externally uploaded archive hash is available from the Aristotle request metadata, it should be bound as a separate provenance datum.
+
+The review occurred after O094 had already been kernel-verified and promoted in the local registry, and after the subsequent CTRL007 source had also achieved a successful local kernel build. At the moment when the Aristotle findings were introduced into the discussion, the local CTRL007 build evidence was:
+
+\begin{lstlisting}
+CTRL007 incremental build          PASS  (8647 jobs)
+CTRL007_CURRENT_AXIOM_AUDIT        PASS
+13 declarations
+observed_axioms                    Classical.choice, Quot.sound, propext
+sorryAx                            0
+FULL PACKAGE BOUNDARY              PASS
+Verified gates                     53/53
+\end{lstlisting}
+
+This matters because the decision taken after the review was \emph{not} to invalidate that successful kernel build. Rather, the project should withhold final CTRL007 promotion while reopening the scientific calibration of its direct predecessor O094 and hardening the surrounding verification infrastructure.
+
+\section{Why this review is materially different from an ordinary LLM code review}
+
+The project has previously used LLMs, including Claude and ChatGPT, to inspect formal statements, suggest repairs, and critique proof architecture. The Aristotle review differed in an important way: it treated the \emph{whole verifiable package} as an object of inspection.
+
+The review did not merely ask whether individual \Lean{} files looked plausible. It identified issues that are visible only when theorem semantics, compiler output, dependency resolution, default build targets, retained evidence, and release vocabulary are considered together. Examples include:
+
+\begin{itemize}
+  \item unused public theorem hypotheses in O094;
+  \item the distinction between a theorem being kernel-correct and its advertised scientific interpretation being justified;
+  \item the fact that the default Lake targets reached only a subset of the proof modules, while package completeness was maintained by an explicit audit-script list;
+  \item the distinction between a mutable tag, a separately recorded exact dependency commit, and a shipped Lake manifest;
+  \item the distinction between retained hash-bound kernel evidence and fresh re-verification in the current run.
+\end{itemize}
+
+This introduces a useful third verification layer:
+
+\begin{enumerate}
+  \item \textbf{Lean kernel verification:} does the formal conclusion follow from the formal hypotheses?
+  \item \textbf{CNNA package audits:} was the intended source built, hash-bound, documented, registered, and connected consistently in the DAG?
+  \item \textbf{External adversarial review:} does the formally correct theorem actually support the scientific interpretation and release language attached to it, and is the verification environment itself being described accurately?
+\end{enumerate}
+
+The Aristotle review therefore did not replace kernel verification. It tested a different failure mode: a theorem can be perfectly correct and still be scientifically overinterpreted.
+
+\section{The initial Aristotle assessment}
+
+The first Aristotle assessment made several substantive criticisms.
+
+\subsection{O094: unused response hypotheses}
+
+Aristotle observed that two O094 theorems carried hypotheses such as
+\texttt{hResponse}, \texttt{hLeftResponse}, and \texttt{hRightResponse}, while the proofs never used them. The consequence is that the advertised connection to C021/C063 Schur/DtN semantics was not doing mathematical work in the proof.
+
+The central theorem effectively reduced to:
+
+\[
+\text{row-conservative } 1\times 1 \text{ matrix}
+\quad\Longrightarrow\quad
+\text{the unique entry has value } 0.
+\]
+
+This is true, but it is substantially weaker than the interpretation ``the actual CNNA root-only reduced response loses information'' unless the actual response is separately shown to exist and satisfy row conservation.
+
+\subsection{O094: conditional rather than inhabited obstruction}
+
+The second criticism was more important. Nothing in the then-current O094 theorem established all of the following for the actual C063 vertex with eliminated sectors $E=\{B,F\}$:
+
+\begin{enumerate}
+  \item that the corresponding reduced C006/C021 response exists;
+  \item that the required Schur solve is admissible;
+  \item that the actual response is row-conservative.
+\end{enumerate}
+
+Therefore the theorem described a \emph{class} of one-port matrices and their collapse, not yet an inhabited CNNA-specific obstruction.
+
+\subsection{Build topology and dependency reproducibility}
+
+Aristotle also identified that the default Lake build graph covered only a small subset of the proof modules. Full project verification was maintained by a list of modules inside the audit script rather than by a single complete default build target.
+
+A related observation concerned dependency locking. The project did have an exact separately recorded Mathlib commit, and incremental verification checked the working Mathlib checkout against it. However, the source package did not ship the proof-layer \texttt{lake-manifest.json}, while the clean/full path still relied on a version tag and \texttt{lake update}. Thus the criticism ``Mathlib is pinned only by a mutable tag'' was too broad, but the clean-build reproducibility chain still contained a real gap.
+
+\subsection{Retained evidence and release language}
+
+Aristotle correctly distinguished retained verification evidence from re-running the kernel on every previously promoted module. The project already encoded recursive dependency-closure hashes and verification keys, so retained evidence was stronger than a single source hash. Nevertheless, it remained retained evidence, not fresh compilation in the current run.
+
+The review therefore challenged wording such as ``full package'' where a reader might reasonably infer that every proof module had just been rebuilt.
+
+\section{ChatGPT's first evaluation of the Aristotle findings}
+
+The first internal evaluation accepted most of the criticism rather than attempting to defend the existing release language.
+
+The main conclusions were:
+
+\begin{itemize}
+  \item O094's \Lean{} theorem was correct but scientifically over-calibrated.
+  \item The response hypotheses were genuinely unused.
+  \item The existing theorem proved a conditional ``one-port row-conservation collapse''.
+  \item The stronger term ``information-loss obstruction'' should require additional theorems.
+  \item The default-build and clean dependency-resolution issues were real engineering problems.
+  \item Retained evidence should be named explicitly as retained evidence rather than conflated with current-run re-verification.
+\end{itemize}
+
+A further formal issue was then discovered: the obvious route ``derive row conservation from the existing P010 theorem'' was blocked by an overly strong bundled hypothesis in the existing directed-cut framework. The relevant hypothesis included a requirement that a distinguished boundary point reach \emph{another} boundary point. Such a condition is impossible at a genuine one-port boundary, because \texttt{Fin 1} has no distinct second boundary index.
+
+This suggested that part of P001/P008/P010 should be refactored into a weaker solve-oriented hypothesis package that contains exactly the assumptions needed for solvability and row conservation, while retaining the stronger ``other boundary'' condition only for later strict-transfer or positivity results that genuinely need it.
+
+\section{Clarification: the root and the empty set}
+
+During the discussion, the editor raised an important conceptual question: if the root is represented by the empty object, how can a one-port response exist at all?
+
+The answer is that three distinct notions must not be conflated:
+
+\begin{enumerate}
+  \item \textbf{C001 empty carrier:} no node exists.
+  \item \textbf{C002 root node:} one root node exists.
+  \item \textbf{C003 root address:} the provenance address of the root is the empty word/list $[]$.
+\end{enumerate}
+
+Thus the root is not the empty carrier. Its \emph{address} is empty because it has no predecessor path.
+
+At the O094 vertex the relevant boundary is conceptually
+
+\[
+[\,[]\,],
+\]
+
+that is: a list with one element, whose sole element is the empty provenance address. It is not the empty boundary list $[]$.
+
+This distinction should be made explicit in the repaired documentation because it removes a potential ambiguity between ``zero nodes'', ``one root node'', and ``root address of path length zero''.
+
+\section{The initial remediation plan for the O094 calibration problem}
+
+The calibration issue should not be fixed by deleting the valid O094 theorem or by silently weakening its documentation. The correct approach is to preserve the theorem as a valid algebraic lemma while building the missing CNNA-specific bridge.
+
+\subsection{Step A: preserve the old theorem as a conditional algebraic result}
+
+The existing result should be reclassified under a name such as:
+
+\begin{center}
+\texttt{RootOnlyOnePortRowConservationCollapse}
+\end{center}
+
+Its content is simply:
+
+\[
+\dim(\partial)=1
+\quad\wedge\quad
+\Lambda \mathbf{1}=0
+\quad\Longrightarrow\quad
+\Lambda \sim_{\mathrm{SameValue}} 0.
+\]
+
+No C021 response hypothesis should appear unless it is actually used.
+
+\subsection{Step B: move singleton-boundary ownership to the structural layer}
+
+P073 already performs the real geometric work. It should explicitly own the statements that after eliminating Bulk and Front,
+
+\[
+\texttt{cubeBoundary}(X,\{B,F\})=[\texttt{rootAddress}(X)],
+\]
+
+and therefore
+
+\[
+\texttt{boundary.length}=1,
+\qquad
+\texttt{boundary}\neq[].
+\]
+
+This gives the structural meaning of the one-port endpoint without overselling the final algebraic zero step.
+
+\subsection{Step C: split the directed-cut hypotheses}
+
+Introduce a weaker hypothesis structure for actual solve/admissibility work, schematically:
+
+\begin{lstlisting}
+structure DirectedSolveHypotheses
+    (blocks : OrderedSchurBlocks boundary interior) : Prop where
+  offDiagonalNonpositive : ...
+  rowConservative : ...
+  everyInteriorReachesBoundary : ...
+\end{lstlisting}
+
+The existing stronger directed-cut structure can remain as a wrapper that additionally contains distinguished-boundary transfer assumptions where needed.
+
+The point is that one-port solvability should not be made impossible by a logically unrelated requirement for a second boundary port.
+
+\subsection{Step D: derive actual root-only admissibility and conservation}
+
+A new proof node, provisionally P077, was proposed with the role:
+
+\begin{center}
+\textbf{Root-only exact Schur response admissibility and conservation}
+\end{center}
+
+It should derive, for the actual canonical C063 realization at $E=\{B,F\}$:
+
+\begin{enumerate}
+  \item the weak directed solve hypotheses;
+  \item triviality of the interior kernel;
+  \item C006 solve admissibility;
+  \item existence of the actual C021/C063 reduced response;
+  \item row conservation of that response.
+\end{enumerate}
+
+No regularization, pseudoinverse, external stabilization, or postulated extra assumption is permitted. If the structure is not derivable, that failure is itself a mathematical obstruction.
+
+\subsection{Step E: rebuild O094 as an actual-response theorem}
+
+Once P077 exists, O094 can contain a genuine CNNA-specific theorem:
+
+\[
+\text{actual C063 root-only response}
+\quad\Longrightarrow\quad
+\text{SameValue-zero}.
+\]
+
+The response hypothesis must now be mathematically consumed by the proof chain; row conservation should no longer be separately assumed at the O094 boundary.
+
+\subsection{Step F: earn the phrase ``information loss'' by proving non-injectivity}
+
+A crucial strengthening emerged during the discussion. Even an existing actual response that is always zero does not by itself justify the strongest interpretation of ``information loss'' unless the observation map is shown to identify distinct underlying states.
+
+Therefore the strong O094 title should require:
+
+\begin{enumerate}
+  \item an equivalence relation on internal states fixed in advance, quotienting out mere relabelling or representation differences;
+  \item two states $X$ and $Y$ such that $X\not\sim Y$;
+  \item a separating invariant proving this non-equivalence;
+  \item equality of their root-only observables.
+\end{enumerate}
+
+Only then is there a genuine theorem of non-injectivity:
+
+\[
+[X]\neq[Y],
+\qquad
+\mathcal O_{\mathrm{root}}([X])
+=
+\mathcal O_{\mathrm{root}}([Y]).
+\]
+
+If this cannot be proved, the correct scientific name is ``root-only response collapse'', not ``information-loss obstruction''.
+
+\section{The broader Aristotle assessment}
+
+After the calibration discussion, Aristotle gave a broader assessment of the programme. Several points were accepted, several were refined, and some were rejected as too strong.
+
+\subsection{Minimal starting data is not inevitability}
+
+Aristotle correctly emphasized that ``from the empty set'' should be treated as a statement about minimality of the starting data, not as a theorem that all later structure is logically forced by $\varnothing$ alone.
+
+However, the discussion also distinguished between different kinds of input:
+
+\begin{itemize}
+  \item genuine model data, such as branching arity and the growth rule;
+  \item substantive mathematical modelling decisions, such as the use of Schur/DtN response;
+  \item representation choices, such as lists, carrier order, and exact fraction records;
+  \item properties that may be primitive in one layer but derived in another, such as nonreciprocity or row conservation.
+\end{itemize}
+
+The key methodological refinement is that something becomes demonstrably a mere representation choice only after an invariance theorem exists.
+
+\subsection{Representation invariance becomes a first-class obligation}
+
+Aristotle's follow-up made this point particularly sharply. Because boundaries are lists and response matrices are indexed by
+
+\[
+\texttt{Fin}((\texttt{cubeBoundary }X\,v).\texttt{length}),
+\]
+
+canonical ordering appears inside the types of the formal statements. Consequently, ordering cannot simply be declared ``bookkeeping''.
+
+A concrete theorem target is now available: under a permutation of the carrier, the response should transport by conjugation with the corresponding permutation matrix, while every public observable should be invariant or appropriately equivariant.
+
+The same applies to \texttt{ExactFraction}. The existing \texttt{MatrixSameValue} equivalence is a good start. The strengthened discipline should be:
+
+\begin{quote}
+No public scientific observable should depend on raw structural equality of non-normalized exact-fraction representatives unless such dependence is explicitly intended and justified.
+\end{quote}
+
+A related audit convention was proposed:
+
+\begin{quote}
+Every public definition named \texttt{canonical...} should either have a corresponding uniqueness theorem or lose the word ``canonical''.
+\end{quote}
+
+\section{Skew structure: accepted correction and stronger negative targets}
+
+Aristotle accepted the correction that the exact equivalence is
+
+\[
+A\neq 0
+\quad\Longleftrightarrow\quad
+\Lambda\neq\Lambda^{T}
+\]
+
+for the \emph{reduced boundary response}. Internal directedness of the unreduced network does not automatically survive Schur elimination.
+
+This leads to a strong new target: deliberately exhibit an internally nonreciprocal state whose reduced response at a particular cube vertex is symmetric.
+
+Such a theorem would establish:
+
+\[
+K\neq K^{T}
+\qquad\text{but}\qquad
+\Lambda=\Lambda^{T}.
+\]
+
+This would be scientifically valuable because it would demonstrate that directionality is observation- and elimination-dependent. It would also turn CTRL007 and the later M087 comparison layer into more than a precaution: they would classify where directional information survives and where it is erased by the choice of retained boundary.
+
+\section{The complex structure $J$: corrections on both sides}
+
+The dialogue around $J$ was especially productive because Aristotle explicitly changed its initial position.
+
+\subsection{What Aristotle corrected}
+
+The initial statement ``$J$ is selected, not derived'' was too strong. A nondegenerate skew form $\omega$ alone does not canonically determine a compatible complex structure, but if the construction also derives an appropriate positive definite form $g$, then the pair $(\omega,g)$ can determine a compatible $J$ via polar decomposition.
+
+Writing
+
+\[
+\omega(u,v)=g(Au,v),
+\]
+
+a standard compatible complex structure is obtained schematically as
+
+\[
+J=A(-A^{2})^{-1/2},
+\]
+
+subject to the relevant nondegeneracy and scalar-field hypotheses.
+
+Thus the open CNNA question is not simply ``is $J$ chosen?'' but rather:
+
+\begin{quote}
+Does the full derived CNNA structure provide sufficient positive and natural data to determine $J$ without an arbitrary extra selection?
+\end{quote}
+
+\subsection{Aristotle's finite-group averaging observation}
+
+Aristotle then noted that finite-group equivariance alone cannot establish nonexistence of an invariant positive definite form. Given a finite automorphism group $G$ and any positive form $g_{0}$, one may average:
+
+\[
+\bar g
+=
+\frac{1}{|G|}\sum_{\gamma\in G}\gamma^{*}g_{0}.
+\]
+
+This remains positive definite and, in a rational finite representation, may remain rational. Therefore a simple symmetry obstruction cannot prove ``no invariant $g$ exists'' when invariance and positivity are the only requirements.
+
+However, this does not settle the CNNA problem, because extra conditions such as growth compatibility, response compatibility, normalization, or block constraints may not survive arbitrary averaging.
+
+\subsection{Correction to Aristotle: unique $g$ is not necessary for unique $J$}
+
+Aristotle's follow-up suggested that canonicity of $J$ requires a unique natural positive form $g$. This was identified as too strong.
+
+If $g$ is rescaled by a positive scalar,
+
+\[
+g'=c\,g,\qquad c>0,
+\]
+
+then the associated operator rescales as
+
+\[
+A'=\frac{1}{c}A,
+\]
+
+but the polar complex structure remains unchanged:
+
+\[
+J'
+=A'(-A'^2)^{-1/2}
+=J.
+\]
+
+Hence distinct positive forms may induce the same $J$.
+
+The sharper target is therefore not necessarily uniqueness of $g$, but uniqueness of the induced $J$ across all admissible natural positive forms. One may even define an equivalence relation
+
+\[
+g_{1}\sim_{\omega}g_{2}
+\quad\Longleftrightarrow\quad
+J_{\omega,g_{1}}=J_{\omega,g_{2}}.
+\]
+
+The genuine question then becomes:
+
+\begin{quote}
+Do all CNNA-admissible natural positive forms lie in one $J$-equivalence class?
+\end{quote}
+
+This is weaker than uniqueness of $g$ and may be substantially more realistic.
+
+\subsection{Correction to Aristotle: naturality of $J$ is not automatically free}
+
+Aristotle also suggested that naturality of $J$ follows automatically once $g$ and $\omega$ are natural. This is correct for sufficiently strong intertwining maps, especially isomorphisms preserving both structures. It is not automatically true for arbitrary non-surjective growth or refinement maps.
+
+For a refinement map $F$, pullback identities
+
+\[
+F^{*}g_{W}=g_{V},
+\qquad
+F^{*}\omega_{W}=\omega_{V}
+\]
+
+do not by themselves guarantee that the associated operator $A_{W}$ preserves the image of $F$ or that
+
+\[
+A_{W}F=FA_{V}.
+\]
+
+The latter intertwining condition, or an equivalent image-invariance theorem, is what makes the passage to $J$ formally immediate. This should be stated explicitly in the future naturality spine.
+
+\section{Rational finite layer and the analytic bridge}
+
+The Aristotle exchange sharpened the intended architecture of the upper project.
+
+The exact rational finite layer should not be discarded. Instead the transition should be explicit:
+
+\[
+\boxed{\text{finite exact CNNA over }\mathbb Q}
+\longrightarrow
+\boxed{\text{proved scalar extension}}
+\longrightarrow
+\boxed{\text{finite real/complex theory}}
+\longrightarrow
+\boxed{\text{compatible refinement/limit}}
+\longrightarrow
+\boxed{\text{completion}}
+\longrightarrow
+\boxed{\text{Hilbert/C}^{*}\text{/von Neumann structures}}.
+\]
+
+This avoids a false dichotomy between ``stay rational forever'' and ``abandon the auditable rational core''. The rational layer remains the exact provenance substrate. Analytic structure is introduced through explicit bridge theorems.
+
+A useful refinement is that $\omega$ and $g$ may remain rational even when $J$ requires square roots. This suggests an implicit rational characterization of $J$ where possible, followed by a scalar extension only when the polar square root genuinely leaves $\mathbb Q$.
+
+One specific finite-level question is therefore whether $-A^{2}$ is already a square in the relevant rational matrix algebra. In special spectrum classes, the complex structure may remain rational after scaling; in general, a real extension will be necessary.
+
+\section{Tree geometry and external mathematical contact}
+
+Aristotle's initial comparison with Cantor boundaries, $p$-adic structures, and Bruhat--Tits geometry was useful but initially too compressed. The subsequent dialogue clarified the distinctions.
+
+Finite CNNA approximants do not themselves possess an infinite Cantor path boundary. Such a boundary belongs to the infinite-tree limit. Likewise, a rooted $p$-ary provenance tree is not literally the $(p+1)$-regular Bruhat--Tits tree of $PGL_{2}(\mathbb Q_{p})$.
+
+Nevertheless, an external comparison theorem is highly desirable. The most productive formulation is likely:
+
+\begin{quote}
+On symmetric weights, identify precisely when the finite-depth CNNA DtN response agrees with the corresponding classical reversible harmonic-extension/DtN construction on a rooted tree. Then isolate the directed, non-self-adjoint residue as the genuinely CNNA-specific contribution.
+\end{quote}
+
+This would concentrate rather than dilute novelty. The symmetric reference theory could be imported as known mathematics, while the directed growth-dependent residue becomes the part requiring new theorems.
+
+\section{Limits, positivity, GNS, and the distant type-III question}
+
+Two explicit bridge obligations emerged.
+
+\subsection{Refinement and limits}
+
+Schur complementation does not automatically commute with an inductive or projective limit. A sequence of finite responses is not yet a limit theory. The project will need compatibility statements of the schematic form
+
+\[
+F_{L,L+1}^{*}\Lambda_{L+1}=\Lambda_{L}
+\]
+
+or an explicitly controlled renormalized alternative.
+
+This reinforces the view that naturality under growth/refinement is not a decorative side condition but part of the main scientific spine.
+
+\subsection{Positivity}
+
+GNS requires a positive functional. Positivity therefore must be proved, not inserted by definition at the analytic boundary. Depending on the eventual operator-algebraic maps, complete positivity may also become a separate theorem obligation.
+
+\subsection{Type III calibration}
+
+The review correctly warned against assuming that an increasing sequence of finite matrix systems automatically produces nontrivial modular or type-III structure. However, the simple claim that limits of finite matrix algebras lead only to type I or the hyperfinite $II_{1}$ factor is too coarse. Suitable infinite tensor/product constructions with nontracial states can produce hyperfinite type-III factors.
+
+The real lesson for CNNA is sharper:
+
+\begin{quote}
+The algebraic inductive system alone is insufficient. The asymptotic state/weight structure and its modular behavior must be derived and tracked.
+\end{quote}
+
+If type III remains a future target, the mechanism capable of generating nontracial or singular asymptotic weight structure should be sought in the growth rule rather than added only at the endpoint.
+
+\section{Public theorem warnings as scientific audit signals}
+
+One highly actionable Aristotle suggestion concerns compiler warnings. The unused O094 hypotheses were already flagged by the compiler. For public theorem statements, such warnings can indicate that the statement advertises scientific assumptions that the proof never consumes.
+
+The proposed policy is not a blind global ``all warnings fail'' rule, because some public APIs may retain parameters for legitimate interface reasons. Instead:
+
+\begin{lstlisting}
+PUBLIC_THEOREM_UNUSED_HYPOTHESIS
+  -> audit failure unless explicitly justified
+\end{lstlisting}
+
+Every justified exception should be machine-readable and documented. Otherwise the public statement should be simplified.
+
+This is a cheap automated calibration gate and should be added before the next large proof expansion.
+
+\section{Build-system remediation}
+
+The Aristotle review exposed two infrastructure issues that should be fixed independently of the O094 mathematics.
+
+\subsection{All-proofs default target}
+
+A normal \texttt{lake build} should reach the complete current proof closure. The project should therefore introduce an explicit all-proofs aggregator target importing every current proof gate facade. The audit should verify that the import closure of the default target covers 100\% of the intended proof modules, excluding only explicitly classified non-library audit helpers.
+
+The shell audit may continue to perform targeted incremental rebuilds, but it should no longer define package completeness by maintaining the only authoritative list of modules that must build.
+
+\subsection{Exact dependency pinning}
+
+The proof-layer Lake dependency should use the exact verified Mathlib commit rather than relying operationally on a tag. The generated \texttt{proofs/lake-manifest.json} from the verified environment should be included in the archive and in the verification-key context.
+
+A validation run should not silently call \texttt{lake update} in a way that can mutate dependency resolution. Dependency updates should be explicit maintenance events with new hashes and a subsequent full rebuild.
+
+\subsection{Retained vs. current-run verification vocabulary}
+
+Audit output should distinguish at least:
+
+\begin{lstlisting}
+RETAINED_KERNEL_VERIFIED
+REBUILT_KERNEL_VERIFIED_CURRENT_RUN
+PACKAGE_GATE_STATUS
+\end{lstlisting}
+
+A module may legitimately remain verified by retained exact dependency-closure evidence, but this should not be described as though it was recompiled in the current invocation.
+
+\section{Proposed remediation sequence}
+
+The following staged sequence was proposed to avoid mixing mathematical repair, release semantics, and infrastructure changes into a single opaque revision:
+
+\begin{longtable}{@{}p{1.5cm}p{12.7cm}@{}}
+\toprule
+\textbf{Revision} & \textbf{Purpose} \\
+\midrule
+\endhead
+R130 & Aristotle Agent review intake; bind the review provenance; reopen O094 scientifically without deleting its valid historical kernel proof; place CTRL007 promotion on hold while retaining its successful 13-declaration kernel evidence. \\
+R131 & Correct ownership of root-only singleton-boundary facts in P073; introduce the weaker solve-oriented hypothesis structure in P001 while preserving stronger compatibility wrappers. \\
+R132 & Generalize the P008/P010 bridges so actual solve-domain membership and response row conservation can be derived under the weaker hypotheses. \\
+R133 & Introduce P077 and prove, or fail to prove, root-only admissibility, actual response inhabitation, and conservation derived-only from the canonical CNNA structure. \\
+R134 & Reconstruct O094 as an actual-response collapse theorem whose C021/C063 response hypotheses are genuinely consumed. \\
+R135 & Define state equivalence/isomorphism and attempt a non-injectivity witness. Retain the phrase ``information loss'' only if two non-equivalent states are proved to have the same root-only observable. Otherwise downgrade the scientific title to ``response collapse''. \\
+R136 & Harden Lake/default-target/manifest/dependency-lock and retained-evidence semantics; add public-unused-hypothesis and representation-invariance audit gates where practical. \\
+R137 & Run a genuinely clean full-package kernel reverification under the hardened dependency and build environment. \\
+R138 & Final promotion/documentation of repaired O094 and the already kernel-successful CTRL007 under the new environment. Only then proceed to M087. \\
+\bottomrule
+\end{longtable}
+
+The exact revision numbers are planning labels rather than immutable commitments; the logical order is the important part.
+
+\section{Additional theorem targets introduced by the review}
+
+Beyond the O094 repair itself, the review suggests several high-value finite exact targets.
+
+\subsection{Permutation and ordering invariance}
+
+For each relevant response construction, prove transport under carrier/boundary permutation and invariance of public observables. This is necessary before ``canonical ordering'' can be demoted from potential model data to verified representation choice.
+
+\subsection{SameValue congruence}
+
+Public observables built from \texttt{ExactFraction} matrices should respect \texttt{SameValue}/\texttt{MatrixSameValue}. Raw record equality should not leak into scientific conclusions unless explicitly intended.
+
+\subsection{Directionality killed by elimination}
+
+Find or construct an exact finite witness with internally nonreciprocal dynamics but symmetric reduced response at at least one Schur-cube vertex. This would prove that boundary skew is elimination-dependent rather than a trivial reflection of internal directionality.
+
+\subsection{Nondegeneracy on the correct quotient}
+
+For the skew sector, strengthen mere nonzeroness of $A$ to identification of $\ker A$ and nondegeneracy of the induced form on the quotient.
+
+\subsection{Growth/refinement naturality}
+
+Make naturality under growth and refinement part of the central proof chain. If a later $g$ and $J$ are introduced, formulate the exact intertwining conditions needed for their naturality rather than relying on informal functorial language.
+
+\subsection{$J$-class uniqueness rather than premature $g$-uniqueness}
+
+Investigate whether all admissible natural positive forms induce the same polar $J$, even if the positive forms themselves are not unique. This is the corrected formulation of the canonicity problem after the scaling counterexample.
+
+\section{Scientific interpretation of the review}
+
+The Aristotle review should not be described as a falsification of CNNA. It discovered no contradiction in the kernel-verified theorem chain presented here. Instead, it exposed a mismatch between three layers that must remain distinct:
+
+\begin{enumerate}
+  \item a theorem can be formally correct;
+  \item its hypotheses can nevertheless be stronger or more decorative than necessary;
+  \item the scientific name attached to it can still overstate what has actually been established.
+\end{enumerate}
+
+O094 is the concrete example. The one-port collapse theorem is correct. The stronger claim that the actual CNNA root-only DtN observation is inhabited, conserved, and information-losing still requires additional theorems.
+
+This is methodologically useful rather than damaging. The project was designed around explicit obstructions, derived-only closure, and refusal to hide unresolved structure behind informal interpretation. An external review that finds a calibration error is therefore functioning as intended: it converts an implicit assumption into an explicit proof obligation.
+
+\section{Recommended review-status semantics}
+
+Aristotle should be treated as an external adversarial reviewer, not as an oracle. Every finding should be classified explicitly:
+
+\begin{itemize}
+  \item \texttt{ACCEPTED}: the criticism is correct and produces a remediation obligation;
+  \item \texttt{PARTIALLY\_ACCEPTED}: the core concern is correct but the stated reason or scope is too broad;
+  \item \texttt{REJECTED}: the criticism is contradicted by the formal package or by a direct mathematical counterargument;
+  \item \texttt{OPEN}: the issue is a legitimate mathematical question not yet settled either way.
+\end{itemize}
+
+Examples from this review:
+
+\begin{longtable}{@{}p{5.2cm}p{3.2cm}p{6.0cm}@{}}
+\toprule
+\textbf{Finding} & \textbf{Status} & \textbf{Reason} \\
+\midrule
+\endhead
+O094 response hypotheses are unused & ACCEPTED & Directly visible in the theorem proofs and compiler warning. \\
+O094 is currently conditional & ACCEPTED & Actual root-only response existence and row conservation were not derived in O094. \\
+Default build does not cover all proof modules & ACCEPTED & Completeness currently depends on explicit audit-script rebuild units. \\
+Mathlib is pinned only by a mutable tag & PARTIALLY\_ACCEPTED & An exact custom commit lock exists, but the clean/full path and missing manifest leave a reproducibility gap. \\
+Retained evidence is not current-run reverification & ACCEPTED & Correct distinction; current vocabulary should become more explicit. \\
+Internal nonreciprocity iff boundary skew & REJECTED & Only $A\neq0\iff\Lambda\neq\Lambda^{T}$ is exact at the reduced-response layer. \\
+$J$ is necessarily selected, not derived & REJECTED as a conclusion & $\omega$ alone is insufficient, but additional derived positive structure may canonically determine $J$. \\
+Canonical $J$ requires unique natural $g$ & REJECTED & Positive rescalings of $g$ can yield the same polar $J$. \\
+Naturality of $J$ is always free from $g,\omega$ naturality & PARTIALLY\_ACCEPTED & True under sufficient intertwining/isomorphism hypotheses, not automatically for arbitrary non-surjective refinement maps. \\
+An explicit equivalence relation is needed before claiming information loss & ACCEPTED & Otherwise ``different states'' can collapse to a trivial syntactic distinction. \\
+Unused public hypotheses should become an audit signal & ACCEPTED & Strong low-cost calibration mechanism, with justified exceptions. \\
+\bottomrule
+\end{longtable}
+
+\section{What this means for CNNA going forward}
+
+The review changes the quality standard in a useful way.
+
+For every structure claimed to emerge, the project should now ask four separate questions:
+
+\begin{enumerate}
+  \item \textbf{Primitive assumptions:} what is genuinely supplied at the start?
+  \item \textbf{Representation dependence:} what appears only because of lists, orderings, coordinates, or exact representatives?
+  \item \textbf{Invariance/naturality:} which structures survive relabelling, reordering, and growth/refinement maps?
+  \item \textbf{Selection:} where does a later object require an additional choice, and is that choice unique only up to an equivalence that leaves the observable structure unchanged?
+\end{enumerate}
+
+This is especially important for the future skew/$J$ layer. A finite skew matrix appearing in one chosen coordinate system carries limited scientific weight. Much stronger claims would be:
+
+\[
+\text{nondegenerate skew form on the correct quotient},
+\]
+
+\[
+\text{ordering and relabelling invariance},
+\]
+
+\[
+\text{naturality under canonical growth/refinement},
+\]
+
+and, if positive structure emerges,
+
+\[
+\text{uniqueness of the induced }J\text{ across all admissible natural positive forms}.
+\]
+
+These are the kinds of results that can distinguish genuinely derived structure from implementation artifacts or hidden selection data.
+
+\section{Immediate project-state recommendation}
+
+At the time of this note, the successful local CTRL007 kernel build should be retained exactly as valid evidence:
+
+\begin{lstlisting}
+CTRL007 incremental build          PASS
+13 public declarations
+sorryAx                            0
+FULL PACKAGE BOUNDARY              PASS
+53/53 gates
+\end{lstlisting}
+
+However, final CTRL007 promotion should remain on hold until the review-remediation block has at least:
+
+\begin{itemize}
+  \item reclassified and repaired O094;
+  \item hardened the build/dependency semantics;
+  \item clarified retained versus current-run verification terminology;
+  \item performed a clean full-package reverification under the hardened environment.
+\end{itemize}
+
+No new mathematical node beyond the remediation block should be started merely to preserve forward momentum. The purpose of the review is precisely to prevent downstream structure from being built on a scientifically over-calibrated predecessor.
+
+\section{Closing assessment}
+
+The most important outcome of the Aristotle review is not any single criticism. It is the establishment of a stronger epistemic discipline for the project.
+
+Lean protects the project against invalid formal deductions. The package audits protect the project against source drift, undocumented promotion, broken DAG ownership, and unbound build evidence. Aristotle's review demonstrated the additional value of an adversarial layer that asks whether a formally valid theorem actually bears the interpretation assigned to it.
+
+The O094 issue is the clearest example. The existing theorem was not false. The problem was that a mathematically elementary conditional collapse had been narrated as a stronger inhabited information-loss obstruction. The correct response is therefore not to hide the theorem or weaken standards, but to make the missing obligations explicit and attempt to prove them derived-only.
+
+The broader exchange also improved the research programme itself. It sharpened the role of representation invariance, suggested a concrete ``directionality dies under elimination'' witness, refined the canonicity question for $J$ from uniqueness of $g$ to uniqueness of the induced $J$-class, and identified explicit bridges required before any serious limit, GNS, modular, or operator-algebraic claim can be made.
+
+The scientifically appropriate conclusion is therefore:
+
+\begin{quote}
+The external Aristotle Agent review did not invalidate the CNNA programme. It exposed a calibration error and several verification-infrastructure weaknesses, converted them into explicit theorem and audit obligations, and thereby raised the standard for every subsequent claim of emergence, canonicity, invariance, or information loss.
+\end{quote}
+
+\section*{Reference links}
+\addcontentsline{toc}{section}{Reference links}
+
+\begin{itemize}
+  \item Aristotle Agent review request: \url{https://aristotle.harmonic.fun/dashboard/requests/211695e1-f2c9-4058-8001-2a68ed85d27d}
+  \item Primary project evidence: the contemporary CNNA master-registry ZIP, local Lean build logs, registry ledgers, and the preserved Aristotle assessment transcript.
+\end{itemize}
+
+\vfill
+\begin{flushright}
+\textit{Editor: Jan Seeck}\\
+\textit{Project note dated 22 August 2026}
+\end{flushright}
+
+\end{document}
